@@ -8,6 +8,7 @@ Feel free to send a PR! :smile:
 
 - [Alexa](#alexa)
 - [Codeship](#codeship)
+- [Google Assistant](#google-assistant)
 - [Hacktoberfest](#hacktoberfest)
 - [npm](#npm)
 
@@ -22,6 +23,12 @@ Feel free to send a PR! :smile:
 - Submit 5 builds in 30 days, get t-shirts & stickers sent your way! [Reference](https://codeship.com/swag)
 
 ![](http://juliesfreebies.com/wp-content/uploads/2016/05/codeship-swag.jpg)
+
+## Google Assistant
+
+- Make an app for the Google Assistant available to users, get an exclusive Google Assistant t-shirt and a Google Home (if a certain amount of users engage with it)! [Reference](https://developers.google.com/actions/community/overview)
+
+![](https://i2.wp.com/radthemaker.com/wp-content/uploads/2017/11/My-Google-Assistant-T-Shirt.jpg)
 
 ## Hacktoberfest
 
