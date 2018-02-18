@@ -7,11 +7,16 @@ Feel free to send a PR! :smile:
 ## Contents
 
 - [Alexa](#alexa)
+- [Hacktoberfest](#hacktoberfest)
 - [npm](#npm)
 
 ## Alexa
 
 - Publish a skill, get a hoodie (varies by country)! [Reference](https://developer.amazon.com/alexa-skills-kit/alexa-developer-skill-promotion)
+
+## Hacktoberfest
+
+- Make four pull requests in October, earn a limited edition T-shirt! [Reference](https://hacktoberfest.digitalocean.com/)
 
 ## npm
 
