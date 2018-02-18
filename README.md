@@ -9,7 +9,9 @@ Feel free to send a PR! :smile:
 - [Alexa](#alexa)
 - [Codeship](#codeship)
 - [Google Assistant](#google-assistant)
+- [Datadog](#datadog)
 - [Hacktoberfest](#hacktoberfest)
+- [Mulesoft](#mulesoft)
 - [npm](#npm)
 
 ## Alexa
@@ -20,7 +22,7 @@ Feel free to send a PR! :smile:
 
 ## Codeship
 
-- Submit 5 builds in 30 days, get t-shirts & stickers sent your way! [Reference](https://codeship.com/swag)
+- Submit 5 builds in 30 days, get T-shirts & stickers sent your way! [Reference](https://codeship.com/swag)
 
 ![](http://juliesfreebies.com/wp-content/uploads/2016/05/codeship-swag.jpg)
 
@@ -30,11 +32,18 @@ Feel free to send a PR! :smile:
 
 ![](https://i2.wp.com/radthemaker.com/wp-content/uploads/2017/11/My-Google-Assistant-T-Shirt.jpg)
 
+## Datadog
+
+- Instrument an application and create a dashboard for a T-Shirt! [Reference](https://www.datadoghq.com/ts/nagios/)
+
 ## Hacktoberfest
 
 - Make four pull requests in October, earn a limited edition T-shirt! [Reference](https://hacktoberfest.digitalocean.com/)
 
 ![](https://cdn-images-1.medium.com/max/2000/1*9rG8J1r8l-LC0oRvRVoEkA.jpeg)
+
+## MuleSoft
+- Earn 2500 points for a T-shirt (or other swag)! [Reference](http://champions.mulesoft.com/rewards)
 
 ## npm
 
