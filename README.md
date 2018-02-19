@@ -8,6 +8,7 @@ Feel free to send a PR! :smile:
 
 - [Alexa](#alexa)
 - [Codeship](#codeship)
+- [Digital Ocean](#digital-ocean)
 - [Google Assistant](#google-assistant)
 - [Hacktoberfest](#hacktoberfest)
 - [npm](#npm)
@@ -23,6 +24,12 @@ Feel free to send a PR! :smile:
 - Submit 5 builds in 30 days, get t-shirts & stickers sent your way! [Reference](https://codeship.com/swag)
 
 ![](http://juliesfreebies.com/wp-content/uploads/2016/05/codeship-swag.jpg)
+
+## Digital Ocean
+
+- Completing this short survey will get you a Sammy sticker pack: [http://do.co/currents-survey](http://do.co/currents-survey)
+
+![](https://pbs.twimg.com/media/ClLKoRDWEAAvgqK.jpg)
 
 ## Google Assistant
 
