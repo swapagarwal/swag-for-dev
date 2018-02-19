@@ -5,12 +5,14 @@ As a developer, nothing piques my interest as much as developer swag! This is an
 Feel free to send a PR! :smile:
 
 ## Contents
-
+###Currently Active
 - [Alexa](#alexa)
 - [Codeship](#codeship)
 - [Google Assistant](#google-assistant)
-- [Hacktoberfest](#hacktoberfest)
 - [npm](#npm)
+
+###Inactive
+- [Hacktoberfest](#hacktoberfest)
 
 ## Alexa
 
@@ -30,14 +32,14 @@ Feel free to send a PR! :smile:
 
 ![](https://i2.wp.com/radthemaker.com/wp-content/uploads/2017/11/My-Google-Assistant-T-Shirt.jpg)
 
-## Hacktoberfest
-
-- Make four pull requests in October, earn a limited edition T-shirt! [Reference](https://hacktoberfest.digitalocean.com/)
-
-![](https://cdn-images-1.medium.com/max/2000/1*9rG8J1r8l-LC0oRvRVoEkA.jpeg)
-
 ## npm
 
 - Fix a [bug](https://github.com/npm/npm/issues), get a fashionable pair of socks! [Reference](http://blog.npmjs.org/post/129827785565/npm-weekly-30-package-scripts-for-tooling-a)
 
 ![](https://partners.npmjs.com/weekly/weekly30/socks-1100x.jpg)
+
+## Hacktoberfest
+
+- Make four pull requests in October, earn a limited edition T-shirt! [Reference](https://hacktoberfest.digitalocean.com/)
+
+![](https://cdn-images-1.medium.com/max/2000/1*9rG8J1r8l-LC0oRvRVoEkA.jpeg)
