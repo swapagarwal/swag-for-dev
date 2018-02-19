@@ -5,13 +5,13 @@ As a developer, nothing piques my interest as much as developer swag! This is an
 Feel free to send a PR! :smile:
 
 ## Contents
-###Currently Active
+### Currently Active
 - [Alexa](#alexa)
 - [Codeship](#codeship)
 - [Google Assistant](#google-assistant)
 - [npm](#npm)
 
-###Inactive
+### Inactive
 - [Hacktoberfest](#hacktoberfest)
 
 ## Alexa
