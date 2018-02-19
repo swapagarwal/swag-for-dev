@@ -8,10 +8,10 @@ Feel free to send a PR! :smile:
 
 - [Alexa](#alexa)
 - [Codeship](#codeship)
+- [devRant](#devrant)
 - [Digital Ocean](#digital-ocean)
 - [Google Assistant](#google-assistant)
 - [Hacktoberfest](#hacktoberfest)
-- [devRant](#devrant)
 - [npm](#npm)
 
 ## Alexa
@@ -25,6 +25,12 @@ Feel free to send a PR! :smile:
 - Submit 5 builds in 30 days, get t-shirts & stickers sent your way! [Reference](https://codeship.com/swag)
 
 ![](http://juliesfreebies.com/wp-content/uploads/2016/05/codeship-swag.jpg)
+
+## devRant
+
+- Get 20 ++'s on a single rant you've posted to devRant to receive 3 free high-quality devRant laptop stickers! Or post an awesome rant that gets over 500 ++'s to receive a free devRant squishy stress ball! [Reference](https://devrant.com/free-stickers)
+
+![](https://devrant.com/static/devrant/img/stickers-collection3.png)
 
 ## Digital Ocean
 
@@ -43,12 +49,6 @@ Feel free to send a PR! :smile:
 - Make four pull requests in October, earn a limited edition T-shirt! [Reference](https://hacktoberfest.digitalocean.com/)
 
 ![](https://cdn-images-1.medium.com/max/2000/1*9rG8J1r8l-LC0oRvRVoEkA.jpeg)
-
-## devRant
-
-- Get 20 ++'s on a single rant you've posted to devRant to receive 3 free high-quality devRant laptop stickers! Or post an awesome rant that gets over 500 ++'s to receive a free devRant squishy stress ball! [Reference](https://devrant.com/free-stickers)
-
-![](https://devrant.com/static/devrant/img/stickers-collection3.png)
 
 ## npm
 
