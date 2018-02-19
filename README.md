@@ -38,6 +38,10 @@ Feel free to send a PR! :smile:
 
 ![](https://partners.npmjs.com/weekly/weekly30/socks-1100x.jpg)
 
+## Inactive
+
+***
+
 ## Hacktoberfest
 
 - Make four pull requests in October, earn a limited edition T-shirt! [Reference](https://hacktoberfest.digitalocean.com/)
