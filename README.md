@@ -13,6 +13,7 @@ Feel free to send a PR! :smile:
 - [Google Assistant](#google-assistant)
 - [Hacktoberfest](#hacktoberfest)
 - [npm](#npm)
+- [Scaleway](#scaleway)
 
 ## Alexa
 
@@ -55,3 +56,9 @@ Feel free to send a PR! :smile:
 - Fix a [bug](https://github.com/npm/npm/issues), get a fashionable pair of socks! [Reference](http://blog.npmjs.org/post/129827785565/npm-weekly-30-package-scripts-for-tooling-a)
 
 ![](https://partners.npmjs.com/weekly/weekly30/socks-1100x.jpg)
+
+## Scaleway
+
+- Submit an InstantApp, get a t-shirt & hoodie! [Reference](https://www.scaleway.com/developer/)
+
+![](https://i.imgur.com/S90bIXj.jpg)
