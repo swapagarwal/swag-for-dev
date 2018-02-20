@@ -14,6 +14,7 @@ Feel free to send a PR! :smile:
 - [Digital Ocean](#digital-ocean)
 - [Google Assistant](#google-assistant)
 - [Hacktoberfest](#hacktoberfest)
+- [Hurricane Electric](#hurricane-electric)
 - [npm](#npm)
 
 ## Alexa
@@ -51,6 +52,12 @@ Feel free to send a PR! :smile:
 - Make four pull requests in October, earn a limited edition T-shirt! [Reference](https://hacktoberfest.digitalocean.com/)
 
 ![](https://cdn-images-1.medium.com/max/2000/1*9rG8J1r8l-LC0oRvRVoEkA.jpeg)
+
+## Hurricane Electric
+
+- Become an IPv6-Sage at https://ipv6.he.net/certification/ and get a free Shirt! [Reference](http://blog.he.net/2010/05/28/hurricane-electric-would-like-to-send-you-a-free-t-shirt/)
+
+![](http://blog.he.net/wp-content/uploads/2011/04/sage-300x188.jpg)
 
 ## npm
 
