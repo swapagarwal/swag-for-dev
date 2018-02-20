@@ -34,12 +34,6 @@ Feel free to send a PR! :smile:
 
 ![](https://devrant.com/static/devrant/img/stickers-collection3.png)
 
-## Digital Ocean
-
-- Completing this short survey will get you a Sammy sticker pack: [http://do.co/currents-survey](http://do.co/currents-survey)
-
-![](https://pbs.twimg.com/media/ClLKoRDWEAAvgqK.jpg)
-
 ## Google Assistant
 
 - Make an app for the Google Assistant available to users, get an exclusive Google Assistant t-shirt and a Google Home (if a certain amount of users engage with it)! [Reference](https://developers.google.com/actions/community/overview)
