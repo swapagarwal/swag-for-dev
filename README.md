@@ -11,7 +11,7 @@ Feel free to send a PR! :smile:
 - [Alexa](#alexa)
 - [Codeship](#codeship)
 - [devRant](#devrant)
-- [Digital Ocean](#digital-ocean)
+- [Digital Ocean](#digital-ocean-) ![](https://img.shields.io/badge/status-ended-red.svg)
 - [Google Assistant](#google-assistant)
 - [Hacktoberfest](#hacktoberfest)
 - [npm](#npm)
