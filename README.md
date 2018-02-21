@@ -34,7 +34,7 @@ Feel free to send a PR! :smile:
 
 ![](https://devrant.com/static/devrant/img/stickers-collection3.png)
 
-## Digital Ocean
+## Digital Ocean ![](https://img.shields.io/badge/status-ended-red.svg)
 
 - Completing this short survey will get you a Sammy sticker pack: [http://do.co/currents-survey](http://do.co/currents-survey)
 
