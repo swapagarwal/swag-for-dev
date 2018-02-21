@@ -42,7 +42,7 @@ Feel free to send a PR! :smile:
 
 ## Google Assistant
 
-- Make an app for the Google Assistant available to users, get an exclusive Google Assistant t-shirt and a Google Home (if a certain amount of users engage with it)! [Reference](https://developers.google.com/actions/community/overview)
+- Make an app for the Google Assistant available to users, get an exclusive Google Assistant t-shirt and a Google Home (if a certain number of users engage with it)! [Reference](https://developers.google.com/actions/community/overview)
 
 ![](https://i2.wp.com/radthemaker.com/wp-content/uploads/2017/11/My-Google-Assistant-T-Shirt.jpg)
 
