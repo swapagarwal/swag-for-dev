@@ -14,6 +14,7 @@ Feel free to send a PR! :smile:
 - [Digital Ocean](#digital-ocean-) ![](https://img.shields.io/badge/status-ended-red.svg)
 - [Google Assistant](#google-assistant)
 - [Hacktoberfest](#hacktoberfest)
+- [Microsoft Office](#microsoft-office)
 - [npm](#npm)
 
 ## Alexa
@@ -51,6 +52,10 @@ Feel free to send a PR! :smile:
 - Make four pull requests in October, earn a limited edition T-shirt! [Reference](https://hacktoberfest.digitalocean.com/)
 
 ![](https://cdn-images-1.medium.com/max/2000/1*9rG8J1r8l-LC0oRvRVoEkA.jpeg)
+
+## Microsoft Office
+
+- Present an overview session from the [training section](https://dev.office.com/training) at your user group and get swag for yourself and  the group! [Reference](https://dev.office.com/blogs/office-developer-swag-boxes-for-your-user-groups)
 
 ## npm
 
