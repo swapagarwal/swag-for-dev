@@ -61,5 +61,5 @@ Feel free to send a PR! :smile:
 
 # LeetCode
 
-- Solve problems to earn LeetCode Point and get t-shirt
+- Solve problems to earn LeetCode Point and get t-shirt [LeetCode](http://leetcode.com/) 
 ![](https://leetcode.com/static/images/store/leetcode_kit_promo.png)
