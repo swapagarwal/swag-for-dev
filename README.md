@@ -8,51 +8,53 @@ Feel free to send a PR! :smile:
 
 ## Contents
 
-- [Alexa](#alexa)
-- [Codeship](#codeship)
-- [devRant](#devrant)
-- [Digital Ocean](#digital-ocean-) ![](https://img.shields.io/badge/status-ended-red.svg)
-- [Google Assistant](#google-assistant)
-- [Hacktoberfest](#hacktoberfest)
-- [npm](#npm)
+| opportunities                         | status                                                                    |
+| ------------------------------------- | ------------------------------------------------------------------------- |
+| [Alexa](#alexa)                       | ![Status live](https://img.shields.io/badge/status-live-green.svg)        |
+| [Codeship](#codeship)                 | ![Status live](https://img.shields.io/badge/status-live-green.svg)        |
+| [devRant](#devrant)                   | ![Status live](https://img.shields.io/badge/status-live-green.svg)        |
+| [Digital Ocean](#digital-ocean-)      | ![Status ended](https://img.shields.io/badge/status-ended-red.svg)        |
+| [Google Assistant](#google-assistant) | ![Status live](https://img.shields.io/badge/status-live-green.svg)        |
+| [Hacktoberfest](#hacktoberfest)       | ![Status inactive](https://img.shields.io/badge/status-inactive-red.svg) |
+| [npm](#npm)                           | ![Status live](https://img.shields.io/badge/status-live-green.svg)        |
 
-## Alexa
+## Alexa ![Status live](https://img.shields.io/badge/status-live-green.svg)
 
 - Publish a skill, get a hoodie (varies by country) and an Echo Dot (if 100 unique customers use your skill in its first 30 days of publication)! [Reference](https://developer.amazon.com/alexa-skills-kit/alexa-developer-skill-promotion)
 
 ![](https://images-na.ssl-images-amazon.com/images/G/01/moile-apps/dex/alexa/Page-hoodie_feb-2017._CB534995161_.png)
 
-## Codeship
+## Codeship ![Status live](https://img.shields.io/badge/status-live-green.svg)
 
 - Submit 5 builds in 30 days, get t-shirts & stickers sent your way! [Reference](https://codeship.com/swag)
 
 ![](http://juliesfreebies.com/wp-content/uploads/2016/05/codeship-swag.jpg)
 
-## devRant
+## devRant ![Status live](https://img.shields.io/badge/status-live-green.svg)
 
 - Get 20 ++'s on a single rant you've posted to devRant to receive 3 free high-quality devRant laptop stickers! Or post an awesome rant that gets over 500 ++'s to receive a free devRant squishy stress ball! [Reference](https://devrant.com/free-stickers)
 
 ![](https://devrant.com/static/devrant/img/stickers-collection3.png)
 
-## Digital Ocean ![](https://img.shields.io/badge/status-ended-red.svg)
+## Digital Ocean ![Status Ended](https://img.shields.io/badge/status-ended-red.svg)
 
 - Completing this short survey will get you a Sammy sticker pack: [http://do.co/currents-survey](http://do.co/currents-survey)
 
 ![](https://pbs.twimg.com/media/ClLKoRDWEAAvgqK.jpg)
 
-## Google Assistant
+## Google Assistant ![Status live](https://img.shields.io/badge/status-live-green.svg)
 
 - Make an app for the Google Assistant available to users, get an exclusive Google Assistant t-shirt and a Google Home (if a certain number of users engage with it)! [Reference](https://developers.google.com/actions/community/overview)
 
 ![](https://i2.wp.com/radthemaker.com/wp-content/uploads/2017/11/My-Google-Assistant-T-Shirt.jpg)
 
-## Hacktoberfest
+## Hacktoberfest ![Status inactive](https://img.shields.io/badge/status-inactive-red.svg)
 
 - Make four pull requests in October, earn a limited edition T-shirt! [Reference](https://hacktoberfest.digitalocean.com/)
 
 ![](https://cdn-images-1.medium.com/max/2000/1*9rG8J1r8l-LC0oRvRVoEkA.jpeg)
 
-## npm
+## npm ![Status live](https://img.shields.io/badge/status-live-green.svg)
 
 - Fix a [bug](https://github.com/npm/npm/issues), get a fashionable pair of socks! [Reference](http://blog.npmjs.org/post/129827785565/npm-weekly-30-package-scripts-for-tooling-a)
 
