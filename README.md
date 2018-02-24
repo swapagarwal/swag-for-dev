@@ -14,6 +14,7 @@ Feel free to send a PR! :smile:
 - [Digital Ocean](#digital-ocean-) ![](https://img.shields.io/badge/status-ended-red.svg)
 - [Google Assistant](#google-assistant)
 - [Hacktoberfest](#hacktoberfest)
+- [Mullvad](#mullvad)
 - [npm](#npm)
 
 ## Alexa
@@ -52,14 +53,14 @@ Feel free to send a PR! :smile:
 
 ![](https://cdn-images-1.medium.com/max/2000/1*9rG8J1r8l-LC0oRvRVoEkA.jpeg)
 
-## npm
-
-- Fix a [bug](https://github.com/npm/npm/issues), get a fashionable pair of socks! [Reference](http://blog.npmjs.org/post/129827785565/npm-weekly-30-package-scripts-for-tooling-a)
-
-![](https://partners.npmjs.com/weekly/weekly30/socks-1100x.jpg)
-
 ## Mullvad
 
 - Send an email to [support@mullvad.net](mailto:support@mullvad.net) with "STICKERS" in the subject line. Include a postal address in the email and we'll send an assortment of stickers your way. [Reference](https://www.mullvad.net/en/guides/mullvad-stickers-and-merchandise/)
 
 ![](https://www.mullvad.net/media/uploads/2017/10/20/mullvad-stickers.jpg)
+
+## npm
+
+- Fix a [bug](https://github.com/npm/npm/issues), get a fashionable pair of socks! [Reference](http://blog.npmjs.org/post/129827785565/npm-weekly-30-package-scripts-for-tooling-a)
+
+![](https://partners.npmjs.com/weekly/weekly30/socks-1100x.jpg)
