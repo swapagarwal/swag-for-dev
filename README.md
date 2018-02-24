@@ -9,19 +9,25 @@ Feel free to send a PR! :smile:
 ## Contents
 
 - [Alexa](#alexa)
+- [Branch.io](#branchio)
 - [Codeship](#codeship)
 - [devRant](#devrant)
 - [Digital Ocean](#digital-ocean)
 - [Google Assistant](#google-assistant)
 - [Hacktoberfest](#hacktoberfest)
 - [npm](#npm)
-- [Branch.io](#branchio)
 
 ## Alexa
 
 - Publish a skill, get a hoodie (varies by country) and an Echo Dot (if 100 unique customers use your skill in its first 30 days of publication)! [Reference](https://developer.amazon.com/alexa-skills-kit/alexa-developer-skill-promotion)
 
 ![](https://images-na.ssl-images-amazon.com/images/G/01/moile-apps/dex/alexa/Page-hoodie_feb-2017._CB534995161_.png)
+
+## Branch.io
+
+- Once you have integrated the Branch SDK into your mobile application, share a photo, video, or testimony of your app's new deep linking experience and tag @branchmetrics! Once you submit your social post link and the email you used to sign up for Branch in the form, Branch will verify that you’ve integrated and send you a free hoodie! [Reference](https://branch.io/hoodie-challenge/)
+
+![](https://branch.io/img/hoodie-giveaway/hoodie-image-small.jpg)
 
 ## Codeship
 
@@ -58,9 +64,3 @@ Feel free to send a PR! :smile:
 - Fix a [bug](https://github.com/npm/npm/issues), get a fashionable pair of socks! [Reference](http://blog.npmjs.org/post/129827785565/npm-weekly-30-package-scripts-for-tooling-a)
 
 ![](https://partners.npmjs.com/weekly/weekly30/socks-1100x.jpg)
-
-## Branch.io
-
-- Once you have integrated the Branch SDK into your mobile application, share a photo, video, or testimony of your app's new deep linking experience and tag @branchmetrics! Once you submit your social post link and the email you used to sign up for Branch in the form, Branch will verify that you’ve integrated and send you a free hoodie! [Reference](https://branch.io/hoodie-challenge/)
-
-![](https://branch.io/img/hoodie-giveaway/hoodie-image-small.jpg)
