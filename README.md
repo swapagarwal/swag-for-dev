@@ -57,3 +57,10 @@ Feel free to send a PR! :smile:
 - Fix a [bug](https://github.com/npm/npm/issues), get a fashionable pair of socks! [Reference](http://blog.npmjs.org/post/129827785565/npm-weekly-30-package-scripts-for-tooling-a)
 
 ![](https://partners.npmjs.com/weekly/weekly30/socks-1100x.jpg)
+
+## Mattermost
+
+- Contribute to [mattermost](https://github.com/mattermost) and get a personalized, limited edition Mattermost Mug! [Reference](https://forum.mattermost.org/t/limited-edition-mattermost-mugs/143)
+
+![](https://discourse-cdn-sjc2.com/standard16/uploads/mattermost/original/1X/26d9903039152339f8090d39b31349c285538299.png)
+![](https://discourse-cdn-sjc2.com/standard16/uploads/mattermost/original/1X/a46a875996882a3d55497276cad0518126a71dc0.png)
