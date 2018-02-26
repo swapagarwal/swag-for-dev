@@ -15,7 +15,7 @@ Feel free to send a PR! :smile:
 - [Google Assistant](#google-assistant)
 - [Hacktoberfest](#hacktoberfest)
 - [npm](#npm)
-- [WhatIsMyBrowser.com](#whatismybrowser)
+- [WhatIsMyBrowser.com](#whatismybrowser\.com)
 
 ## Alexa
 
