@@ -4,10 +4,14 @@ As a developer, nothing piques my interest as much as developer swag! This is an
 
 Feel free to send a PR! :smile:
 
+> Featured on [Changelog Nightly](http://nightly.changelog.com/2018/02/18/), [Hacker News](https://news.ycombinator.com/item?id=16407484), [reddit](https://www.reddit.com/r/coolgithubprojects/comments/7ygd5n/as_a_developer_nothing_piques_my_interest_as_much/), [Product Hunt](https://www.producthunt.com/posts/swag-for-dev) 🦄
+
 ## Contents
 ### Currently Active
 - [Alexa](#alexa)
 - [Codeship](#codeship)
+- [devRant](#devrant)
+- [Digital Ocean](#digital-ocean-) ![](https://img.shields.io/badge/status-ended-red.svg)
 - [Google Assistant](#google-assistant)
 - [npm](#npm)
 
@@ -26,9 +30,21 @@ Feel free to send a PR! :smile:
 
 ![](http://juliesfreebies.com/wp-content/uploads/2016/05/codeship-swag.jpg)
 
+## devRant
+
+- Get 20 ++'s on a single rant you've posted to devRant to receive 3 free high-quality devRant laptop stickers! Or post an awesome rant that gets over 500 ++'s to receive a free devRant squishy stress ball! [Reference](https://devrant.com/free-stickers)
+
+![](https://devrant.com/static/devrant/img/stickers-collection3.png)
+
+## Digital Ocean ![](https://img.shields.io/badge/status-ended-red.svg)
+
+- Completing this short survey will get you a Sammy sticker pack: [http://do.co/currents-survey](http://do.co/currents-survey)
+
+![](https://pbs.twimg.com/media/ClLKoRDWEAAvgqK.jpg)
+
 ## Google Assistant
 
-- Make an app for the Google Assistant available to users, get an exclusive Google Assistant t-shirt and a Google Home (if a certain amount of users engage with it)! [Reference](https://developers.google.com/actions/community/overview)
+- Make an app for the Google Assistant available to users, get an exclusive Google Assistant t-shirt and a Google Home (if a certain number of users engage with it)! [Reference](https://developers.google.com/actions/community/overview)
 
 ![](https://i2.wp.com/radthemaker.com/wp-content/uploads/2017/11/My-Google-Assistant-T-Shirt.jpg)
 
