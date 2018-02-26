@@ -57,3 +57,9 @@ Feel free to send a PR! :smile:
 - Fix a [bug](https://github.com/npm/npm/issues), get a fashionable pair of socks! [Reference](http://blog.npmjs.org/post/129827785565/npm-weekly-30-package-scripts-for-tooling-a)
 
 ![](https://partners.npmjs.com/weekly/weekly30/socks-1100x.jpg)
+
+## WhatIsMyBrowser.com
+
+- Send an api request, and get some vinyl laptop stickers! For free accounts, send an API call then message them using your new account. [Reference](https://developers.whatismybrowser.com/api/swag/)
+
+![](https://imgur.com/3U3tkns.png)
