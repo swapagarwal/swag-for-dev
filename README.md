@@ -63,4 +63,4 @@ Feel free to send a PR! :smile:
 
 - Simply create an account, integrate Raygun Pulse or Crash Reporting with your website or app, send data and we'll post you out a free Raygun Kitset. Easy. [Reference](https://raygun.com/swag/kitset)
 
-<img src="https://scontent-lht6-1.cdninstagram.com/vp/088a01f8c570b091734ac594489b6cf1/5B19AEDC/t51.2885-15/e35/10544295_219842845030468_1850581895_n.jpg" width="250"></img>
+![](https://scontent-lht6-1.cdninstagram.com/vp/088a01f8c570b091734ac594489b6cf1/5B19AEDC/t51.2885-15/e35/10544295_219842845030468_1850581895_n.jpg&s=50)
