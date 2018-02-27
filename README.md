@@ -15,6 +15,7 @@ Feel free to send a PR! :smile:
 - [Google Assistant](#google-assistant)
 - [Hacktoberfest](#hacktoberfest)
 - [npm](#npm)
+- [Raygun](#raygun)
 
 ## Alexa
 
@@ -57,3 +58,9 @@ Feel free to send a PR! :smile:
 - Fix a [bug](https://github.com/npm/npm/issues), get a fashionable pair of socks! [Reference](http://blog.npmjs.org/post/129827785565/npm-weekly-30-package-scripts-for-tooling-a)
 
 ![](https://partners.npmjs.com/weekly/weekly30/socks-1100x.jpg)
+
+## Raygun
+
+- Simply create an account, integrate Raygun Pulse or Crash Reporting with your website or app, send data and we'll post you out a free Raygun Kitset. Easy. [Reference](https://raygun.com/swag/kitset)
+
+<img src="https://user-images.githubusercontent.com/8963519/36729244-74b7a0a4-1bbb-11e8-9b07-464d55ed3819.jpg" width="250"></img>
