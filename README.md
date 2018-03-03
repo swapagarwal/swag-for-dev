@@ -15,6 +15,7 @@ Feel free to send a PR! :smile:
 - [Google Assistant](#google-assistant)
 - [Hacktoberfest](#hacktoberfest)
 - [npm](#npm)
+- [LeetCode](#leetcode)
 
 ## Alexa
 
@@ -52,8 +53,15 @@ Feel free to send a PR! :smile:
 
 ![](https://cdn-images-1.medium.com/max/2000/1*9rG8J1r8l-LC0oRvRVoEkA.jpeg)
 
+
+# LeetCode
+
+- Solve problems to earn LeetCode Points and get a t-shirt [LeetCode](https://leetcode.com/) 
+![](https://leetcode.com/static/images/store/leetcode_kit_promo.png)
+
 ## npm
 
 - Fix a [bug](https://github.com/npm/npm/issues), get a fashionable pair of socks! [Reference](http://blog.npmjs.org/post/129827785565/npm-weekly-30-package-scripts-for-tooling-a)
 
 ![](https://partners.npmjs.com/weekly/weekly30/socks-1100x.jpg)
+
