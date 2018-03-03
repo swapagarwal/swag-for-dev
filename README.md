@@ -14,6 +14,7 @@ Feel free to send a PR! :smile:
 - [Digital Ocean](#digital-ocean-) ![](https://img.shields.io/badge/status-ended-red.svg)
 - [Google Assistant](#google-assistant)
 - [Hacktoberfest](#hacktoberfest)
+- [SendGrid](#sendgrid) ![](https://img.shields.io/badge/status-ended-red.svg)
 - [npm](#npm)
 
 ## Alexa
@@ -51,6 +52,13 @@ Feel free to send a PR! :smile:
 - Make four pull requests in October, earn a limited edition T-shirt! [Reference](https://hacktoberfest.digitalocean.com/)
 
 ![](https://cdn-images-1.medium.com/max/2000/1*9rG8J1r8l-LC0oRvRVoEkA.jpeg)
+
+## SendGrid ![](https://img.shields.io/badge/status-ended-red.svg)
+
+- An independently run Hacktoberfest event in which you earn a T-shirt and a pin for contributing to any of SendGrid's repositories! [Reference](https://sendgrid.com/blog/announcing-hacktoberfest-2017/)
+
+![](https://sendgrid.com/wp-content/uploads/2017/10/Picture1-440x308.png)
+![](https://sendgrid.com/wp-content/uploads/2017/09/Hacktoberfest-480x425-1-352x312.png)
 
 ## npm
 
