@@ -15,6 +15,7 @@ Feel free to send a PR! :smile:
 - [Google Assistant](#google-assistant)
 - [Hacktoberfest](#hacktoberfest)
 - [npm](#npm)
+- [Tabspace](#tabspace)
 
 ## Alexa
 
@@ -57,3 +58,9 @@ Feel free to send a PR! :smile:
 - Fix a [bug](https://github.com/npm/npm/issues), get a fashionable pair of socks! [Reference](http://blog.npmjs.org/post/129827785565/npm-weekly-30-package-scripts-for-tooling-a)
 
 ![](https://partners.npmjs.com/weekly/weekly30/socks-1100x.jpg)
+
+## Tabspace
+
+- [Review](https://www.tabspace.io) your engineering team, get a pack of stickers! [Reference](https://www.tabspace.io/stickerpacks)
+
+![](https://www.tabspace.io/img/swag.png)
