@@ -2,7 +2,7 @@
 
 As a developer, nothing piques my interest as much as developer swag! This is an attempt to list down the current swag opportunities for developers.
 
-Feel free to send a PR! :smile:
+Feel free to send a PR! 😄
 
 > Featured on [Changelog Nightly](http://nightly.changelog.com/2018/02/18/), [Hacker News](https://news.ycombinator.com/item?id=16407484), [reddit](https://www.reddit.com/r/coolgithubprojects/comments/7ygd5n/as_a_developer_nothing_piques_my_interest_as_much/), [Product Hunt](https://www.producthunt.com/posts/swag-for-dev) 🦄
 
