@@ -55,7 +55,7 @@ Feel free to send a PR! :smile:
 
 ## Mullvad
 
-- Send an email to [support@mullvad.net](mailto:support@mullvad.net) with "STICKERS" in the subject line. Include a postal address in the email and we'll send an assortment of stickers your way. [Reference](https://www.mullvad.net/en/guides/mullvad-stickers-and-merchandise/)
+- Send an email to [support@mullvad.net](mailto:support@mullvad.net) with "STICKERS" in the subject line. Include a postal address in the email and get an assortment of stickers sent your way. [Reference](https://www.mullvad.net/en/guides/mullvad-stickers-and-merchandise/)
 
 ![](https://www.mullvad.net/media/uploads/2017/10/20/mullvad-stickers.jpg)
 
