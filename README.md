@@ -14,6 +14,7 @@ Feel free to send a PR! 😄
 - [Digital Ocean](#digital-ocean-) ![](https://img.shields.io/badge/status-ended-red.svg)
 - [Google Assistant](#google-assistant)
 - [Hacktoberfest](#hacktoberfest)
+- [Mullvad](#mullvad)
 - [npm](#npm)
 
 ## Alexa
@@ -51,6 +52,12 @@ Feel free to send a PR! 😄
 - Make four pull requests in October, earn a limited edition T-shirt! [Reference](https://hacktoberfest.digitalocean.com/)
 
 ![](https://cdn-images-1.medium.com/max/2000/1*9rG8J1r8l-LC0oRvRVoEkA.jpeg)
+
+## Mullvad
+
+- Send an email to [support@mullvad.net](mailto:support@mullvad.net) with "STICKERS" in the subject line. Include a postal address in the email and get an assortment of stickers sent your way. [Reference](https://www.mullvad.net/en/guides/mullvad-stickers-and-merchandise/)
+
+![](https://www.mullvad.net/media/uploads/2017/10/20/mullvad-stickers.jpg)
 
 ## npm
 
