@@ -19,7 +19,7 @@ Feel free to send a PR! 😄
 
 ## Alexa
 
-- Publish a skill, get a hoodie (varies by country) and an Echo Dot (if 100 unique customers use your skill in its first 30 days of publication)! [Reference](https://developer.amazon.com/alexa-skills-kit/alexa-developer-skill-promotion)
+- Publish a skill, get a hoodie (varies by country) and an Echo Spot (if 1,000 unique customers use your skill in its first 30 days of publication)! [Reference](https://developer.amazon.com/alexa-skills-kit/alexa-developer-skill-promotion)
 
 ![](https://images-na.ssl-images-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/ASM0761-Dev-LP-Goodiepage-UK-March._CB501585903_.png)
 
