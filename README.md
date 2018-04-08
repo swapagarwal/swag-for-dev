@@ -16,6 +16,7 @@ Feel free to send a PR! 😄
 - [Hacktoberfest](#hacktoberfest)
 - [Mullvad](#mullvad)
 - [npm](#npm)
+- [Google Code In](#google-code-in)
 
 ## Alexa
 
@@ -64,3 +65,10 @@ Feel free to send a PR! 😄
 - Fix a [bug](https://github.com/npm/npm/issues), get a fashionable pair of socks! [Reference](http://blog.npmjs.org/post/129827785565/npm-weekly-30-package-scripts-for-tooling-a)
 
 ![](https://partners.npmjs.com/weekly/weekly30/socks-1100x.jpg)
+
+## Google Code In
+
+- Pre-university students ages 13 to 17 are invited to take part in Google Code-in: Our global, online contest introducing teenagers to the world of open source development. With a wide variety of bite-sized tasks, it’s easy for beginners to jump in and get started no matter what skills they have.
+
+- Mentors from our participating organizations lend a helping hand as participants learn what it’s like to work on an open source project. Participants get to work on real software and win prizes from t-shirts to a trip to Google HQ! [Reference](https://codein.withgoogle.com/)
+
