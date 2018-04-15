@@ -64,3 +64,9 @@ Feel free to send a PR! 😄
 - Fix a [bug](https://github.com/npm/npm/issues), get a fashionable pair of socks! [Reference](http://blog.npmjs.org/post/129827785565/npm-weekly-30-package-scripts-for-tooling-a)
 
 ![](https://partners.npmjs.com/weekly/weekly30/socks-1100x.jpg)
+
+## Elasticsearch
+
+- Finish a 14-day Elastic Cloud (hosted Elasticsearch trial) then answer a survey to get a t-shirt. 
+
+![](https://cdn.shopify.com/s/files/1/1527/7669/products/1ELASTIC.png?v=1517936204)
