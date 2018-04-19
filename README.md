@@ -73,7 +73,7 @@ Feel free to send a PR! 😄
 
 ![](https://www.tabspace.io/img/swag.png)
 
-##Setapp
+## Setapp
 
 - Complete a 10-minute [survey](https://www.surveymonkey.com/r/R2ZSKMF) for Mac developers and get exclusive Setapp T-Shirt and a pack of Setapp stickers. We’ll also be entering your details in a draw for a chance to win a brand new MacBook Pro.
 
