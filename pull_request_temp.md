@@ -1,4 +1,4 @@
-## Checklist before creating a new pull request!
+## Check me before creating a new pull request!
 
 * [ ] Do they ship swag worldwide?
 
