@@ -1,7 +1,15 @@
-## Issue template
+- [ ] I've checked that there isn't a duplicate issue.
 
-* [ ] Make sure that there isn't a duplicate pull request pending.
+Is it regarding the current promotions or something new?  
+Uncomment the corresponding section below.
 
-* [ ] Double check that the offer/promotion is still available to the public.
+<!--
+Current
+Please describe your concern here: 
+-->
 
-* [ ] Confirm that the promotion is legit.
+<!--
+New
+- [ ] I've verified that offer / promotion is still available to the public.
+- [ ] I've confirmed that the promotion is legit.
+-->
