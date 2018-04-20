@@ -1,16 +1,16 @@
-## Check me before creating a new pull request!
+- [ ] I've checked that there isn't a duplicate pull request.
 
-* [ ] Do they ship swag worldwide?
+Is it regarding a new swag proposal or something else?  
+Uncomment the corresponding section below.
 
-* [ ] Have you recived any swag from the this?
+<!--
+New Swag Proposal
+Q. Have you received swag from this?
+Q. How long did it take?
+Q. Does it ship worldwide?
+-->
 
-* [ ] How long did it take to receive swag from this?
-
-* [ ] What do they ask for in return?
-
-* [ ] Do they offer a link to the promotion or swag?
-
-* [ ] Is the offer still active?
-
-* [ ] When does it end?
-
+<!--
+Something else
+Please describe your changes here: 
+-->
