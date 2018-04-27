@@ -71,3 +71,10 @@ Feel free to send a PR! 😄
 - [Review](https://www.tabspace.io) your engineering team, get a pack of stickers! [Reference](https://www.tabspace.io/stickerpacks)
 
 ![](https://www.tabspace.io/img/swag.png)
+
+
+## Netlify
+
+- Complete this [survey](https://swag.netlify.com/docs/) about using netlify for documentation and get stickers.
+
+![](https://swag.netlify.com/images/laptop-sticker.jpg)
