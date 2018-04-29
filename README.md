@@ -21,6 +21,7 @@ Sign up at https://upscri.be/67d2fa to get early access to updates! :100:
 - [Mullvad](#mullvad)
 - [npm](#npm)
 - [Tabspace](#tabspace)
+- [Setapp](#setapp)
 
 ## Alexa
 
@@ -75,3 +76,9 @@ Sign up at https://upscri.be/67d2fa to get early access to updates! :100:
 - [Review](https://www.tabspace.io) your engineering team, get a pack of stickers! [Reference](https://www.tabspace.io/stickerpacks)
 
 ![](https://www.tabspace.io/img/swag.png)
+
+## Setapp
+
+- Complete a 10-minute [survey](https://www.surveymonkey.com/r/R2ZSKMF) for Mac developers and get exclusive Setapp T-Shirt and a pack of Setapp stickers. We’ll also be entering your details in a draw for a chance to win a brand new MacBook Pro.
+
+![](https://resources.setapp.com/Setapp-Swag.jpg)
