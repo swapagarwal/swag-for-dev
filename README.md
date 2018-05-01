@@ -75,3 +75,9 @@ Sign up at https://upscri.be/67d2fa to get early access to updates! :100:
 - [Review](https://www.tabspace.io) your engineering team, get a pack of stickers! [Reference](https://www.tabspace.io/stickerpacks)
 
 ![](https://www.tabspace.io/img/swag.png)
+
+## License
+
+[![CC0](http://mirrors.creativecommons.org/presskit/buttons/88x31/svg/cc-zero.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
+
+To the extent possible under law, [Swapnil Agarwal](http://swapnil.net) has waived all copyright and related or neighboring rights to this work.
