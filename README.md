@@ -8,7 +8,7 @@ Feel free to send a PR! 😄
 
 <a href="https://www.buymeacoffee.com/swap" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: auto !important;width: auto !important;" ></a>
 
-Sign up at https://upscri.be/67d2fa to get early access to updates! :100:
+Sign up at [https://upscri.be/67d2fa](https://upscri.be/67d2fa) to get early access to updates! 💯
 
 ## Contents
 
