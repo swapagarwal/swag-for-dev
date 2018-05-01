@@ -1,4 +1,4 @@
-# swag-for-dev
+# swag-for-dev [![Awesome](https://awesome.re/badge-flat.svg)](https://awesome.re)
 
 As a developer, nothing piques my interest as much as developer swag! This is an attempt to list down the current swag opportunities for developers.
 
