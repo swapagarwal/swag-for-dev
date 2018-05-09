@@ -1,4 +1,4 @@
-# swag-for-dev [![Awesome](https://awesome.re/badge-flat.svg)](https://awesome.re)
+# swag-for-dev [![Awesome](https://awesome.re/badge-flat.svg)](https://awesome.re) [![Codeship Status for swapagarwal/swag-for-dev](https://app.codeship.com/projects/2bb2e180-338b-0136-6fb9-0e05c0ab05bf/status?branch=master)](https://app.codeship.com/projects/288957)
 
 As a developer, nothing piques my interest as much as developer swag! This is an attempt to list down the current swag opportunities for developers.
 
