@@ -17,6 +17,7 @@ Sign up at [https://upscri.be/67d2fa](https://upscri.be/67d2fa) to get early acc
 - [devRant](#devrant)
 - [Google Assistant](#google-assistant)
 - [Hacktoberfest](#hacktoberfest)
+- [Microsoft](#microsoft)
 - [Mullvad](#mullvad)
 - [npm](#npm)
 - [Tabspace](#tabspace)
@@ -51,7 +52,7 @@ Sign up at [https://upscri.be/67d2fa](https://upscri.be/67d2fa) to get early acc
 
 ![](https://cdn-images-1.medium.com/max/2000/1*9rG8J1r8l-LC0oRvRVoEkA.jpeg)
 
-## Microsoft Doc-A-Thon (Canada)
+## Microsoft (Canada)
 
 - Sign up, get a selfie prop, sticker and a paperback of the illustrated children’s guide to Kubernetes (while supplies last). [Reference](https://www.microsoft.com/en-ca/web/doc-a-thon/Default.aspx)
 
