@@ -51,6 +51,12 @@ Sign up at [https://upscri.be/67d2fa](https://upscri.be/67d2fa) to get early acc
 
 ![](https://cdn-images-1.medium.com/max/2000/1*9rG8J1r8l-LC0oRvRVoEkA.jpeg)
 
+## Microsoft Doc-A-Thon (Canada)
+
+- Sign up, get a selfie prop, sticker and a paperback of the illustrated children’s guide to Kubernetes. [Reference](https://www.microsoft.com/en-ca/web/doc-a-thon/Default.aspx)
+
+![](https://www.microsoft.com/en-ca/web/doc-a-thon/images/hero-banner.jpg)
+
 ## Mullvad
 
 - Send an email to [support@mullvad.net](mailto:support@mullvad.net) with "STICKERS" in the subject line. Include a postal address in the email and get an assortment of stickers sent your way. [Reference](https://www.mullvad.net/en/guides/mullvad-stickers-and-merchandise/)
