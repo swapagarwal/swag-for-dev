@@ -17,7 +17,7 @@ Sign up at [https://upscri.be/67d2fa](https://upscri.be/67d2fa) to get early acc
 - [devRant](#devrant)
 - [Google Assistant](#google-assistant)
 - [Hacktoberfest](#hacktoberfest)
-- [Microsoft](#microsoft)
+- [Microsoft](#microsoft-canada)
 - [Mullvad](#mullvad)
 - [npm](#npm)
 - [Tabspace](#tabspace)
