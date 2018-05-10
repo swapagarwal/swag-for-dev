@@ -53,7 +53,7 @@ Sign up at [https://upscri.be/67d2fa](https://upscri.be/67d2fa) to get early acc
 
 ## Microsoft Doc-A-Thon (Canada)
 
-- Sign up, get a selfie prop, sticker and a paperback of the illustrated children’s guide to Kubernetes. [Reference](https://www.microsoft.com/en-ca/web/doc-a-thon/Default.aspx)
+- Sign up, get a selfie prop, sticker and a paperback of the illustrated children’s guide to Kubernetes (while supplies last). [Reference](https://www.microsoft.com/en-ca/web/doc-a-thon/Default.aspx)
 
 ![](https://www.microsoft.com/en-ca/web/doc-a-thon/images/hero-banner.jpg)
 
