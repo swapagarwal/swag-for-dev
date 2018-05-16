@@ -1,4 +1,4 @@
-# swag-for-dev
+# swag-for-dev [![Awesome](https://awesome.re/badge-flat.svg)](https://awesome.re) [![Codeship Status for swapagarwal/swag-for-dev](https://app.codeship.com/projects/2bb2e180-338b-0136-6fb9-0e05c0ab05bf/status?branch=master)](https://app.codeship.com/projects/288957)
 
 As a developer, nothing piques my interest as much as developer swag! This is an attempt to list down the current swag opportunities for developers.
 
@@ -6,16 +6,21 @@ Feel free to send a PR! 😄
 
 > Featured on [Changelog Nightly](http://nightly.changelog.com/2018/02/18/), [Hacker News](https://news.ycombinator.com/item?id=16407484), [reddit](https://www.reddit.com/r/coolgithubprojects/comments/7ygd5n/as_a_developer_nothing_piques_my_interest_as_much/), [Product Hunt](https://www.producthunt.com/posts/swag-for-dev) 🦄
 
+<a href="https://www.buymeacoffee.com/swap" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: auto !important;width: auto !important;" ></a>
+
+Sign up at [https://upscri.be/67d2fa](https://upscri.be/67d2fa) to get early access to updates! 💯
+
 ## Contents
 
 - [Alexa](#alexa)
 - [Codeship](#codeship)
 - [devRant](#devrant)
-- [Digital Ocean](#digital-ocean-) ![](https://img.shields.io/badge/status-ended-red.svg)
 - [Google Assistant](#google-assistant)
 - [Hacktoberfest](#hacktoberfest)
 - [Mullvad](#mullvad)
 - [npm](#npm)
+- [elastic](#elasticsearch)
+- [Tabspace](#tabspace)
 
 ## Alexa
 
@@ -34,12 +39,6 @@ Feel free to send a PR! 😄
 - Get 20 ++'s on a single rant you've posted to devRant to receive 3 free high-quality devRant laptop stickers! Or post an awesome rant that gets over 500 ++'s to receive a free devRant squishy stress ball! [Reference](https://devrant.com/free-stickers)
 
 ![](https://devrant.com/static/devrant/img/stickers-collection3.png)
-
-## Digital Ocean ![](https://img.shields.io/badge/status-ended-red.svg)
-
-- Completing this short survey will get you a Sammy sticker pack: [http://do.co/currents-survey](http://do.co/currents-survey)
-
-![](https://pbs.twimg.com/media/ClLKoRDWEAAvgqK.jpg)
 
 ## Google Assistant
 
@@ -70,3 +69,15 @@ Feel free to send a PR! 😄
 - Finish a 14-day Elastic Cloud (hosted Elasticsearch trial) then answer a survey to get a t-shirt. 
 
 ![](https://cdn.shopify.com/s/files/1/1527/7669/products/1ELASTIC.png?v=1517936204)
+
+## Tabspace
+
+- [Review](https://www.tabspace.io) your engineering team, get a pack of stickers! [Reference](https://www.tabspace.io/stickerpacks)
+
+![](https://www.tabspace.io/img/swag.png)
+
+## License
+
+[![CC0](http://mirrors.creativecommons.org/presskit/buttons/88x31/svg/cc-zero.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
+
+To the extent possible under law, [Swapnil Agarwal](http://swapnil.net) has waived all copyright and related or neighboring rights to this work.
