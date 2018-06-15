@@ -1,4 +1,4 @@
-# swag-for-dev
+# swag-for-dev [![Awesome](https://awesome.re/badge-flat.svg)](https://awesome.re) [![Codeship Status for swapagarwal/swag-for-dev](https://app.codeship.com/projects/2bb2e180-338b-0136-6fb9-0e05c0ab05bf/status?branch=master)](https://app.codeship.com/projects/288957)
 
 As a developer, nothing piques my interest as much as developer swag! This is an attempt to list down the current swag opportunities for developers.
 
@@ -6,15 +6,19 @@ Feel free to send a PR! 😄
 
 > Featured on [Changelog Nightly](http://nightly.changelog.com/2018/02/18/), [Hacker News](https://news.ycombinator.com/item?id=16407484), [reddit](https://www.reddit.com/r/coolgithubprojects/comments/7ygd5n/as_a_developer_nothing_piques_my_interest_as_much/), [Product Hunt](https://www.producthunt.com/posts/swag-for-dev) 🦄
 
+<a href="https://www.buymeacoffee.com/swap" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: auto !important;width: auto !important;" ></a>
+
+Sign up at [https://upscri.be/67d2fa](https://upscri.be/67d2fa) to get early access to updates! 💯
+
 ## Contents
 
 - [Alexa](#alexa)
 - [Codeship](#codeship)
 - [devRant](#devrant)
-- [Digital Ocean](#digital-ocean-) ![](https://img.shields.io/badge/status-ended-red.svg)
 - [Google Assistant](#google-assistant)
 - [Hacktoberfest](#hacktoberfest)
 - [Mullvad](#mullvad)
+- [Netlify](#netlify)
 - [npm](#npm)
 - [Tabspace](#tabspace)
 
@@ -36,12 +40,6 @@ Feel free to send a PR! 😄
 
 ![](https://devrant.com/static/devrant/img/stickers-collection3.png)
 
-## Digital Ocean ![](https://img.shields.io/badge/status-ended-red.svg)
-
-- Completing this short survey will get you a Sammy sticker pack: [http://do.co/currents-survey](http://do.co/currents-survey)
-
-![](https://pbs.twimg.com/media/ClLKoRDWEAAvgqK.jpg)
-
 ## Google Assistant
 
 - Make an app for the Google Assistant available to users, get an exclusive Google Assistant t-shirt and a Google Home (if a certain number of users engage with it)! [Reference](https://developers.google.com/actions/community/overview)
@@ -60,6 +58,12 @@ Feel free to send a PR! 😄
 
 ![](https://www.mullvad.net/media/uploads/2017/10/20/mullvad-stickers.jpg)
 
+## Netlify
+
+- Complete this [survey](https://swag.netlify.com/docs/) about using netlify for documentation and get stickers.
+
+![](https://swag.netlify.com/images/laptop-sticker.jpg)
+
 ## npm
 
 - Fix a [bug](https://github.com/npm/npm/issues), get a fashionable pair of socks! [Reference](http://blog.npmjs.org/post/129827785565/npm-weekly-30-package-scripts-for-tooling-a)
@@ -72,9 +76,8 @@ Feel free to send a PR! 😄
 
 ![](https://www.tabspace.io/img/swag.png)
 
+## License
 
-## Netlify
+[![CC0](http://mirrors.creativecommons.org/presskit/buttons/88x31/svg/cc-zero.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
 
-- Complete this [survey](https://swag.netlify.com/docs/) about using netlify for documentation and get stickers.
-
-![](https://swag.netlify.com/images/laptop-sticker.jpg)
+To the extent possible under law, [Swapnil Agarwal](http://swapnil.net) has waived all copyright and related or neighboring rights to this work.
