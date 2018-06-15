@@ -18,6 +18,7 @@ Sign up at [https://upscri.be/67d2fa](https://upscri.be/67d2fa) to get early acc
 - [Google Assistant](#google-assistant)
 - [Hacktoberfest](#hacktoberfest)
 - [Mullvad](#mullvad)
+- [Netlify](#netlify)
 - [npm](#npm)
 - [Tabspace](#tabspace)
 
@@ -56,6 +57,12 @@ Sign up at [https://upscri.be/67d2fa](https://upscri.be/67d2fa) to get early acc
 - Send an email to [support@mullvad.net](mailto:support@mullvad.net) with "STICKERS" in the subject line. Include a postal address in the email and get an assortment of stickers sent your way. [Reference](https://www.mullvad.net/en/guides/mullvad-stickers-and-merchandise/)
 
 ![](https://www.mullvad.net/media/uploads/2017/10/20/mullvad-stickers.jpg)
+
+## Netlify
+
+- Complete this [survey](https://swag.netlify.com/docs/) about using netlify for documentation and get stickers.
+
+![](https://swag.netlify.com/images/laptop-sticker.jpg)
 
 ## npm
 
