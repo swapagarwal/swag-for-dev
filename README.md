@@ -36,7 +36,7 @@ Sign up at [https://upscri.be/67d2fa](https://upscri.be/67d2fa) to get early acc
 
 ## devRant
 
-- Get 20 ++'s on a single rant you've posted to devRant to receive 3 free high-quality devRant laptop stickers! Or post an awesome rant that gets over 500 ++'s to receive a free devRant squishy stress ball! [Reference](https://devrant.com/free-stickers)
+- Get 30 ++'s on a single rant you've posted to devRant to receive 3 free high-quality devRant laptop stickers! Or post an awesome rant that gets over 750 ++'s to receive a free devRant squishy stress ball! [Reference](https://devrant.com/free-stickers)
 
 ![](https://devrant.com/static/devrant/img/stickers-collection3.png)
 
