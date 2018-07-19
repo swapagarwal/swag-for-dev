@@ -31,7 +31,7 @@ Sign up at [https://upscri.be/67d2fa](https://upscri.be/67d2fa) to get early acc
 
 - Submit 5 builds in 30 days, get t-shirts & stickers sent your way! [Reference](https://codeship.com/swag)
 
-![](http://juliesfreebies.com/wp-content/uploads/2016/05/codeship-swag.jpg)
+![](https://juliesfreebies.com/wp-content/uploads/2016/05/codeship-swag.jpg)
 
 ## devRant
 
