@@ -1,12 +1,10 @@
-# swag-for-dev [![Awesome](https://awesome.re/badge-flat.svg)](https://awesome.re) [![Codeship Status for swapagarwal/swag-for-dev](https://app.codeship.com/projects/2bb2e180-338b-0136-6fb9-0e05c0ab05bf/status?branch=master)](https://app.codeship.com/projects/288957)
+# swag-for-dev [![Awesome](https://awesome.re/badge-flat.svg)](https://awesome.re) [![Codeship Status for swapagarwal/swag-for-dev](https://app.codeship.com/projects/2bb2e180-338b-0136-6fb9-0e05c0ab05bf/status?branch=master)](https://app.codeship.com/projects/288957) [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg)](https://github.com/swapagarwal/swag-for-dev/fork) [![open issues](https://img.shields.io/github/issues/swapagarwal/swag-for-dev.svg)](https://github.com/swapagarwal/swag-for-dev/issues?q=is%3Aopen+is%3Aissue) [![closed pull requests](https://img.shields.io/github/issues-pr-closed/swapagarwal/swag-for-dev.svg)](https://github.com/swapagarwal/swag-for-dev/pulls?q=is%3Apr+is%3Aclosed) [![](https://img.shields.io/github/stars/swapagarwal/swag-for-dev.svg?style=social)](https://github.com/swapagarwal/swag-for-dev) [![](https://img.shields.io/github/followers/swapagarwal.svg?style=social)](https://github.com/swapagarwal)
 
 As a developer, nothing piques my interest as much as developer swag! This is an attempt to list down the current swag opportunities for developers.
 
 Feel free to send a PR! 😄
 
 > Featured on [Changelog Nightly](http://nightly.changelog.com/2018/02/18/), [Hacker News](https://news.ycombinator.com/item?id=16407484), [reddit](https://www.reddit.com/r/coolgithubprojects/comments/7ygd5n/as_a_developer_nothing_piques_my_interest_as_much/), [Product Hunt](https://www.producthunt.com/posts/swag-for-dev) 🦄
-
-<a href="https://www.buymeacoffee.com/swap" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: auto !important;width: auto !important;" ></a>
 
 Sign up at [https://upscri.be/67d2fa](https://upscri.be/67d2fa) to get early access to updates! 💯
 
@@ -70,12 +68,15 @@ Sign up at [https://upscri.be/67d2fa](https://upscri.be/67d2fa) to get early acc
 
 ![](https://partners.npmjs.com/weekly/weekly30/socks-1100x.jpg)
 
+<<<<<<< HEAD
 ## Scalyr 
 Scalyr is a hosted solution that supports log aggregation , system metrics and monitoring. 
 
 Sign up for a Scalyr trial and get a free t-shirt. 
 [Scalyr Trial Sign-up Link](https://www.scalyr.com/signup)
 
+=======
+>>>>>>> upstream/master
 ## Contributing
 
 Feel free to open an issue (or even better, send a Pull Request) for expanding this list. Contributions are very welcome!! 😄
