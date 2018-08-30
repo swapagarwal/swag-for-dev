@@ -20,6 +20,7 @@ Sign up at [https://upscri.be/67d2fa](https://upscri.be/67d2fa) to get early acc
 - [Mullvad](#mullvad)
 - [Netlify](#netlify)
 - [npm](#npm)
+- [Scalyr](#scalyr)
 
 ## Alexa
 
@@ -68,6 +69,12 @@ Sign up at [https://upscri.be/67d2fa](https://upscri.be/67d2fa) to get early acc
 - Fix a [bug](https://github.com/npm/npm/issues), get a fashionable pair of socks! [Reference](http://blog.npmjs.org/post/129827785565/npm-weekly-30-package-scripts-for-tooling-a)
 
 ![](https://partners.npmjs.com/weekly/weekly30/socks-1100x.jpg)
+
+## Scalyr 
+Scalyr is a hosted solution that supports log aggregation , system metrics and monitoring. 
+
+Sign up for a Scalyr trial and get a free t-shirt. 
+[Scalyr Trial Sign-up Link](https://www.scalyr.com/signup)
 
 ## License
 
