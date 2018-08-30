@@ -76,6 +76,12 @@ Scalyr is a hosted solution that supports log aggregation , system metrics and m
 Sign up for a Scalyr trial and get a free t-shirt. 
 [Scalyr Trial Sign-up Link](https://www.scalyr.com/signup)
 
+## Contributing
+
+Feel free to open an issue (or even better, send a Pull Request) for expanding this list. Contributions are very welcome!! 😄
+
+<a href="https://www.buymeacoffee.com/swap" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: auto !important;width: auto !important;" ></a>
+
 ## License
 
 [![CC0](http://mirrors.creativecommons.org/presskit/buttons/88x31/svg/cc-zero.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
