@@ -40,11 +40,9 @@ Sign up at [https://upscri.be/67d2fa](https://upscri.be/67d2fa) to get early acc
 
 ## Digital Ocean
 
-- Complete the DigitalOcean Currents survey and get free pack of Sammy stickers! [Reference](https://digitalocean.getfeedback.com/r/oaX9bhVj/)
+- Completing this short survey will get you a Sammy sticker pack: [http://do.co/currents-survey](http://do.co/currents-survey)
 
-![](https://kotis-estores.s3.amazonaws.com/1/00/03/13/51/medium_100031351-57ac4c3f5328590137a2a39d7db6499c.png)
-
-![](https://kotis-estores.s3.amazonaws.com/1/00/03/22/33/medium_100032233-d046282297c516b5c8cf6863eeffeb10.png)
+![](https://pbs.twimg.com/media/ClLKoRDWEAAvgqK.jpg)
 
 ## Google Assistant
 
