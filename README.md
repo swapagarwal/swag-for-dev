@@ -13,6 +13,7 @@ Sign up at [https://upscri.be/67d2fa](https://upscri.be/67d2fa) to get early acc
 - [Alexa](#alexa)
 - [Codeship](#codeship)
 - [devRant](#devrant)
+- [Digital Ocean](#digitalocean)
 - [Google Assistant](#google-assistant)
 - [Hacktoberfest](#hacktoberfest)
 - [Mullvad](#mullvad)
@@ -36,6 +37,14 @@ Sign up at [https://upscri.be/67d2fa](https://upscri.be/67d2fa) to get early acc
 - Get 30 ++'s on a single rant you've posted to devRant to receive 3 free high-quality devRant laptop stickers! Or post an awesome rant that gets over 750 ++'s to receive a free devRant squishy stress ball! [Reference](https://devrant.com/free-stickers)
 
 ![](https://devrant.com/static/devrant/img/stickers-collection3.png)
+
+## Digital Ocean
+
+- Complete the DigitalOcean Currents survey and get free pack of Sammy stickers! [Reference](https://digitalocean.getfeedback.com/r/oaX9bhVj/)
+
+![](https://kotis-estores.s3.amazonaws.com/1/00/03/13/51/medium_100031351-57ac4c3f5328590137a2a39d7db6499c.png)
+
+![](https://kotis-estores.s3.amazonaws.com/1/00/03/22/33/medium_100032233-d046282297c516b5c8cf6863eeffeb10.png)
 
 ## Google Assistant
 
