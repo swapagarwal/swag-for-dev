@@ -13,7 +13,7 @@ Sign up at [https://upscri.be/67d2fa](https://upscri.be/67d2fa) to get early acc
 - [Alexa](#alexa)
 - [Codeship](#codeship)
 - [devRant](#devrant)
-- [Digital Ocean](#digitalocean)
+- [Digital Ocean](#digital-ocean)
 - [Google Assistant](#google-assistant)
 - [Hacktoberfest](#hacktoberfest)
 - [Mullvad](#mullvad)
