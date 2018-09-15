@@ -10,65 +10,65 @@ Sign up at [https://upscri.be/67d2fa](https://upscri.be/67d2fa) to get early acc
 
 ## Contents
 
-- [Alexa](#alexa)
-- [Codeship](#codeship)
-- [devRant](#devrant)
-- [Digital Ocean](#digital-ocean)
-- [Google Assistant](#google-assistant)
-- [Hacktoberfest](#hacktoberfest)
-- [Mullvad](#mullvad)
-- [Netlify](#netlify)
-- [npm](#npm)
+- [Alexa](#alexa) ![](https://img.shields.io/badge/difficulty-hard-red.svg)
+- [Codeship](#codeship) ![](https://img.shields.io/badge/difficulty-medium-yellow.svg)
+- [devRant](#devrant) ![](https://img.shields.io/badge/difficulty-medium-yellow.svg)
+- [Digital Ocean](#digital-ocean) ![](https://img.shields.io/badge/difficulty-easy-green.svg)
+- [Google Assistant](#google-assistant) ![](https://img.shields.io/badge/difficulty-hard-red.svg)
+- [Hacktoberfest](#hacktoberfest) ![](https://img.shields.io/badge/difficulty-hard-red.svg)
+- [Mullvad](#mullvad) ![](https://img.shields.io/badge/difficulty-easy-green.svg)
+- [Netlify](#netlify) ![](https://img.shields.io/badge/difficulty-easy-green.svg)
+- [npm](#npm) ![](https://img.shields.io/badge/difficulty-hard-red.svg)
 
-## Alexa
+## Alexa ![](https://img.shields.io/badge/difficulty-hard-red.svg)
 
 - Publish a skill, get a hoodie (varies by country) and an Echo Spot (if 1,000 unique customers use your skill in its first 30 days of publication)! [Reference](https://developer.amazon.com/alexa-skills-kit/alexa-developer-skill-promotion)
 
 ![](https://images-na.ssl-images-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/ASM0761-Dev-LP-Goodiepage-UK-March._CB501585903_.png)
 
-## Codeship
+## Codeship ![](https://img.shields.io/badge/difficulty-medium-yellow.svg)
 
 - Submit 5 builds in 30 days, get t-shirts & stickers sent your way! [Reference](https://codeship.com/swag)
 
 ![](https://juliesfreebies.com/wp-content/uploads/2016/05/codeship-swag.jpg)
 
-## devRant
+## devRant ![](https://img.shields.io/badge/difficulty-medium-yellow.svg)
 
 - Get 30 ++'s on a single rant you've posted to devRant to receive 3 free high-quality devRant laptop stickers! Or post an awesome rant that gets over 750 ++'s to receive a free devRant squishy stress ball! [Reference](https://devrant.com/free-stickers)
 
 ![](https://devrant.com/static/devrant/img/stickers-collection3.png)
 
-## Digital Ocean
+## Digital Ocean ![](https://img.shields.io/badge/difficulty-easy-green.svg)
 
 - Completing this short survey will get you a Sammy sticker pack: [http://do.co/currents-survey](http://do.co/currents-survey)
 
 ![](https://pbs.twimg.com/media/ClLKoRDWEAAvgqK.jpg)
 
-## Google Assistant
+## Google Assistant ![](https://img.shields.io/badge/difficulty-hard-red.svg)
 
 - Make an app for the Google Assistant available to users, get an exclusive Google Assistant t-shirt and a Google Home (if a certain number of users engage with it)! [Reference](https://developers.google.com/actions/community/overview)
 
 ![](https://i2.wp.com/radthemaker.com/wp-content/uploads/2017/11/My-Google-Assistant-T-Shirt.jpg)
 
-## Hacktoberfest
+## Hacktoberfest ![](https://img.shields.io/badge/difficulty-hard-red.svg)
 
 - Make five pull requests in October, earn a limited edition T-shirt! [Reference](https://hacktoberfest.digitalocean.com/)
 
 ![](https://cdn-images-1.medium.com/max/2000/1*9rG8J1r8l-LC0oRvRVoEkA.jpeg)
 
-## Mullvad
+## Mullvad ![](https://img.shields.io/badge/difficulty-easy-green.svg)
 
 - Send an email to [support@mullvad.net](mailto:support@mullvad.net) with "STICKERS" in the subject line. Include a postal address in the email and get an assortment of stickers sent your way. [Reference](https://www.mullvad.net/en/guides/mullvad-stickers-and-merchandise/)
 
 ![](https://www.mullvad.net/media/uploads/2017/10/20/mullvad-stickers.jpg)
 
-## Netlify
+## Netlify ![](https://img.shields.io/badge/difficulty-easy-green.svg)
 
 - Complete this [survey](https://swag.netlify.com/docs/) about using netlify for documentation and get stickers.
 
 ![](https://swag.netlify.com/images/laptop-sticker.jpg)
 
-## npm
+## npm ![](https://img.shields.io/badge/difficulty-hard-red.svg)
 
 - Fix a [bug](https://github.com/npm/npm/issues), get a fashionable pair of socks! [Reference](http://blog.npmjs.org/post/129827785565/npm-weekly-30-package-scripts-for-tooling-a)
 
