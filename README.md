@@ -10,15 +10,15 @@ Sign up at [https://upscri.be/67d2fa](https://upscri.be/67d2fa) to get early acc
 
 ## Contents
 
-- [Alexa](#alexa) ![](https://img.shields.io/badge/difficulty-hard-red.svg)
-- [Codeship](#codeship) ![](https://img.shields.io/badge/difficulty-medium-yellow.svg)
-- [devRant](#devrant) ![](https://img.shields.io/badge/difficulty-medium-yellow.svg)
-- [Digital Ocean](#digital-ocean) ![](https://img.shields.io/badge/difficulty-easy-green.svg)
-- [Google Assistant](#google-assistant) ![](https://img.shields.io/badge/difficulty-hard-red.svg)
-- [Hacktoberfest](#hacktoberfest) ![](https://img.shields.io/badge/difficulty-hard-red.svg)
-- [Mullvad](#mullvad) ![](https://img.shields.io/badge/difficulty-easy-green.svg)
-- [Netlify](#netlify) ![](https://img.shields.io/badge/difficulty-easy-green.svg)
-- [npm](#npm) ![](https://img.shields.io/badge/difficulty-hard-red.svg)
+- [Alexa](#alexa-) ![](https://img.shields.io/badge/difficulty-hard-red.svg)
+- [Codeship](#codeship-) ![](https://img.shields.io/badge/difficulty-medium-yellow.svg)
+- [devRant](#devrant-) ![](https://img.shields.io/badge/difficulty-medium-yellow.svg)
+- [Digital Ocean](#digital-ocean-) ![](https://img.shields.io/badge/difficulty-easy-green.svg)
+- [Google Assistant](#google-assistant-) ![](https://img.shields.io/badge/difficulty-hard-red.svg)
+- [Hacktoberfest](#hacktoberfest-) ![](https://img.shields.io/badge/difficulty-hard-red.svg)
+- [Mullvad](#mullvad-) ![](https://img.shields.io/badge/difficulty-easy-green.svg)
+- [Netlify](#netlify-) ![](https://img.shields.io/badge/difficulty-easy-green.svg)
+- [npm](#npm-) ![](https://img.shields.io/badge/difficulty-hard-red.svg)
 
 ## Alexa ![](https://img.shields.io/badge/difficulty-hard-red.svg)
 
