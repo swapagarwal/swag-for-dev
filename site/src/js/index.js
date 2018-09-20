@@ -33,7 +33,8 @@ function renderSwag(swag) {
         titleDiv.appendChild(h1)
 
         var difficultyDiv = document.createElement("div")
-        difficultyDiv.className = "difficulty"
+        difficultyDiv.classList.add("difficulty")
+        difficultyDiv.classList.add(item.difficulty)
         titleDiv.appendChild(difficultyDiv)
 
         var swagType = document.createElement("p")
