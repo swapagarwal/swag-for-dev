@@ -1,3 +1,23 @@
-.container.flex
+.container
 
     section.main
+
+        .heading.flex
+            h1 Swag For Dev
+            p Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+        .buttons.flex
+
+            .item
+                label Show
+                select(name="show")
+                    for filter in ['All difficulties', 'Easy', 'Medium', 'Hard']
+                        option(value=filter) #{filter}
+
+            .item
+                label In order of
+                select(name="order")
+                    for filter in ['Alphabetical', 'Alphabetical, reversed', 'Difficulty', 'Difficulty, reversed']
+                        option(value=filter) #{filter}
+
+        .content.flex
