@@ -44,7 +44,7 @@
   {
     "name": "Mullvad",
     "difficulty": "easy",
-    "description": "Send an email to [support@mullvad.net](mailto:support@mullvad.net) with \"STICKERS\" in the subject line. Include a postal address in the email and get an assortment of stickers sent your way.",
+    "description": "Send an email to <a href='mailto:support@mullvad.net'>support@mullvad.net</a> with \"STICKERS\" in the subject line. Include a postal address in the email and get an assortment of stickers sent your way.",
     "reference": "https://www.mullvad.net/en/guides/mullvad-stickers-and-merchandise/",
     "image": "https://www.mullvad.net/media/uploads/2017/10/20/mullvad-stickers.jpg"
   },
