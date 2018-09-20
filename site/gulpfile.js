@@ -4,6 +4,7 @@ const uglify        = require('gulp-uglify-es').default;
 const pug           = require("gulp-pug");
 const stylus        = require("gulp-stylus");
 const webserver     = require("gulp-webserver");
+const concat        = require("gulp-concat");
 
 gulp.task('webserver', function () {
 	return gulp.src("dist")
@@ -14,8 +15,10 @@ gulp.task('webserver', function () {
 });
 
 gulp.task('pug', () => {
-    return gulp.src('src/pug/index.pug')
-        .pipe(pug())
+    return gulp.src('src/pug/*.pug')
+        .pipe(pug({
+            pretty: true
+        }))
         .pipe(gulp.dest('dist/'));
 })
 
@@ -29,10 +32,11 @@ gulp.task('styl', () => {
 
 gulp.task('js', () => {
     return gulp.src('src/js/*.js')
+        .pipe(concat('index.js'))
         .pipe(babel({
             presets: ['env']
         }))
-        .pipe(uglify())        
+        .pipe(uglify())
         .pipe(gulp.dest('dist/assets/js'))
 })
 
