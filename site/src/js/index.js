@@ -16,3 +16,49 @@ function fetchSwag(callback) {
     req.open("GET", DATA_URL, true)
     req.send()
 }
+
+function renderSwag(swag) {
+    for (var item of swag) {
+        var card = document.createElement("div")
+        card.className = "item"
+        document.getElementById("content").appendChild(card)
+
+        var titleDiv = document.createElement("div")
+        titleDiv.classList.add("title")
+        titleDiv.classList.add("flex")
+        card.appendChild(titleDiv)
+
+        var h1 = document.createElement("h1")
+        h1.innerHTML = item.name
+        titleDiv.appendChild(h1)
+
+        var difficultyDiv = document.createElement("div")
+        difficultyDiv.className = "difficulty"
+        titleDiv.appendChild(difficultyDiv)
+
+        var swagType = document.createElement("p")
+        swagType.className = "swag"
+        swagType.innerHTML = "Stickers"
+        card.appendChild(swagType)
+
+        var img = document.createElement("img")
+        img.src = item.image
+        card.appendChild(img)
+
+        var description = document.createElement("p")
+        description.className = "description"
+        description.innerHTML = item.description
+        card.appendChild(description)
+
+        var link = document.createElement("a")
+        link.href = item.reference
+        link.innerHTML = "Go to page"
+        card.appendChild(link)
+    }
+}
+
+function bodyLoaded() {
+    fetchSwag(renderSwag)
+}
+
+document.body.onload = bodyLoaded
