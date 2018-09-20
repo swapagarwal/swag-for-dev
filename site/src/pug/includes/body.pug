@@ -10,13 +10,13 @@
 
             .item
                 label Show
-                select(name="show")
+                select(name="show" id="filter")
                     for filter in ['All difficulties', 'Easy', 'Medium', 'Hard']
                         option(value=filter) #{filter}
 
             .item
                 label In order of
-                select(name="order")
+                select(name="order" id="sorting")
                     for filter in ['Alphabetical', 'Alphabetical, reversed', 'Difficulty', 'Difficulty, reversed']
                         option(value=filter) #{filter}
 

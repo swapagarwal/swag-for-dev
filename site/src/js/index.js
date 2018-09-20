@@ -1,5 +1,7 @@
 const DATA_URL = "https://peaceful-chandrasekhar-efde8e.netlify.com/assets/json/data.json"
 
+var swagCache
+
 // Fetches the JSON swag list. Once it has got the data, it will call the given callback function
 // with one argument: a list of objects.
 function fetchSwag(callback) {
@@ -18,6 +20,28 @@ function fetchSwag(callback) {
 }
 
 function renderSwag(swag) {
+    swagCache = swag
+    
+    var filter = getFilter()
+    var sorting = getSorting()
+
+    swag = swag
+        .filter(v => {
+            if (filter == "All difficulties") {
+                return true
+            }
+
+            return v.difficulty == filter.toLowerCase()
+        })
+        .sort((a, b) => {
+            if (sorting == "Alphabetical") return a.name > b.name
+            if (sorting == "Alphabetical, reversed") return a.name < b.name
+            if (sorting == "Difficulty") return difficultyIndex(a.difficulty) > difficultyIndex(b.difficulty)
+            if (sorting == "Difficulty, reversed") return difficultyIndex(a.difficulty) < difficultyIndex(b.difficulty)
+        })
+    
+        document.getElementById("content").innerHTML = ""
+
     for (var item of swag) {
         var card = document.createElement("div")
         card.className = "item"
@@ -58,8 +82,31 @@ function renderSwag(swag) {
     }
 }
 
+function difficultyIndex(diff) {
+    return ["easy", "medium", "hard"].indexOf(diff)
+}
+
+function getFilter() {
+    return document.getElementById("filter").value
+}
+
+function getSorting() {
+    return document.getElementById("sorting").value
+}
+
+function attemptRender() {
+    if (swagCache === undefined) {
+        fetchSwag(renderSwag)
+    } else {
+        renderSwag(swagCache)
+    }
+}
+
 function bodyLoaded() {
-    fetchSwag(renderSwag)
+    attemptRender()
+
+    document.getElementById("filter").addEventListener("input", attemptRender)
+    document.getElementById("sorting").addEventListener("input", attemptRender)
 }
 
 document.body.onload = bodyLoaded
