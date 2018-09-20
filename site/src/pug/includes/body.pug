@@ -15,9 +15,10 @@
                         option(value=filter) #{filter}
 
             .item
-                label In order of
+                label In
                 select(name="order" id="sorting")
                     for filter in ['Alphabetical', 'Alphabetical, reversed', 'Difficulty', 'Difficulty, reversed']
                         option(value=filter) #{filter}
+                label order
 
         .content.flex#content
