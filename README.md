@@ -16,6 +16,7 @@ Sign up at [https://upscri.be/67d2fa](https://upscri.be/67d2fa) to get early acc
 - [Digital Ocean](#digital-ocean)
 - [Google Assistant](#google-assistant)
 - [Hacktoberfest](#hacktoberfest)
+- [Microsoft](#microsoft-canada)
 - [Mullvad](#mullvad)
 - [Netlify](#netlify)
 - [npm](#npm)
@@ -55,6 +56,12 @@ Sign up at [https://upscri.be/67d2fa](https://upscri.be/67d2fa) to get early acc
 - Make five pull requests in October, earn a limited edition T-shirt! [Reference](https://hacktoberfest.digitalocean.com/)
 
 ![](https://cdn-images-1.medium.com/max/2000/1*9rG8J1r8l-LC0oRvRVoEkA.jpeg)
+
+## Microsoft (Canada)
+
+- Sign up, get a selfie prop, sticker and a paperback of the illustrated children’s guide to Kubernetes (while supplies last). [Reference](https://www.microsoft.com/en-ca/web/doc-a-thon/Default.aspx)
+
+![](https://www.microsoft.com/en-ca/web/doc-a-thon/images/hero-banner.jpg)
 
 ## Mullvad
 
