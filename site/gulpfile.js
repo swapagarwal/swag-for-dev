@@ -34,7 +34,16 @@ gulp.task('js', () => {
     return gulp.src('src/js/*.js')
         .pipe(concat('index.js'))
         .pipe(babel({
-            presets: ['env']
+            "presets": [
+                [
+                  "env",
+                  {
+                    "targets": {
+                      "browsers": ["> 5%"]
+                    }
+                  }
+                ]
+              ]
         }))
         .pipe(uglify())
         .pipe(gulp.dest('dist/assets/js'))
