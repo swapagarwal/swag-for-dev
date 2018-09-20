@@ -23,7 +23,7 @@
   {
     "name": "Digital Ocean",
     "difficulty": "easy",
-    "description": "Completing this short survey will get you a Sammy sticker pack: [http://do.co/currents-survey](http://do.co/currents-survey)",
+    "description": "Completing this short survey will get you a Sammy sticker pack: <a href='http://do.co/currents-survey'>http://do.co/currents-survey</a>",
     "reference": "http://do.co/currents-survey",
     "image": "https://pbs.twimg.com/media/ClLKoRDWEAAvgqK.jpg"
   },
@@ -51,14 +51,14 @@
   {
     "name": "Netlify",
     "difficulty": "easy",
-    "description": "Complete this [survey](https://swag.netlify.com/docs/) about using netlify for documentation and get stickers.",
+    "description": "Complete this <a href='https://swag.netlify.com/docs/'>survey</a> about using netlify for documentation and get stickers.",
     "reference": "https://swag.netlify.com/docs/",
     "image": "https://swag.netlify.com/images/laptop-sticker.jpg"
   },
   {
     "name": "npm",
     "difficulty": "hard",
-    "description": "Fix a [bug](https://github.com/npm/npm/issues), get a fashionable pair of socks!",
+    "description": "Fix a <a href='https://github.com/npm/npm/issues'>bug</a>, get a fashionable pair of socks!",
     "reference": "http://blog.npmjs.org/post/129827785565/npm-weekly-30-package-scripts-for-tooling-a",
     "image": "https://partners.npmjs.com/weekly/weekly30/socks-1100x.jpg"
   }
