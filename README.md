@@ -11,6 +11,7 @@ Sign up at [https://upscri.be/67d2fa](https://upscri.be/67d2fa) to get early acc
 ## Contents
 
 - [Alexa](#alexa)
+- [Branch.io](#branchio)
 - [Codeship](#codeship)
 - [devRant](#devrant)
 - [Digital Ocean](#digital-ocean)
@@ -25,6 +26,12 @@ Sign up at [https://upscri.be/67d2fa](https://upscri.be/67d2fa) to get early acc
 - Publish a skill, get a hoodie (varies by country) and an Echo Spot (if 1,000 unique customers use your skill in its first 30 days of publication)! [Reference](https://developer.amazon.com/alexa-skills-kit/alexa-developer-skill-promotion)
 
 ![](https://images-na.ssl-images-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/ASM0761-Dev-LP-Goodiepage-UK-March._CB501585903_.png)
+
+## Branch.io
+
+- Once you have integrated the Branch SDK into your mobile application, share a photo, video, or testimony of your app's new deep linking experience and tag @branchmetrics! Once you submit your social post link and the email you used to sign up for Branch in the form, Branch will verify that you’ve integrated and send you a free hoodie! [Reference](https://branch.io/hoodie-challenge/)
+
+![](https://branch.io/img/hoodie-giveaway/hoodie-image-small.jpg)
 
 ## Codeship
 
