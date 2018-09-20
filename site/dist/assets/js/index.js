@@ -1,1 +1,1 @@
-"use strict";
+"use strict";const DATA_URL="https://peaceful-chandrasekhar-efde8e.netlify.com/assets/json/data.json";function fetchSwag(e){var t=new XMLHttpRequest;t.onreadystatechange=function(){if(4==this.readyState&&200==this.status){var s=t.responseText,a=JSON.parse(s);e(a)}},t.open("GET",DATA_URL,!0),t.send()}
