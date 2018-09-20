@@ -12,6 +12,7 @@ Sign up at [https://upscri.be/67d2fa](https://upscri.be/67d2fa) to get early acc
 
 - [Alexa](#alexa)
 - [Codeship](#codeship)
+- [Datadog](#datadog)
 - [devRant](#devrant)
 - [Digital Ocean](#digital-ocean)
 - [Google Assistant](#google-assistant)
@@ -31,6 +32,12 @@ Sign up at [https://upscri.be/67d2fa](https://upscri.be/67d2fa) to get early acc
 - Submit 5 builds in 30 days, get t-shirts & stickers sent your way! [Reference](https://codeship.com/swag)
 
 ![](https://juliesfreebies.com/wp-content/uploads/2016/05/codeship-swag.jpg)
+
+## Datadog
+
+- Start your trial today, create a dashboard, and we’ll send you a free Datadog t-shirt! [Reference](https://www.datadoghq.com/lpgs/)
+
+![](https://datadog-prod.imgix.net/img/shirt_lp_shirt-2.png)
 
 ## devRant
 
