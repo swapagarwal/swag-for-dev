@@ -1,112 +1,82 @@
-const DATA_URL = "https://peaceful-chandrasekhar-efde8e.netlify.com/assets/json/data.json"
+const DATA_URL = 'https://peaceful-chandrasekhar-efde8e.netlify.com/assets/json/data.json';
 
-var swagCache
+/**
+ * Initialising global variables
+ */
+let swagCache,
+    contentEl    = document.querySelector('#content'),
+    filterInput  = document.querySelector('#filter'),
+    sortingInput = document.querySelector('#sorting');
 
-// Fetches the JSON swag list. Once it has got the data, it will call the given callback function
-// with one argument: a list of objects.
-function fetchSwag(callback) {
-    var req = new XMLHttpRequest()
+/**
+ * Fetches the JSON swag list. Once it has got the data, it will call the given callback function
+ * with one argument: a list of objects.
+ */
+const fetchSwag = callback => {
+    let req = new XMLHttpRequest();
 
     req.onreadystatechange = function() {
-        if (this.readyState == 4 && this.status == 200) {
-            var responseText = req.responseText
-            var swag = JSON.parse(responseText)
-            callback(swag)
+        if (this.readyState === 4 && this.status === 200) {
+            const responseText = req.responseText;
+            const swag = JSON.parse(responseText);
+            callback(swag);
         }
-    }
+    };
 
-    req.open("GET", DATA_URL, true)
-    req.send()
-}
+    req.open('GET', DATA_URL, true);
+    req.send();
+};
 
-function renderSwag(swag) {
-    swagCache = swag
+const renderSwag = swag => {
+    contentEl.innerHTML = '';
     
-    var filter = getFilter()
-    var sorting = getSorting()
+    swagCache = swag;
+    
+    const filter = getFilter();
+    const sorting = getSorting();
 
-    swag = swag
+    swag
         .filter(v => {
-            if (filter == "All difficulties") {
-                return true
+            if (filter === 'All difficulties') {
+                return true;
             }
 
-            return v.difficulty == filter.toLowerCase()
+            return v.difficulty === filter.toLowerCase();
         })
         .sort((a, b) => {
-            if (sorting == "Alphabetical") return a.name > b.name
-            if (sorting == "Alphabetical, reversed") return a.name < b.name
-            if (sorting == "Difficulty") return difficultyIndex(a.difficulty) > difficultyIndex(b.difficulty)
-            if (sorting == "Difficulty, reversed") return difficultyIndex(a.difficulty) < difficultyIndex(b.difficulty)
+            switch (sorting) {
+                case 'Alphabetical':            return a.name > b.name;
+                case 'Alphabetical, reversed':  return a.name < b.name;
+                case 'Difficulty':              return difficultyIndex(a.difficulty) > difficultyIndex(b.difficulty);
+                case 'Difficulty, reversed':    return difficultyIndex(a.difficulty) < difficultyIndex(b.difficulty);
+            }
         })
+        .map(item => {
+            contentEl.innerHTML += `
+                <div class='item'>
+                    <div class='title flex'>
+                        <h1>${item.name}</h1>
+                        <div class='difficulty ${item.difficulty}'></div>
+                    </div>
+                    <p class='swag'>Stickers</p>
+                    <img src='${item.image}'></img>
+                    <p class='desciption'>${item.description}</p>
+                    <a href='${item.reference}'>Check it out</a>
+                </div>
+            `;
+        });
+};
+
+const difficultyIndex = diff => ['easy', 'medium', 'hard'].indexOf(diff);
+
+const getFilter = () => filterInput.value;
+const getSorting = () => sortingInput.value;
+
+const attemptRender = () => swagCache === undefined ? fetchSwag(renderSwag) : renderSwag(swagCache);
+
+window.addEventListener('load', () => {
+    attemptRender();
     
-        document.getElementById("content").innerHTML = ""
-
-    for (var item of swag) {
-        var card = document.createElement("div")
-        card.className = "item"
-        document.getElementById("content").appendChild(card)
-
-        var titleDiv = document.createElement("div")
-        titleDiv.classList.add("title")
-        titleDiv.classList.add("flex")
-        card.appendChild(titleDiv)
-
-        var h1 = document.createElement("h1")
-        h1.innerHTML = item.name
-        titleDiv.appendChild(h1)
-
-        var difficultyDiv = document.createElement("div")
-        difficultyDiv.classList.add("difficulty")
-        difficultyDiv.classList.add(item.difficulty)
-        titleDiv.appendChild(difficultyDiv)
-
-        var swagType = document.createElement("p")
-        swagType.className = "swag"
-        swagType.innerHTML = "Stickers"
-        card.appendChild(swagType)
-
-        var img = document.createElement("img")
-        img.src = item.image
-        card.appendChild(img)
-
-        var description = document.createElement("p")
-        description.className = "description"
-        description.innerHTML = item.description
-        card.appendChild(description)
-
-        var link = document.createElement("a")
-        link.href = item.reference
-        link.innerHTML = "Go to page"
-        card.appendChild(link)
-    }
-}
-
-function difficultyIndex(diff) {
-    return ["easy", "medium", "hard"].indexOf(diff)
-}
-
-function getFilter() {
-    return document.getElementById("filter").value
-}
-
-function getSorting() {
-    return document.getElementById("sorting").value
-}
-
-function attemptRender() {
-    if (swagCache === undefined) {
-        fetchSwag(renderSwag)
-    } else {
-        renderSwag(swagCache)
-    }
-}
-
-function bodyLoaded() {
-    attemptRender()
-
-    document.getElementById("filter").addEventListener("input", attemptRender)
-    document.getElementById("sorting").addEventListener("input", attemptRender)
-}
-
-document.body.onload = bodyLoaded
+    filterInput.addEventListener('input', attemptRender);
+    sortingInput.addEventListener('input', attemptRender);
+});
