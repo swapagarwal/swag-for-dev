@@ -39,7 +39,7 @@ gulp.task('js', () => {
                   "env",
                   {
                     "targets": {
-                      "browsers": ["> 5%"]
+                      "browsers": ["> 75%"]
                     }
                   }
                 ]
