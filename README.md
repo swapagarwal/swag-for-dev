@@ -78,7 +78,7 @@ Sign up at [https://upscri.be/67d2fa](https://upscri.be/67d2fa) to get early acc
 
 Feel free to open an issue (or even better, send a Pull Request) for expanding this list. Contributions are very welcome!! 😄
 
-Note that a PR needs to reach a certain level of engagement before it gets merged. The current list of open PRs can be found here: https://github.com/swapagarwal/swag-for-dev/pulls
+Note that a PR needs to reach a certain level of engagement before it gets merged. This criteria is kept to maintain the quality of this list. The current list of open PRs can be found here: https://github.com/swapagarwal/swag-for-dev/pulls
 
 As this project is community-driven, it'd be really helpful if you comment on the PR when you receive the corresponding swag. This would help in merging it faster. 😇
 
