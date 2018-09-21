@@ -9,7 +9,8 @@ let swagCache,
     sortingInput = document.querySelector('#sorting');
 
 /**
- * Fetches the JSON swag list. Once it has got the data, it will call the given callback function
+ * Fetches the JSON swag list. Once it has got the data,
+ * it will call the given callback function
  * with one argument: a list of objects.
  */
 const fetchSwag = callback => {
