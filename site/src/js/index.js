@@ -1,4 +1,4 @@
-const DATA_URL = 'https://peaceful-chandrasekhar-efde8e.netlify.com/assets/json/data.json';
+const DATA_URL = 'https://raw.githubusercontent.com/swapagarwal/swag-for-dev/master/data.json';
 
 /**
  * Initialising global variables
