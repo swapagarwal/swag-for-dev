@@ -38,12 +38,6 @@ Sign up at [https://upscri.be/67d2fa](https://upscri.be/67d2fa) to get early acc
 
 ![](https://devrant.com/static/devrant/img/stickers-collection3.png)
 
-## Digital Ocean ![](https://img.shields.io/badge/difficulty-easy-green.svg)
-
-- Completing this short survey will get you a Sammy sticker pack: [http://do.co/currents-survey](http://do.co/currents-survey)
-
-![](https://pbs.twimg.com/media/ClLKoRDWEAAvgqK.jpg)
-
 ## Google Assistant ![](https://img.shields.io/badge/difficulty-hard-red.svg)
 
 - Make an app for the Google Assistant available to users, get an exclusive Google Assistant t-shirt and a Google Home (if a certain number of users engage with it)! [Reference](https://developers.google.com/actions/community/overview)
