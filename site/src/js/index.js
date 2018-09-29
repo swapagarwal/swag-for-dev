@@ -59,7 +59,7 @@ const renderSwag = swag => {
                         <h1>${item.name}</h1>
                         <div class='difficulty ${item.difficulty}'></div>
                     </div>
-                    <p class='swag'>Stickers</p>
+                    <p class='swag'>${item.swagType}</p>
                     <div class='flex'>
                         <img src='${item.image}'></img>
                     </div>
