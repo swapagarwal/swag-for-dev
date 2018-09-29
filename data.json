@@ -4,55 +4,63 @@
     "difficulty": "hard",
     "description": "Publish a skill, get a hoodie (varies by country) and an Echo Spot (if 1,000 unique customers use your skill in its first 30 days of publication)!",
     "reference": "https://developer.amazon.com/alexa-skills-kit/alexa-developer-skill-promotion",
-    "image": "https://images-na.ssl-images-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/ASM0761-Dev-LP-Goodiepage-UK-March._CB501585903_.png"
+    "image": "https://images-na.ssl-images-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/ASM0761-Dev-LP-Goodiepage-UK-March._CB501585903_.png",
+    "swagType": "Hoodie, Echo Spot"
   },
   {
     "name": "Codeship",
     "difficulty": "medium",
     "description": "Submit 5 builds in 30 days, get t-shirts & stickers sent your way!",
     "reference": "https://codeship.com/swag",
-    "image": "https://juliesfreebies.com/wp-content/uploads/2016/05/codeship-swag.jpg"
+    "image": "https://juliesfreebies.com/wp-content/uploads/2016/05/codeship-swag.jpg",
+    "swagType": "T-shirts, Stickers"
   },
   {
     "name": "devRant",
     "difficulty": "medium",
     "description": "Get 30 ++'s on a single rant you've posted to devRant to receive 3 free high-quality devRant laptop stickers! Or post an awesome rant that gets over 750 ++'s to receive a free devRant squishy stress ball!",
     "reference": "https://devrant.com/free-stickers",
-    "image": "https://devrant.com/static/devrant/img/stickers-collection3.png"
+    "image": "https://devrant.com/static/devrant/img/stickers-collection3.png",
+    "swagType": "Stickers, Stress balls"
   },
   {
     "name": "Google Assistant",
     "difficulty": "hard",
     "description": "Make an app for the Google Assistant available to users, get an exclusive Google Assistant t-shirt and a Google Home (if a certain number of users engage with it)!",
     "reference": "https://developers.google.com/actions/community/overview",
-    "image": "https://i2.wp.com/radthemaker.com/wp-content/uploads/2017/11/My-Google-Assistant-T-Shirt.jpg"
+    "image": "https://i2.wp.com/radthemaker.com/wp-content/uploads/2017/11/My-Google-Assistant-T-Shirt.jpg",
+    "swagType": "T-shirts, Google Home"
   },
   {
     "name": "Hacktoberfest",
     "difficulty": "hard",
     "description": "Make five pull requests in October, earn a limited edition T-shirt!",
     "reference": "https://hacktoberfest.digitalocean.com/",
-    "image": "https://cdn-images-1.medium.com/max/2000/1*9rG8J1r8l-LC0oRvRVoEkA.jpeg"
+    "image": "https://cdn-images-1.medium.com/max/2000/1*9rG8J1r8l-LC0oRvRVoEkA.jpeg",
+    "swagType": "T-shirts, Stickers"
   },
   {
     "name": "Mullvad",
     "difficulty": "easy",
     "description": "Send an email to <a href='mailto:support@mullvad.net'>support@mullvad.net</a> with \"STICKERS\" in the subject line. Include a postal address in the email and get an assortment of stickers sent your way.",
     "reference": "https://www.mullvad.net/en/guides/mullvad-stickers-and-merchandise/",
-    "image": "https://www.mullvad.net/media/uploads/2017/10/20/mullvad-stickers.jpg"
+    "image": "https://www.mullvad.net/media/uploads/2017/10/20/mullvad-stickers.jpg",
+    "swagType": "Stickers"
   },
   {
     "name": "Netlify",
     "difficulty": "easy",
     "description": "Complete this <a href='https://swag.netlify.com/docs/'>survey</a> about using netlify for documentation and get stickers.",
     "reference": "https://swag.netlify.com/docs/",
-    "image": "https://swag.netlify.com/images/laptop-sticker.jpg"
+    "image": "https://swag.netlify.com/images/laptop-sticker.jpg",
+    "swagType": "Stickers"
   },
   {
     "name": "npm",
     "difficulty": "hard",
     "description": "Fix a <a href='https://github.com/npm/npm/issues'>bug</a>, get a fashionable pair of socks!",
     "reference": "http://blog.npmjs.org/post/129827785565/npm-weekly-30-package-scripts-for-tooling-a",
-    "image": "https://partners.npmjs.com/weekly/weekly30/socks-1100x.jpg"
+    "image": "https://partners.npmjs.com/weekly/weekly30/socks-1100x.jpg",
+    "swagType": "Socks"
   }
 ]
