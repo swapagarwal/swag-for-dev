@@ -21,13 +21,6 @@
     "image": "https://devrant.com/static/devrant/img/stickers-collection3.png"
   },
   {
-    "name": "Digital Ocean",
-    "difficulty": "easy",
-    "description": "Completing this short survey will get you a Sammy sticker pack: <a href='http://do.co/currents-survey'>http://do.co/currents-survey</a>",
-    "reference": "http://do.co/currents-survey",
-    "image": "https://pbs.twimg.com/media/ClLKoRDWEAAvgqK.jpg"
-  },
-  {
     "name": "Google Assistant",
     "difficulty": "hard",
     "description": "Make an app for the Google Assistant available to users, get an exclusive Google Assistant t-shirt and a Google Home (if a certain number of users engage with it)!",
