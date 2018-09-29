@@ -13,7 +13,6 @@ Sign up at [https://upscri.be/67d2fa](https://upscri.be/67d2fa) to get early acc
 - [Alexa](#alexa-) ![](https://img.shields.io/badge/difficulty-hard-red.svg)
 - [Codeship](#codeship-) ![](https://img.shields.io/badge/difficulty-medium-yellow.svg)
 - [devRant](#devrant-) ![](https://img.shields.io/badge/difficulty-medium-yellow.svg)
-- [Digital Ocean](#digital-ocean-) ![](https://img.shields.io/badge/difficulty-easy-green.svg)
 - [Google Assistant](#google-assistant-) ![](https://img.shields.io/badge/difficulty-hard-red.svg)
 - [Hacktoberfest](#hacktoberfest-) ![](https://img.shields.io/badge/difficulty-hard-red.svg)
 - [Mullvad](#mullvad-) ![](https://img.shields.io/badge/difficulty-easy-green.svg)
@@ -37,12 +36,6 @@ Sign up at [https://upscri.be/67d2fa](https://upscri.be/67d2fa) to get early acc
 - Get 30 ++'s on a single rant you've posted to devRant to receive 3 free high-quality devRant laptop stickers! Or post an awesome rant that gets over 750 ++'s to receive a free devRant squishy stress ball! [Reference](https://devrant.com/free-stickers)
 
 ![](https://devrant.com/static/devrant/img/stickers-collection3.png)
-
-## Digital Ocean ![](https://img.shields.io/badge/difficulty-easy-green.svg)
-
-- Completing this short survey will get you a Sammy sticker pack: [http://do.co/currents-survey](http://do.co/currents-survey)
-
-![](https://pbs.twimg.com/media/ClLKoRDWEAAvgqK.jpg)
 
 ## Google Assistant ![](https://img.shields.io/badge/difficulty-hard-red.svg)
 
