@@ -46,8 +46,8 @@ const renderSwag = swag => {
         })
         .sort((a, b) => {
             switch (sorting) {
-                case 'Alphabetical':            return a.name > b.name;
-                case 'Alphabetical, reversed':  return a.name < b.name;
+                case 'Alphabetical':            return a.name.toLowerCase() > b.name.toLowerCase();
+                case 'Alphabetical, reversed':  return a.name.toLowerCase() < b.name.toLowerCase();
                 case 'Difficulty':              return difficultyIndex(a.difficulty) > difficultyIndex(b.difficulty);
                 case 'Difficulty, reversed':    return difficultyIndex(a.difficulty) < difficultyIndex(b.difficulty);
             }
