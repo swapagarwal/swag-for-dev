@@ -52,3 +52,5 @@ gulp.task('js', () => {
 gulp.task('default', ['webserver', 'pug', 'styl', 'js'], () => {
     gulp.watch(['src/pug/**/*.pug', 'src/styl/**/*.styl', 'src/js/*.js'], ['pug', 'styl', 'js']);
 })
+
+gulp.task('build', ['pug', 'styl', 'js']);
