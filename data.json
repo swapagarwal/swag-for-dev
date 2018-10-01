@@ -40,6 +40,14 @@
     "swagType": "T-shirts, Stickers"
   },
   {
+    "name": "Microsoft Hacktoberfest",
+    "difficulty": "medium",
+    "description": "Make one pull request in October 2018 to any <a href='https://opensource.microsoft.com/'>open source Microsoft repository</a>, earn a limited edition T-shirt!",
+    "reference": "https://open.microsoft.com/2018/09/30/join-hacktoberfest-2018-celebration-microsoft/",
+    "image": "https://images.all-free-download.com/images/graphiclarge/blank_t_shirt_clip_art_19042.jpg",
+    "swagType": "T-shirts"
+  },
+  {
     "name": "Mullvad",
     "difficulty": "easy",
     "description": "Send an email to <a href='mailto:support@mullvad.net'>support@mullvad.net</a> with \"STICKERS\" in the subject line. Include a postal address in the email and get an assortment of stickers sent your way.",
