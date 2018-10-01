@@ -54,6 +54,8 @@ Sign up at [https://upscri.be/67d2fa](https://upscri.be/67d2fa) to get early acc
 
 - Make one pull request in October 2018 to any [open source Microsoft repository](https://opensource.microsoft.com/), earn a limited edition T-shirt! [Reference](https://open.microsoft.com/2018/09/30/join-hacktoberfest-2018-celebration-microsoft/)
 
+![](https://images.all-free-download.com/images/graphiclarge/blank_t_shirt_clip_art_19042.jpg)
+
 ## Mullvad ![](https://img.shields.io/badge/difficulty-easy-green.svg)
 
 - Send an email to [support@mullvad.net](mailto:support@mullvad.net) with "STICKERS" in the subject line. Include a postal address in the email and get an assortment of stickers sent your way. [Reference](https://www.mullvad.net/en/guides/mullvad-stickers-and-merchandise/)
