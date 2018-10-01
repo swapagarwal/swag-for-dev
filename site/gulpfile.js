@@ -6,8 +6,9 @@ const pug           = require('gulp-pug');
 const stylus        = require('gulp-stylus');
 const webserver     = require('gulp-webserver');
 const concat        = require('gulp-concat');
+const download      = require('gulp-download-stream');
 const imagemin      = require('gulp-imagemin');
-const download      = require('gulp-download2');
+const source        = require('vinyl-source-stream');
 const buffer 				= require('vinyl-buffer');
 
 const filenameSafe  = s => s.replace(/[^a-z0-9.]/gi, '_').replace(/_{2,}/g, '_').toLowerCase();
@@ -80,9 +81,10 @@ gulp.task('swag-img:update-data', () => {
         s.image = `/assets/swag-img/${name}`;
         return s;
     });
-    const payload = JSON.stringify(newSwagList);
-    fs.writeFileSync('dist/assets/data.json', payload);
     SWAG_LIST = newSwagList;
+    const stream = source('data.json');
+    stream.end(JSON.stringify(newSwagList));
+    return stream.pipe(gulp.dest('dist/assets'));
 });
 
 gulp.task('swag-img', ['swag-img:download','swag-img:update-data']);
