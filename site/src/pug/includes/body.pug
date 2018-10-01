@@ -1,0 +1,38 @@
+include ./fork.pug
+
+.container
+
+    section.main.flex
+
+        .heading.flex
+            h1 devSwag
+            p swag opportunities for developers 😎
+
+        .buttons.flex
+
+            .item.flex
+                label Show
+                .select-wrapper
+                    select(name="show" id="filter")
+                        for filter in ['All difficulties', 'Easy', 'Medium', 'Hard']
+                            option(value=filter) #{filter}
+
+            .item.flex
+                label In
+                .select-wrapper
+                    select(name="order" id="sorting")
+                        for filter in ['Alphabetical', 'Alphabetical, reversed', 'Difficulty', 'Difficulty, reversed']
+                            option(value=filter) #{filter}
+                label order
+
+        .content.flex#content
+
+    footer.flex
+        .item.flex
+            iframe(src='https://upscri.be/67d2fa?as_embed', style='width:100%;max-width:800px;margin:0 auto;', height='400', frameborder='0')
+        .item.flex
+            p Made with ❤︎ by #[a(href="https://github.com/swapagarwal") Swapnil Agarwal]
+        .item.flex
+            p Designed by #[a(href="https://github.com/zac-garby") Zac Garby] and #[a(href="https://github.com/plibither8") Mihir Chaturvedi]
+        .item.flex
+            #codefund_ad

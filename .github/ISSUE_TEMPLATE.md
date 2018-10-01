@@ -1,15 +1,12 @@
-- [ ] I've checked that there isn't a duplicate issue.
+- [ ] I've checked that this isn't a duplicate issue.
 
-Is it regarding the current promotions or something new?  
-Uncomment the corresponding section below.
+Is it regarding the current promotions or something new?
+Fill the corresponding section below:
 
-<!--
-Current
-Please describe your concern here: 
--->
+(Current Promotion)
+Please describe your concern here:
 
-<!--
-New
-- [ ] I've verified that offer / promotion is still available to the public.
+(New Promotion)
+Reference Link:
 - [ ] I've confirmed that the promotion is legit.
--->
+- [ ] I've verified that it's still available to the public.
