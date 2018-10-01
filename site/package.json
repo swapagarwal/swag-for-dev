@@ -1,7 +1,7 @@
 {
   "name": "swag-for-dev",
   "version": "1.0.0",
-  "description": "",
+  "description": "swag opportunities for developers",
   "main": "index.js",
   "scripts": {
     "lint": "eslint src/js/*.js",
@@ -27,10 +27,10 @@
     "gulp-watch": "^4.3.11",
     "gulp-webserver": "^0.9.1"
   },
-  "author": "",
+  "author": "Swapnil Agarwal",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/swapagarwal/swag-for-dev/issues"
   },
-  "homepage": "https://github.com/swapagarwal/swag-for-dev#readme"
+  "homepage": "http://devswag.io"
 }

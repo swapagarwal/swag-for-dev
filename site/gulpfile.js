@@ -49,8 +49,13 @@ gulp.task('js', () => {
         .pipe(gulp.dest('dist/assets/js'))
 })
 
-gulp.task('default', ['webserver', 'pug', 'styl', 'js'], () => {
+gulp.task('img', () => {
+    return gulp.src('src/img/*.png')
+        .pipe(gulp.dest('dist/assets/img'));
+})
+
+gulp.task('default', ['webserver', 'pug', 'styl', 'js', 'img'], () => {
     gulp.watch(['src/pug/**/*.pug', 'src/styl/**/*.styl', 'src/js/*.js'], ['pug', 'styl', 'js']);
 })
 
-gulp.task('build', ['pug', 'styl', 'js']);
+gulp.task('build', ['pug', 'styl', 'js', 'img']);
