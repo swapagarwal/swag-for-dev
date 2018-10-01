@@ -52,7 +52,7 @@ Sign up at [https://upscri.be/67d2fa](https://upscri.be/67d2fa) to get early acc
 
 ## Microsoft Hacktoberfest ![](https://img.shields.io/badge/difficulty-hard-red.svg)
 
-- Make one pull request in October 2018 to any [open source Microsoft repository](https://opensource.microsoft.com/), earn a limited edition T-shirt! [Reference](https://open.microsoft.com/2018/09/18/hacktoberfest-2018-microsoft/)
+- Make one pull request in October 2018 to any [open source Microsoft repository](https://opensource.microsoft.com/), earn a limited edition T-shirt! [Reference](https://open.microsoft.com/2018/09/30/join-hacktoberfest-2018-celebration-microsoft/)
 
 ## Mullvad ![](https://img.shields.io/badge/difficulty-easy-green.svg)
 
