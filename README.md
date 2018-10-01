@@ -15,7 +15,7 @@ Sign up at [https://upscri.be/67d2fa](https://upscri.be/67d2fa) to get early acc
 - [devRant](#devrant-) ![](https://img.shields.io/badge/difficulty-medium-yellow.svg)
 - [Google Assistant](#google-assistant-) ![](https://img.shields.io/badge/difficulty-hard-red.svg)
 - [Hacktoberfest](#hacktoberfest-) ![](https://img.shields.io/badge/difficulty-hard-red.svg)
-- [Microsoft Hacktoberfest](#microsoft-hacktoberfest-) ![](https://img.shields.io/badge/difficulty-hard-red.svg)
+- [Microsoft Hacktoberfest](#microsoft-hacktoberfest-) ![](https://img.shields.io/badge/difficulty-medium-yellow.svg)
 - [Mullvad](#mullvad-) ![](https://img.shields.io/badge/difficulty-easy-green.svg)
 - [Netlify](#netlify-) ![](https://img.shields.io/badge/difficulty-easy-green.svg)
 - [npm](#npm-) ![](https://img.shields.io/badge/difficulty-hard-red.svg)
@@ -50,7 +50,7 @@ Sign up at [https://upscri.be/67d2fa](https://upscri.be/67d2fa) to get early acc
 
 ![](https://cdn-images-1.medium.com/max/2000/1*9rG8J1r8l-LC0oRvRVoEkA.jpeg)
 
-## Microsoft Hacktoberfest ![](https://img.shields.io/badge/difficulty-hard-red.svg)
+## Microsoft Hacktoberfest ![](https://img.shields.io/badge/difficulty-medium-yellow.svg)
 
 - Make one pull request in October 2018 to any [open source Microsoft repository](https://opensource.microsoft.com/), earn a limited edition T-shirt! [Reference](https://open.microsoft.com/2018/09/30/join-hacktoberfest-2018-celebration-microsoft/)
 
