@@ -1,0 +1,28 @@
+include ./fork.pug
+
+.container
+
+    section.main.flex
+
+        .heading.flex
+            h1 Swag For Dev
+            p A list of opportunities for developers to score some swag 😎
+
+        .buttons.flex
+
+            .item.flex
+                label Show
+                .select-wrapper
+                    select(name="show" id="filter")
+                        for filter in ['All difficulties', 'Easy', 'Medium', 'Hard']
+                            option(value=filter) #{filter}
+
+            .item.flex
+                label In
+                .select-wrapper
+                    select(name="order" id="sorting")
+                        for filter in ['Alphabetical', 'Alphabetical, reversed', 'Difficulty', 'Difficulty, reversed']
+                            option(value=filter) #{filter}
+                label order
+
+        .content.flex#content
