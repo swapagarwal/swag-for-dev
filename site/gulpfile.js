@@ -6,9 +6,9 @@ const pug           = require('gulp-pug');
 const stylus        = require('gulp-stylus');
 const webserver     = require('gulp-webserver');
 const concat        = require('gulp-concat');
-const series        = require('run-sequence');
 const imagemin      = require('gulp-imagemin');
-const download      = require('gulp-download-stream');
+const download      = require('gulp-download2');
+const buffer 				= require('vinyl-buffer');
 
 const filenameSafe  = s => s.replace(/[^a-z0-9.]/gi, '_').replace(/_{2,}/g, '_').toLowerCase();
 
@@ -69,10 +69,12 @@ gulp.task('swag-img:download', () => {
         file: filenameSafe(s.image),
     }));
     return download(downloadList)
+        .pipe(buffer())
+        .pipe(imagemin())
         .pipe(gulp.dest('dist/assets/swag-img'));
 });
 
-gulp.task('swag-img:apply', () => {
+gulp.task('swag-img:update-data', () => {
     const newSwagList = SWAG_LIST.map(s => {
         const name = filenameSafe(s.image);
         s.image = `/assets/swag-img/${name}`;
@@ -83,13 +85,7 @@ gulp.task('swag-img:apply', () => {
     SWAG_LIST = newSwagList;
 });
 
-gulp.task('swag-img:min', () => {
-    return gulp.src('dist/assets/swag-img/*')
-        .pipe(imagemin())
-        .pipe(gulp.dest('dist/assets/swag-img'));
-});
-
-gulp.task('swag-img', done => series('swag-img:download','swag-img:apply','swag-img:min', done));
+gulp.task('swag-img', ['swag-img:download','swag-img:update-data']);
 
 gulp.task('default', ['webserver', 'pug', 'styl', 'js', 'img', 'swag-img'], () => {
     gulp.watch(['src/pug/**/*.pug', 'src/styl/**/*.styl', 'src/js/*.js'], ['pug', 'styl', 'js']);

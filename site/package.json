@@ -28,7 +28,7 @@
     "gulp-uglify-es": "^1.0.4",
     "gulp-watch": "^4.3.11",
     "gulp-webserver": "^0.9.1",
-    "run-sequence": "^2.2.1"
+    "vinyl-buffer": "^1.0.1"
   },
   "author": "Swapnil Agarwal",
   "license": "ISC",
