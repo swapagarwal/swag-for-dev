@@ -45,7 +45,7 @@ gulp.task('js', () => {
         .pipe(babel({
             'presets': [
                 [
-                    'env',
+                    '@babel/env',
                     {
                         'targets': {
                             'browsers': ['> 75%']
