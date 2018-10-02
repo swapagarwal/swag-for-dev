@@ -70,5 +70,13 @@
     "reference": "http://blog.npmjs.org/post/129827785565/npm-weekly-30-package-scripts-for-tooling-a",
     "image": "https://partners.npmjs.com/weekly/weekly30/socks-1100x.jpg",
     "swagType": "Socks"
+  },
+  {
+    "name": "SendGrid",
+    "difficulty": "hard",
+    "description": "Fix a SendGrid issue on GitHub, get a special edition hacktober tshirt (Only 5 best contibutions)",
+    "reference": "https://sendgrid.com/blog/hacktoberfest-2018-has-arrived/",
+    "image": "https://sendgrid.com/wp-content/uploads/2018/09/9-18_Hacktoberfest_Shirt_Front-960x960.jpg",
+    "swagType": "T-Shirt"
   }
 ]
