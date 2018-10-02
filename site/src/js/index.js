@@ -30,9 +30,9 @@ const fetchSwag = callback => {
 
 const renderSwag = swag => {
     contentEl.innerHTML = '';
-    
+
     swagCache = swag;
-    
+
     const filter = getFilter();
     const sorting = getSorting();
 
@@ -46,10 +46,10 @@ const renderSwag = swag => {
         })
         .sort((a, b) => {
             switch (sorting) {
-                case 'Alphabetical':            return a.name.toLowerCase() > b.name.toLowerCase();
-                case 'Alphabetical, reversed':  return a.name.toLowerCase() < b.name.toLowerCase();
-                case 'Difficulty':              return difficultyIndex(a.difficulty) > difficultyIndex(b.difficulty);
-                case 'Difficulty, reversed':    return difficultyIndex(a.difficulty) < difficultyIndex(b.difficulty);
+            case 'Alphabetical':            return a.name.toLowerCase() > b.name.toLowerCase();
+            case 'Alphabetical, reversed':  return a.name.toLowerCase() < b.name.toLowerCase();
+            case 'Difficulty':              return difficultyIndex(a.difficulty) > difficultyIndex(b.difficulty);
+            case 'Difficulty, reversed':    return difficultyIndex(a.difficulty) < difficultyIndex(b.difficulty);
             }
         })
         .map(item => {
@@ -79,7 +79,7 @@ const attemptRender = () => swagCache === undefined ? fetchSwag(renderSwag) : re
 
 window.addEventListener('load', () => {
     attemptRender();
-    
+
     filterInput.addEventListener('input', attemptRender);
     sortingInput.addEventListener('input', attemptRender);
 });
