@@ -13,6 +13,7 @@ Sign up at [https://upscri.be/67d2fa](https://upscri.be/67d2fa) to get early acc
 - [Alexa](#alexa-) ![](https://img.shields.io/badge/difficulty-hard-red.svg)
 - [Codeship](#codeship-) ![](https://img.shields.io/badge/difficulty-medium-yellow.svg)
 - [devRant](#devrant-) ![](https://img.shields.io/badge/difficulty-medium-yellow.svg)
+- [Gatsby](#gatsby-) ![](https://img.shields.io/badge/difficulty-hard-red.svg)
 - [Google Assistant](#google-assistant-) ![](https://img.shields.io/badge/difficulty-hard-red.svg)
 - [Hacktoberfest](#hacktoberfest-) ![](https://img.shields.io/badge/difficulty-hard-red.svg)
 - [Microsoft Hacktoberfest](#microsoft-hacktoberfest-) ![](https://img.shields.io/badge/difficulty-medium-yellow.svg)
@@ -37,6 +38,12 @@ Sign up at [https://upscri.be/67d2fa](https://upscri.be/67d2fa) to get early acc
 - Get 30 ++'s on a single rant you've posted to devRant to receive 3 free high-quality devRant laptop stickers! Or post an awesome rant that gets over 750 ++'s to receive a free devRant squishy stress ball! [Reference](https://devrant.com/free-stickers)
 
 ![](https://devrant.com/static/devrant/img/stickers-collection3.png)
+
+## Gatsby ![](https://img.shields.io/badge/difficulty-hard-red.svg)
+
+- Get a pull request merged in to Gatsby and receive a free shirt, socks, or stickers. [Reference](https://www.gatsbyjs.org/docs/contributor-swag/)
+
+![](https://www.gatsbyjs.org/static/gatsby-swag-5212f3b07a7af895b9b607fde19e7479-f009a.jpg)
 
 ## Google Assistant ![](https://img.shields.io/badge/difficulty-hard-red.svg)
 
