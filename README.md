@@ -11,7 +11,7 @@ Sign up at [https://upscri.be/67d2fa](https://upscri.be/67d2fa) to get early acc
 ## Contents
 
 - [Alexa](#alexa-) ![](https://img.shields.io/badge/difficulty-hard-red.svg)
-- [Auth0 Hacktoberfest](#auth0-) ![](https://img.shields.io/badge/difficulty-hard-red.svg)
+- [Auth0 Hacktoberfest](#auth0-hacktoberfest-) ![](https://img.shields.io/badge/difficulty-hard-red.svg)
 - [Codeship](#codeship-) ![](https://img.shields.io/badge/difficulty-medium-yellow.svg)
 - [devRant](#devrant-) ![](https://img.shields.io/badge/difficulty-medium-yellow.svg)
 - [Google Assistant](#google-assistant-) ![](https://img.shields.io/badge/difficulty-hard-red.svg)
