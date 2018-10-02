@@ -119,8 +119,8 @@ gulp.task('build', gulp.parallel('pug', 'styl', 'js', 'img', 'swag-img'));
 gulp.task('watch', () => {
     gulp.watch('src/pug/**/*.pug', gulp.parallel('pug'));
     gulp.watch('src/styl/**/*.styl', gulp.parallel('styl'));
-    gulp.watch('src/js/*.js', gulp.parallel('js'));
-    gulp.watch('src/img/*', gulp.parallel('img'));
+    gulp.watch('src/js/**/*.js', gulp.parallel('js'));
+    gulp.watch('src/img/**/*', gulp.parallel('img'));
     gulp.watch('../data.json', gulp.parallel('swag-img'));
 });
 
