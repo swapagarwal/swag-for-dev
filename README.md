@@ -57,7 +57,7 @@ Sign up at [https://upscri.be/67d2fa](https://upscri.be/67d2fa) to get early acc
 
 ![](https://images.all-free-download.com/images/graphiclarge/blank_t_shirt_clip_art_19042.jpg)
 
-## OpenEBS Hacktoberfest ![](https://img.shields.io/badge/difficulty-medium-yellow.svg)
+## OpenEBS Hacktoberfest ![](https://img.shields.io/badge/difficulty-hard-red.svg)
 
 - Have one accepted pull request in an OpenEBS repository during October 2018 to earn an OpenEBS t-shirt and stickers. The best PR will also recieve a laptop. [Reference](https://blog.openebs.io/celebrate-hacktoberfest-2018-with-openebs-206daa1d653c/)
 
