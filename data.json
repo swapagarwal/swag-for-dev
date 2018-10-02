@@ -8,6 +8,13 @@
     "swagType": "Hoodie, Echo Spot"
   },
   {
+    "name": "Auth0 Hacktoberfest",
+    "difficulty": "hard",
+    "description": "Have one accepted pull request in a qualifying Auth0 Github project between October 1 and October 31 of 2018 and receive a kickass 2018 Hacktoberfest t-shirt courtesy of the awesome Auth0 team, along with a psychedelic Auth0 sticker pack.",
+    "reference": "https://auth0.com/blog/celebrate-hacktoberfest-with-auth0/",
+    "swagType": "T-shirts, Stickers"
+  }
+  {
     "name": "Codeship",
     "difficulty": "medium",
     "description": "Submit 5 builds in 30 days, get t-shirts & stickers sent your way!",

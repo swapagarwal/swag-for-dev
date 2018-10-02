@@ -11,6 +11,7 @@ Sign up at [https://upscri.be/67d2fa](https://upscri.be/67d2fa) to get early acc
 ## Contents
 
 - [Alexa](#alexa-) ![](https://img.shields.io/badge/difficulty-hard-red.svg)
+- [Auth0](#auth0-) ![](https://img.shields.io/badge/difficulty-hard-red.svg)
 - [Codeship](#codeship-) ![](https://img.shields.io/badge/difficulty-medium-yellow.svg)
 - [devRant](#devrant-) ![](https://img.shields.io/badge/difficulty-medium-yellow.svg)
 - [Google Assistant](#google-assistant-) ![](https://img.shields.io/badge/difficulty-hard-red.svg)
@@ -25,6 +26,10 @@ Sign up at [https://upscri.be/67d2fa](https://upscri.be/67d2fa) to get early acc
 - Publish a skill, get a hoodie (varies by country) and an Echo Spot (if 1,000 unique customers use your skill in its first 30 days of publication)! [Reference](https://developer.amazon.com/alexa-skills-kit/alexa-developer-skill-promotion)
 
 ![](https://images-na.ssl-images-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/ASM0761-Dev-LP-Goodiepage-UK-March._CB501585903_.png)
+
+## Auth0 Hacktoberfest ![](https://img.shields.io/badge/difficulty-hard-red.svg)
+
+- Have one accepted pull request in a [qualifying Auth0 Github project](https://github.com/auth0) between October 1 and October 31 of 2018 and receive a kickass 2018 Hacktoberfest t-shirt courtesy of the awesome Auth0 team, along with a psychedelic Auth0 sticker pack. [Reference](https://auth0.com/blog/celebrate-hacktoberfest-with-auth0/)
 
 ## Codeship ![](https://img.shields.io/badge/difficulty-medium-yellow.svg)
 
