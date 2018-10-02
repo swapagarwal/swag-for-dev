@@ -48,6 +48,14 @@
     "swagType": "T-shirts"
   },
   {
+    "name": "OpenEBS Hacktoberfest",
+    "difficulty": "hard",
+    "description": "Have one accepted pull request in an OpenEBS repository during October 2018 to earn an OpenEBS t-shirt and stickers. The best PR will also recieve a laptop.",
+    "reference": "https://blog.openebs.io/celebrate-hacktoberfest-2018-with-openebs-206daa1d653c/",
+    "image": "https://cdn-images-1.medium.com/max/1200/1*BXesj2ROGdmUH3vXHkRaRA.png",
+    "swagType": "T-shirts, Stickers, Laptop"
+  },
+  {
     "name": "Mullvad",
     "difficulty": "easy",
     "description": "Send an email to <a href='mailto:support@mullvad.net'>support@mullvad.net</a> with \"STICKERS\" in the subject line. Include a postal address in the email and get an assortment of stickers sent your way.",
