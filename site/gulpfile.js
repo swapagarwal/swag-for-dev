@@ -116,10 +116,12 @@ gulp.task('swag-img', gulp.parallel('swag-img:build-data', gulp.series('swag-img
 
 gulp.task('build', gulp.parallel('pug', 'styl', 'js', 'img', 'swag-img'));
 
-gulp.task('default', gulp.parallel('webserver', 'build', () => {
+gulp.task('watch', () => {
     gulp.watch('src/pug/**/*.pug', gulp.parallel('pug'));
     gulp.watch('src/styl/**/*.styl', gulp.parallel('styl'));
     gulp.watch('src/js/*.js', gulp.parallel('js'));
     gulp.watch('src/img/*', gulp.parallel('img'));
     gulp.watch('../data.json', gulp.parallel('swag-img'));
-}));
+});
+
+gulp.task('default', gulp.parallel('webserver', 'build', 'watch'));
