@@ -1,19 +1,18 @@
-const fs            = require('fs');
-const babel         = require('gulp-babel');
+const { writeFile } = require('fs');
+const mkdirp        = require('mkdirp');
+const del           = require('del');
 const gulp          = require('gulp');
+const babel         = require('gulp-babel');
 const uglify        = require('gulp-uglify-es').default;
 const pug           = require('gulp-pug');
 const stylus        = require('gulp-stylus');
 const webserver     = require('gulp-webserver');
 const concat        = require('gulp-concat');
 const download      = require('gulp-download-stream');
-const imagemin      = require('gulp-imagemin');
-const source        = require('vinyl-source-stream');
-const buffer 				= require('vinyl-buffer');
+const responsive    = require('gulp-responsive');
 
-const filenameSafe  = s => s.replace(/[^a-z0-9.]/gi, '_').replace(/_{2,}/g, '_').toLowerCase();
-
-let SWAG_LIST       = JSON.parse(fs.readFileSync('../data.json'));
+const swagList = () => require('../data.json');
+const escapeName = s => s.replace(/[^a-z0-9]/gi, '_').replace(/_{2,}/g, '_').toLowerCase();
 
 gulp.task('webserver', function () {
     return gulp.src('dist')
@@ -60,37 +59,67 @@ gulp.task('js', () => {
 
 gulp.task('img', () => {
     return gulp.src('src/img/*')
-        .pipe(imagemin())
+        .pipe(responsive({
+            'logo.png': {
+                width: 128,
+                height: 128,
+            },
+            '**/!(logo.png)': {},
+        }, {
+            compressionLevel: 9,
+            errorOnEnlargement: false,
+            errorOnUnusedConfig: false,
+        }))
         .pipe(gulp.dest('dist/assets/img'));
 });
 
 gulp.task('swag-img:download', () => {
-    const downloadList 	= SWAG_LIST.map(s => ({
+    const downloadList = swagList().map(s => ({
         url: s.image,
-        file: filenameSafe(s.image),
+        file: escapeName(s.image) + '.jpg',
     }));
     return download(downloadList)
-        .pipe(buffer())
-        .pipe(imagemin())
         .pipe(gulp.dest('dist/assets/swag-img'));
 });
 
-gulp.task('swag-img:update-data', () => {
-    const newSwagList = SWAG_LIST.map(s => {
-        const name = filenameSafe(s.image);
-        s.image = `/assets/swag-img/${name}`;
-        return s;
+gulp.task('swag-img:optimize', () => {
+    return gulp.src('dist/assets/swag-img/*')
+        .pipe(responsive({
+            '**/*': {
+                height: 300,
+                format: 'jpeg',
+                flatten: true,
+            },
+        }, {
+            quality: 80,
+            progressive: true,
+            errorOnEnlargement: false,
+            errorOnUnusedConfig: false,
+        }))
+        .pipe(gulp.dest('dist/assets/swag-img'));
+});
+
+gulp.task('swag-img:clean', () => {
+    return del('dist/assets/swag-img/**/*');
+});
+
+gulp.task('swag-img:build-data', (cb) => {
+    const newSwagList = swagList().map(s => Object.assign({}, s, {
+        image: `/assets/swag-img/${escapeName(s.image)}.jpg`,
+    }));
+    return mkdirp('dist/assets', () => {
+        writeFile('dist/assets/data.json', JSON.stringify(newSwagList), cb);
     });
-    SWAG_LIST = newSwagList;
-    const stream = source('data.json');
-    stream.end(JSON.stringify(newSwagList));
-    return stream.pipe(gulp.dest('dist/assets'));
 });
 
-gulp.task('swag-img', ['swag-img:download','swag-img:update-data']);
+gulp.task('swag-img', gulp.parallel('swag-img:build-data', gulp.series('swag-img:clean', 'swag-img:download' , 'swag-img:optimize')));
 
-gulp.task('default', ['webserver', 'pug', 'styl', 'js', 'img', 'swag-img'], () => {
-    gulp.watch(['src/pug/**/*.pug', 'src/styl/**/*.styl', 'src/js/*.js'], ['pug', 'styl', 'js']);
-});
+gulp.task('build', gulp.parallel('pug', 'styl', 'js', 'img', 'swag-img'));
 
-gulp.task('build', ['pug', 'styl', 'js', 'img', 'swag-img']);
+gulp.task('default', gulp.parallel('webserver', 'build', () => {
+    gulp.watch('src/pug/**/*.pug', gulp.parallel('pug'));
+    gulp.watch('src/styl/**/*.styl', gulp.parallel('styl'));
+    gulp.watch('src/js/*.js', gulp.parallel('js'));
+    gulp.watch('src/img/*', gulp.parallel('img'));
+    gulp.watch('../data.json', gulp.parallel('swag-img'));
+}));
