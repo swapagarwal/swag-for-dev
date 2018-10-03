@@ -77,7 +77,7 @@ const renderSwag = swag => {
                     <div class='flex img-container'>
                         <img src='${item.image}' alt="${item.name} swag you can get"></img>
                     </div>
-                    <p class='desciption'>${item.description}</p>
+                    <p class='description'>${item.description}</p>
                     <a href='${item.reference}'>Check it out</a>
                 </div>
             `;
