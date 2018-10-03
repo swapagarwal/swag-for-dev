@@ -26,11 +26,17 @@ section.main
             width 90%
 
     .buttons
-        flex-wrap wrap
         justify-content flex-start
         padding-bottom 15px
         max-width 1150px
         width 100%
+        flex-direction column
+        align-items flex-start
+        
+        .top
+            flex-wrap wrap
+            width 100%
+            justify-content flex-start
 
         .item
             padding 5px
@@ -45,6 +51,13 @@ section.main
             color #bbb
             z-index 2
             font-size 0.8rem
+        
+        input
+            margin-right 6px
+
+        .bottom
+            color #e64a19
+            font-weight bold
 
         select
             margin 0 5px

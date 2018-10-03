@@ -6,7 +6,8 @@ const DATA_URL = 'https://raw.githubusercontent.com/swapagarwal/swag-for-dev/mas
 let swagCache,
     contentEl    = document.querySelector('#content'),
     filterInput  = document.querySelector('#filter'),
-    sortingInput = document.querySelector('#sorting');
+    sortingInput = document.querySelector('#sorting'),
+    tagsInput    = document.querySelector('#tag');
 
 /**
  * Fetches the JSON swag list. Once it has got the data,
@@ -29,21 +30,23 @@ const fetchSwag = callback => {
 };
 
 const renderSwag = swag => {
+
     contentEl.innerHTML = '';
     
     swagCache = swag;
     
     const filter = getFilter();
     const sorting = getSorting();
+    const tagSort = getTagValue();
 
     swag
         .filter(v => {
             if (filter === 'All difficulties') {
                 return true;
             }
-
             return v.difficulty === filter.toLowerCase();
         })
+        .filter(item => tagSort ? item.tags.includes('hacktoberfest') : true)
         .sort((a, b) => {
             switch (sorting) {
                 case 'Alphabetical':            return a.name.toLowerCase() > b.name.toLowerCase();
@@ -74,12 +77,16 @@ const difficultyIndex = diff => ['easy', 'medium', 'hard'].indexOf(diff);
 
 const getFilter = () => filterInput.value;
 const getSorting = () => sortingInput.value;
+const getTagValue = () => tagsInput.checked;
 
 const attemptRender = () => swagCache === undefined ? fetchSwag(renderSwag) : renderSwag(swagCache);
 
 window.addEventListener('load', () => {
     attemptRender();
     
+    tagsInput.checked = (new URL(document.location)).searchParams.get('filter') === 'hacktoberfest';
+    
     filterInput.addEventListener('input', attemptRender);
     sortingInput.addEventListener('input', attemptRender);
+    tagsInput.addEventListener('input', attemptRender);
 });
