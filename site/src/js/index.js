@@ -43,9 +43,9 @@ const renderSwag = swag => {
     UrlHandler();
 
     contentEl.innerHTML = '';
-    
+
     swagCache = swag;
-    
+
     const filter = getFilter();
     const sorting = getSorting();
     const tagSort = getTagValue();
@@ -62,11 +62,14 @@ const renderSwag = swag => {
             }
         })
         .map(item => {
+            const {difficulty} = item;
             contentEl.innerHTML += `
                 <div class='item'>
                     <div class='title flex'>
                         <h1>${item.name}</h1>
-                        <div class='difficulty ${item.difficulty}' title='${item.difficulty} difficulty'></div>
+                        <div class='difficulty ${difficulty}' title='${difficulty} difficulty'>
+                            <span class="sr-only">Difficulty: ${difficulty}</span>
+                        </div>
                     </div>
                     <p class='swag'>
                         ${item.tags.map(tag => `<span>${tag}</span>`).join('')}
@@ -113,7 +116,7 @@ const attemptRender = () => swagCache === undefined ? fetchSwag(renderSwag) : re
 
 window.addEventListener('load', () => {
     attemptRender();
-    
+
     filterInput.addEventListener('input', attemptRender);
     sortingInput.addEventListener('input', attemptRender);
 });
