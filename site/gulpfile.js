@@ -42,15 +42,12 @@ gulp.task('js', () => {
     return gulp.src('src/js/*.js')
         .pipe(concat('index.js'))
         .pipe(babel({
-            'presets': [
-                [
-                    '@babel/env',
-                    {
-                        'targets': {
-                            'browsers': ['> 75%']
-                        }
+            presets: [
+                ['@babel/env', {
+                    targets: {
+                        browsers: ['> 75%'],
                     }
-                ]
+                }]
             ]
         }))
         .pipe(uglify())
