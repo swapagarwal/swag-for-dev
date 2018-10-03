@@ -8,8 +8,8 @@ Source code for the https://devswag.io website.
 ```
 git clone https://github.com/swapagarwal/swag-for-dev.git
 ```
-2. Ensure you are running an up-to-date version of [Node.js](https://nodejs.org/en/) on your machine, and that you have npm installed.
-3. Make sure you have [Gulp](https://gulpjs.com/) installed by running 
+2. Ensure you are running an up-to-date version of [Node.js](https://nodejs.org/en/download/package-manager/) on your machine, and that you have npm installed.
+3. Make sure you have [Gulp](https://gulpjs.org/getting-started.html) installed by running 
 ```
 npm install gulp-cli -g
 ```
