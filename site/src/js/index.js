@@ -75,7 +75,7 @@ const renderSwag = swag => {
                         ${item.tags.map(tag => `<span>${tag}</span>`).join('')}
                     </p>
                     <div class='flex img-container'>
-                        <img src='${item.image}'></img>
+                        <img src='${item.image}' alt="${item.name} swag you can get"></img>
                     </div>
                     <p class='desciption'>${item.description}</p>
                     <a href='${item.reference}'>Check it out</a>
