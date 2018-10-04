@@ -44,7 +44,7 @@
     "difficulty": "hard",
     "description": "Make five pull requests in October, earn a limited edition T-shirt!",
     "reference": "https://hacktoberfest.digitalocean.com/",
-    "image": "https://cdn-images-1.medium.com/max/2000/1*9rG8J1r8l-LC0oRvRVoEkA.jpeg",
+    "image": "https://user-images.githubusercontent.com/121322/45907730-f6a80b00-bdad-11e8-93ef-774392192716.png",
     "swagType": "T-shirts, Stickers"
   },
   {
@@ -52,7 +52,7 @@
     "difficulty": "medium",
     "description": "Make one pull request in October 2018 to any <a href='https://opensource.microsoft.com/'>open source Microsoft repository</a>, earn a limited edition T-shirt!",
     "reference": "https://open.microsoft.com/2018/09/30/join-hacktoberfest-2018-celebration-microsoft/",
-    "image": "https://images.all-free-download.com/images/graphiclarge/blank_t_shirt_clip_art_19042.jpg",
+    "image": "https://open.microsoft.com/wp-content/uploads/2018/09/Hacktoberfest-Blog.jpg",
     "swagType": "T-shirts"
   },
   {
