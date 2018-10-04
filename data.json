@@ -70,5 +70,13 @@
     "reference": "http://blog.npmjs.org/post/129827785565/npm-weekly-30-package-scripts-for-tooling-a",
     "image": "https://partners.npmjs.com/weekly/weekly30/socks-1100x.jpg",
     "swagType": "Socks"
+  },
+  {
+    "name": "WhatIsMyBrowser.com",
+    "difficulty": "easy",
+    "description": "Send an api request, and get some vinyl laptop stickers! For free accounts, send an API call then message them using your new account.",
+    "reference": "https://developers.whatismybrowser.com/api/swag/",
+    "image": "https://developers.whatismybrowser.com/static/main/content/api/swag/whatismybrowser-stickers.jpg",
+    "swagType": "Stickers"
   }
 ]
