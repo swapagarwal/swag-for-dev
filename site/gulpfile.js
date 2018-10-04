@@ -16,6 +16,15 @@ const escapeName = s => s.replace(/[^a-z0-9]/gi, '_').replace(/_{2,}/g, '_').toL
 
 let builtSwagList = null;
 
+const swagList = require('../data.json');
+const tags = Array.from(swagList.reduce(
+    (tagList, {tags}) => {
+        tags.forEach(tag => tagList.add(tag));
+        return tagList;
+    },
+    new Set()
+));
+
 gulp.task('webserver', function () {
     return gulp.src('dist')
         .pipe(webserver({
@@ -27,7 +36,8 @@ gulp.task('webserver', function () {
 gulp.task('pug', () => {
     return gulp.src('src/pug/*.pug')
         .pipe(pug({
-            pretty: true
+            pretty: true,
+            locals: {swagList, tags}
         }))
         .pipe(gulp.dest('dist/'));
 });

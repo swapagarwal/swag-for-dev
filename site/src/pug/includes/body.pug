@@ -32,6 +32,20 @@ include ./fork.pug
                     select#tags
 
         .content.flex#content
+            - let difficulty;
+            each swag in swagList
+                - difficulty = swag.difficulty + ' difficulty';
+                div.item
+                    div.title.flex
+                        h1=swag.name
+                        div(class=difficulty title=difficulty)
+                    p.swag
+                        each swagTag in swag.tags
+                            span!=swagTag
+                    div.flex.img-container
+                        img(src=swag.image)
+                    p.description!=swag.description
+                    a(href=swag.reference) Check it out
 
     footer.flex
         .item.flex
@@ -42,5 +56,8 @@ include ./fork.pug
             p Designed by #[a(href="https://github.com/zac-garby") Zac Garby] and #[a(href="https://mihir.ch/") Mihir Chaturvedi]
         .item.flex
             p Want to be listed? #[a(href="https://github.com/swapagarwal/swag-for-dev/issues/new") Contact us].
-
     #codefund_ad
+
+    script(defer).
+        window.swag = !{JSON.stringify(swagList)};
+        window.swagTags = !{JSON.stringify(tags)};
