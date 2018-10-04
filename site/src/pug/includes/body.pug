@@ -13,19 +13,21 @@ include ./fork.pug
 
             .top.flex
                 .item.flex
-                    label Show
+                    span Show
                     .select-wrapper
+                        label.sr-only(for="filter") Filter opportunity difficulty
                         select#filter
                             for filter in ['All difficulties', 'Easy', 'Medium', 'Hard']
                                 option(value=filter) #{filter}
 
                 .item.flex
-                    label In
+                    span In
                     .select-wrapper
+                        label.sr-only(for="sorting") Sort opportunities
                         select#sorting
                             for filter in ['Alphabetical', 'Alphabetical, reversed', 'Difficulty', 'Difficulty, reversed']
                                 option(value=filter) #{filter}
-                    label order
+                    span order
 
             .bottom
                 .item.flex
