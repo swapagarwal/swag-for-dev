@@ -63,6 +63,8 @@ gulp.task('img', () => {
             },
             '**/!(logo.png)': {},
         }, {
+            quality: 90,
+            progressive: true,
             compressionLevel: 9,
             errorOnEnlargement: false,
             errorOnUnusedConfig: false,
@@ -88,8 +90,9 @@ gulp.task('swag-img:optimize', () => {
                 flatten: true,
             },
         }, {
-            quality: 80,
+            quality: 90,
             progressive: true,
+            compressionLevel: 9,
             errorOnEnlargement: false,
             errorOnUnusedConfig: false,
         }))
