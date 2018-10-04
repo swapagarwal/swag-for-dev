@@ -1,0 +1,4 @@
+[build]
+    base      = "site/"
+    publish   = "site/dist"
+    command   = "gulp build"
