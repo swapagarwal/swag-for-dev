@@ -1,4 +1,4 @@
-const DATA_URL = 'https://raw.githubusercontent.com/swapagarwal/swag-for-dev/master/data.json';
+const DATA_URL = '/data.json';
 
 /**
  * Initialising global variables
@@ -7,7 +7,13 @@ let swagCache,
     contentEl    = document.querySelector('#content'),
     filterInput  = document.querySelector('#filter'),
     sortingInput = document.querySelector('#sorting'),
-    tagsInput    = document.querySelector('#tag');
+    tagsSelect   = document.querySelector('#tags'),
+    firstLoad    = true,
+    selector     = new Selectr('#tags', {
+        multiple: true,
+        placeholder: 'Choose tags...',
+        data: {value: '', text: ''}
+    });
 
 /**
  * Fetches the JSON swag list. Once it has got the data,
@@ -21,6 +27,10 @@ const fetchSwag = callback => {
         if (this.readyState === 4 && this.status === 200) {
             const responseText = req.responseText;
             const swag = JSON.parse(responseText);
+
+            selector.removeAll();
+            swag.map(item => item.tags.map(tag => selector.add({value: tag, text: tag}, 1)));
+
             callback(swag);
         }
     };
@@ -30,6 +40,7 @@ const fetchSwag = callback => {
 };
 
 const renderSwag = swag => {
+    UrlHandler();
 
     contentEl.innerHTML = '';
     
@@ -40,13 +51,8 @@ const renderSwag = swag => {
     const tagSort = getTagValue();
 
     swag
-        .filter(v => {
-            if (filter === 'All difficulties') {
-                return true;
-            }
-            return v.difficulty === filter.toLowerCase();
-        })
-        .filter(item => tagSort ? item.tags.includes('hacktoberfest') : true)
+        .filter(v => filter === 'All difficulties' ? true : v.difficulty === filter.toLowerCase())
+        .filter(v => tagSort.length ? tagSort.every(val => v.tags.includes(val)) : true)
         .sort((a, b) => {
             switch (sorting) {
                 case 'Alphabetical':            return a.name.toLowerCase() > b.name.toLowerCase();
@@ -62,7 +68,7 @@ const renderSwag = swag => {
                         <h1>${item.name}</h1>
                         <div class='difficulty ${item.difficulty}' title='${item.difficulty} difficulty'></div>
                     </div>
-                    <p class='swag'>${item.swagType}</p>
+                    <p class='swag'>${item.tags.join(', ')}</p>
                     <div class='flex img-container'>
                         <img src='${item.image}'></img>
                     </div>
@@ -77,16 +83,35 @@ const difficultyIndex = diff => ['easy', 'medium', 'hard'].indexOf(diff);
 
 const getFilter = () => filterInput.value;
 const getSorting = () => sortingInput.value;
-const getTagValue = () => tagsInput.checked;
+const getTagValue = () => selector.getValue();
+
+const UrlHandler = () => {
+    if ('URLSearchParams' in window) {
+        let searchParams = new URLSearchParams(window.location.search);
+        if (firstLoad) {
+            firstLoad = false;
+            if (searchParams.has('tags')) {
+                selector.setValue(searchParams.get('tags').split('+'));
+            }
+            selector.on('selectr.change', attemptRender);
+        }
+        else {
+            if (getTagValue().length){
+                searchParams.set('tags', getTagValue().join('+'));
+                const newRelativePathQuery = `${window.location.pathname}?${searchParams.toString()}`;
+                history.pushState(null, '', newRelativePathQuery);
+            } else {
+                history.pushState(null, '', window.location.pathname);
+            }
+        }
+    }
+};
 
 const attemptRender = () => swagCache === undefined ? fetchSwag(renderSwag) : renderSwag(swagCache);
 
 window.addEventListener('load', () => {
     attemptRender();
     
-    tagsInput.checked = (new URL(document.location)).searchParams.get('filter') === 'hacktoberfest';
-    
     filterInput.addEventListener('input', attemptRender);
     sortingInput.addEventListener('input', attemptRender);
-    tagsInput.addEventListener('input', attemptRender);
 });
