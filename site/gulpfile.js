@@ -14,6 +14,8 @@ const responsive    = require('gulp-responsive');
 const swagList = () => require('../data.json');
 const escapeName = s => s.replace(/[^a-z0-9]/gi, '_').replace(/_{2,}/g, '_').toLowerCase();
 
+let builtSwagList = null;
+
 gulp.task('webserver', function () {
     return gulp.src('dist')
         .pipe(webserver({
@@ -104,11 +106,11 @@ gulp.task('swag-img:clean', () => {
 });
 
 gulp.task('swag-img:build-data', (cb) => {
-    const newSwagList = swagList().map(s => Object.assign({}, s, {
+    builtSwagList = swagList().map(s => Object.assign({}, s, {
         image: `/assets/swag-img/${escapeName(s.image)}.jpg`,
     }));
     return mkdirp('dist/assets', () => {
-        writeFile('dist/assets/data.json', JSON.stringify(newSwagList), cb);
+        writeFile('dist/assets/data.json', JSON.stringify(builtSwagList), cb);
     });
 });
 
