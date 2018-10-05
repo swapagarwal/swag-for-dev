@@ -1,4 +1,4 @@
-const DATA_URL = '/data.json';
+const DATA_URL = 'https://raw.githubusercontent.com/swapagarwal/swag-for-dev/master/data.json';
 
 /**
  * Initialising global variables
