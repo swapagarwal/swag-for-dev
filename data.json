@@ -24,20 +24,20 @@
     "tags": ["accessories", "stickers"]
   },
   {
-    "name": "Google Assistant",
-    "difficulty": "hard",
-    "description": "Make an app for the Google Assistant available to users, get an exclusive Google Assistant t-shirt and a Google Home (if a certain number of users engage with it)!",
-    "reference": "https://developers.google.com/actions/community/overview",
-    "image": "https://i2.wp.com/radthemaker.com/wp-content/uploads/2017/11/My-Google-Assistant-T-Shirt.jpg",
-    "tags": ["clothing", "device"]
-  },
-  {
     "name": "Digital Ocean",
     "difficulty": "hard",
     "description": "Make five pull requests in October, earn a limited edition T-shirt!",
     "reference": "https://hacktoberfest.digitalocean.com/",
     "image": "https://user-images.githubusercontent.com/121322/45907730-f6a80b00-bdad-11e8-93ef-774392192716.png",
     "tags": ["clothing", "hacktoberfest", "stickers"]
+  },
+  {
+    "name": "Google Assistant",
+    "difficulty": "hard",
+    "description": "Make an app for the Google Assistant available to users, get an exclusive Google Assistant t-shirt and a Google Home (if a certain number of users engage with it)!",
+    "reference": "https://developers.google.com/actions/community/overview",
+    "image": "https://i2.wp.com/radthemaker.com/wp-content/uploads/2017/11/My-Google-Assistant-T-Shirt.jpg",
+    "tags": ["clothing", "device"]
   },
   {
     "name": "Microsoft",
