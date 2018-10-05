@@ -70,5 +70,13 @@
     "reference": "http://blog.npmjs.org/post/129827785565/npm-weekly-30-package-scripts-for-tooling-a",
     "image": "https://partners.npmjs.com/weekly/weekly30/socks-1100x.jpg",
     "swagType": "Socks"
+  },
+  {
+      "name":"OpenEBS",
+      "difficulty":"hard",
+      "description":" T-shirts and stickers to hacktoberfest contributors.",
+      "reference": "https://openebs.io/hacktoberfest",
+      "image": "https://openebs.io/assets/images/hacktoberfest2018/prizes.svg",
+      "swagType":"T-shirts, Stickers"
   }
 ]
