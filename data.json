@@ -74,7 +74,7 @@
   {
     "name": "Halite III",
     "difficulty": "medium",
-    "description": "Write a bot to compete in the annual <a href='http://halite.io/'>Halite that Two Sigma hosts and get some swag for getting a high rank.",
+    "description": "Write a bot to compete in the annual <a href='http://halite.io/'>Halite</a> that Two Sigma hosts and get some swag for getting a high rank.",
     "reference": "http://halite.io/",
     "image": "https://2017.halite.io/assets/images/temp/bot_2.png",
     "swagType": "T-Shirts and/or Hoodies"
