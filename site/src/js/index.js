@@ -68,7 +68,9 @@ const renderSwag = swag => {
                         <h1>${item.name}</h1>
                         <div class='difficulty ${item.difficulty}' title='${item.difficulty} difficulty'></div>
                     </div>
-                    <p class='swag'>${item.tags.join(', ')}</p>
+                    <p class='swag'>
+                        ${item.tags.map(tag => `<span>${tag}</span>`).join('')}
+                    </p>
                     <div class='flex img-container'>
                         <img src='${item.image}'></img>
                     </div>
@@ -91,13 +93,14 @@ const UrlHandler = () => {
         if (firstLoad) {
             firstLoad = false;
             if (searchParams.has('tags')) {
-                selector.setValue(searchParams.get('tags').split('+'));
+                console.log(searchParams.get('tags'))
+                selector.setValue(searchParams.get('tags').split(' '));
             }
             selector.on('selectr.change', attemptRender);
         }
         else {
             if (getTagValue().length){
-                searchParams.set('tags', getTagValue().join('+'));
+                searchParams.set('tags', getTagValue().join(' '));
                 const newRelativePathQuery = `${window.location.pathname}?${searchParams.toString()}`;
                 history.pushState(null, '', newRelativePathQuery);
             } else {
