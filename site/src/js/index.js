@@ -93,7 +93,6 @@ const UrlHandler = () => {
         if (firstLoad) {
             firstLoad = false;
             if (searchParams.has('tags')) {
-                console.log(searchParams.get('tags'))
                 selector.setValue(searchParams.get('tags').split(' '));
             }
             selector.on('selectr.change', attemptRender);
