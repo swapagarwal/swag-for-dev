@@ -11,23 +11,28 @@ include ./fork.pug
 
         .buttons.flex
 
-            .item.flex
-                #codefund_ad
+            .top.flex
+                .item.flex
+                    #codefund_ad
 
-            .item.flex
-                label Show
-                .select-wrapper
-                    select(name="show" id="filter")
-                        for filter in ['All difficulties', 'Easy', 'Medium', 'Hard']
-                            option(value=filter) #{filter}
+                .item.flex
+                    label Show
+                    .select-wrapper
+                        select#filter
+                            for filter in ['All difficulties', 'Easy', 'Medium', 'Hard']
+                                option(value=filter) #{filter}
 
-            .item.flex
-                label In
-                .select-wrapper
-                    select(name="order" id="sorting")
-                        for filter in ['Alphabetical', 'Alphabetical, reversed', 'Difficulty', 'Difficulty, reversed']
-                            option(value=filter) #{filter}
-                label order
+                .item.flex
+                    label In
+                    .select-wrapper
+                        select#sorting
+                            for filter in ['Alphabetical', 'Alphabetical, reversed', 'Difficulty', 'Difficulty, reversed']
+                                option(value=filter) #{filter}
+                    label order
+
+            .bottom
+                .item.flex
+                    select#tags
 
         .content.flex#content
 
