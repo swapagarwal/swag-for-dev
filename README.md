@@ -18,7 +18,7 @@ Sign up at [https://upscri.be/67d2fa](https://upscri.be/67d2fa) to get early acc
 - [Mullvad](#mullvad-) ![](https://img.shields.io/badge/difficulty-easy-green.svg)
 - [Netlify](#netlify-) ![](https://img.shields.io/badge/difficulty-easy-green.svg)
 - [npm](#npm-) ![](https://img.shields.io/badge/difficulty-hard-red.svg)
-- [Scalyr](#scalyr) ![](https://img.shields.io/badge/difficulty-medium-yellow.svg
+- [Scalyr](#scalyr) ![](https://img.shields.io/badge/difficulty-medium-yellow.svg)
 
 ## Alexa ![](https://img.shields.io/badge/difficulty-hard-red.svg)
 
