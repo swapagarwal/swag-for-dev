@@ -8,6 +8,14 @@
     "tags": ["clothing", "device"]
   },
   {
+    "name": "Auth0",
+    "difficulty": "hard",
+    "description": "Have one accepted pull request in a qualifying Auth0 Github project in October 2018 and receive a kickass 2018 Hacktoberfest t-shirt courtesy of the awesome Auth0 team, along with a psychedelic Auth0 sticker pack!",
+    "reference": "https://auth0.com/blog/celebrate-hacktoberfest-with-auth0/",
+    "image": "https://images.all-free-download.com/images/graphiclarge/blank_t_shirt_clip_art_19042.jpg",
+    "tags": ["clothing", "hacktoberfest", "stickers"]
+  },
+  {
     "name": "Codeship",
     "difficulty": "medium",
     "description": "Submit 5 builds in 30 days, get t-shirts & stickers sent your way!",
