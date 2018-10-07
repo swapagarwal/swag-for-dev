@@ -10,20 +10,9 @@ const webserver     = require('gulp-webserver');
 const concat        = require('gulp-concat');
 const download      = require('gulp-download-stream');
 const responsive    = require('gulp-responsive');
-
-const swagList = () => require('../data.json');
-const escapeName = s => s.replace(/[^a-z0-9]/gi, '_').replace(/_{2,}/g, '_').toLowerCase();
-
-let builtSwagList = null;
-
 const swagList = require('../data.json');
-const tags = Array.from(swagList.reduce(
-    (tagList, {tags}) => {
-        tags.forEach(tag => tagList.add(tag));
-        return tagList;
-    },
-    new Set()
-));
+
+const escapeName = s => s.replace(/[^a-z0-9]/gi, '_').replace(/_{2,}/g, '_').toLowerCase();
 
 gulp.task('webserver', function () {
     return gulp.src('dist')
@@ -34,6 +23,14 @@ gulp.task('webserver', function () {
 });
 
 gulp.task('pug', () => {
+    const tags = Array.from(swagList.reduce(
+        (tagList, { tags }) => {
+            tags.forEach(tag => tagList.add(tag));
+            return tagList;
+        },
+        new Set()
+    ));
+
     return gulp.src('src/pug/*.pug')
         .pipe(pug({
             pretty: true,
@@ -85,7 +82,7 @@ gulp.task('img', () => {
 });
 
 gulp.task('swag-img:download', () => {
-    const downloadList = swagList().map(s => ({
+    const downloadList = swagList.map(s => ({
         url: s.image,
         file: escapeName(s.image) + '.jpg',
     }));
@@ -116,7 +113,7 @@ gulp.task('swag-img:clean', () => {
 });
 
 gulp.task('swag-img:build-data', (cb) => {
-    builtSwagList = swagList().map(s => Object.assign({}, s, {
+    const builtSwagList = swagList.map(s => Object.assign({}, s, {
         image: `/assets/swag-img/${escapeName(s.image)}.jpg`,
     }));
     return mkdirp('dist/assets', () => {
