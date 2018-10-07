@@ -1,56 +1,25 @@
-const DATA_URL = '/assets/data.json';
-
 /**
  * Initialising global variables
  */
-let swagCache,
-    contentEl    = document.querySelector('#content'),
-    filterInput  = document.querySelector('#filter'),
+let contentEl = document.querySelector('#content'),
+    filterInput = document.querySelector('#filter'),
     sortingInput = document.querySelector('#sorting'),
-    tagsSelect   = document.querySelector('#tags'),
-    firstLoad    = true,
-    selector     = new Selectr('#tags', {
+    firstLoad = true,
+    selector = new Selectr('#tags', {
         multiple: true,
         placeholder: 'Choose tags...',
-        data: {value: '', text: ''}
+        data: window.swagTags.map(tag => ({value: tag, text: tag}))
     });
 
-/**
- * Fetches the JSON swag list. Once it has got the data,
- * it will call the given callback function
- * with one argument: a list of objects.
- */
-const fetchSwag = callback => {
-    let req = new XMLHttpRequest();
-
-    req.onreadystatechange = function() {
-        if (this.readyState === 4 && this.status === 200) {
-            const responseText = req.responseText;
-            const swag = JSON.parse(responseText);
-
-            selector.removeAll();
-            swag.map(item => item.tags.map(tag => selector.add({value: tag, text: tag}, 1)));
-
-            callback(swag);
-        }
-    };
-
-    req.open('GET', DATA_URL, true);
-    req.send();
-};
-
-const renderSwag = swag => {
+const renderSwag = () => {
     UrlHandler();
 
     contentEl.innerHTML = '';
-
-    swagCache = swag;
-
     const filter = getFilter();
     const sorting = getSorting();
     const tagSort = getTagValue();
 
-    swag
+    window.swag
         .filter(v => filter === 'All difficulties' ? true : v.difficulty === filter.toLowerCase())
         .filter(v => tagSort.length ? tagSort.every(val => v.tags.includes(val)) : true)
         .sort((a, b) => {
@@ -95,10 +64,9 @@ const UrlHandler = () => {
             if (searchParams.has('tags')) {
                 selector.setValue(searchParams.get('tags').split(' '));
             }
-            selector.on('selectr.change', attemptRender);
-        }
-        else {
-            if (getTagValue().length){
+            selector.on('selectr.change', renderSwag);
+        } else {
+            if (getTagValue().length) {
                 searchParams.set('tags', getTagValue().join(' '));
                 const newRelativePathQuery = `${window.location.pathname}?${searchParams.toString()}`;
                 history.pushState(null, '', newRelativePathQuery);
@@ -109,11 +77,9 @@ const UrlHandler = () => {
     }
 };
 
-const attemptRender = () => swagCache === undefined ? fetchSwag(renderSwag) : renderSwag(swagCache);
-
 window.addEventListener('load', () => {
-    attemptRender();
+    UrlHandler();
 
-    filterInput.addEventListener('input', attemptRender);
-    sortingInput.addEventListener('input', attemptRender);
+    filterInput.addEventListener('input', renderSwag);
+    sortingInput.addEventListener('input', renderSwag);
 });
