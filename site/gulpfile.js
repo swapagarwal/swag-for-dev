@@ -5,17 +5,20 @@ const gulp          = require('gulp');
 const babel         = require('gulp-babel');
 const uglify        = require('gulp-uglify-es').default;
 const pug           = require('gulp-pug');
+const htmlmin       = require('gulp-htmlmin');
 const stylus        = require('gulp-stylus');
 const webserver     = require('gulp-webserver');
 const concat        = require('gulp-concat');
 const download      = require('gulp-download-stream');
 const responsive    = require('gulp-responsive');
-const swagList = require('../data.json');
+const swagList      = require('../data.json');
 
 const escapeName = s => s.replace(/[^a-z0-9]/gi, '_').replace(/_{2,}/g, '_').toLowerCase();
 const builtSwagList = swagList.map(s => Object.assign({}, s, {
     image: `/assets/swag-img/${escapeName(s.image)}.jpg`,
 }));
+
+
 
 
 gulp.task('webserver', function () {
@@ -39,6 +42,10 @@ gulp.task('pug', () => {
         .pipe(pug({
             pretty: true,
             locals: {swagList: builtSwagList, tags}
+        }))
+        .pipe(htmlmin({
+            collapseWhitespace: true,
+            removeComments: true
         }))
         .pipe(gulp.dest('dist/'));
 });
