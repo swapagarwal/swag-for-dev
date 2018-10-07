@@ -13,6 +13,10 @@ const responsive    = require('gulp-responsive');
 const swagList = require('../data.json');
 
 const escapeName = s => s.replace(/[^a-z0-9]/gi, '_').replace(/_{2,}/g, '_').toLowerCase();
+const builtSwagList = swagList.map(s => Object.assign({}, s, {
+    image: `/assets/swag-img/${escapeName(s.image)}.jpg`,
+}));
+
 
 gulp.task('webserver', function () {
     return gulp.src('dist')
@@ -23,7 +27,7 @@ gulp.task('webserver', function () {
 });
 
 gulp.task('pug', () => {
-    const tags = Array.from(swagList.reduce(
+    const tags = Array.from(builtSwagList.reduce(
         (tagList, { tags }) => {
             tags.forEach(tag => tagList.add(tag));
             return tagList;
@@ -34,7 +38,7 @@ gulp.task('pug', () => {
     return gulp.src('src/pug/*.pug')
         .pipe(pug({
             pretty: true,
-            locals: {swagList, tags}
+            locals: {swagList: builtSwagList, tags}
         }))
         .pipe(gulp.dest('dist/'));
 });
@@ -113,9 +117,6 @@ gulp.task('swag-img:clean', () => {
 });
 
 gulp.task('swag-img:build-data', (cb) => {
-    const builtSwagList = swagList.map(s => Object.assign({}, s, {
-        image: `/assets/swag-img/${escapeName(s.image)}.jpg`,
-    }));
     return mkdirp('dist/assets', () => {
         writeFile('dist/assets/data.json', JSON.stringify(builtSwagList), cb);
     });
