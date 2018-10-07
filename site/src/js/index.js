@@ -1,4 +1,4 @@
-const DATA_URL = 'https://raw.githubusercontent.com/swapagarwal/swag-for-dev/master/data.json';
+const DATA_URL = '/assets/data.json';
 
 /**
  * Initialising global variables
@@ -43,9 +43,9 @@ const renderSwag = swag => {
     UrlHandler();
 
     contentEl.innerHTML = '';
-    
+
     swagCache = swag;
-    
+
     const filter = getFilter();
     const sorting = getSorting();
     const tagSort = getTagValue();
@@ -55,10 +55,10 @@ const renderSwag = swag => {
         .filter(v => tagSort.length ? tagSort.every(val => v.tags.includes(val)) : true)
         .sort((a, b) => {
             switch (sorting) {
-                case 'Alphabetical':            return a.name.toLowerCase() > b.name.toLowerCase();
-                case 'Alphabetical, reversed':  return a.name.toLowerCase() < b.name.toLowerCase();
-                case 'Difficulty':              return difficultyIndex(a.difficulty) > difficultyIndex(b.difficulty);
-                case 'Difficulty, reversed':    return difficultyIndex(a.difficulty) < difficultyIndex(b.difficulty);
+            case 'Alphabetical':            return a.name.toLowerCase() > b.name.toLowerCase();
+            case 'Alphabetical, reversed':  return a.name.toLowerCase() < b.name.toLowerCase();
+            case 'Difficulty':              return difficultyIndex(a.difficulty) > difficultyIndex(b.difficulty);
+            case 'Difficulty, reversed':    return difficultyIndex(a.difficulty) < difficultyIndex(b.difficulty);
             }
         })
         .map(item => {
@@ -113,7 +113,7 @@ const attemptRender = () => swagCache === undefined ? fetchSwag(renderSwag) : re
 
 window.addEventListener('load', () => {
     attemptRender();
-    
+
     filterInput.addEventListener('input', attemptRender);
     sortingInput.addEventListener('input', attemptRender);
 });
