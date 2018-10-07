@@ -24,10 +24,10 @@ const renderSwag = () => {
         .filter(v => tagSort.length ? tagSort.every(val => v.tags.includes(val)) : true)
         .sort((a, b) => {
             switch (sorting) {
-            case 'Alphabetical':            return a.name.toLowerCase() > b.name.toLowerCase();
-            case 'Alphabetical, reversed':  return a.name.toLowerCase() < b.name.toLowerCase();
-            case 'Difficulty':              return difficultyIndex(a.difficulty) > difficultyIndex(b.difficulty);
-            case 'Difficulty, reversed':    return difficultyIndex(a.difficulty) < difficultyIndex(b.difficulty);
+            case 'Alphabetical':           return a.name.toLowerCase() > b.name.toLowerCase() ? 1 : -1;
+            case 'Alphabetical, reversed': return a.name.toLowerCase() < b.name.toLowerCase() ? 1 : -1;
+            case 'Difficulty':             return difficultyIndex(a.difficulty) > difficultyIndex(b.difficulty) ? 1 : -1;
+            case 'Difficulty, reversed':   return difficultyIndex(a.difficulty) < difficultyIndex(b.difficulty) ? 1 : -1;
             }
         })
         .map(item => {
@@ -63,6 +63,7 @@ const UrlHandler = () => {
             firstLoad = false;
             if (searchParams.has('tags')) {
                 selector.setValue(searchParams.get('tags').split(' '));
+                renderSwag();
             }
             selector.on('selectr.change', renderSwag);
         } else {
