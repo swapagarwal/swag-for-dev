@@ -1,5 +1,7 @@
 const del           = require('del');
 const gulp          = require('gulp');
+const cachebust     = require('gulp-rev');
+const cacheClean    = require('gulp-rev-delete-original');
 const babel         = require('gulp-babel');
 const uglify        = require('gulp-uglify-es').default;
 const pug           = require('gulp-pug');
@@ -73,7 +75,8 @@ gulp.task('img', () => {
 });
 
 gulp.task('swag-img:download', () => {
-    return download(swagImages).pipe(gulp.dest('dist/assets/swag-img'));
+    return download(swagImages)
+        .pipe(gulp.dest('dist/assets/swag-img'));
 });
 
 gulp.task('swag-img:optimize', () => {
@@ -89,6 +92,40 @@ gulp.task('swag-img:optimize', () => {
 
 gulp.task('swag-img', gulp.series('swag-img:clean', 'swag-img:download' , 'swag-img:optimize'));
 
+gulp.task('clean', () => {
+    return del([
+        './rev-manifest.json',
+        'dist/assets/css/*',
+        'dist/assets/js/*',
+        'dist/assets/swag-img/*'
+    ]);
+});
+
+gulp.task('cachebust', cb => {
+    return gulp.src(['dist/assets/css/*', 'dist/assets/js/*', 'dist/assets/swag-img/*'], {base: 'dist/assets/'})
+        .pipe(cachebust())
+        .pipe(cacheClean())
+        .pipe(gulp.dest('dist/assets'))
+        .pipe(cachebust.manifest({
+            base: 'dist/assets',
+            merge: true
+        }))
+        .pipe(gulp.dest('dist/assets/'))
+        .on('end', () => {
+            delete require.cache[require.resolve('./rev-manifest.json')];
+            const manifest = require('./rev-manifest.json');
+            swagList.forEach(swag => {
+                const filename = `swag-img/${swag.image.split('/').pop()}`;
+                if (!manifest[filename]) {
+                    console.warn('Unable to find image in manifest:', filename);
+                    return;
+                }
+                swag.image = manifest[filename];
+            });
+            cb();
+        });
+});
+
 gulp.task('webserver', () => {
     return gulp.src('dist')
         .pipe(webserver({
@@ -99,11 +136,15 @@ gulp.task('webserver', () => {
 
 gulp.task('watch', () => {
     gulp.watch('src/pug/**/*.pug', gulp.parallel('pug'));
-    gulp.watch('src/styl/**/*.styl', gulp.parallel('styl'));
-    gulp.watch('src/js/**/*.js', gulp.parallel('js'));
-    gulp.watch('src/img/**/*', gulp.parallel('img'));
-    gulp.watch('../data.json', gulp.parallel('swag-img'));
+    gulp.watch('src/styl/**/*.styl', gulp.series('clean', 'styl', 'cachebust'));
+    gulp.watch('src/js/**/*.js', gulp.series('clean', 'js', 'cachebust'));
 });
 
-gulp.task('build', gulp.parallel('pug', 'styl', 'js', 'img', 'swag-img'));
+gulp.task('build', gulp.series(
+    'clean',
+    gulp.parallel(
+        gulp.series('swag-img', 'cachebust', 'pug'), 'styl', 'js', 'img'
+    )
+));
+
 gulp.task('default', gulp.parallel('webserver', 'build', 'watch'));
