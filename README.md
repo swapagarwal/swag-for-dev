@@ -10,7 +10,7 @@ Sign up at [https://upscri.be/67d2fa](https://upscri.be/67d2fa) to get early acc
 
 ## Contents
 
-All swag opportunities can be found at [http://devswag.io/](http://devswag.io/) 😎
+All swag opportunities can be found at [https://devswag.io/](https://devswag.io/) 😎
 
 ## Contributing
 
