@@ -12,13 +12,13 @@ const responsive    = require('gulp-responsive');
 
 const {swagList, swagImages} = require('./get-data');
 
-gulp.task('webserver', () => {
-    return gulp.src('dist')
-        .pipe(webserver({
-            livereload: true,
-            open: true
-        }));
-});
+const RESIZE_OPTS = {
+    quality: 90,
+    progressive: true,
+    compressionLevel: 9,
+    errorOnEnlargement: false,
+    errorOnUnusedConfig: false
+};
 
 gulp.task('pug', () => {
     const tags = Array.from(swagList.reduce(
@@ -43,43 +43,32 @@ gulp.task('pug', () => {
 
 gulp.task('styl', () => {
     return gulp.src('src/styl/index.styl')
-        .pipe(stylus({
-            compress: true
-        }))
+        .pipe(stylus({ compress: true }))
         .pipe(gulp.dest('dist/assets/css'));
 });
 
 gulp.task('js', () => {
+    const presets = [
+        ['@babel/env', { targets: { browsers: ['> 75%'] } }]
+    ];
     return gulp.src('src/js/*.js')
         .pipe(concat('index.js'))
-        .pipe(babel({
-            presets: [
-                ['@babel/env', {
-                    targets: {
-                        browsers: ['> 75%'],
-                    }
-                }]
-            ]
-        }))
+        .pipe(babel({ presets }))
         .pipe(uglify())
         .pipe(gulp.dest('dist/assets/js'));
 });
 
+gulp.task('swag-img:clean', () => {
+    return del('dist/assets/swag-img/**/*');
+});
+
 gulp.task('img', () => {
     return gulp.src('src/img/*')
-        .pipe(responsive({
-            'logo.png': {
-                width: 128,
-                height: 128,
-            },
-            '**/!(logo.png)': {},
-        }, {
-            quality: 90,
-            progressive: true,
-            compressionLevel: 9,
-            errorOnEnlargement: false,
-            errorOnUnusedConfig: false,
-        }))
+        .pipe(responsive([{
+            name: 'logo.png',
+            width: 128,
+            height: 128
+        }], RESIZE_OPTS))
         .pipe(gulp.dest('dist/assets/img'));
 });
 
@@ -89,29 +78,24 @@ gulp.task('swag-img:download', () => {
 
 gulp.task('swag-img:optimize', () => {
     return gulp.src('dist/assets/swag-img/*')
-        .pipe(responsive({
-            '**/*': {
-                height: 300,
-                format: 'jpeg',
-                flatten: true,
-            },
-        }, {
-            quality: 90,
-            progressive: true,
-            compressionLevel: 9,
-            errorOnEnlargement: false,
-            errorOnUnusedConfig: false,
-        }))
+        .pipe(responsive([{
+            name: '**/*',
+            height: 300,
+            format: 'jpeg',
+            flatten: true
+        }], RESIZE_OPTS))
         .pipe(gulp.dest('dist/assets/swag-img'));
-});
-
-gulp.task('swag-img:clean', () => {
-    return del('dist/assets/swag-img/**/*');
 });
 
 gulp.task('swag-img', gulp.series('swag-img:clean', 'swag-img:download' , 'swag-img:optimize'));
 
-gulp.task('build', gulp.parallel('pug', 'styl', 'js', 'img', 'swag-img'));
+gulp.task('webserver', () => {
+    return gulp.src('dist')
+        .pipe(webserver({
+            livereload: true,
+            open: true
+        }));
+});
 
 gulp.task('watch', () => {
     gulp.watch('src/pug/**/*.pug', gulp.parallel('pug'));
@@ -121,4 +105,5 @@ gulp.task('watch', () => {
     gulp.watch('../data.json', gulp.parallel('swag-img'));
 });
 
+gulp.task('build', gulp.parallel('pug', 'styl', 'js', 'img', 'swag-img'));
 gulp.task('default', gulp.parallel('webserver', 'build', 'watch'));
