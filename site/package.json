@@ -29,8 +29,7 @@
     "gulp-responsive": "^2.11.0",
     "gulp-stylus": "^2.7.0",
     "gulp-uglify-es": "^1.0.4",
-    "gulp-webserver": "^0.9.1",
-    "mkdirp": "^0.5.1"
+    "gulp-webserver": "^0.9.1"
   },
   "author": "Swapnil Agarwal",
   "license": "ISC",

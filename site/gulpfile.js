@@ -1,5 +1,3 @@
-const { writeFile } = require('fs');
-const mkdirp        = require('mkdirp');
 const del           = require('del');
 const gulp          = require('gulp');
 const babel         = require('gulp-babel');
@@ -18,10 +16,7 @@ const builtSwagList = swagList.map(s => Object.assign({}, s, {
     image: `/assets/swag-img/${escapeName(s.image)}.jpg`,
 }));
 
-
-
-
-gulp.task('webserver', function () {
+gulp.task('webserver', () => {
     return gulp.src('dist')
         .pipe(webserver({
             livereload: true,
@@ -97,8 +92,8 @@ gulp.task('swag-img:download', () => {
         url: s.image,
         file: escapeName(s.image) + '.jpg',
     }));
-    return download(downloadList)
-        .pipe(gulp.dest('dist/assets/swag-img'));
+
+    return download(downloadList).pipe(gulp.dest('dist/assets/swag-img'));
 });
 
 gulp.task('swag-img:optimize', () => {
@@ -123,13 +118,7 @@ gulp.task('swag-img:clean', () => {
     return del('dist/assets/swag-img/**/*');
 });
 
-gulp.task('swag-img:build-data', (cb) => {
-    return mkdirp('dist/assets', () => {
-        writeFile('dist/assets/data.json', JSON.stringify(builtSwagList), cb);
-    });
-});
-
-gulp.task('swag-img', gulp.parallel('swag-img:build-data', gulp.series('swag-img:clean', 'swag-img:download' , 'swag-img:optimize')));
+gulp.task('swag-img', gulp.series('swag-img:clean', 'swag-img:download' , 'swag-img:optimize'));
 
 gulp.task('build', gulp.parallel('pug', 'styl', 'js', 'img', 'swag-img'));
 
