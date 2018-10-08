@@ -13,6 +13,10 @@ const download      = require('gulp-download-stream');
 const responsive    = require('gulp-responsive');
 
 const {swagList, swagImages} = require('./get-data');
+const bustedAssets = {
+    css: '',
+    js: ''
+};
 
 const RESIZE_OPTS = {
     quality: 90,
@@ -31,10 +35,16 @@ gulp.task('pug', () => {
         new Set()
     ));
 
+    const manifest = require('./rev-manifest');
+    const bustedAssets = {
+        css: `/assets/${manifest['css/index.css']}`,
+        js: `/assets/${manifest['js/index.js']}`
+    };
+
     return gulp.src('src/pug/*.pug')
         .pipe(pug({
             pretty: true,
-            locals: {swagList, tags}
+            locals: {swagList, tags, bustedAssets}
         }))
         .pipe(htmlmin({
             collapseWhitespace: true,
@@ -122,6 +132,7 @@ gulp.task('cachebust', cb => {
                 }
                 swag.image = manifest[filename];
             });
+
             cb();
         });
 });
