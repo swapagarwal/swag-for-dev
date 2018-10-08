@@ -13,10 +13,6 @@ const download      = require('gulp-download-stream');
 const responsive    = require('gulp-responsive');
 
 const {swagList, swagImages} = require('./get-data');
-const bustedAssets = {
-    css: '',
-    js: ''
-};
 
 const RESIZE_OPTS = {
     quality: 90,
@@ -130,7 +126,7 @@ gulp.task('cachebust', cb => {
                     console.warn('Unable to find image in manifest:', filename);
                     return;
                 }
-                swag.image = manifest[filename];
+                swag.image = `/assets/${manifest[filename]}`;
             });
 
             cb();
