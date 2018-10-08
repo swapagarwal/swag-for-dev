@@ -1,3 +1,4 @@
+/* global Selectr */
 /**
  * Initialising global variables
  */
