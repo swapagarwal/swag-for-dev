@@ -6,26 +6,46 @@ include ./fork.pug
 
         .heading.flex
             h1 devSwag
-            p swag opportunities for developers 😎
+            p 😎 swag opportunities for developers
+            p As a developer, nothing piques my interest more than developer swag! I created devSwag to scratch my own itch by starting a curation of such opportunities in Feb '18. These are crowdsourced and verified by the community. All of them ship worldwide!
 
         .buttons.flex
 
-            .item.flex
-                label Show
-                .select-wrapper
-                    select(name="show" id="filter")
-                        for filter in ['All difficulties', 'Easy', 'Medium', 'Hard']
-                            option(value=filter) #{filter}
+            .top.flex
+                .item.flex
+                    label Show
+                    .select-wrapper
+                        select#filter
+                            for filter in ['All difficulties', 'Easy', 'Medium', 'Hard']
+                                option(value=filter) #{filter}
 
-            .item.flex
-                label In
-                .select-wrapper
-                    select(name="order" id="sorting")
-                        for filter in ['Alphabetical', 'Alphabetical, reversed', 'Difficulty', 'Difficulty, reversed']
-                            option(value=filter) #{filter}
-                label order
+                .item.flex
+                    label In
+                    .select-wrapper
+                        select#sorting
+                            for filter in ['Alphabetical', 'Alphabetical, reversed', 'Difficulty', 'Difficulty, reversed']
+                                option(value=filter) #{filter}
+                    label order
+
+            .bottom
+                .item.flex
+                    select#tags
 
         .content.flex#content
+            - let difficulty;
+            each swag in swagList
+                - difficulty = swag.difficulty + ' difficulty';
+                div.item
+                    div.title.flex
+                        h1=swag.name
+                        div(class=difficulty title=difficulty)
+                    p.swag
+                        each swagTag in swag.tags
+                            span!=swagTag
+                    div.flex.img-container
+                        img(src=swag.image)
+                    p.description!=swag.description
+                    a(href=swag.reference) Check it out
 
     footer.flex
         .item.flex
@@ -33,6 +53,11 @@ include ./fork.pug
         .item.flex
             p Made with ❤︎ by #[a(href="https://github.com/swapagarwal") Swapnil Agarwal]
         .item.flex
-            p Designed by #[a(href="https://github.com/zac-garby") Zac Garby] and #[a(href="https://github.com/plibither8") Mihir Chaturvedi]
+            p Designed by #[a(href="https://github.com/zac-garby") Zac Garby] and #[a(href="https://mihir.ch/") Mihir Chaturvedi]
         .item.flex
-            #codefund_ad
+            p Want to be listed? #[a(href="https://github.com/swapagarwal/swag-for-dev/issues/new") Contact us].
+    #codefund_ad
+
+    script(defer).
+        window.swag = !{JSON.stringify(swagList)};
+        window.swagTags = !{JSON.stringify(tags)};
