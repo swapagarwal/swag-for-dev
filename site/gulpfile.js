@@ -21,6 +21,7 @@ const builtSwagList = swagList.map(s => Object.assign({}, s, {
 gulp.task('webserver', function () {
     return gulp.src('dist')
         .pipe(webserver({
+            host: '0.0.0.0',
             livereload: true,
             open: true
         }));

@@ -1,0 +1,11 @@
+.git/
+.gitignore
+.github/
+netlify.toml
+index.html
+
+site/node_modules/
+site/dist/
+!site/dist/.gitkeep
+
+*.md
