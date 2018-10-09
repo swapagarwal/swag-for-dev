@@ -98,7 +98,7 @@
   {
     "name": "Umbraco",
     "difficulty": "medium",
-    "description": "Make one pull request to one in an Umbraco repository during October 2018 to win exclusive Umbraco swag."
+    "description": "Everybody who sends a pull request during October 2018 will get some super exclusive Umbraco swag! All the contributors will also be listed by Github username in a dedicated blog post in November.",
     "reference": "https://umbraco.com/blog/happy-hacktoberfest/",
     "image": "",
     "tags": ["hacktoberfest"]
