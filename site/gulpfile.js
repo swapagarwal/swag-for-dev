@@ -67,7 +67,7 @@ gulp.task('js', () => {
 });
 
 gulp.task('swag-img:clean', () => {
-    return del('dist/assets/swag-img/**/*');
+    return del('dist/assets/swag-img/*');
 });
 
 gulp.task('img', () => {
@@ -88,7 +88,7 @@ gulp.task('swag-img:download', () => {
 gulp.task('swag-img:optimize', () => {
     return gulp.src('dist/assets/swag-img/*')
         .pipe(responsive([{
-            name: '**/*',
+            name: '*',
             height: 300,
             format: 'jpeg',
             flatten: true
@@ -150,7 +150,7 @@ gulp.task('webserver', () => {
 gulp.task('watch', () => {
     gulp.watch('src/pug/**/*.pug', gulp.parallel('pug'));
     gulp.watch('src/styl/**/*.styl', gulp.series('clean', 'styl', 'cachebust'));
-    gulp.watch('src/js/**/*.js', gulp.series('clean', 'js', 'cachebust'));
+    gulp.watch('src/js/*.js', gulp.series('clean', 'js', 'cachebust'));
 });
 
 gulp.task('build', gulp.series(
