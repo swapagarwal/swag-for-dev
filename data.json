@@ -86,5 +86,13 @@
     "reference": "https://blog.openebs.io/celebrate-hacktoberfest-2018-with-openebs-206daa1d653c/",
     "image": "https://cdn-images-1.medium.com/max/1200/1*BXesj2ROGdmUH3vXHkRaRA.png",
     "tags": ["clothing", "hacktoberfest", "stickers"]
+  },
+  {
+    "name": "Twilio",
+    "difficulty": "medium",
+    "description": "Complete the first set of objectives in <a href='https://twilio.com/quest'>Twilio Quest</a> and get a Twilio Quest t-shirt right to your door.",
+    "reference": "https://www.youtube.com/watch?v=r9MPBJjPQdA",
+    "image": "https://pbs.twimg.com/media/DpB5PIYVAAAX4eC.jpg",
+    "tags": ["clothing", "hacktoberfest"]
   }
 ]
