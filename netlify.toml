@@ -16,6 +16,18 @@
     Feature-Policy = "accelerometer 'none'; camera 'none'; geolocation 'none'; gyroscope 'none'; magnetometer 'none'; microphone 'none'; payment 'none'; usb 'none'"
     Strict-Transport-Security = "max-age=15552000; preload"
     X-Content-Type-Options = "nosniff"
-    link = '''
-    </assets/css/index.css>; rel=preload; as=style,
-    </assets/js/index.js>; rel=preload; as=script'''
+
+[[headers]]
+    for = "/assets/swag-img/*"
+    [headers.values]
+    Cache-Control = 'public max-age=63072000' # 2 years cache for all assets since they're cachebusted
+
+[[headers]]
+    for = "/assets/js/*"
+    [headers.values]
+    Cache-Control = 'public max-age=63072000' # 2 years cache for all assets since they're cachebusted
+
+[[headers]]
+    for = "/assets/css/*"
+    [headers.values]
+    Cache-Control = 'public max-age=63072000' # 2 years cache for all assets since they're cachebusted

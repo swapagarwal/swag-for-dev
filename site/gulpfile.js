@@ -108,7 +108,13 @@ gulp.task('clean', () => {
 });
 
 gulp.task('cachebust', cb => {
-    return gulp.src(['dist/assets/css/*', 'dist/assets/js/*', 'dist/assets/swag-img/*'], {base: 'dist/assets/'})
+    const bustedFiles = [
+        'dist/assets/css/*',
+        'dist/assets/js/*',
+        'dist/assets/swag-img/*'
+    ];
+
+    return gulp.src(bustedFiles, {base: 'dist/assets/'})
         .pipe(cachebust())
         .pipe(cacheClean())
         .pipe(gulp.dest('dist/assets'))
