@@ -89,10 +89,10 @@
   },
   {
     "name": "Twilio",
-    "difficulty": "easy",
-    "description": "Complete the fist level of an interactive online game by Twilio created to get familiar with the Twilio APIs and get a t-shirt. Although I recommend you to finish as many missions as you can, since it is very interesting and you get items for yor avatar.",
-    "reference": "https://www.twilio.com/quest/",
-    "image": "https://pbs.twimg.com/media/DpB5PIYVAAAX4eC.jpg:large",
-    "tags": ["clothing", "Twilio"]
+    "difficulty": "medium",
+    "description": "Complete the first set of objectives in <a href='https://twilio.com/quest'>Twilio Quest</a> and get a Twilio Quest t-shirt right to your door.",
+    "reference": "https://twilio.com/quest",
+    "image": "https://pbs.twimg.com/media/DpB5PIYVAAAX4eC.jpg",
+    "tags": ["clothing", "hacktoberfest"]
   }
 ]
