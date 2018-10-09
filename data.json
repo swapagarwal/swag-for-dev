@@ -94,5 +94,13 @@
     "reference": "https://www.youtube.com/watch?v=r9MPBJjPQdA",
     "image": "https://pbs.twimg.com/media/DpB5PIYVAAAX4eC.jpg",
     "tags": ["clothing", "hacktoberfest"]
+  },
+  {
+    "name": "Umbraco",
+    "difficulty": "medium",
+    "description": "Make one pull request to one in an Umbraco repository during October 2018 to win exclusive Umbraco swag."
+    "reference": "https://umbraco.com/blog/happy-hacktoberfest/",
+    "image": "",
+    "tags": ["hacktoberfest"]
   }
 ]
