@@ -91,7 +91,7 @@
     "name": "Twilio",
     "difficulty": "medium",
     "description": "Complete the first set of objectives in <a href='https://twilio.com/quest'>Twilio Quest</a> and get a Twilio Quest t-shirt right to your door.",
-    "reference": "https://twilio.com/quest",
+    "reference": "https://www.youtube.com/watch?v=r9MPBJjPQdA",
     "image": "https://pbs.twimg.com/media/DpB5PIYVAAAX4eC.jpg",
     "tags": ["clothing", "hacktoberfest"]
   }
