@@ -15,6 +15,7 @@ const renderSwag = () => {
     UrlHandler();
 
     contentEl.innerHTML = '';
+
     const filter = getFilter();
     const sorting = getSorting();
     const tagSort = getTagValue();
@@ -31,19 +32,22 @@ const renderSwag = () => {
             }
         })
         .map(item => {
+            const {difficulty} = item;
             contentEl.innerHTML += `
                 <div class='item'>
                     <div class='title flex'>
                         <h1>${item.name}</h1>
-                        <div class='difficulty ${item.difficulty}' title='${item.difficulty} difficulty'></div>
+                        <div class='difficulty ${difficulty}' title='${difficulty} difficulty'>
+                            <span class="sr-only">Difficulty: ${difficulty}</span>
+                        </div>
                     </div>
                     <p class='swag'>
                         ${item.tags.map(tag => `<span>${tag}</span>`).join('')}
                     </p>
                     <div class='flex img-container'>
-                        <img src='${item.image}'></img>
+                        <img src='${item.image}' alt="${item.name} swag you can get"></img>
                     </div>
-                    <p class='desciption'>${item.description}</p>
+                    <p class='description'>${item.description}</p>
                     <a href='${item.reference}'>Check it out</a>
                 </div>
             `;
