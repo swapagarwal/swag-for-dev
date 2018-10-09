@@ -41,11 +41,12 @@ include ./fork.pug
                     div.title.flex
                         h1=swag.name
                         div(class=difficulty title=difficulty)
+                            span.sr-only=!{difficulty.replace(' ', ': ')}
                     p.swag
                         each swagTag in swag.tags
                             span!=swagTag
                     div.flex.img-container
-                        img(src=swag.image)
+                        img(src=swag.image alt=swag.name + " swag you can get")
                     p.description!=swag.description
                     a(href=swag.reference) Check it out
 
