@@ -29,6 +29,7 @@ gulp.task('webserver', function () {
 gulp.task('pug', () => {
     const tags = Array.from(builtSwagList.reduce(
         (tagList, { tags }) => {
+            tags.sort();
             tags.forEach(tag => tagList.add(tag));
             return tagList;
         },

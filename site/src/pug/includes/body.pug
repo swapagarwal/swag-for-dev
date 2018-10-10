@@ -44,9 +44,7 @@ include ./fork.pug
                         div(class=difficulty title=difficultyTitle)
                             span.sr-only=difficultyTitle
                     p.swag
-                    - var list = swag.tags
-                    - list.sort()
-                        each swagTag in list
+                        each swagTag in swag.tags
                             span!=swagTag
                     div.flex.img-container
                         img(src=swag.image alt=swag.name + " swag you can get")
