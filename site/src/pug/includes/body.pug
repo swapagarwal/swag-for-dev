@@ -65,3 +65,5 @@ include ./fork.pug
     script(defer).
         window.swag = !{JSON.stringify(swagList)};
         window.swagTags = !{JSON.stringify(tags)};
+        window.swagTags.sort();
+
