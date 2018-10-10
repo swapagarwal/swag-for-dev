@@ -88,6 +88,14 @@
     "tags": ["clothing", "hacktoberfest", "stickers"]
   },
   {
+    "name": "Twilio",
+    "difficulty": "medium",
+    "description": "Complete the first set of objectives in <a href='https://twilio.com/quest'>Twilio Quest</a> and get a Twilio Quest t-shirt right to your door.",
+    "reference": "https://www.youtube.com/watch?v=r9MPBJjPQdA",
+    "image": "https://pbs.twimg.com/media/DpB5PIYVAAAX4eC.jpg",
+    "tags": ["clothing", "hacktoberfest"]
+  },
+  {
     "name": "Hasura",
     "difficulty": "hard",
     "description": "Make one pull request in October 2018 to Hasura's <a href='https://github.com/hasura/graphql-engine'>GraphQL Engine repository</a>, earn stickers and a limited edition T-shirt if it gets merged!",
