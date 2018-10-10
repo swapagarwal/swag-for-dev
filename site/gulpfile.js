@@ -33,9 +33,7 @@ gulp.task('pug', () => {
             return tagList;
         },
         new Set()
-    ));
-    
-    tags.sort();
+    )).sort();
 
     return gulp.src('src/pug/*.pug')
         .pipe(pug({
