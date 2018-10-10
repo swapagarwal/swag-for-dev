@@ -98,9 +98,9 @@
   {
     "name": "Hasura",
     "difficulty": "hard",
-    "description": "Make one pull request in October 2018 to Hasura's <a href='https://github.com/hasura/graphql-engine'>GraphQL Engine repository</a>, earn stickers and a limited edition T-shirt if it gets merged!",
+    "description": "Make one pull request to Hasura's <a href='https://github.com/hasura/graphql-engine'>GraphQL Engine repository</a> in October 2018, earn stickers and a limited edition T-shirt if it gets merged!",
     "reference": "https://blog.hasura.io/announcing-hacktoberfest-2018-with-hasura-621045dc9560",
     "image": "https://cdn-images-1.medium.com/max/1600/1*kQxL8yhs0c1x1WVXnjhrIw.png",
-    "tags": ["clothing", "hacktoberfest"]
+    "tags": ["clothing", "hacktoberfest", "stickers"]
   }
 ]
