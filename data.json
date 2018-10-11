@@ -74,7 +74,7 @@
   {
     "name": "npm",
     "difficulty": "hard",
-    "description": "Fix a <a href='https://github.com/npm/npm/issues'>bug</a>, get a fashionable pair of socks!",
+    "description": "Fix a <a href='https://npm.community/c/bugs'>bug</a>, get a fashionable pair of socks!",
     "reference": "http://blog.npmjs.org/post/129827785565/npm-weekly-30-package-scripts-for-tooling-a",
     "image": "https://partners.npmjs.com/weekly/weekly30/socks-1100x.jpg",
     "tags": ["clothing"]
