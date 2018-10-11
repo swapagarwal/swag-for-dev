@@ -20,8 +20,29 @@ Note that a PR needs to reach a certain level of engagement before it gets merge
 
 As this project is community-driven, it'd be really helpful if you comment on the PR when you receive the corresponding swag. This would help in merging it faster. 😇
 
+- Make four pull requests in October, earn a limited edition T-shirt! [Reference](https://hacktoberfest.digitalocean.com/)
+
+![](https://cdn-images-1.medium.com/max/2000/1*9rG8J1r8l-LC0oRvRVoEkA.jpeg)
+
+## Mullvad
+
+- Send an email to [support@mullvad.net](mailto:support@mullvad.net) with "STICKERS" in the subject line. Include a postal address in the email and get an assortment of stickers sent your way. [Reference](https://www.mullvad.net/en/guides/mullvad-stickers-and-merchandise/)
+
+![](https://www.mullvad.net/media/uploads/2017/10/20/mullvad-stickers.jpg)
+
+## Netlify
+
+- Complete this [survey](https://swag.netlify.com/docs/) about using netlify for documentation and get stickers.
+
+![](https://swag.netlify.com/images/laptop-sticker.jpg)
+
+## npm
+
+- Fix a [bug](https://github.com/npm/cli/issues), get a fashionable pair of socks! [Reference](http://blog.npmjs.org/post/129827785565/npm-weekly-30-package-scripts-for-tooling-a)
+
 <a href="https://www.buymeacoffee.com/swap" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: auto !important;width: auto !important;" ></a>
 <a href="https://www.patreon.com/bePatron?u=7999565" target="_blank"><img src="https://c5.patreon.com/external/logo/become_a_patron_button.png" alt="Become a Patron!" height="41"></a>
+
 
 Please consider donating to cover up our hosting costs.
 
