@@ -18,7 +18,7 @@ include ./fork.pug
                         label.sr-only(for="filter") Filter opportunity difficulty
                         select#filter
                             for filter in ['All difficulties', 'Easy', 'Medium', 'Hard']
-                                option(value=filter) #{filter}
+                                option(value=filter.replace(/ /g, '').toLowerCase()) #{filter}
 
                 .item.flex
                     span In
@@ -38,7 +38,7 @@ include ./fork.pug
             each swag in swagList
                 - difficulty = swag.difficulty + ' difficulty';
                 - difficultyTitle = 'Difficulty: ' + swag.difficulty;
-                div.item
+                div(class="item visible " + swag.difficulty)
                     div.title.flex
                         h1=swag.name
                         div(class=difficulty title=difficultyTitle)

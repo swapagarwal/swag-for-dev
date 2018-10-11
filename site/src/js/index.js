@@ -13,6 +13,21 @@ let contentEl = document.querySelector('#content'),
         data: window.swagTags.map(tag => ({value: tag, text: tag}))
     });
 
+function handleFilter() {
+    const ACTIVE_CLASS = 'visible';
+    let nodes;
+    if (this.value === 'alldifficulties') {
+        nodes = document.querySelectorAll('.item');
+    } else {
+        document.querySelectorAll(`.item.${ACTIVE_CLASS}`)
+            .forEach(swag => swag.classList.remove(ACTIVE_CLASS));
+        nodes = document.querySelectorAll(`#content > .${this.value}`);
+
+    }
+
+    nodes.forEach(node => node.classList.add(ACTIVE_CLASS));
+}
+
 const renderSwag = () => {
     UrlHandler();
 
@@ -87,6 +102,6 @@ const UrlHandler = () => {
 window.addEventListener('load', () => {
     UrlHandler();
 
-    filterInput.addEventListener('input', renderSwag);
+    filterInput.addEventListener('input', handleFilter);
     sortingInput.addEventListener('input', renderSwag);
 });
