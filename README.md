@@ -8,9 +8,13 @@ Feel free to send a PR! 😄
 
 Sign up at [https://upscri.be/67d2fa](https://upscri.be/67d2fa) to get notified of new swag opportunities!! 💯
 <<<<<<< HEAD
+<<<<<<< HEAD
 **[[View the Archive](https://us17.campaign-archive.com/home?u=87012cca117582a64dec3ca39&id=212af2e954)]**
 =======
 >>>>>>> 🦄 Featured on Changelog Weekly
+=======
+**[[View the Archive](https://us17.campaign-archive.com/home?u=87012cca117582a64dec3ca39&id=212af2e954)]**
+>>>>>>> Update README.md
 
 ## Contents
 
