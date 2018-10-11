@@ -6,7 +6,7 @@ include ./fork.pug
 
         .heading.flex
             h1 devSwag
-            p 😎 swag opportunities for developers
+                p 😎 swag opportunities for developers
             p As a developer, nothing piques my interest more than developer swag! I created devSwag to scratch my own itch by starting a curation of such opportunities in Feb '18. These are crowdsourced and verified by the community. All of them ship worldwide!
 
         .buttons.flex
@@ -25,8 +25,10 @@ include ./fork.pug
                     .select-wrapper
                         label.sr-only(for="sorting") Sort opportunities
                         select#sorting
-                            for filter in ['Alphabetical', 'Alphabetical, reversed', 'Difficulty', 'Difficulty, reversed']
-                                option(value=filter) #{filter}
+                            option(value="ASC_A" class="alphabetical") Alphabetical
+                            option(value="DSC_A" class="alphabetical") Alphabetical, reversed
+                            option(value="ASC_D" class="difficulty") Difficulty
+                            option(value="DSC_D" class="difficulty") Difficulty, reversed
                     span order
 
             .bottom

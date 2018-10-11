@@ -18,11 +18,13 @@ function handleFilter() {
     let nodes;
     if (this.value === 'alldifficulties') {
         nodes = document.querySelectorAll('.item');
+        document.querySelectorAll('#sorting .difficulty').forEach(node => node.disabled = false);
     } else {
         document.querySelectorAll(`.item.${ACTIVE_CLASS}`)
             .forEach(swag => swag.classList.remove(ACTIVE_CLASS));
         nodes = document.querySelectorAll(`#content > .${this.value}`);
 
+        document.querySelectorAll('#sorting .difficulty').forEach(node => node.disabled = true);
     }
 
     nodes.forEach(node => node.classList.add(ACTIVE_CLASS));
