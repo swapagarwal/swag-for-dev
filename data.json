@@ -94,5 +94,13 @@
     "reference": "https://www.youtube.com/watch?v=r9MPBJjPQdA",
     "image": "https://pbs.twimg.com/media/DpB5PIYVAAAX4eC.jpg",
     "tags": ["clothing", "hacktoberfest"]
+  },
+  {
+    "name": "WhatIsMyBrowser",
+    "difficulty": "easy",
+    "description": "Send an API request, get some sweet vinyl laptop stickers!",
+    "reference": "https://developers.whatismybrowser.com/api/swag/",
+    "image": "https://developers.whatismybrowser.com/static/main/content/api/swag/whatismybrowser-stickers.jpg",
+    "tags": ["stickers"]
   }
 ]
