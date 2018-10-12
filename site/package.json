@@ -6,7 +6,7 @@
   "scripts": {
     "start": "npm run gulp",
     "gulp": "gulp",
-    "lint": "eslint *.js src/js/*.js",
+    "lint": "eslint '*.js' 'src/js/*.js'",
     "lint:fix": "npm run lint -- --fix",
     "build": "gulp build"
   },

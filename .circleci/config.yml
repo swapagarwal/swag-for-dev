@@ -1,0 +1,412 @@
+version: 2
+
+references:
+  workdir_root: &workdir_root
+    /home/circleci/repo
+
+  container_config: &container_config
+    docker:
+      - image: circleci/node:10.11-stretch
+    working_directory: *workdir_root
+
+  docker_container_config: &docker_container_config
+    docker:
+      - image: docker:18.06.1-ce
+    working_directory: *workdir_root
+    environment:
+      # User `circleci:circleci`
+      DOCKER_USER: 3434:3434 
+
+  npm_cache_key: &npm_cache_key
+    npm-{{ .Environment.CACHE_VERSION }}-{{ checksum "site/package-lock.json" }}
+  npm_backup_cache_key: &npm_backup_cache_key
+    npm-{{ .Environment.CACHE_VERSION }}
+
+  restore_node_modules: &restore_node_modules
+    restore_cache:
+      keys:
+        - *npm_cache_key
+        - *npm_backup_cache_key
+  
+  workspace_root: &workspace_root
+    /tmp/workspace
+    
+  attach_workspace: &attach_workspace
+    attach_workspace:
+      at: *workspace_root
+
+  repo_cache_key: &repo_cache_key
+    repo-{{ .Environment.CACHE_VERSION }}-{{ .Branch }}-{{ .Revision }}
+  repo_backup_cache_key: &repo_backup_cache_key
+    repo-{{ .Environment.CACHE_VERSION }}-{{ .Branch }}-
+  repo_backup2_cache_key: &repo_backup2_cache_key
+    repo-{{ .Environment.CACHE_VERSION }}-
+
+  restore_repo: &restore_repo
+    restore_cache:
+      keys:
+        - *repo_cache_key
+        - *repo_backup_cache_key
+        - *repo_backup2_cache_key
+  
+  enable_docker: &enable_docker
+    setup_remote_docker:
+      version: 18.06.0-ce
+      # DLC is a PAID feature
+      # Wont work for a free account
+      docker_layer_caching: false
+
+  login_dockerhub: &login_dockerhub
+    run: 
+      name: Login to docker
+      command: |
+        echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
+
+  docker_cache_key: &docker_cache_key
+    docker-{{ .Environment.CACHE_VERSION }}-{{ .Branch }}-{{ checksum "Dockerfile" }}
+  docker_backup_cache_key: &docker_backup_cache_key
+    docker-{{ .Environment.CACHE_VERSION }}-
+
+  restore_docker: &restore_docker
+    restore_cache:
+      keys:
+        - *docker_cache_key
+        - *docker_backup_cache_key
+  import_docker: &import_docker
+    run:
+      name: Import docker images
+      command: |
+        set -x
+
+        test -f 'docker-cache/devswag-latest.tar' && \
+          docker load < docker-cache/devswag-latest.tar
+        test -f 'docker-cache/devswag-dev.tar' && \
+          docker load < docker-cache/devswag-dev.tar
+
+
+jobs:
+
+  checkout_code:
+    <<: *container_config
+
+    steps:
+      - *restore_repo
+      - checkout
+      - save_cache:
+          key: *repo_cache_key
+          paths:
+            - .
+
+  install:
+    <<: *container_config
+
+    steps:
+      - *restore_repo
+      - *restore_node_modules
+
+      - run:
+          name: Install npm dependencies
+          command: |
+            set -xe 
+            
+            cd site
+            npm ci
+
+      - save_cache:
+          key: *npm_cache_key
+          paths:
+            - ~/repo/site/node_modules
+
+  build:
+    <<: *container_config
+
+    steps:
+      - *restore_repo
+      - *restore_node_modules
+
+      - run:
+          name: Build release
+          command: |
+            set -xe 
+
+            cd site
+            npm run build
+
+  test:
+    <<: *container_config
+
+    steps:
+      - *restore_repo
+      - *restore_node_modules
+
+      - run:
+          name: Lint code
+          command: |
+            set -xe
+
+            cd site
+            npm run -s lint
+
+  build_docker:
+    <<: *docker_container_config
+
+    steps:
+      - checkout
+      - *enable_docker
+      - *restore_docker
+      - *import_docker
+
+      - run:
+          name: Build docker images
+          command: |
+            set -xe
+
+            # Check docker build-context
+            # apk add --no-cache curl
+            # curl -sL https://github.com/pwaller/docker-show-context/releases/download/v1.0/docker-show-context_linux_amd64 -o docker-show-context
+            # chmod +x docker-show-context
+            # ./docker-show-context
+            # rm -f docker-show-context
+
+            docker build -t devswag:latest .
+            docker build -t devswag:dev --target base .
+
+            mkdir -p docker-cache
+            docker save -o docker-cache/devswag-latest.tar devswag:latest
+            docker save -o docker-cache/devswag-dev.tar devswag:dev
+ 
+      - save_cache:
+          key: *docker_cache_key
+          paths:
+            - docker-cache
+
+  release_docker_master:
+    <<: *docker_container_config
+
+    steps:
+      - checkout
+      - *enable_docker
+      - *restore_docker
+      - *import_docker
+      - *login_dockerhub
+
+      - run:
+          name: Push docker images
+          command: |
+            set -xe
+
+            COMMIT_SHA=$(echo $CIRCLE_SHA1 | cut -c -7)
+
+            docker tag devswag:latest $DOCKER_USERNAME/devswag:latest
+            docker tag devswag:latest $DOCKER_USERNAME/devswag:$COMMIT_SHA
+            docker tag devswag:dev $DOCKER_USERNAME/devswag:dev
+            docker tag devswag:dev $DOCKER_USERNAME/devswag:$COMMIT_SHA-dev
+
+            docker push $DOCKER_USERNAME/devswag:latest
+            docker push $DOCKER_USERNAME/devswag:$COMMIT_SHA
+            docker push $DOCKER_USERNAME/devswag:dev
+            docker push $DOCKER_USERNAME/devswag:$COMMIT_SHA-dev
+
+  release_docker:
+    <<: *docker_container_config
+
+    steps:
+      - checkout
+      - *enable_docker
+      - *restore_docker
+      - *import_docker
+      - *login_dockerhub
+
+      - run:
+          name: Push docker images
+          command: |
+            set -xe
+
+            slugify() { echo $1 | sed -r 's/[~\^]+//g' | sed -r 's/[^a-zA-Z0-9]+/-/g' | sed -r 's/^-+\|-+$//g' | tr A-Z a-z; }
+
+            COMMIT_BRANCH=$(slugify "$CIRCLE_BRANCH")
+            COMMIT_SHA=$(echo "$CIRCLE_SHA1" | cut -c -7)
+
+            docker tag devswag:latest $DOCKER_USERNAME/devswag:$COMMIT_BRANCH
+            docker tag devswag:latest $DOCKER_USERNAME/devswag:$COMMIT_BRANCH-$COMMIT_SHA
+            docker tag devswag:dev $DOCKER_USERNAME/devswag:$COMMIT_BRANCH-dev
+            docker tag devswag:dev $DOCKER_USERNAME/devswag:$COMMIT_BRANCH-$COMMIT_SHA-dev
+
+            docker push $DOCKER_USERNAME/devswag:$COMMIT_BRANCH
+            docker push $DOCKER_USERNAME/devswag:$COMMIT_BRANCH-$COMMIT_SHA
+            docker push $DOCKER_USERNAME/devswag:$COMMIT_BRANCH-dev
+            docker push $DOCKER_USERNAME/devswag:$COMMIT_BRANCH-$COMMIT_SHA-dev
+  
+  test_docker_dev_lint:
+    <<: *docker_container_config
+
+    steps:
+      - checkout
+      - *enable_docker
+      - *restore_docker
+      - *import_docker
+
+      - run: 
+          name: Lint code
+          command: |
+            set -xe
+
+            IMAGE_ID=$(docker create -u $DOCKER_USER devswag:dev npm run -s lint)
+
+            docker cp site/.eslintrc $IMAGE_ID:/swag-for-dev/site/.eslintrc
+            docker cp site/gulpfile.js $IMAGE_ID:/swag-for-dev/site/gulpfile.js
+            docker cp site/src $IMAGE_ID:/swag-for-dev/site/src
+
+            # TEMP: allow failure
+            set +e
+
+            lint_out=$(docker start -a $IMAGE_ID 2>&1)
+            lint_err=$?
+            lint_check=" problem " # This will determinate if the linter ran
+            lint_ran=$(test "${lint_out#*$lint_check}" != "$lint_out"; echo $?)
+
+            echo "$lint_out"
+
+            # An error appened during the lint, but the linter has ran succefully
+            if [ "$lint_err" -eq "1" ] && [ "$lint_ran" -eq "0" ]; then
+              # Cancel error state
+              echo 'Cancel error state, linter has ran succefully'
+              lint_err=0
+            fi
+            
+            # TEMP: unallow failure
+            set -x
+
+            docker rm -f $IMAGE_ID
+
+            exit $lint_err
+
+  test_docker_dev_build:
+    <<: *docker_container_config
+
+    steps:
+      - checkout
+      - *enable_docker
+      - *restore_docker
+      - *import_docker
+
+      - run: 
+          name: Build release
+          command: |
+            set -xe
+
+            IMAGE_ID=$(docker create -u $DOCKER_USER devswag:dev npm run build)
+
+            docker cp data.json $IMAGE_ID:/swag-for-dev/data.json
+            docker cp site/.eslintrc $IMAGE_ID:/swag-for-dev/site/.eslintrc
+            docker cp site/gulpfile.js $IMAGE_ID:/swag-for-dev/site/gulpfile.js
+            docker cp site/src $IMAGE_ID:/swag-for-dev/site/src
+
+            # Workaround for dist folder not existing
+            dist_container=$(mktemp -d)
+            mkdir -p $dist_container/dist
+            chown -R $DOCKER_USER $dist_container
+            docker cp $dist_container/dist $IMAGE_ID:/swag-for-dev/site
+
+            docker start -a $IMAGE_ID
+
+            # Extract release from dist
+            docker cp $IMAGE_ID:/swag-for-dev/site/dist $dist_container
+
+            docker rm -f $IMAGE_ID
+
+            ls -la $dist_container/dist
+            rm -rf $dist_container
+
+  test_docker_prod_render:
+    <<: *docker_container_config
+
+    steps:
+      - checkout
+      - *enable_docker
+      - *restore_docker
+      - *import_docker
+
+      - run:
+          name: Pull docker dependencies
+          command: |
+            set -xe
+
+            docker pull vincent178/pptraas
+            docker pull alioygur/wait-for
+            docker pull byrnedo/alpine-curl
+
+      - run:
+          name: Start docker services
+          command: |
+            set -xe 
+
+            # Create docker network
+            docker network create testnet
+
+            # Start services
+            docker run -d -t --rm --network testnet --name devswag-prod devswag
+            docker run -d -t --rm --network testnet --name pptraas vincent178/pptraas
+
+            # Wait for them to be ready
+            docker run -t --rm --network testnet alioygur/wait-for \
+              -it devswag-prod:80,pptraas:8080
+
+      - run: 
+          name: Make screenshots
+          command: |
+            set -xe
+
+            # usage: screenshot "url=url[&size=XXX,YYY]" output_file
+            screenshot() {
+              docker run --rm --network testnet --rm byrnedo/alpine-curl -s \
+                "http://pptraas:8080/screenshot?$1" > $2
+            }
+            
+            mkdir -p screenshots
+            screenshot "url=http://devswag-prod:80" screenshots/devswag_prod_full.png
+            screenshot "url=http://devswag-prod:80&size=400,400" screenshots/devswag_prod_400x400.png
+            ls -la screenshots
+
+      - store_artifacts:
+          path: /home/circleci/repo/screenshots
+          destination: screenshots
+
+workflows:
+  version: 2
+  build_and_test:
+    jobs:
+      - checkout_code
+      - install:
+          requires:
+            - checkout_code
+      - build:
+          requires:
+            - install
+      - test:
+          requires:
+            - install
+  build_and_test_docker:
+    jobs:
+      - build_docker
+      - release_docker_master:
+          requires:
+            - build_docker
+          filters:
+            branches:
+              only: master
+      - release_docker:
+          requires:
+            - build_docker
+          filters:
+            branches:
+              ignore: master
+      - test_docker_dev_lint:
+          requires:
+            - build_docker
+      - test_docker_dev_build:
+          requires:
+            - build_docker
+      - test_docker_prod_render:
+          requires:
+            - build_docker

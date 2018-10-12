@@ -1,0 +1,37 @@
+version: '3.4'
+
+services:
+
+  # Production release
+  prod:
+    image: devswag
+    build:
+      context: .
+    ports:
+      - 8080:80
+
+  # Development release
+  # To use the following service, you may have to export
+  # the $UID and $GID variables from bash before using
+  # docker-compose command. Here's how:
+  # $ export UID=$(id -u)
+  # $ export GID=$(id -g)
+  # 
+  # UID defaults to 1000
+  # GID defaults to 1000
+  dev:
+    image: devswag:dev
+    build:
+      context: .
+      target: base # only build dev
+    volumes:
+      - ./data.json:/swag-for-dev/data.json
+      - ./site/src:/swag-for-dev/site/src
+      - ./site/dist:/swag-for-dev/site/dist
+      - ./site/.eslintrc:/swag-for-dev/site/.eslintrc
+      - ./site/gulpfile.js:/swag-for-dev/site/gulpfile.js
+    ports:
+      - 8080:8080
+      - 35729:35729
+    user: "${UID:-1000}:${GID:-1000}"
+    command: npm start
