@@ -1,11 +1,10 @@
-.git/
-.gitignore
-.github/
-netlify.toml
-index.html
-
-site/node_modules/
-site/dist/
-!site/dist/.gitkeep
-
-*.md
+# Blacklist: use '!' prefix to include a glob
+**
+!data.json
+!nginx.conf
+!site/.eslintrc
+!site/gulpfile.js
+!site/package.json
+!site/package-lock.json
+!site/src/
+!site/dist/

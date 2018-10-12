@@ -4,7 +4,9 @@
   "description": "swag opportunities for developers",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint gulpfile.js src/js/*.js",
+    "start": "npm run gulp",
+    "gulp": "gulp",
+    "lint": "eslint *.js src/js/*.js",
     "lint:fix": "npm run lint -- --fix",
     "build": "gulp build"
   },
