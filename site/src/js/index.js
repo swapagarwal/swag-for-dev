@@ -3,9 +3,10 @@
 /**
  * Initialising global variables
  */
-let contentEl = document.querySelector('#content'),
-    filterInput = document.querySelector('#filter'),
-    sortingInput = document.querySelector('#sorting'),
+const ACTIVE_CLASS = 'visible';
+let contentEl = document.getElementById('content'),
+    filterInput = document.getElementById('filter'),
+    sortingInput = document.getElementById('sorting'),
     firstLoad = true,
     selector = new Selectr('#tags', {
         multiple: true,
@@ -13,21 +14,25 @@ let contentEl = document.querySelector('#content'),
         data: window.swagTags.map(tag => ({value: tag, text: tag}))
     });
 
+function allowDifficultySelect(shouldAllow) {
+    sortingInput.querySelectorAll('.difficulty')
+        .forEach(node => node.disabled = !shouldAllow);
+}
+
 function handleFilter() {
-    const ACTIVE_CLASS = 'visible';
     let nodes;
     if (this.value === 'alldifficulties') {
-        nodes = document.querySelectorAll('.item');
-        document.querySelectorAll('#sorting .difficulty').forEach(node => node.disabled = false);
+        nodes = contentEl.querySelectorAll('.item');
+        allowDifficultySelect(true);
     } else {
-        document.querySelectorAll(`.item.${ACTIVE_CLASS}`)
+        nodes = contentEl.getElementsByClassName(this.value);
+        Array.from(contentEl.getElementsByClassName(ACTIVE_CLASS))
             .forEach(swag => swag.classList.remove(ACTIVE_CLASS));
-        nodes = document.querySelectorAll(`#content > .${this.value}`);
 
-        document.querySelectorAll('#sorting .difficulty').forEach(node => node.disabled = true);
+        allowDifficultySelect(false);
     }
 
-    nodes.forEach(node => node.classList.add(ACTIVE_CLASS));
+    Array.from(nodes).forEach(node => node.classList.add(ACTIVE_CLASS));
 }
 
 const renderSwag = () => {
