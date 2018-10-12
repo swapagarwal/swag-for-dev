@@ -88,6 +88,14 @@
     "tags": ["clothing", "hacktoberfest", "stickers"]
   },
   {
+    "name": "SendGrid",
+    "difficulty": "hard",
+    "description": "Five accepted pull results from SendGrid will qualify you for a special edition SendGrid Hacktoberfest T-shirt.",
+    "reference": "https://sendgrid.com/blog/hacktoberfest-2018-has-arrived/",
+    "image": "https://sendgrid.com/wp-content/uploads/2018/09/9-18_Hacktoberfest_Shirt_Front-960x960.jpg",
+    "tags": ["clothing", "hacktoberfest"]
+  },
+  {
     "name": "Twilio",
     "difficulty": "medium",
     "description": "Complete the first set of objectives in <a href='https://twilio.com/quest'>Twilio Quest</a> and get a Twilio Quest t-shirt right to your door.",
