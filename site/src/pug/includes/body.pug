@@ -70,6 +70,5 @@ include ./fork.pug
             p Want your company's swag to be listed? #[a(href="https://github.com/swapagarwal/swag-for-dev/issues/new") Contact us].
     #codefund_ad
 
-    script(defer).
-        window.swag = !{JSON.stringify(swagList)};
+    script.
         window.swagTags = !{JSON.stringify(tags)};
