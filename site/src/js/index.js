@@ -11,62 +11,100 @@ const sort = {
     DSC_D: (a,b) => a.dataset.difficulty < b.dataset.difficulty ? 1 : -1
 };
 
-let contentEl = document.getElementById('content'),
+const contentEl = document.getElementById('content'),
     filterInput = document.getElementById('filter'),
-    sortingInput = document.getElementById('sorting'),
-    firstLoad = true;
+    tagsInput = document.getElementById('tags'),
+    sortingInput = document.getElementById('sorting');
 
 function allowDifficultySelect(shouldAllow) {
     sortingInput.querySelectorAll('.difficulty')
         .forEach(node => node.disabled = !shouldAllow);
 }
 
-function handleFilter() {
-    let nodes;
-    if (this.value === 'alldifficulties') {
-        nodes = contentEl.querySelectorAll('.item');
-        allowDifficultySelect(true);
-    } else {
-        nodes = contentEl.getElementsByClassName(this.value);
-        Array.from(contentEl.getElementsByClassName(ACTIVE_CLASS))
-            .forEach(swag => swag.classList.remove(ACTIVE_CLASS));
-
-        allowDifficultySelect(false);
-    }
-
-    Array.from(nodes).forEach(node => node.classList.add(ACTIVE_CLASS));
+function activateElements(els) {
+    Array.from(els).forEach(node => node.classList.add(ACTIVE_CLASS));
 }
 
-function handleSort() {
+function handleDifficulty(el) {
+    if (el !== filterInput) {
+        return;
+    }
+
+    Array.from(contentEl.getElementsByClassName(ACTIVE_CLASS))
+        .forEach(swag => swag.classList.remove(ACTIVE_CLASS));
+
+    if (filterInput.value === 'alldifficulties') {
+        activateElements(contentEl.querySelectorAll('.item'));
+        allowDifficultySelect(true);
+    } else {
+        activateElements(contentEl.getElementsByClassName(filterInput.value));
+        allowDifficultySelect(false);
+    }
+}
+
+function handleSort(el) {
+    if (el !== sortingInput) {
+        return;
+    }
+
     Array.from(contentEl.children)
         .map(child => contentEl.removeChild(child))
-        .sort(sort[this.value])
+        .sort(sort[sortingInput.value])
         .forEach(sortedChild => contentEl.appendChild(sortedChild));
 }
 
-const getTagValue = () => window.selector.getValue();
-
-const UrlHandler = () => {
-    if ('URLSearchParams' in window) {
-        const {selector} = window;
-        let searchParams = new URLSearchParams(window.location.search);
-        if (firstLoad) {
-            firstLoad = false;
-            if (searchParams.has('tags')) {
-                selector.setValue(searchParams.get('tags').split(' '));
-            }
-            // @todo selector.on('selectr.change', renderSwag);
-        } else {
-            if (getTagValue().length) {
-                searchParams.set('tags', getTagValue().join(' '));
-                const newRelativePathQuery = `${window.location.pathname}?${searchParams.toString()}`;
-                history.pushState(null, '', newRelativePathQuery);
-            } else {
-                history.pushState(null, '', window.location.pathname);
-            }
-        }
+function initTags() {
+    if (!('URLSearchParams' in window)) {
+        return;
     }
-};
+
+    window.swagSearch = new URLSearchParams(window.location.search);
+    if (window.swagSearch.has('tags')) {
+        window.selector.setValue(window.swagSearch.get('tags').split(' '));
+    }
+}
+
+function handleTags(el) {
+    if (el !== tagsInput) {
+        return;
+    }
+
+    const tags = window.selector.getValue();
+
+    if (tags.length) {
+        Array.from(contentEl.querySelectorAll('.visible')).forEach(el => {
+            let show = false;
+            tags.forEach(tag => {
+                if (el.classList.contains(`tag-${tag}`)) {
+                    show = true;
+                }
+            });
+            if (!show) {
+                el.classList.remove('visible');
+            }
+        });
+
+        if (!window.swagSearch) {
+            return;
+        }
+        window.swagSearch.set('tags', tags.join(' '));
+        const newRelativePathQuery = `${window.location.pathname}?${window.swagSearch.toString()}`;
+        history.pushState(null, '', newRelativePathQuery);
+    } else {
+        activateElements(contentEl.querySelectorAll('.item'));
+        history.pushState(null, '', window.location.pathname);
+    }
+}
+
+// The cascade is the function which handles calling filtering and sorting swag
+function cascade() {
+    const el = this.el || this;
+
+    // Order matters. First, filter by difficulty, then by tag, and finally sort
+    handleDifficulty(el);
+    handleTags(el);
+    handleSort(el);
+}
 
 window.addEventListener('load', () => {
     window.selector = new Selectr('#tags', {
@@ -75,7 +113,8 @@ window.addEventListener('load', () => {
         data: window.swagTags.map(tag => ({ value: tag, text: tag }))
     });
 
-    UrlHandler();
-    filterInput.addEventListener('input', handleFilter);
-    sortingInput.addEventListener('input', handleSort);
+    initTags();
+    window.selector.on('selectr.change', cascade);
+    filterInput.addEventListener('input', cascade);
+    sortingInput.addEventListener('input', cascade);
 });
