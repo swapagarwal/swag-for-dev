@@ -4,6 +4,13 @@
  * Initialising global variables
  */
 const ACTIVE_CLASS = 'visible';
+const sort = {
+    ASC_A: (a,b) => a.dataset.name > b.dataset.name ? 1 : -1,
+    DSC_A: (a,b) => a.dataset.name < b.dataset.name ? 1 : -1,
+    ASC_D: (a,b) => a.dataset.difficulty > b.dataset.difficulty ? 1 : -1,
+    DSC_D: (a,b) => a.dataset.difficulty < b.dataset.difficulty ? 1 : -1
+};
+
 let contentEl = document.getElementById('content'),
     filterInput = document.getElementById('filter'),
     sortingInput = document.getElementById('sorting'),
@@ -35,6 +42,13 @@ function handleFilter() {
     Array.from(nodes).forEach(node => node.classList.add(ACTIVE_CLASS));
 }
 
+function handleSort() {
+    Array.from(contentEl.children)
+        .map(child => contentEl.removeChild(child))
+        .sort(sort[this.value])
+        .forEach(sortedChild => contentEl.appendChild(sortedChild));
+}
+
 const renderSwag = () => {
     UrlHandler();
 
@@ -47,14 +61,6 @@ const renderSwag = () => {
     window.swag
         .filter(v => filter === 'All difficulties' ? true : v.difficulty === filter.toLowerCase())
         .filter(v => tagSort.length ? tagSort.every(val => v.tags.includes(val)) : true)
-        .sort((a, b) => {
-            switch (sorting) {
-            case 'Alphabetical':           return a.name.toLowerCase() > b.name.toLowerCase() ? 1 : -1;
-            case 'Alphabetical, reversed': return a.name.toLowerCase() < b.name.toLowerCase() ? 1 : -1;
-            case 'Difficulty':             return difficultyIndex(a.difficulty) > difficultyIndex(b.difficulty) ? 1 : -1;
-            case 'Difficulty, reversed':   return difficultyIndex(a.difficulty) < difficultyIndex(b.difficulty) ? 1 : -1;
-            }
-        })
         .map(item => {
             const {difficulty} = item;
             contentEl.innerHTML += `
@@ -110,5 +116,5 @@ window.addEventListener('load', () => {
     UrlHandler();
 
     filterInput.addEventListener('input', handleFilter);
-    sortingInput.addEventListener('input', renderSwag);
+    sortingInput.addEventListener('input', handleSort);
 });
