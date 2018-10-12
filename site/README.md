@@ -15,12 +15,16 @@ This folder contains the source code of the devSwag website (hosted at http://de
     ```
     npm install gulp-cli -g
     ```
-1. Open a terminal in the `swag-for-dev/site` directory. Type
+1. Open a terminal in the `swag-for-dev/site` directory. To install the dependencies, type 
     ```
     npm install
     ```
-    into the terminal to install the dependencies. To start the webserver, type
+    To build the webserver, type
+    ```
+    gulp build
+    ```
+    To start the webserver, type
     ```
     gulp
-    ```
+    ```    
 1. The website should open in a browser after it compiles, or you can view it by going to http://localhost:8000
