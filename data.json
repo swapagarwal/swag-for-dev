@@ -96,9 +96,9 @@
     "tags": ["clothing", "hacktoberfest"]
   },
   {
-    "name": "WhatIsMyBrowser.com",
+    "name": "WhatIsMyBrowser",
     "difficulty": "easy",
-    "description": "Send an api request, and get some vinyl laptop stickers! For free accounts, send an API call then message them using your new account.",
+    "description": "Send an API request, get some sweet vinyl laptop stickers!",
     "reference": "https://developers.whatismybrowser.com/api/swag/",
     "image": "https://developers.whatismybrowser.com/static/main/content/api/swag/whatismybrowser-stickers.jpg",
     "tags": ["stickers"]
