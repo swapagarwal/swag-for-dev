@@ -40,7 +40,8 @@ include ./fork.pug
                 - difficultyTitle = 'Difficulty: ' + swag.difficulty;
                 div.item
                     div.title.flex
-                        h1=swag.name
+                        h1
+                          a.no-underline(href=swag.reference) #{swag.name}
                         div(class=difficulty title=difficultyTitle)
                             span.sr-only=difficultyTitle
                     p.swag
