@@ -17,6 +17,19 @@ Sign up at [https://upscri.be/67d2fa](https://upscri.be/67d2fa) to get notified 
 >>>>>>> Update README.md
 
 ## Contents
+<<<<<<< HEAD
+=======
+- [Alexa](#alexa-) ![](https://img.shields.io/badge/difficulty-hard-red.svg)
+- [Codeship](#codeship-) ![](https://img.shields.io/badge/difficulty-medium-yellow.svg)
+- [devRant](#devrant-) ![](https://img.shields.io/badge/difficulty-medium-yellow.svg)
+- [Google Assistant](#google-assistant-) ![](https://img.shields.io/badge/difficulty-hard-red.svg)
+- [Hacktoberfest](#hacktoberfest-) ![](https://img.shields.io/badge/difficulty-hard-red.svg)
+- [Microsoft Hacktoberfest](#microsoft-hacktoberfest-) ![](https://img.shields.io/badge/difficulty-medium-yellow.svg)
+- [Mullvad](#mullvad-) ![](https://img.shields.io/badge/difficulty-easy-green.svg)
+- [Netlify](#netlify-) ![](https://img.shields.io/badge/difficulty-easy-green.svg)
+- [npm](#npm-) ![](https://img.shields.io/badge/difficulty-hard-red.svg)
+- [Scalyr](#scalyr) ![](https://img.shields.io/badge/difficulty-medium-yellow.svg)
+>>>>>>> Fix missing parentheses
 
 All swag opportunities can be found at [http://devswag.io/](http://devswag.io/) 😎
 
