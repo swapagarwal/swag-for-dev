@@ -1,3 +1,5 @@
+
+
 [
   {
     "name": "Alexa",
@@ -126,5 +128,15 @@
     "reference": "https://developers.whatismybrowser.com/api/swag/",
     "image": "https://developers.whatismybrowser.com/static/main/content/api/swag/whatismybrowser-stickers.jpg",
     "tags": ["stickers"]
+  },
+  {
+    "name": "Scalyr",
+    "difficulty": "hard",
+    "description": "<a href='https://www.scalyr.com/signup'>Sign up</a> for a Scalyr trial and get a free t-shirt!",
+    "reference": "https://www.scalyr.com/signup",
+    "image": "https://www.scalyr.com/assets/images/scalyr-logo-color-reverse.png",
+    "swagType": "T-shirts"
   }
 ]
+
+
