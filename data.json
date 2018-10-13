@@ -1,5 +1,3 @@
-
-
 [
   {
     "name": "Alexa",
@@ -132,7 +130,7 @@
   {
     "name": "Scalyr",
     "difficulty": "hard",
-    "description": "<a href='https://www.scalyr.com/signup'>Sign up</a> for a Scalyr trial and get a free t-shirt!",
+    "description": "<a href='https://www.scalyr.com/signup'>Sign up</a> for a 30days Scalyr trial and get a free t-shirt!",
     "reference": "https://www.scalyr.com/signup",
     "image": "https://www.scalyr.com/assets/images/scalyr-logo-color-reverse.png",
     "tags": ["clothing"]
