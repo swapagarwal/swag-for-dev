@@ -9,6 +9,7 @@ Feel free to send a PR! 😄
 Sign up at [https://upscri.be/67d2fa](https://upscri.be/67d2fa) to get notified of new swag opportunities!! 💯
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 **[[View the Archive](https://us17.campaign-archive.com/home?u=87012cca117582a64dec3ca39&id=212af2e954)]**
 =======
 >>>>>>> 🦄 Featured on Changelog Weekly
@@ -45,12 +46,21 @@ As this project is community-driven, it'd be really helpful if you comment on th
 <a href="https://www.patreon.com/bePatron?u=7999565" target="_blank"><img src="https://c5.patreon.com/external/logo/become_a_patron_button.png" alt="Become a Patron!" height="41"></a>
 
 Please consider donating to cover up our hosting costs.
+=======
+**[[View the Archive](https://us17.campaign-archive.com/home?u=87012cca117582a64dec3ca39&id=212af2e954)]**
+
+## Contents
+
+All swag opportunities can be found at [http://devswag.io/](http://devswag.io/) 😎
+>>>>>>> ac7ed970011230f5b86cf9b5156de3d3ec9ae21e
 
 ## Contributing
 
 Feel free to open an issue (or even better, send a Pull Request) for expanding this list. Contributions are very welcome!! 😄
 
 <a href="https://www.buymeacoffee.com/swap" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: auto !important;width: auto !important;" ></a>
+
+Please consider donating to cover up our hosting costs.
 
 ## License
 
