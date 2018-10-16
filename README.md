@@ -1,4 +1,4 @@
-# swag-for-dev [![Awesome](https://awesome.re/badge-flat.svg)](https://awesome.re) [![Codeship Status for swapagarwal/swag-for-dev](https://app.codeship.com/projects/2bb2e180-338b-0136-6fb9-0e05c0ab05bf/status?branch=master)](https://app.codeship.com/projects/288957) [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg)](https://github.com/swapagarwal/swag-for-dev/fork) [![open issues](https://img.shields.io/github/issues/swapagarwal/swag-for-dev.svg)](https://github.com/swapagarwal/swag-for-dev/issues?q=is%3Aopen+is%3Aissue) [![closed pull requests](https://img.shields.io/github/issues-pr-closed/swapagarwal/swag-for-dev.svg)](https://github.com/swapagarwal/swag-for-dev/pulls?q=is%3Apr+is%3Aclosed) [![](https://img.shields.io/github/stars/swapagarwal/swag-for-dev.svg?style=social)](https://github.com/swapagarwal/swag-for-dev) [![](https://img.shields.io/github/followers/swapagarwal.svg?style=social)](https://github.com/swapagarwal)
+# swag-for-dev [![Awesome](https://awesome.re/badge-flat.svg)](https://awesome.re) [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg)](https://github.com/swapagarwal/swag-for-dev/fork) [![open issues](https://img.shields.io/github/issues/swapagarwal/swag-for-dev.svg)](https://github.com/swapagarwal/swag-for-dev/issues?q=is%3Aopen+is%3Aissue) [![closed pull requests](https://img.shields.io/github/issues-pr-closed/swapagarwal/swag-for-dev.svg)](https://github.com/swapagarwal/swag-for-dev/pulls?q=is%3Apr+is%3Aclosed)
 
 As a developer, nothing piques my interest more than developer swag! This is an attempt to list down the current swag opportunities for developers.
 
@@ -7,6 +7,7 @@ Feel free to send a PR! 😄
 > Featured on [Changelog Nightly](http://nightly.changelog.com/2018/02/18/), [Changelog Weekly](http://email.changelog.com/t/t-675F8F9C3E9A6D8E2540EF23F30FEDED), [Hacker News](https://news.ycombinator.com/item?id=16407484), [reddit](https://www.reddit.com/r/coolgithubprojects/comments/7ygd5n/as_a_developer_nothing_piques_my_interest_as_much/), [Product Hunt](https://www.producthunt.com/posts/swag-for-dev) 🦄
 
 Sign up at [https://upscri.be/67d2fa](https://upscri.be/67d2fa) to get notified of new swag opportunities!! 💯
+**[[View the Archive](https://us17.campaign-archive.com/home?u=87012cca117582a64dec3ca39&id=212af2e954)]**
 
 ## Contents
 

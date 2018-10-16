@@ -13,19 +13,21 @@ include ./fork.pug
 
             .top.flex
                 .item.flex
-                    label Show
+                    span Show
                     .select-wrapper
+                        label.sr-only(for="filter") Filter opportunity difficulty
                         select#filter
                             for filter in ['All difficulties', 'Easy', 'Medium', 'Hard']
                                 option(value=filter) #{filter}
 
                 .item.flex
-                    label In
+                    span In
                     .select-wrapper
+                        label.sr-only(for="sorting") Sort opportunities
                         select#sorting
                             for filter in ['Alphabetical', 'Alphabetical, reversed', 'Difficulty', 'Difficulty, reversed']
                                 option(value=filter) #{filter}
-                    label order
+                    span order
 
             .bottom
                 .item.flex
@@ -35,21 +37,23 @@ include ./fork.pug
             - let difficulty;
             each swag in swagList
                 - difficulty = swag.difficulty + ' difficulty';
+                - difficultyTitle = 'Difficulty: ' + swag.difficulty;
                 div.item
                     div.title.flex
                         h1=swag.name
-                        div(class=difficulty title=difficulty)
+                        div(class=difficulty title=difficultyTitle)
+                            span.sr-only=difficultyTitle
                     p.swag
                         each swagTag in swag.tags
                             span!=swagTag
                     div.flex.img-container
-                        img(src=swag.image)
+                        img(src=swag.image alt=swag.name + " swag you can get")
                     p.description!=swag.description
                     a(href=swag.reference) Check it out
 
     footer.flex
         .item.flex
-            iframe(src='https://upscri.be/67d2fa?as_embed', style='width:100%;max-width:800px;margin:0 auto;', height='400', frameborder='0')
+            iframe(src='https://upscri.be/67d2fa?as_embed', style='width:100%;max-width:800px;margin:0 auto;', height='400', frameborder='0', title='Subscribe for updates')
         .item.flex
             p Made with ❤︎ by #[a(href="https://github.com/swapagarwal") Swapnil Agarwal]
         .item.flex
