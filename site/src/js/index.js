@@ -67,7 +67,7 @@ const renderSwag = () => {
                 <div class='item'>
                     <div class='title flex'>
                         <h1>${item.name}</h1>
-                        <applause-button class='applause' url='${`${getItemUrl(item)}`}' multiclap='true'></applause-button>
+                        <applause-button class='applause' url='${`${getItemUrl(item)}`}'></applause-button>
                         <div class='difficulty ${difficulty}' title='${difficulty} difficulty'>
                             <span class='sr-only'>Difficulty: ${difficulty}</span>
                         </div>
