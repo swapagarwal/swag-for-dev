@@ -19,6 +19,7 @@ const requestClaps = (urls) => {
     return new Promise((resolve) => {
         fetch(`${API}/get-multiple`, {
             method: 'POST',
+            mode: 'no-cors',
             headers: {
                 'Content-Type': 'application/json; charset=utf-8',
             },
