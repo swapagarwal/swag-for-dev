@@ -82,7 +82,7 @@
   {
     "name": "Nexmo",
     "difficulty": "easy",
-    "description": "Make one pull request in October 2018 to any <a href='https://github.com/nexmo/'>Nexmo Repository</a>, earn a limited edition #nextoberfest T-shirt!",
+    "description": "Have one accepted pull request in October 2018 to any <a href='https://github.com/nexmo/'>Nexmo Repository</a>, earn a limited edition #nextoberfest T-shirt!",
     "reference": "https://www.nexmo.com/blog/2018/10/09/join-nextoberfest-tis-the-season-to-be-hacking-dr/",
     "image": "https://www.nexmo.com/wp-content/uploads/2018/10/Nextoberfest.png",
     "tags": ["clothing", "hacktoberfest"]
