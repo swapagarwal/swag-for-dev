@@ -125,9 +125,11 @@ window.addEventListener('load', () => {
 
         const popularNode = document.createElement('option');
         popularNode.value = 'Popularity';
+        popularNode.textContent = 'Popularity';
 
         const reversePopularNode = document.createElement('option');
         reversePopularNode.value = 'Popularity, reversed';
+        reversePopularNode.textContent = 'Popularity, reversed';
 
         selectInput.appendChild(popularNode);
         selectInput.appendChild(reversePopularNode);
