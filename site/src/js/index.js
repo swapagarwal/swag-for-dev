@@ -13,6 +13,7 @@ let contentEl = document.querySelector('#content'),
     });
 
 const API = 'https://api.applause-button.com';
+const URL = 'devswag.io/';
 
 const requestClaps = (urls) => {
     return new Promise((resolve) => {
@@ -21,7 +22,6 @@ const requestClaps = (urls) => {
             headers: {
                 'Content-Type': 'application/json; charset=utf-8',
             },
-            referrer: 'devswag.io',
             body: JSON.stringify(urls),
         }).then(response => {
             response.json().then((claps) => {
@@ -36,6 +36,8 @@ const requestClaps = (urls) => {
         });
     });
 };
+
+const getItemUrl = (item) => URL + item.reference ? item.reference : item.name;
 
 const renderSwag = () => {
     UrlHandler();
@@ -55,8 +57,8 @@ const renderSwag = () => {
             case 'Alphabetical, reversed': return a.name.toLowerCase() < b.name.toLowerCase() ? 1 : -1;
             case 'Difficulty':             return difficultyIndex(a.difficulty) > difficultyIndex(b.difficulty) ? 1 : -1;
             case 'Difficulty, reversed':   return difficultyIndex(a.difficulty) < difficultyIndex(b.difficulty) ? 1 : -1;
-            case 'Popular':                return claps[`devswag.io/${a.name}`] < claps[`devswag.io/${b.name}`] ? 1 : -1;
-            case 'Popular, reversed':      return claps[`devswag.io/${a.name}`] > claps[`devswag.io/${b.name}`] ? 1 : -1;
+            case 'Popularity':             return claps[getItemUrl(a)] < claps[getItemUrl(b)] ? 1 : -1;
+            case 'Popularity, reversed':   return claps[getItemUrl(a)] > claps[getItemUrl(b)] ? 1 : -1;
             }
         })
         .map(item => {
@@ -65,7 +67,7 @@ const renderSwag = () => {
                 <div class='item'>
                     <div class='title flex'>
                         <h1>${item.name}</h1>
-                        <applause-button class='applause' url='${`devswag.io/${item.name}`}' multiclap='true'></applause-button>
+                        <applause-button class='applause' url='${`${getItemUrl(item)}`}' multiclap='true'></applause-button>
                         <div class='difficulty ${difficulty}' title='${difficulty} difficulty'>
                             <span class='sr-only'>Difficulty: ${difficulty}</span>
                         </div>
@@ -114,10 +116,21 @@ const UrlHandler = () => {
 window.addEventListener('load', () => {
     UrlHandler();
 
-    const urls = window.swag.map(item => 'devswag.io/' + item.name);
+    const urls = window.swag.map(getItemUrl);
 
-    requestClaps(urls).then(response => {
-        claps = response;
+    requestClaps(urls).then(resp => {
+        claps = resp;
+
+        const selectInput = document.getElementById('sorting');
+
+        const popularNode = document.createElement('option');
+        node.value = 'Popularity';
+
+        const reversePopularNode = document.createElement('option');
+        node.value = 'Popularity, reversed';
+
+        selectInput.appendChild(popularNode);
+        selectInput.appendChild(reversePopularNode);
     });
 
     filterInput.addEventListener('input', renderSwag);
