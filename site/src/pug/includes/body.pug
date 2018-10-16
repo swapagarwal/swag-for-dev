@@ -38,9 +38,11 @@ include ./fork.pug
             each swag in swagList
                 - difficulty = swag.difficulty + ' difficulty';
                 - difficultyTitle = 'Difficulty: ' + swag.difficulty;
+                - applauseUrl = 'http://devswag.io/' + swag.name
                 div.item
                     div.title.flex
                         h1=swag.name
+                        applause-button(class='applause' url=applauseUrl multiclap='true')
                         div(class=difficulty title=difficultyTitle)
                             span.sr-only=difficultyTitle
                     p.swag
