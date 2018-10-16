@@ -124,10 +124,10 @@ window.addEventListener('load', () => {
         const selectInput = document.getElementById('sorting');
 
         const popularNode = document.createElement('option');
-        node.value = 'Popularity';
+        popularNode.value = 'Popularity';
 
         const reversePopularNode = document.createElement('option');
-        node.value = 'Popularity, reversed';
+        reversePopularNode.value = 'Popularity, reversed';
 
         selectInput.appendChild(popularNode);
         selectInput.appendChild(reversePopularNode);
