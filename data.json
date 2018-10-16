@@ -48,6 +48,14 @@
     "tags": ["clothing", "device"]
   },
   {
+    "name": "Hasura",
+    "difficulty": "medium",
+    "description": "Submit a PR to Hasura's <a href='https://github.com/hasura/graphql-engine'>GraphQL Engine repo</a> in October 2018 and get a Hasura sticker pack. If your PR to an issue tagged as 'hacktoberfest' gets merged, you also get a Hasura t-shirt!",
+    "reference": "https://blog.hasura.io/announcing-hacktoberfest-2018-with-hasura-621045dc9560",
+    "image": "https://cdn-images-1.medium.com/max/1600/1*kQxL8yhs0c1x1WVXnjhrIw.png",
+    "tags": ["clothing", "hacktoberfest", "stickers"]
+  },
+  {
     "name": "Microsoft",
     "difficulty": "medium",
     "description": "Make one pull request in October 2018 to any <a href='https://opensource.microsoft.com/'>open source Microsoft repository</a>, earn a limited edition T-shirt!",
@@ -72,9 +80,17 @@
     "tags": ["stickers"]
   },
   {
+    "name": "Nexmo",
+    "difficulty": "medium",
+    "description": "Have one accepted pull request in October 2018 to any <a href='https://github.com/nexmo/'>Nexmo Repository</a>, earn a limited edition #nextoberfest T-shirt!",
+    "reference": "https://www.nexmo.com/blog/2018/10/09/join-nextoberfest-tis-the-season-to-be-hacking-dr/",
+    "image": "https://www.nexmo.com/wp-content/uploads/2018/10/Nextoberfest.png",
+    "tags": ["clothing", "hacktoberfest"]
+  },
+  {
     "name": "npm",
     "difficulty": "hard",
-    "description": "Fix a <a href='https://github.com/npm/npm/issues'>bug</a>, get a fashionable pair of socks!",
+    "description": "Fix a <a href='https://npm.community/c/bugs'>bug</a>, get a fashionable pair of socks!",
     "reference": "http://blog.npmjs.org/post/129827785565/npm-weekly-30-package-scripts-for-tooling-a",
     "image": "https://partners.npmjs.com/weekly/weekly30/socks-1100x.jpg",
     "tags": ["clothing"]
@@ -88,11 +104,27 @@
     "tags": ["clothing", "hacktoberfest", "stickers"]
   },
   {
+    "name": "SendGrid",
+    "difficulty": "hard",
+    "description": "Five accepted pull results from SendGrid will qualify you for a special edition SendGrid Hacktoberfest T-shirt.",
+    "reference": "https://sendgrid.com/blog/hacktoberfest-2018-has-arrived/",
+    "image": "https://sendgrid.com/wp-content/uploads/2018/09/9-18_Hacktoberfest_Shirt_Front-960x960.jpg",
+    "tags": ["clothing", "hacktoberfest"]
+  },
+  {
     "name": "Twilio",
     "difficulty": "medium",
     "description": "Complete the first set of objectives in <a href='https://twilio.com/quest'>Twilio Quest</a> and get a Twilio Quest t-shirt right to your door.",
     "reference": "https://www.youtube.com/watch?v=r9MPBJjPQdA",
     "image": "https://pbs.twimg.com/media/DpB5PIYVAAAX4eC.jpg",
     "tags": ["clothing", "hacktoberfest"]
+  },
+  {
+    "name": "WhatIsMyBrowser",
+    "difficulty": "easy",
+    "description": "Send an API request, get some sweet vinyl laptop stickers!",
+    "reference": "https://developers.whatismybrowser.com/api/swag/",
+    "image": "https://developers.whatismybrowser.com/static/main/content/api/swag/whatismybrowser-stickers.jpg",
+    "tags": ["stickers"]
   }
 ]
