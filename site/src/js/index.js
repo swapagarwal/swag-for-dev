@@ -4,12 +4,38 @@
 let contentEl = document.querySelector('#content'),
     filterInput = document.querySelector('#filter'),
     sortingInput = document.querySelector('#sorting'),
+    claps = {},
     firstLoad = true,
     selector = new Selectr('#tags', {
         multiple: true,
         placeholder: 'Choose tags...',
         data: window.swagTags.map(tag => ({value: tag, text: tag}))
     });
+
+const API = 'https://api.applause-button.com';
+
+const requestClaps = (urls) => {
+    return new Promise((resolve) => {
+        fetch(`${API}/get-multiple`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json; charset=utf-8',
+            },
+            referrer: 'devswag.io',
+            body: JSON.stringify(urls),
+        }).then(response => {
+            response.json().then((claps) => {
+                let clapsObject = {};
+
+                claps.forEach(item => {
+                    clapsObject[item.url] = item.claps;
+                });
+
+                resolve(clapsObject);
+            });
+        });
+    });
+};
 
 const renderSwag = () => {
     UrlHandler();
@@ -29,6 +55,8 @@ const renderSwag = () => {
             case 'Alphabetical, reversed': return a.name.toLowerCase() < b.name.toLowerCase() ? 1 : -1;
             case 'Difficulty':             return difficultyIndex(a.difficulty) > difficultyIndex(b.difficulty) ? 1 : -1;
             case 'Difficulty, reversed':   return difficultyIndex(a.difficulty) < difficultyIndex(b.difficulty) ? 1 : -1;
+            case 'Popular':                return claps[`devswag.io/${a.name}`] < claps[`devswag.io/${b.name}`] ? 1 : -1;
+            case 'Popular, reversed':      return claps[`devswag.io/${a.name}`] > claps[`devswag.io/${b.name}`] ? 1 : -1;
             }
         })
         .map(item => {
@@ -37,15 +65,16 @@ const renderSwag = () => {
                 <div class='item'>
                     <div class='title flex'>
                         <h1>${item.name}</h1>
+                        <applause-button class='applause' url='${`devswag.io/${item.name}`}' multiclap='true'></applause-button>
                         <div class='difficulty ${difficulty}' title='${difficulty} difficulty'>
-                            <span class="sr-only">Difficulty: ${difficulty}</span>
+                            <span class='sr-only'>Difficulty: ${difficulty}</span>
                         </div>
                     </div>
                     <p class='swag'>
                         ${item.tags.map(tag => `<span>${tag}</span>`).join('')}
                     </p>
                     <div class='flex img-container'>
-                        <img src='${item.image}' alt="${item.name} swag you can get"></img>
+                        <img src='${item.image}' alt='${item.name} swag you can get'></img>
                     </div>
                     <p class='description'>${item.description}</p>
                     <a href='${item.reference}'>Check it out</a>
@@ -84,6 +113,12 @@ const UrlHandler = () => {
 
 window.addEventListener('load', () => {
     UrlHandler();
+
+    const urls = window.swag.map(item => 'devswag.io/' + item.name);
+
+    requestClaps(urls).then(response => {
+        claps = response;
+    });
 
     filterInput.addEventListener('input', renderSwag);
     sortingInput.addEventListener('input', renderSwag);

@@ -25,7 +25,7 @@ include ./fork.pug
                     .select-wrapper
                         label.sr-only(for="sorting") Sort opportunities
                         select#sorting
-                            for filter in ['Alphabetical', 'Alphabetical, reversed', 'Difficulty', 'Difficulty, reversed']
+                            for filter in ['Alphabetical', 'Alphabetical, reversed', 'Difficulty', 'Difficulty, reversed', 'Popular', 'Popular, reversed']
                                 option(value=filter) #{filter}
                     span order
 
@@ -38,7 +38,7 @@ include ./fork.pug
             each swag in swagList
                 - difficulty = swag.difficulty + ' difficulty';
                 - difficultyTitle = 'Difficulty: ' + swag.difficulty;
-                - applauseUrl = 'http://devswag.io/' + swag.name
+                - applauseUrl = 'devswag.io/' + swag.name
                 div.item
                     div.title.flex
                         h1=swag.name
