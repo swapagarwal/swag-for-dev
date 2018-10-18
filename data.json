@@ -112,6 +112,14 @@
     "tags": ["clothing", "hacktoberfest"]
   },
   {
+    "name": "source{d}",
+    "difficulty": "hard",
+    "description": "Three merged pull requests in any source{d} repo to receive a limited edition T-shirt as well as one sticker for those who get at least one pull requests merged.",
+    "reference": "https://go.sourced.tech/hacktoberfest",
+    "image": "https://cdn-images-1.medium.com/max/1600/1*8NLzZM4A8iG7Jmh9k2CQBg.jpeg",
+    "tags": ["clothing", "hacktoberfest", "stickers"]
+  },
+  {
     "name": "Twilio",
     "difficulty": "medium",
     "description": "Complete the first set of objectives in <a href='https://twilio.com/quest'>Twilio Quest</a> and get a Twilio Quest t-shirt right to your door.",
