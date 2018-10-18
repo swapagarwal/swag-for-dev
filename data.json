@@ -56,6 +56,14 @@
     "tags": ["clothing", "hacktoberfest", "stickers"]
   },
   {
+    "name": "LBRY",
+    "difficulty": "medium",
+    "description": "A sweet T-shirt for anyone who submits 3 Pull Requests. A Lamborghini Aventador S for anyone who submits 800,000 accepted PRs.",
+    "reference": "https://lbry.io/news/hacktoberfest",
+    "image": "https://pbs.twimg.com/media/Dowf_X5XkAAXR3T.jpg",
+    "tags": ["clothing", "hacktoberfest", "car"]
+  },
+  {
     "name": "Microsoft",
     "difficulty": "medium",
     "description": "Make one pull request in October 2018 to any <a href='https://opensource.microsoft.com/'>open source Microsoft repository</a>, earn a limited edition T-shirt!",
