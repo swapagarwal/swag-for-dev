@@ -6,7 +6,7 @@
     "reference": "https://developer.amazon.com/alexa-skills-kit/alexa-developer-skill-promotion",
     "image": "https://images-na.ssl-images-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/ASM0761-Dev-LP-Goodiepage-UK-March._CB501585903_.png",
     "tags": ["clothing", "device"],
-    "active":true
+    "active": true
   },
   {
     "name": "Auth0",
@@ -15,7 +15,7 @@
     "reference": "https://auth0.com/blog/celebrate-hacktoberfest-with-auth0/",
     "image": "https://images.all-free-download.com/images/graphiclarge/blank_t_shirt_clip_art_19042.jpg",
     "tags": ["clothing", "hacktoberfest", "stickers"],
-    "active":true
+    "active": true
   },
   {
     "name": "Codeship",
@@ -24,7 +24,7 @@
     "reference": "https://codeship.com/swag",
     "image": "https://juliesfreebies.com/wp-content/uploads/2016/05/codeship-swag.jpg",
     "tags": ["clothing", "stickers"],
-    "active":true
+    "active": true
   },
   {
     "name": "devRant",
@@ -33,7 +33,7 @@
     "reference": "https://devrant.com/free-stickers",
     "image": "https://devrant.com/static/devrant/img/stickers-collection3.png",
     "tags": ["accessories", "stickers"],
-    "active":true
+    "active": true
   },
   {
     "name": "Digital Ocean",
@@ -42,7 +42,7 @@
     "reference": "https://hacktoberfest.digitalocean.com/",
     "image": "https://user-images.githubusercontent.com/121322/45907730-f6a80b00-bdad-11e8-93ef-774392192716.png",
     "tags": ["clothing", "hacktoberfest", "stickers"],
-    "active":true
+    "active": true
   },
   {
     "name": "Google Assistant",
@@ -51,7 +51,7 @@
     "reference": "https://developers.google.com/actions/community/overview",
     "image": "https://i2.wp.com/radthemaker.com/wp-content/uploads/2017/11/My-Google-Assistant-T-Shirt.jpg",
     "tags": ["clothing", "device"],
-    "active":true
+    "active": true
   },
   {
     "name": "Hasura",
@@ -60,7 +60,7 @@
     "reference": "https://blog.hasura.io/announcing-hacktoberfest-2018-with-hasura-621045dc9560",
     "image": "https://cdn-images-1.medium.com/max/1600/1*kQxL8yhs0c1x1WVXnjhrIw.png",
     "tags": ["clothing", "hacktoberfest", "stickers"],
-    "active":true
+    "active": true
   },
   {
     "name": "Microsoft",
@@ -69,7 +69,7 @@
     "reference": "https://open.microsoft.com/2018/09/30/join-hacktoberfest-2018-celebration-microsoft/",
     "image": "https://open.microsoft.com/wp-content/uploads/2018/09/Hacktoberfest-Blog.jpg",
     "tags": ["clothing", "hacktoberfest"],
-    "active":true
+    "active": true
   },
   {
     "name": "Mullvad",
@@ -78,7 +78,7 @@
     "reference": "https://www.mullvad.net/en/guides/mullvad-stickers-and-merchandise/",
     "image": "https://www.mullvad.net/media/uploads/2017/10/20/mullvad-stickers.jpg",
     "tags": ["stickers"],
-    "active":true
+    "active": true
   },
   {
     "name": "Netlify",
@@ -87,7 +87,7 @@
     "reference": "https://swag.netlify.com/docs/",
     "image": "https://swag.netlify.com/images/laptop-sticker.jpg",
     "tags": ["stickers"],
-    "active":true
+    "active": true
   },
   {
     "name": "Nexmo",
@@ -96,7 +96,7 @@
     "reference": "https://www.nexmo.com/blog/2018/10/09/join-nextoberfest-tis-the-season-to-be-hacking-dr/",
     "image": "https://www.nexmo.com/wp-content/uploads/2018/10/Nextoberfest.png",
     "tags": ["clothing", "hacktoberfest"],
-    "active":true
+    "active": true
   },
   {
     "name": "npm",
@@ -105,7 +105,7 @@
     "reference": "http://blog.npmjs.org/post/129827785565/npm-weekly-30-package-scripts-for-tooling-a",
     "image": "https://partners.npmjs.com/weekly/weekly30/socks-1100x.jpg",
     "tags": ["clothing"],
-    "active":true
+    "active": true
   },
   {
     "name": "OpenEBS",
@@ -114,7 +114,7 @@
     "reference": "https://blog.openebs.io/celebrate-hacktoberfest-2018-with-openebs-206daa1d653c/",
     "image": "https://cdn-images-1.medium.com/max/1200/1*BXesj2ROGdmUH3vXHkRaRA.png",
     "tags": ["clothing", "hacktoberfest", "stickers"],
-    "active":true
+    "active": true
   },
   {
     "name": "SendGrid",
@@ -123,7 +123,7 @@
     "reference": "https://sendgrid.com/blog/hacktoberfest-2018-has-arrived/",
     "image": "https://sendgrid.com/wp-content/uploads/2018/09/9-18_Hacktoberfest_Shirt_Front-960x960.jpg",
     "tags": ["clothing", "hacktoberfest"],
-    "active":true
+    "active": true
   },
   {
     "name": "Twilio",
@@ -132,7 +132,7 @@
     "reference": "https://www.youtube.com/watch?v=r9MPBJjPQdA",
     "image": "https://pbs.twimg.com/media/DpB5PIYVAAAX4eC.jpg",
     "tags": ["clothing", "hacktoberfest"],
-    "active":true
+    "active": true
   },
   {
     "name": "WhatIsMyBrowser",
@@ -141,6 +141,6 @@
     "reference": "https://developers.whatismybrowser.com/api/swag/",
     "image": "https://developers.whatismybrowser.com/static/main/content/api/swag/whatismybrowser-stickers.jpg",
     "tags": ["stickers"],
-    "active":true
+    "active": true
   }
 ]
