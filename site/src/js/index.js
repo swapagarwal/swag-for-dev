@@ -5,10 +5,10 @@
  */
 const ACTIVE_CLASS = 'visible';
 const sort = {
-    ASC_A: (a,b) => a.dataset.name > b.dataset.name ? 1 : -1,
-    DSC_A: (a,b) => a.dataset.name < b.dataset.name ? 1 : -1,
-    ASC_D: (a,b) => a.dataset.difficulty > b.dataset.difficulty ? 1 : -1,
-    DSC_D: (a,b) => a.dataset.difficulty < b.dataset.difficulty ? 1 : -1
+    ALPHABETICAL_ASCENDING: (a,b) => a.dataset.name > b.dataset.name ? 1 : -1,
+    ALPHABETICAL_DESCENDING: (a,b) => a.dataset.name < b.dataset.name ? 1 : -1,
+    DIFFICULTY_ASCENDING: (a,b) => a.dataset.difficulty > b.dataset.difficulty ? 1 : -1,
+    DIFFICULTY_DESCENDING: (a,b) => a.dataset.difficulty < b.dataset.difficulty ? 1 : -1
 };
 
 const contentEl = document.getElementById('content');
