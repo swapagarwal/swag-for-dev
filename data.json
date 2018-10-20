@@ -142,5 +142,13 @@
     "reference": "https://umbraco.com/blog/happy-hacktoberfest/",
     "image": "https://shop.umbraco.com/media/2989609/img_0722.jpg",
     "tags": ["hacktoberfest"]
+  },
+  {
+    "name": "Magento",
+    "difficulty": "hard",
+    "description": "Have 5 merged PRs or validate at least 10 issues in October 2018, get a Squashtoberfest T-Shirt!",
+    "reference": "https://github.com/magento/magento2/wiki/SQUASHTOBERFEST-2018",
+    "image": "https://raw.githubusercontent.com/wiki/magento-engcom/msi/images/squash2018.png",
+    "tags": ["clothing", "hacktoberfest"]
   }
 ]
