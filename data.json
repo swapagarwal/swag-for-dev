@@ -134,5 +134,13 @@
     "reference": "https://developers.whatismybrowser.com/api/swag/",
     "image": "https://developers.whatismybrowser.com/static/main/content/api/swag/whatismybrowser-stickers.jpg",
     "tags": ["stickers"]
+  },
+  {
+    "name": "Umbraco",
+    "difficulty": "medium",
+    "description": "Have one accepted pull request in a Umbraco repository during October 2018 to get some super exclusive Umbraco swag. All the contributors will also be listed by Github username in a dedicated blog post in November.",
+    "reference": "https://umbraco.com/blog/happy-hacktoberfest/",
+    "image": "https://shop.umbraco.com/media/2989609/img_0722.jpg",
+    "tags": ["hacktoberfest"]
   }
 ]
