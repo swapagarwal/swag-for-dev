@@ -81,8 +81,8 @@
   },
   {
     "name": "Nexmo",
-    "difficulty": "easy",
-    "description": "Make one pull request in October 2018 to any <a href='https://github.com/nexmo/'>Nexmo Repository</a>, earn a limited edition #nextoberfest T-shirt!",
+    "difficulty": "medium",
+    "description": "Have one accepted pull request in October 2018 to any <a href='https://github.com/nexmo/'>Nexmo Repository</a>, earn a limited edition #nextoberfest T-shirt!",
     "reference": "https://www.nexmo.com/blog/2018/10/09/join-nextoberfest-tis-the-season-to-be-hacking-dr/",
     "image": "https://www.nexmo.com/wp-content/uploads/2018/10/Nextoberfest.png",
     "tags": ["clothing", "hacktoberfest"]
@@ -102,6 +102,14 @@
     "reference": "https://blog.openebs.io/celebrate-hacktoberfest-2018-with-openebs-206daa1d653c/",
     "image": "https://cdn-images-1.medium.com/max/1200/1*BXesj2ROGdmUH3vXHkRaRA.png",
     "tags": ["clothing", "hacktoberfest", "stickers"]
+  },
+  {
+    "name": "Passenger",
+    "difficulty": "easy",
+    "description": "Register to join the November 1st livestream in which Phusion adds a major feature to Passenger, and win a custom key cap or beanie with the Passenger logo embroided (and stickers, guaranteed).",
+    "reference": "https://blog.phusion.nl/2018/10/19/livestreaming-from-phusion-hq-adding-a-feature-to-passenger/",
+    "image": "https://www.phusion.nl/images/beanie.png",
+    "tags": ["clothing", "accessories", "stickers"]
   },
   {
     "name": "SendGrid",
@@ -126,6 +134,14 @@
     "reference": "https://developers.whatismybrowser.com/api/swag/",
     "image": "https://developers.whatismybrowser.com/static/main/content/api/swag/whatismybrowser-stickers.jpg",
     "tags": ["stickers"]
+  },
+  {
+    "name": "Umbraco",
+    "difficulty": "medium",
+    "description": "Have one accepted pull request in a Umbraco repository during October 2018 to get some super exclusive Umbraco swag. All the contributors will also be listed by Github username in a dedicated blog post in November.",
+    "reference": "https://umbraco.com/blog/happy-hacktoberfest/",
+    "image": "https://shop.umbraco.com/media/2989609/img_0722.jpg",
+    "tags": ["hacktoberfest"]
   },
   {
     "name": "Scalyr",
