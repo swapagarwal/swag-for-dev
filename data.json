@@ -130,8 +130,8 @@
   {
     "name": "Aras",
     "difficulty": "medium",
-    "description": "Submit an improvment to any <a href=\"community.aras.com/en/projects/\">Aras Community Project</a> in October 2018 to earn stickers! Submit five, earn a limited edition T-shirt!",
-    "reference": "community.aras.com/en/join-aras-labs-hacktoberfest-2018/",
+    "description": "Submit an improvment to any <a href=\"http://community.aras.com/en/projects/\">Aras Community Project</a> in October 2018 to earn stickers! Submit five, earn a limited edition T-shirt!",
+    "reference": "http://community.aras.com/en/join-aras-labs-hacktoberfest-2018/",
     "image": "https://www.aras.com/-/media/Images/Content-Row-Images/im-an-innovator.ashx?h=215&la=en&w=302&hash=CE2436EA9437F2B010DB4C1218CE48457AE30C43",
     "tags": ["clothing", "hacktoberfest", "stickers"]
   }
