@@ -104,6 +104,14 @@
     "tags": ["clothing", "hacktoberfest", "stickers"]
   },
   {
+    "name": "Passenger",
+    "difficulty": "easy",
+    "description": "Register to join the November 1st livestream in which Phusion adds a major feature to Passenger, and win a custom key cap or beanie with the Passenger logo embroided (and stickers, guaranteed).",
+    "reference": "https://blog.phusion.nl/2018/10/19/livestreaming-from-phusion-hq-adding-a-feature-to-passenger/",
+    "image": "https://www.phusion.nl/images/beanie.png",
+    "tags": ["clothing", "accessories", "stickers"]
+  },
+  {
     "name": "SendGrid",
     "difficulty": "hard",
     "description": "Five accepted pull results from SendGrid will qualify you for a special edition SendGrid Hacktoberfest T-shirt.",
@@ -130,9 +138,17 @@
   {
     "name": "Aras",
     "difficulty": "medium",
-    "description": "Submit an improvment to any <a href=\"http://community.aras.com/en/projects/\">Aras Community Project</a> in October 2018 to earn stickers! Submit five, earn a limited edition T-shirt!",
+    "description": "Submit an improvement to any <a href='http://community.aras.com/en/projects/'>Aras Community Project</a> in October 2018 to earn stickers! Submit five, earn a limited edition T-shirt!",
     "reference": "http://community.aras.com/en/join-aras-labs-hacktoberfest-2018/",
     "image": "https://www.aras.com/-/media/Images/Content-Row-Images/im-an-innovator.png",
     "tags": ["clothing", "hacktoberfest", "stickers"]
+  },
+  {
+    "name": "Umbraco",
+    "difficulty": "medium",
+    "description": "Have one accepted pull request in a Umbraco repository during October 2018 to get some super exclusive Umbraco swag. All the contributors will also be listed by Github username in a dedicated blog post in November.",
+    "reference": "https://umbraco.com/blog/happy-hacktoberfest/",
+    "image": "https://shop.umbraco.com/media/2989609/img_0722.jpg",
+    "tags": ["hacktoberfest"]
   }
 ]
