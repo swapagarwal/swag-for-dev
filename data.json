@@ -127,4 +127,12 @@
     "image": "https://developers.whatismybrowser.com/static/main/content/api/swag/whatismybrowser-stickers.jpg",
     "tags": ["stickers"]
   }
+  {
+    "name": "Aras",
+    "difficulty": "medium",
+    "description": "Submit an improvment to any <a href="http://community.aras.com/en/projects/">Aras Community Project</a> in October 2018 to earn stickers! Submit five, earn a limited edition T-shirt!",
+    "reference": "community.aras.com/en/join-aras-labs-hacktoberfest-2018/",
+    "image": "i-cdn.embed.ly/1/display/crop?height=300&key=fd92ebbc52fc43fb98f69e50e7893c13&url=https%3A%2F%2Fhacktoberfest.digitalocean.com%2Fassets%2Fhacktoberfest-2018-social-card-c8d2e1489f647f2e0a26e6f598adeb760872818905b34cd437afc7ac2857ceab.png&width=325",
+    "tags": ["clothing", "hacktoberfest", "stickers"]
+  }
 ]
