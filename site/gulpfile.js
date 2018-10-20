@@ -31,7 +31,7 @@ gulp.task('pug', () => {
         new Set()
     ));
 
-    const manifest = require('./rev-manifest');
+    const manifest = require('./rev-manifest.json');
     const bustedAssets = {
         css: `/assets/${manifest['css/index.css']}`,
         js: `/assets/${manifest['js/index.js']}`
