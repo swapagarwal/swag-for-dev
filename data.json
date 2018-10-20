@@ -58,10 +58,10 @@
   {
     "name": "Kong",
     "difficulty": "medium",
-    "description": "Everyone who gets 1 PR accepted to a Kong repo can get a sweet Kong Contributor T-shirt!",
-    "reference": "https://discuss.konghq.com/t/contribute-to-kong-for-hacktoberfest/2029",
-    "image": "https://user-images.githubusercontent.com/121322/45907730-f6a80b00-bdad-11e8-93ef-774392192716.png",
-    "tags": ["clothing", "hacktoberfest"]
+    "description": "Everyone who gets 1 PR accepted to a Kong repo can get a Kong Contributor T-shirt!",
+    "reference": "https://github.com/Kong/kong/blob/master/CONTRIBUTING.md#contributor-t-shirt",
+    "image": "https://camo.githubusercontent.com/2390aa650f4b56a417db70025153adabd6234cf3/68747470733a2f2f6b6f6e6768712e636f6d2f77702d636f6e74656e742f75706c6f6164732f323031382f30342f3130302d636f6e7472696275746f722d742d73686972742d31303234783736382e6a7067",
+    "tags": ["clothing"]
   },
   {
     "name": "Microsoft",
