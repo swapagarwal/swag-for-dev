@@ -60,8 +60,8 @@
     "difficulty": "medium",
     "description": "Everyone who gets 1 PR accepted to a Kong repo can get a Kong Contributor T-shirt!",
     "reference": "https://github.com/Kong/kong/blob/master/CONTRIBUTING.md#contributor-t-shirt",
-    "image": "https://camo.githubusercontent.com/2390aa650f4b56a417db70025153adabd6234cf3/68747470733a2f2f6b6f6e6768712e636f6d2f77702d636f6e74656e742f75706c6f6164732f323031382f30342f3130302d636f6e7472696275746f722d742d73686972742d31303234783736382e6a7067",
-    "tags": ["clothing"]
+    "image": "https://konghq.com/wp-content/uploads/2018/04/100-contributor-t-shirt-1024x768.jpg",
+    "tags": ["clothing", "hacktoberfest"]
   },
   {
     "name": "Microsoft",
