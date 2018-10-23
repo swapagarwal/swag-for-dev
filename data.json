@@ -56,6 +56,14 @@
     "tags": ["clothing", "hacktoberfest", "stickers"]
   },
   {
+    "name": "LBRY",
+    "difficulty": "medium",
+    "description": "A sweet T-shirt for anyone who submits 3 Pull Requests. A Lamborghini Aventador S for anyone who submits 800,000 accepted PRs.",
+    "reference": "https://lbry.io/news/hacktoberfest",
+    "image": "https://pbs.twimg.com/media/Dowf_X5XkAAXR3T.jpg",
+    "tags": ["clothing", "hacktoberfest"]
+  },
+  {
     "name": "Magento",
     "difficulty": "hard",
     "description": "Have 5 merged PRs or validate at least 10 issues in October 2018, get a Squashtoberfest T-Shirt!",
@@ -104,6 +112,14 @@
     "tags": ["clothing"]
   },
   {
+    "name": "OpenBazaar",
+    "difficulty": "medium",
+    "description": "Help improve our code and earn a limited edition shirt.",
+    "reference": "https://openbazaar.org/blog/Hacktoberfest-with-OpenBazaar-Help-Make-Trade-Free-Get-Rewards/",
+    "image": "https://gateway.ob1.io/ob/images/zb2rhXcLCmwrpNgucgrAtPL6JYtpMhk35GFqaSKux4sFbBUma",
+    "tags": ["clothing", "hacktoberfest"]
+  },
+  {
     "name": "OpenEBS",
     "difficulty": "hard",
     "description": "Have one accepted pull request in an OpenEBS repository during October 2018 to earn an OpenEBS t-shirt and stickers. The best PR will also receive a laptop.",
@@ -126,6 +142,14 @@
     "reference": "https://sendgrid.com/blog/hacktoberfest-2018-has-arrived/",
     "image": "https://sendgrid.com/wp-content/uploads/2018/09/9-18_Hacktoberfest_Shirt_Front-960x960.jpg",
     "tags": ["clothing", "hacktoberfest"]
+  },
+  {
+    "name": "source{d}",
+    "difficulty": "hard",
+    "description": "Three merged pull requests in any source{d} repo to receive a limited edition T-shirt as well as one sticker for those who get at least one pull requests merged.",
+    "reference": "https://go.sourced.tech/hacktoberfest",
+    "image": "https://pbs.twimg.com/profile_images/685466276907642881/TGox2e02_400x400.png",
+    "tags": ["clothing", "hacktoberfest", "stickers"]
   },
   {
     "name": "Twilio",
