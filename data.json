@@ -104,6 +104,14 @@
     "tags": ["clothing"]
   },
   {
+    "name": "OpenBazaar",
+    "difficulty": "medium",
+    "description": "Help improve our code and earn a limited edition shirt.",
+    "reference": "https://openbazaar.org/blog/Hacktoberfest-with-OpenBazaar-Help-Make-Trade-Free-Get-Rewards/",
+    "image": "https://gateway.ob1.io/ob/images/zb2rhXcLCmwrpNgucgrAtPL6JYtpMhk35GFqaSKux4sFbBUma",
+    "tags": ["clothing", "hacktoberfest"]
+  },
+  {
     "name": "OpenEBS",
     "difficulty": "hard",
     "description": "Have one accepted pull request in an OpenEBS repository during October 2018 to earn an OpenEBS t-shirt and stickers. The best PR will also receive a laptop.",
