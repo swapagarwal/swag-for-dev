@@ -184,6 +184,14 @@
     "tags": ["stickers"]
   },
   {
+    "name": "Aras",
+    "difficulty": "medium",
+    "description": "Submit an improvement to any <a href='http://community.aras.com/en/projects/'>Aras Community Project</a> in October 2018 to earn stickers! Submit five, earn a limited edition T-shirt!",
+    "reference": "http://community.aras.com/en/join-aras-labs-hacktoberfest-2018/",
+    "image": "https://www.aras.com/-/media/Images/Content-Row-Images/im-an-innovator.png",
+    "tags": ["clothing", "hacktoberfest", "stickers"]
+  },
+  {
     "name": "Umbraco",
     "difficulty": "medium",
     "description": "Have one accepted pull request in a Umbraco repository during October 2018 to get some super exclusive Umbraco swag. All the contributors will also be listed by Github username in a dedicated blog post in November.",
