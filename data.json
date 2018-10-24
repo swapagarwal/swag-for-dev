@@ -40,6 +40,14 @@
     "tags": ["clothing", "hacktoberfest", "stickers"]
   },
   {
+    "name": "Gatsby",
+    "difficulty": "hard",
+    "description": "Get a pull request merged into Gatsby and receive a free shirt, socks, or stickers.",
+    "reference": "https://www.gatsbyjs.org/docs/contributor-swag/",
+    "image": "https://store.gatsbyjs.org/static/7ce464f8c1c9a7c1bf299e59f0cccf1f-530808614124ff9fbceb256357261fca-69420.webp",
+    "tags": ["clothing", "stickers"]
+  },
+  {
     "name": "Google Assistant",
     "difficulty": "hard",
     "description": "Make an app for the Google Assistant available to users, get an exclusive Google Assistant t-shirt and a Google Home (if a certain number of users engage with it)!",
