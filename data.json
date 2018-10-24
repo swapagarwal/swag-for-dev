@@ -63,6 +63,21 @@
     "image": "https://konghq.com/wp-content/uploads/2018/04/100-contributor-t-shirt-1024x768.jpg",
     "tags": ["clothing", "hacktoberfest"]
   },
+    "name": "LBRY",
+    "difficulty": "medium",
+    "description": "A sweet T-shirt for anyone who submits 3 Pull Requests. A Lamborghini Aventador S for anyone who submits 800,000 accepted PRs.",
+    "reference": "https://lbry.io/news/hacktoberfest",
+    "image": "https://pbs.twimg.com/media/Dowf_X5XkAAXR3T.jpg",
+    "tags": ["clothing", "hacktoberfest"]
+  },
+  {
+    "name": "Magento",
+    "difficulty": "hard",
+    "description": "Have 5 merged PRs or validate at least 10 issues in October 2018, get a Squashtoberfest T-Shirt!",
+    "reference": "https://github.com/magento/magento2/wiki/SQUASHTOBERFEST-2018",
+    "image": "https://raw.githubusercontent.com/wiki/magento-engcom/msi/images/squash2018.png",
+    "tags": ["clothing", "hacktoberfest"]
+  },
   {
     "name": "Microsoft",
     "difficulty": "medium",
@@ -104,6 +119,14 @@
     "tags": ["clothing"]
   },
   {
+    "name": "OpenBazaar",
+    "difficulty": "medium",
+    "description": "Help improve our code and earn a limited edition shirt.",
+    "reference": "https://openbazaar.org/blog/Hacktoberfest-with-OpenBazaar-Help-Make-Trade-Free-Get-Rewards/",
+    "image": "https://gateway.ob1.io/ob/images/zb2rhXcLCmwrpNgucgrAtPL6JYtpMhk35GFqaSKux4sFbBUma",
+    "tags": ["clothing", "hacktoberfest"]
+  },
+  {
     "name": "OpenEBS",
     "difficulty": "hard",
     "description": "Have one accepted pull request in an OpenEBS repository during October 2018 to earn an OpenEBS t-shirt and stickers. The best PR will also receive a laptop.",
@@ -112,12 +135,28 @@
     "tags": ["clothing", "hacktoberfest", "stickers"]
   },
   {
+    "name": "Passenger",
+    "difficulty": "easy",
+    "description": "Register to join the November 1st livestream in which Phusion adds a major feature to Passenger, and win a custom key cap or beanie with the Passenger logo embroided (and stickers, guaranteed).",
+    "reference": "https://blog.phusion.nl/2018/10/19/livestreaming-from-phusion-hq-adding-a-feature-to-passenger/",
+    "image": "https://www.phusion.nl/images/beanie.png",
+    "tags": ["clothing", "accessories", "stickers"]
+  },
+  {
     "name": "SendGrid",
     "difficulty": "hard",
     "description": "Five accepted pull results from SendGrid will qualify you for a special edition SendGrid Hacktoberfest T-shirt.",
     "reference": "https://sendgrid.com/blog/hacktoberfest-2018-has-arrived/",
     "image": "https://sendgrid.com/wp-content/uploads/2018/09/9-18_Hacktoberfest_Shirt_Front-960x960.jpg",
     "tags": ["clothing", "hacktoberfest"]
+  },
+  {
+    "name": "source{d}",
+    "difficulty": "hard",
+    "description": "Three merged pull requests in any source{d} repo to receive a limited edition T-shirt as well as one sticker for those who get at least one pull requests merged.",
+    "reference": "https://go.sourced.tech/hacktoberfest",
+    "image": "https://pbs.twimg.com/profile_images/685466276907642881/TGox2e02_400x400.png",
+    "tags": ["clothing", "hacktoberfest", "stickers"]
   },
   {
     "name": "Twilio",
@@ -134,5 +173,13 @@
     "reference": "https://developers.whatismybrowser.com/api/swag/",
     "image": "https://developers.whatismybrowser.com/static/main/content/api/swag/whatismybrowser-stickers.jpg",
     "tags": ["stickers"]
+  },
+  {
+    "name": "Umbraco",
+    "difficulty": "medium",
+    "description": "Have one accepted pull request in a Umbraco repository during October 2018 to get some super exclusive Umbraco swag. All the contributors will also be listed by Github username in a dedicated blog post in November.",
+    "reference": "https://umbraco.com/blog/happy-hacktoberfest/",
+    "image": "https://shop.umbraco.com/media/2989609/img_0722.jpg",
+    "tags": ["hacktoberfest"]
   }
 ]
