@@ -8,6 +8,14 @@
     "tags": ["clothing", "device"]
   },
   {
+    "name": "Aras",
+    "difficulty": "medium",
+    "description": "Submit an improvement to any <a href='http://community.aras.com/en/projects/'>Aras Community Project</a> in October 2018 to earn stickers! Submit five, earn a limited edition T-shirt!",
+    "reference": "http://community.aras.com/en/join-aras-labs-hacktoberfest-2018/",
+    "image": "https://www.aras.com/-/media/Images/Content-Row-Images/im-an-innovator.png",
+    "tags": ["clothing", "hacktoberfest", "stickers"]
+  },
+  {
     "name": "Auth0",
     "difficulty": "hard",
     "description": "Have one accepted pull request in a qualifying Auth0 Github project in October 2018 and receive a kickass 2018 Hacktoberfest t-shirt courtesy of the awesome Auth0 team, along with a psychedelic Auth0 sticker pack!",
@@ -176,27 +184,19 @@
     "tags": ["clothing", "hacktoberfest"]
   },
   {
-    "name": "WhatIsMyBrowser",
-    "difficulty": "easy",
-    "description": "Send an API request, get some sweet vinyl laptop stickers!",
-    "reference": "https://developers.whatismybrowser.com/api/swag/",
-    "image": "https://developers.whatismybrowser.com/static/main/content/api/swag/whatismybrowser-stickers.jpg",
-    "tags": ["stickers"]
-  },
-  {
-    "name": "Aras",
-    "difficulty": "medium",
-    "description": "Submit an improvement to any <a href='http://community.aras.com/en/projects/'>Aras Community Project</a> in October 2018 to earn stickers! Submit five, earn a limited edition T-shirt!",
-    "reference": "http://community.aras.com/en/join-aras-labs-hacktoberfest-2018/",
-    "image": "https://www.aras.com/-/media/Images/Content-Row-Images/im-an-innovator.png",
-    "tags": ["clothing", "hacktoberfest", "stickers"]
-  },
-  {
     "name": "Umbraco",
     "difficulty": "medium",
     "description": "Have one accepted pull request in a Umbraco repository during October 2018 to get some super exclusive Umbraco swag. All the contributors will also be listed by Github username in a dedicated blog post in November.",
     "reference": "https://umbraco.com/blog/happy-hacktoberfest/",
     "image": "https://shop.umbraco.com/media/2989609/img_0722.jpg",
     "tags": ["hacktoberfest"]
+  },
+  {
+    "name": "WhatIsMyBrowser",
+    "difficulty": "easy",
+    "description": "Send an API request, get some sweet vinyl laptop stickers!",
+    "reference": "https://developers.whatismybrowser.com/api/swag/",
+    "image": "https://developers.whatismybrowser.com/static/main/content/api/swag/whatismybrowser-stickers.jpg",
+    "tags": ["stickers"]
   }
 ]
