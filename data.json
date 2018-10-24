@@ -56,6 +56,14 @@
     "tags": ["clothing", "hacktoberfest", "stickers"]
   },
   {
+    "name": "Kong",
+    "difficulty": "medium",
+    "description": "Everyone who gets 1 PR accepted to a Kong repo can get a Kong Contributor T-shirt!",
+    "reference": "https://github.com/Kong/kong/blob/master/CONTRIBUTING.md#contributor-t-shirt",
+    "image": "https://konghq.com/wp-content/uploads/2018/04/100-contributor-t-shirt-1024x768.jpg",
+    "tags": ["clothing", "hacktoberfest"]
+  },
+  {
     "name": "LBRY",
     "difficulty": "medium",
     "description": "A sweet T-shirt for anyone who submits 3 Pull Requests. A Lamborghini Aventador S for anyone who submits 800,000 accepted PRs.",
