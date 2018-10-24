@@ -5,7 +5,15 @@
     "description": "Publish a skill, get a hoodie (varies by country) and an Echo Spot (if 1,000 unique customers use your skill in its first 30 days of publication)!",
     "reference": "https://developer.amazon.com/alexa-skills-kit/alexa-developer-skill-promotion",
     "image": "https://images-na.ssl-images-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/ASM0761-Dev-LP-Goodiepage-UK-March._CB501585903_.png",
-    "swagType": "Hoodie, Echo Spot"
+    "tags": ["clothing", "device"]
+  },
+  {
+    "name": "Auth0",
+    "difficulty": "hard",
+    "description": "Have one accepted pull request in a qualifying Auth0 Github project in October 2018 and receive a kickass 2018 Hacktoberfest t-shirt courtesy of the awesome Auth0 team, along with a psychedelic Auth0 sticker pack!",
+    "reference": "https://auth0.com/blog/celebrate-hacktoberfest-with-auth0/",
+    "image": "https://images.all-free-download.com/images/graphiclarge/blank_t_shirt_clip_art_19042.jpg",
+    "tags": ["clothing", "hacktoberfest", "stickers"]
   },
   {
     "name": "Codeship",
@@ -13,7 +21,7 @@
     "description": "Submit 5 builds in 30 days, get t-shirts & stickers sent your way!",
     "reference": "https://codeship.com/swag",
     "image": "https://juliesfreebies.com/wp-content/uploads/2016/05/codeship-swag.jpg",
-    "swagType": "T-shirts, Stickers"
+    "tags": ["clothing", "stickers"]
   },
   {
     "name": "devRant",
@@ -21,7 +29,15 @@
     "description": "Get 30 ++'s on a single rant you've posted to devRant to receive 3 free high-quality devRant laptop stickers! Or post an awesome rant that gets over 750 ++'s to receive a free devRant squishy stress ball!",
     "reference": "https://devrant.com/free-stickers",
     "image": "https://devrant.com/static/devrant/img/stickers-collection3.png",
-    "swagType": "Stickers, Stress balls"
+    "tags": ["accessories", "stickers"]
+  },
+  {
+    "name": "Digital Ocean",
+    "difficulty": "hard",
+    "description": "Make five pull requests in October, earn a limited edition T-shirt!",
+    "reference": "https://hacktoberfest.digitalocean.com/",
+    "image": "https://user-images.githubusercontent.com/121322/45907730-f6a80b00-bdad-11e8-93ef-774392192716.png",
+    "tags": ["clothing", "hacktoberfest", "stickers"]
   },
   {
     "name": "Gatsby",
@@ -37,23 +53,47 @@
     "description": "Make an app for the Google Assistant available to users, get an exclusive Google Assistant t-shirt and a Google Home (if a certain number of users engage with it)!",
     "reference": "https://developers.google.com/actions/community/overview",
     "image": "https://i2.wp.com/radthemaker.com/wp-content/uploads/2017/11/My-Google-Assistant-T-Shirt.jpg",
-    "swagType": "T-shirts, Google Home"
+    "tags": ["clothing", "device"]
   },
   {
-    "name": "Hacktoberfest",
+    "name": "Hasura",
+    "difficulty": "medium",
+    "description": "Submit a PR to Hasura's <a href='https://github.com/hasura/graphql-engine'>GraphQL Engine repo</a> in October 2018 and get a Hasura sticker pack. If your PR to an issue tagged as 'hacktoberfest' gets merged, you also get a Hasura t-shirt!",
+    "reference": "https://blog.hasura.io/announcing-hacktoberfest-2018-with-hasura-621045dc9560",
+    "image": "https://cdn-images-1.medium.com/max/1600/1*kQxL8yhs0c1x1WVXnjhrIw.png",
+    "tags": ["clothing", "hacktoberfest", "stickers"]
+  },
+  {
+    "name": "Kong",
+    "difficulty": "medium",
+    "description": "Everyone who gets 1 PR accepted to a Kong repo can get a Kong Contributor T-shirt!",
+    "reference": "https://github.com/Kong/kong/blob/master/CONTRIBUTING.md#contributor-t-shirt",
+    "image": "https://konghq.com/wp-content/uploads/2018/04/100-contributor-t-shirt-1024x768.jpg",
+    "tags": ["clothing", "hacktoberfest"]
+  },
+  {
+    "name": "LBRY",
+    "difficulty": "medium",
+    "description": "A sweet T-shirt for anyone who submits 3 Pull Requests. A Lamborghini Aventador S for anyone who submits 800,000 accepted PRs.",
+    "reference": "https://lbry.io/news/hacktoberfest",
+    "image": "https://pbs.twimg.com/media/Dowf_X5XkAAXR3T.jpg",
+    "tags": ["clothing", "hacktoberfest"]
+  },
+  {
+    "name": "Magento",
     "difficulty": "hard",
-    "description": "Make five pull requests in October, earn a limited edition T-shirt!",
-    "reference": "https://hacktoberfest.digitalocean.com/",
-    "image": "https://cdn-images-1.medium.com/max/2000/1*9rG8J1r8l-LC0oRvRVoEkA.jpeg",
-    "swagType": "T-shirts, Stickers"
+    "description": "Have 5 merged PRs or validate at least 10 issues in October 2018, get a Squashtoberfest T-Shirt!",
+    "reference": "https://github.com/magento/magento2/wiki/SQUASHTOBERFEST-2018",
+    "image": "https://raw.githubusercontent.com/wiki/magento-engcom/msi/images/squash2018.png",
+    "tags": ["clothing", "hacktoberfest"]
   },
   {
-    "name": "Microsoft Hacktoberfest",
+    "name": "Microsoft",
     "difficulty": "medium",
     "description": "Make one pull request in October 2018 to any <a href='https://opensource.microsoft.com/'>open source Microsoft repository</a>, earn a limited edition T-shirt!",
     "reference": "https://open.microsoft.com/2018/09/30/join-hacktoberfest-2018-celebration-microsoft/",
-    "image": "https://images.all-free-download.com/images/graphiclarge/blank_t_shirt_clip_art_19042.jpg",
-    "swagType": "T-shirts"
+    "image": "https://open.microsoft.com/wp-content/uploads/2018/09/Hacktoberfest-Blog.jpg",
+    "tags": ["clothing", "hacktoberfest"]
   },
   {
     "name": "Mullvad",
@@ -61,7 +101,7 @@
     "description": "Send an email to <a href='mailto:support@mullvad.net'>support@mullvad.net</a> with \"STICKERS\" in the subject line. Include a postal address in the email and get an assortment of stickers sent your way.",
     "reference": "https://www.mullvad.net/en/guides/mullvad-stickers-and-merchandise/",
     "image": "https://www.mullvad.net/media/uploads/2017/10/20/mullvad-stickers.jpg",
-    "swagType": "Stickers"
+    "tags": ["stickers"]
   },
   {
     "name": "Netlify",
@@ -69,14 +109,86 @@
     "description": "Complete this <a href='https://swag.netlify.com/docs/'>survey</a> about using netlify for documentation and get stickers.",
     "reference": "https://swag.netlify.com/docs/",
     "image": "https://swag.netlify.com/images/laptop-sticker.jpg",
-    "swagType": "Stickers"
+    "tags": ["stickers"]
+  },
+  {
+    "name": "Nexmo",
+    "difficulty": "medium",
+    "description": "Have one accepted pull request in October 2018 to any <a href='https://github.com/nexmo/'>Nexmo Repository</a>, earn a limited edition #nextoberfest T-shirt!",
+    "reference": "https://www.nexmo.com/blog/2018/10/09/join-nextoberfest-tis-the-season-to-be-hacking-dr/",
+    "image": "https://www.nexmo.com/wp-content/uploads/2018/10/Nextoberfest.png",
+    "tags": ["clothing", "hacktoberfest"]
   },
   {
     "name": "npm",
     "difficulty": "hard",
-    "description": "Fix a <a href='https://github.com/npm/npm/issues'>bug</a>, get a fashionable pair of socks!",
+    "description": "Fix a <a href='https://npm.community/c/bugs'>bug</a>, get a fashionable pair of socks!",
     "reference": "http://blog.npmjs.org/post/129827785565/npm-weekly-30-package-scripts-for-tooling-a",
     "image": "https://partners.npmjs.com/weekly/weekly30/socks-1100x.jpg",
-    "swagType": "Socks"
+    "tags": ["clothing"]
+  },
+  {
+    "name": "OpenBazaar",
+    "difficulty": "medium",
+    "description": "Help improve our code and earn a limited edition shirt.",
+    "reference": "https://openbazaar.org/blog/Hacktoberfest-with-OpenBazaar-Help-Make-Trade-Free-Get-Rewards/",
+    "image": "https://gateway.ob1.io/ob/images/zb2rhXcLCmwrpNgucgrAtPL6JYtpMhk35GFqaSKux4sFbBUma",
+    "tags": ["clothing", "hacktoberfest"]
+  },
+  {
+    "name": "OpenEBS",
+    "difficulty": "hard",
+    "description": "Have one accepted pull request in an OpenEBS repository during October 2018 to earn an OpenEBS t-shirt and stickers. The best PR will also receive a laptop.",
+    "reference": "https://blog.openebs.io/celebrate-hacktoberfest-2018-with-openebs-206daa1d653c/",
+    "image": "https://cdn-images-1.medium.com/max/1200/1*BXesj2ROGdmUH3vXHkRaRA.png",
+    "tags": ["clothing", "hacktoberfest", "stickers"]
+  },
+  {
+    "name": "Passenger",
+    "difficulty": "easy",
+    "description": "Register to join the November 1st livestream in which Phusion adds a major feature to Passenger, and win a custom key cap or beanie with the Passenger logo embroided (and stickers, guaranteed).",
+    "reference": "https://blog.phusion.nl/2018/10/19/livestreaming-from-phusion-hq-adding-a-feature-to-passenger/",
+    "image": "https://www.phusion.nl/images/beanie.png",
+    "tags": ["clothing", "accessories", "stickers"]
+  },
+  {
+    "name": "SendGrid",
+    "difficulty": "hard",
+    "description": "Five accepted pull results from SendGrid will qualify you for a special edition SendGrid Hacktoberfest T-shirt.",
+    "reference": "https://sendgrid.com/blog/hacktoberfest-2018-has-arrived/",
+    "image": "https://sendgrid.com/wp-content/uploads/2018/09/9-18_Hacktoberfest_Shirt_Front-960x960.jpg",
+    "tags": ["clothing", "hacktoberfest"]
+  },
+  {
+    "name": "source{d}",
+    "difficulty": "hard",
+    "description": "Three merged pull requests in any source{d} repo to receive a limited edition T-shirt as well as one sticker for those who get at least one pull requests merged.",
+    "reference": "https://go.sourced.tech/hacktoberfest",
+    "image": "https://pbs.twimg.com/profile_images/685466276907642881/TGox2e02_400x400.png",
+    "tags": ["clothing", "hacktoberfest", "stickers"]
+  },
+  {
+    "name": "Twilio",
+    "difficulty": "medium",
+    "description": "Complete the first set of objectives in <a href='https://twilio.com/quest'>Twilio Quest</a> and get a Twilio Quest t-shirt right to your door.",
+    "reference": "https://www.youtube.com/watch?v=r9MPBJjPQdA",
+    "image": "https://pbs.twimg.com/media/DpB5PIYVAAAX4eC.jpg",
+    "tags": ["clothing", "hacktoberfest"]
+  },
+  {
+    "name": "WhatIsMyBrowser",
+    "difficulty": "easy",
+    "description": "Send an API request, get some sweet vinyl laptop stickers!",
+    "reference": "https://developers.whatismybrowser.com/api/swag/",
+    "image": "https://developers.whatismybrowser.com/static/main/content/api/swag/whatismybrowser-stickers.jpg",
+    "tags": ["stickers"]
+  },
+  {
+    "name": "Umbraco",
+    "difficulty": "medium",
+    "description": "Have one accepted pull request in a Umbraco repository during October 2018 to get some super exclusive Umbraco swag. All the contributors will also be listed by Github username in a dedicated blog post in November.",
+    "reference": "https://umbraco.com/blog/happy-hacktoberfest/",
+    "image": "https://shop.umbraco.com/media/2989609/img_0722.jpg",
+    "tags": ["hacktoberfest"]
   }
 ]
