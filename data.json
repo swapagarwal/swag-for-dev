@@ -45,7 +45,7 @@
     "description": "Get a pull request merged in to Gatsby and receive a free shirt, socks, or stickers.",
     "reference": "https://www.gatsbyjs.org/docs/contributor-swag/",
     "image": "https://www.gatsbyjs.org/static/gatsby-swag-5212f3b07a7af895b9b607fde19e7479-f009a.jpg",
-    "swagType": "T-shirt, Socks, or Stickers"
+    "tags": ["clothing", "stickers"]
   },
   {
     "name": "Google Assistant",
