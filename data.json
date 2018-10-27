@@ -184,6 +184,14 @@
     "tags": ["clothing", "hacktoberfest"]
   },
   {
+    "name": "Typeform",
+    "difficulty": "medium",
+    "description": "« We will have special Typeform swag to celebrate your contributions to Typeform projects during Hacktoberfest 😉 »",
+    "reference": "https://medium.com/typeforms-engineering-blog/get-involved-in-open-source-participate-to-hacktoberfest-with-typeform-278b4fa4cf19",
+    "image": "https://i.imgur.com/BfcTAL9.jpg",
+    "tags": ["hacktoberfest"]
+  },
+  {
     "name": "Umbraco",
     "difficulty": "medium",
     "description": "Have one accepted pull request in a Umbraco repository during October 2018 to get some super exclusive Umbraco swag. All the contributors will also be listed by Github username in a dedicated blog post in November.",
