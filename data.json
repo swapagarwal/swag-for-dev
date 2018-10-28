@@ -152,6 +152,14 @@
     "tags": ["clothing", "hacktoberfest", "stickers"]
   },
   {
+    "name": "Operation Code",
+    "difficulty": "easy",
+    "description": "Close 3 issues, get a t-shirt. Make a PR and get stickers.",
+    "reference": "https://github.com/OperationCode/START_HERE",
+    "image": "https://upload.cc/i1/2018/10/21/yRDFvh.png",
+    "tags": ["clothing", "hacktoberfest", "stickers"]
+  },
+  {
     "name": "Passenger",
     "difficulty": "easy",
     "description": "Register to join the November 1st livestream in which Phusion adds a major feature to Passenger, and win a custom key cap or beanie with the Passenger logo embroided (and stickers, guaranteed).",
