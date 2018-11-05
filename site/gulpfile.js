@@ -160,4 +160,4 @@ gulp.task('build', gulp.series(
     )
 ));
 
-gulp.task('default', gulp.parallel('webserver', 'build', 'watch'));
+gulp.task('default', gulp.series('build', 'webserver', 'watch'));
