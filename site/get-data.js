@@ -2,7 +2,7 @@ const swagImages = [];
 const fileNames = [];
 const swagList = require('../data.json').map(swag => {
     // @todo: remove once `active: Boolean` is added to data.json
-    if (swag.tags.includes('hacktoberfest') {
+    if (swag.tags.includes('hacktoberfest')) {
         return false;
     }
     // Generate unique filename
