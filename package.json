@@ -18,6 +18,7 @@
     "@babel/core": "^7.1.2",
     "@babel/preset-env": "^7.1.0",
     "cross-env": "^5.2.0",
+    "@zadkiel/gulp-feed": "^0.0.2",
     "del": "^3.0.0",
     "gulp": "^4.0.0",
     "gulp-babel": "^8.0.0",
