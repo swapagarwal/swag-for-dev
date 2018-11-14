@@ -171,6 +171,9 @@ const FEED_OPTS = {
     }
 };
 
+// Use Netlify DEPLOY_URL to avoid deleted content
+const FEED_ASSETS_URL = process.env.DEPLOY_URL || 'https://devswag.io';
+
 gulp.task('feed', function() {
     return feed(swagList, {
         ...FEED_OPTS,
@@ -192,7 +195,7 @@ gulp.task('feed', function() {
             //     link: 'https://example.com/janedoe'
             // }],
             date: new Date(),
-            image: 'https://devswag.io' + item.image,
+            image: FEED_ASSETS_URL + item.image,
         }),
     }).pipe(gulp.dest('dist/assets/feed'));
 });
