@@ -151,7 +151,6 @@ gulp.task('cachebust', cb => {
 		});
 });
 
-
 const FEED_OPTS = {
     title: 'devSwag',
     description: '😎 swag opportunities for developers',
@@ -160,7 +159,7 @@ const FEED_OPTS = {
     image: 'https://devswag.io/assets/img/logo.png',
     favicon: 'https://devswag.io/assets/img/logo.png',
     copyright: 'Creative Commons Zero v1.0 Universal',
-    updated: new Date(), // now
+    updated: new Date(),
     feedLinks: {
         rss: 'https://devswag.io/rss',
         atom: 'https://devswag.io/atom',
@@ -180,21 +179,22 @@ gulp.task('feed', function() {
             'atom.xml': 'atom1',
             'feed.json': 'json1',
         },
-        formatter: item => ({
-            title: item.name + ' [' + item.tags.join(', ') + ']',
+        transform: item => ({
+            title: item.name,
             id: item.reference,
             link: item.reference,
+            // categories: item.tags,
             description: item.description,
-            content: item.content,
+            // content: item.content,
             // author: [{
             //     name: 'Jane Doe',
             //     email: 'janedoe@example.com',
             //     link: 'https://example.com/janedoe'
             // }],
             date: new Date(),
-            image: item.realImage,
+            image: 'https://devswag.io' + item.image,
         }),
-    }).pipe(gulp.dest('dist/assets/'));
+    }).pipe(gulp.dest('dist/assets/feed'));
 });
 
 gulp.task('webserver', () => {
@@ -214,11 +214,12 @@ gulp.task('watch', () => {
 gulp.task('build', gulp.series(
     'clean',
     gulp.parallel(
-        gulp.series('swag-img', 'cachebust', 'pug'),
+        gulp.series('swag-img', 'cachebust',
+            gulp.parallel('pug', 'feed')
+        ),
         'styl',
         'js',
-        'img',
-        'feed'
+        'img'
     )
 ));
 
