@@ -1,6 +1,6 @@
 [build]
-  base      = "site/"
-  publish   = "site/dist"
+  base      = "/"
+  publish   = "dist"
   command   = "gulp build"
 
 [build.environment]
