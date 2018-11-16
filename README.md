@@ -21,6 +21,27 @@ Note that a PR needs to reach a certain level of engagement before it gets merge
 
 As this project is community-driven, it'd be really helpful if you comment on the PR when you receive the corresponding swag. This would help in merging it faster. 😇
 
+### Development
+
+1. Clone this repository by running
+    ```
+    git clone https://github.com/swapagarwal/swag-for-dev.git
+    ```
+1. Ensure you are running an up-to-date version of [Node.js](https://nodejs.org/en/download/package-manager/) on your machine, and that you have npm installed.
+1. Make sure you have [Gulp](https://gulpjs.org/getting-started.html) installed by running
+    ```
+    npm install gulp-cli -g
+    ```
+1. Open a terminal in the `swag-for-dev/site` directory. Type
+    ```
+    npm install
+    ```
+    into the terminal to install the dependencies. To start the webserver, type
+    ```
+    gulp
+    ```
+1. The website should open in a browser after it compiles, or you can view it by going to http://localhost:8000
+
 <a href="https://www.buymeacoffee.com/swap" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: auto !important;width: auto !important;" ></a>
 <a href="https://www.patreon.com/bePatron?u=7999565" target="_blank"><img src="https://c5.patreon.com/external/logo/become_a_patron_button.png" alt="Become a Patron!" height="41"></a>
 
