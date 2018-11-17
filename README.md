@@ -32,7 +32,7 @@ As this project is community-driven, it'd be really helpful if you comment on th
     ```
     npm install gulp-cli -g
     ```
-1. Open a terminal in the `swag-for-dev/site` directory. Type
+1. Open a terminal in the `swag-for-dev` directory. Type
     ```
     npm install
     ```
