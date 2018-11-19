@@ -10,7 +10,7 @@ about: Use this template to propose a new swag opportunity
 Q. Which company offers it?  
 A. : 
 
-Q. Where have you seen the anouncement (URL)?  
+Q. Where have you seen the announcement (URL)?  
 A. : 
 
 Q. What kind of swag (clothing, stickers, ...)?  
