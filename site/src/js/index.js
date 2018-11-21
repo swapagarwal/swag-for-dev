@@ -3,90 +3,101 @@
 /**
  * Initialising global variables
  */
-let contentEl = document.querySelector('#content'),
-    filterInput = document.querySelector('#filter'),
-    sortingInput = document.querySelector('#sorting'),
-    firstLoad = true,
-    selector = new Selectr('#tags', {
-        multiple: true,
-        placeholder: 'Choose tags...',
-        data: window.swagTags.map(tag => ({value: tag, text: tag}))
+const ACTIVE_CLASS = 'visible';
+const sort = {
+    ALPHABETICAL_ASCENDING: (a,b) => a.dataset.name > b.dataset.name ? 1 : -1,
+    ALPHABETICAL_DESCENDING: (a,b) => a.dataset.name < b.dataset.name ? 1 : -1,
+    DIFFICULTY_ASCENDING: (a,b) => a.dataset.difficulty > b.dataset.difficulty ? 1 : -1,
+    DIFFICULTY_DESCENDING: (a,b) => a.dataset.difficulty < b.dataset.difficulty ? 1 : -1
+};
+
+const contentEl = document.getElementById('content');
+const filterInput = document.getElementById('filter');
+const sortingInput = document.getElementById('sorting');
+
+const activateElements = els => Array.from(els).forEach(node => node.classList.add(ACTIVE_CLASS));
+const allowDifficultySelect = shouldAllow => sortingInput.querySelectorAll('.difficulty')
+    .forEach(node => node.disabled = !shouldAllow);
+
+let search, selectr;
+
+function handleDifficulty(difficultyChanged) {
+    const {value} = filterInput;
+    Array.from(contentEl.getElementsByClassName(ACTIVE_CLASS))
+        .forEach(swag => swag.classList.remove(ACTIVE_CLASS));
+
+    if (value === 'alldifficulties') {
+        activateElements(contentEl.querySelectorAll('.item'));
+        allowDifficultySelect(true);
+    } else {
+        activateElements(contentEl.getElementsByClassName(value));
+        allowDifficultySelect(false);
+    }
+
+    if (difficultyChanged && sortingInput.selectedIndex > 1) {
+        sortingInput.selectedIndex = 0;
+        return true;
+    }
+
+    return false;
+}
+
+function handleTags() {
+    const tags = selectr.getValue();
+
+    if (!tags.length) {
+        history.pushState(null, '', window.location.pathname);
+        return;
+    }
+
+    Array.from(contentEl.querySelectorAll('.item')).forEach(el => {
+        const show = tags.reduce((sho, tag) => sho || el.classList.contains(`tag-${tag}`), false);
+        if (!show) {
+            el.classList.remove('visible');
+        }
     });
 
-const renderSwag = () => {
-    UrlHandler();
-
-    contentEl.innerHTML = '';
-
-    const filter = getFilter();
-    const sorting = getSorting();
-    const tagSort = getTagValue();
-
-    window.swag
-        .filter(v => filter === 'All difficulties' ? true : v.difficulty === filter.toLowerCase())
-        .filter(v => tagSort.length ? tagSort.every(val => v.tags.includes(val)) : true)
-        .sort((a, b) => {
-            switch (sorting) {
-            case 'Alphabetical':           return a.name.toLowerCase() > b.name.toLowerCase() ? 1 : -1;
-            case 'Alphabetical, reversed': return a.name.toLowerCase() < b.name.toLowerCase() ? 1 : -1;
-            case 'Difficulty':             return difficultyIndex(a.difficulty) > difficultyIndex(b.difficulty) ? 1 : -1;
-            case 'Difficulty, reversed':   return difficultyIndex(a.difficulty) < difficultyIndex(b.difficulty) ? 1 : -1;
-            }
-        })
-        .map(item => {
-            const {difficulty} = item;
-            contentEl.innerHTML += `
-                <div class='item'>
-                    <div class='title flex'>
-                        <h1>${item.name}</h1>
-                        <div class='difficulty ${difficulty}' title='${difficulty} difficulty'>
-                            <span class="sr-only">Difficulty: ${difficulty}</span>
-                        </div>
-                    </div>
-                    <p class='swag'>
-                        ${item.tags.map(tag => `<span>${tag}</span>`).join('')}
-                    </p>
-                    <div class='flex img-container'>
-                        <img src='${item.image}' alt="${item.name} swag you can get"></img>
-                    </div>
-                    <p class='description'>${item.description}</p>
-                    <a href='${item.reference}'>Check it out</a>
-                </div>
-            `;
-        });
-};
-
-const difficultyIndex = diff => ['easy', 'medium', 'hard'].indexOf(diff);
-
-const getFilter = () => filterInput.value;
-const getSorting = () => sortingInput.value;
-const getTagValue = () => selector.getValue();
-
-const UrlHandler = () => {
-    if ('URLSearchParams' in window) {
-        let searchParams = new URLSearchParams(window.location.search);
-        if (firstLoad) {
-            firstLoad = false;
-            if (searchParams.has('tags')) {
-                selector.setValue(searchParams.get('tags').split(' '));
-                renderSwag();
-            }
-            selector.on('selectr.change', renderSwag);
-        } else {
-            if (getTagValue().length) {
-                searchParams.set('tags', getTagValue().join(' '));
-                const newRelativePathQuery = `${window.location.pathname}?${searchParams.toString()}`;
-                history.pushState(null, '', newRelativePathQuery);
-            } else {
-                history.pushState(null, '', window.location.pathname);
-            }
-        }
+    if (!search) {
+        return;
     }
-};
+    search.set('tags', tags.join(' '));
+    const newRelativePathQuery = `${window.location.pathname}?${search.toString()}`;
+    history.pushState(null, '', newRelativePathQuery);
+}
+
+function handleSort() {
+    Array.from(contentEl.children)
+        .map(child => contentEl.removeChild(child))
+        .sort(sort[sortingInput.value])
+        .forEach(sortedChild => contentEl.appendChild(sortedChild));
+}
+
+// The cascade is the function which handles calling filtering and sorting swag
+function cascade(force = false) {
+    force |= handleDifficulty(this === filterInput);
+    force |= handleTags(Boolean(this.el));
+    if (force || this === sortingInput) {
+        handleSort(this === sortingInput);
+    }
+}
 
 window.addEventListener('load', () => {
-    UrlHandler();
+    selectr = new Selectr('#tags', {
+        multiple: true,
+        placeholder: 'Choose tags...',
+        data: window.swagTags.map(tag => ({ value: tag, text: tag }))
+    });
 
-    filterInput.addEventListener('input', renderSwag);
-    sortingInput.addEventListener('input', renderSwag);
+    if ('URLSearchParams' in window) {
+        search = new URLSearchParams(window.location.search);
+        if (search.has('tags')) {
+            selectr.setValue(search.get('tags').split(' '));
+        }
+    }
+
+    selectr.on('selectr.change', cascade);
+    filterInput.addEventListener('input', cascade);
+    sortingInput.addEventListener('input', cascade);
+
+    cascade.call(window, true);
 });
