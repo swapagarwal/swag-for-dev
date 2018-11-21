@@ -200,6 +200,14 @@
     "tags": ["hacktoberfest"]
   },
   {
+    "name": "Vultr",
+    "difficulty": "easy",
+    "description": "Create a Vultr account, get some shiny stickers sent your way!",
+    "reference": "https://www.vultr.com/swag/",
+    "image": "https://i.imgur.com/uPU5Mmg.png",
+    "tags": ["stickers"]
+  },
+  {
     "name": "WhatIsMyBrowser",
     "difficulty": "easy",
     "description": "Send an API request, get some sweet vinyl laptop stickers!",
