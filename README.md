@@ -28,6 +28,6 @@ Please consider donating to cover up our hosting costs.
 
 ## License
 
-[![CC0](http://mirrors.creativecommons.org/presskit/buttons/88x31/svg/cc-zero.svg)](https://creativecommons.org/publicdomain/zero/1.0/) [![Join the chat at https://gitter.im/swag-for-dev/Lobby](https://badges.gitter.im/swag-for-dev/Lobby.svg)](https://gitter.im/swag-for-dev/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![CC0](http://mirrors.creativecommons.org/presskit/buttons/88x31/svg/cc-zero.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
 
 To the extent possible under law, [Swapnil Agarwal](http://swapnil.net) has waived all copyright and related or neighboring rights to this work.
