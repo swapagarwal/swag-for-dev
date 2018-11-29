@@ -4,7 +4,7 @@
   command   = "gulp build"
 
 [build.environment]
-  NODE_VERSION = "11"
+  NODE_VERSION = "10"
   NPM_VERSION = "6.4.1"
 
 [[redirects]]
