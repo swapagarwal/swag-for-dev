@@ -3,6 +3,10 @@
   publish   = "site/dist"
   command   = "gulp build"
 
+[build.environment]
+  NODE_VERSION = "11"
+  NPM_VERSION = "6.4.1"
+
 [[redirects]]
   from = "/hacktoberfest"
   to = "/?tags=hacktoberfest"
