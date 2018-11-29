@@ -6,7 +6,8 @@
   "scripts": {
     "lint": "eslint gulpfile.js src/js/*.js",
     "lint:fix": "npm run lint -- --fix",
-    "build": "gulp build"
+    "build": "gulp build",
+    "add": "node --no-warnings add-data.js"
   },
   "repository": {
     "type": "git",
@@ -17,6 +18,7 @@
     "@babel/core": "^7.1.2",
     "@babel/preset-env": "^7.1.0",
     "del": "^3.0.0",
+    "enquirer": "^2.0.7",
     "eslint": "^5.6.1",
     "gulp": "^4.0.0",
     "gulp-babel": "^8.0.0",
@@ -30,7 +32,9 @@
     "gulp-rev-delete-original": "^0.2.3",
     "gulp-stylus": "^2.7.0",
     "gulp-uglify-es": "^1.0.4",
-    "gulp-webserver": "^0.9.1"
+    "gulp-webserver": "^0.9.1",
+    "insertion-index": "^1.0.0",
+    "validator": "^10.9.0"
   },
   "author": "Swapnil Agarwal",
   "license": "ISC",
