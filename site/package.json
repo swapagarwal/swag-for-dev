@@ -33,7 +33,7 @@
     "gulp-webserver": "^0.9.1"
   },
   "author": "Swapnil Agarwal",
-  "license": "ISC",
+  "license": "CC0-1.0",
   "bugs": {
     "url": "https://github.com/swapagarwal/swag-for-dev/issues"
   },
