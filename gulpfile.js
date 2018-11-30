@@ -14,17 +14,17 @@ const responsive    = require('gulp-responsive');
 
 const {swagList, swagImages} = require('./get-data');
 
-let manifest = {
-    'css/index.css': 'css/index.css',
-    'js/index.js': 'js/index.js',
-};
-
 const RESIZE_OPTS = {
     quality: 90,
     progressive: true,
     compressionLevel: 9,
     errorOnEnlargement: false,
     errorOnUnusedConfig: false
+};
+
+let manifest = {
+    'css/index.css': 'css/index.css',
+    'js/index.js': 'js/index.js',
 };
 
 gulp.task('pug', () => {
@@ -106,8 +106,7 @@ gulp.task('clean:styl', () => del('dist/assets/css/*'));
 gulp.task('clean:js', () => del('dist/assets/js/*'));
 gulp.task('clean:assets', gulp.parallel('clean:styl', 'clean:js'));
 gulp.task('clean:pug', () => del('dist/index.html'));
-gulp.task('clean:rev', () => del('dist/rev-manifest.json'));
-gulp.task('clean', gulp.parallel('clean:pug', 'clean:assets', 'clean:rev'));
+gulp.task('clean', gulp.parallel('clean:pug', 'clean:assets'));
 
 gulp.task('cachebust', cb => {
     const revPath = './dist/rev-manifest.json';
@@ -122,7 +121,8 @@ gulp.task('cachebust', cb => {
         .pipe(cachebust())
         .pipe(cacheClean())
         .pipe(gulp.dest(basePath))
-        .pipe(cachebust.manifest(revPath, {
+        .pipe(cachebust.manifest({
+            path: revPath,
             base: basePath,
         }))
         .pipe(gulp.dest(basePath))
