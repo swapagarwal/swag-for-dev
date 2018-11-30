@@ -14,6 +14,7 @@ const responsive    = require('gulp-responsive');
 
 const {swagList, swagImages} = require('./get-data');
 
+const REV_PATH = './dist/rev-manifest.json';
 const RESIZE_OPTS = {
     quality: 90,
     progressive: true,
@@ -35,6 +36,11 @@ gulp.task('pug', () => {
         },
         new Set()
     )).sort();
+
+    // import rev-manifest if it exists
+    try {
+        manifest = require(REV_PATH);
+    } catch(error) { }
 
     const bustedAssets = {
         css: `/assets/${manifest['css/index.css']}`,
@@ -109,7 +115,6 @@ gulp.task('clean:pug', () => del('dist/index.html'));
 gulp.task('clean', gulp.parallel('clean:pug', 'clean:assets'));
 
 gulp.task('cachebust', cb => {
-    const revPath = './dist/rev-manifest.json';
     const basePath = 'dist/assets';
     const bustedFiles = [
         'dist/assets/css/*',
@@ -122,13 +127,13 @@ gulp.task('cachebust', cb => {
         .pipe(cacheClean())
         .pipe(gulp.dest(basePath))
         .pipe(cachebust.manifest({
-            path: revPath,
+            path: REV_PATH,
             base: basePath,
         }))
         .pipe(gulp.dest(basePath))
         .on('end', () => {
-            delete require.cache[require.resolve(revPath)];
-            manifest = require(revPath);
+            delete require.cache[require.resolve(REV_PATH)];
+            manifest = require(REV_PATH);
 
             swagList.forEach(swag => {
                 const filename = `swag-img/${swag.image.split('/').pop()}`;
