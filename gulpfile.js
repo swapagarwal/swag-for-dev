@@ -14,6 +14,8 @@ const responsive    = require('gulp-responsive');
 
 const {swagList, swagImages} = require('./get-data');
 
+const PRODUCTION = process.env.NODE_ENV === 'production';
+
 const REV_PATH = './dist/rev-manifest.json';
 const RESIZE_OPTS = {
     quality: 90,
@@ -23,10 +25,18 @@ const RESIZE_OPTS = {
     errorOnUnusedConfig: false
 };
 
-let manifest = {
-    'css/index.css': 'css/index.css',
-    'js/index.js': 'js/index.js',
-};
+let manifest;
+if (PRODUCTION) {
+    // import rev-manifest if it exists
+    try {
+        manifest = require(REV_PATH);
+    } catch(error) { }
+} else {
+    manifest = {
+        'css/index.css': 'css/index.css',
+        'js/index.js': 'js/index.js',
+    };
+}
 
 gulp.task('pug', () => {
     const tags = Array.from(swagList.reduce(
@@ -36,11 +46,6 @@ gulp.task('pug', () => {
         },
         new Set()
     )).sort();
-
-    // import rev-manifest if it exists
-    try {
-        manifest = require(REV_PATH);
-    } catch(error) { }
 
     const bustedAssets = {
         css: `/assets/${manifest['css/index.css']}`,

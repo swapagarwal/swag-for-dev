@@ -6,7 +6,7 @@
   "scripts": {
     "lint": "eslint gulpfile.js src/js/*.js",
     "lint:fix": "npm run lint -- --fix",
-    "build": "gulp build"
+    "build": "cross-env NODE_ENV=production gulp build"
   },
   "repository": {
     "type": "git",
@@ -30,7 +30,8 @@
     "gulp-rev-delete-original": "^0.2.3",
     "gulp-stylus": "^2.7.0",
     "gulp-uglify-es": "^1.0.4",
-    "gulp-webserver": "^0.9.1"
+    "gulp-webserver": "^0.9.1",
+    "cross-env": "^5.2.0"
   },
   "author": "Swapnil Agarwal",
   "license": "CC0-1.0",
