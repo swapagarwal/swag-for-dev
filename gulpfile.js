@@ -25,18 +25,10 @@ const RESIZE_OPTS = {
     errorOnUnusedConfig: false
 };
 
-let manifest;
-if (PRODUCTION) {
-    // import rev-manifest if it exists
-    try {
-        manifest = require(REV_PATH);
-    } catch(error) { }
-} else {
-    manifest = {
-        'css/index.css': 'css/index.css',
-        'js/index.js': 'js/index.js',
-    };
-}
+let manifest = {
+    'css/index.css': 'css/index.css',
+    'js/index.js': 'js/index.js',
+};
 
 gulp.task('pug', () => {
     const tags = Array.from(swagList.reduce(
@@ -46,6 +38,11 @@ gulp.task('pug', () => {
         },
         new Set()
     )).sort();
+
+    if (PRODUCTION) {
+        delete require.cache[require.resolve(REV_PATH)];
+        manifest = require(REV_PATH);
+    }
 
     const bustedAssets = {
         css: `/assets/${manifest['css/index.css']}`,
