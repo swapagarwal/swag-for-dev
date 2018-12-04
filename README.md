@@ -21,7 +21,12 @@ Note that a PR needs to reach a certain level of engagement before it gets merge
 
 As this project is community-driven, it'd be really helpful if you comment on the PR when you receive the corresponding swag. This would help in merging it faster. 😇
 
-### Development
+<a href="https://www.buymeacoffee.com/swap" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: auto !important;width: auto !important;" ></a>
+<a href="https://www.patreon.com/bePatron?u=7999565" target="_blank"><img src="https://c5.patreon.com/external/logo/become_a_patron_button.png" alt="Become a Patron!" height="41"></a>
+
+Please consider donating to cover up our hosting costs. 🙏
+
+## Development
 
 1. Clone this repository by running
     ```
@@ -41,11 +46,6 @@ As this project is community-driven, it'd be really helpful if you comment on th
     gulp
     ```
 1. The website should open in a browser after it compiles, or you can view it by going to http://localhost:8000
-
-<a href="https://www.buymeacoffee.com/swap" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: auto !important;width: auto !important;" ></a>
-<a href="https://www.patreon.com/bePatron?u=7999565" target="_blank"><img src="https://c5.patreon.com/external/logo/become_a_patron_button.png" alt="Become a Patron!" height="41"></a>
-
-Please consider donating to cover up our hosting costs.
 
 ## License
 
