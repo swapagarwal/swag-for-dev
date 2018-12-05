@@ -16,8 +16,9 @@ const feed = require('@zadkiel/gulp-feed');
 const {swagList, swagImages} = require('./get-data');
 
 const PRODUCTION = process.env.NODE_ENV === 'production';
+const TARGET_URL = process.env.LISTEN ? `http://${process.env.LISTEN}`
+    : process.env.DEPLOY_PRIME_URL;
 
-const REV_PATH = './dist/rev-manifest.json';
 const RESIZE_OPTS = {
 	quality: 90,
 	progressive: true,
@@ -25,7 +26,27 @@ const RESIZE_OPTS = {
 	errorOnEnlargement: false,
 	errorOnUnusedConfig: false
 };
+const FEED_OPTS = {
+    title: 'devSwag',
+    description: '😎 swag opportunities for developers',
+    id: 'https://devswag.io',
+    link: 'https://devswag.io',
+    image: 'https://devswag.io/assets/img/logo.png',
+    favicon: 'https://devswag.io/assets/img/logo.png',
+    copyright: 'Creative Commons Zero v1.0 Universal',
+    updated: new Date(),
+    feedLinks: {
+        rss: 'https://devswag.io/rss',
+        atom: 'https://devswag.io/atom',
+        json: 'https://devswag.io/json'
+    },
+    author: {
+        name: 'swag-for-dev\'s contributors',
+        link: 'https://github.com/swapagarwal/swag-for-dev'
+    }
+};
 
+const REV_PATH = './dist/rev-manifest.json';
 let manifest = {
 	'css/index.css': 'css/index.css',
 	'js/index.js': 'js/index.js'
@@ -151,29 +172,6 @@ gulp.task('cachebust', cb => {
 		});
 });
 
-const FEED_OPTS = {
-    title: 'devSwag',
-    description: '😎 swag opportunities for developers',
-    id: 'https://devswag.io',
-    link: 'https://devswag.io',
-    image: 'https://devswag.io/assets/img/logo.png',
-    favicon: 'https://devswag.io/assets/img/logo.png',
-    copyright: 'Creative Commons Zero v1.0 Universal',
-    updated: new Date(),
-    feedLinks: {
-        rss: 'https://devswag.io/rss',
-        atom: 'https://devswag.io/atom',
-        json: 'https://devswag.io/json'
-    },
-    author: {
-        name: 'swag-for-dev\'s contributors',
-        link: 'https://github.com/swapagarwal/swag-for-dev'
-    }
-};
-
-// Use Netlify DEPLOY_URL to avoid deleted content
-const FEED_ASSETS_URL = process.env.DEPLOY_URL || 'https://devswag.io';
-
 gulp.task('feed', function() {
     return feed(swagList, {
         ...FEED_OPTS,
@@ -194,18 +192,22 @@ gulp.task('feed', function() {
             //     email: 'janedoe@example.com',
             //     link: 'https://example.com/janedoe'
             // }],
-            date: new Date(),
-            image: FEED_ASSETS_URL + item.image,
+            date: new Date(item.dateAdded),
+            image: `${TARGET_URL}/item.image`,
         }),
     }).pipe(gulp.dest('dist/assets/feed'));
 });
 
 gulp.task('webserver', () => {
-	return gulp.src('dist')
-		.pipe(webserver({
-			livereload: true,
-			open: true
-		}));
+    const listen = process.env.LISTEN || '127.0.0.1:8000';
+    const [host, port] = listen.split(':');
+    return gulp.src('dist')
+        .pipe(webserver({
+            host: host || undefined,
+            port: port && parseInt(port, 10) || undefined,
+            livereload: true,
+            open: true,
+        }));
 });
 
 gulp.task('watch', () => {
