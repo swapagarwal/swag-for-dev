@@ -14,12 +14,20 @@ const responsive    = require('gulp-responsive');
 
 const {swagList, swagImages} = require('./get-data');
 
+const PRODUCTION = process.env.NODE_ENV === 'production';
+
+const REV_PATH = './dist/rev-manifest.json';
 const RESIZE_OPTS = {
     quality: 90,
     progressive: true,
     compressionLevel: 9,
     errorOnEnlargement: false,
     errorOnUnusedConfig: false
+};
+
+let manifest = {
+    'css/index.css': 'css/index.css',
+    'js/index.js': 'js/index.js',
 };
 
 gulp.task('pug', () => {
@@ -31,7 +39,11 @@ gulp.task('pug', () => {
         new Set()
     )).sort();
 
-    const manifest = require('./rev-manifest.json');
+    if (PRODUCTION) {
+        delete require.cache[require.resolve(REV_PATH)];
+        manifest = require(REV_PATH);
+    }
+
     const bustedAssets = {
         css: `/assets/${manifest['css/index.css']}`,
         js: `/assets/${manifest['js/index.js']}`
@@ -98,34 +110,33 @@ gulp.task('swag-img:optimize', () => {
 
 gulp.task('swag-img', gulp.series('swag-img:clean', 'swag-img:download' , 'swag-img:optimize'));
 
-gulp.task('clean', () => {
-    return del([
-        './rev-manifest.json',
-        'dist/assets/css/*',
-        'dist/assets/js/*',
-        'dist/assets/swag-img/*'
-    ]);
-});
+gulp.task('clean:styl', () => del('dist/assets/css/*'));
+gulp.task('clean:js', () => del('dist/assets/js/*'));
+gulp.task('clean:assets', gulp.parallel('clean:styl', 'clean:js'));
+gulp.task('clean:pug', () => del('dist/index.html'));
+gulp.task('clean', gulp.parallel('clean:pug', 'clean:assets'));
 
 gulp.task('cachebust', cb => {
+    const basePath = 'dist/assets';
     const bustedFiles = [
         'dist/assets/css/*',
         'dist/assets/js/*',
         'dist/assets/swag-img/*'
     ];
 
-    return gulp.src(bustedFiles, {base: 'dist/assets/'})
+    return gulp.src(bustedFiles, {base: basePath})
         .pipe(cachebust())
         .pipe(cacheClean())
-        .pipe(gulp.dest('dist/assets'))
+        .pipe(gulp.dest(basePath))
         .pipe(cachebust.manifest({
-            base: 'dist/assets',
-            merge: true
+            path: REV_PATH,
+            base: basePath,
         }))
-        .pipe(gulp.dest('dist/assets/'))
+        .pipe(gulp.dest(basePath))
         .on('end', () => {
-            delete require.cache[require.resolve('./rev-manifest.json')];
-            const manifest = require('./rev-manifest.json');
+            delete require.cache[require.resolve(REV_PATH)];
+            manifest = require(REV_PATH);
+
             swagList.forEach(swag => {
                 const filename = `swag-img/${swag.image.split('/').pop()}`;
                 if (!manifest[filename]) {
@@ -148,9 +159,9 @@ gulp.task('webserver', () => {
 });
 
 gulp.task('watch', () => {
-    gulp.watch('src/pug/**/*.pug', gulp.parallel('pug'));
-    gulp.watch('src/styl/**/*.styl', gulp.series('clean', 'styl', 'cachebust'));
-    gulp.watch('src/js/*.js', gulp.series('clean', 'js', 'cachebust'));
+    gulp.watch('src/pug/**/*.pug', gulp.series('pug'));
+    gulp.watch('src/styl/**/*.styl', gulp.series('clean:styl', 'styl'));
+    gulp.watch('src/js/*.js', gulp.series('clean:js', 'js'));
 });
 
 gulp.task('build', gulp.series(

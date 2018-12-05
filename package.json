@@ -6,7 +6,7 @@
   "scripts": {
     "lint": "eslint gulpfile.js src/js/*.js",
     "lint:fix": "npm run lint -- --fix",
-    "build": "gulp build"
+    "build": "cross-env NODE_ENV=production gulp build"
   },
   "repository": {
     "type": "git",
@@ -16,6 +16,7 @@
   "devDependencies": {
     "@babel/core": "^7.1.2",
     "@babel/preset-env": "^7.1.0",
+    "cross-env": "^5.2.0",
     "del": "^3.0.0",
     "eslint": "^5.6.1",
     "gulp": "^4.0.0",

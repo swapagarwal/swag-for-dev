@@ -1,7 +1,7 @@
 [build]
   base      = "/"
   publish   = "dist"
-  command   = "gulp build"
+  command   = "npm run build"
 
 [build.environment]
   NODE_VERSION = "10"
