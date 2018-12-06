@@ -3,11 +3,12 @@
   "version": "1.0.0",
   "description": "swag opportunities for developers",
   "main": "index.js",
-  "scripts": {
-    "lint": "eslint gulpfile.js src/js/*.js",
-    "lint:fix": "npm run lint -- --fix",
-    "build": "cross-env NODE_ENV=production gulp build"
+  "author": "Swapnil Agarwal",
+  "license": "CC0-1.0",
+  "bugs": {
+    "url": "https://github.com/swapagarwal/swag-for-dev/issues"
   },
+  "homepage": "http://devswag.io",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/swapagarwal/swag-for-dev.git"
@@ -18,7 +19,6 @@
     "@babel/preset-env": "^7.1.0",
     "cross-env": "^5.2.0",
     "del": "^3.0.0",
-    "eslint": "^5.6.1",
     "gulp": "^4.0.0",
     "gulp-babel": "^8.0.0",
     "gulp-concat": "^2.6.1",
@@ -31,12 +31,43 @@
     "gulp-rev-delete-original": "^0.2.3",
     "gulp-stylus": "^2.7.0",
     "gulp-uglify-es": "^1.0.4",
-    "gulp-webserver": "^0.9.1"
+    "gulp-webserver": "^0.9.1",
+    "husky": "^1.2.0",
+    "lint-staged": "^8.1.0",
+    "xo": "^0.23.0"
   },
-  "author": "Swapnil Agarwal",
-  "license": "CC0-1.0",
-  "bugs": {
-    "url": "https://github.com/swapagarwal/swag-for-dev/issues"
+  "scripts": {
+    "lint": "xo",
+    "lint:fix": "xo --fix",
+    "build": "gulp build"
   },
-  "homepage": "http://devswag.io"
+  "xo": {
+    "rules": {
+      "unicorn/prefer-spread": "off"
+    },
+    "overrides": [
+      {
+        "files": [
+          "src/js/**/*.js"
+        ],
+        "envs": [
+          "browser"
+        ]
+      }
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "relative": true,
+    "linters": {
+      "**/*.{js,json}": [
+        "xo --fix",
+        "git add"
+      ]
+    }
+  }
 }
