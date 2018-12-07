@@ -14,6 +14,7 @@ const sort = {
 const contentEl = document.getElementById('content');
 const filterInput = document.getElementById('filter');
 const sortingInput = document.getElementById('sorting');
+const showExpired = document.querySelector('.expired');
 
 const activateElements = els => Array.from(els).forEach(node => node.classList.add(ACTIVE_CLASS));
 const allowDifficultySelect = shouldAllow => sortingInput.querySelectorAll('.difficulty')
@@ -54,7 +55,8 @@ function handleTags() {
 	}
 
 	Array.from(contentEl.querySelectorAll('.item')).forEach(el => {
-		const show = tags.reduce((sho, tag) => sho || el.classList.contains(`tag-${tag}`), false);
+		const show = (showExpired || !el.classList.contains('tag-expired')) &&
+			tags.reduce((sho, tag) => sho || (el.classList.contains(`tag-${tag}`) && tag !== 'expired'), false);
 		if (!show) {
 			el.classList.remove('visible');
 		}
