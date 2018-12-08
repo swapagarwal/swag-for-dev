@@ -28,17 +28,17 @@ const parameters = {
 		setValue: value => selectr.setValue(value.split(' '))
 	},
 	difficulty: {
-		default: 'alldifficulties',
+		default: 'all',
 		getValue: () => filterInput.value,
 		setValue: value => {
-			filterInput.value = ['easy', 'medium', 'difficult'].includes(value) ? value : 'alldifficulties';
+			filterInput.value = ['easy', 'medium', 'difficult'].includes(value) ? value : this.default;
 		}
 	},
 	sort: {
 		default: 'ALPHABETICAL_ASCENDING',
 		getValue: () => sortingInput.value,
 		setValue: value => {
-			sortingInput.value = value in sort ? value : 'ALPHABETICAL_ASCENDING';
+			sortingInput.value = value in sort ? value : this.default;
 		}
 	}
 };
@@ -71,7 +71,7 @@ function handleDifficulty(difficultyChanged) {
 	Array.from(contentEl.getElementsByClassName(ACTIVE_CLASS))
 		.forEach(swag => swag.classList.remove(ACTIVE_CLASS));
 
-	if (value === 'alldifficulties') {
+	if (value === 'all') {
 		activateElements(contentEl.querySelectorAll('.item'));
 		allowDifficultySelect(true);
 	} else {
