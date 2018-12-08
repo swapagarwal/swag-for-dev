@@ -2,9 +2,9 @@
   {
     "name": "Alexa",
     "difficulty": "hard",
-    "description": "Publish a skill, get a hoodie (varies by country) and an Echo Spot (if 1,000 unique customers use your skill in its first 30 days of publication)!",
+    "description": "Publish a skill, get a t-shirt and an Echo Spot (if 50 customers per month use your Display skill for the first three months after publication)! Earn a 2-pack of Echo Buttons if you publish a Gadgets skill!",
     "reference": "https://developer.amazon.com/alexa-skills-kit/alexa-developer-skill-promotion",
-    "image": "https://images-na.ssl-images-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/ASM0761-Dev-LP-Goodiepage-UK-March._CB501585903_.png",
+    "image": "https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/promos/ASK_DevIncentive_swag_v2._CB472624419_.png",
     "dateAdded": "2018-02-18T06:03:00.000Z",
     "tags": ["clothing", "device"]
   },
