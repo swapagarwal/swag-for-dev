@@ -114,9 +114,14 @@ gulp.task('clean:styl', () => del('dist/assets/css/*'));
 gulp.task('clean:js', () => del('dist/assets/js/*'));
 gulp.task('clean:assets', gulp.parallel('clean:styl', 'clean:js'));
 gulp.task('clean:pug', () => del('dist/index.html'));
-gulp.task('clean', gulp.parallel('clean:pug', 'clean:assets'));
+gulp.task('clean:rev', () => del('dist/rev-manifest.json'));
+gulp.task('clean', gulp.parallel('clean:pug', 'clean:assets', 'clean:rev'));
 
 gulp.task('cachebust', cb => {
+	if (!PRODUCTION) {
+		return cb();
+	}
+
 	const basePath = 'dist/assets';
 	const bustedFiles = [
 		'dist/assets/css/*',
@@ -160,8 +165,8 @@ gulp.task('webserver', () => {
 
 gulp.task('watch', () => {
 	gulp.watch('src/pug/**/*.pug', gulp.series('pug'));
-	gulp.watch('src/styl/**/*.styl', gulp.series('clean:styl', 'styl'));
-	gulp.watch('src/js/*.js', gulp.series('clean:js', 'js'));
+	gulp.watch('src/styl/**/*.styl', gulp.series('styl'));
+	gulp.watch('src/js/*.js', gulp.series('js'));
 });
 
 gulp.task('build', gulp.series(
