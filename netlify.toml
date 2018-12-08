@@ -12,13 +12,13 @@
   to = "/?tags=hacktoberfest"
 
 [[redirects]]
-  from = "/rss"
+  from = "/feed/rss"
   to = "/assets/feed/rss.xml"
 [[redirects]]
-  from = "/atom"
+  from = "/feed/atom"
   to = "/assets/feed/atom.xml"
 [[redirects]]
-  from = "/json"
+  from = "/feed/json"
   to = "/assets/feed/feed.json"
 
 [[headers]]
