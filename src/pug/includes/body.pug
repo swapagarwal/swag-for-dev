@@ -18,15 +18,17 @@ include ./fork.pug
                         label.sr-only(for="filter") Filter opportunity difficulty
                         select#filter
                             for filter in ['All difficulties', 'Easy', 'Medium', 'Hard']
-                                option(value=filter) #{filter}
+                                option(value=filter.replace(/ /g, '').toLowerCase()) #{filter}
 
                 .item.flex
                     span In
                     .select-wrapper
                         label.sr-only(for="sorting") Sort opportunities
                         select#sorting
-                            for filter in ['Alphabetical', 'Alphabetical, reversed', 'Difficulty', 'Difficulty, reversed']
-                                option(value=filter) #{filter}
+                            option(value="ALPHABETICAL_ASCENDING" class="alphabetical") Alphabetical
+                            option(value="ALPHABETICAL_DESCENDING" class="alphabetical") Alphabetical, reversed
+                            option(value="DIFFICULTY_ASCENDING" class="difficulty") Difficulty
+                            option(value="DIFFICULTY_DESCENDING" class="difficulty") Difficulty, reversed
                     span order
 
             .bottom
@@ -38,7 +40,11 @@ include ./fork.pug
             each swag in swagList
                 - difficulty = swag.difficulty + ' difficulty';
                 - difficultyTitle = 'Difficulty: ' + swag.difficulty;
-                div.item
+                div(
+                    class="item visible " + swag.difficulty + swag.tags.map(t => ` tag-${t}`).join('')
+                    data-name=swag.name.toLowerCase()
+                    data-difficulty=['easy','medium', 'hard'].indexOf(swag.difficulty)
+                )
                     div.title.flex
                         h1=swag.name
                         div(class=difficulty title=difficultyTitle)
@@ -61,9 +67,8 @@ include ./fork.pug
         .item.flex
             p Maintained by #[a(href="https://github.com/aslafy-z") Zadkiel] and #[a(href="https://github.com/vikaspotluri123") Vikas Potluri]
         .item.flex
-            p Want your company's swag to be listed? #[a(href="https://github.com/swapagarwal/swag-for-dev/issues/new") Contact us].
+            p Want your company's swag to be listed? #[a(href="https://t.me/swapagarwal") Contact us].
     #codefund_ad
 
-    script(defer).
-        window.swag = !{JSON.stringify(swagList)};
+    script.
         window.swagTags = !{JSON.stringify(tags)};

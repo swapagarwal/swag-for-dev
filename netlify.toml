@@ -1,7 +1,11 @@
 [build]
-  base      = "site/"
-  publish   = "site/dist"
-  command   = "gulp build"
+  base      = "/"
+  publish   = "dist"
+  command   = "npm run build"
+
+[build.environment]
+  NODE_VERSION = "10"
+  NPM_VERSION = "6.4.1"
 
 [[redirects]]
   from = "/hacktoberfest"
