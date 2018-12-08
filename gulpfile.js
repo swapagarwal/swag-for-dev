@@ -17,7 +17,7 @@ const {swagList, swagImages} = require('./get-data');
 
 const PRODUCTION = process.env.NODE_ENV === 'production';
 const LISTEN = process.env.LISTEN || '127.0.0.1:8000';
-const TARGET_URL = LISTEN ? `http://${LISTEN}` : process.env.DEPLOY_PRIME_URL;
+const TARGET_URL = process.env.DEPLOY_PRIME_URL || `http://${LISTEN}`;
 
 const RESIZE_OPTS = {
 	quality: 90,
@@ -196,7 +196,7 @@ gulp.task('feed', () => {
 				link: 'https://github.com/swapagarwal/swag-for-dev'
 			}],
 			date: new Date(item.dateAdded),
-			image: `${TARGET_URL}/${item.image}`
+			image: `${TARGET_URL}${item.image}`
 		})
 	}).pipe(gulp.dest('dist/assets/feed'));
 });
