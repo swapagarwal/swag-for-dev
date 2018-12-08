@@ -114,8 +114,7 @@ gulp.task('clean:styl', () => del('dist/assets/css/*'));
 gulp.task('clean:js', () => del('dist/assets/js/*'));
 gulp.task('clean:assets', gulp.parallel('clean:styl', 'clean:js'));
 gulp.task('clean:pug', () => del('dist/index.html'));
-gulp.task('clean:rev', () => del('dist/rev-manifest.json'));
-gulp.task('clean', gulp.parallel('clean:pug', 'clean:assets', 'clean:rev'));
+gulp.task('clean', gulp.parallel('clean:pug', 'clean:assets'));
 
 gulp.task('cachebust', cb => {
 	if (!PRODUCTION) {
