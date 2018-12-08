@@ -21,8 +21,50 @@ const allowDifficultySelect = shouldAllow => sortingInput.querySelectorAll('.dif
 		node.disabled = !shouldAllow;
 	});
 
+const parameters = {
+	tags: {
+		default: '',
+		getValue: () => selectr.getValue().join(' '),
+		setValue: value => selectr.setValue(value.split(' '))
+	},
+	difficulty: {
+		default: 'alldifficulties',
+		getValue: () => filterInput.value,
+		setValue: value => {
+			filterInput.value = ['easy', 'medium', 'difficult'].includes(value) ? value : 'alldifficulties';
+		}
+	},
+	sort: {
+		default: 'ALPHABETICAL_ASCENDING',
+		getValue: () => sortingInput.value,
+		setValue: value => {
+			sortingInput.value = value in sort ? value : 'ALPHABETICAL_ASCENDING';
+		}
+	}
+};
+
 let search;
 let selectr;
+
+function updateUrl() {
+	const newSearch = new URLSearchParams(window.location.search);
+	for (const parameter in parameters) {
+		if (Object.prototype.hasOwnProperty.call(parameters, parameter)) {
+			const paramValue = parameters[parameter].getValue();
+			if (['', parameters[parameter].default].includes(paramValue)) {
+				newSearch.delete(parameter);
+				continue;
+			}
+			newSearch.set(parameter, paramValue);
+		}
+	}
+	const newSearchString = newSearch.toString();
+	let newRelativePathQuery = window.location.pathname;
+	if (newSearchString) {
+		newRelativePathQuery += `?${newSearchString}`;
+	}
+	history.pushState(null, '', newRelativePathQuery);
+}
 
 function handleDifficulty(difficultyChanged) {
 	const {value} = filterInput;
@@ -49,7 +91,6 @@ function handleTags() {
 	const tags = selectr.getValue();
 
 	if (tags.length === 0) {
-		history.pushState(null, '', window.location.pathname);
 		return;
 	}
 
@@ -59,13 +100,6 @@ function handleTags() {
 			el.classList.remove('visible');
 		}
 	});
-
-	if (!search) {
-		return;
-	}
-	search.set('tags', tags.join(' '));
-	const newRelativePathQuery = `${window.location.pathname}?${search.toString()}`;
-	history.pushState(null, '', newRelativePathQuery);
 }
 
 function handleSort() {
@@ -80,8 +114,9 @@ function cascade(force = false) {
 	force |= handleDifficulty(this === filterInput);
 	force |= handleTags(Boolean(this.el));
 	if (force || this === sortingInput) {
-		handleSort(this === sortingInput);
+		handleSort();
 	}
+	updateUrl();
 }
 
 window.addEventListener('load', () => {
@@ -93,8 +128,10 @@ window.addEventListener('load', () => {
 
 	if ('URLSearchParams' in window) {
 		search = new URLSearchParams(window.location.search);
-		if (search.has('tags')) {
-			selectr.setValue(search.get('tags').split(' '));
+		for (const parameter in parameters) {
+			if (search.has(parameter)) {
+				parameters[parameter].setValue(search.get(parameter));
+			}
 		}
 	}
 
