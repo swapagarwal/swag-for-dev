@@ -31,14 +31,14 @@ const parameters = {
 		default: 'all',
 		getValue: () => filterInput.value,
 		setValue: value => {
-			filterInput.value = ['easy', 'medium', 'difficult'].includes(value) ? value : this.default;
+			filterInput.value = ['easy', 'medium', 'difficult'].includes(value) ? value : 'all';
 		}
 	},
 	sort: {
 		default: 'ALPHABETICAL_ASCENDING',
 		getValue: () => sortingInput.value,
 		setValue: value => {
-			sortingInput.value = value in sort ? value : this.default;
+			sortingInput.value = value in sort ? value : 'ALPHABETICAL_ASCENDING';
 		}
 	}
 };
