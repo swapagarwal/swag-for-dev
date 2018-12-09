@@ -31,27 +31,50 @@ const parameters = {
 		default: 'all',
 		getValue: () => filterInput.value,
 		setValue: value => {
-			filterInput.value = ['easy', 'medium', 'difficult'].includes(value) ? value : 'all';
+			filterInput.value = ['easy', 'medium', 'hard'].includes(value) ?
+				value :
+				'all';
 		}
 	},
-	sort: {
-		default: 'ALPHABETICAL_ASCENDING',
-		getValue: () => sortingInput.value,
+	sortMethod: {
+		default: 'alphabetical',
+		getValue: () => sortParams.sortMethod.toLowerCase(),
 		setValue: value => {
-			sortingInput.value = value in sort ? value : 'ALPHABETICAL_ASCENDING';
+			sortParams.sortMethod = ['alphabetical', 'difficulty'].includes(value) ?
+				value :
+				'alphabetical';
+		}
+	},
+	order: {
+		default: 'asc',
+		getValue: () => sortParams.order.substr(0, 3).toLowerCase(),
+		setValue: value => {
+			switch (value) {
+				case 'des':
+					sortParams.order = 'descending';
+					break;
+				case 'asc':
+				default:
+					sortParams.order = 'ascending';
+					break;
+			}
 		}
 	}
 };
 
 let search;
 let selectr;
+const sortParams = {
+	sortMethod: sortingInput.value.split('_')[0],
+	order: sortingInput.value.split('_')[1]
+};
 
 function updateUrl() {
 	const newSearch = new URLSearchParams(window.location.search);
 	for (const parameter in parameters) {
 		if (Object.prototype.hasOwnProperty.call(parameters, parameter)) {
 			const paramValue = parameters[parameter].getValue();
-			if (['', parameters[parameter].default].includes(paramValue)) {
+			if (paramValue === '') {
 				newSearch.delete(parameter);
 				continue;
 			}
@@ -103,20 +126,24 @@ function handleTags() {
 }
 
 function handleSort() {
+	sortParams.sortMethod = sortingInput.value.split('_')[0];
+	sortParams.order = sortingInput.value.split('_')[1];
 	Array.from(contentEl.children)
 		.map(child => contentEl.removeChild(child))
-		.sort(sort[sortingInput.value])
+		.sort(sort[`${sortParams.sortMethod}_${sortParams.order}`])
 		.forEach(sortedChild => contentEl.appendChild(sortedChild));
 }
 
 // The cascade is the function which handles calling filtering and sorting swag
-function cascade(force = false) {
+function cascade(force = false, firstRun = false) {
 	force |= handleDifficulty(this === filterInput);
 	force |= handleTags(Boolean(this.el));
 	if (force || this === sortingInput) {
 		handleSort();
 	}
-	updateUrl();
+	if (!firstRun) {
+		updateUrl();
+	}
 }
 
 window.addEventListener('load', () => {
@@ -139,5 +166,5 @@ window.addEventListener('load', () => {
 	filterInput.addEventListener('input', cascade);
 	sortingInput.addEventListener('input', cascade);
 
-	cascade.call(window, true);
+	cascade.call(window, true, true);
 });
