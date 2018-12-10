@@ -47,10 +47,10 @@ const parameters = {
 	},
 	order: {
 		default: 'asc',
-		getValue: () => sortParams.order.substr(0, 3).toLowerCase(),
+		getValue: () => `${sortParams.order.split('sc')[0]}sc`.toLowerCase(),
 		setValue: value => {
 			switch (value) {
-				case 'des':
+				case 'desc':
 					sortParams.order = 'descending';
 					break;
 				case 'asc':
