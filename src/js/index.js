@@ -38,9 +38,9 @@ const parameters = {
 	},
 	sort: {
 		default: 'alphabetical',
-		getValue: () => sortParams.sortMethod.toLowerCase(),
+		getValue: () => sortParams.sort.toLowerCase(),
 		setValue: value => {
-			sortParams.sortMethod = ['alphabetical', 'difficulty'].includes(value) ?
+			sortParams.sort = ['alphabetical', 'difficulty'].includes(value) ?
 				value :
 				'alphabetical';
 		}
@@ -56,19 +56,20 @@ const parameters = {
 	}
 };
 
+const sortParams = {
+	sort: null,
+	order: null
+};
+
 let search;
 let selectr;
-const sortParams = {
-	sortMethod: sortingInput.value.split('_')[0],
-	order: sortingInput.value.split('_')[1]
-};
 
 function updateUrl() {
 	const newSearch = new URLSearchParams(window.location.search);
 	for (const parameter in parameters) {
 		if (Object.prototype.hasOwnProperty.call(parameters, parameter)) {
 			const paramValue = parameters[parameter].getValue();
-			if (paramValue === '') {
+			if (['', parameters[parameter].default].includes(paramValue)) {
 				newSearch.delete(parameter);
 				continue;
 			}
@@ -88,7 +89,7 @@ function handleDifficulty(difficultyChanged) {
 	Array.from(contentEl.getElementsByClassName(ACTIVE_CLASS))
 		.forEach(swag => swag.classList.remove(ACTIVE_CLASS));
 
-	if (value === 'all') {
+	if (value === parameters.difficulty.default) {
 		activateElements(contentEl.querySelectorAll('.item'));
 		allowDifficultySelect(true);
 	} else {
@@ -120,11 +121,11 @@ function handleTags() {
 }
 
 function handleSort() {
-	sortParams.sortMethod = sortingInput.value.split('_')[0];
+	sortParams.sort = sortingInput.value.split('_')[0];
 	sortParams.order = sortingInput.value.split('_')[1];
 	Array.from(contentEl.children)
 		.map(child => contentEl.removeChild(child))
-		.sort(sort[`${sortParams.sortMethod}_${sortParams.order}`])
+		.sort(sort[`${sortParams.sort}_${sortParams.order}`])
 		.forEach(sortedChild => contentEl.appendChild(sortedChild));
 }
 
