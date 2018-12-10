@@ -39,7 +39,7 @@
   "scripts": {
     "lint": "xo",
     "lint:fix": "xo --fix",
-    "build": "gulp build"
+    "build": "cross-env NODE_ENV=production gulp build"
   },
   "xo": {
     "rules": {
