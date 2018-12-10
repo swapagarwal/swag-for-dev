@@ -176,7 +176,9 @@ gulp.task('cachebust', cb => {
 });
 
 gulp.task('feed', () => {
-	return feed(swagList, {
+	const orderedSwag = swagList.sort((a, b) => b.dateAdded - a.dateAdded);
+
+	return feed(orderedSwag, {
 		...FEED_OPTS,
 		render: {
 			'rss.xml': 'rss2',
@@ -190,12 +192,8 @@ gulp.task('feed', () => {
 			description: item.description,
 			// Categories: item.tags,
 			// content: item.content,
-			author: [{
-				name: 'devSwag contributors',
-				email: 'contributors@devswag.io',
-				link: 'https://github.com/swapagarwal/swag-for-dev'
-			}],
-			date: new Date(item.dateAdded),
+			author: [FEED_OPTS.author],
+			date: item.dateAdded,
 			image: `${TARGET_URL}${item.image}`
 		})
 	}).pipe(gulp.dest('dist/assets/feed'));
