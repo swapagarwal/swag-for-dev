@@ -36,7 +36,7 @@ const parameters = {
 				'all';
 		}
 	},
-	sortMethod: {
+	sort: {
 		default: 'alphabetical',
 		getValue: () => sortParams.sortMethod.toLowerCase(),
 		setValue: value => {
