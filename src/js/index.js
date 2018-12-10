@@ -49,15 +49,9 @@ const parameters = {
 		default: 'asc',
 		getValue: () => `${sortParams.order.split('SC')[0]}sc`.toLowerCase(),
 		setValue: value => {
-			switch (value) {
-				case 'desc':
-					sortParams.order = 'descending';
-					break;
-				case 'asc':
-				default:
-					sortParams.order = 'ascending';
-					break;
-			}
+			sortParams.order = value === 'desc' ?
+				'descending' :
+				'ascending';
 		}
 	}
 };
