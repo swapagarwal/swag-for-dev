@@ -66,15 +66,13 @@ let selectr;
 
 function updateUrl() {
 	const newSearch = new URLSearchParams(window.location.search);
-	for (const parameter in parameters) {
-		if (Object.prototype.hasOwnProperty.call(parameters, parameter)) {
-			const paramValue = parameters[parameter].getValue();
-			if (['', parameters[parameter].default].includes(paramValue)) {
-				newSearch.delete(parameter);
-				continue;
-			}
-			newSearch.set(parameter, paramValue);
+	for (const [paramName, paramObj] of Object.entries(parameters)) {
+		const paramValue = paramObj.getValue();
+		if (['', paramObj.default].includes(paramValue)) {
+			newSearch.delete(paramName);
+			continue;
 		}
+		newSearch.set(paramName, paramValue);
 	}
 	const newSearchString = newSearch.toString();
 	let newRelativePathQuery = window.location.pathname;
@@ -150,9 +148,9 @@ window.addEventListener('load', () => {
 
 	if ('URLSearchParams' in window) {
 		search = new URLSearchParams(window.location.search);
-		for (const parameter in parameters) {
-			if (search.has(parameter)) {
-				parameters[parameter].setValue(search.get(parameter));
+		for (const [paramName, paramObj] of Object.entries(parameters)) {
+			if (search.has(paramName)) {
+				paramObj.setValue(search.get(paramName));
 			}
 		}
 	}
