@@ -41,8 +41,8 @@ const parameters = {
 		getValue: () => sortParams.sort.toLowerCase(),
 		setValue: value => {
 			sortParams.sort = ['alphabetical', 'difficulty'].includes(value) ?
-				value :
-				'alphabetical';
+				value.toUpperCase() :
+				'ALPHABETICAL';
 		}
 	},
 	order: {
@@ -50,8 +50,8 @@ const parameters = {
 		getValue: () => `${sortParams.order.split('SC')[0]}sc`.toLowerCase(),
 		setValue: value => {
 			sortParams.order = value === 'desc' ?
-				'descending' :
-				'ascending';
+				'DESCENDING' :
+				'ASCENDING';
 		}
 	}
 };
@@ -119,11 +119,16 @@ function handleTags() {
 }
 
 function handleSort() {
-	sortParams.sort = sortingInput.value.split('_')[0];
-	sortParams.order = sortingInput.value.split('_')[1];
+	if (!sortParams.sort) {
+		sortParams.sort = sortingInput.value.split('_')[0];
+	}
+	if (!sortParams.order) {
+		sortParams.order = sortingInput.value.split('_')[1];
+	}
+	sortingInput.value = Object.values(sortParams).join('_');
 	Array.from(contentEl.children)
 		.map(child => contentEl.removeChild(child))
-		.sort(sort[`${sortParams.sort}_${sortParams.order}`])
+		.sort(sort[sortingInput.value])
 		.forEach(sortedChild => contentEl.appendChild(sortedChild));
 }
 
