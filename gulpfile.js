@@ -100,13 +100,20 @@ gulp.task('swag-img:download', () => {
 });
 
 gulp.task('swag-img:optimize', () => {
+	const imageSettings = {
+		name: '*.jpg',
+		height: 300,
+		flatten: true
+	};
 	return gulp.src('dist/assets/swag-img/*')
-		.pipe(responsive([{
-			name: '*',
-			height: 300,
-			format: 'jpeg',
-			flatten: true
-		}], RESIZE_OPTS))
+		.pipe(responsive([
+			// JPEG output
+			imageSettings,
+			// WebP output
+			Object.assign({
+				rename: i => `${i.basename}.webp`
+			}, imageSettings)
+		], RESIZE_OPTS))
 		.pipe(gulp.dest('dist/assets/swag-img'));
 });
 
