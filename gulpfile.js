@@ -22,7 +22,9 @@ const RESIZE_OPTS = {
 	progressive: true,
 	compressionLevel: 9,
 	errorOnEnlargement: false,
-	errorOnUnusedConfig: false
+	errorOnUnusedConfig: false,
+	errorOnUnusedImage: false,
+	passThroughUnused: true
 };
 
 let manifest = {
