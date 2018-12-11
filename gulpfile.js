@@ -67,6 +67,11 @@ gulp.task('styl', () => {
 		.pipe(gulp.dest('dist/assets/css'));
 });
 
+gulp.task('fonts', () => {
+	return gulp.src('src/fonts/*')
+		.pipe(gulp.dest('dist/assets/fonts'));
+});
+
 gulp.task('js', () => {
 	const presets = [
 		['@babel/env', {targets: {browsers: ['> 75%']}}]
@@ -112,7 +117,8 @@ gulp.task('swag-img', gulp.series('swag-img:clean', 'swag-img:download', 'swag-i
 
 gulp.task('clean:styl', () => del('dist/assets/css/*'));
 gulp.task('clean:js', () => del('dist/assets/js/*'));
-gulp.task('clean:assets', gulp.parallel('clean:styl', 'clean:js'));
+gulp.task('clean:fonts', () => del('dist/assets/fonts/*'));
+gulp.task('clean:assets', gulp.parallel('clean:styl', 'clean:js', 'clean:fonts'));
 gulp.task('clean:pug', () => del('dist/index.html'));
 gulp.task('clean', gulp.parallel('clean:pug', 'clean:assets'));
 
@@ -166,12 +172,13 @@ gulp.task('watch', () => {
 	gulp.watch('src/pug/**/*.pug', gulp.series('pug'));
 	gulp.watch('src/styl/**/*.styl', gulp.series('styl'));
 	gulp.watch('src/js/*.js', gulp.series('js'));
+	gulp.watch('src/fonts/*', gulp.series('fonts'));
 });
 
 gulp.task('build', gulp.series(
 	'clean',
 	gulp.parallel(
-		gulp.series('swag-img', 'cachebust', 'pug'), 'styl', 'js', 'img'
+		gulp.series('swag-img', 'cachebust', 'pug'), 'styl', 'js', 'img', 'fonts'
 	)
 ));
 
