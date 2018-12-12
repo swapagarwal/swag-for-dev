@@ -11,6 +11,16 @@
   from = "/hacktoberfest"
   to = "/?tags=hacktoberfest"
 
+[[redirects]]
+  from = "/feed/rss"
+  to = "/assets/feed/rss.xml"
+[[redirects]]
+  from = "/feed/atom"
+  to = "/assets/feed/atom.xml"
+[[redirects]]
+  from = "/feed/json"
+  to = "/assets/feed/feed.json"
+
 [[headers]]
   for = "/*"
   [headers.values]
@@ -35,3 +45,8 @@
     for = "/assets/css/*"
     [headers.values]
     Cache-Control = 'public max-age=63072000' # 2 years cache for all assets since they're cachebusted
+
+[[headers]]
+    for = "/assets/feed/*"
+    [headers.values]
+    Cache-Control = 'public max-age=43200' # 12 hours for feeds

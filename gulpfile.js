@@ -11,12 +11,14 @@ const webserver = require('gulp-webserver');
 const concat = require('gulp-concat');
 const download = require('gulp-download-stream');
 const responsive = require('gulp-responsive');
+const feed = require('@zadkiel/gulp-feed');
 
 const {swagList, swagImages} = require('./get-data');
 
 const PRODUCTION = process.env.NODE_ENV === 'production';
+const LISTEN = process.env.LISTEN || '127.0.0.1:8000';
+const TARGET_URL = process.env.DEPLOY_PRIME_URL || `http://${LISTEN}`;
 
-const REV_PATH = './dist/rev-manifest.json';
 const RESIZE_OPTS = {
 	quality: 90,
 	progressive: true,
@@ -25,6 +27,28 @@ const RESIZE_OPTS = {
 	errorOnUnusedConfig: false
 };
 
+const FEED_OPTS = {
+	title: 'devSwag',
+	description: '😎 swag opportunities for developers',
+	id: TARGET_URL,
+	link: TARGET_URL,
+	image: `${TARGET_URL}/assets/img/logo.png`,
+	favicon: `${TARGET_URL}/assets/img/logo.png`,
+	copyright: 'Creative Commons Zero v1.0 Universal',
+	updated: new Date(),
+	feedLinks: {
+		rss: `${TARGET_URL}/feed/rss`,
+		atom: `${TARGET_URL}/feed/atom`,
+		json: `${TARGET_URL}/feed/json`
+	},
+	author: {
+		name: 'devSwag contributors',
+		email: 'contributors@devswag.io',
+		link: 'https://github.com/swapagarwal/swag-for-dev'
+	}
+};
+
+const REV_PATH = './dist/rev-manifest.json';
 let manifest = {
 	'css/index.css': 'css/index.css',
 	'js/index.js': 'js/index.js'
@@ -112,7 +136,8 @@ gulp.task('swag-img', gulp.series('swag-img:clean', 'swag-img:download', 'swag-i
 
 gulp.task('clean:styl', () => del('dist/assets/css/*'));
 gulp.task('clean:js', () => del('dist/assets/js/*'));
-gulp.task('clean:assets', gulp.parallel('clean:styl', 'clean:js'));
+gulp.task('clean:feed', () => del('dist/assets/feed/*'));
+gulp.task('clean:assets', gulp.parallel('clean:styl', 'clean:js', 'clean:feed'));
 gulp.task('clean:pug', () => del('dist/index.html'));
 gulp.task('clean', gulp.parallel('clean:pug', 'clean:assets'));
 
@@ -154,9 +179,36 @@ gulp.task('cachebust', cb => {
 		});
 });
 
+gulp.task('feed', () => {
+	const orderedSwag = swagList.sort((a, b) => b.dateAdded - a.dateAdded);
+
+	return feed(orderedSwag, {
+		...FEED_OPTS,
+		render: {
+			'rss.xml': 'rss2',
+			'atom.xml': 'atom1',
+			'feed.json': 'json1'
+		},
+		transform: item => ({
+			title: item.name,
+			id: item.reference,
+			link: item.reference,
+			description: item.description,
+			// Categories: item.tags,
+			// content: item.content,
+			author: [FEED_OPTS.author],
+			date: item.dateAdded,
+			image: `${TARGET_URL}${item.image}`
+		})
+	}).pipe(gulp.dest('dist/assets/feed'));
+});
+
 gulp.task('webserver', () => {
+	const [host, port] = LISTEN.split(':');
 	return gulp.src('dist')
 		.pipe(webserver({
+			host: host || undefined,
+			port: port ? parseInt(port, 10) : undefined,
 			livereload: true,
 			open: true
 		}));
@@ -171,7 +223,12 @@ gulp.task('watch', () => {
 gulp.task('build', gulp.series(
 	'clean',
 	gulp.parallel(
-		gulp.series('swag-img', 'cachebust', 'pug'), 'styl', 'js', 'img'
+		gulp.series('swag-img', 'cachebust',
+			gulp.parallel('pug', 'feed')
+		),
+		'styl',
+		'js',
+		'img'
 	)
 ));
 
