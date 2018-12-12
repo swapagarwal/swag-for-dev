@@ -1,0 +1,21 @@
+language: node_js
+
+node_js:
+  - "10"
+
+sudo: false
+
+matrix:
+  include:
+    - node_js: "8"
+      env: TEST_SUITE=lint
+
+cache:
+  directories:
+    - node_modules
+
+install:
+  - npm ci
+
+script:
+  - if [ "$TEST_SUITE" == "lint" ]; then npm run lint; else npm run test; fi
