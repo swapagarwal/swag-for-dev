@@ -11,16 +11,6 @@ include ./fork.pug
 
 		.buttons.flex
 
-<<<<<<< HEAD
-			.top.flex
-				.item.flex
-					span Show
-					.select-wrapper
-						label.sr-only(for="filter") Filter opportunity difficulty
-						select#filter
-							for filter in ['All difficulties', 'Easy', 'Medium', 'Hard']
-								option(value=filter.replace(/ /g, '').toLowerCase()) #{filter}
-=======
             .top.flex
                 .item.flex
                     span Show
@@ -29,7 +19,6 @@ include ./fork.pug
                         select#filter
                             for filter in ['All difficulties', 'Easy', 'Medium', 'Hard']
                                 option(value=filter.split(' ')[0].toLowerCase()) #{filter}
->>>>>>> fix: change `alldifficulties` to `all`
 
 				.item.flex
 					span In

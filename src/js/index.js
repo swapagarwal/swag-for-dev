@@ -5,10 +5,10 @@
  */
 const ACTIVE_CLASS = 'visible';
 const sort = {
-	ALPHABETICAL_ASCENDING: (a, b) => a.dataset.name > b.dataset.name ? 1 : -1,
-	ALPHABETICAL_DESCENDING: (a, b) => a.dataset.name < b.dataset.name ? 1 : -1,
-	DIFFICULTY_ASCENDING: (a, b) => a.dataset.difficulty > b.dataset.difficulty ? 1 : -1,
-	DIFFICULTY_DESCENDING: (a, b) => a.dataset.difficulty < b.dataset.difficulty ? 1 : -1
+	ALPHABETICAL_ASC: (a, b) => a.dataset.name > b.dataset.name ? 1 : -1,
+	ALPHABETICAL_DESC: (a, b) => a.dataset.name < b.dataset.name ? 1 : -1,
+	DIFFICULTY_ASC: (a, b) => a.dataset.difficulty > b.dataset.difficulty ? 1 : -1,
+	DIFFICULTY_DESC: (a, b) => a.dataset.difficulty < b.dataset.difficulty ? 1 : -1
 };
 
 const contentEl = document.getElementById('content');
@@ -47,11 +47,11 @@ const parameters = {
 	},
 	order: {
 		default: 'asc',
-		getValue: () => `${sortParams.order.split('SC')[0]}sc`.toLowerCase(),
+		getValue: () => sortParams.order.toLowerCase(),
 		setValue: value => {
-			sortParams.order = value === 'desc' ?
-				'DESCENDING' :
-				'ASCENDING';
+			sortParams.order = ['asc', 'desc'].includes(value) ?
+				value.toUpperCase() :
+				'ASC';
 		}
 	}
 };
@@ -119,13 +119,16 @@ function handleTags() {
 }
 
 function handleSort() {
-	if (!sortParams.sort) {
-		sortParams.sort = sortingInput.value.split('_')[0];
+	if (!sortParams.sort || !sortParams.order) {
+		if (!sortParams.sort) {
+			sortParams.sort = sortingInput.value.split('_')[0];
+		}
+		if (!sortParams.order) {
+			sortParams.order = sortingInput.value.split('_')[1];
+		}
+		sortingInput.value = Object.values(sortParams).join('_');
 	}
-	if (!sortParams.order) {
-		sortParams.order = sortingInput.value.split('_')[1];
-	}
-	sortingInput.value = Object.values(sortParams).join('_');
+	[sortParams.sort, sortParams.order] = sortingInput.value.split('_');
 	Array.from(contentEl.children)
 		.map(child => contentEl.removeChild(child))
 		.sort(sort[sortingInput.value])
@@ -133,13 +136,13 @@ function handleSort() {
 }
 
 // The cascade is the function which handles calling filtering and sorting swag
-function cascade(force = false, firstRun = false) {
+function cascade(force = false) {
 	force |= handleDifficulty(this === filterInput);
 	force |= handleTags(Boolean(this.el));
 	if (force || this === sortingInput) {
 		handleSort();
 	}
-	if (!firstRun) {
+	if (!force) {
 		updateUrl();
 	}
 }
@@ -164,5 +167,5 @@ window.addEventListener('load', () => {
 	filterInput.addEventListener('input', cascade);
 	sortingInput.addEventListener('input', cascade);
 
-	cascade.call(window, true, true);
+	cascade.call(window, true);
 });
