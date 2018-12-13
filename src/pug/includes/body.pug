@@ -17,19 +17,20 @@ include ./fork.pug
                     .select-wrapper
                         label.sr-only(for="filter") Filter opportunity difficulty
                         select#filter
-                            for filter in ['All difficulties', 'Easy', 'Medium', 'Hard']
-                                option(value=filter.split(' ')[0].toLowerCase()) #{filter}
+                            for filter in ['All', 'Easy', 'Medium', 'Hard']
+                                option(value=filter.toLowerCase()) #{filter}
+                    span difficulties
 
-				.item.flex
-					span In
-					.select-wrapper
-						label.sr-only(for="sorting") Sort opportunities
-						select#sorting
-							option(value="ALPHABETICAL_ASCENDING" class="alphabetical") Alphabetical
-							option(value="ALPHABETICAL_DESCENDING" class="alphabetical") Alphabetical, reversed
-							option(value="DIFFICULTY_ASCENDING" class="difficulty") Difficulty
-							option(value="DIFFICULTY_DESCENDING" class="difficulty") Difficulty, reversed
-					span order
+                .item.flex
+                    span in
+                    .select-wrapper
+                        label.sr-only(for="sorting") Sort opportunities
+                        select#sorting
+                            option(value="ALPHABETICAL_ASC" class="alphabetical") Alphabetical
+                            option(value="ALPHABETICAL_DESC" class="alphabetical") Alphabetical, reversed
+                            option(value="DIFFICULTY_ASC" class="difficulty") Difficulty
+                            option(value="DIFFICULTY_DESC" class="difficulty") Difficulty, reversed
+                    span order
 
 			.bottom
 				.item.flex
