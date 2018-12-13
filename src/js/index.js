@@ -126,7 +126,7 @@ function handleSort() {
 		if (!sortParams.order) {
 			sortParams.order = sortingInput.value.split('_')[1];
 		}
-		sortingInput.value = Object.values(sortParams).join('_');
+		sortingInput.value = [sortParams.sort, sortParams.order].join('_');
 	}
 	[sortParams.sort, sortParams.order] = sortingInput.value.split('_');
 	Array.from(contentEl.children)
