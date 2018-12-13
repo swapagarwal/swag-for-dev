@@ -11,6 +11,7 @@ const webserver = require('gulp-webserver');
 const concat = require('gulp-concat');
 const download = require('gulp-download-stream');
 const responsive = require('gulp-responsive');
+const merge = require('merge-stream');
 
 const {swagList, swagImages} = require('./get-data');
 
@@ -67,6 +68,17 @@ gulp.task('styl', () => {
 		.pipe(gulp.dest('dist/assets/css'));
 });
 
+gulp.task('binaries', () => {
+	const paths = {
+		'src/img/*': 'dist/assets/img',
+		'src/fonts/*': 'dist/assets/fonts'
+	};
+
+	return merge(Object.entries(paths).map(([from, to]) =>
+		gulp.src(from).pipe(gulp.dest(to))
+	));
+});
+
 gulp.task('js', () => {
 	const presets = [
 		['@babel/env', {targets: {browsers: ['> 75%']}}]
@@ -80,16 +92,6 @@ gulp.task('js', () => {
 
 gulp.task('swag-img:clean', () => {
 	return del('dist/assets/swag-img/*');
-});
-
-gulp.task('img', () => {
-	return gulp.src('src/img/*')
-		.pipe(responsive([{
-			name: 'logo.png',
-			width: 128,
-			height: 128
-		}], RESIZE_OPTS))
-		.pipe(gulp.dest('dist/assets/img'));
 });
 
 gulp.task('swag-img:download', () => {
@@ -112,7 +114,8 @@ gulp.task('swag-img', gulp.series('swag-img:clean', 'swag-img:download', 'swag-i
 
 gulp.task('clean:styl', () => del('dist/assets/css/*'));
 gulp.task('clean:js', () => del('dist/assets/js/*'));
-gulp.task('clean:assets', gulp.parallel('clean:styl', 'clean:js'));
+gulp.task('clean:binaries', () => del(['dist/assets/img/*', 'dist/assets/fonts/*']));
+gulp.task('clean:assets', gulp.parallel('clean:styl', 'clean:js', 'clean:binaries'));
 gulp.task('clean:pug', () => del('dist/index.html'));
 gulp.task('clean', gulp.parallel('clean:pug', 'clean:assets'));
 
@@ -171,7 +174,7 @@ gulp.task('watch', () => {
 gulp.task('build', gulp.series(
 	'clean',
 	gulp.parallel(
-		gulp.series('swag-img', 'cachebust', 'pug'), 'styl', 'js', 'img'
+		gulp.series('swag-img', 'cachebust', 'pug'), 'styl', 'js', 'binaries'
 	)
 ));
 
