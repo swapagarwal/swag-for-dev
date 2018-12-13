@@ -14,7 +14,7 @@ const sort = {
 const contentEl = document.getElementById('content');
 const filterInput = document.getElementById('filter');
 const sortingInput = document.getElementById('sorting');
-const showExpired = document.querySelector('.expired');
+const showExpired = document.getElementById('expired');
 
 const activateElements = els => Array.from(els).forEach(node => node.classList.add(ACTIVE_CLASS));
 const allowDifficultySelect = shouldAllow => sortingInput.querySelectorAll('.difficulty')
@@ -103,6 +103,7 @@ window.addEventListener('load', () => {
 	selectr.on('selectr.change', cascade);
 	filterInput.addEventListener('input', cascade);
 	sortingInput.addEventListener('input', cascade);
+	showExpired.addEventListener('change', cascade);
 
 	cascade.call(window, true);
 });

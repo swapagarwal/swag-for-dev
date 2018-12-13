@@ -11,7 +11,7 @@ include ./fork.pug
 
         .buttons.flex
 
-            .top.flex
+            .flex
                 .item.flex
                     span Show
                     .select-wrapper
@@ -31,12 +31,12 @@ include ./fork.pug
                             option(value="DIFFICULTY_DESCENDING" class="difficulty") Difficulty, reversed
                     span order
 
-            .bottom.flex
                 .item.flex
                     select#tags
+
                 .item.flex
-                    input(type="checkbox" class="expired")
-                    | Show expired opportunities
+                    input(type="checkbox" id="expired")
+                    label(for="expired") Show expired opportunities
 
         .content.flex#content
             - let difficulty;
