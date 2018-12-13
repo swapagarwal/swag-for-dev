@@ -46,7 +46,7 @@
   "scripts": {
     "lint": "eclint check && xo",
     "lint:fix": "eclint fix && xo --fix",
-    "test": "node_modules/.bin/mocha.cmd test/functional/data.spec.js",
+    "test": "mocha test/functional/data.spec.js",
     "build": "cross-env NODE_ENV=production gulp build"
   },
   "xo": {
@@ -61,7 +61,21 @@
         "envs": [
           "browser"
         ]
-      }
+      }, {
+				"files": [
+					"test/**/*.js"
+				],
+				"envs": [
+					"node",
+					"mocha"
+				],
+				"rules": {
+					"func-names": "off",
+					"prefer-arrow-callback": "off",
+					"no-unused-expressions": "off",
+					"unicorn/catch-error-name": "off"
+				}
+			}
     ]
   },
   "husky": {

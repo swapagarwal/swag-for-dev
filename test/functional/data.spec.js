@@ -1,5 +1,6 @@
 const got = require('got');
 const {expect} = require('chai');
+
 let data;
 
 describe('swag-for-dev', function () {
@@ -13,15 +14,13 @@ describe('swag-for-dev', function () {
 			expect(image).to.be.ok;
 			expect(reference).to.be.ok;
 
-			let imageValid, referenceValid;
-
-			imageValid = await got.head(image).catch(({response}) => {
+			const imageValid = await got.head(image).catch(({response}) => {
 				if (response.statusCode === 403) {
 					return got(image);
 				}
 			});
 
-			referenceValid = await got.head(reference).catch(({response}) => {
+			const referenceValid = await got.head(reference).catch(({response}) => {
 				if (response.statusCode === 403) {
 					return got(reference);
 				}
