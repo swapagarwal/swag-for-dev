@@ -106,7 +106,7 @@ gulp.task('swag-img:optimize', () => {
 		flatten: true
 	};
 	const webpOutputConfig = Object.assign({
-		rename: i => `${i.origin}.webp`
+		rename: i => `${i.basename}.webp`
 	}, jpegOutputConfig);
 
 	return gulp.src('dist/assets/swag-img/*')
@@ -117,9 +117,10 @@ gulp.task('swag-img:optimize', () => {
 		.pipe(gulp.dest('dist/assets/swag-img'))
 		.on('end', () => {
 			swagList.forEach(swag => {
+				const baseName = swag.image.split('.').slice(0, -1).join('.');
 				swag.images = {
 					jpeg: swag.image,
-					webp: `${swag.image}.webp`
+					webp: `${baseName}.webp`
 				};
 			});
 		});
@@ -158,13 +159,13 @@ gulp.task('cachebust', cb => {
 			delete require.cache[require.resolve(REV_PATH)];
 			manifest = require(REV_PATH);
 			swagList.forEach(swag => {
-				Object.entries(swag.images).forEach(([extension, filename]) => {
-					filename = `swag-img/${filename.split('/').pop()}`;
-					if (!manifest[filename]) {
-						console.warn('Unable to find image in manifest:', filename);
+				Object.entries(swag.images).forEach(([extension, fileName]) => {
+					fileName = `swag-img/${fileName.split('/').pop()}`;
+					if (!manifest[fileName]) {
+						console.warn('Unable to find image in manifest:', fileName);
 						return;
 					}
-					swag.images[extension] = `/assets/${manifest[filename]}`;
+					swag.images[extension] = `/assets/${manifest[fileName]}`;
 				});
 			});
 
