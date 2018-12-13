@@ -4,11 +4,9 @@ node_js:
   - "10"
 
 sudo: false
-
-matrix:
-  include:
-    - node_js: "10"
-      env: TEST_SUITE=lint
+env:
+  - TEST_SUITE=lint
+  - TEST_SUITE=mocha
 
 cache:
   directories:
