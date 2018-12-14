@@ -110,10 +110,7 @@ gulp.task('swag-img:optimize', () => {
 	}, jpegOutputConfig);
 
 	return gulp.src('dist/assets/swag-img/*')
-		.pipe(responsive([
-			jpegOutputConfig,
-			webpOutputConfig
-		], RESIZE_OPTS))
+		.pipe(responsive([jpegOutputConfig, webpOutputConfig], RESIZE_OPTS))
 		.pipe(gulp.dest('dist/assets/swag-img'))
 		.on('end', () => {
 			swagList.forEach(swag => {
