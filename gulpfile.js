@@ -159,7 +159,7 @@ gulp.task('cachebust', cb => {
 				Object.entries(swag.images).forEach(([extension, fileName]) => {
 					fileName = `swag-img/${fileName.split('/').pop()}`;
 					if (!manifest[fileName]) {
-						console.warn('Unable to find image in manifest:', fileName);
+						console.warn(`Unable to find image ${fileName} in the manifest`);
 						return;
 					}
 					swag.images[extension] = `/assets/${manifest[fileName]}`;
