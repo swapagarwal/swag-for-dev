@@ -99,7 +99,7 @@ gulp.task('swag-img:download', () => {
 		.pipe(gulp.dest('dist/assets/swag-img'));
 });
 
-gulp.task('swag-img:optimize', () => {
+gulp.task('swag-img:optimize', cb => {
 	const jpegOutputConfig = {
 		name: '*.jpeg',
 		height: 300,
@@ -120,6 +120,7 @@ gulp.task('swag-img:optimize', () => {
 					webp: `${baseName}.webp`
 				};
 			});
+			cb();
 		});
 });
 
