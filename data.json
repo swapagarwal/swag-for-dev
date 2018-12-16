@@ -9,6 +9,15 @@
     "tags": ["clothing", "device"]
   },
   {
+    "name": "Alligator.io",
+    "difficulty": "hard",
+    "description": "Write a blog post on frontend development topics, get some cool Alligator stickers",
+    "reference": "https://alligator.io/write-for-us/",
+    "image": "https://pbs.twimg.com/profile_images/622200384455442432/hf71Z251_400x400.png",
+    "dateAdded": "2018-12-15T06:03:00.000Z",
+    "tags": ["stickers"]
+  },
+  {
     "name": "Aras",
     "difficulty": "medium",
     "description": "Submit an improvement to any <a href='http://community.aras.com/en/projects/'>Aras Community Project</a> in October 2018 to earn stickers! Submit five, earn a limited edition T-shirt!",
