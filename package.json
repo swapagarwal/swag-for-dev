@@ -62,20 +62,20 @@
           "browser"
         ]
       }, {
-				"files": [
-					"test/**/*.js"
-				],
-				"envs": [
-					"node",
-					"mocha"
-				],
-				"rules": {
-					"func-names": "off",
-					"prefer-arrow-callback": "off",
-					"no-unused-expressions": "off",
-					"unicorn/catch-error-name": "off"
-				}
-			}
+        "files": [
+          "test/**/*.js"
+        ],
+        "envs": [
+          "node",
+          "mocha"
+        ],
+        "rules": {
+          "func-names": "off",
+          "prefer-arrow-callback": "off",
+          "no-unused-expressions": "off",
+          "unicorn/catch-error-name": "off"
+        }
+      }
     ]
   },
   "husky": {
