@@ -99,15 +99,29 @@ gulp.task('swag-img:download', () => {
 		.pipe(gulp.dest('dist/assets/swag-img'));
 });
 
-gulp.task('swag-img:optimize', () => {
+gulp.task('swag-img:optimize', cb => {
+	const jpegOutputConfig = {
+		name: '*.jpeg',
+		height: 300,
+		flatten: true
+	};
+	const webpOutputConfig = Object.assign({
+		rename: i => `${i.basename}.webp`
+	}, jpegOutputConfig);
+
 	return gulp.src('dist/assets/swag-img/*')
-		.pipe(responsive([{
-			name: '*',
-			height: 300,
-			format: 'jpeg',
-			flatten: true
-		}], RESIZE_OPTS))
-		.pipe(gulp.dest('dist/assets/swag-img'));
+		.pipe(responsive([jpegOutputConfig, webpOutputConfig], RESIZE_OPTS))
+		.pipe(gulp.dest('dist/assets/swag-img'))
+		.on('end', () => {
+			swagList.forEach(swag => {
+				const baseName = swag.image.split('.').slice(0, -1).join('.');
+				swag.images = {
+					jpeg: swag.image,
+					webp: `${baseName}.webp`
+				};
+			});
+			cb();
+		});
 });
 
 gulp.task('swag-img', gulp.series('swag-img:clean', 'swag-img:download', 'swag-img:optimize'));
@@ -123,7 +137,6 @@ gulp.task('cachebust', cb => {
 	if (!PRODUCTION) {
 		return cb();
 	}
-
 	const basePath = 'dist/assets';
 	const bustedFiles = [
 		'dist/assets/css/*',
@@ -143,14 +156,15 @@ gulp.task('cachebust', cb => {
 		.on('end', () => {
 			delete require.cache[require.resolve(REV_PATH)];
 			manifest = require(REV_PATH);
-
 			swagList.forEach(swag => {
-				const filename = `swag-img/${swag.image.split('/').pop()}`;
-				if (!manifest[filename]) {
-					console.warn('Unable to find image in manifest:', filename);
-					return;
-				}
-				swag.image = `/assets/${manifest[filename]}`;
+				Object.entries(swag.images).forEach(([extension, fileName]) => {
+					fileName = `swag-img/${fileName.split('/').pop()}`;
+					if (!manifest[fileName]) {
+						console.warn(`Unable to find image ${fileName} in the manifest`);
+						return;
+					}
+					swag.images[extension] = `/assets/${manifest[fileName]}`;
+				});
 			});
 
 			cb();

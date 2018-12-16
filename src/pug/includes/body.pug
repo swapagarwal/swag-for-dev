@@ -53,7 +53,10 @@ include ./fork.pug
 						each swagTag in swag.tags
 							span!=swagTag
 					div.flex.img-container
-						img(src=swag.image alt=swag.name + " swag you can get")
+						picture
+							source(type="image/webp" srcset=swag.images.webp)
+							source(type="image/jpeg" srcset=swag.images.jpeg)
+							img(src=swag.images.jpeg alt=swag.name + " swag you can get")
 					p.description!=swag.description
 					a(href=swag.reference) Check it out
 
