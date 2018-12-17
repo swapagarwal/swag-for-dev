@@ -14,6 +14,7 @@ const sort = {
 const contentEl = document.getElementById('content');
 const filterInput = document.getElementById('filter');
 const sortingInput = document.getElementById('sorting');
+const mode = document.getElementsByClassName("fas");	//change
 
 const activateElements = els => Array.from(els).forEach(node => node.classList.add(ACTIVE_CLASS));
 const allowDifficultySelect = shouldAllow => sortingInput.querySelectorAll('.difficulty')
@@ -105,7 +106,8 @@ window.addEventListener('load', () => {
 	cascade.call(window, true);
 });
 
-var mode = document.getElementsByClassName("fas");
+//if (window.matchMedia("(min-width: 400px)").matches)	then load different css
+
 mode[0].addEventListener("click",function(){  
 	const body = document.querySelector('body');
 	body.classList.toggle("dark_container");
