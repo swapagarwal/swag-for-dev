@@ -241,5 +241,14 @@
     "image": "https://developers.whatismybrowser.com/static/main/content/api/swag/whatismybrowser-stickers.jpg",
     "dateAdded": "2018-10-12T13:05:05.000Z",
     "tags": ["stickers"]
+  },
+  {
+    "name": "7PHP",
+    "difficulty": "easy",
+    "description": "If you are a fan of 7PHP, just send email at blogcontact@7php.com' and receive your free stickers ",
+    "reference": "https://7php.com/stickers/",
+    "image": "https://7php.com/wp-content/uploads/2018/05/7php-sticker-v2.jpg",
+    "dateAdded": "2018-12-17T21:20:05.000Z",
+    "tags": ["stickers"]
   }
 ]
