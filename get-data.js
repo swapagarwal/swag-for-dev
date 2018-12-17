@@ -6,9 +6,7 @@ const swagList = require('./data.json').map(swag => {
 		return false;
 	}
 	// Generate unique filename
-	// @todo: do we want to force jpeg as the image format?
-	// const extension = swag.image.split('.').pop();
-	const extension = 'jpg';
+	const extension = 'jpeg';
 	const fileBase = swag.name
 		.replace(/[^a-z0-9]/gi, '_')
 		.replace(/_{2,}/g, '_')

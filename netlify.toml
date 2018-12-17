@@ -18,7 +18,7 @@
     Referrer-Policy = "strict-origin-when-cross-origin"
     X-XSS-Protection = "1; mode=block"
     Feature-Policy = "accelerometer 'none'; camera 'none'; geolocation 'none'; gyroscope 'none'; magnetometer 'none'; microphone 'none'; payment 'none'; usb 'none'"
-    Strict-Transport-Security = "max-age=15552000; preload"
+    Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload"
     X-Content-Type-Options = "nosniff"
 
 [[headers]]

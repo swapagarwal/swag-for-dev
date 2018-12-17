@@ -6,3 +6,16 @@ end_of_line = lf
 charset = utf-8
 trim_trailing_whitespace = true
 insert_final_newline = true
+
+block_comment_start = /*
+block_comment = *
+block_comment_end = */
+
+[*.md]
+indent_style = space
+indent_size = 4
+trim_trailing_whitespace = false
+
+[{*.json,*.yml,*.toml}]
+indent_style = space
+indent_size = 2
