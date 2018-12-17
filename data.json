@@ -35,14 +35,15 @@
     "dateAdded": "2018-02-18T18:44:53.000Z",
     "tags": ["clothing", "stickers"]
   },
-	{
-	  "name": "Contentful",
-		"difficulty": "easy",
-		"description": "Sign up from Contentful to get a free pair of socks to your door.",
-		"reference": "https://www.contentful.com/resources/syntaxfm/",
-		"image": "https://i.imgur.com/15gp2Ml.jpg",
-		"dateAdded": "2018-12-03T04:36:19.000Z",
-		"tags": ["clothing"]
+  {
+    "name": "Contentful",
+    "difficulty": "easy",
+    "description": "Sign up from Contentful to get a free pair of socks to your door.",
+    "reference": "https://www.contentful.com/resources/syntaxfm/",
+    "image": "https://i.imgur.com/15gp2Ml.jpg",
+    "dateAdded": "2018-12-03T04:36:19.000Z",
+    "tags": ["clothing"]
+  },
   {
     "name": "devRant",
     "difficulty": "medium",
