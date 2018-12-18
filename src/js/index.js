@@ -51,18 +51,17 @@ function handleTags() {
 
 	if (tags.length === 0) {
 		history.pushState(null, '', window.location.pathname);
-		return;
 	}
 
 	Array.from(contentEl.querySelectorAll('.item')).forEach(el => {
 		const show = (showExpired.checked || !el.classList.contains('tag-expired')) &&
-			tags.reduce((sho, tag) => sho || (el.classList.contains(`tag-${tag}`) && tag !== 'expired'), false);
+			(tags.reduce((sho, tag) => sho || (el.classList.contains(`tag-${tag}`) && tag !== 'expired'), false) || tags.length === 0);
 		if (!show) {
 			el.classList.remove('visible');
 		}
 	});
 
-	if (!search) {
+	if (!search || !search.entries().next().value) {
 		return;
 	}
 	search.set('tags', tags.join(' '));
