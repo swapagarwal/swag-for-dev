@@ -2,17 +2,26 @@
   {
     "name": "Alexa",
     "difficulty": "hard",
-    "description": "Publish a skill, get a hoodie (varies by country) and an Echo Spot (if 1,000 unique customers use your skill in its first 30 days of publication)!",
+    "description": "Publish a skill, get a t-shirt and an Echo Spot (if 50 customers per month use your Display skill for the first three months after publication)! Earn a 2-pack of Echo Buttons if you publish a Gadgets skill!",
     "reference": "https://developer.amazon.com/alexa-skills-kit/alexa-developer-skill-promotion",
-    "image": "https://images-na.ssl-images-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/ASM0761-Dev-LP-Goodiepage-UK-March._CB501585903_.png",
+    "image": "https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/promos/ASK_DevIncentive_swag_v2._CB472624419_.png",
     "dateAdded": "2018-02-18T06:03:00.000Z",
     "tags": ["clothing", "device"]
+  },
+  {
+    "name": "Alligator.io",
+    "difficulty": "hard",
+    "description": "Write a blog post on frontend development topics, get some cool Alligator stickers!",
+    "reference": "https://alligator.io/write-for-us/",
+    "image": "https://pbs.twimg.com/profile_images/622200384455442432/hf71Z251_400x400.png",
+    "dateAdded": "2018-12-09T07:08:00.000Z",
+    "tags": ["stickers"]
   },
   {
     "name": "Aras",
     "difficulty": "medium",
     "description": "Submit an improvement to any <a href='http://community.aras.com/en/projects/'>Aras Community Project</a> in October 2018 to earn stickers! Submit five, earn a limited edition T-shirt!",
-    "reference": "http://community.aras.com/en/join-aras-labs-hacktoberfest-2018/",
+    "reference": "https://community.aras.com/b/english/posts/join-aras-labs-hacktoberfest-2018",
     "image": "https://www.aras.com/-/media/Images/Content-Row-Images/im-an-innovator.png",
     "dateAdded": "2018-10-24T11:45:00.000Z",
     "tags": ["clothing", "hacktoberfest", "expired", "stickers"]

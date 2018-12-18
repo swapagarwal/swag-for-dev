@@ -11,6 +11,7 @@ const webserver = require('gulp-webserver');
 const concat = require('gulp-concat');
 const download = require('gulp-download-stream');
 const responsive = require('gulp-responsive');
+const merge = require('merge-stream');
 
 const {swagList, swagImages} = require('./get-data');
 
@@ -71,6 +72,17 @@ gulp.task('styl', () => {
 		.pipe(gulp.dest('dist/assets/css'));
 });
 
+gulp.task('binaries', () => {
+	const paths = {
+		'src/img/*': 'dist/assets/img',
+		'src/fonts/*': 'dist/assets/fonts'
+	};
+
+	return merge(Object.entries(paths).map(([from, to]) =>
+		gulp.src(from).pipe(gulp.dest(to))
+	));
+});
+
 gulp.task('js', () => {
 	const presets = [
 		['@babel/env', {targets: {browsers: ['> 75%']}}]
@@ -86,41 +98,49 @@ gulp.task('swag-img:clean', () => {
 	return del('dist/assets/swag-img/*');
 });
 
-gulp.task('img', () => {
-	return gulp.src('src/img/*')
-		.pipe(responsive([{
-			name: 'logo.png',
-			width: 128,
-			height: 128
-		}], RESIZE_OPTS))
-		.pipe(gulp.dest('dist/assets/img'));
-});
-
 gulp.task('swag-img:download', () => {
 	return download(swagImages)
 		.pipe(gulp.dest('dist/assets/swag-img'));
 });
 
-gulp.task('swag-img:optimize', () => {
+gulp.task('swag-img:optimize', cb => {
+	const jpegOutputConfig = {
+		name: '*.jpeg',
+		height: 300,
+		flatten: true
+	};
+	const webpOutputConfig = Object.assign({
+		rename: i => `${i.basename}.webp`
+	}, jpegOutputConfig);
+
 	return gulp.src('dist/assets/swag-img/*')
-		.pipe(responsive([{
-			name: '*',
-			height: 300,
-			format: 'jpeg',
-			flatten: true
-		}], RESIZE_OPTS))
-		.pipe(gulp.dest('dist/assets/swag-img'));
+		.pipe(responsive([jpegOutputConfig, webpOutputConfig], RESIZE_OPTS))
+		.pipe(gulp.dest('dist/assets/swag-img'))
+		.on('end', () => {
+			swagList.forEach(swag => {
+				const baseName = swag.image.split('.').slice(0, -1).join('.');
+				swag.images = {
+					jpeg: swag.image,
+					webp: `${baseName}.webp`
+				};
+			});
+			cb();
+		});
 });
 
 gulp.task('swag-img', gulp.series('swag-img:clean', 'swag-img:download', 'swag-img:optimize'));
 
 gulp.task('clean:styl', () => del('dist/assets/css/*'));
 gulp.task('clean:js', () => del('dist/assets/js/*'));
-gulp.task('clean:assets', gulp.parallel('clean:styl', 'clean:js'));
+gulp.task('clean:binaries', () => del(['dist/assets/img/*', 'dist/assets/fonts/*']));
+gulp.task('clean:assets', gulp.parallel('clean:styl', 'clean:js', 'clean:binaries'));
 gulp.task('clean:pug', () => del('dist/index.html'));
 gulp.task('clean', gulp.parallel('clean:pug', 'clean:assets'));
 
 gulp.task('cachebust', cb => {
+	if (!PRODUCTION) {
+		return cb();
+	}
 	const basePath = 'dist/assets';
 	const bustedFiles = [
 		'dist/assets/css/*',
@@ -140,14 +160,15 @@ gulp.task('cachebust', cb => {
 		.on('end', () => {
 			delete require.cache[require.resolve(REV_PATH)];
 			manifest = require(REV_PATH);
-
 			swagList.forEach(swag => {
-				const filename = `swag-img/${swag.image.split('/').pop()}`;
-				if (!manifest[filename]) {
-					console.warn('Unable to find image in manifest:', filename);
-					return;
-				}
-				swag.image = `/assets/${manifest[filename]}`;
+				Object.entries(swag.images).forEach(([extension, fileName]) => {
+					fileName = `swag-img/${fileName.split('/').pop()}`;
+					if (!manifest[fileName]) {
+						console.warn(`Unable to find image ${fileName} in the manifest`);
+						return;
+					}
+					swag.images[extension] = `/assets/${manifest[fileName]}`;
+				});
 			});
 
 			cb();
@@ -164,14 +185,14 @@ gulp.task('webserver', () => {
 
 gulp.task('watch', () => {
 	gulp.watch('src/pug/**/*.pug', gulp.series('pug'));
-	gulp.watch('src/styl/**/*.styl', gulp.series('clean:styl', 'styl'));
-	gulp.watch('src/js/*.js', gulp.series('clean:js', 'js'));
+	gulp.watch('src/styl/**/*.styl', gulp.series('styl'));
+	gulp.watch('src/js/*.js', gulp.series('js'));
 });
 
 gulp.task('build', gulp.series(
 	'clean',
 	gulp.parallel(
-		gulp.series('swag-img', 'cachebust', 'pug'), 'styl', 'js', 'img'
+		gulp.series('swag-img', 'cachebust', 'pug'), 'styl', 'js', 'binaries'
 	)
 ));
 
