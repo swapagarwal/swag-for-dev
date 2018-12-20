@@ -61,7 +61,7 @@ function handleTags() {
 		}
 	});
 
-	if (!search || !search.get('tags')) {
+	if (!search) {
 		return;
 	}
 	search.set('tags', tags.join(' '));
