@@ -11,26 +11,26 @@ include ./fork.pug
 
 		.buttons.flex
 
-            .top.flex
-                .item.flex
-                    span Show
-                    .select-wrapper
-                        label.sr-only(for="filter") Filter opportunity difficulty
-                        select#filter
-                            for filter in ['all', 'easy', 'medium', 'hard']
-                                option(value=filter) #{filter}
-                    span difficulties
+			.top.flex
+				.item.flex
+					span Show
+					.select-wrapper
+						label.sr-only(for="filter") Filter opportunity difficulty
+						select#filter
+							for filter in ['all', 'easy', 'medium', 'hard']
+								option(value=filter) #{filter}
+					span difficulties
 
-                .item.flex
-                    span in
-                    .select-wrapper
-                        label.sr-only(for="sorting") Sort opportunities
-                        select#sorting
-                            option(value="ALPHABETICAL_ASC" class="alphabetical") alphabetical
-                            option(value="ALPHABETICAL_DESC" class="alphabetical") alphabetical, reversed
-                            option(value="DIFFICULTY_ASC" class="difficulty") difficulty
-                            option(value="DIFFICULTY_DESC" class="difficulty") difficulty, reversed
-                    span order
+				.item.flex
+					span in
+					.select-wrapper
+						label.sr-only(for="sorting") Sort opportunities
+						select#sorting
+							option(value="ALPHABETICAL_ASC" class="alphabetical") alphabetical
+							option(value="ALPHABETICAL_DESC" class="alphabetical") alphabetical, reversed
+							option(value="DIFFICULTY_ASC" class="difficulty") difficulty
+							option(value="DIFFICULTY_DESC" class="difficulty") difficulty, reversed
+					span order
 
 			.bottom
 				.item.flex
