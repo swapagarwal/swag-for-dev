@@ -55,7 +55,7 @@ function handleTags() {
 
 	Array.from(contentEl.querySelectorAll('.item')).forEach(el => {
 		const show = (showExpired.checked || !el.classList.contains('tag-expired')) &&
-			tags.reduce((sho, tag) => sho || el.classList.contains(`tag-${tag}`), false);
+			tags.reduce((sho, tag) => sho || el.classList.contains(`tag-${tag}`), tags.length === 0);
 		if (!show) {
 			el.classList.remove('visible');
 		}
