@@ -14,7 +14,10 @@ const sort = {
 const contentEl = document.getElementById('content');
 const filterInput = document.getElementById('filter');
 const sortingInput = document.getElementById('sorting');
-const mode = document.getElementsByClassName("fas");	//change
+const mode = document.getElementById('mode');
+const container = document.getElementsByClassName('container');
+const tooltip = document.getElementsByClassName('tooltip');
+
 
 const activateElements = els => Array.from(els).forEach(node => node.classList.add(ACTIVE_CLASS));
 const allowDifficultySelect = shouldAllow => sortingInput.querySelectorAll('.difficulty')
@@ -106,22 +109,37 @@ window.addEventListener('load', () => {
 	cascade.call(window, true);
 });
 
-//if (window.matchMedia("(min-width: 400px)").matches)	then load different css
+const preference = localStorage.getItem('color-preference');
+if(preference=='dark')
+{
+	container[0].classList.add('dark');
+	mode.setAttribute("src","/assets/img/sun.png");
+	tooltip[0].textContent="Enable light mode";
 
-mode[0].addEventListener("click",function(){  
-	const body = document.querySelector('body');
-	body.classList.toggle("dark_container");
-	const heading_h1 = document.querySelector("section.main .heading h1");
-	heading_h1.classList.toggle("dark");
-	const heading_p = document.querySelectorAll("section.main .heading p");
-	heading_p[0].classList.toggle("dark");
-	heading_p[1].classList.toggle("dark");
-	const descriptions = document.querySelectorAll("section.main .content .item p.description");
-	for (var i =0; i<descriptions.length; i++) {
-		descriptions[i].classList.toggle("dark");
-	}
-	const refs = document.querySelectorAll("section.main .content .item a");
-	for (var i =0; i<refs.length; i++) {
-		refs[i].classList.toggle("dark_refs");
-	}
+}
+else if(preference=='light')
+{
+	container[0].classList.remove('dark');
+		mode.setAttribute("src","/assets/img/moon.png");
+}
+
+mode.addEventListener("mouseover",function(){
+	tooltip[0].style.display='block';
 });
+
+mode.addEventListener("mouseout",function(){
+	tooltip[0].style.display='none';
+});
+
+
+ mode.addEventListener("click",function(){  
+	if(mode.getAttribute("src")=="/assets/img/moon.png")
+	{
+		localStorage.setItem('color-preference','dark');
+	}
+	else
+	{
+		localStorage.setItem('color-preference','light');
+	}
+	location.reload();
+}); 	
