@@ -66,7 +66,7 @@ function handleTags() {
 	}
 	search.set('tags', tags.join(' '));
 	const newRelativePathQuery = `${window.location.pathname}?${search.toString()}`;
-	history.pushState(null, '', newRelativePathQuery);
+	history.pushState(null, '', tags.length === 0 ? window.location.pathname : newRelativePathQuery);
 }
 
 function handleSort() {
