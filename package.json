@@ -19,6 +19,7 @@
     "@babel/preset-env": "^7.1.0",
     "cross-env": "^5.2.0",
     "del": "^3.0.0",
+    "eclint": "^2.8.1",
     "gulp": "^4.0.0",
     "gulp-babel": "^8.0.0",
     "gulp-concat": "^2.6.1",
@@ -34,12 +35,13 @@
     "gulp-webserver": "^0.9.1",
     "husky": "^1.2.0",
     "lint-staged": "^8.1.0",
+    "merge-stream": "^1.0.1",
     "xo": "^0.23.0"
   },
   "scripts": {
-    "lint": "xo",
-    "lint:fix": "xo --fix",
-    "build": "gulp build"
+    "lint": "eclint check '**/*' '!LICENSE' && xo",
+    "lint:fix": "eclint fix '**/*' '!LICENSE' && xo --fix",
+    "build": "cross-env NODE_ENV=production gulp build"
   },
   "xo": {
     "rules": {
@@ -63,7 +65,14 @@
   },
   "lint-staged": {
     "relative": true,
+    "ignore": [
+      "LICENSE"
+    ],
     "linters": {
+      "**/*": [
+        "eclint fix",
+        "git add"
+      ],
       "**/*.{js,json}": [
         "xo --fix",
         "git add"

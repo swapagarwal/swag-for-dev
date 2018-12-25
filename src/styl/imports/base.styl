@@ -1,11 +1,23 @@
 @charset "utf-8"
 
+$default-font-family = Cabin, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+
+@font-face
+	font-family Cabin
+	font-style normal
+	font-weight 400
+	src local('Cabin'), local('Cabin-Regular'),
+		url(/assets/fonts/cabin-v12-latin-regular.woff2) format('woff2'),
+		url(/assets/fonts/cabin-v12-latin-regular.woff) format('woff')
+	font-display swap
+
 html, body, :root
 	width 100%
 	height 100%
 	background #fff
-	font-family 'Cabin', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif	
+	font-family $default-font-family
 	font-size 16px
+	text-rendering: optimizeLegibility
 	-webkit-font-smoothing antialiased
 	-moz-osx-font-smoothing grayscale
 	-webkit-overflow-scrolling touch
