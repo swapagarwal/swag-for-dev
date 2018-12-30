@@ -5,6 +5,9 @@
 	width 100vw
 	overflow-x hidden
 
+.hidden
+	display none
+
 section.main
 	width 90%
 	flex-direction column
@@ -46,17 +49,18 @@ section.main
 		.select-wrapper
 			position relative
 
-		.select-wrapper:before
-			content '▼'
-			position absolute
-			right 20px
-			margin-top 6px
-			width 0
-			height 0
-			color #bbb
-			z-index 2
-			font-size 0.8rem
-			pointer-events none
+			&:before
+				position absolute
+				top 50%
+				right 10px
+				width 0
+				height 0
+				content ''
+				transform rotate(0) translate3d(0, -50%, 0)
+				border-width 4px 4px 0
+				border-style solid
+				border-color #6c7a86 transparent transparent
+				pointer-events none
 
 		input
 			margin-right 6px
@@ -74,16 +78,7 @@ section.main
 			font-size 0.9rem
 			cursor pointer
 
-		.selectr-tag
-			background #737373
-			color #fff
-			border-radius 3px
-			margin 0 3px
-			padding 2px 20px 2px 5px
-			font-size 1rem
-
-		.selectr-placeholder
-			color #737373
+		@import "imports/selectr-theme"
 
 	.content
 		max-width 1100px
