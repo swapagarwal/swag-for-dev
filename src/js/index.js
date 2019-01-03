@@ -46,6 +46,11 @@ function handleDifficulty(difficultyChanged) {
 	return false;
 }
 
+function updateUrl() {
+	const newRelativePathQuery = `${window.location.pathname}?${search.toString()}`;
+	history.pushState(null, '', newRelativePathQuery);
+}
+
 function handleTags() {
 	const tags = selectr.getValue();
 
@@ -66,10 +71,9 @@ function handleTags() {
 	}
 
 	search.set('tags', tags.join(' '));
-	search.set('showExpired', showExpired.checked);
+	search.set('showExpired', search.get('showExpired') === 'true');
 
-	const newRelativePathQuery = `${window.location.pathname}?${search.toString()}`;
-	history.pushState(null, '', newRelativePathQuery);
+	updateUrl();
 }
 
 function handleSort() {
@@ -85,6 +89,15 @@ function cascade(force = false) {
 	force |= handleTags(Boolean(this.el));
 	if (force || this === sortingInput) {
 		handleSort(this === sortingInput);
+	}
+
+	if (this === showExpired) {
+		if (!search) {
+			search = new URLSearchParams(window.location.search);
+		}
+
+		search.set('showExpired', `${this.checked}`);
+		updateUrl();
 	}
 }
 
@@ -103,7 +116,7 @@ window.addEventListener('load', () => {
 		}
 
 		if (search.has('showExpired')) {
-			showExpired.checked = search.get('showExpired');
+			showExpired.checked = search.get('showExpired') === 'true';
 		}
 	}
 
