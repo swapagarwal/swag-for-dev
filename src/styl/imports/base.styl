@@ -1,6 +1,7 @@
 @charset "utf-8"
 
 $default-font-family = Cabin, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+$default-font-family-mono = Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, sans-serif
 
 @font-face
 	font-family Cabin
@@ -21,5 +22,11 @@ html, body, :root
 	-webkit-font-smoothing antialiased
 	-moz-osx-font-smoothing grayscale
 	-webkit-overflow-scrolling touch
+
+code
+	padding 1px 5px
+	font-family $default-font-family-mono
+	background-color #eff0f1
+	font-size 0.9em
 
 @import "universal"
