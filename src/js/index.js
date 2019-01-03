@@ -64,9 +64,12 @@ function handleTags() {
 	if (!search) {
 		return;
 	}
+
 	search.set('tags', tags.join(' '));
+	search.set('showExpired', showExpired.checked);
+
 	const newRelativePathQuery = `${window.location.pathname}?${search.toString()}`;
-	history.pushState(null, '', tags.length === 0 ? window.location.pathname : newRelativePathQuery);
+	history.pushState(null, '', newRelativePathQuery);
 }
 
 function handleSort() {
@@ -94,8 +97,13 @@ window.addEventListener('load', () => {
 
 	if ('URLSearchParams' in window) {
 		search = new URLSearchParams(window.location.search);
+
 		if (search.has('tags')) {
 			selectr.setValue(search.get('tags').split(' '));
+		}
+
+		if (search.has('showExpired')) {
+			showExpired.checked = search.get('showExpired');
 		}
 	}
 
