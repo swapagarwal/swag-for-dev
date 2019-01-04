@@ -45,6 +45,15 @@
     "tags": ["clothing", "stickers"]
   },
   {
+    "name": "Contentful",
+    "difficulty": "easy",
+    "description": "Sign up from Contentful to get a free pair of socks to your door.",
+    "reference": "https://www.contentful.com/resources/syntaxfm/",
+    "image": "https://i.imgur.com/15gp2Ml.jpg",
+    "dateAdded": "2018-12-03T04:36:19.000Z",
+    "tags": ["clothing"]
+  },
+  {
     "name": "devRant",
     "difficulty": "medium",
     "description": "Get 30 ++'s on a single rant you've posted to devRant to receive 3 free high-quality devRant laptop stickers! Or post an awesome rant that gets over 750 ++'s to receive a free devRant squishy stress ball!",
