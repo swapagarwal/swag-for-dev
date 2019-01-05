@@ -15,6 +15,7 @@ const contentEl = document.getElementById('content');
 const filterInput = document.getElementById('filter');
 const sortingInput = document.getElementById('sorting');
 const showExpired = document.getElementById('expired');
+const tagsSelect = document.getElementById('tags');
 
 const activateElements = els => Array.from(els).forEach(node => node.classList.add(ACTIVE_CLASS));
 const allowDifficultySelect = shouldAllow => sortingInput.querySelectorAll('.difficulty')
@@ -104,9 +105,11 @@ function cascade(force = false) {
 window.addEventListener('load', () => {
 	selectr = new Selectr('#tags', {
 		multiple: true,
+		searchable: false,
 		placeholder: 'Choose tags...',
 		data: window.swagTags.map(tag => ({value: tag, text: tag}))
 	});
+	selectr.on('selectr.init', () => tagsSelect.classList.remove('hidden'));
 
 	if ('URLSearchParams' in window) {
 		search = new URLSearchParams(window.location.search);

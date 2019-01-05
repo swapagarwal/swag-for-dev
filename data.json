@@ -38,11 +38,20 @@
   {
     "name": "Codeship",
     "difficulty": "medium",
-    "description": "Submit 5 builds in 30 days, get t-shirts & stickers sent your way!",
+    "description": "Submit 15 builds in 30 days, get t-shirts & stickers sent your way!",
     "reference": "https://codeship.com/swag",
     "image": "https://juliesfreebies.com/wp-content/uploads/2016/05/codeship-swag.jpg",
     "dateAdded": "2018-02-18T18:44:53.000Z",
     "tags": ["clothing", "stickers"]
+  },
+  {
+    "name": "Contentful",
+    "difficulty": "easy",
+    "description": "Sign up from Contentful to get a free pair of socks to your door.",
+    "reference": "https://www.contentful.com/resources/syntaxfm/",
+    "image": "https://i.imgur.com/15gp2Ml.jpg",
+    "dateAdded": "2018-12-03T04:36:19.000Z",
+    "tags": ["clothing"]
   },
   {
     "name": "devRant",
@@ -205,6 +214,15 @@
     "image": "https://sendgrid.com/wp-content/uploads/2018/09/9-18_Hacktoberfest_Shirt_Front-960x960.jpg",
     "dateAdded": "2018-10-12T13:10:59.000Z",
     "tags": ["clothing", "hacktoberfest", "expired"]
+  },
+  {
+    "name": "SimbaChain",
+    "difficulty": "easy",
+    "description": "Register and get a free Blockchain Shirt! Pick your side, <code>eth_listtransactions = _yep</code> vs <code>eth_listtransactions = _nope</code>.",
+    "reference": " https://simbachain.com/community/join-our-community/",
+    "image": "https://simbachain.com/wp-content/uploads/2018/07/SIMBA-Blockchain-Shirt-V2.png",
+    "dateAdded": "2018-12-04T5:58:05.000Z",
+    "tags": ["clothing"]
   },
   {
     "name": "source{d}",
