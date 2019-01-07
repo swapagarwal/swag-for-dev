@@ -39,8 +39,8 @@
     "xo": "^0.23.0"
   },
   "scripts": {
-    "lint": "eclint check '**/*' && xo",
-    "lint:fix": "eclint fix '**/*' && xo --fix",
+    "lint": "eclint check && xo",
+    "lint:fix": "eclint fix && xo --fix",
     "build": "cross-env NODE_ENV=production gulp build"
   },
   "xo": {
