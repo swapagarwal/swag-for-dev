@@ -14,8 +14,7 @@ const sort = {
 const contentEl = document.getElementById('content');
 const filterInput = document.getElementById('filter');
 const sortingInput = document.getElementById('sorting');
-const color_switch = document.getElementById('color-switch');
-const body = document.body;
+const colorSwitch = document.getElementById('color-switch');
 const activateElements = els => Array.from(els).forEach(node => node.classList.add(ACTIVE_CLASS));
 const allowDifficultySelect = shouldAllow => sortingInput.querySelectorAll('.difficulty')
 	.forEach(node => {
@@ -109,20 +108,20 @@ window.addEventListener('load', () => {
 function setTheme(preference){
 	if(preference=='dark')
 	{
-		body.classList.add('dark');
-		color_switch.innerHTML="Light mode";
+		document.body.classList.add('dark');
+		colorSwitch.innerHTML="Light mode";
 
 	}
-	else if(preference=='light')
+	else if(preference=='light' || preference==null)
 	{
-		body.classList.remove('dark');
-		color_switch.innerHTML="Dark mode";
+		document.body.classList.remove('dark');
+		colorSwitch.innerHTML="Dark mode";
 	}
 }
 
 setTheme(localStorage.getItem('color-preference'));
 
- color_switch.addEventListener("click",function(){  
+ colorSwitch.addEventListener("click",function(){  
 	const preference=localStorage.getItem('color-preference');
 	if(preference=='light')
 	{
