@@ -65,9 +65,6 @@
   },
   "lint-staged": {
     "relative": true,
-    "ignore": [
-      "LICENSE"
-    ],
     "linters": {
       "**/*": [
         "eclint fix",
