@@ -15,6 +15,7 @@ const contentEl = document.getElementById('content');
 const filterInput = document.getElementById('filter');
 const sortingInput = document.getElementById('sorting');
 const colorSwitch = document.getElementById('color-switch');
+
 const activateElements = els => Array.from(els).forEach(node => node.classList.add(ACTIVE_CLASS));
 const allowDifficultySelect = shouldAllow => sortingInput.querySelectorAll('.difficulty')
 	.forEach(node => {
