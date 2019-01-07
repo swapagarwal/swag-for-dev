@@ -39,8 +39,8 @@
     "xo": "^0.23.0"
   },
   "scripts": {
-    "lint": "eclint check '**/*' '!LICENSE' && xo",
-    "lint:fix": "eclint fix '**/*' '!LICENSE' && xo --fix",
+    "lint": "eclint check && xo",
+    "lint:fix": "eclint fix && xo --fix",
     "build": "cross-env NODE_ENV=production gulp build"
   },
   "xo": {
@@ -65,9 +65,6 @@
   },
   "lint-staged": {
     "relative": true,
-    "ignore": [
-      "LICENSE"
-    ],
     "linters": {
       "**/*": [
         "eclint fix",
