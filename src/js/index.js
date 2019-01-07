@@ -106,32 +106,25 @@ window.addEventListener('load', () => {
 	cascade.call(window, true);
 });
 
-function setTheme(preference){
-	if(preference=='dark')
-	{
+function setTheme(preference) {
+	if (preference === 'dark') {
 		document.body.classList.add('dark');
-		colorSwitch.innerHTML="Light mode";
-
-	}
-	else if(preference=='light' || preference==null)
-	{
+		colorSwitch.innerHTML = 'Light mode';
+	} else if (preference === 'light' || preference === null) {
 		document.body.classList.remove('dark');
-		colorSwitch.innerHTML="Dark mode";
+		colorSwitch.innerHTML = 'Dark mode';
 	}
 }
 
 setTheme(localStorage.getItem('color-preference'));
 
- colorSwitch.addEventListener("click",function(){  
-	const preference=localStorage.getItem('color-preference');
-	if(preference=='light')
-	{
-		localStorage.setItem('color-preference','dark');
+colorSwitch.addEventListener('click', () => {
+	const preference = localStorage.getItem('color-preference');
+	if (preference === 'light') {
+		localStorage.setItem('color-preference', 'dark');
 		setTheme('dark');
-	}
-	else
-	{
-		localStorage.setItem('color-preference','light');
+	} else {
+		localStorage.setItem('color-preference', 'light');
 		setTheme('light');
 	}
-}); 	
+});
