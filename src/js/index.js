@@ -14,11 +14,8 @@ const sort = {
 const contentEl = document.getElementById('content');
 const filterInput = document.getElementById('filter');
 const sortingInput = document.getElementById('sorting');
-const mode = document.getElementById('mode');
-const container = document.getElementsByClassName('container');
-const tooltip = document.getElementsByClassName('tooltip');
-
-
+const color_switch = document.getElementById('color-switch');
+const body = document.body;
 const activateElements = els => Array.from(els).forEach(node => node.classList.add(ACTIVE_CLASS));
 const allowDifficultySelect = shouldAllow => sortingInput.querySelectorAll('.difficulty')
 	.forEach(node => {
@@ -109,37 +106,32 @@ window.addEventListener('load', () => {
 	cascade.call(window, true);
 });
 
-const preference = localStorage.getItem('color-preference');
-if(preference=='dark')
-{
-	container[0].classList.add('dark');
-	mode.setAttribute("src","/assets/img/sun.png");
-	tooltip[0].textContent="Enable light mode";
+function setTheme(preference){
+	if(preference=='dark')
+	{
+		body.classList.add('dark');
+		color_switch.innerHTML="Light mode";
 
+	}
+	else if(preference=='light')
+	{
+		body.classList.remove('dark');
+		color_switch.innerHTML="Dark mode";
+	}
 }
-else if(preference=='light')
-{
-	container[0].classList.remove('dark');
-		mode.setAttribute("src","/assets/img/moon.png");
-}
 
-mode.addEventListener("mouseover",function(){
-	tooltip[0].style.display='block';
-});
+setTheme(localStorage.getItem('color-preference'));
 
-mode.addEventListener("mouseout",function(){
-	tooltip[0].style.display='none';
-});
-
-
- mode.addEventListener("click",function(){  
-	if(mode.getAttribute("src")=="/assets/img/moon.png")
+ color_switch.addEventListener("click",function(){  
+	const preference=localStorage.getItem('color-preference');
+	if(preference=='light')
 	{
 		localStorage.setItem('color-preference','dark');
+		setTheme('dark');
 	}
 	else
 	{
 		localStorage.setItem('color-preference','light');
+		setTheme('light');
 	}
-	location.reload();
 }); 	
