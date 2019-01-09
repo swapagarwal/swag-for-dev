@@ -72,7 +72,10 @@ function handleTags() {
 	}
 
 	search.set('tags', tags.join(' '));
-	search.set('expired', showExpired.checked ? 'y' : 'n');
+
+	if (showExpired.checked) {
+		search.set('expired', 'y');
+	}
 
 	updateUrl();
 }
@@ -97,7 +100,12 @@ function cascade(force = false) {
 			search = new URLSearchParams(window.location.search);
 		}
 
-		search.set('expired', this.checked ? 'y' : 'n');
+		if (this.checked) {
+			search.set('expired', 'y');
+		} else {
+			search.delete('expired');
+		}
+
 		updateUrl();
 	}
 }
@@ -118,7 +126,7 @@ window.addEventListener('load', () => {
 			selectr.setValue(search.get('tags').split(' '));
 		}
 
-		showExpired.checked = search.get('expired') === 'y';
+		showExpired.checked = search.has('expired');
 	}
 
 	selectr.on('selectr.change', cascade);
