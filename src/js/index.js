@@ -49,15 +49,16 @@ function handleDifficulty(difficultyChanged) {
 
 function updateUrl() {
 	const newRelativePathQuery = `${window.location.pathname}?${search.toString()}`;
-	history.pushState(null, '', newRelativePathQuery);
+
+	if (search.toString() === '') {
+		history.pushState(null, '', window.location.pathname);
+	} else {
+		history.pushState(null, '', newRelativePathQuery);
+	}
 }
 
 function handleTags() {
 	const tags = selectr.getValue();
-
-	if (tags.length === 0) {
-		history.pushState(null, '', window.location.pathname);
-	}
 
 	Array.from(contentEl.querySelectorAll('.item')).forEach(el => {
 		const show = (showExpired.checked || !el.classList.contains('tag-expired')) &&
@@ -71,10 +72,10 @@ function handleTags() {
 		return;
 	}
 
-	search.set('tags', tags.join(' '));
-
-	if (showExpired.checked) {
-		search.set('expired', 'y');
+	if (tags.length === 0) {
+		search.delete('tags');
+	} else {
+		search.set('tags', tags.join(' '));
 	}
 
 	updateUrl();
