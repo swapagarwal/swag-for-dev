@@ -48,13 +48,14 @@ function handleDifficulty(difficultyChanged) {
 }
 
 function updateUrl() {
-	const newRelativePathQuery = `${window.location.pathname}?${search.toString()}`;
+	let nextPath = window.location.pathname;
 
-	if (search.toString() === '') {
-		history.pushState(null, '', window.location.pathname);
-	} else {
-		history.pushState(null, '', newRelativePathQuery);
+	const queryString = search.toString();
+	if (queryString) {
+		nextPath += `?${queryString}`;
 	}
+
+	history.pushState(null, '', nextPath);
 }
 
 function handleTags() {
@@ -77,8 +78,6 @@ function handleTags() {
 	} else {
 		search.set('tags', tags.join(' '));
 	}
-
-	updateUrl();
 }
 
 function handleSort() {
@@ -88,6 +87,14 @@ function handleSort() {
 		.forEach(sortedChild => contentEl.appendChild(sortedChild));
 }
 
+function handleExpired() {
+	if (showExpired.checked) {
+		search.set('expired', 'y');
+	} else {
+		search.delete('expired');
+	}
+}
+
 // The cascade is the function which handles calling filtering and sorting swag
 function cascade(force = false) {
 	force |= handleDifficulty(this === filterInput);
@@ -95,20 +102,9 @@ function cascade(force = false) {
 	if (force || this === sortingInput) {
 		handleSort(this === sortingInput);
 	}
+	handleExpired();
 
-	if (this === showExpired) {
-		if (!search) {
-			search = new URLSearchParams(window.location.search);
-		}
-
-		if (this.checked) {
-			search.set('expired', 'y');
-		} else {
-			search.delete('expired');
-		}
-
-		updateUrl();
-	}
+	updateUrl();
 }
 
 window.addEventListener('load', () => {
@@ -127,7 +123,7 @@ window.addEventListener('load', () => {
 			selectr.setValue(search.get('tags').split(' '));
 		}
 
-		showExpired.checked = search.has('expired');
+		showExpired.checked = search.get('expired') === 'y';
 	}
 
 	selectr.on('selectr.change', cascade);
