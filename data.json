@@ -47,7 +47,7 @@
   {
     "name": "Contentful",
     "difficulty": "easy",
-    "description": "Sign up from Contentful to get a free pair of socks to your door.",
+    "description": "Sign up to Contentful and get a free pair of socks to your door.",
     "reference": "https://www.contentful.com/resources/syntaxfm/",
     "image": "https://i.imgur.com/15gp2Ml.jpg",
     "dateAdded": "2018-12-03T04:36:19.000Z",
@@ -146,7 +146,7 @@
   {
     "name": "Netlify",
     "difficulty": "easy",
-    "description": "Complete this <a href='https://swag.netlify.com/docs/'>survey</a> about using netlify for documentation and get stickers.",
+    "description": "Complete this <a href='https://swag.netlify.com/docs/'>survey</a> about using Netlify for documentation and get stickers.",
     "reference": "https://swag.netlify.com/docs/",
     "image": "https://swag.netlify.com/images/laptop-sticker.jpg",
     "dateAdded": "2018-04-27T19:36:39.000Z",
