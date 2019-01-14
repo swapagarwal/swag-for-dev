@@ -36,7 +36,7 @@
     "husky": "^1.2.0",
     "lint-staged": "^8.1.0",
     "merge-stream": "^1.0.1",
-    "xo": "^0.23.0"
+    "xo": "^0.24.0"
   },
   "scripts": {
     "lint": "eclint check && xo",

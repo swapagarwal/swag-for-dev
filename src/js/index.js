@@ -11,10 +11,10 @@ const sort = {
 	DIFFICULTY_DESCENDING: (a, b) => a.dataset.difficulty < b.dataset.difficulty ? 1 : -1
 };
 
-const contentEl = document.getElementById('content');
-const filterInput = document.getElementById('filter');
-const sortingInput = document.getElementById('sorting');
-const tagsSelect = document.getElementById('tags');
+const contentEl = document.querySelector('#content');
+const filterInput = document.querySelector('#filter');
+const sortingInput = document.querySelector('#sorting');
+const tagsSelect = document.querySelector('#tags');
 
 const activateElements = els => Array.from(els).forEach(node => node.classList.add(ACTIVE_CLASS));
 const allowDifficultySelect = shouldAllow => sortingInput.querySelectorAll('.difficulty')
@@ -27,14 +27,14 @@ let selectr;
 
 function handleDifficulty(difficultyChanged) {
 	const {value} = filterInput;
-	Array.from(contentEl.getElementsByClassName(ACTIVE_CLASS))
+	Array.from(contentEl.querySelectorAll(`.${ACTIVE_CLASS}`))
 		.forEach(swag => swag.classList.remove(ACTIVE_CLASS));
 
 	if (value === 'alldifficulties') {
 		activateElements(contentEl.querySelectorAll('.item'));
 		allowDifficultySelect(true);
 	} else {
-		activateElements(contentEl.getElementsByClassName(value));
+		activateElements(contentEl.querySelectorAll(`.${value}`));
 		allowDifficultySelect(false);
 	}
 
@@ -64,6 +64,7 @@ function handleTags() {
 	if (!search) {
 		return;
 	}
+
 	search.set('tags', tags.join(' '));
 	const newRelativePathQuery = `${window.location.pathname}?${search.toString()}`;
 	history.pushState(null, '', newRelativePathQuery);
@@ -73,7 +74,7 @@ function handleSort() {
 	Array.from(contentEl.children)
 		.map(child => contentEl.removeChild(child))
 		.sort(sort[sortingInput.value])
-		.forEach(sortedChild => contentEl.appendChild(sortedChild));
+		.forEach(sortedChild => contentEl.append(sortedChild));
 }
 
 // The cascade is the function which handles calling filtering and sorting swag

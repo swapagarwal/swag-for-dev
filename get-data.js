@@ -5,6 +5,7 @@ const swagList = require('./data.json').map(swag => {
 	if (swag.tags.includes('hacktoberfest')) {
 		return false;
 	}
+
 	// Generate unique filename
 	const extension = 'jpeg';
 	const fileBase = swag.name
