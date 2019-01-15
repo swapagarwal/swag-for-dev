@@ -114,6 +114,7 @@ function setTheme(preference) {
 		document.body.classList.remove('dark');
 		colorSwitch.innerHTML = 'Dark mode';
 	}
+	localStorage.setItem('color-preference', preference);
 }
 
 setTheme(localStorage.getItem('color-preference'));
@@ -121,10 +122,8 @@ setTheme(localStorage.getItem('color-preference'));
 colorSwitch.addEventListener('click', () => {
 	const preference = localStorage.getItem('color-preference');
 	if (preference === 'light') {
-		localStorage.setItem('color-preference', 'dark');
 		setTheme('dark');
 	} else {
-		localStorage.setItem('color-preference', 'light');
 		setTheme('light');
 	}
 });
