@@ -69,14 +69,10 @@ function handleTags() {
 		}
 	});
 
-	if (!search) {
-		return;
-	}
-
-	if (tags.length === 0) {
-		search.delete('tags');
-	} else {
+	if (tags.length > 0) {
 		search.set('tags', tags.join(' '));
+	} else {
+		search.delete('tags');
 	}
 }
 
