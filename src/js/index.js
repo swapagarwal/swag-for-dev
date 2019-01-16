@@ -14,8 +14,8 @@ const sort = {
 const contentEl = document.querySelector('#content');
 const filterInput = document.querySelector('#filter');
 const sortingInput = document.querySelector('#sorting');
-const showExpired = document.querySelector('#expired');
 const tagsSelect = document.querySelector('#tags');
+const showExpired = document.querySelector('#expired');
 
 const activateElements = els => Array.from(els).forEach(node => node.classList.add(ACTIVE_CLASS));
 const allowDifficultySelect = shouldAllow => sortingInput.querySelectorAll('.difficulty')
