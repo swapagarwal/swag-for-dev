@@ -11,11 +11,11 @@ const sort = {
 	DIFFICULTY_DESCENDING: (a, b) => a.dataset.difficulty < b.dataset.difficulty ? 1 : -1
 };
 
-const contentEl = document.getElementById('content');
-const filterInput = document.getElementById('filter');
-const sortingInput = document.getElementById('sorting');
-const showExpired = document.getElementById('expired');
-const tagsSelect = document.getElementById('tags');
+const contentEl = document.querySelector('#content');
+const filterInput = document.querySelector('#filter');
+const sortingInput = document.querySelector('#sorting');
+const showExpired = document.querySelector('#expired');
+const tagsSelect = document.querySelector('#tags');
 
 const activateElements = els => Array.from(els).forEach(node => node.classList.add(ACTIVE_CLASS));
 const allowDifficultySelect = shouldAllow => sortingInput.querySelectorAll('.difficulty')
