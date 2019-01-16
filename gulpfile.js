@@ -137,6 +137,7 @@ gulp.task('cachebust', cb => {
 	if (!PRODUCTION) {
 		return cb();
 	}
+
 	const basePath = 'dist/assets';
 	const bustedFiles = [
 		'dist/assets/css/*',
@@ -163,6 +164,7 @@ gulp.task('cachebust', cb => {
 						console.warn(`Unable to find image ${fileName} in the manifest`);
 						return;
 					}
+
 					swag.images[extension] = `/assets/${manifest[fileName]}`;
 				});
 			});

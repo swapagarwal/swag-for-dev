@@ -28,14 +28,14 @@ let selectr;
 
 function handleDifficulty(difficultyChanged) {
 	const {value} = filterInput;
-	Array.from(contentEl.getElementsByClassName(ACTIVE_CLASS))
+	Array.from(contentEl.querySelectorAll(`.${ACTIVE_CLASS}`))
 		.forEach(swag => swag.classList.remove(ACTIVE_CLASS));
 
 	if (value === 'alldifficulties') {
 		activateElements(contentEl.querySelectorAll('.item'));
 		allowDifficultySelect(true);
 	} else {
-		activateElements(contentEl.getElementsByClassName(value));
+		activateElements(contentEl.querySelectorAll(`.${value}`));
 		allowDifficultySelect(false);
 	}
 
@@ -80,7 +80,7 @@ function handleSort() {
 	Array.from(contentEl.children)
 		.map(child => contentEl.removeChild(child))
 		.sort(sort[sortingInput.value])
-		.forEach(sortedChild => contentEl.appendChild(sortedChild));
+		.forEach(sortedChild => contentEl.append(sortedChild));
 }
 
 function handleExpired() {
