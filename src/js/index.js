@@ -98,8 +98,8 @@ function cascade(force = false) {
 	if (force || this === sortingInput) {
 		handleSort(this === sortingInput);
 	}
-	handleExpired();
 
+	handleExpired();
 	updateUrl();
 }
 
