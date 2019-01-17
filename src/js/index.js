@@ -47,6 +47,29 @@ function handleDifficulty(difficultyChanged) {
 	return false;
 }
 
+function handleSort() {
+	Array.from(contentEl.children)
+		.map(child => contentEl.removeChild(child))
+		.sort(sort[sortingInput.value])
+		.forEach(sortedChild => contentEl.append(sortedChild));
+}
+
+function handleTags() {
+	const tags = selectr.getValue();
+
+	Array.from(contentEl.querySelectorAll('.item')).forEach(el => {
+		const show = (showExpired.checked || !el.classList.contains('tag-expired')) &&
+			tags.reduce((sho, tag) => sho || el.classList.contains(`tag-${tag}`), tags.length === 0);
+		if (!show) {
+			el.classList.remove('visible');
+		}
+	});
+
+	search.set('tags', tags.join(' '));
+
+	search.set('expired', showExpired.checked ? 'y' : '');
+}
+
 function updateUrl() {
 	let nextPath = window.location.pathname;
 
@@ -67,40 +90,14 @@ function updateUrl() {
 	history.pushState(null, '', nextPath);
 }
 
-function handleTags() {
-	const tags = selectr.getValue();
-
-	Array.from(contentEl.querySelectorAll('.item')).forEach(el => {
-		const show = (showExpired.checked || !el.classList.contains('tag-expired')) &&
-			tags.reduce((sho, tag) => sho || el.classList.contains(`tag-${tag}`), tags.length === 0);
-		if (!show) {
-			el.classList.remove('visible');
-		}
-	});
-
-	search.set('tags', tags.join(' '));
-}
-
-function handleSort() {
-	Array.from(contentEl.children)
-		.map(child => contentEl.removeChild(child))
-		.sort(sort[sortingInput.value])
-		.forEach(sortedChild => contentEl.append(sortedChild));
-}
-
-function handleExpired() {
-	search.set('expired', showExpired.checked ? 'y' : '');
-}
-
 // The cascade is the function which handles calling filtering and sorting swag
 function cascade(force = false) {
 	force |= handleDifficulty(this === filterInput);
-	force |= handleTags(Boolean(this.el));
 	if (force || this === sortingInput) {
-		handleSort(this === sortingInput);
+		handleSort();
 	}
 
-	handleExpired();
+	handleTags();
 	updateUrl();
 }
 
