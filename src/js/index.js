@@ -50,14 +50,14 @@ function handleDifficulty(difficultyChanged) {
 function updateUrl() {
 	let nextPath = window.location.pathname;
 
-	const tempParams = new URLSearchParams();
+	const emptyParams = [];
 	for (const [key, value] of search) {
-		if (value.trim()) {
-			tempParams.set(key, value);
+		if (!value.trim()) {
+			emptyParams.push(key);
 		}
 	}
 
-	search = new URLSearchParams(tempParams.toString());
+	emptyParams.forEach(param => search.delete(param));
 
 	const queryString = search.toString();
 	if (queryString) {
