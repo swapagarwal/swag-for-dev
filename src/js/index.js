@@ -67,7 +67,7 @@ function handleTags() {
 
 	search.set('tags', tags.join(' '));
 
-	search.set('expired', showExpired.checked ? 'true' : '');
+	search.set('expired', showExpired.checked || '');
 }
 
 function updateUrl() {
