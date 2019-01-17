@@ -67,7 +67,7 @@ function handleTags() {
 
 	search.set('tags', tags.join(' '));
 
-	search.set('expired', showExpired.checked ? 'y' : '');
+	search.set('expired', showExpired.checked ? 'true' : '');
 }
 
 function updateUrl() {
@@ -117,7 +117,7 @@ window.addEventListener('load', () => {
 			selectr.setValue(search.get('tags').split(' '));
 		}
 
-		showExpired.checked = search.get('expired') === 'y';
+		showExpired.checked = search.get('expired') === 'true';
 	}
 
 	selectr.on('selectr.change', cascade);
