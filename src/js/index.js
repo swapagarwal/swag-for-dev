@@ -50,6 +50,15 @@ function handleDifficulty(difficultyChanged) {
 function updateUrl() {
 	let nextPath = window.location.pathname;
 
+	const tempParams = new URLSearchParams();
+	for (const [key, value] of search) {
+		if (value.trim()) {
+			tempParams.set(key, value);
+		}
+	}
+
+	search = new URLSearchParams(tempParams.toString());
+
 	const queryString = search.toString();
 	if (queryString) {
 		nextPath += `?${queryString}`;
@@ -69,11 +78,7 @@ function handleTags() {
 		}
 	});
 
-	if (tags.length > 0) {
-		search.set('tags', tags.join(' '));
-	} else {
-		search.delete('tags');
-	}
+	search.set('tags', tags.join(' '));
 }
 
 function handleSort() {
@@ -84,11 +89,7 @@ function handleSort() {
 }
 
 function handleExpired() {
-	if (showExpired.checked) {
-		search.set('expired', 'y');
-	} else {
-		search.delete('expired');
-	}
+	search.set('expired', showExpired.checked ? 'y' : '');
 }
 
 // The cascade is the function which handles calling filtering and sorting swag
