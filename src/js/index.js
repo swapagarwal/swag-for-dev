@@ -117,7 +117,7 @@ window.addEventListener('load', () => {
 			selectr.setValue(search.get('tags').split(' '));
 		}
 
-		showExpired.checked = Boolean(search.get('expired'));
+		showExpired.checked = search.get('expired') === 'true';
 	}
 
 	selectr.on('selectr.change', cascade);
