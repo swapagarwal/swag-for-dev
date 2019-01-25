@@ -6,7 +6,7 @@
     "reference": "https://developer.amazon.com/alexa-skills-kit/alexa-developer-skill-promotion",
     "image": "https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/promos/ASK_DevIncentive_swag_v2._CB472624419_.png",
     "dateAdded": "2018-02-18T06:03:00.000Z",
-    "tags": ["clothing", "device"]
+    "tags": ["clothing", "device", "expired"]
   },
   {
     "name": "Alligator.io",
@@ -24,7 +24,7 @@
     "reference": "https://community.aras.com/b/english/posts/join-aras-labs-hacktoberfest-2018",
     "image": "https://www.aras.com/-/media/Images/Content-Row-Images/im-an-innovator.png",
     "dateAdded": "2018-10-24T11:45:00.000Z",
-    "tags": ["clothing", "hacktoberfest", "stickers"]
+    "tags": ["clothing", "hacktoberfest", "expired", "stickers"]
   },
   {
     "name": "Auth0",
@@ -33,7 +33,7 @@
     "reference": "https://auth0.com/blog/celebrate-hacktoberfest-with-auth0/",
     "image": "https://images.all-free-download.com/images/graphiclarge/blank_t_shirt_clip_art_19042.jpg",
     "dateAdded": "2018-10-06T03:35:20.000Z",
-    "tags": ["clothing", "hacktoberfest", "stickers"]
+    "tags": ["clothing", "hacktoberfest", "expired", "stickers"]
   },
   {
     "name": "Codeship",
@@ -51,7 +51,7 @@
     "reference": "https://www.contentful.com/resources/syntaxfm/",
     "image": "https://i.imgur.com/15gp2Ml.jpg",
     "dateAdded": "2018-12-03T04:36:19.000Z",
-    "tags": ["clothing"]
+    "tags": ["clothing", "expired"]
   },
   {
     "name": "devRant",
@@ -69,7 +69,7 @@
     "reference": "https://hacktoberfest.digitalocean.com/",
     "image": "https://user-images.githubusercontent.com/121322/45907730-f6a80b00-bdad-11e8-93ef-774392192716.png",
     "dateAdded": "2018-02-18T07:48:58.000Z",
-    "tags": ["clothing", "hacktoberfest", "stickers"]
+    "tags": ["clothing", "hacktoberfest", "expired", "stickers"]
   },
   {
     "name": "Gatsby",
@@ -96,7 +96,7 @@
     "reference": "https://blog.hasura.io/announcing-hacktoberfest-2018-with-hasura-621045dc9560",
     "image": "https://cdn-images-1.medium.com/max/1600/1*kQxL8yhs0c1x1WVXnjhrIw.png",
     "dateAdded": "2018-10-12T13:25:10.000Z",
-    "tags": ["clothing", "hacktoberfest", "stickers"]
+    "tags": ["clothing", "hacktoberfest", "expired", "stickers"]
   },
   {
     "name": "Kong",
@@ -114,7 +114,7 @@
     "reference": "https://lbry.io/news/hacktoberfest",
     "image": "https://pbs.twimg.com/media/Dowf_X5XkAAXR3T.jpg",
     "dateAdded": "2018-10-22T21:19:41.000Z",
-    "tags": ["clothing", "hacktoberfest"]
+    "tags": ["clothing", "hacktoberfest", "expired"]
   },
   {
     "name": "Magento",
@@ -123,7 +123,7 @@
     "reference": "https://github.com/magento/magento2/wiki/SQUASHTOBERFEST-2018",
     "image": "https://raw.githubusercontent.com/wiki/magento-engcom/msi/images/squash2018.png",
     "dateAdded": "2018-10-23T10:17:39.000Z",
-    "tags": ["clothing", "hacktoberfest"]
+    "tags": ["clothing", "hacktoberfest", "expired"]
   },
   {
     "name": "Microsoft",
@@ -132,7 +132,7 @@
     "reference": "https://open.microsoft.com/2018/09/30/join-hacktoberfest-2018-celebration-microsoft/",
     "image": "https://open.microsoft.com/wp-content/uploads/2018/09/Hacktoberfest-Blog.jpg",
     "dateAdded": "2018-10-01T08:36:05.000Z",
-    "tags": ["clothing", "hacktoberfest"]
+    "tags": ["clothing", "hacktoberfest", "expired"]
   },
   {
     "name": "Mullvad",
@@ -159,7 +159,7 @@
     "reference": "https://www.nexmo.com/blog/2018/10/09/join-nextoberfest-tis-the-season-to-be-hacking-dr/",
     "image": "https://www.nexmo.com/wp-content/uploads/2018/10/Nextoberfest.png",
     "dateAdded": "2018-10-12T13:32:07.000Z",
-    "tags": ["clothing", "hacktoberfest"]
+    "tags": ["clothing", "hacktoberfest", "expired"]
   },
   {
     "name": "npm",
@@ -177,7 +177,7 @@
     "reference": "https://openbazaar.org/blog/Hacktoberfest-with-OpenBazaar-Help-Make-Trade-Free-Get-Rewards/",
     "image": "https://gateway.ob1.io/ob/images/zb2rhXcLCmwrpNgucgrAtPL6JYtpMhk35GFqaSKux4sFbBUma",
     "dateAdded": "2018-10-23T10:06:06.000Z",
-    "tags": ["clothing", "hacktoberfest"]
+    "tags": ["clothing", "hacktoberfest", "expired"]
   },
   {
     "name": "OpenEBS",
@@ -186,7 +186,7 @@
     "reference": "https://blog.openebs.io/celebrate-hacktoberfest-2018-with-openebs-206daa1d653c/",
     "image": "https://cdn-images-1.medium.com/max/1200/1*BXesj2ROGdmUH3vXHkRaRA.png",
     "dateAdded": "2018-10-06T03:58:08.000Z",
-    "tags": ["clothing", "hacktoberfest", "stickers"]
+    "tags": ["clothing", "hacktoberfest", "expired", "stickers"]
   },
   {
     "name": "Operation Code",
@@ -195,7 +195,7 @@
     "reference": "https://github.com/OperationCode/START_HERE",
     "image": "https://upload.cc/i1/2018/10/21/yRDFvh.png",
     "dateAdded": "2018-10-28T16:55:45.000Z",
-    "tags": ["clothing", "hacktoberfest", "stickers"]
+    "tags": ["clothing", "hacktoberfest", "expired", "stickers"]
   },
   {
     "name": "opsdroid",
@@ -213,7 +213,7 @@
     "reference": "https://blog.phusion.nl/2018/10/19/livestreaming-from-phusion-hq-adding-a-feature-to-passenger/",
     "image": "https://i.imgur.com/gVfuWsu.png",
     "dateAdded": "2018-10-20T11:38:34.000Z",
-    "tags": ["clothing", "accessories", "stickers"]
+    "tags": ["clothing", "accessories", "expired", "stickers"]
   },
   {
     "name": "SendGrid",
@@ -222,7 +222,7 @@
     "reference": "https://sendgrid.com/blog/hacktoberfest-2018-has-arrived/",
     "image": "https://sendgrid.com/wp-content/uploads/2018/09/9-18_Hacktoberfest_Shirt_Front-960x960.jpg",
     "dateAdded": "2018-10-12T13:10:59.000Z",
-    "tags": ["clothing", "hacktoberfest"]
+    "tags": ["clothing", "hacktoberfest", "expired"]
   },
   {
     "name": "SimbaChain",
@@ -240,7 +240,7 @@
     "reference": "https://go.sourced.tech/hacktoberfest",
     "image": "https://pbs.twimg.com/media/DrA_3NBVYAAmHnS.jpg",
     "dateAdded": "2018-10-23T10:00:46.000Z",
-    "tags": ["clothing", "hacktoberfest", "stickers"]
+    "tags": ["clothing", "hacktoberfest", "expired", "stickers"]
   },
   {
     "name": "Twilio",
@@ -258,7 +258,7 @@
     "reference": "https://umbraco.com/blog/happy-hacktoberfest/",
     "image": "https://shop.umbraco.com/media/2989609/img_0722.jpg",
     "dateAdded": "2018-10-20T12:48:46.000Z",
-    "tags": ["hacktoberfest"]
+    "tags": ["hacktoberfest", "expired"]
   },
   {
     "name": "WhatIsMyBrowser",

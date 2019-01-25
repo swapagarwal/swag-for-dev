@@ -34,7 +34,7 @@ let manifest = {
 gulp.task('pug', () => {
 	const tags = Array.from(swagList.reduce(
 		(tagList, {tags}) => {
-			tags.forEach(tag => tagList.add(tag));
+			tags.filter(tag => tag !== 'expired').forEach(tag => tagList.add(tag));
 			return tagList;
 		},
 		new Set()

@@ -15,6 +15,7 @@ const contentEl = document.querySelector('#content');
 const filterInput = document.querySelector('#filter');
 const sortingInput = document.querySelector('#sorting');
 const tagsSelect = document.querySelector('#tags');
+const showExpired = document.querySelector('#expired');
 
 const activateElements = els => Array.from(els).forEach(node => node.classList.add(ACTIVE_CLASS));
 const allowDifficultySelect = shouldAllow => sortingInput.querySelectorAll('.difficulty')
@@ -46,30 +47,6 @@ function handleDifficulty(difficultyChanged) {
 	return false;
 }
 
-function handleTags() {
-	const tags = selectr.getValue();
-
-	if (tags.length === 0) {
-		history.pushState(null, '', window.location.pathname);
-		return;
-	}
-
-	Array.from(contentEl.querySelectorAll('.item')).forEach(el => {
-		const show = tags.reduce((sho, tag) => sho || el.classList.contains(`tag-${tag}`), false);
-		if (!show) {
-			el.classList.remove('visible');
-		}
-	});
-
-	if (!search) {
-		return;
-	}
-
-	search.set('tags', tags.join(' '));
-	const newRelativePathQuery = `${window.location.pathname}?${search.toString()}`;
-	history.pushState(null, '', newRelativePathQuery);
-}
-
 function handleSort() {
 	Array.from(contentEl.children)
 		.map(child => contentEl.removeChild(child))
@@ -77,13 +54,51 @@ function handleSort() {
 		.forEach(sortedChild => contentEl.append(sortedChild));
 }
 
+function handleTags() {
+	const tags = selectr.getValue();
+
+	Array.from(contentEl.querySelectorAll('.item')).forEach(el => {
+		const show = (showExpired.checked || !el.classList.contains('tag-expired')) &&
+			tags.reduce((sho, tag) => sho || el.classList.contains(`tag-${tag}`), tags.length === 0);
+		if (!show) {
+			el.classList.remove('visible');
+		}
+	});
+
+	search.set('tags', tags.join(' '));
+
+	search.set('expired', showExpired.checked || '');
+}
+
+function updateUrl() {
+	let nextPath = window.location.pathname;
+
+	const emptyParams = [];
+	for (const [key, value] of search) {
+		if (!value.trim()) {
+			emptyParams.push(key);
+		}
+	}
+
+	emptyParams.forEach(param => search.delete(param));
+
+	const queryString = search.toString();
+	if (queryString) {
+		nextPath += `?${queryString}`;
+	}
+
+	history.pushState(null, '', nextPath);
+}
+
 // The cascade is the function which handles calling filtering and sorting swag
 function cascade(force = false) {
 	force |= handleDifficulty(this === filterInput);
-	force |= handleTags(Boolean(this.el));
 	if (force || this === sortingInput) {
-		handleSort(this === sortingInput);
+		handleSort();
 	}
+
+	handleTags();
+	updateUrl();
 }
 
 window.addEventListener('load', () => {
@@ -97,14 +112,18 @@ window.addEventListener('load', () => {
 
 	if ('URLSearchParams' in window) {
 		search = new URLSearchParams(window.location.search);
+
 		if (search.has('tags')) {
 			selectr.setValue(search.get('tags').split(' '));
 		}
+
+		showExpired.checked = Boolean(search.get('expired'));
 	}
 
 	selectr.on('selectr.change', cascade);
 	filterInput.addEventListener('input', cascade);
 	sortingInput.addEventListener('input', cascade);
+	showExpired.addEventListener('change', cascade);
 
 	cascade.call(window, true);
 });
