@@ -144,6 +144,15 @@
     "tags": ["stickers"]
   },
   {
+    "name": "NativeScript",
+    "difficulty": "easy",
+    "description": "Make your first contribution to the NativeScript community and win an awesome set of stickers. Among the stickers you will find a limited edition 'Contributor' sticker. ",
+    "reference": "https://www.nativescript.org/blog/nativescript-first-time-contribution-contest-continued-and-extended",
+    "image": "https://d2odgkulk9w7if.cloudfront.net/images/default-source/default-album/stickers-photo.jpg",
+    "dateAdded": "2019-01-25T08:36:39.000Z",
+    "tags": ["stickers", "surprise"]
+  },
+  {
     "name": "Netlify",
     "difficulty": "easy",
     "description": "Complete this <a href='https://swag.netlify.com/docs/'>survey</a> about using Netlify for documentation and get stickers.",
