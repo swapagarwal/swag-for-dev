@@ -61,7 +61,8 @@
         "envs": [
           "browser"
         ]
-      }, {
+      },
+      {
         "files": [
           "test/**/*.js"
         ],
