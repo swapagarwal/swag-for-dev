@@ -6,7 +6,7 @@ let data;
 function checkURL(url, head = false) {
 	const method = head ? 'head' : 'get';
 	return got[method](url, {throwHttpErrors: false}).then(({statusCode}) => {
-		if (statusCode === 403) {
+		if (!head && statusCode === 403) {
 			return checkURL(url, true);
 		}
 
