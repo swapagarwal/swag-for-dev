@@ -6,7 +6,7 @@ node_js:
 sudo: false
 env:
   - TEST_SUITE=lint
-  - TEST_SUITE=mocha
+  - TEST_SUITE=data-schema
 
 cache:
   directories:
@@ -15,8 +15,6 @@ cache:
 install:
   - npm ci
 
-script: >
-    if [ "$TEST_SUITE" == "lint" ];
-        then npm run lint;
-        else npm run test;
-    fi
+script:
+    - if [ "$TEST_SUITE" == "lint" ]; then npm run lint; fi
+    - if [ "$TEST_SUITE" == "data-schema" ]; then npm run test; fi
