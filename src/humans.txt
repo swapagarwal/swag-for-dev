@@ -1,0 +1,26 @@
+/* TEAM */
+	Founder: Swapnil Agarwal
+	Site: https://github.com/swapagarwal
+
+	Designer: Zac Garby
+	Site: https://github.com/zac-garby
+
+	Designer: Mihir Chaturvedi
+	Site: https://mihir.ch
+
+	Maintainer: Zadkiel
+	Site: https://github.com/aslafy-z
+
+	Maintainer: Vikas Potluri
+	Site: https://github.com/vikaspotluri123
+
+/* THANKS */
+
+	Name: Awesome contributors
+	Site: https://github.com/swapagarwal/swag-for-dev/contributors
+
+	Name: Code Wranglers
+	Site: https://github.com/swapagarwal/swag-for-dev/pulls
+
+	Name: Bug hunters
+	Site: https://github.com/swapagarwal/swag-for-dev/issues

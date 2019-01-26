@@ -64,13 +64,15 @@ include ./fork.pug
 
 	footer.flex
 		.item.flex
-			iframe(src='https://upscri.be/67d2fa?as_embed', style='width:100%;max-width:800px;margin:0 auto;', height='400', frameborder='0', title='Subscribe for updates')
+			iframe(
+				src='https://upscri.be/67d2fa?as_embed',
+				class='subscribe-form'
+				height='400',
+				frameborder='0',
+				title='Subscribe for updates'
+			)
 		.item.flex
-			p Made with ❤︎ by #[a(href="https://github.com/swapagarwal") Swapnil Agarwal]
-		.item.flex
-			p Designed by #[a(href="https://github.com/zac-garby") Zac Garby] and #[a(href="https://mihir.ch/") Mihir Chaturvedi]
-		.item.flex
-			p Maintained by #[a(href="https://github.com/aslafy-z") Zadkiel] and #[a(href="https://github.com/vikaspotluri123") Vikas Potluri]
+			p devSwag is made possible by #[a(href="/humans.txt") some wonderful humans]
 		.item.flex
 			p Want your company's swag to be listed? #[a(href="https://t.me/swapagarwal") Contact us].
 	#codefund_ad
