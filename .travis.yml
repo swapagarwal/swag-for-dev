@@ -15,5 +15,8 @@ cache:
 install:
   - npm ci
 
-script:
-  - if [ "$TEST_SUITE" == "lint" ]; then npm run lint; else npm run test; fi
+script: >
+    if [ "$TEST_SUITE" == "lint" ];
+        then npm run lint;
+        else npm run test;
+    fi
