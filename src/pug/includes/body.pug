@@ -42,8 +42,9 @@ include ./fork.pug
 			each swag in swagList
 				- difficulty = swag.difficulty + ' difficulty';
 				- difficultyTitle = 'Difficulty: ' + swag.difficulty;
+				- expired = swag.tags.includes('expired');
 				div(
-					class="item visible " + swag.difficulty + swag.tags.map(t => ` tag-${t}`).join('')
+					class="item " + (expired ? '' : 'visible ') + swag.difficulty + swag.tags.map(t => ` tag-${t}`).join('')
 					data-name=swag.name.toLowerCase()
 					data-difficulty=['easy','medium', 'hard'].indexOf(swag.difficulty)
 				)
