@@ -1,5 +1,14 @@
 [
   {
+    "name": "7PHP",
+    "difficulty": "easy",
+    "description": "If you are a fan of 7PHP, send them an email and receive some free stickers!",
+    "reference": "https://7php.com/stickers/",
+    "image": "https://7php.com/wp-content/uploads/2018/05/7php-sticker-v2.jpg",
+    "dateAdded": "2018-11-23T17:27:00.000Z",
+    "tags": ["stickers"]
+  },
+  {
     "name": "Alexa",
     "difficulty": "hard",
     "description": "Publish a skill, get a t-shirt and an Echo Spot (if 50 customers per month use your Display skill for the first three months after publication)! Earn a 2-pack of Echo Buttons if you publish a Gadgets skill!",
