@@ -9,9 +9,8 @@ include ./fork.pug
 			p 😎 swag opportunities for developers
 			p As a developer, nothing piques my interest more than developer swag! I created devSwag to scratch my own itch by starting a curation of such opportunities in Feb '18. These are crowdsourced and verified by the community. All of them ship worldwide!
 
-		.buttons.flex
-
-			.top.flex
+		.buttons
+			.flex.controls
 				.item.flex
 					span Show
 					.select-wrapper
@@ -31,17 +30,21 @@ include ./fork.pug
 							option(value="DIFFICULTY_DESCENDING" class="difficulty") Difficulty, reversed
 					span order
 
-			.bottom
 				.item.flex
 					select#tags.hidden
+
+				.item.flex
+					input(type="checkbox" id="expired")
+					label(for="expired") Show expired opportunities
 
 		.content.flex#content
 			- let difficulty;
 			each swag in swagList
 				- difficulty = swag.difficulty + ' difficulty';
 				- difficultyTitle = 'Difficulty: ' + swag.difficulty;
+				- expired = swag.tags.includes('expired');
 				div(
-					class="item visible " + swag.difficulty + swag.tags.map(t => ` tag-${t}`).join('')
+					class="item " + (expired ? '' : 'visible ') + swag.difficulty + swag.tags.map(t => ` tag-${t}`).join('')
 					data-name=swag.name.toLowerCase()
 					data-difficulty=['easy','medium', 'hard'].indexOf(swag.difficulty)
 				)

@@ -13,6 +13,12 @@ section.main
 	flex-direction column
 	margin 0 auto
 
+	.controls
+		flex-wrap wrap
+
+		@media screen and (max-width: 450px)
+			justify-content left
+
 	.heading
 		flex-direction column
 		min-height 40vh
@@ -43,11 +49,16 @@ section.main
 			width 100%
 			justify-content flex-start
 
+		@media screen and (max-width: 450px)
+			.item, .select-wrapper, select
+				width 100%
+
 		.item
 			padding 5px
 
 		.select-wrapper
 			position relative
+			margin 0 5px
 
 			&:before
 				position absolute
@@ -66,7 +77,6 @@ section.main
 			margin-right 6px
 
 		select
-			margin 0 5px
 			background #fff
 			border none
 			border-bottom 2px solid #bbb
@@ -86,6 +96,7 @@ section.main
 		align-items flex-start
 		justify-content space-around
 		margin 0 -10px
+		margin-top 8px
 		width 100%
 
 		@import "imports/card"

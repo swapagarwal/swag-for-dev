@@ -11,10 +11,11 @@ const sort = {
 	DIFFICULTY_DESCENDING: (a, b) => a.dataset.difficulty < b.dataset.difficulty ? 1 : -1
 };
 
-const contentEl = document.getElementById('content');
-const filterInput = document.getElementById('filter');
-const sortingInput = document.getElementById('sorting');
-const tagsSelect = document.getElementById('tags');
+const contentEl = document.querySelector('#content');
+const filterInput = document.querySelector('#filter');
+const sortingInput = document.querySelector('#sorting');
+const tagsSelect = document.querySelector('#tags');
+const showExpired = document.querySelector('#expired');
 
 const activateElements = els => Array.from(els).forEach(node => node.classList.add(ACTIVE_CLASS));
 const allowDifficultySelect = shouldAllow => sortingInput.querySelectorAll('.difficulty')
@@ -27,14 +28,14 @@ let selectr;
 
 function handleDifficulty(difficultyChanged) {
 	const {value} = filterInput;
-	Array.from(contentEl.getElementsByClassName(ACTIVE_CLASS))
+	Array.from(contentEl.querySelectorAll(`.${ACTIVE_CLASS}`))
 		.forEach(swag => swag.classList.remove(ACTIVE_CLASS));
 
 	if (value === 'alldifficulties') {
 		activateElements(contentEl.querySelectorAll('.item'));
 		allowDifficultySelect(true);
 	} else {
-		activateElements(contentEl.getElementsByClassName(value));
+		activateElements(contentEl.querySelectorAll(`.${value}`));
 		allowDifficultySelect(false);
 	}
 
@@ -46,43 +47,58 @@ function handleDifficulty(difficultyChanged) {
 	return false;
 }
 
+function handleSort() {
+	Array.from(contentEl.children)
+		.map(child => contentEl.removeChild(child))
+		.sort(sort[sortingInput.value])
+		.forEach(sortedChild => contentEl.append(sortedChild));
+}
+
 function handleTags() {
 	const tags = selectr.getValue();
 
-	if (tags.length === 0) {
-		history.pushState(null, '', window.location.pathname);
-		return;
-	}
-
 	Array.from(contentEl.querySelectorAll('.item')).forEach(el => {
-		const show = tags.reduce((sho, tag) => sho || el.classList.contains(`tag-${tag}`), false);
+		const show = (showExpired.checked || !el.classList.contains('tag-expired')) &&
+			tags.reduce((sho, tag) => sho || el.classList.contains(`tag-${tag}`), tags.length === 0);
 		if (!show) {
 			el.classList.remove('visible');
 		}
 	});
 
-	if (!search) {
-		return;
-	}
 	search.set('tags', tags.join(' '));
-	const newRelativePathQuery = `${window.location.pathname}?${search.toString()}`;
-	history.pushState(null, '', newRelativePathQuery);
+
+	search.set('expired', showExpired.checked || '');
 }
 
-function handleSort() {
-	Array.from(contentEl.children)
-		.map(child => contentEl.removeChild(child))
-		.sort(sort[sortingInput.value])
-		.forEach(sortedChild => contentEl.appendChild(sortedChild));
+function updateUrl() {
+	let nextPath = window.location.pathname;
+
+	const emptyParams = [];
+	for (const [key, value] of search) {
+		if (!value.trim()) {
+			emptyParams.push(key);
+		}
+	}
+
+	emptyParams.forEach(param => search.delete(param));
+
+	const queryString = search.toString();
+	if (queryString) {
+		nextPath += `?${queryString}`;
+	}
+
+	history.pushState(null, '', nextPath);
 }
 
 // The cascade is the function which handles calling filtering and sorting swag
 function cascade(force = false) {
 	force |= handleDifficulty(this === filterInput);
-	force |= handleTags(Boolean(this.el));
 	if (force || this === sortingInput) {
-		handleSort(this === sortingInput);
+		handleSort();
 	}
+
+	handleTags();
+	updateUrl();
 }
 
 window.addEventListener('load', () => {
@@ -96,14 +112,18 @@ window.addEventListener('load', () => {
 
 	if ('URLSearchParams' in window) {
 		search = new URLSearchParams(window.location.search);
+
 		if (search.has('tags')) {
 			selectr.setValue(search.get('tags').split(' '));
 		}
+
+		showExpired.checked = search.get('expired') === 'true';
 	}
 
 	selectr.on('selectr.change', cascade);
 	filterInput.addEventListener('input', cascade);
 	sortingInput.addEventListener('input', cascade);
+	showExpired.addEventListener('change', cascade);
 
 	cascade.call(window, true);
 });
