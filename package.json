@@ -18,7 +18,7 @@
     "@babel/core": "^7.1.2",
     "@babel/preset-env": "^7.1.0",
     "cross-env": "^5.2.0",
-    "del": "^3.0.0",
+    "del": "^4.0.0",
     "eclint": "^2.8.1",
     "gulp": "^4.0.0",
     "gulp-babel": "^8.0.0",
