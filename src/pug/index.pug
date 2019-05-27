@@ -16,19 +16,27 @@ html(lang='en')
 		form(name='contact' method='POST' data-netlify='true')
 			p
 				label
-					| Your Name: 
+					| Name:
 					input(type='text' name='name')
 			p
 				label
-					| Your dqzdqz: 
-					input(type='text' name='ndzqdzqame')
+					| Email address:
+					input(type='text' name='email')
 			p
 				label
-					| Your Bite: 
-					input(type='text' name='abc')
+					| Opportunity name:
+					input(type='text' name='swag-name')
 			p
 				label
-					| Your Lol: 
-					input(type='number' name='txt')
+					| Opportunity URL:
+					input(type='text' name='swag-url')
+			p
+				label
+					| Opportunity description:
+					textarea(name='swag-description')
+			p
+				label
+					| Comment:
+					textarea(name='comment')
 			p
 				button(type='submit') Send
