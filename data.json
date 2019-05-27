@@ -81,6 +81,15 @@
     "tags": ["clothing", "hacktoberfest", "expired", "stickers"]
   },
   {
+    "name": "FSFE",
+    "difficulty": "easy",
+    "description": "Fill a form and receive promotional materials from Free Software Foundation Europe!",
+    "reference": "https://fsfe.org/contribute/spreadtheword.en.html",
+    "image": "https://i.imgur.com/TuOjguN.jpg",
+    "dateAdded": "2019-05-27T11:42:09.000Z",
+    "tags": ["stickers"]
+  },
+  {
     "name": "Gatsby",
     "difficulty": "hard",
     "description": "Get a pull request merged into Gatsby and receive a free shirt, socks, or stickers.",
