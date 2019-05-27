@@ -33,7 +33,7 @@
     "gulp-stylus": "^2.7.0",
     "gulp-uglify-es": "^1.0.4",
     "gulp-webserver": "^0.9.1",
-    "husky": "^1.2.0",
+    "husky": "^2.3.0",
     "lint-staged": "^8.1.0",
     "merge-stream": "^1.0.1",
     "xo": "^0.24.0"
