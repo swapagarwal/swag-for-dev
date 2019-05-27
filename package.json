@@ -34,7 +34,7 @@
     "gulp-uglify-es": "^1.0.4",
     "gulp-webserver": "^0.9.1",
     "husky": "^2.3.0",
-    "lint-staged": "^8.1.0",
+    "lint-prepush": "^0.4.1",
     "merge-stream": "^1.0.1",
     "xo": "^0.24.0"
   },
@@ -60,19 +60,16 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged"
+      "pre-push": "lint-prepush"
     }
   },
-  "lint-staged": {
-    "relative": true,
-    "linters": {
+  "lint-prepush": {
+    "tasks": {
       "**/*": [
-        "eclint fix",
-        "git add"
+        "eclint check"
       ],
       "**/*.{js,json}": [
-        "xo --fix",
-        "git add"
+        "xo"
       ]
     }
   }
