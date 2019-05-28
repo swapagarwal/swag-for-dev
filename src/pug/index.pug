@@ -13,7 +13,7 @@ html(lang='en')
 		script(defer src=bustedAssets.js)
 		script(defer src='https://cdn.jsdelivr.net/npm/mobius1-selectr@2.4.8/dist/selectr.min.js')
 
-		form(name='contact' method='POST' data-netlify='true')
+		form(name='contact' method='POST' data-netlify-recaptcha='true' data-netlify='true')
 			p
 				label
 					| Name:
@@ -38,5 +38,6 @@ html(lang='en')
 				label
 					| Comment:
 					textarea(name='comment')
+			div(data-netlify-recaptcha='true')
 			p
 				button(type='submit') Send
