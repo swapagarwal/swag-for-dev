@@ -117,6 +117,14 @@
     "tags": ["clothing", "hacktoberfest", "expired", "stickers"]
   },
   {
+    "name": "Jetbrains",
+    "difficulty": "easy",
+    "description": "Fill in the form and get stickers of Jetbrains products for your whole usergroup, event or commany. It's free to charge and sent anywere in the world."
+    "image": "https://i.imgur.com/3ziSn2P.png",
+    "dateAdded": "2019-06-12T13:05:31.000Z",
+    "tags": ["stickers"]
+  },
+  {
     "name": "JS Bin",
     "difficulty": "easy",
     "description": "Fill out a Google form with your name and address and get a sticker. There’s no cost to you, but they will be restricting the send outs to bi-monthly or quaterly depending on demand.",
