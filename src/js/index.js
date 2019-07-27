@@ -7,8 +7,8 @@ const ACTIVE_CLASS = 'visible';
 const sort = {
 	ALPHABETICAL_ASCENDING: (a, b) => a.dataset.name > b.dataset.name ? 1 : -1,
 	ALPHABETICAL_DESCENDING: (a, b) => a.dataset.name < b.dataset.name ? 1 : -1,
-	DIFFICULTY_ASCENDING: (a, b) => a.dataset.difficulty > b.dataset.difficulty ? 1 : -1,
-	DIFFICULTY_DESCENDING: (a, b) => a.dataset.difficulty < b.dataset.difficulty ? 1 : -1
+	DIFFICULTY_ASCENDING: (a, b) => a.dataset.difficulty === b.dataset.difficulty ? (a.dataset.name > b.dataset.name ? 1 : -1) : a.dataset.difficulty > b.dataset.difficulty ? 1 : -1,
+	DIFFICULTY_DESCENDING: (a, b) => a.dataset.difficulty === b.dataset.difficulty ? (a.dataset.name > b.dataset.name ? 1 : -1) : a.dataset.difficulty < b.dataset.difficulty ? 1 : -1
 };
 
 const contentEl = document.querySelector('#content');
