@@ -108,6 +108,15 @@
     "tags": ["clothing", "device"]
   },
   {
+    "name": "Google Cloud",
+    "difficulty": "medium",
+    "description": "Finish 3 Quests on Qwiklabs before the deadline, get recognized by Google Developers, get cool schwags and more! (Ships only to India)",
+    "reference": "https://events.withgoogle.com/india-cloud-studyjam/30-days-challenge/",
+    "image": "https://i.imgur.com/7Tavv0f.jpg",
+    "dateAdded": "2019-008-17T18:50:23.000Z",
+    "tags": ["clothing", "stickers"]
+  },
+  {
     "name": "Hasura",
     "difficulty": "medium",
     "description": "Submit a PR to Hasura's <a href='https://github.com/hasura/graphql-engine'>GraphQL Engine repo</a> in October 2018 and get a Hasura sticker pack. If your PR to an issue tagged as 'hacktoberfest' gets merged, you also get a Hasura t-shirt!",
