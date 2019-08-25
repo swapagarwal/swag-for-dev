@@ -12,6 +12,8 @@ const concat = require('gulp-concat');
 const download = require('gulp-download-stream');
 const responsive = require('gulp-responsive');
 const merge = require('merge-stream');
+const postcss = require('gulp-postcss');
+const autoprefixer = require('autoprefixer');
 
 const {swagList, swagImages} = require('./get-data');
 
@@ -65,6 +67,9 @@ gulp.task('pug', () => {
 gulp.task('styl', () => {
 	return gulp.src('src/styl/index.styl')
 		.pipe(stylus({compress: true}))
+		.pipe(postcss([
+			autoprefixer({browsers: ['last 1 version']})
+    	]))
 		.pipe(gulp.dest('dist/assets/css'));
 });
 
