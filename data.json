@@ -83,7 +83,7 @@
   {
     "name": "Digital Ocean Hacktoberfast",
     "difficulty": "easy",
-    "description": "Add 4 pull requests to github and get a t-shirt ",
+    "description": "Register and make four pull requests (PRs) between October 1-31 (in any time zone) get a limited t-shirt ",
     "reference": "https://hacktoberfest.digitalocean.com" ,
     "image": "https://hacktoberfest.digitalocean.com/assets/logo-hf19-header-8245176fe235ab5d942c7580778a914110fa06a23c3d55bf40e2d061809d8785.svg",
     "dateAdded": "2019-09-25T17:27:00.000Z",
