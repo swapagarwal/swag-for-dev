@@ -38,7 +38,7 @@
     "husky": "^3.0.0",
     "lint-prepush": "^0.4.1",
     "merge-stream": "^2.0.0",
-    "xo": "^0.24.0"
+    "xo": "^0.25.0"
   },
   "scripts": {
     "lint": "eclint check && xo",
