@@ -69,7 +69,7 @@ gulp.task('styl', () => {
 		.pipe(stylus({compress: true}))
 		.pipe(postcss([
 			autoprefixer({browsers: ['last 2 versions']})
-    	]))
+		]))
 		.pipe(gulp.dest('dist/assets/css'));
 });
 
