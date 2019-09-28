@@ -81,7 +81,7 @@
     "tags": ["clothing", "hacktoberfest", "expired", "stickers"]
   },
   {
-    "name": "Digital Ocean Hacktoberfast",
+    "name": "Hacktoberfest 2019",
     "difficulty": "hard",
     "description": "To qualify for the official limited edition Hacktoberfest T-shirt, you must register and then make four pull requests (PRs) between October 1-31 (in any time zone).",
     "reference": "https://hacktoberfest.digitalocean.com/" ,
