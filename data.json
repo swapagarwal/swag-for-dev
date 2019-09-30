@@ -313,5 +313,14 @@
     "image": "https://developers.whatismybrowser.com/static/main/content/api/swag/whatismybrowser-stickers.jpg",
     "dateAdded": "2018-10-12T13:05:05.000Z",
     "tags": ["stickers"]
+  },
+  {
+    "name": "IPFS",
+    "difficulty": "easy",
+    "description": "Contact the IPFS team via e-mail, and ask them kindly for some swag!",
+    "reference": "https://github.com/ipfs/community/#swag",
+    "image": "https://user-images.githubusercontent.com/13170204/63634719-9a530880-c65a-11e9-9937-05a70564d1e8.jpg",
+    "dateAdded": "2019-09-30T16:16:05.000Z",
+    "tags": ["stickers", "clothing"]
   }
 ]
