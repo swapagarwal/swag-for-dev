@@ -83,7 +83,7 @@
   {
     "name": "Hacktoberfest 2019",
     "difficulty": "hard",
-    "description": "To qualify for the official limited edition Hacktoberfest T-shirt, you must register and then make four pull requests (PRs) between October 1-31 (in any time zone).",
+    "description": "To qualify for the official limited edition Hacktoberfest T-shirt, you must register and then make four pull requests (PRs) between October 1-31 (in any time zone). The first 50,000 participants who successfully complete the challenge will earn the T-shirt",
     "reference": "https://hacktoberfest.digitalocean.com/" ,
     "image": "https://pbs.twimg.com/card_img/1176869054440759297/fqTgIxE3?format=png&name=medium",
     "dateAdded": "2019-09-25T17:27:00.000Z",
