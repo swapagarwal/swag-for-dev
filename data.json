@@ -331,5 +331,13 @@
     "image": "https://developers.whatismybrowser.com/static/main/content/api/swag/whatismybrowser-stickers.jpg",
     "dateAdded": "2018-10-12T13:05:05.000Z",
     "tags": ["stickers"]
-  }
+  },
+  {
+    "name": "BOSS - Bountiful Open Source Summer",
+    "difficulty": "difficult",
+    "description": "Contribute to some of codingblocks' open issues to win some serious swag",
+    "reference": "https://lab.codingblocks.com/boss#prizes",
+    "image": "https://lab.codingblocks.com/assets/img/avatar.png",
+    "dateAdded": "2019-10-01T16:36:50.000Z",
+    "tags": ["surface pro", "oneplus 7", "fitbit charge 2", "goodie bag"]
 ]
