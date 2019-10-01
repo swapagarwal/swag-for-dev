@@ -1,5 +1,14 @@
 [
   {
+    "name": "DigitalOcean",
+    "difficulty": "easy",
+    "description": "Complete this DigitalOcean’s survey to receive a limited edition open source 'Sammy Shark' sticker!",
+    "reference": "https://digitalocean.getfeedback.com/r/p44ADlqG/",
+    "image": "https://miro.medium.com/max/2400/1*3v_GkMeEd8_2068Yr3zQtQ.jpeg",
+    "dateAdded": "2019-10-1T11:00:00.000Z",
+    "tags": ["stickers"]
+  },
+  {
     "name": "7PHP",
     "difficulty": "easy",
     "description": "If you are a fan of 7PHP, send them an email and receive some free stickers!",
