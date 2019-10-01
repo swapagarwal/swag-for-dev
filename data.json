@@ -84,7 +84,7 @@
     "name": "Hacktoberfest 2019",
     "difficulty": "hard",
     "description": "To qualify for the official limited edition Hacktoberfest T-shirt, you must register and then make four pull requests (PRs) between October 1-31 (in any time zone).",
-    "reference": "https://hacktoberfest.digitalocean.com/" ,
+    "reference": "https://hacktoberfest.digitalocean.com/",
     "image": "https://pbs.twimg.com/card_img/1176869054440759297/fqTgIxE3?format=png&name=medium",
     "dateAdded": "2019-09-25T17:27:00.000Z",
     "tags": ["clothing", "hacktoberfest"]
@@ -312,6 +312,15 @@
     "reference": "https://developers.whatismybrowser.com/api/swag/",
     "image": "https://developers.whatismybrowser.com/static/main/content/api/swag/whatismybrowser-stickers.jpg",
     "dateAdded": "2018-10-12T13:05:05.000Z",
+    "tags": ["stickers"]
+  },
+  {
+    "name": "Blockstack",
+    "difficulty": "easy",
+    "description": "Fill up the form and get free laptop stickers!",
+    "reference": "https://community.blockstack.org/stickers",
+    "image": "https://i.imgur.com/sT39ypy.png",
+    "dateAdded": "2019-10-01T09:54:05.000Z",
     "tags": ["stickers"]
   }
 ]
