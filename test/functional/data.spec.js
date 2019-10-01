@@ -1,6 +1,9 @@
 const got = require('got');
 const {expect} = require('chai');
 const parallel = require('mocha.parallel');
+const chai = require("chai");
+
+chai.use(require("chai-sorted"));
 
 const data = require('../../data.json');
 const LIMIT_PARALLEL_TESTS = 10;
@@ -34,6 +37,10 @@ describe('swag-for-dev', function () {
 		});
 	});
 
+	it('valid alphabetical order', function(){
+		expect(data.map(item => item.name.toUpperCase())).to.be.sorted();
+	});
+
 	const dataSlices = [];
 	for (let i = 0, {length} = data; i < length; i += LIMIT_PARALLEL_TESTS) {
 		dataSlices.push(data.slice(i, i + LIMIT_PARALLEL_TESTS));
@@ -62,4 +69,5 @@ describe('swag-for-dev', function () {
 			});
 		});
 	});
+
 });
