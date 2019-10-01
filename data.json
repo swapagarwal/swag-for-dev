@@ -117,6 +117,15 @@
     "tags": ["clothing", "hacktoberfest", "expired", "stickers"]
   },
   {
+    "name": "IPFS",
+    "difficulty": "easy",
+    "description": "Contact the IPFS team via e-mail, and ask them kindly for some swag!",
+    "reference": "https://github.com/ipfs/community/#swag",
+    "image": "https://i.imgur.com/sGUHD1P.jpg",
+    "dateAdded": "2019-08-20T19:20:42.000Z",
+    "tags": ["stickers", "clothing"]
+  },
+  {
     "name": "Jetbrains",
     "difficulty": "easy",
     "description": "Fill in the form and get stickers of Jetbrains products for your whole usergroup, event or company. It's free of charge and sent anywere in the world.",
@@ -313,14 +322,5 @@
     "image": "https://developers.whatismybrowser.com/static/main/content/api/swag/whatismybrowser-stickers.jpg",
     "dateAdded": "2018-10-12T13:05:05.000Z",
     "tags": ["stickers"]
-  },
-  {
-    "name": "IPFS",
-    "difficulty": "easy",
-    "description": "Contact the IPFS team via e-mail, and ask them kindly for some swag!",
-    "reference": "https://github.com/ipfs/community/#swag",
-    "image": "https://i.imgur.com/sGUHD1P.jpg",
-    "dateAdded": "2019-08-20T19:20:42.000Z",
-    "tags": ["stickers", "clothing"]
   }
 ]
