@@ -99,15 +99,6 @@
     "tags": ["clothing", "stickers"]
   },
   {
-    "name": "Google Assistant",
-    "difficulty": "hard",
-    "description": "Make an app for the Google Assistant available to users, get an exclusive Google Assistant t-shirt and a Google Home (if a certain number of users engage with it)!",
-    "reference": "https://developers.google.com/actions/community/overview",
-    "image": "https://i.imgur.com/xElC8jm.jpg",
-    "dateAdded": "2018-02-18T19:59:42.000Z",
-    "tags": ["clothing", "device"]
-  },
-  {
     "name": "Hasura",
     "difficulty": "medium",
     "description": "Submit a PR to Hasura's <a href='https://github.com/hasura/graphql-engine'>GraphQL Engine repo</a> in October 2018 and get a Hasura sticker pack. If your PR to an issue tagged as 'hacktoberfest' gets merged, you also get a Hasura t-shirt!",
