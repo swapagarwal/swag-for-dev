@@ -1,14 +1,5 @@
 [
   {
-    "name": "DigitalOcean",
-    "difficulty": "easy",
-    "description": "Complete this DigitalOcean’s survey to receive a limited edition open source 'Sammy Shark' sticker!",
-    "reference": "https://digitalocean.getfeedback.com/r/p44ADlqG/",
-    "image": "https://miro.medium.com/max/2400/1*3v_GkMeEd8_2068Yr3zQtQ.jpeg",
-    "dateAdded": "2019-10-1T11:00:00.000Z",
-    "tags": ["stickers"]
-  },
-  {
     "name": "7PHP",
     "difficulty": "easy",
     "description": "If you are a fan of 7PHP, send them an email and receive some free stickers!",
@@ -88,6 +79,15 @@
     "image": "https://user-images.githubusercontent.com/121322/45907730-f6a80b00-bdad-11e8-93ef-774392192716.png",
     "dateAdded": "2018-02-18T07:48:58.000Z",
     "tags": ["clothing", "hacktoberfest", "expired", "stickers"]
+  },
+  {
+    "name": "Digital Ocean",
+    "difficulty": "easy",
+    "description": "Complete this Digital Ocean’s survey to receive a limited edition open source 'Sammy Shark' sticker!",
+    "reference": "https://digitalocean.getfeedback.com/r/p44ADlqG/",
+    "image": "https://miro.medium.com/max/2400/1*3v_GkMeEd8_2068Yr3zQtQ.jpeg",
+    "dateAdded": "2019-10-1T11:00:00.000Z",
+    "tags": ["stickers"]
   },
   {
     "name": "Hacktoberfest 2019",
