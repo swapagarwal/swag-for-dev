@@ -15,13 +15,13 @@
   },
   "dependencies": {
     "p-queue": "^6.6.1",
-    "chai-sorted": "^0.2.0"
   },
   "devDependencies": {
     "@babel/core": "7.11.6",
     "@babel/preset-env": "7.11.5",
     "autoprefixer": "10.0.1",
     "chai": "4.2.0",
+    "chai-sorted": "^0.2.0",
     "chalk": "4.1.0",
     "cross-env": "7.0.2",
     "del": "6.0.0",

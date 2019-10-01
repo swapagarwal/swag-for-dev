@@ -1,9 +1,14 @@
 const got = require('got');
+<<<<<<< HEAD
 const {expect} = require('chai');
 const parallel = require('mocha.parallel');
 const chai = require("chai");
+=======
+const chai = require('chai');
+const {expect} = chai;
+>>>>>>> fixed linting + moved dependency to devdependency
 
-chai.use(require("chai-sorted"));
+chai.use(require('chai-sorted'));
 
 const data = require('../../data.json');
 const LIMIT_PARALLEL_TESTS = 10;
@@ -37,7 +42,7 @@ describe('swag-for-dev', function () {
 		});
 	});
 
-	it('valid alphabetical order', function(){
+	it('valid alphabetical order', function () {
 		expect(data.map(item => item.name.toUpperCase())).to.be.sorted();
 	});
 
@@ -69,5 +74,4 @@ describe('swag-for-dev', function () {
 			});
 		});
 	});
-
 });
