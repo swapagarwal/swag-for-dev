@@ -28,6 +28,8 @@ include ./fork.pug
 							option(value="ALPHABETICAL_DESCENDING" class="alphabetical") Alphabetical, reversed
 							option(value="DIFFICULTY_ASCENDING" class="difficulty") Difficulty
 							option(value="DIFFICULTY_DESCENDING" class="difficulty") Difficulty, reversed
+							option(value="DATEADDED_DESCENDING" class="dateAdded") Newest first
+							option(value="DATEADDED_ASCENDING" class="dateAdded") Oldest first
 					span order
 
 				.item.flex
@@ -47,6 +49,7 @@ include ./fork.pug
 					class="item " + (expired ? '' : 'visible ') + swag.difficulty + swag.tags.map(t => ` tag-${t}`).join('')
 					data-name=swag.name.toLowerCase()
 					data-difficulty=['easy','medium', 'hard'].indexOf(swag.difficulty)
+					data-dateadded=(new Date(swag.dateAdded)).getTime()
 				)
 					div.title.flex
 						h1=swag.name
