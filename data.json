@@ -324,6 +324,15 @@
     "tags": ["hacktoberfest", "expired"]
   },
   {
+    "name": "Umbraco",
+    "difficulty": "medium",
+    "description": "Have one approved PR on any Umbraco repo. All contributors will be listed by Github username in their November blog post!",
+    "reference": "https://umbraco.com/blog/hacktoberfest-2019/",
+    "image": "https://umbraco.com/media/5024/umbraco_logo_blue05.png",
+    "dateAdded": "2019-10-01T12:48:46.000Z",
+    "tags": ["hacktoberfest", "clothing"]
+  },
+  {
     "name": "WhatIsMyBrowser",
     "difficulty": "easy",
     "description": "Send an API request, get some sweet vinyl laptop stickers!",
