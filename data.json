@@ -105,7 +105,7 @@
     "reference": "https://developers.google.com/actions/community/overview",
     "image": "https://i.imgur.com/xElC8jm.jpg",
     "dateAdded": "2018-02-18T19:59:42.000Z",
-    "tags": ["clothing", "device", "expired"]
+    "tags": ["clothing", "device"]
   },
   {
     "name": "Hacktoberfest 2019",
@@ -331,5 +331,14 @@
     "image": "https://developers.whatismybrowser.com/static/main/content/api/swag/whatismybrowser-stickers.jpg",
     "dateAdded": "2018-10-12T13:05:05.000Z",
     "tags": ["stickers"]
+  },
+  {
+    "name": "Twilio Pixel Art",
+    "difficulty": "medium",
+    "description": "Have one contribution over to their new Pixel Art repo, more information in the link!",
+    "reference": "https://www.twilio.com/blog/ahoy-hacktoberfest-2019",
+    "image": "https://s3.amazonaws.com/com.twilio.prod.twilio-docs/images/csiWtl6w3hP8fCryTw7hzMlVdtBERqDcipAcuEas3wUl5e.width-808.png",
+    "dateAdded": "2019-10-02T20:35:15.000Z",
+    "tags": ["stickers", "clothing", "hacktoberfest"]
   }
 ]
