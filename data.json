@@ -180,7 +180,7 @@
     "tags": ["clothing", "hacktoberfest", "expired"]
   },
   {
-    "name": "MayaData.io",
+    "name": "MayaData",
     "difficulty": "medium",
     "description": "At the end of the month-long event, the individual who makes the most significant contributions will receive a brand new laptop.",
     "reference": "https://blog.mayadata.io/mayadata-celebrates-hacktoberfest-2019",
