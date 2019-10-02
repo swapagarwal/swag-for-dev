@@ -198,6 +198,15 @@
     "tags": ["stickers", "expired"]
   },
   {
+    "name": "MyData.io",
+    "difficulty": "medium",
+    "description": "At the end of the month-long event, the individual who makes the most significant contributions will receive a brand new laptop.",
+    "reference": "https://blog.mayadata.io/mayadata-celebrates-hacktoberfest-2019",
+    "image": "https://blog.mayadata.io/hs-fs/hubfs/Hacktoberfest-11-1.png",
+    "dateAdded": "2018-03-11T16:47:14.000Z",
+    "tags": ["clothing", "hacktoberfest", "stickers", "laptop"]
+  },
+  {
     "name": "NativeScript",
     "difficulty": "easy",
     "description": "Make your first contribution to the NativeScript community and win an awesome set of stickers. Among the stickers you will find a limited edition 'Contributor' sticker. ",
