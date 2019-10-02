@@ -2,6 +2,15 @@ include ./fork.pug
 
 .container
 
+	nav.nav
+		ul
+			li
+				a(href='#devSwag') About
+				a(href='#swags') Swags
+				a(href='#contactUs') Contact Us
+
+	.phantom-nav#devSwag
+
 	section.main.flex
 
 		.heading.flex
@@ -9,7 +18,7 @@ include ./fork.pug
 			p 😎 swag opportunities for developers
 			p As a developer, nothing piques my interest more than developer swag! I created devSwag to scratch my own itch by starting a curation of such opportunities in Feb '18. These are crowdsourced and verified by the community. All of them ship worldwide!
 
-		.buttons
+		.buttons#swags
 			.flex.controls
 				.item.flex
 					span Show
@@ -66,7 +75,7 @@ include ./fork.pug
 					p.description!=swag.description
 					a(href=swag.reference target="_blank") Check it out
 
-	footer.flex
+	footer.flex#contactUs
 		.item.flex
 			iframe(src='https://upscri.be/67d2fa?as_embed', style='width:100%;max-width:800px;margin:0 auto;', height='400', frameborder='0', title='Subscribe for updates')
 		.item.flex
