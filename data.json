@@ -324,6 +324,15 @@
     "tags": ["hacktoberfest", "expired"]
   },
   {
+    "name": "Valor Software",
+    "difficulty": "medium",
+    "description": "Make pull requests to issues tagged with \"Hacktoberfest\" label in ngx-bootstrap repo during October.",
+    "reference": "https://valor-software.com/articles/hacktoberfest-2019-is-coming-and-ngx-bootstrap-strives-for-your-attention.html",
+    "image": "https://valor-software.com/assets/images/5d91e2dd4a0f1c21c1926af7_kz-lK5fm2CcE0VGpreZj4UUOYw_-9r4ROFqU_WOmi5LEpBmRcF2Ax7BnBfCaxnlVMy9yj2dK0OuvQM9BKNQGzA2-eDQ8jO3joJpFAuEHvDtE26tYAzn8kZHY8Yb8IaaDnSNDdinF.jpeg",
+    "dateAdded": "2019-09-30T12:48:46.000Z",
+    "tags": ["hacktoberfest", "sticker", "pen", "notebook", "phone stand"]
+  },
+  {
     "name": "WhatIsMyBrowser",
     "difficulty": "easy",
     "description": "Send an API request, get some sweet vinyl laptop stickers!",
