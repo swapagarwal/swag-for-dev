@@ -326,11 +326,11 @@
   {
     "name": "Umbraco",
     "difficulty": "medium",
-    "description": "Have one approved PR on any Umbraco repo. All contributors will be listed by Github username in their November blog post!",
+    "description": "Have one approved PR on any Umbraco repo to get some exclusive and limited Umbraco swag. All contributors will also be listed by Github username in their November blog post!",
     "reference": "https://umbraco.com/blog/hacktoberfest-2019/",
-    "image": "https://umbraco.com/media/5024/umbraco_logo_blue05.png",
-    "dateAdded": "2019-10-01T12:48:46.000Z",
-    "tags": ["hacktoberfest", "clothing"]
+    "image": "https://umbraco.com/media/6215/hacktoberfest2.png",
+    "dateAdded": "2019-09-29T14:53:46.000Z",
+    "tags": ["hacktoberfest", "stickers"]
   },
   {
     "name": "WhatIsMyBrowser",
