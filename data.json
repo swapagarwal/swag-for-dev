@@ -344,11 +344,11 @@
   {
     "name": "Valor Software",
     "difficulty": "medium",
-    "description": "Make pull requests to issues tagged with \"Hacktoberfest\" label in ngx-bootstrap repo during October.",
+    "description": "Make pull requests to issues tagged with \"Hacktoberfest\" label in ngx-bootstrap repo during October and get a pen, a sticker, a notepad, and a wooden phone stand.",
     "reference": "https://valor-software.com/articles/hacktoberfest-2019-is-coming-and-ngx-bootstrap-strives-for-your-attention.html",
-    "image": "https://valor-software.com/assets/images/5d91e2dd4a0f1c21c1926af7_kz-lK5fm2CcE0VGpreZj4UUOYw_-9r4ROFqU_WOmi5LEpBmRcF2Ax7BnBfCaxnlVMy9yj2dK0OuvQM9BKNQGzA2-eDQ8jO3joJpFAuEHvDtE26tYAzn8kZHY8Yb8IaaDnSNDdinF.jpeg",
-    "dateAdded": "2019-09-30T12:48:46.000Z",
-    "tags": ["hacktoberfest", "sticker", "pen", "notebook", "phone stand"]
+    "image": "https://valor-software.com/assets/images/5d91e2ddd7ccc682175962ea_f27J06AkBW3Dd3pB4fanZWw1sbrhcs-GJCI5H3DgSK_U2R2cbRSAY_-3hTCe75DQU9iMPJpWnJJlSLra_yAyKtPmzmyeUlGVIVlTj2do6t_Y1za0aYfDaTVc8bR6yFgEwNIQ1ZXM.jpeg",
+    "dateAdded": "2019-10-04T16:13:00.000Z",
+    "tags": ["hacktoberfest", "stickers", "accessories"]
   },
   {
     "name": "WhatIsMyBrowser",
