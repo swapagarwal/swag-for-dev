@@ -9,6 +9,15 @@
     "tags": ["stickers"]
   },
   {
+    "name": "Accord Project",
+    "difficulty": "medium",
+    "description": "Contribute to their participating repositories, get swag in the form of t-shirts and stickers. You'll also be mentioned in a dedicated blog post in November.",
+    "reference": "https://www.accordproject.org/events/hacktoberfest-2019/",
+    "image": "https://img.accordproject.org/wp-content/uploads/2019/09/01183436/1.-T-Shirt-Mockup.jpg",
+    "dateAdded": "2019-10-04T15:29:00.000Z",
+    "tags": ["stickers", "clothing", "hacktoberfest"]
+  },
+  {
     "name": "Alexa",
     "difficulty": "hard",
     "description": "Publish a skill, get a t-shirt and an Echo Spot (if 50 customers per month use your Display skill for the first three months after publication)! Earn a 2-pack of Echo Buttons if you publish a Gadgets skill!",
@@ -112,7 +121,7 @@
     "difficulty": "hard",
     "description": "To qualify for the official limited edition Hacktoberfest T-shirt, you must register and then make four pull requests (PRs) between October 1-31 (in any time zone).",
     "reference": "https://hacktoberfest.digitalocean.com/" ,
-    "image": "https://pbs.twimg.com/card_img/1176869054440759297/fqTgIxE3?format=png&name=medium",
+    "image": "https://hacktoberfest.digitalocean.com/assets/HF19_social-744d976f227e4aff6866443abcede8c651b309ec9c7c9f7410f5944f8e1299b9.png",
     "dateAdded": "2019-09-25T17:27:00.000Z",
     "tags": ["clothing", "hacktoberfest"]
   },
@@ -183,19 +192,10 @@
     "name": "Microsoft",
     "difficulty": "medium",
     "description": "Make one pull request in October 2018 to any <a href='https://opensource.microsoft.com/'>open source Microsoft repository</a>, earn a limited edition T-shirt!",
-    "reference": "https://open.microsoft.com/2018/09/30/join-hacktoberfest-2018-celebration-microsoft/",
+    "reference": "https://cloudblogs.microsoft.com/opensource/2018/09/30/join-hacktoberfest-2018-celebration-microsoft/",
     "image": "https://open.microsoft.com/wp-content/uploads/2018/09/Hacktoberfest-Blog.jpg",
     "dateAdded": "2018-10-01T08:36:05.000Z",
     "tags": ["clothing", "hacktoberfest", "expired"]
-  },
-  {
-    "name": "Mullvad",
-    "difficulty": "easy",
-    "description": "Send an email to Mullvad to get an assortment of stickers sent your way.",
-    "reference": "https://webcache.googleusercontent.com/search?q=cache:_vQawHjHG5gJ:https://mullvad.net/en/blog/2017/6/30/mullvad-merch-available/",
-    "image": "https://www.mullvad.net/media/uploads/2017/10/20/mullvad-stickers.jpg",
-    "dateAdded": "2018-03-11T16:47:14.000Z",
-    "tags": ["stickers", "expired"]
   },
   {
     "name": "NativeScript",
@@ -315,6 +315,15 @@
     "tags": ["clothing", "expired"]
   },
   {
+    "name": "Twilio",
+    "difficulty": "easy",
+    "description": "A collection of stickers and a special pair of Twilio socks are up for grabs when you contribute to any project on github.com/twilio-labs (including the Open Pixel Art project).",
+    "reference": "https://www.twilio.com/blog/ahoy-hacktoberfest-2019",
+    "image": "https://s3.amazonaws.com/com.twilio.prod.twilio-docs/images/sticker-teaser-questionmark.width-1000.jpg",
+    "dateAdded": "2019-10-04T15:55:15.000Z",
+    "tags": ["stickers", "clothing", "hacktoberfest"]
+  },
+  {
     "name": "Umbraco",
     "difficulty": "medium",
     "description": "Have one accepted pull request in a Umbraco repository during October 2018 to get some super exclusive Umbraco swag. All the contributors will also be listed by Github username in a dedicated blog post in November.",
@@ -322,6 +331,15 @@
     "image": "https://shop.umbraco.com/media/2989609/img_0722.jpg",
     "dateAdded": "2018-10-20T12:48:46.000Z",
     "tags": ["hacktoberfest", "expired"]
+  },
+  {
+    "name": "Umbraco",
+    "difficulty": "medium",
+    "description": "Have one approved PR on any Umbraco repo to get some exclusive and limited Umbraco swag. All contributors will also be listed by Github username in their November blog post!",
+    "reference": "https://umbraco.com/blog/hacktoberfest-2019/",
+    "image": "https://umbraco.com/media/6215/hacktoberfest2.png",
+    "dateAdded": "2019-10-04T15:17:00.000Z",
+    "tags": ["hacktoberfest", "stickers"]
   },
   {
     "name": "Valor Software",
