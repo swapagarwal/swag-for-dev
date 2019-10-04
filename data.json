@@ -315,6 +315,15 @@
     "tags": ["clothing", "expired"]
   },
   {
+    "name": "Twilio",
+    "difficulty": "easy",
+    "description": "A collection of stickers and a special pair of Twilio socks are up for grabs when you contribute to any project on github.com/twilio-labs (including the Open Pixel Art project).",
+    "reference": "https://www.twilio.com/blog/ahoy-hacktoberfest-2019",
+    "image": "https://s3.amazonaws.com/com.twilio.prod.twilio-docs/images/sticker-teaser-questionmark.width-1000.jpg",
+    "dateAdded": "2019-10-04T15:55:15.000Z",
+    "tags": ["stickers", "clothing", "hacktoberfest"]
+  },
+  {
     "name": "Umbraco",
     "difficulty": "medium",
     "description": "Have one accepted pull request in a Umbraco repository during October 2018 to get some super exclusive Umbraco swag. All the contributors will also be listed by Github username in a dedicated blog post in November.",
@@ -331,14 +340,5 @@
     "image": "https://developers.whatismybrowser.com/static/main/content/api/swag/whatismybrowser-stickers.jpg",
     "dateAdded": "2018-10-12T13:05:05.000Z",
     "tags": ["stickers"]
-  },
-  {
-    "name": "Twilio Pixel Art",
-    "difficulty": "medium",
-    "description": "Have one contribution over to their new Pixel Art repo, more information in the link!",
-    "reference": "https://www.twilio.com/blog/ahoy-hacktoberfest-2019",
-    "image": "https://s3.amazonaws.com/com.twilio.prod.twilio-docs/images/csiWtl6w3hP8fCryTw7hzMlVdtBERqDcipAcuEas3wUl5e.width-808.png",
-    "dateAdded": "2019-10-02T20:35:15.000Z",
-    "tags": ["stickers", "clothing", "hacktoberfest"]
   }
 ]
