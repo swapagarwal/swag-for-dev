@@ -355,7 +355,7 @@
     "description": "Get a QMK-specific Hacktoberfest t-shirt after interacting 4 times with a QMK repo in a variety of ways including: (1) open a PR to fix a #hactoberfest issue, (2) make a contributing comment on a #hacktoberfest issue, (3) open a PR to translate some documentation.  There are more specified interactions on their site, and QMK is open to other significant contributions not mentioned.",
     "reference": "https://hacktoberfest.qmk.fm/",
     "image": "https://hacktoberfest.qmk.fm/img/logo.png",
-    "dateAdded": "2019-10-04T16:16:36.263Z",
+    "dateAdded": "2019-10-04T16:16:36.000Z",
     "tags": ["clothing", "hacktoberfest"]
   }
 ]
