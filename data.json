@@ -10,12 +10,12 @@
   },
   {
     "name": "Accord Project",
-    "difficulty": "hard",
-    "description": "Have two accepted pull request in any Accord Project will receive the sticker. Have  1 valid ‘Difficulty: Challenging‘ PR (OR) 2 valid ‘Difficulty: Medium‘ PRs (OR) 5 valid ‘Difficulty: Starter‘ PRs will get the T-shirt.",
+    "difficulty": "medium",
+    "description": "Contribute to their participating repositories, get swag in the form of t-shirts and stickers. You'll also be mentioned in a dedicated blog post in November.",
     "reference": "https://www.accordproject.org/events/hacktoberfest-2019/",
     "image": "https://img.accordproject.org/wp-content/uploads/2019/09/01183436/1.-T-Shirt-Mockup.jpg",
-    "dateAdded": "2019-11-02T08:18:00.000Z",
-    "tags": ["stickers","clothing","hacktoberfest"]
+    "dateAdded": "2019-10-04T15:29:00.000Z",
+    "tags": ["stickers", "clothing", "hacktoberfest"]
   },
   {
     "name": "Alexa",
