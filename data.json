@@ -171,7 +171,7 @@
     "tags": ["clothing", "hacktoberfest", "expired"]
   },
   {
-    "name": "Magento",
+    "name": "Magento + Adobe",
     "difficulty": "hard",
     "description": "Submit 5 or more pull requests during October 2019 to any open repositories under github.com/adobe or github.com/magento, get a Squashtoberfest T-Shirt!",
     "reference": "https://opensource.adobe.com/squashtoberfest/",
