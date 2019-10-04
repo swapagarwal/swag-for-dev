@@ -330,7 +330,7 @@
     "reference": "https://platform.uno/uno-is-joining-hacktoberfest-2019/",
     "image": "https://s3.amazonaws.com/uno-website-assets/wp-content/uploads/2019/08/21141002/diagram-991x1024.png",
     "dateAdded": "2019-09-25T13:05:05.000Z",
-    "tags": ["clothing"]
+    "tags": ["clothing", "hacktoberfest"]
   },
     "name": "Umbraco",
     "difficulty": "medium",
