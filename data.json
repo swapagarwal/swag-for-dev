@@ -341,6 +341,7 @@
     "dateAdded": "2019-09-25T13:05:05.000Z",
     "tags": ["clothing", "hacktoberfest"]
   },
+  {
     "name": "Umbraco",
     "difficulty": "medium",
     "description": "Have one approved PR on any Umbraco repo to get some exclusive and limited Umbraco swag. All contributors will also be listed by Github username in their November blog post!",
