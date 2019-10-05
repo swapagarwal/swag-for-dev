@@ -279,6 +279,15 @@
     "tags": ["clothing", "accessories", "expired", "stickers"]
   },
   {
+    "name": "Python Discord Hacktoberfest 2019",
+    "difficulty": "hard",
+    "description": "The top two contributors to the public repos of python discord will win one of the limited edition Hacktoberfest PyDis t-shirts, and the three runner-ups will get 1 year licenses for any JetBrains product of their choice. All major contributors will also be receiving Contributor roles on the server, which grants access to python discord's top-secret internal development channels!",
+    "reference": "https://www.reddit.com/r/Python/comments/dbj0vh/python_discord_hacktoberfest_2019/" ,
+    "image": "https://avatars3.githubusercontent.com/u/36101493",
+    "dateAdded": "2019-10-04T18:11:00.000Z",
+    "tags": ["clothing", "hacktoberfest"]
+  },
+  {
     "name": "SendGrid",
     "difficulty": "hard",
     "description": "Five accepted pull results from SendGrid will qualify you for a special edition SendGrid Hacktoberfest T-shirt.",
