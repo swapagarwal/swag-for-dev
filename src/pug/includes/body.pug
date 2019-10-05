@@ -24,12 +24,12 @@ include ./fork.pug
 					.select-wrapper
 						label.sr-only(for="sorting") Sort opportunities
 						select#sorting
-							option(value="ALPHABETICAL_ASCENDING" class="alphabetical") Alphabetical
-							option(value="ALPHABETICAL_DESCENDING" class="alphabetical") Alphabetical, reversed
-							option(value="DIFFICULTY_ASCENDING" class="difficulty") Difficulty
-							option(value="DIFFICULTY_DESCENDING" class="difficulty") Difficulty, reversed
-							option(value="DATEADDED_DESCENDING" class="dateAdded") Newest first
-							option(value="DATEADDED_ASCENDING" class="dateAdded") Oldest first
+							option(value="DATEADDED_DESCENDING" class="dateAdded") Newest First
+							option(value="DATEADDED_ASCENDING" class="dateAdded") Oldest First
+							option(value="ALPHABETICAL_ASCENDING" class="alphabetical") A -> Z
+							option(value="ALPHABETICAL_DESCENDING" class="alphabetical") Z -> A
+							option(value="DIFFICULTY_ASCENDING" class="difficulty") Difficulty: Easy to Hard
+							option(value="DIFFICULTY_DESCENDING" class="difficulty") Difficulty: Hard to Easy
 					span order
 
 				.item.flex
