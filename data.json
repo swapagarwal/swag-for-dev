@@ -328,8 +328,17 @@
     "difficulty": "medium",
     "description": "LadybugTools is offering a sticker if you contribute 1 or more Pull Requests to solve one of our hacktoberfest labelled issues.",
     "reference": "https://discourse.ladybug.tools/t/celebrate-hacktoberfest-2019-with-ladybug-tools/7314",
-    "image": "https://blogs.sap.com/wp-content/uploads/2019/10/hacktoberfest.jpg",
+    "image": "",
     "dateAdded": "2019-10-05T13:47:00.000Z",
     "tags": ["stickers"]
+  },
+  {
+    "name": "Appwrite",
+    "difficulty": "easy",
+    "description": "Go over to Appwrite's Github repo, look for issues labeled as help wanted or hacktoberfest and try to help by submitting a pull request.",
+    "reference": "https://medium.com/appwrite-io/hacktoberfest-2019-is-almost-here-lets-celebrate-it-together-24b311236dd",
+    "image": "https://miro.medium.com/max/2400/1*G-lkLl7NFKGOCgydSib18g.png",
+    "dateAdded": "2019-10-05T13:55:00.000Z",
+    "tags": ["stickers", "badges"]
   }
 ]
