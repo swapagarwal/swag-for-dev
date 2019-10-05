@@ -313,5 +313,14 @@
     "image": "https://developers.whatismybrowser.com/static/main/content/api/swag/whatismybrowser-stickers.jpg",
     "dateAdded": "2018-10-12T13:05:05.000Z",
     "tags": ["stickers"]
+  },
+  {
+    "name": "SAP",
+    "difficulty": "medium",
+    "description": "Make a valid change in one abap Project and submit PR",
+    "reference": "https://blogs.sap.com/2019/10/04/lets-code-share-and-learn.-calling-abapers-to-next-edition-of-hacktoberfest/",
+    "image": "https://blogs.sap.com/wp-content/uploads/2019/10/hacktoberfest.jpg",
+    "dateAdded": "2019-10-05T13:40:00.000Z",
+    "tags": ["accessories"]
   }
 ]
