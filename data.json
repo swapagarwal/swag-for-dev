@@ -288,6 +288,15 @@
     "tags": ["clothing", "hacktoberfest", "expired"]
   },
   {
+    "name": "Sense/Net Hacktoberfest 2019",
+    "difficulty": "easy",
+    "description": "First 100 participants to make a pull request to any Sense/Net repo between October 1 and October 31 will receive a limited edition sensenet #hacktoberfest t-shirt.",
+    "reference": "https://community.sensenet.com/blog/2019/10/01/hacktoberfest-is-here",
+    "image": "https://community.sensenet.com/img/posts/hacktoberfest2019.png",
+    "dateAdded": "2019-10-05T22:56:53.000Z",
+    "tags": ["clothing", "hacktoberfest"]
+  },
+  {
     "name": "SimbaChain",
     "difficulty": "easy",
     "description": "Register and get a free Blockchain Shirt! Pick your side, <code>eth_listtransactions = _yep</code> vs <code>eth_listtransactions = _nope</code>. Ships only to USA.",
