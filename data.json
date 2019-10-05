@@ -173,11 +173,11 @@
   {
     "name": "LBRY",
     "difficulty": "medium",
-    "description": "A sweet T-shirt for anyone who submits 3 Pull Requests. A Lamborghini Aventador S for anyone who submits 800,000 accepted PRs.",
-    "reference": "https://lbry.io/news/hacktoberfest",
-    "image": "https://pbs.twimg.com/media/Dowf_X5XkAAXR3T.jpg",
-    "dateAdded": "2018-10-22T21:19:41.000Z",
-    "tags": ["clothing", "hacktoberfest", "expired"]
+    "description": "Anyone who makes any contribution at all, even a one line typo fix, will receive a LBRY sticker.Anyone who contributes anything of any substance* will receive a sticker, LBRY t-shirt, and more.And as always, anyone who contributes will receive LBC as appreciation.Additionally, this month only, every contributor, new or returning, will receive a 10,000 LBC bonus for their first PR of this month." 
+    "reference": "https://lbry.com/news/hacktoberfest-2019",
+    "image": "https://spee.ch/@lbryblog:e/hacktoberfest2019.png",
+    "dateAdded": "2019-10-05T10:23:46.876Z",
+    "tags": ["clothing", "hacktoberfest"]
   },
   {
     "name": "Magento",
