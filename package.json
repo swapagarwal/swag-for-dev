@@ -17,7 +17,7 @@
   "devDependencies": {
     "@babel/core": "7.6.2",
     "@babel/preset-env": "7.6.2",
-    "autoprefixer": "9.6.2",
+    "autoprefixer": "9.6.3",
     "chai": "4.2.0",
     "cross-env": "6.0.3",
     "del": "5.1.0",
