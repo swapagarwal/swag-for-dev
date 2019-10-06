@@ -38,7 +38,7 @@
   {
     "name": "Appwrite",
     "difficulty": "medium",
-    "description": "Make pull requests to issues tagged with \"Hacktoberfest\" or \"help wanted\" label in appwrite repo during October to get some stickers and badges.",
+    "description": "Make pull requests to issues tagged <code>Hacktoberfest<code> or <code>help wanted</code> in the <a href='https://github.com/appwrite/appwrite'>appwrite repo</a> during October to get some stickers and badges.",
     "reference": "https://medium.com/appwrite-io/hacktoberfest-2019-is-almost-here-lets-celebrate-it-together-24b311236dd",
     "image": "https://miro.medium.com/max/1600/1*mk5pBbuAZUg9j7nc6lbfrg.jpeg",
     "dateAdded": "2019-10-06T20:30:00.000Z",
