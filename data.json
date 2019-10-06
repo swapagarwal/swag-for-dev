@@ -358,5 +358,14 @@
     "image": "https://developers.whatismybrowser.com/static/main/content/api/swag/whatismybrowser-stickers.jpg",
     "dateAdded": "2018-10-12T13:05:05.000Z",
     "tags": ["stickers"]
+  },
+  {
+    "name": "Alexa",
+    "difficulty": "Medium",
+    "description": "Develop 2 English[India] skills and get cool Tshirt by Alexa",
+    "reference": "https://developer.amazon.com/en-IN/alexa/alexa-skills-kit/alexa-developer-skill-promotion",
+    "image": "https://developer.amazon.com/en-IN/alexa/alexa-skills-kit/alexa-developer-skill-promotion",
+    "dateAdded": "2019-10-0100:00:01.000Z",
+    "tags": ["clothing"]
   }
 ]
