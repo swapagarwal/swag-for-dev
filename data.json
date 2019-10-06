@@ -36,6 +36,15 @@
     "tags": ["stickers"]
   },
   {
+    "name": "Appwrite",
+    "difficulty": "medium",
+    "description": "Make pull requests to issues tagged <code>Hacktoberfest<code> or <code>help wanted</code> in the <a href="https://github.com/appwrite/appwrite">appwrite repo</a> during October to get some stickers and badges.",
+    "reference": "https://medium.com/appwrite-io/hacktoberfest-2019-is-almost-here-lets-celebrate-it-together-24b311236dd",
+    "image": "https://miro.medium.com/max/1600/1*mk5pBbuAZUg9j7nc6lbfrg.jpeg",
+    "dateAdded": "2019-10-06T20:30:00.000Z",
+    "tags": ["hacktoberfest", "stickers", "badges"]
+  },
+  {
     "name": "Aras",
     "difficulty": "medium",
     "description": "Submit an improvement to any <a href='http://community.aras.com/en/projects/'>Aras Community Project</a> in October 2018 to earn stickers! Submit five, earn a limited edition T-shirt!",
@@ -349,15 +358,6 @@
     "image": "https://valor-software.com/assets/images/5d91e2ddd7ccc682175962ea_f27J06AkBW3Dd3pB4fanZWw1sbrhcs-GJCI5H3DgSK_U2R2cbRSAY_-3hTCe75DQU9iMPJpWnJJlSLra_yAyKtPmzmyeUlGVIVlTj2do6t_Y1za0aYfDaTVc8bR6yFgEwNIQ1ZXM.jpeg",
     "dateAdded": "2019-10-04T16:13:00.000Z",
     "tags": ["hacktoberfest", "stickers", "accessories"]
-  },
-  {
-    "name": "Appwrite",
-    "difficulty": "medium",
-    "description": "Make pull requests to issues tagged with \"Hacktoberfest\" or \"help wanted\" label in appwrite repo during October and get some stickers and badges.",
-    "reference": "https://medium.com/appwrite-io/hacktoberfest-2019-is-almost-here-lets-celebrate-it-together-24b311236dd",
-    "image": "https://miro.medium.com/max/1600/1*mk5pBbuAZUg9j7nc6lbfrg.jpeg",
-    "dateAdded": "2019-10-06T20:30:00.000Z",
-    "tags": ["hacktoberfest", "stickers", "badges"]
   },
   {
     "name": "WhatIsMyBrowser",
