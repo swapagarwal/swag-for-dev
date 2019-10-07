@@ -16,13 +16,13 @@ Each event displayed at devSwag.io is a JSON object like this:
 
 ```js
 {
-  "name": "7PHP", //Name of the event
-  "difficulty": "easy", // Difficulty rating for the event
-  "description": "If you are a fan of 7PHP, send them an email and receive some free stickers!", // Brief description
-  "reference": "https://7php.com/stickers/", // Link to the source
-  "image": "https://7php.com/wp-content/uploads/2018/05/7php-sticker-v2.jpg", // Image URL
-  "dateAdded": "2018-11-23T17:27:00.000Z", // Date added
-  "tags": ["stickers"] // Tags to filter the event
+    "name": "7PHP", //Name of the event
+    "difficulty": "easy", // Difficulty rating for the event
+    "description": "If you are a fan of 7PHP, send them an email and receive some free stickers!", // Brief description
+    "reference": "https://7php.com/stickers/", // Link to the source
+    "image": "https://7php.com/wp-content/uploads/2018/05/7php-sticker-v2.jpg", // Image URL
+    "dateAdded": "2018-11-23T17:27:00.000Z", // Date added
+    "tags": ["stickers"] // Tags to filter the event
 }
 ```
 Accompanying this is a script stored in `get-data.js` which extracts the image url of the event and generates unique filenames for each image file that will be downloaded later.
@@ -33,8 +33,8 @@ The entire website is built using gulp - an easy way to code your build instruct
 
 In gulp each step is a task, represented as JavaScript function. [devSwag.io](https://devswag.io/)'s website is built by executing several gulp tasks sequentially. Dig into the [gulp documentation](https://gulpjs.com/docs/en/getting-started/quick-start) and `gulpfile.js` to get a better understanding of what is happening behind the hood. In summary however, two main tasks take place when `gulpfile.js` is invoked.
 
-  1. Downloading assets and compiling source code into a static website.
-  2. Starting a web server, to serve the compiled website.
+    1. Downloading assets and compiling source code into a static website.
+    2. Starting a web server, to serve the compiled website.
 
 ## Infrastructure
 
