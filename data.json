@@ -27,6 +27,15 @@
     "tags": ["clothing", "device", "expired"]
   },
   {
+    "name": "Amazon Alexa Developers",
+    "difficulty": "medium",
+    "description": "Publish Alexa skills to the India Alexa Skills Store between 1 October, 2019 and 31 October, 2019, and stand to get free limited-edition Alexa developer t-shirt, Amazon Gift Cards, and a Sony PlayStation 4.",
+    "reference": "https://developer.amazon.com/en-IN/alexa/alexa-skills-kit/alexa-developer-skill-promotion",
+    "image": "https://d3ogm7ac91k97u.cloudfront.net/content/dam/alexa/en-in/devincentives/IN_DevIncentive_Oct19.png",
+    "dateAdded": "2019-10-01T08:00:00.000Z",
+    "tags": ["clothing", "device"]
+  },
+  {
     "name": "Alligator.io",
     "difficulty": "hard",
     "description": "Write a blog post on frontend development topics, get some cool Alligator stickers!",
