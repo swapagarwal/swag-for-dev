@@ -278,6 +278,15 @@
     "dateAdded": "2018-10-20T11:38:34.000Z",
     "tags": ["clothing", "accessories", "expired", "stickers"]
   },
+   {
+    "name": "SAP",
+    "difficulty": "medium",
+    "description": "Make a valid change in one abap Project and submit PR",
+    "reference": "https://blogs.sap.com/2019/10/04/lets-code-share-and-learn.-calling-abapers-to-next-edition-of-hacktoberfest/",
+    "image": "https://blogs.sap.com/wp-content/uploads/2019/10/hacktoberfest.jpg",
+    "dateAdded": "2019-10-05T13:40:00.000Z",
+    "tags": ["accessories"]
+  },
   {
     "name": "SendGrid",
     "difficulty": "hard",
