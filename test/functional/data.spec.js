@@ -4,7 +4,7 @@ const {expect} = require('chai');
 const data = require('../../data.json');
 
 function checkURL(url, head = false) {
-	const method = head ? 'head' : 'get';
+	const method = head ? 'head' : 'got';
 	return got[method](url, {throwHttpErrors: false}).then(({statusCode}) => {
 		if (!head && statusCode === 403) {
 			return checkURL(url, true);
