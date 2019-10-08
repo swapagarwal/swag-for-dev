@@ -66,6 +66,7 @@ include ./fork.pug
 							img(src=swag.images.jpeg alt=swag.name + " swag you can get")
 					p.description!=swag.description
 					a(href=swag.reference target="_blank") Check it out
+					small.last-updated='Updated ' + (new Date(swag.dateAdded).toDateString().replace(/^\S+\s/,''))
 
 	footer.flex
 		.item.flex
