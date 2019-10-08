@@ -53,8 +53,9 @@ include ./fork.pug
 				)
 					div.title.flex
 						h1=swag.name
-						div(class=difficulty title=difficultyTitle)
-							span.sr-only=difficultyTitle
+						div
+							div(class=difficulty title=difficultyTitle)
+								span.sr-only=difficultyTitle
 					p.swag
 						each swagTag in swag.tags
 							span!=swagTag
