@@ -137,11 +137,11 @@
   {
     "name": "Hasura",
     "difficulty": "medium",
-    "description": "Submit a PR to Hasura's <a href='https://github.com/hasura/graphql-engine'>GraphQL Engine repo</a> in October 2018 and get a Hasura sticker pack. If your PR to an issue tagged as 'hacktoberfest' gets merged, you also get a Hasura t-shirt!",
-    "reference": "https://blog.hasura.io/announcing-hacktoberfest-2018-with-hasura-621045dc9560",
+    "description": "Submit a PR to Hasura's <a href='https://github.com/hasura/graphql-engine'>GraphQL Engine</a> or <a href='https://github.com/hasura/learn-graphql'>GraphQL Tuturial Series</a> during Hacktoberfest 2019 and get a Hasura sticker pack. If your PR gets merged, you also get a Hasura t-shirt!",
+    "reference": "https://blog.hasura.io/hasura-joins-hacktoberfest-2019/",
     "image": "https://cdn-images-1.medium.com/max/1600/1*kQxL8yhs0c1x1WVXnjhrIw.png",
-    "dateAdded": "2018-10-12T13:25:10.000Z",
-    "tags": ["clothing", "hacktoberfest", "expired", "stickers"]
+    "dateAdded": "2019-10-02T21:06:00.000Z",
+    "tags": ["clothing", "hacktoberfest", "stickers"]
   },
   {
     "name": "IPFS",
