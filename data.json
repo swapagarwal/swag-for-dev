@@ -315,6 +315,15 @@
     "tags": ["stickers"]
   },
   {
+    "name": "Pagerduty",
+    "difficulty": "easy",
+    "description": "Create and fill out your profile. Upload a custom avatar. Introduce yourself.",
+    "reference": "https://community.pagerduty.com/t/free-pagerduty-stickers-are-back-and-here-to-stay/4520",
+    "image": "https://aws1.discourse-cdn.com/pagerduty/original/2X/d/ddd643ad3608a5580455e0c983605c97249e705e.jpeg",
+    "dateAdded": "2019-10-09T22:04:00.000Z",
+    "tags": ["stickers"]
+  },
+  {
     "name": "Passenger",
     "difficulty": "easy",
     "description": "Register to join the November 1st livestream in which Phusion adds a major feature to Passenger, and win a custom key cap or beanie with the Passenger logo embroided (and stickers, guaranteed).",
