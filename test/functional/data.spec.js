@@ -1,5 +1,6 @@
 const got = require('got');
 const {expect} = require('chai');
+const parallel = require('mocha.parallel');
 
 const data = require('../../data.json');
 
@@ -26,18 +27,18 @@ describe('swag-for-dev', function () {
 		});
 	});
 
-	describe('valid images and references', function () {
+	parallel('valid images and references', function () {
 		expect(data).to.be.an('Array');
 		data.forEach(opportunity => {
 			/* eslint-disable max-nested-callbacks */
 			describe(opportunity.name, function () {
-				it('valid reference', function () {
+				it(opportunity.name + ' valid reference', function () {
 					this.timeout(6500);
 					this.slow(1500);
 					return checkURL(opportunity.reference);
 				});
 
-				it('valid image', function () {
+				it(opportunity.name + ' valid image', function () {
 					this.timeout(6500);
 					this.slow(1500);
 					return checkURL(opportunity.image);
