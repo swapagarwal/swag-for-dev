@@ -162,6 +162,15 @@
     "tags": ["stickers", "clothing"]
   },
   {
+    "name": "JabRef",
+    "difficulty": "medium",
+    "description": "Get a pull request merged, receive a sticker. Get five pull requests merged, receive a T-shirt.",
+    "reference": "https://www.jabref.org/hacktoberfest/2019.html",
+    "image": "https://hacktoberfest.digitalocean.com/assets/HF19_social-744d976f227e4aff6866443abcede8c651b309ec9c7c9f7410f5944f8e1299b9.png",
+    "dateAdded": "2019-10-05T23:07:46.000Z",
+    "tags": ["stickers", "clothing", "hacktoberfest"]
+  },
+  {
     "name": "Jetbrains",
     "difficulty": "easy",
     "description": "Fill in the form and get stickers of Jetbrains products for your whole usergroup, event or company. It's free of charge and sent anywere in the world.",
