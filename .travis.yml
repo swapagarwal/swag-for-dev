@@ -1,0 +1,19 @@
+# Formatting set by travis CLI
+language: node_js
+node_js:
+- '10'
+sudo: false
+env:
+- TEST_SUITE=lint
+- TEST_SUITE=data-schema
+cache:
+  directories:
+  - node_modules
+install:
+- npm ci
+script:
+- if [ "$TEST_SUITE" == "lint" ]; then npm run lint; fi
+- if [ "$TEST_SUITE" == "data-schema" ]; then npm run test; fi
+notifications:
+  slack:
+    secure: W3nkwTNBTrRs3WbKQf6Xq6hRgUuqZK1EtfoRRCZ6i6vLW6pQZsLS0I7mQmLWJx9+6LPYCgAsTc/y3H3mRC8sKzRvBrqx9E7YpRJEnMXqtWqWQHv0Zex0aaOvzOfyEZMQMOyCw09HA3PkHFsBt3Fu6wbxqBXjTepINd8PUWc/5vR3uLueH9L+0EyjqlCTZrxsF5x5sJoxcIehnRq6iVxuqcCuFPlQkD0B3Y6PYK8QQHw2mknds3hcfTW9vYqYZs/MhHtuPVQBTVuK7R4vifG8IximF0II5ZTrthhZY+K++7sgeCxuvAn1hAj3yn15vf+BOWodCxveoQNFaHnMVDTD2HlYvnrWxr13RxpgoMCOFPGl8Wugr2liccz1kaXUsMVUWIhL2eIkhpW19uCcLoMpVhquiTYt3nw6fXwH7/zYtnko4x0whWLaYujyxmpU/Ocl68MAJxKCE0eliHHLLSILmq+C/6ds8f3gx4vCPDuYVfOxnyYs3NVheCmgy/LJQOfpkn6i+XOoAY5kNCtSWxauNs6JCXUR359jFXR7eB/+je0J0ICFBsyhqWQnlPrhoKW8MxIXFY3yCyYKrP1m7EiaTJpOPM29BzyrgWrdHXoewKI6L9oCWo8gdSMZqs7sp55/IO07GZvDtlP7BoXF8kLIccuWEcYoiWcuh44l/PNHEZQ=

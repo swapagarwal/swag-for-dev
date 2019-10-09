@@ -24,10 +24,12 @@ include ./fork.pug
 					.select-wrapper
 						label.sr-only(for="sorting") Sort opportunities
 						select#sorting
-							option(value="ALPHABETICAL_ASCENDING" class="alphabetical") Alphabetical
-							option(value="ALPHABETICAL_DESCENDING" class="alphabetical") Alphabetical, reversed
-							option(value="DIFFICULTY_ASCENDING" class="difficulty") Difficulty
-							option(value="DIFFICULTY_DESCENDING" class="difficulty") Difficulty, reversed
+							option(value="DATEADDED_DESCENDING" class="dateAdded") Newest First
+							option(value="DATEADDED_ASCENDING" class="dateAdded") Oldest First
+							option(value="ALPHABETICAL_ASCENDING" class="alphabetical") A -> Z
+							option(value="ALPHABETICAL_DESCENDING" class="alphabetical") Z -> A
+							option(value="DIFFICULTY_ASCENDING" class="difficulty") Difficulty: Easy to Hard
+							option(value="DIFFICULTY_DESCENDING" class="difficulty") Difficulty: Hard to Easy
 					span order
 
 				.item.flex
@@ -47,33 +49,36 @@ include ./fork.pug
 					class="item " + (expired ? '' : 'visible ') + swag.difficulty + swag.tags.map(t => ` tag-${t}`).join('')
 					data-name=swag.name.toLowerCase()
 					data-difficulty=['easy','medium', 'hard'].indexOf(swag.difficulty)
+					data-dateadded=(new Date(swag.dateAdded)).getTime()
 				)
 					div.title.flex
 						h1=swag.name
-						div(class=difficulty title=difficultyTitle)
-							span.sr-only=difficultyTitle
+						div
+							div(class=difficulty title=difficultyTitle)
+								span.sr-only=difficultyTitle
 					p.swag
 						each swagTag in swag.tags
 							span!=swagTag
 					div.flex.img-container
-						picture
-							source(type="image/webp" srcset=swag.images.webp)
-							source(type="image/jpeg" srcset=swag.images.jpeg)
-							img(src=swag.images.jpeg alt=swag.name + " swag you can get")
+						a(href=swag.reference target="_blank")
+							picture
+								source(type="image/webp" srcset=swag.images.webp)
+								source(type="image/jpeg" srcset=swag.images.jpeg)
+								img(src=swag.images.jpeg alt=swag.name + " swag you can get")
 					p.description!=swag.description
-					a(href=swag.reference) Check it out
+					a(href=swag.reference target="_blank") Check it out
 
 	footer.flex
 		.item.flex
 			iframe(src='https://upscri.be/67d2fa?as_embed', style='width:100%;max-width:800px;margin:0 auto;', height='400', frameborder='0', title='Subscribe for updates')
 		.item.flex
-			p Made with ❤︎ by #[a(href="https://github.com/swapagarwal") Swapnil Agarwal]
+			p Made with ❤︎ by #[a(href="https://swapnil.net/") Swapnil Agarwal]
 		.item.flex
 			p Designed by #[a(href="https://github.com/zac-garby") Zac Garby] and #[a(href="https://mihir.ch/") Mihir Chaturvedi]
 		.item.flex
 			p Maintained by #[a(href="https://github.com/aslafy-z") Zadkiel] and #[a(href="https://github.com/vikaspotluri123") Vikas Potluri]
 		.item.flex
-			p Want your company's swag to be listed? #[a(href="https://t.me/swapagarwal") Contact us].
+			p Want your company's swag to be listed / unlisted? Want to advertise? #[a(href="https://t.me/swapagarwal") Contact us].
 	#codefund_ad
 
 	script.
