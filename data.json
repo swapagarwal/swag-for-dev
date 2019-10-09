@@ -403,5 +403,14 @@
     "image": "https://developers.whatismybrowser.com/static/main/content/api/swag/whatismybrowser-stickers.jpg",
     "dateAdded": "2018-10-12T13:05:05.000Z",
     "tags": ["stickers"]
+  },
+  {
+    "name": "Aqua",
+    "difficulty": "medium",
+    "description": "Contribute to Aqua's open source portfolio, and win stickers, t-shirts and even a book on Kubernetes Security.",
+    "reference": "https://blog.aquasec.com/aqua-open-source-security-hacktoberfest",
+    "image": "https://blog.aquasec.com/hs-fs/hubfs/Blog/HacktoberFest%20Blog_650_315.jpg?width=1300&name=HacktoberFest%20Blog_650_315.jpg",
+    "dateAdded": "2019-10-07T13:05:05.000Z",
+    "tags": ["stickers", "clothing", "hacktoberfest"]
   }
 ]
