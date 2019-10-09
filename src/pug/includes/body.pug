@@ -24,12 +24,12 @@ include ./fork.pug
 					.select-wrapper
 						label.sr-only(for="sorting") Sort opportunities
 						select#sorting
-							option(value="ALPHABETICAL_ASCENDING" class="alphabetical") Alphabetical
-							option(value="ALPHABETICAL_DESCENDING" class="alphabetical") Alphabetical, reversed
-							option(value="DIFFICULTY_ASCENDING" class="difficulty") Difficulty
-							option(value="DIFFICULTY_DESCENDING" class="difficulty") Difficulty, reversed
-							option(value="DATEADDED_DESCENDING" class="dateAdded") Newest first
-							option(value="DATEADDED_ASCENDING" class="dateAdded") Oldest first
+							option(value="DATEADDED_DESCENDING" class="dateAdded") Newest First
+							option(value="DATEADDED_ASCENDING" class="dateAdded") Oldest First
+							option(value="ALPHABETICAL_ASCENDING" class="alphabetical") A -> Z
+							option(value="ALPHABETICAL_DESCENDING" class="alphabetical") Z -> A
+							option(value="DIFFICULTY_ASCENDING" class="difficulty") Difficulty: Easy to Hard
+							option(value="DIFFICULTY_DESCENDING" class="difficulty") Difficulty: Hard to Easy
 					span order
 
 				.item.flex
@@ -53,16 +53,18 @@ include ./fork.pug
 				)
 					div.title.flex
 						h1=swag.name
-						div(class=difficulty title=difficultyTitle)
-							span.sr-only=difficultyTitle
+						div
+							div(class=difficulty title=difficultyTitle)
+								span.sr-only=difficultyTitle
 					p.swag
 						each swagTag in swag.tags
 							span!=swagTag
 					div.flex.img-container
-						picture
-							source(type="image/webp" srcset=swag.images.webp)
-							source(type="image/jpeg" srcset=swag.images.jpeg)
-							img(src=swag.images.jpeg alt=swag.name + " swag you can get")
+						a(href=swag.reference target="_blank")
+							picture
+								source(type="image/webp" srcset=swag.images.webp)
+								source(type="image/jpeg" srcset=swag.images.jpeg)
+								img(src=swag.images.jpeg alt=swag.name + " swag you can get")
 					p.description!=swag.description
 					a(href=swag.reference target="_blank") Check it out
 
