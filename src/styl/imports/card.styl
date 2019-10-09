@@ -56,6 +56,7 @@
 	img
 		height 100%
 		width auto
+		transition all 300ms linear
 
 	.img-container
 		height 300px
@@ -63,5 +64,8 @@
 		overflow hidden
 		padding-bottom 15px
 
+	&:hover
+		img
+			transform rotate(3deg) scale(1.05)
 		a
-			border: none
+			border none
