@@ -164,7 +164,7 @@
   {
     "name": "Hasura",
     "difficulty": "medium",
-    "description": "Submit a PR to Hasura's <a href='https://github.com/hasura/graphql-engine'>GraphQL Engine</a> or <a href='https://github.com/hasura/learn-graphql'>GraphQL Tuturial Series</a> during Hacktoberfest 2019 and get a Hasura sticker pack. If your PR gets merged, you also get a Hasura t-shirt!",
+    "description": "Submit a PR to Hasura's <a href='https://github.com/hasura/graphql-engine'>GraphQL Engine</a> or <a href='https://github.com/hasura/learn-graphql'>GraphQL Tutorial Series</a> during Hacktoberfest 2019 and get a Hasura sticker pack. If your PR gets merged, you also get a Hasura t-shirt!",
     "reference": "https://blog.hasura.io/hasura-joins-hacktoberfest-2019/",
     "image": "https://cdn-images-1.medium.com/max/1600/1*kQxL8yhs0c1x1WVXnjhrIw.png",
     "dateAdded": "2019-10-02T21:06:00.000Z",
