@@ -27,18 +27,18 @@ describe('swag-for-dev', function () {
 		});
 	});
 
-	parallel('valid images and references', function () {
+	parallel('validate images and references', function () {
 		expect(data).to.be.an('Array');
 		data.forEach(opportunity => {
 			/* eslint-disable max-nested-callbacks */
 			describe(opportunity.name, function () {
-				it(opportunity.name + ' valid reference', function () {
+				it(opportunity.name + ' has a valid reference', function () {
 					this.timeout(6500);
 					this.slow(1500);
 					return checkURL(opportunity.reference);
 				});
 
-				it(opportunity.name + ' valid image', function () {
+				it(opportunity.name + ' has a valid image', function () {
 					this.timeout(6500);
 					this.slow(1500);
 					return checkURL(opportunity.image);
