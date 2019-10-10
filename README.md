@@ -11,18 +11,18 @@
 
 As a developer, nothing piques my interest more than developer swag! This is an attempt to list down the current swag opportunities for developers.
 
-Feel free to send a PR! 😄
+Feel free to send a PR! 😄 This is one more attempt
 
 > Featured on [Changelog Nightly](http://nightly.changelog.com/2018/02/18/), [Changelog Weekly](http://email.changelog.com/t/t-675F8F9C3E9A6D8E2540EF23F30FEDED), [Hacker News](https://news.ycombinator.com/item?id=16407484), [reddit](https://www.reddit.com/r/coolgithubprojects/comments/7ygd5n/as_a_developer_nothing_piques_my_interest_as_much/), [Product Hunt](https://www.producthunt.com/posts/swag-for-dev) 🦄
 
 Sign up at [https://upscri.be/67d2fa](https://upscri.be/67d2fa) to get notified of new swag opportunities!! 💯
 **[[View the Archive](https://us17.campaign-archive.com/home?u=87012cca117582a64dec3ca39&id=212af2e954)]**
 
-## Contents
+### Contents
 
 All swag opportunities can be found at [https://devswag.io/](https://devswag.io/) 😎
 
-## Contributing
+### Contributing
 
 Feel free to open an issue (or even better, send a Pull Request) for expanding this list. Contributions are very welcome!! 😄
 
@@ -35,7 +35,7 @@ As this project is community-driven, it'd be really helpful if you comment on th
 
 Please consider donating to cover up our hosting costs. 🙏
 
-## Development
+### Development
 
 1. Clone this repository by running
     ```
