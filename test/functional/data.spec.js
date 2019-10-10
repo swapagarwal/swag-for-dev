@@ -29,13 +29,14 @@ describe('swag-for-dev', function () {
 		});
 	});
 
-	let dataSlices = [];
-	for (let i = 0, length = data.length; i < length; i += LIMIT_PARALLEL_TESTS) {
+	const dataSlices = [];
+	for (let i = 0, {length} = data; i < length; i += LIMIT_PARALLEL_TESTS) {
 		dataSlices.push(data.slice(i, i + LIMIT_PARALLEL_TESTS));
 	}
+
 	dataSlices.forEach((data, i) => {
-		const testName = `validate images and references ${i * LIMIT_PARALLEL_TESTS + 1} - ` +
-			`${i * LIMIT_PARALLEL_TESTS + data.length}`;
+		const testName = `validate images and references ${(i * LIMIT_PARALLEL_TESTS) + 1} - ` +
+			`${(i * LIMIT_PARALLEL_TESTS) + data.length}`;
 		parallel(testName, function () {
 			data.forEach(opportunity => {
 				/* eslint-disable max-nested-callbacks */
