@@ -135,6 +135,15 @@
     "tags": ["clothing", "stickers"]
   },
   {
+    "name": "Globo",
+    "difficulty": "medium",
+    "description": "Contribute 2 pull requests to Globo's Open Source Projects. At least 1 PR has to be accepted and you have to be in the first 200 registrants to get an exclusive t-shirt. Delivery only in Brazil.",
+    "reference": "https://opensource.globo.com/hacktoberfest/",
+    "image": "https://opensource.globo.com/static/hacktoberfest-lg-ccb42ae80e9ac29693f57e549263e889.png",
+    "dateAdded": "2019-10-10T13:00:00.000Z",
+    "tags": ["hacktoberfest", "clothing"]
+  },
+  {
     "name": "Google Assistant",
     "difficulty": "hard",
     "description": "Make an app for the Google Assistant available to users, get an exclusive Google Assistant t-shirt and a Google Home (if a certain number of users engage with it)!",
