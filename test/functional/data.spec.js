@@ -3,7 +3,7 @@ const {expect} = require('chai');
 const parallel = require('mocha.parallel');
 
 const data = require('../../data.json');
-const LIMIT_PARALLEL_TESTS = 40;
+const LIMIT_PARALLEL_TESTS = 10;
 
 function checkURL(url, head = false) {
 	const method = head ? 'head' : 'get';
