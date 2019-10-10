@@ -281,7 +281,7 @@
    {
     "name": "SAP",
     "difficulty": "medium",
-    "description": "Make a valid change in one abap Project and submit PR",
+    "description": "Submit a valid PR to an ABAP Project",
     "reference": "https://blogs.sap.com/2019/10/04/lets-code-share-and-learn.-calling-abapers-to-next-edition-of-hacktoberfest/",
     "image": "https://blogs.sap.com/wp-content/uploads/2019/10/hacktoberfest.jpg",
     "dateAdded": "2019-10-05T13:40:00.000Z",
