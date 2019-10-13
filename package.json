@@ -49,6 +49,9 @@
     "test": "mocha test/functional/data.spec.js",
     "build": "cross-env NODE_ENV=production gulp build"
   },
+  "browserslist": [
+    "last 2 versions"
+  ],
   "xo": {
     "rules": {
       "unicorn/prefer-spread": "off"
