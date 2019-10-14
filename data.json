@@ -333,6 +333,15 @@
     "tags": ["clothing", "accessories", "expired", "stickers"]
   },
   {
+    "name": "Parity Technologies",
+    "difficulty": "medium",
+    "description": "Anyone who makes any significant contribution to the Substrate ecosystem during Hacktoberfest is eligible for a special limited edition Parity Hacktoberfest 2019 gym bag.",
+    "reference": "https://www.parity.io/hacktoberfest-2019-parity/",
+    "image": "https://www.parity.io/content/images/2019/09/hacktoberfest2019_bag.jpg",
+    "dateAdded": "2019-10-12T19:49:00.000Z",
+    "tags": ["hacktoberfest", "accessories"]
+  },
+  {
     "name": "SendGrid",
     "difficulty": "hard",
     "description": "Five accepted pull results from SendGrid will qualify you for a special edition SendGrid Hacktoberfest T-shirt.",
