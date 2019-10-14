@@ -225,13 +225,13 @@
     "tags": ["clothing", "hacktoberfest", "stickers"]
   },
   {
-    "name": "Magento",
+    "name": "Magento + Adobe",
     "difficulty": "hard",
-    "description": "Have 5 merged PRs or validate at least 10 issues in October 2018, get a Squashtoberfest T-Shirt!",
-    "reference": "https://github.com/magento/magento2/wiki/SQUASHTOBERFEST-2018",
-    "image": "https://raw.githubusercontent.com/wiki/magento-engcom/msi/images/squash2018.png",
-    "dateAdded": "2018-10-23T10:17:39.000Z",
-    "tags": ["clothing", "hacktoberfest", "expired"]
+    "description": "Submit 5 or more pull requests during October 2019 to any open repositories under Adobe or Magento organizations on GitHub, get a Squashtoberfest T-Shirt!",
+    "reference": "https://opensource.adobe.com/squashtoberfest/",
+    "image": "https://i.imgur.com/yt3iUBB.png",
+    "dateAdded": "2019-10-03T14:17:39.000Z",
+    "tags": ["clothing", "hacktoberfest"]
   },
   {
     "name": "MayaData",
