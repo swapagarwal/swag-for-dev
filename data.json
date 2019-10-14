@@ -308,11 +308,11 @@
   {
     "name": "Operation Code",
     "difficulty": "easy",
-    "description": "Close 3 issues, get a t-shirt. Make a PR and get stickers.",
+    "description": "Close 3 issues, get a t-shirt. Make 2 PRs and get stickers.",
     "reference": "https://github.com/OperationCode/START_HERE",
     "image": "https://upload.cc/i1/2018/10/21/yRDFvh.png",
-    "dateAdded": "2018-10-28T16:55:45.000Z",
-    "tags": ["clothing", "hacktoberfest", "expired", "stickers"]
+    "dateAdded": "2019-10-02T18:41:10.000Z",
+    "tags": ["clothing", "hacktoberfest", "stickers"]
   },
   {
     "name": "opsdroid",
