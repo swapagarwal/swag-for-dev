@@ -99,6 +99,15 @@
     "tags": ["clothing", "expired"]
   },
   {
+    "name": "Coding Blocks",
+    "difficulty": "hard",
+    "description": "Make pull requests to any open-source projects for Coding Blocks. When merged, submit PRs to the form to claim swag.",
+    "reference": "https://blog.codingblocks.com/2019/cb-hacktoberfest-2019/",
+    "image": "https://blog.codingblocks.com/content/images/size/w2000/2019/10/cover_hacktoberfest.jpg",
+    "dateAdded": "2019-10-06T06:00:07.000Z",
+    "tags": ["clothing", "stickers", "Wildcraft Bag"]
+  },
+  {
     "name": "Devfolio",
     "difficulty": "hard",
     "description": "Four merged pull requests during the month of October will earn stickers and a chance at a limited edition t-shirt. Exceptional PRs will also earn an exclusive limited edition t-shirt.",
