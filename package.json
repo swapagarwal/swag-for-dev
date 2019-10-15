@@ -22,8 +22,8 @@
     "cross-env": "6.0.3",
     "del": "5.1.0",
     "eclint": "2.8.1",
-    "gulp": "4.0.2",
     "got": "9.6.0",
+    "gulp": "4.0.2",
     "gulp-babel": "8.0.0",
     "gulp-concat": "2.6.1",
     "gulp-download-stream": "0.0.19",
@@ -41,6 +41,7 @@
     "lint-prepush": "1.1.0",
     "merge-stream": "2.0.0",
     "mocha": "6.2.1",
+    "mocha.parallel": "^0.15.6",
     "xo": "0.25.3"
   },
   "scripts": {
