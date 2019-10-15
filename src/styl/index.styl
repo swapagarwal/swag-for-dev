@@ -1,4 +1,5 @@
 @require "imports/base"
+@require "imports/colors"
 
 .container
 	min-height 100vh
@@ -8,8 +9,10 @@
 .hidden
 	display none
 
+.box
+	width 100%
+	
 section.main
-	width 90%
 	flex-direction column
 	margin 0 auto
 
@@ -19,22 +22,29 @@ section.main
 		@media screen and (max-width: 450px)
 			justify-content left
 
-	.heading
-		flex-direction column
-		min-height 40vh
+	.banner
 		text-align center
-		margin 6vh 2vh
+		padding .5rem
+		background primary-color
+		color white
 
-		h1
-			font-size 3rem
-			color #111
-			width 90%
+	.hero
+		background secondary-color
 
-		p
-			font-size 1.2rem
-			color #555
-			margin-top 20px
-			width 90%
+		.heading
+			flex-direction column
+			min-height 40vh
+			max-width 900px
+			text-align center
+			padding 2rem
+
+			h1
+				font-size 3rem
+				color #111
+
+			p
+				font-size 1.2rem
+				color white-color
 
 	.buttons
 		justify-content flex-start
