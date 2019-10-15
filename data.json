@@ -272,8 +272,8 @@
   {
     "name": "Netlify",
     "difficulty": "easy",
-    "description": "Complete this <a href='https://swag.netlify.com/docs/'>survey</a> about using Netlify for documentation and get stickers.",
-    "reference": "https://swag.netlify.com/docs/",
+    "description": "Just fill out the <a href='https://swag.netlify.com/'>form</a> and get stickers.",
+    "reference": "https://swag.netlify.com/",
     "image": "https://swag.netlify.com/images/laptop-sticker.jpg",
     "dateAdded": "2018-04-27T19:36:39.000Z",
     "tags": ["stickers"]
