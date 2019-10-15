@@ -4,17 +4,19 @@ include ./fork.pug
 
 	section.main.flex
 		.flex.box.banner
-			p Want your company's swag to be listed / unlisted? Want to advertise? #[a(href="https://t.me/swapagarwal") Contact us].
+			p Want your company's swag to be listed / unlisted? Want to advertise? #[a.btn.secondary(href="https://t.me/swapagarwal") Contact us].
 		.flex.box.hero
 			.heading.flex
 				h1 devSwag
-				p 😎 swag opportunities for developers
-				p As a developer, nothing piques my interest more than developer swag! I created devSwag to scratch my own itch by starting a curation of such opportunities in Feb '18. These are crowdsourced and verified by the community. All of them ship worldwide!
+				h2 swag opportunities for developers 😎
+				p As a developer, nothing piques my interest more than developer swag! 
+					br 
+					| I created devSwag to scratch my own itch by starting a curation of such opportunities in Feb '18. These are crowdsourced and verified by the community. All of them ship worldwide! 🚀
 
 		.buttons
 			.flex.controls
 				.item.flex
-					span Show
+					span Level
 					.select-wrapper
 						label.sr-only(for="filter") Filter opportunity difficulty
 						select#filter
@@ -22,7 +24,7 @@ include ./fork.pug
 								option(value=filter.replace(/ /g, '').toLowerCase()) #{filter}
 
 				.item.flex
-					span In
+					span Order
 					.select-wrapper
 						label.sr-only(for="sorting") Sort opportunities
 						select#sorting
@@ -32,7 +34,7 @@ include ./fork.pug
 							option(value="ALPHABETICAL_DESCENDING" class="alphabetical") Z -> A
 							option(value="DIFFICULTY_ASCENDING" class="difficulty") Difficulty: Easy to Hard
 							option(value="DIFFICULTY_DESCENDING" class="difficulty") Difficulty: Hard to Easy
-					span order
+					span Filter
 
 				.item.flex
 					select#tags.hidden

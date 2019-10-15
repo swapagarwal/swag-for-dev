@@ -24,26 +24,34 @@ section.main
 
 	.banner
 		text-align center
-		padding .5rem
+		padding 1.2rem
 		background primary-color
 		color white
 
 	.hero
-		background secondary-color
+		background url('/assets/img/tiny_grid_@2X.png') repeat
 
 		.heading
 			flex-direction column
-			min-height 40vh
-			max-width 900px
+			max-width 90rem
 			text-align center
-			padding 2rem
+			padding 6rem
 
 			h1
 				font-size 3rem
 				color #111
-
+				margin-bottom 2rem
+			h2
+				font-size 2rem
+				font-family $default-font-family-mono
+				color white-color
+				padding .4rem .8rem
+				border 2px dashed white-color
+				border-radius 6px
+				margin-bottom 2rem
 			p
-				font-size 1.2rem
+				font-size 2rem
+				max-width 65rem
 				color white-color
 
 	.buttons
@@ -94,7 +102,7 @@ section.main
 			padding 5px 20px 5px 5px
 			appearance none
 			font-family $default-font-family
-			font-size 0.9rem
+			font-size 1.6rem
 			cursor pointer
 
 		@import "imports/selectr-theme"
