@@ -41,7 +41,7 @@
     "lint-prepush": "1.1.0",
     "merge-stream": "2.0.0",
     "mocha": "6.2.1",
-    "mocha.parallel": "^0.15.6",
+    "mocha.parallel": "0.15.6",
     "xo": "0.25.3"
   },
   "scripts": {
