@@ -16,7 +16,7 @@ include ./fork.pug
 		.buttons
 			.flex.controls
 				.item.flex
-					span Level
+					span.title Level
 					.select-wrapper
 						label.sr-only(for="filter") Filter opportunity difficulty
 						select#filter
@@ -24,7 +24,7 @@ include ./fork.pug
 								option(value=filter.replace(/ /g, '').toLowerCase()) #{filter}
 
 				.item.flex
-					span Order
+					span.title Order
 					.select-wrapper
 						label.sr-only(for="sorting") Sort opportunities
 						select#sorting
@@ -34,9 +34,9 @@ include ./fork.pug
 							option(value="ALPHABETICAL_DESCENDING" class="alphabetical") Z -> A
 							option(value="DIFFICULTY_ASCENDING" class="difficulty") Difficulty: Easy to Hard
 							option(value="DIFFICULTY_DESCENDING" class="difficulty") Difficulty: Hard to Easy
-					span Filter
 
 				.item.flex
+					span.title Filter
 					select#tags.hidden
 
 				.item.flex
@@ -55,26 +55,30 @@ include ./fork.pug
 					data-difficulty=['easy','medium', 'hard'].indexOf(swag.difficulty)
 					data-dateadded=(new Date(swag.dateAdded)).getTime()
 				)
-					div.title.flex
-						h1=swag.name
-						div
-							div(class=difficulty title=difficultyTitle)
-								span.sr-only=difficultyTitle
-					p.swag
-						each swagTag in swag.tags
-							span!=swagTag
 					div.flex.img-container
 						a(href=swag.reference target="_blank")
 							picture
 								source(type="image/webp" srcset=swag.images.webp)
 								source(type="image/jpeg" srcset=swag.images.jpeg)
 								img(src=swag.images.jpeg alt=swag.name + " swag you can get")
-					p.description!=swag.description
-					a(href=swag.reference target="_blank") Check it out
+					div.blob
+						div.title.flex
+							h1=swag.name
+							div
+								div(class=difficulty title=difficultyTitle)
+									span.sr-only=difficultyTitle
+						p.swag
+							each swagTag in swag.tags
+								span!=swagTag
+						p.description!=swag.description
+						.flex
+							a.btn(href=swag.reference target="_blank") Check it out
+
+	section.newsletter
+		.flex.box.form
+			iframe(src='https://upscri.be/67d2fa?as_embed', style='width:100%;max-width:800px;margin:0 auto;', height='400', frameborder='0', title='Subscribe for updates')
 
 	footer.flex
-		.item.flex
-			iframe(src='https://upscri.be/67d2fa?as_embed', style='width:100%;max-width:800px;margin:0 auto;', height='400', frameborder='0', title='Subscribe for updates')
 		.item.flex
 			p Made with ❤︎ by #[a(href="https://swapnil.net/") Swapnil Agarwal]
 		.item.flex
