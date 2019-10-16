@@ -20,15 +20,38 @@ const filterInput = document.querySelector('#filter');
 const sortingInput = document.querySelector('#sorting');
 const tagsSelect = document.querySelector('#tags');
 const showExpired = document.querySelector('#expired');
+const hideCompleted = document.querySelector('#completed');
 
 const activateElements = els => Array.from(els).forEach(node => node.classList.add(ACTIVE_CLASS));
 const allowDifficultySelect = shouldAllow => sortingInput.querySelectorAll('.difficulty')
 	.forEach(node => {
 		node.disabled = !shouldAllow;
 	});
+const getCompletedItems = () => JSON.parse(localStorage.getItem('devswag:completed')) || [];
 
 let search;
 let selectr;
+
+function setCompleteAttr(el) {
+	Array.from(document.querySelectorAll('.item'))
+		.find(item => item.contains(el)).dataset.completed = el.checked;
+}
+
+function handleCompleteStatus(e) {
+	const stored = getCompletedItems();
+
+	let completed;
+
+	if (e.target.checked) {
+		completed = [...stored, e.target.dataset.task];
+	} else {
+		completed = [...stored].filter(x => x !== e.target.dataset.task);
+	}
+
+	localStorage.setItem('devswag:completed', JSON.stringify(completed));
+
+	setCompleteAttr(e.target);
+}
 
 function handleDifficulty(difficultyChanged) {
 	const {value} = filterInput;
@@ -61,17 +84,22 @@ function handleSort() {
 function handleTags() {
 	const tags = selectr.getValue();
 
-	Array.from(contentElement.querySelectorAll('.item')).forEach(element => {
-		const show = (showExpired.checked || !element.classList.contains('tag-expired')) &&
-			tags.reduce((sho, tag) => sho || element.classList.contains(`tag-${tag}`), tags.length === 0);
-		if (!show) {
-			element.classList.remove('visible');
+	Array.from(contentEl.querySelectorAll('.item')).forEach(el => {
+		const show = (showExpired.checked || !el.classList.contains('tag-expired')) &&
+			tags.reduce((sho, tag) => sho || el.classList.contains(`tag-${tag}`), tags.length === 0);
+
+		const hide = hideCompleted.checked && el.querySelector('.complete-notice').checked;
+
+		if (!show || hide) {
+			el.classList.remove('visible');
 		}
 	});
 
 	search.set('tags', tags.join(' '));
 
 	search.set('expired', showExpired.checked || '');
+
+	search.set('hide-completed', hideCompleted.checked || '');
 }
 
 function updateUrl() {
@@ -122,12 +150,25 @@ window.addEventListener('load', () => {
 		}
 
 		showExpired.checked = search.get('expired') === 'true';
+		hideCompleted.checked = search.get('hide-completed') === 'true';
 	}
 
 	selectr.on('selectr.change', cascade);
 	filterInput.addEventListener('input', cascade);
 	sortingInput.addEventListener('input', cascade);
 	showExpired.addEventListener('change', cascade);
+	hideCompleted.addEventListener('change', cascade);
+
+	const completedItems = getCompletedItems();
+
+	document.querySelectorAll('.complete-notice').forEach(el => {
+		if (completedItems.find(c => c === el.dataset.task)) {
+			el.checked = true;
+			setCompleteAttr(el);
+		}
+
+		el.addEventListener('change', handleCompleteStatus);
+	});
 
 	cascade.call(window, true);
 });

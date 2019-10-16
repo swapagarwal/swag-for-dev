@@ -108,3 +108,85 @@
 	&:hover
 		img
 			transform rotate(3deg) scale(1.05)
+		a
+			border none
+
+		label::before
+			border-color transparent
+
+	&[data-completed='true']
+		& > *:not(label)
+			opacity 0.4
+
+		label::before
+			content: none
+
+	label
+		float right
+		display flex
+		flex-direction row-reverse
+		position relative
+		cursor pointer
+
+		&::before
+			content 'Mark as complete?'
+			position absolute
+			width max-content
+			right 2em
+			text-align right
+			color #444
+			text-decoration none
+			border-bottom 2px solid #444
+			transition all .2s ease
+			opacity 1
+
+		i
+			min-width 1.6em
+			border 2px solid #555
+			align-items center
+			height 1.6em
+			border-radius 2px
+			transition all .25s cubic-bezier(.4,.0,.23,1)
+			box-sizing border-box
+
+		input
+			display none
+
+			&:checked + i
+				border .8em solid #67eaff
+				animation bounce 200ms cubic-bezier(.4,.0,.23,1)
+
+				&::before
+					content ''
+					position absolute
+					top .6em
+					left .2em
+					border-right 3px solid transparent
+					border-bottom 3px solid transparent
+					transform rotate(45deg)
+					transform-origin 0% 100%
+					animation checkbox .125s .25s cubic-bezier(.4,.0,.23,1) forwards
+
+@keyframes bounce
+	0%
+		transform scale(1)
+	33%
+		transform scale(.65)
+	100%
+		transform scale(1)
+
+@keyframes checkbox
+	0%
+		width 0
+		height 0
+		border-color #212121
+		transform translate3d(0,0,0) rotate(45deg)
+	33%
+		width .4em
+		height 0
+		transform translate3d(0,0,0) rotate(45deg)
+	100%
+		width .4em
+		height .9em
+		border-color #212121
+		transform translate3d(0,-.8em,0) rotate(45deg)
