@@ -177,7 +177,3 @@ window.addEventListener('load', () => {
 
 	cascade.call(window, true);
 });
-
-// Toggle Done? to Done!
-// Remove underline when hover
-// Remove temp elements and styles from other branch before commit
