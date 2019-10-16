@@ -34,7 +34,11 @@ let selectr;
 
 function setCompleteAttr(el) {
 	Array.from(document.querySelectorAll('.item'))
-		.find(item => item.contains(el)).dataset.completed = el.checked;
+		.find(item => item.contains(el))
+		.classList.toggle('checked-off', el.checked);
+
+	const label = el.parentElement.querySelector('span');
+	label.textContent = label.textContent.replace(/!|\?/, el.checked ? '!' : '?');
 }
 
 function handleCompleteStatus(e) {
@@ -85,12 +89,13 @@ function handleTags() {
 	const tags = selectr.getValue();
 
 	Array.from(contentEl.querySelectorAll('.item')).forEach(el => {
-		const show = (showExpired.checked || !el.classList.contains('tag-expired')) &&
-			tags.reduce((sho, tag) => sho || el.classList.contains(`tag-${tag}`), tags.length === 0);
+		const show = ((showExpired.checked || !el.classList.contains('tag-expired')) &&
+			tags.reduce((sho, tag) => sho || el.classList.contains(`tag-${tag}`), tags.length === 0)) && !(hideCompleted.checked && el.querySelector('.complete-notice').checked);
 
-		const hide = hideCompleted.checked && el.querySelector('.complete-notice').checked;
-
-		if (!show || hide) {
+		// Hide item if either
+		// - showExpired has been checked and current opportunity has expired
+		// - hideCompleted has been checked and current opportunity has been marked complete
+		if (!show) {
 			el.classList.remove('visible');
 		}
 	});
@@ -172,3 +177,7 @@ window.addEventListener('load', () => {
 
 	cascade.call(window, true);
 });
+
+// Toggle Done? to Done!
+// Remove underline when hover
+// Remove temp elements and styles from other branch before commit

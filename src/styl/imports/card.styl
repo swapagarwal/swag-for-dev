@@ -111,34 +111,28 @@
 		a
 			border none
 
-		label::before
+		label span
 			border-color transparent
 
-	&[data-completed='true']
-		& > *:not(label)
+	&.checked-off
+		& > *:not(.task-complete), .task-complete span
 			opacity 0.4
 
-		label::before
-			content: none
-
-	label
-		float right
+	.task-complete
 		display flex
 		flex-direction row-reverse
 		position relative
 		cursor pointer
+		width max-content
+		margin: 1em auto 0;
 
-		&::before
-			content 'Mark as complete?'
-			position absolute
-			width max-content
-			right 2em
-			text-align right
+		span
 			color #444
 			text-decoration none
 			border-bottom 2px solid #444
 			transition all .2s ease
 			opacity 1
+			margin-right .8em
 
 		i
 			min-width 1.6em
@@ -150,7 +144,12 @@
 			box-sizing border-box
 
 		input
-			display none
+			position absolute
+			height 1.6em
+			width 1.6em
+			opacity 0
+			right 0
+			cursor pointer
 
 			&:checked + i
 				border .8em solid #67eaff
@@ -160,7 +159,7 @@
 					content ''
 					position absolute
 					top .6em
-					left .2em
+					right .8em
 					border-right 3px solid transparent
 					border-bottom 3px solid transparent
 					transform rotate(45deg)
