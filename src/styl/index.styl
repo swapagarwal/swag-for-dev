@@ -39,7 +39,7 @@ section.main
 			flex-direction column
 			max-width 90rem
 			text-align center
-			padding 6rem
+			padding 10rem 6rem
 
 			@media screen and (max-width: 450px)
 				padding 3rem
@@ -130,19 +130,20 @@ section.newsletter
 	background tertiary-color
 
 footer
-	margin 0 auto 70px auto
-	flex-wrap wrap
-	padding-bottom 15px
-	max-width 1150px
+	font-size 1.8rem
+	margin 0 auto
+	padding 10rem
 	width 100%
-	flex-direction row
+	flex-flow column wrap
+	text-align center
 	color white-color
 	background primary-color
-
 	.item
-		width 100%
+		margin-bottom 5px
 
 @import "imports/a11y"
+@import "imports/mediaquery"
 
 #content .item.visible
 	display initial
+
