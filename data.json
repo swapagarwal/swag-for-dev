@@ -83,7 +83,7 @@
   {
     "name": "CodingBlocks",
     "difficulty": "medium",
-    "description": "Have one merged PR on any of <a href=\"https://cb.lk/gh\">Coding Blocks open source projects</a> and get t-shirt with stickers or even a bag (1 PR - t-shirt, 5+ PRs - bag)",
+    "description": "Have one merged PR on any of <a href='https://cb.lk/gh'>Coding Blocks open source projects</a> and get t-shirt with stickers or even a bag (1 PR - t-shirt, 5+ PRs - bag)",
     "reference": "https://blog.codingblocks.com/2019/cb-hacktoberfest-2019/",
     "image": "https://i.imgur.com/0SrSsNM.png",
     "dateAdded": "2019-10-09T19:00:00.000Z",
