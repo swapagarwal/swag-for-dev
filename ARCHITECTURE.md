@@ -2,11 +2,11 @@
 
 ## Overview
 
-[devSwag.io](https://devswag.io/) uses [`gulp.js`](https://gulpjs.com/) to build the website. The website is composed of [`pug.js`](https://github.com/pugjs/pug) to template the front end of the website, [`Styl`](https://github.com/tj/styl) to add styling, and the backend is a simple JSON file called `data.json` that stores each swag item in a JSON format.
+[devSwag.io](https://devswag.io/) uses [`Gulp`](https://gulpjs.com/) to build the website. The website is composed of [`Pug`](https://github.com/pugjs/pug) to template the front end of the website, [`Stylus`](https://github.com/stylus/stylus) to add styling, and the backend is a simple JSON file called `data.json` that stores each swag item in a JSON format.
 
 ## Frontend
 
-[`pug.js`](https://github.com/pugjs/pug) is a template engine implemented using JavaScript for use in Node.js and the browser. More information can be found in their repository. `.pug` files are written using pug syntax which compiles to HTML.
+[`Pug`](https://github.com/pugjs/pug) is a template engine implemented using JavaScript for use in Node.js and the browser. More information can be found in their repository. `.pug` files are written using pug syntax which compiles to HTML.
 
 The devSwag frontend is composed of several `.pug` files stored in `src/pug`. These are later compiled to form static HTML files.
 
