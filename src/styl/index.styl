@@ -1,5 +1,24 @@
 @require "imports/base"
 
+a
+	color link-color
+	transition .2s
+	&:hover
+		color link-hover-color
+
+.btn.secondary
+	color white-color
+	font-size 1.8rem
+	padding .4rem 1rem
+	margin-left 1rem
+	border-radius .6rem
+	border 2px solid link-color
+	text-decoration none
+	display inline-block
+	&:hover
+		background link-color
+		color white-color
+
 .container
 	min-height 100vh
 	width 100vw
@@ -23,9 +42,6 @@ section.main
 		border 1px solid grey-color
 		margin 4rem 2rem 0
 
-		@media screen and (max-width: 450px)
-			justify-content left
-
 	.banner
 		text-align center
 		padding 1.2rem
@@ -40,9 +56,6 @@ section.main
 			max-width 90rem
 			text-align center
 			padding 10rem 6rem
-
-			@media screen and (max-width: 450px)
-				padding 3rem
 
 			.logo
 				img
@@ -77,10 +90,6 @@ section.main
 			flex-wrap wrap
 			width 100%
 			justify-content flex-start
-
-		@media screen and (max-width: 450px)
-			.item, .select-wrapper, select
-				width 100%
 
 		.item
 			margin 10px 20px
