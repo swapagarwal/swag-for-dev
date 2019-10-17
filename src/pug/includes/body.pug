@@ -3,16 +3,20 @@ include ./fork.pug
 .container
 
 	section.main.flex
-
-		.heading.flex
-			h1 devSwag
-			p 😎 swag opportunities for developers
-			p As a developer, nothing piques my interest more than developer swag! I created devSwag to scratch my own itch by starting a curation of such opportunities in Feb '18. These are crowdsourced and verified by the community. All of them ship worldwide!
+		.flex.box.banner
+			p Want your company's swag to be listed / unlisted? Want to advertise? #[a.btn.secondary(href="https://t.me/swapagarwal") Contact us]
+		.flex.box.hero
+			.heading.flex
+				h1 devSwag
+				h2 swag opportunities for developers 😎
+				p As a developer, nothing piques my interest more than developer swag!
+					br
+					| I created devSwag to scratch my own itch by starting a curation of such opportunities in Feb '18. These are crowdsourced and verified by the community. All of them ship worldwide! 🚀
 
 		.buttons
 			.flex.controls
 				.item.flex
-					span Show
+					span.title Level
 					.select-wrapper
 						label.sr-only(for="filter") Filter opportunity difficulty
 						select#filter
@@ -20,7 +24,7 @@ include ./fork.pug
 								option(value=filter.replace(/ /g, '').toLowerCase()) #{filter}
 
 				.item.flex
-					span In
+					span.title Order
 					.select-wrapper
 						label.sr-only(for="sorting") Sort opportunities
 						select#sorting
@@ -30,9 +34,9 @@ include ./fork.pug
 							option(value="ALPHABETICAL_DESCENDING" class="alphabetical") Z -> A
 							option(value="DIFFICULTY_ASCENDING" class="difficulty") Difficulty: Easy to Hard
 							option(value="DIFFICULTY_DESCENDING" class="difficulty") Difficulty: Hard to Easy
-					span order
 
 				.item.flex
+					span.title Filter
 					select#tags.hidden
 
 				.item.flex
@@ -51,34 +55,37 @@ include ./fork.pug
 					data-difficulty=['easy','medium', 'hard'].indexOf(swag.difficulty)
 					data-dateadded=(new Date(swag.dateAdded)).getTime()
 				)
-					div.title.flex
-						h1=swag.name
-						div
-							div(class=difficulty title=difficultyTitle)
-								span.sr-only=difficultyTitle
-					p.swag
-						each swagTag in swag.tags
-							span!=swagTag
 					div.flex.img-container
 						a(href=swag.reference target="_blank")
 							picture
 								source(type="image/webp" srcset=swag.images.webp)
 								source(type="image/jpeg" srcset=swag.images.jpeg)
 								img(src=swag.images.jpeg alt=swag.name + " swag you can get")
-					p.description!=swag.description
-					a(href=swag.reference target="_blank") Check it out
+					div.blob
+						div.title.flex
+							h1=swag.name
+							div
+								div(class=difficulty title=difficultyTitle)
+									span.sr-only=difficultyTitle
+						p.swag
+							each swagTag in swag.tags
+								span!=swagTag
+						p.description!=swag.description
+						.flex
+							a.btn(href=swag.reference target="_blank") Check it out
+
+	section.newsletter
+		.flex.box.form
+			iframe(src='https://upscri.be/67d2fa?as_embed', style='width:100%;max-width:800px;margin:0 auto;', height='400', frameborder='0', title='Subscribe for updates')
 
 	footer.flex
-		.item.flex
-			iframe(src='https://upscri.be/67d2fa?as_embed', style='width:100%;max-width:800px;margin:0 auto;', height='400', frameborder='0', title='Subscribe for updates')
 		.item.flex
 			p Made with ❤︎ by #[a(href="https://swapnil.net/") Swapnil Agarwal]
 		.item.flex
 			p Designed by #[a(href="https://github.com/zac-garby") Zac Garby] and #[a(href="https://mihir.ch/") Mihir Chaturvedi]
 		.item.flex
 			p Maintained by #[a(href="https://github.com/aslafy-z") Zadkiel] and #[a(href="https://github.com/vikaspotluri123") Vikas Potluri]
-		.item.flex
-			p Want your company's swag to be listed / unlisted? Want to advertise? #[a(href="https://t.me/swapagarwal") Contact us].
+
 	#codefund_ad
 
 	script.

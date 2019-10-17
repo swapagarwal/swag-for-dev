@@ -8,38 +8,62 @@
 .hidden
 	display none
 
+.box
+	width 100%
+
 section.main
-	width 90%
 	flex-direction column
 	margin 0 auto
 
 	.controls
 		flex-wrap wrap
+		background white-color
+		padding 0 2rem
+		border-radius 10px
+		border 1px solid grey-color
+		margin 4rem 2rem 0
 
 		@media screen and (max-width: 450px)
 			justify-content left
 
-	.heading
-		flex-direction column
-		min-height 40vh
+	.banner
 		text-align center
-		margin 6vh 2vh
+		padding 1.2rem
+		background primary-color
+		color white
 
-		h1
-			font-size 3rem
-			color #111
-			width 90%
+	.hero
+		background url('/assets/img/tiny_grid_@2X.png') repeat
 
-		p
-			font-size 1.2rem
-			color #555
-			margin-top 20px
-			width 90%
+		.heading
+			flex-direction column
+			max-width 90rem
+			text-align center
+			padding 10rem 6rem
+
+			@media screen and (max-width: 450px)
+				padding 3rem
+
+			h1
+				font-size 3rem
+				color #111
+				margin-bottom 2rem
+			h2
+				font-size 2rem
+				font-family $default-font-family-mono
+				color white-color
+				padding .4rem .8rem
+				border 2px dashed white-color
+				border-radius 6px
+				margin-bottom 2rem
+			p
+				font-size 2rem
+				max-width 65rem
+				color white-color
 
 	.buttons
 		justify-content flex-start
-		padding-bottom 15px
-		max-width 1150px
+		max-width 1140px
 		width 100%
 		flex-direction column
 		align-items flex-start
@@ -54,11 +78,14 @@ section.main
 				width 100%
 
 		.item
-			padding 5px
+			margin 10px 20px
+			&:last-child
+				margin-right 0
+			.title
+				margin-right 8px
 
 		.select-wrapper
 			position relative
-			margin 0 5px
 
 			&:before
 				position absolute
@@ -77,41 +104,46 @@ section.main
 			margin-right 6px
 
 		select
-			background #fff
 			border none
-			border-bottom 2px solid #bbb
-			border-radius 0px
+			border-radius 5px
+			border 2px solid grey-dark-color
 			padding 5px 20px 5px 5px
 			appearance none
 			font-family $default-font-family
-			font-size 0.9rem
+			font-size 1.6rem
 			cursor pointer
 
 		@import "imports/selectr-theme"
 
 	.content
-		max-width 1100px
+		max-width 1140px
 		flex-wrap wrap
 		align-items flex-start
 		justify-content space-around
 		margin 0 -10px
-		margin-top 8px
+		padding 20px
 		width 100%
 
 		@import "imports/card"
 
-footer
-	margin 0 auto 70px auto
-	flex-wrap wrap
-	padding-bottom 15px
-	max-width 1150px
-	width 100%
-	flex-direction row
+section.newsletter
+	background tertiary-color
 
+footer
+	font-size 1.8rem
+	margin 0 auto
+	padding 10rem
+	width 100%
+	flex-flow column wrap
+	text-align center
+	color white-color
+	background primary-color
 	.item
-		width 100%
+		margin-bottom 5px
 
 @import "imports/a11y"
+@import "imports/mediaquery"
 
 #content .item.visible
 	display initial
+
