@@ -1,5 +1,24 @@
 @require "imports/base"
 
+a
+	color link-color
+	transition .2s
+	&:hover
+		color link-hover-color
+
+.btn.secondary
+	color white-color
+	font-size 1.8rem
+	padding .4rem 1rem
+	margin-left 1rem
+	border-radius .6rem
+	border 2px solid link-color
+	text-decoration none
+	display inline-block
+	&:hover
+		background link-color
+		color white-color
+
 .container
 	min-height 100vh
 	width 100vw
@@ -23,9 +42,6 @@ section.main
 		border 1px solid grey-color
 		margin 4rem 2rem 0
 
-		@media screen and (max-width: 450px)
-			justify-content left
-
 	.banner
 		text-align center
 		padding 1.2rem
@@ -41,13 +57,15 @@ section.main
 			text-align center
 			padding 10rem 6rem
 
-			@media screen and (max-width: 450px)
-				padding 3rem
-
-			h1
-				font-size 3rem
-				color #111
-				margin-bottom 2rem
+			.logo
+				img
+					max-width 240px
+					width 100%
+					height 70px
+			.alt-logo
+				visibility hidden
+				display block
+				font-size 1.2rem
 			h2
 				font-size 2rem
 				font-family $default-font-family-mono
@@ -72,10 +90,6 @@ section.main
 			flex-wrap wrap
 			width 100%
 			justify-content flex-start
-
-		@media screen and (max-width: 450px)
-			.item, .select-wrapper, select
-				width 100%
 
 		.item
 			margin 10px 20px
@@ -140,6 +154,16 @@ footer
 	background primary-color
 	.item
 		margin-bottom 5px
+	.item#logo-footer
+		max-width 180px
+		width 100%
+		margin-bottom 20px
+		display inline-block
+	#github-logo
+		width 50px
+		height 50px
+		margin-top 30px
+
 
 @import "imports/a11y"
 @import "imports/mediaquery"
