@@ -66,7 +66,7 @@ gulp.task('pug', () => {
 
 gulp.task('styl', () => {
 	return gulp.src('src/styl/index.styl')
-		.pipe(stylus({compress: false}))
+		.pipe(stylus({compress: true}))
 		.pipe(postcss([
 			autoprefixer()
 		]))
