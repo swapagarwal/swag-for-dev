@@ -317,9 +317,9 @@
   {
     "name": "Operation Code",
     "difficulty": "medium",
-    "description": "Close 3 issues, get a t-shirt. Make 2 PRs and get stickers.",
+    "description": "Resolve 3 issues, get a t-shirt. Merge 2 PRs and get stickers.",
     "reference": "https://github.com/OperationCode/START_HERE",
-    "image": "https://upload.cc/i1/2018/10/21/yRDFvh.png",
+    "image": "https://camo.githubusercontent.com/77698f9bf2917e1f1db975f117d0997f638081ea/68747470733a2f2f6f7065726174696f6e2d636f64652d6173736574732e73332e75732d656173742d322e616d617a6f6e6177732e636f6d2f6f7065726174696f6e5f636f64655f6861636b746f626572666573745f323031392e6a7067",
     "dateAdded": "2019-10-02T18:41:10.000Z",
     "tags": ["clothing", "hacktoberfest", "stickers"]
   },
