@@ -234,6 +234,15 @@
     "tags": ["clothing", "hacktoberfest", "stickers"]
   },
   {
+    "name": "Les tilleuls",
+    "difficulty": "medium",
+    "description": "To win a t-shirt, make 3 pull requests on API Platform's GitHub repositories by October 31st, and then <a href='https://cooptilleuls.typeform.com/to/CG0pLd'>fill in this form.</a>",
+    "reference": "https://les-tilleuls.coop/fr/blog/article/celebrate-hacktoberfest-with-api-platform",
+    "image": "https://images.typeform.com/images/RQqS75zdNBEV/image/default",
+    "dateAdded": "2019-10-18T05:55:00.000Z",
+    "tags": ["clothing", "hacktoberfest"]
+  },
+  {
     "name": "Magento + Adobe",
     "difficulty": "hard",
     "description": "Submit 5 or more pull requests during October 2019 to any open repositories under Adobe or Magento organizations on GitHub, get a Squashtoberfest T-Shirt!",
