@@ -35,7 +35,7 @@
     "gulp-rev": "9.0.0",
     "gulp-rev-delete-original": "0.2.3",
     "gulp-stylus": "2.7.0",
-    "gulp-uglify-es": "1.0.4",
+    "gulp-uglify-es": "2.0.0",
     "gulp-webserver": "0.9.1",
     "husky": "3.0.9",
     "lint-prepush": "1.1.0",
