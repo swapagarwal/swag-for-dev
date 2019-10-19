@@ -41,7 +41,7 @@ Please consider donating to cover up our hosting costs. 🙏
     ```
     git clone https://github.com/swapagarwal/swag-for-dev.git
     ```
-1. Ensure you are running an up-to-date version of [Node.js](https://nodejs.org/en/download/package-manager/) on your machine, and that you have npm installed.
+1. Ensure you are running an up-to-date version of [Node.js](https://nodejs.org/en/download/package-manager/) on your machine and that you have npm installed.
 1. Make sure you have [Gulp](https://gulpjs.org/getting-started.html) installed by running
     ```
     npm install gulp-cli -g
