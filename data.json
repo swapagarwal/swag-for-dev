@@ -360,6 +360,15 @@
     "tags": ["hacktoberfest", "accessories"]
   },
   {
+    "name": "QMK",
+    "difficulty": "medium",
+    "description": "Four interactions with a QMK repo or $15 to cKeys non-profit will qualify you for a QMK T-shirt.",
+    "reference": "https://hacktoberfest.qmk.fm/",
+    "image": "https://hacktoberfest.qmk.fm/img/social.jpg",
+    "dateAdded": "2019-10-14T16:16:36.000Z",
+    "tags": ["clothing", "hacktoberfest"]
+  },
+  {
     "name": "SendGrid",
     "difficulty": "hard",
     "description": "Five accepted pull results from SendGrid will qualify you for a special edition SendGrid Hacktoberfest T-shirt.",
