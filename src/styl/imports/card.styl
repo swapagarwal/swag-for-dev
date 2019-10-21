@@ -42,31 +42,50 @@
 			&.swag
 				margin 5px -3px 10px -3px
 
-				span
+				span.tag
 					background #737373
 					color #fff
 					border-radius 3px
 					margin 0 3px
 					padding 2px 5px
 					font-size 1.6rem
+					&.hacktoberfest
+						background hacktoberfest-bg
+						color hacktoberfest-color
+					&.clothing
+						background clothing-bg
+						color clothing-color
+					&.stickers
+						background stickers-bg
+						color stickers-color
+					&.badges
+						background badges-bg
+						color badges-color
+					&.accessories
+						background accessories-bg
+						color accessories-color						
 
 			&.description
 				margin 10px 0
+				a
+					color tertiary-color
+					&:hover
+						color tertiary-hover-color
 
 		a.btn
-			color primary-color
+			color tertiary-color
 			font-size 1.8rem
 			padding .4rem 2rem
 			margin-top 1.2rem
 			border-radius .6rem
-			border 2px solid primary-color
+			border 2px solid tertiary-color
 			text-decoration none
 			display inline-block
 
 			&:hover
-				background primary-color
+				background tertiary-color
 				color white-color
-				border 2px solid primary-color
+				border 2px solid tertiary-color
 
 	img
 		height 100%
