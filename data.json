@@ -75,7 +75,7 @@
     "name": "CircleCI",
     "difficulty": "medium",
     "description": "Participate in #Orbtoberfest with CircleCI and claim limited edition swag! 1 - 3 pull requests: Limited-Edition Sticker, 4+ pull requests: Limited-Edition T-shirt",
-    "reference": "https://hacktoberfest.circleci.com/#/" ,
+    "reference": "https://hacktoberfest.circleci.com/#/",
     "image": "https://hacktoberfest.circleci.com/img/orbtoberfest-header_graphic.4f2bfde4.svg",
     "dateAdded": "2019-09-29T19:30:00.000Z",
     "tags": ["clothing", "hacktoberfest", "stickers"]
@@ -156,7 +156,7 @@
     "name": "Hacktoberfest 2019",
     "difficulty": "hard",
     "description": "To qualify for the official limited edition Hacktoberfest T-shirt, you must register and then make four pull requests (PRs) between October 1-31 (in any time zone).",
-    "reference": "https://hacktoberfest.digitalocean.com/" ,
+    "reference": "https://hacktoberfest.digitalocean.com/",
     "image": "https://hacktoberfest.digitalocean.com/assets/HF19_social-744d976f227e4aff6866443abcede8c651b309ec9c7c9f7410f5944f8e1299b9.png",
     "dateAdded": "2019-09-25T17:27:00.000Z",
     "tags": ["clothing", "hacktoberfest"]
@@ -325,10 +325,10 @@
   },
   {
     "name": "Operation Code",
-    "difficulty": "easy",
-    "description": "Close 3 issues, get a t-shirt. Make 2 PRs and get stickers.",
+    "difficulty": "medium",
+    "description": "Resolve 3 issues, get a t-shirt. Merge 2 PRs and get stickers.",
     "reference": "https://github.com/OperationCode/START_HERE",
-    "image": "https://upload.cc/i1/2018/10/21/yRDFvh.png",
+    "image": "https://camo.githubusercontent.com/77698f9bf2917e1f1db975f117d0997f638081ea/68747470733a2f2f6f7065726174696f6e2d636f64652d6173736574732e73332e75732d656173742d322e616d617a6f6e6177732e636f6d2f6f7065726174696f6e5f636f64655f6861636b746f626572666573745f323031392e6a7067",
     "dateAdded": "2019-10-02T18:41:10.000Z",
     "tags": ["clothing", "hacktoberfest", "stickers"]
   },
@@ -367,6 +367,15 @@
     "image": "https://www.parity.io/content/images/2019/09/hacktoberfest2019_bag.jpg",
     "dateAdded": "2019-10-12T19:49:00.000Z",
     "tags": ["hacktoberfest", "accessories"]
+  },
+  {
+    "name": "QMK",
+    "difficulty": "medium",
+    "description": "Four interactions with a QMK repo or $15 to cKeys non-profit will qualify you for a QMK T-shirt.",
+    "reference": "https://hacktoberfest.qmk.fm/",
+    "image": "https://hacktoberfest.qmk.fm/img/social.jpg",
+    "dateAdded": "2019-10-14T16:16:36.000Z",
+    "tags": ["clothing", "hacktoberfest"]
   },
   {
     "name": "SendGrid",
