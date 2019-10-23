@@ -387,6 +387,15 @@
     "tags": ["clothing", "hacktoberfest"]
   },
   {
+    "name": "Saleor",
+    "difficulty": "medium",
+    "description": "Solve any of the issues with the Hacktoberfest label and win a pair of Saleor Socks.",
+    "reference": "https://twitter.com/getsaleor/status/1179370205895634946",
+    "image": "https://imgur.com/fZhBx2G",
+    "dateAdded": "2018-10-23T17:39:00.000Z",
+    "tags": ["clothing", "hacktoberfest"]
+  },
+  {
     "name": "SendGrid",
     "difficulty": "hard",
     "description": "Five accepted pull results from SendGrid will qualify you for a special edition SendGrid Hacktoberfest T-shirt.",
