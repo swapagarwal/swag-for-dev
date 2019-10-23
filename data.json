@@ -396,6 +396,15 @@
     "tags": ["clothing", "hacktoberfest"]
   },
   {
+    "name": "SalesAgility",
+    "difficulty": "hard",
+    "description": "At least 1 merged PR in the SuiteCRM, SuiteDocs or SuitePortal repos wins you a mug.",
+    "reference": "https://suitecrm.com/community-diary-sept-2019-edition/",
+    "image": "https://suitecrm.com/wp-content/uploads/2017/12/icon_about1-200x39.png",
+    "dateAdded": "2018-10-23T17:44:00.000Z",
+    "tags": ["hacktoberfest", "accessories"]
+  },
+  {
     "name": "SendGrid",
     "difficulty": "hard",
     "description": "Five accepted pull results from SendGrid will qualify you for a special edition SendGrid Hacktoberfest T-shirt.",
