@@ -369,6 +369,15 @@
     "tags": ["hacktoberfest", "accessories"]
   },
   {
+    "name": "Python Discord",
+    "difficulty": "hard",
+    "description": "Two top contributors will win a PyDis Hacktoberfest T-shirt and three runner-ups will get a 1 year license for any JetBrains product of their choosing.",
+    "reference": "https://www.reddit.com/r/Python/comments/dbj0vh/python_discord_hacktoberfest_2019/",
+    "image": "https://ih1.redbubble.net/cover.1115641.2400x600.jpg",
+    "dateAdded": "2019-10-12T17:34:00.000Z",
+    "tags": ["hacktoberfest", "clothing", "accessories"]
+  },
+  {
     "name": "QMK",
     "difficulty": "medium",
     "description": "Four interactions with a QMK repo or $15 to cKeys non-profit will qualify you for a QMK T-shirt.",
