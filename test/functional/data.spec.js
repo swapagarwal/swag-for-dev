@@ -1,7 +1,9 @@
 const got = require('got');
 const {expect} = require('chai');
+const parallel = require('mocha.parallel');
 
 const data = require('../../data.json');
+const LIMIT_PARALLEL_TESTS = 10;
 
 function checkURL(url, head = false) {
 	const method = head ? 'head' : 'get';
@@ -16,6 +18,7 @@ function checkURL(url, head = false) {
 
 describe('swag-for-dev', function () {
 	it('data.json is valid', function () {
+		expect(data).to.be.an('Array');
 		data.forEach(datum => {
 			expect(datum.name).to.be.a('string');
 			expect(datum.difficulty).to.be.oneOf(['easy', 'medium', 'hard']);
@@ -26,24 +29,32 @@ describe('swag-for-dev', function () {
 		});
 	});
 
-	describe('valid images and references', function () {
-		expect(data).to.be.an('Array');
-		data.forEach(opportunity => {
-			/* eslint-disable max-nested-callbacks */
-			describe(opportunity.name, function () {
-				it('valid reference', function () {
-					this.timeout(6500);
-					this.slow(1500);
-					return checkURL(opportunity.reference);
-				});
+	const dataSlices = [];
+	for (let i = 0, {length} = data; i < length; i += LIMIT_PARALLEL_TESTS) {
+		dataSlices.push(data.slice(i, i + LIMIT_PARALLEL_TESTS));
+	}
 
-				it('valid image', function () {
-					this.timeout(6500);
-					this.slow(1500);
-					return checkURL(opportunity.image);
+	dataSlices.forEach((data, i) => {
+		const testName = `validate images and references ${(i * LIMIT_PARALLEL_TESTS) + 1} - ` +
+			`${(i * LIMIT_PARALLEL_TESTS) + data.length}`;
+		parallel(testName, function () {
+			data.forEach(opportunity => {
+				/* eslint-disable max-nested-callbacks */
+				describe(opportunity.name, function () {
+					it(opportunity.name + ' has a valid reference', function () {
+						this.timeout(6500);
+						this.slow(1500);
+						return checkURL(opportunity.reference);
+					});
+
+					it(opportunity.name + ' has a valid image', function () {
+						this.timeout(6500);
+						this.slow(1500);
+						return checkURL(opportunity.image);
+					});
 				});
+				/* eslint-enable max-nested-callbacks */
 			});
-			/* eslint-enable max-nested-callbacks */
 		});
 	});
 });
