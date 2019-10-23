@@ -99,6 +99,15 @@
     "tags": ["clothing", "expired"]
   },
   {
+    "name": "Datenanfragen.de e. V.",
+    "difficulty": "medium",
+    "description": "One merged PR gets at least 3 stickers (limited to 100 sets) and a chance at a limited edition t-shirt.",
+    "reference": "https://www.datarequests.org/blog/hacktoberfest-2019/",
+    "image": "https://www.datarequests.org/img/blog/hacktoberfest-2019.png",
+    "dateAdded": "2019-10-23T00:39:55.000Z",
+    "tags": ["stickers", "clothing", "hacktoberfest"]
+  },
+  {
     "name": "Devfolio",
     "difficulty": "hard",
     "description": "Four merged pull requests during the month of October will earn stickers and a chance at a limited edition t-shirt. Exceptional PRs will also earn an exclusive limited edition t-shirt.",
