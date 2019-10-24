@@ -1,7 +1,5 @@
 # Formatting set by travis CLI
 language: node_js
-node_js:
-- '10'
 sudo: false
 env:
 - TEST_SUITE=lint
