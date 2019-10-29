@@ -135,6 +135,15 @@
     "tags": ["clothing", "hacktoberfest", "expired", "stickers"]
   },
   {
+    "name": "Docusaurus",
+    "difficulty": "hard",
+    "description": "Get swag for migrating websites to Docusaurus 2!",
+    "reference": "https://github.com/facebook/docusaurus/issues/1834",
+    "image": "https://imgur.com/IbZCAWP",
+    "dateAdded": "2019-10-27T12:37:23.000Z",
+    "tags": ["hacktoberfest", "stickers"]
+  },
+  {
     "name": "Flutterwave",
     "difficulty": "hard",
     "description": "Contribute 2 or more merged PRs to any of our community libraries and win a shirt",
