@@ -107,7 +107,7 @@ gulp.task('swag-img:download', () => {
 gulp.task('swag-img:optimize', cb => {
 	const jpegOutputConfig = {
 		name: '*.jpeg',
-		height: 300,
+		width: 300,
 		flatten: true
 	};
 	const webpOutputConfig = Object.assign({
