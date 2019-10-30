@@ -108,15 +108,6 @@
     "tags": ["clothing", "expired"]
   },
   {
-    "name": "Datenanfragen.de e. V.",
-    "difficulty": "medium",
-    "description": "One merged PR gets at least 3 stickers (limited to 100 sets) and a chance at a limited edition t-shirt.",
-    "reference": "https://www.datarequests.org/blog/hacktoberfest-2019/",
-    "image": "https://www.datarequests.org/img/blog/hacktoberfest-2019.png",
-    "dateAdded": "2019-10-23T00:39:55.000Z",
-    "tags": ["stickers", "clothing", "hacktoberfest"]
-  },
-  {
     "name": "Devfolio",
     "difficulty": "hard",
     "description": "Four merged pull requests during the month of October will earn stickers and a chance at a limited edition t-shirt. Exceptional PRs will also earn an exclusive limited edition t-shirt.",
@@ -270,15 +261,6 @@
     "tags": ["clothing", "hacktoberfest", "stickers"]
   },
   {
-    "name": "Les tilleuls",
-    "difficulty": "medium",
-    "description": "To win a t-shirt, make 3 pull requests on API Platform's GitHub repositories by October 31st, and then <a href='https://cooptilleuls.typeform.com/to/CG0pLd'>fill in this form.</a>",
-    "reference": "https://les-tilleuls.coop/fr/blog/article/celebrate-hacktoberfest-with-api-platform",
-    "image": "https://i.imgur.com/uX5nRnW.png",
-    "dateAdded": "2019-10-18T05:55:00.000Z",
-    "tags": ["clothing", "hacktoberfest"]
-  },
-  {
     "name": "Magento + Adobe",
     "difficulty": "hard",
     "description": "Submit 5 or more pull requests during October 2019 to any open repositories under Adobe or Magento organizations on GitHub, get a Squashtoberfest T-Shirt!",
@@ -412,24 +394,6 @@
     "image": "https://hacktoberfest.qmk.fm/img/social.jpg",
     "dateAdded": "2019-10-14T16:16:36.000Z",
     "tags": ["clothing", "hacktoberfest"]
-  },
-  {
-    "name": "Saleor",
-    "difficulty": "medium",
-    "description": "Solve any of the issues with the Hacktoberfest label and win a pair of Saleor Socks.",
-    "reference": "https://twitter.com/getsaleor/status/1179370205895634946",
-    "image": "https://i.imgur.com/fZhBx2G.jpg",
-    "dateAdded": "2018-10-23T17:39:00.000Z",
-    "tags": ["clothing", "hacktoberfest"]
-  },
-  {
-    "name": "SalesAgility",
-    "difficulty": "hard",
-    "description": "At least 1 merged PR in the SuiteCRM, SuiteDocs or SuitePortal repos wins you a mug.",
-    "reference": "https://suitecrm.com/community-diary-sept-2019-edition/",
-    "image": "https://suitecrm.com/wp-content/uploads/2017/12/icon_about1-200x39.png",
-    "dateAdded": "2018-10-23T17:44:00.000Z",
-    "tags": ["hacktoberfest", "accessories"]
   },
   {
     "name": "SendGrid",
