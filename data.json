@@ -126,6 +126,24 @@
     "tags": ["clothing", "hacktoberfest", "expired", "stickers"]
   },
   {
+    "name": "Docusaurus",
+    "difficulty": "hard",
+    "description": "Get swag for migrating websites to Docusaurus 2!",
+    "reference": "https://github.com/facebook/docusaurus/issues/1834",
+    "image": "https://i.imgur.com/IbZCAWP.jpg",
+    "dateAdded": "2019-10-27T12:37:23.000Z",
+    "tags": ["hacktoberfest", "stickers"]
+  },
+  {
+    "name": "Flutterwave",
+    "difficulty": "hard",
+    "description": "Contribute 2 or more merged PRs to any of our community libraries and win a shirt",
+    "reference": "https://twitter.com/Ace_KYD/status/1183738026511519745",
+    "image": "https://i.imgur.com/OnQL0zO.jpg",
+    "dateAdded": "2019-10-17T05:55:00.000Z",
+    "tags": ["clothing", "hacktoberfest"]
+  },
+  {
     "name": "Gatsby",
     "difficulty": "hard",
     "description": "Get a pull request merged into Gatsby and receive a free shirt, socks, or stickers.",
@@ -470,7 +488,7 @@
   {
     "name": "Xamarin",
     "difficulty": "medium",
-    "description": "Make pull requests to approved to work issues to get stickers, t-shirt or even a trophy.",
+    "description": "Make quality pull requests to issues that are 'approved item of work' to get stickers, t-shirt or even a trophy.",
     "reference": "https://devblogs.microsoft.com/xamarin/hacktoberfest-2019-xamarin-edition/",
     "image": "http://devblogs.microsoft.com/xamarin/wp-content/uploads/sites/44/2019/10/medium_25686-c9dd82896c9e66bb82600f256444abe6.png",
     "dateAdded": "2019-10-08T21:00:00.000Z",
