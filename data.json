@@ -90,6 +90,15 @@
     "tags": ["stickers"]
   },
   {
+    "name": "CodingBlocks",
+    "difficulty": "medium",
+    "description": "Have one merged PR on any of <a href='https://cb.lk/gh'>Coding Blocks open source projects</a> and get t-shirt with stickers or even a bag (1 PR - t-shirt, 5+ PRs - bag)",
+    "reference": "https://blog.codingblocks.com/2019/cb-hacktoberfest-2019/",
+    "image": "https://i.imgur.com/0SrSsNM.png",
+    "dateAdded": "2019-10-09T19:00:00.000Z",
+    "tags": ["accessories", "stickers", "hacktoberfest", "clothing"]
+  },
+  {
     "name": "Contentful",
     "difficulty": "easy",
     "description": "Sign up to Contentful and get a free pair of socks to your door.",
@@ -245,7 +254,7 @@
   {
     "name": "JS Bin",
     "difficulty": "easy",
-    "description": "Fill out a Google form with your name and address and get a sticker. There’s no cost to you, but they will be restricting the send outs to bi-monthly or quaterly depending on demand.",
+    "description": "Fill out a Google form with your name and address and get a sticker. There’s no cost to you, but they will be restricting the send outs to bi-monthly or quarterly depending on demand.",
     "reference": "https://jsbin.com/help/stickers/",
     "image": "https://pbs.twimg.com/media/CccQEDjUUAE9wRO.jpg",
     "dateAdded": "2018-11-28T16:42:00.000Z",
@@ -466,6 +475,15 @@
     "image": "https://pbs.twimg.com/media/DrA_3NBVYAAmHnS.jpg",
     "dateAdded": "2018-10-23T10:00:46.000Z",
     "tags": ["clothing", "hacktoberfest", "expired", "stickers"]
+  },
+  {
+    "name": "Strawberry",
+    "difficulty": "easy",
+    "description": "Strawberry stickers for any accepted PR in October",
+    "reference": "https://twitter.com/patrick91/status/1178952690300272640",
+    "image": "https://i.imgur.com/QatMBLf.jpg",
+    "dateAdded": "2019-10-12T10:22:50.000Z",
+    "tags": ["hacktoberfest", "stickers"]
   },
   {
     "name": "Twilio",
