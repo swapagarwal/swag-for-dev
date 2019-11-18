@@ -15,7 +15,7 @@
     "reference": "https://www.accordproject.org/events/hacktoberfest-2019/",
     "image": "https://img.accordproject.org/wp-content/uploads/2019/09/01183436/1.-T-Shirt-Mockup.jpg",
     "dateAdded": "2019-10-04T15:29:00.000Z",
-    "tags": ["stickers", "clothing", "hacktoberfest"]
+    "tags": ["stickers", "clothing", "hacktoberfest", "expired"]
   },
   {
     "name": "Alexa",
@@ -42,7 +42,7 @@
     "reference": "https://medium.com/appwrite-io/hacktoberfest-2019-is-almost-here-lets-celebrate-it-together-24b311236dd",
     "image": "https://miro.medium.com/max/1600/1*mk5pBbuAZUg9j7nc6lbfrg.jpeg",
     "dateAdded": "2019-10-06T20:30:00.000Z",
-    "tags": ["badges", "hacktoberfest", "stickers"]
+    "tags": ["badges", "hacktoberfest", "stickers", "expired"]
   },
   {
     "name": "Aqua",
@@ -51,7 +51,7 @@
     "reference": "https://blog.aquasec.com/aqua-open-source-security-hacktoberfest",
     "image": "https://blog.aquasec.com/hs-fs/hubfs/Blog/HacktoberFest%20Blog_650_315.jpg?width=1300&name=HacktoberFest%20Blog_650_315.jpg",
     "dateAdded": "2019-10-07T13:05:05.000Z",
-    "tags": ["stickers", "clothing", "hacktoberfest"]
+    "tags": ["stickers", "clothing", "hacktoberfest", "expired"]
   },
   {
     "name": "Aras",
@@ -78,7 +78,7 @@
     "reference": "https://hacktoberfest.circleci.com/#/",
     "image": "https://i.imgur.com/MkxWDck.jpg",
     "dateAdded": "2019-09-29T19:30:00.000Z",
-    "tags": ["clothing", "hacktoberfest", "stickers"]
+    "tags": ["clothing", "hacktoberfest", "stickers", "expired"]
   },
   {
     "name": "Codeship",
@@ -96,7 +96,7 @@
     "reference": "https://blog.codingblocks.com/2019/cb-hacktoberfest-2019/",
     "image": "https://i.imgur.com/0SrSsNM.png",
     "dateAdded": "2019-10-09T19:00:00.000Z",
-    "tags": ["accessories", "stickers", "hacktoberfest", "clothing"]
+    "tags": ["accessories", "stickers", "hacktoberfest", "clothing", "expired"]
   },
   {
     "name": "Contentful",
@@ -114,7 +114,7 @@
     "reference": "https://www.datarequests.org/blog/hacktoberfest-2019/",
     "image": "https://www.datarequests.org/img/blog/hacktoberfest-2019.png",
     "dateAdded": "2019-10-23T00:39:55.000Z",
-    "tags": ["stickers", "clothing", "hacktoberfest"]
+    "tags": ["stickers", "clothing", "hacktoberfest", "expired"]
   },
   {
     "name": "Devfolio",
@@ -123,7 +123,7 @@
     "reference": "https://devfolio.co/blog/hacktoberfest-2019-devfolio/",
     "image": "https://devfolio.sgp1.digitaloceanspaces.com/ghost/2019/10/ghost_download1.jpeg",
     "dateAdded": "2019-10-05T23:17:55.000Z",
-    "tags": ["stickers", "clothing", "hacktoberfest"]
+    "tags": ["stickers", "clothing", "hacktoberfest", "expired"]
   },
   {
     "name": "devRant",
@@ -150,7 +150,7 @@
     "reference": "https://github.com/facebook/docusaurus/issues/1834",
     "image": "https://i.imgur.com/IbZCAWP.jpg",
     "dateAdded": "2019-10-27T12:37:23.000Z",
-    "tags": ["hacktoberfest", "stickers"]
+    "tags": ["hacktoberfest", "stickers", "expired"]
   },
   {
     "name": "Flutterwave",
@@ -159,7 +159,7 @@
     "reference": "https://twitter.com/Ace_KYD/status/1183738026511519745",
     "image": "https://i.imgur.com/OnQL0zO.jpg",
     "dateAdded": "2019-10-17T05:55:00.000Z",
-    "tags": ["clothing", "hacktoberfest"]
+    "tags": ["clothing", "hacktoberfest", "expired"]
   },
   {
     "name": "Gatsby",
@@ -177,7 +177,7 @@
     "reference": "https://opensource.globo.com/hacktoberfest/",
     "image": "https://opensource.globo.com/static/hacktoberfest-lg-ccb42ae80e9ac29693f57e549263e889.png",
     "dateAdded": "2019-10-10T13:00:00.000Z",
-    "tags": ["hacktoberfest", "clothing"]
+    "tags": ["hacktoberfest", "clothing", "expired"]
   },
   {
     "name": "Google Assistant",
@@ -195,7 +195,7 @@
     "reference": "https://hacktoberfest.digitalocean.com/",
     "image": "https://hacktoberfest.digitalocean.com/assets/HF19_social-744d976f227e4aff6866443abcede8c651b309ec9c7c9f7410f5944f8e1299b9.png",
     "dateAdded": "2019-09-25T17:27:00.000Z",
-    "tags": ["clothing", "hacktoberfest"]
+    "tags": ["clothing", "hacktoberfest", "expired"]
   },
   {
     "name": "Hasura",
@@ -204,7 +204,7 @@
     "reference": "https://blog.hasura.io/hasura-joins-hacktoberfest-2019/",
     "image": "https://cdn-images-1.medium.com/max/1600/1*kQxL8yhs0c1x1WVXnjhrIw.png",
     "dateAdded": "2019-10-02T21:06:00.000Z",
-    "tags": ["clothing", "hacktoberfest", "stickers"]
+    "tags": ["clothing", "hacktoberfest", "stickers", "expired"]
   },
   {
     "name": "IPFS",
@@ -222,7 +222,7 @@
     "reference": "https://www.jabref.org/hacktoberfest/2019.html",
     "image": "https://hacktoberfest.digitalocean.com/assets/HF19_social-744d976f227e4aff6866443abcede8c651b309ec9c7c9f7410f5944f8e1299b9.png",
     "dateAdded": "2019-10-05T23:07:46.000Z",
-    "tags": ["stickers", "clothing", "hacktoberfest"]
+    "tags": ["stickers", "clothing", "hacktoberfest", "expired"]
   },
   {
     "name": "Jetbrains",
@@ -258,7 +258,7 @@
     "reference": "https://discourse.ladybug.tools/t/celebrate-hacktoberfest-2019-with-ladybug-tools/7314",
     "image": "https://discourse.ladybug.tools/uploads/default/original/2X/d/d0d4cc754f688015675adf8698d42b42dde981bc.png",
     "dateAdded": "2019-10-09T10:23:46.000Z",
-    "tags": ["hacktoberfest", "stickers"]
+    "tags": ["hacktoberfest", "stickers", "expired"]
   },
   {
     "name": "LBRY",
@@ -267,7 +267,7 @@
     "reference": "https://lbry.com/news/hacktoberfest-2019",
     "image": "https://spee.ch/@lbryblog:e/hacktoberfest2019.png",
     "dateAdded": "2019-10-05T10:23:46.000Z",
-    "tags": ["clothing", "hacktoberfest", "stickers"]
+    "tags": ["clothing", "hacktoberfest", "stickers", "expired"]
   },
   {
     "name": "Les tilleuls",
@@ -276,7 +276,7 @@
     "reference": "https://les-tilleuls.coop/fr/blog/article/celebrate-hacktoberfest-with-api-platform",
     "image": "https://i.imgur.com/uX5nRnW.png",
     "dateAdded": "2019-10-18T05:55:00.000Z",
-    "tags": ["clothing", "hacktoberfest"]
+    "tags": ["clothing", "hacktoberfest", "expired"]
   },
   {
     "name": "Magento + Adobe",
@@ -285,7 +285,7 @@
     "reference": "https://opensource.adobe.com/squashtoberfest/",
     "image": "https://i.imgur.com/yt3iUBB.png",
     "dateAdded": "2019-10-03T14:17:39.000Z",
-    "tags": ["clothing", "hacktoberfest"]
+    "tags": ["clothing", "hacktoberfest", "expired"]
   },
   {
     "name": "MayaData",
@@ -294,7 +294,7 @@
     "reference": "https://blog.mayadata.io/mayadata-celebrates-hacktoberfest-2019",
     "image": "https://blog.mayadata.io/hs-fs/hubfs/Hacktoberfest-11-1.png",
     "dateAdded": "2019-10-02T16:48:14.000Z",
-    "tags": ["clothing", "device", "hacktoberfest", "stickers"]
+    "tags": ["clothing", "device", "hacktoberfest", "stickers", "expired"]
   },
   {
     "name": "Microsoft",
@@ -366,7 +366,7 @@
     "reference": "https://github.com/OperationCode/START_HERE",
     "image": "https://camo.githubusercontent.com/77698f9bf2917e1f1db975f117d0997f638081ea/68747470733a2f2f6f7065726174696f6e2d636f64652d6173736574732e73332e75732d656173742d322e616d617a6f6e6177732e636f6d2f6f7065726174696f6e5f636f64655f6861636b746f626572666573745f323031392e6a7067",
     "dateAdded": "2019-10-02T18:41:10.000Z",
-    "tags": ["clothing", "hacktoberfest", "stickers"]
+    "tags": ["clothing", "hacktoberfest", "stickers", "expired"]
   },
   {
     "name": "opsdroid",
@@ -402,7 +402,7 @@
     "reference": "https://www.parity.io/hacktoberfest-2019-parity/",
     "image": "https://www.parity.io/content/images/2019/09/hacktoberfest2019_bag.jpg",
     "dateAdded": "2019-10-12T19:49:00.000Z",
-    "tags": ["hacktoberfest", "accessories"]
+    "tags": ["hacktoberfest", "accessories", "expired"]
   },
   {
     "name": "QMK",
@@ -411,7 +411,7 @@
     "reference": "https://hacktoberfest.qmk.fm/",
     "image": "https://hacktoberfest.qmk.fm/img/social.jpg",
     "dateAdded": "2019-10-14T16:16:36.000Z",
-    "tags": ["clothing", "hacktoberfest"]
+    "tags": ["clothing", "hacktoberfest", "expired"]
   },
   {
     "name": "Saleor",
@@ -420,7 +420,7 @@
     "reference": "https://twitter.com/getsaleor/status/1179370205895634946",
     "image": "https://i.imgur.com/fZhBx2G.jpg",
     "dateAdded": "2018-10-23T17:39:00.000Z",
-    "tags": ["clothing", "hacktoberfest"]
+    "tags": ["clothing", "hacktoberfest", "expired"]
   },
   {
     "name": "SalesAgility",
@@ -429,7 +429,7 @@
     "reference": "https://suitecrm.com/community-diary-sept-2019-edition/",
     "image": "https://suitecrm.com/wp-content/uploads/2017/12/icon_about1-200x39.png",
     "dateAdded": "2018-10-23T17:44:00.000Z",
-    "tags": ["hacktoberfest", "accessories"]
+    "tags": ["hacktoberfest", "accessories", "expired"]
   },
   {
     "name": "SendGrid",
@@ -447,7 +447,7 @@
     "reference": "https://community.sensenet.com/blog/2019/10/01/hacktoberfest-is-here",
     "image": "https://community.sensenet.com/img/posts/hacktoberfest2019.png",
     "dateAdded": "2019-10-05T22:56:53.000Z",
-    "tags": ["clothing", "hacktoberfest"]
+    "tags": ["clothing", "hacktoberfest", "expired"]
   },
   {
     "name": "SimbaChain",
@@ -492,7 +492,7 @@
     "reference": "https://www.twilio.com/blog/ahoy-hacktoberfest-2019",
     "image": "https://s3.amazonaws.com/com.twilio.prod.twilio-docs/images/sticker-teaser-questionmark.width-1000.jpg",
     "dateAdded": "2019-10-04T15:55:15.000Z",
-    "tags": ["stickers", "clothing", "hacktoberfest"]
+    "tags": ["stickers", "clothing", "hacktoberfest", "expired"]
   },
   {
     "name": "Umbraco",
@@ -510,7 +510,7 @@
     "reference": "https://platform.uno/uno-is-joining-hacktoberfest-2019/",
     "image": "https://s3.amazonaws.com/uno-website-assets/wp-content/uploads/2019/08/21141002/diagram-991x1024.png",
     "dateAdded": "2019-09-25T13:05:05.000Z",
-    "tags": ["clothing", "hacktoberfest"]
+    "tags": ["clothing", "hacktoberfest", "expired"]
   },
   {
     "name": "Umbraco",
@@ -519,7 +519,7 @@
     "reference": "https://umbraco.com/blog/hacktoberfest-2019/",
     "image": "https://umbraco.com/media/6215/hacktoberfest2.png",
     "dateAdded": "2019-10-04T15:17:00.000Z",
-    "tags": ["hacktoberfest", "stickers"]
+    "tags": ["hacktoberfest", "stickers", "expired"]
   },
   {
     "name": "Valor Software",
@@ -528,7 +528,7 @@
     "reference": "https://valor-software.com/articles/hacktoberfest-2019-is-coming-and-ngx-bootstrap-strives-for-your-attention.html",
     "image": "https://valor-software.com/assets/images/5d91e2ddd7ccc682175962ea_f27J06AkBW3Dd3pB4fanZWw1sbrhcs-GJCI5H3DgSK_U2R2cbRSAY_-3hTCe75DQU9iMPJpWnJJlSLra_yAyKtPmzmyeUlGVIVlTj2do6t_Y1za0aYfDaTVc8bR6yFgEwNIQ1ZXM.jpeg",
     "dateAdded": "2019-10-04T16:13:00.000Z",
-    "tags": ["hacktoberfest", "stickers", "accessories"]
+    "tags": ["hacktoberfest", "stickers", "accessories", "expired"]
   },
   {
     "name": "WhatIsMyBrowser",
@@ -546,6 +546,6 @@
     "reference": "https://devblogs.microsoft.com/xamarin/hacktoberfest-2019-xamarin-edition/",
     "image": "http://devblogs.microsoft.com/xamarin/wp-content/uploads/sites/44/2019/10/medium_25686-c9dd82896c9e66bb82600f256444abe6.png",
     "dateAdded": "2019-10-08T21:00:00.000Z",
-    "tags": ["stickers", "hacktoberfest", "clothing"]
+    "tags": ["stickers", "hacktoberfest", "clothing", "expired"]
   }
 ]
