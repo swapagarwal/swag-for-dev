@@ -303,7 +303,7 @@
     "reference": "https://cloudblogs.microsoft.com/opensource/2018/09/30/join-hacktoberfest-2018-celebration-microsoft/",
     "image": "https://open.microsoft.com/wp-content/uploads/2018/09/Hacktoberfest-Blog.jpg",
     "dateAdded": "2018-10-01T08:36:05.000Z",
-    "tags": ["clothing", "hacktoberfest", "expired"]
+    "tags": ["clothing", "hacktoberfest","expired"]
   },
   {
     "name": "NativeScript",
@@ -546,6 +546,6 @@
     "reference": "https://devblogs.microsoft.com/xamarin/hacktoberfest-2019-xamarin-edition/",
     "image": "http://devblogs.microsoft.com/xamarin/wp-content/uploads/sites/44/2019/10/medium_25686-c9dd82896c9e66bb82600f256444abe6.png",
     "dateAdded": "2019-10-08T21:00:00.000Z",
-    "tags": ["stickers", "hacktoberfest", "clothing", "expired"]
+    "tags": ["stickers", "hacktoberfest", "clothing","expired"]
   }
 ]
