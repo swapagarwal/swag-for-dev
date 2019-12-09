@@ -51,6 +51,7 @@ include ./fork.pug
 				- difficulty = swag.difficulty + ' difficulty';
 				- difficultyTitle = 'Difficulty: ' + swag.difficulty;
 				- expired = swag.tags.includes('expired');
+				- reference = 'https://devswag.io' + swag.reference ? swag.reference : swag.name;
 				div(
 					class="item " + (expired ? '' : 'visible ') + swag.difficulty + swag.tags.map(t => ` tag-${t}`).join('')
 					data-name=swag.name.toLowerCase()
@@ -66,6 +67,7 @@ include ./fork.pug
 					div.information
 						div.title.flex
 							h1=swag.name
+							applause-button(url=reference)
 							div
 								div(class=difficulty title=difficultyTitle)
 									span.sr-only=difficultyTitle
