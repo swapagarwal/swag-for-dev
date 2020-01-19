@@ -547,5 +547,14 @@
     "image": "http://devblogs.microsoft.com/xamarin/wp-content/uploads/sites/44/2019/10/medium_25686-c9dd82896c9e66bb82600f256444abe6.png",
     "dateAdded": "2019-10-08T21:00:00.000Z",
     "tags": ["stickers", "hacktoberfest", "clothing", "expired"]
-  }
+  },
+  {
+    "name": "ImgBot",
+    "difficulty": "easy",
+    "description": "Install the bot on your repo, get some awesome laptop stickers both from ImgBot after filling out the form!",
+    "reference": "https://docs.google.com/forms/d/e/1FAIpQLScpL5wT5dsFTXZou49p7_W7Y2sbMeqKulvDrwHQabecc4YF7w/viewform",
+    "image": "https://pbs.twimg.com/media/EJzGQGKUwAALlSC?format=jpg&name=4096x4096",
+    "dateAdded": "2020-01-19T05:30:00.000Z",
+    "tags": ["stickers"]
+  },
 ]
