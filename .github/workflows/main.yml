@@ -4,9 +4,7 @@ on:
   push:
     branches:
       - master
-  pull_request:
-    branches:
-      '*'
+  pull_request: {}
 jobs:
   unit:
     runs-on: ubuntu-latest
