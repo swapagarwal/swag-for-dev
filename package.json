@@ -40,7 +40,7 @@
     "husky": "4.2.1",
     "lint-prepush": "1.1.0",
     "merge-stream": "2.0.0",
-    "mocha": "7.0.0",
+    "mocha": "7.0.1",
     "mocha.parallel": "0.15.6",
     "xo": "0.25.3"
   },
