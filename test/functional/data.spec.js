@@ -7,7 +7,7 @@ const LIMIT_PARALLEL_TESTS = 10;
 
 const requestOptions = {
 	throwHttpErrors: false,
-	insecureHTTPParser: true,
+	insecureHTTPParser: true
 };
 
 function checkURL(url, head = false) {
