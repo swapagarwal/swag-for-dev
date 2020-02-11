@@ -72,6 +72,15 @@
     "tags": ["clothing", "hacktoberfest", "expired", "stickers"]
   },
   {
+    "name": "Blockstack",
+    "difficulty": "medium",
+    "description": "Complete the Zero-to-DApp tutorial and submit your sample to App.co to get a T-shirt!",
+    "reference": "https://community.blockstack.org/z2d-shirt",
+    "image": "https://static.tildacdn.com/tild6433-6535-4833-b932-323062343930/Zero_to_Dapp_shirt_p.png",
+    "dateAdded": "2020-01-19T05:30:00.000Z",
+    "tags": ["clothing"]
+  },
+  {
     "name": "CircleCI",
     "difficulty": "medium",
     "description": "Participate in #Orbtoberfest with CircleCI and claim limited edition swag! 1 - 3 pull requests: Limited-Edition Sticker, 4+ pull requests: Limited-Edition T-shirt",
@@ -207,6 +216,15 @@
     "tags": ["clothing", "hacktoberfest", "stickers", "expired"]
   },
   {
+    "name": "ImgBot",
+    "difficulty": "easy",
+    "description": "Install the bot on your repo and get some awesome laptop stickers from ImgBot after filling out the form!",
+    "reference": "https://docs.google.com/forms/d/e/1FAIpQLScpL5wT5dsFTXZou49p7_W7Y2sbMeqKulvDrwHQabecc4YF7w/viewform",
+    "image": "https://pbs.twimg.com/media/EJzGQGKUwAALlSC?format=jpg&name=4096x4096",
+    "dateAdded": "2020-01-02T05:30:00.000Z",
+    "tags": ["stickers"]
+  },
+  {
     "name": "IPFS",
     "difficulty": "easy",
     "description": "Contact the IPFS team via e-mail, and ask them kindly for some swag!",
@@ -301,7 +319,7 @@
     "difficulty": "medium",
     "description": "Make one pull request in October 2018 to any <a href='https://opensource.microsoft.com/'>open source Microsoft repository</a>, earn a limited edition T-shirt!",
     "reference": "https://cloudblogs.microsoft.com/opensource/2018/09/30/join-hacktoberfest-2018-celebration-microsoft/",
-    "image": "https://open.microsoft.com/wp-content/uploads/2018/09/Hacktoberfest-Blog.jpg",
+    "image": "https://i.imgur.com/d8Sa90c.jpg",
     "dateAdded": "2018-10-01T08:36:05.000Z",
     "tags": ["clothing", "hacktoberfest", "expired"]
   },
@@ -381,10 +399,10 @@
     "name": "Pagerduty",
     "difficulty": "easy",
     "description": "Create and fill out your profile. Upload a custom avatar. Introduce yourself.",
-    "reference": "https://community.pagerduty.com/t/free-pagerduty-stickers-are-back-and-here-to-stay/4520",
+    "reference": "https://twitter.com/pagerduty",
     "image": "https://aws1.discourse-cdn.com/pagerduty/original/2X/d/ddd643ad3608a5580455e0c983605c97249e705e.jpeg",
     "dateAdded": "2019-10-09T22:04:00.000Z",
-    "tags": ["stickers"]
+    "tags": ["stickers", "expired"]
   },
   {
     "name": "Passenger",
@@ -462,7 +480,7 @@
     "name": "source{d}",
     "difficulty": "hard",
     "description": "Three merged pull requests in any source{d} repo to receive a limited edition T-shirt as well as one sticker for those who get at least one pull requests merged.",
-    "reference": "https://go.sourced.tech/hacktoberfest",
+    "reference": "https://medium.com/sourcedtech/celebrating-open-source-with-hacktoberfest-2018-7283cfc6666b",
     "image": "https://pbs.twimg.com/media/DrA_3NBVYAAmHnS.jpg",
     "dateAdded": "2018-10-23T10:00:46.000Z",
     "tags": ["clothing", "hacktoberfest", "expired", "stickers"]
