@@ -7,7 +7,8 @@ const LIMIT_PARALLEL_TESTS = 10;
 
 function checkURL(url, head = false) {
 	const method = head ? 'head' : 'get';
-	return got[method](url, {throwHttpErrors: false}).then(({statusCode}) => {
+	const options = {throwHttpErrors: false, insecureHTTPParser: true};
+	return got[method](url, options).then(({statusCode}) => {
 		if (!head && statusCode === 403) {
 			return checkURL(url, true);
 		}
