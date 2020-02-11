@@ -5,9 +5,14 @@ const parallel = require('mocha.parallel');
 const data = require('../../data.json');
 const LIMIT_PARALLEL_TESTS = 10;
 
+const requestOptions = {
+	throwHttpErrors: false,
+	insecureHTTPParser: true
+};
+
 function checkURL(url, head = false) {
 	const method = head ? 'head' : 'get';
-	return got[method](url, {throwHttpErrors: false}).then(({statusCode}) => {
+	return got[method](url, requestOptions).then(({statusCode}) => {
 		if (!head && statusCode === 403) {
 			return checkURL(url, true);
 		}
@@ -42,13 +47,13 @@ describe('swag-for-dev', function () {
 				/* eslint-disable max-nested-callbacks */
 				describe(opportunity.name, function () {
 					it(opportunity.name + ' has a valid reference', function () {
-						this.timeout(6500);
+						this.timeout(10000);
 						this.slow(1500);
 						return checkURL(opportunity.reference);
 					});
 
 					it(opportunity.name + ' has a valid image', function () {
-						this.timeout(6500);
+						this.timeout(10000);
 						this.slow(1500);
 						return checkURL(opportunity.image);
 					});
