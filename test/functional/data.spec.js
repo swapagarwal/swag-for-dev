@@ -8,7 +8,6 @@ const LIMIT_PARALLEL_TESTS = 10;
 const requestOptions = {
 	throwHttpErrors: false,
 	insecureHTTPParser: true,
-	timeout: 10000,
 };
 
 function checkURL(url, head = false) {
@@ -48,13 +47,13 @@ describe('swag-for-dev', function () {
 				/* eslint-disable max-nested-callbacks */
 				describe(opportunity.name, function () {
 					it(opportunity.name + ' has a valid reference', function () {
-						this.timeout(6500);
+						this.timeout(10000);
 						this.slow(1500);
 						return checkURL(opportunity.reference);
 					});
 
 					it(opportunity.name + ' has a valid image', function () {
-						this.timeout(6500);
+						this.timeout(10000);
 						this.slow(1500);
 						return checkURL(opportunity.image);
 					});
