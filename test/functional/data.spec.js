@@ -5,10 +5,15 @@ const parallel = require('mocha.parallel');
 const data = require('../../data.json');
 const LIMIT_PARALLEL_TESTS = 10;
 
+const requestOptions = {
+	throwHttpErrors: false,
+	insecureHTTPParser: true,
+	timeout: 10000,
+};
+
 function checkURL(url, head = false) {
 	const method = head ? 'head' : 'get';
-	const options = {throwHttpErrors: false, insecureHTTPParser: true};
-	return got[method](url, options).then(({statusCode}) => {
+	return got[method](url, requestOptions).then(({statusCode}) => {
 		if (!head && statusCode === 403) {
 			return checkURL(url, true);
 		}
