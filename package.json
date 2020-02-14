@@ -42,7 +42,7 @@
     "merge-stream": "2.0.0",
     "mocha": "7.0.1",
     "mocha.parallel": "0.15.6",
-    "xo": "0.26.0"
+    "xo": "0.26.1"
   },
   "scripts": {
     "lint": "eclint check && xo",
