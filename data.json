@@ -565,5 +565,14 @@
     "image": "http://devblogs.microsoft.com/xamarin/wp-content/uploads/sites/44/2019/10/medium_25686-c9dd82896c9e66bb82600f256444abe6.png",
     "dateAdded": "2019-10-08T21:00:00.000Z",
     "tags": ["stickers", "hacktoberfest", "clothing", "expired"]
-  }
+  },
+  {
+    "name": "Redis Cloud",
+    "difficulty": "easy",
+    "description": "Sign up for an account. Once you create your first database, you will receive a free t-shirt.",
+    "reference": "https://redislabs.com/try-redis-cloud-essentials-for-a-free-shirt/",
+    "image": "https://redislabs.com/wp-content/uploads/2019/12/Redislabs-Cube-T-shirt-01.png",
+    "dateAdded": "2020-02-20T21:00:00.000Z",
+    "tags": ["clothing"]
+  } 
 ]
