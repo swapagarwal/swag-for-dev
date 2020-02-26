@@ -21,5 +21,5 @@ Thanks again, we hope to see you soon! ❤
 
 1. Open an issue [here](https://github.com/swapagarwal/swag-for-dev/issues/new?template=----new-swag-opportunity.md) or  implement one [that already exists](https://github.com/swapagarwal/swag-for-dev/labels/%3Atada%3A%20new%20swag) 
 2. Fork the repository
-3. Edit data.json to add your swag opportunity. Please make it in alphabetical order as well as using the data you first posted the issue about the swag opportunity
+3. Edit [data.json](data.json) to add your swag opportunity. Please make it in alphabetical order as well as using the data the issue was first posted.
 4. Open a pull request!
