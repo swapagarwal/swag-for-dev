@@ -22,7 +22,7 @@
     "cross-env": "7.0.0",
     "del": "5.1.0",
     "eclint": "2.8.1",
-    "got": "10.5.3",
+    "got": "10.6.0",
     "gulp": "4.0.2",
     "gulp-babel": "8.0.0",
     "gulp-concat": "2.6.1",
@@ -37,12 +37,12 @@
     "gulp-stylus": "2.7.0",
     "gulp-uglify-es": "2.0.0",
     "gulp-webserver": "0.9.1",
-    "husky": "4.2.1",
+    "husky": "4.2.3",
     "lint-prepush": "1.1.0",
     "merge-stream": "2.0.0",
-    "mocha": "7.0.1",
+    "mocha": "7.1.0",
     "mocha.parallel": "0.15.6",
-    "xo": "0.25.3"
+    "xo": "0.27.2"
   },
   "scripts": {
     "lint": "eclint check && xo",
