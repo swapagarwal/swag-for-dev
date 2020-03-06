@@ -63,5 +63,5 @@ Please consider donating to cover up our hosting costs. 🙏
 To the extent possible under law, [Swapnil Agarwal](http://swapnil.net) has waived all copyright and related or neighboring rights to this work.
 
 <a href="https://www.netlify.com">
-  <img src="https://www.netlify.com/img/global/badges/netlify-color-accent.svg" alt="Deploys by Netlify" />
+    <img src="https://www.netlify.com/img/global/badges/netlify-color-accent.svg" alt="Deploys by Netlify" />
 </a>
