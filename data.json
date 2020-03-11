@@ -238,7 +238,7 @@
     "difficulty": "medium",
     "description": "Get a pull request merged, receive a sticker. Get five pull requests merged, receive a T-shirt.",
     "reference": "https://www.jabref.org/hacktoberfest/2019.html",
-    "image": "ttps://i.imgur.com/eEXO4ep.jpg",
+    "image": "https://i.imgur.com/eEXO4ep.jpg",
     "dateAdded": "2019-10-05T23:07:46.000Z",
     "tags": ["stickers", "clothing", "hacktoberfest", "expired"]
   },
