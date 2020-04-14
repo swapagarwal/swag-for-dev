@@ -37,7 +37,7 @@
     "gulp-stylus": "2.7.0",
     "gulp-uglify-es": "2.0.0",
     "gulp-webserver": "0.9.1",
-    "husky": "4.2.3",
+    "husky": "4.2.5",
     "lint-prepush": "1.1.0",
     "merge-stream": "2.0.0",
     "mocha": "7.1.0",
