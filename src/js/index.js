@@ -53,7 +53,7 @@ function handleDifficulty(difficultyChanged) {
 
 function handleSort() {
 	Array.from(contentElement.children)
-		.map(child => contentElement.removeChild(child))
+		.map(child => contentElement.removeChild(child)) // eslint-disable-line unicorn/prefer-node-remove
 		.sort(sort[sortingInput.value])
 		.forEach(sortedChild => contentElement.append(sortedChild));
 }
