@@ -23,6 +23,6 @@ const swagList = require('./data.json').map(swag => {
 	fileNames.push(fileName);
 
 	return swag;
-});
+}).sort(({dateAdded: left}, {dateAdded: right}) => new Date(right) - new Date(left));
 
 module.exports = {swagList, swagImages};

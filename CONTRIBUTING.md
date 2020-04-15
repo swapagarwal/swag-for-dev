@@ -16,3 +16,11 @@ You might be wondering what a contribution is. Here are some things that you can
 - Review [open Pull Requests](https://github.com/swapagarwal/swag-for-dev/pulls?q=is%3Apr+is%3Aopen+sort%3Aupdated-desc).
 
 Thanks again, we hope to see you soon! ❤
+
+## How do I add a Swag Opportunity?
+
+1. Open an issue [here](https://github.com/swapagarwal/swag-for-dev/issues/new?template=----new-swag-opportunity.md) or implement one [that already exists](https://github.com/swapagarwal/swag-for-dev/labels/%3Atada%3A%20new%20swag) 
+2. Fork the repository
+3. Edit [`data.json`](data.json) to add your swag opportunity. Please keep it in alphabetical order, and use the date the issue was first posted.
+4. Open a pull request and fill out the entire template.
+5. Well done! Soon the swag will be on the site!

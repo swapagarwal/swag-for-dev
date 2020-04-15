@@ -24,7 +24,7 @@ All swag opportunities can be found at [https://devswag.io/](https://devswag.io/
 
 ## Contributing
 
-Feel free to open an issue (or even better, send a Pull Request) for expanding this list. Contributions are very welcome!! 😄
+Feel free to open an issue (or even better, send a Pull Request) for expanding this list. Instructions for doing so are available [here](https://github.com/swapagarwal/swag-for-dev/blob/master/CONTRIBUTING.md#how-do-i-add-a-swag-opportunity). Contributions are very welcome!! 😄
 
 Note that a PR needs to reach a certain level of engagement before it gets merged. This criteria is kept to maintain the quality of this list. The current list of open PRs can be found here: https://github.com/swapagarwal/swag-for-dev/pulls
 
@@ -61,3 +61,7 @@ Please consider donating to cover up our hosting costs. 🙏
 [![CC0](http://mirrors.creativecommons.org/presskit/buttons/88x31/svg/cc-zero.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
 
 To the extent possible under law, [Swapnil Agarwal](http://swapnil.net) has waived all copyright and related or neighboring rights to this work.
+
+<a href="https://www.netlify.com">
+    <img src="https://www.netlify.com/img/global/badges/netlify-color-accent.svg" alt="Deploys by Netlify" />
+</a>
