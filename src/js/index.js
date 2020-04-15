@@ -84,7 +84,7 @@ function updateUrl() {
 		}
 	}
 
-	emptyParameters.forEach(parameters => search.delete(parameters));
+	emptyParameters.forEach(parameter => search.delete(parameter));
 
 	const queryString = search.toString();
 	if (queryString) {
