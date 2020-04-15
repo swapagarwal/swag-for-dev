@@ -53,7 +53,7 @@ function handleDifficulty(difficultyChanged) {
 
 function handleSort() {
 	Array.from(contentElement.children)
-		.map(child => child.remove())
+		.map(child => contentElement.removeChild(child))
 		.sort(sort[sortingInput.value])
 		.forEach(sortedChild => contentElement.append(sortedChild));
 }
