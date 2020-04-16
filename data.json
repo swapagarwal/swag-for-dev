@@ -121,7 +121,7 @@
     "difficulty": "medium",
     "description": "One merged PR gets at least 3 stickers (limited to 100 sets) and a chance at a limited edition t-shirt.",
     "reference": "https://www.datarequests.org/blog/hacktoberfest-2019/",
-    "image": "https://www.datarequests.org/img/blog/hacktoberfest-2019.png",
+    "image": "https://www.datarequests.org/blog/hacktoberfest-2019/hacktoberfest-2019.png",
     "dateAdded": "2019-10-23T00:39:55.000Z",
     "tags": ["stickers", "clothing", "hacktoberfest", "expired"]
   },
@@ -169,6 +169,15 @@
     "image": "https://i.imgur.com/IbZCAWP.jpg",
     "dateAdded": "2019-10-27T12:37:23.000Z",
     "tags": ["hacktoberfest", "stickers"]
+  },
+  {
+    "name": "erxes",
+    "difficulty": "medium",
+    "description": "Submit 3 issues and 1 PR to their <a href='https://github.com/erxes/erxes'>repo</a>, get a t-shirt and stickers.",
+    "reference": "https://erxes.io/hubspot-alternative-erxes-swag",
+    "image": "https://i.imgur.com/pE9Ml3v.png",
+    "dateAdded": "2020-03-16T05:06:00.000Z",
+    "tags": ["clothing", "stickers"]
   },
   {
     "name": "Flutterwave",

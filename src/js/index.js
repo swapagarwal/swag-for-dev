@@ -15,7 +15,7 @@ const sort = {
 	/* eslint-enable unicorn/no-nested-ternary */
 };
 
-const contentEl = document.querySelector('#content');
+const contentElement = document.querySelector('#content');
 const filterInput = document.querySelector('#filter');
 const sortingInput = document.querySelector('#sorting');
 const tagsSelect = document.querySelector('#tags');
@@ -32,14 +32,14 @@ let selectr;
 
 function handleDifficulty(difficultyChanged) {
 	const {value} = filterInput;
-	Array.from(contentEl.querySelectorAll(`.${ACTIVE_CLASS}`))
+	Array.from(contentElement.querySelectorAll(`.${ACTIVE_CLASS}`))
 		.forEach(swag => swag.classList.remove(ACTIVE_CLASS));
 
 	if (value === 'alldifficulties') {
-		activateElements(contentEl.querySelectorAll('.item'));
+		activateElements(contentElement.querySelectorAll('.item'));
 		allowDifficultySelect(true);
 	} else {
-		activateElements(contentEl.querySelectorAll(`.${value}`));
+		activateElements(contentElement.querySelectorAll(`.${value}`));
 		allowDifficultySelect(false);
 	}
 
@@ -52,20 +52,20 @@ function handleDifficulty(difficultyChanged) {
 }
 
 function handleSort() {
-	Array.from(contentEl.children)
-		.map(child => contentEl.removeChild(child))
+	Array.from(contentElement.children)
+		.map(child => contentElement.removeChild(child)) // eslint-disable-line unicorn/prefer-node-remove
 		.sort(sort[sortingInput.value])
-		.forEach(sortedChild => contentEl.append(sortedChild));
+		.forEach(sortedChild => contentElement.append(sortedChild));
 }
 
 function handleTags() {
 	const tags = selectr.getValue();
 
-	Array.from(contentEl.querySelectorAll('.item')).forEach(el => {
-		const show = (showExpired.checked || !el.classList.contains('tag-expired')) &&
-			tags.reduce((sho, tag) => sho || el.classList.contains(`tag-${tag}`), tags.length === 0);
+	Array.from(contentElement.querySelectorAll('.item')).forEach(element => {
+		const show = (showExpired.checked || !element.classList.contains('tag-expired')) &&
+			tags.reduce((sho, tag) => sho || element.classList.contains(`tag-${tag}`), tags.length === 0);
 		if (!show) {
-			el.classList.remove('visible');
+			element.classList.remove('visible');
 		}
 	});
 
@@ -77,14 +77,14 @@ function handleTags() {
 function updateUrl() {
 	let nextPath = window.location.pathname;
 
-	const emptyParams = [];
+	const emptyParameters = [];
 	for (const [key, value] of search) {
 		if (!value.trim()) {
-			emptyParams.push(key);
+			emptyParameters.push(key);
 		}
 	}
 
-	emptyParams.forEach(param => search.delete(param));
+	emptyParameters.forEach(parameter => search.delete(parameter));
 
 	const queryString = search.toString();
 	if (queryString) {
