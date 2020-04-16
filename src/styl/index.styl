@@ -3,6 +3,7 @@
 a
 	color link-color
 	transition .2s
+	text-decoration none
 	&:hover
 		color link-hover-color
 
@@ -13,11 +14,28 @@ a
 	margin-left 1rem
 	border-radius .6rem
 	border 2px solid link-color
-	text-decoration none
 	display inline-block
 	&:hover
 		background link-color
 		color white-color
+
+.github
+	display flex
+	background tertiary-color
+	color white-color
+	border none
+	font-size 1.8rem
+	padding .8rem 1rem
+	margin-left 1rem
+	border-radius .6rem
+	&:hover
+		background darken(tertiary-color, 20%)
+		color white-color
+	#logo
+		justify-self start
+		width 20px
+		height 20px
+		margin-right .8rem
 
 .container
 	min-height 100vh
@@ -159,7 +177,7 @@ footer
 	.item
 		margin-bottom 5px
 	.item#logo-footer
-		max-width 180px
+		max-width 200px
 		width 100%
 		margin-bottom 20px
 		display inline-block
