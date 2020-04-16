@@ -56,7 +56,7 @@
 				- difficulty = swag.difficulty + ' difficulty';
 				- difficultyTitle = 'Difficulty: ' + swag.difficulty;
 				- expired = swag.tags.includes('expired');
-				- reference = 'https://devswag.io' + swag.reference ? swag.reference : swag.name;
+				- reference = 'https://devswag.io/#' + swag.reference ? swag.reference : swag.name;
 				div(
 					class="item " + (expired ? '' : 'visible ') + swag.difficulty + swag.tags.map(t => ` tag-${t}`).join('')
 					data-name=swag.name.toLowerCase()
