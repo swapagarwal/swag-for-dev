@@ -78,6 +78,6 @@ typings/
 
 # Serverless directories
 .serverless
+# End of https://www.gitignore.io/api/node
 
 .DS_Store
-# End of https://www.gitignore.io/api/node
