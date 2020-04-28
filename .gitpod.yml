@@ -1,0 +1,8 @@
+image:
+  file: .gitpod.Dockerfile
+tasks:
+  - init: npm install
+    command: gulp
+ports:
+  - port: 8000
+    onOpen: open-preview
