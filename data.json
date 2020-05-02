@@ -15,7 +15,7 @@
     "reference": "https://www.accordproject.org/events/hacktoberfest-2019/",
     "image": "https://img.accordproject.org/wp-content/uploads/2019/09/01183436/1.-T-Shirt-Mockup.jpg",
     "dateAdded": "2019-10-04T15:29:00.000Z",
-    "tags": ["stickers", "clothing", "hacktoberfest"]
+    "tags": ["stickers", "clothing", "hacktoberfest", "expired"]
   },
   {
     "name": "Alexa",
@@ -42,7 +42,16 @@
     "reference": "https://medium.com/appwrite-io/hacktoberfest-2019-is-almost-here-lets-celebrate-it-together-24b311236dd",
     "image": "https://miro.medium.com/max/1600/1*mk5pBbuAZUg9j7nc6lbfrg.jpeg",
     "dateAdded": "2019-10-06T20:30:00.000Z",
-    "tags": ["badges", "hacktoberfest", "stickers"]
+    "tags": ["badges", "hacktoberfest", "stickers", "expired"]
+  },
+  {
+    "name": "Aqua",
+    "difficulty": "medium",
+    "description": "Contribute to Aqua's open source portfolio, and win stickers, t-shirts and even a book on Kubernetes Security.",
+    "reference": "https://blog.aquasec.com/aqua-open-source-security-hacktoberfest",
+    "image": "https://blog.aquasec.com/hs-fs/hubfs/Blog/HacktoberFest%20Blog_650_315.jpg?width=1300&name=HacktoberFest%20Blog_650_315.jpg",
+    "dateAdded": "2019-10-07T13:05:05.000Z",
+    "tags": ["stickers", "clothing", "hacktoberfest", "expired"]
   },
   {
     "name": "Aras",
@@ -63,13 +72,22 @@
     "tags": ["clothing", "hacktoberfest", "expired", "stickers"]
   },
   {
+    "name": "Blockstack",
+    "difficulty": "medium",
+    "description": "Complete the Zero-to-DApp tutorial and submit your sample to App.co to get a T-shirt!",
+    "reference": "https://community.blockstack.org/z2d-shirt",
+    "image": "https://static.tildacdn.com/tild6433-6535-4833-b932-323062343930/Zero_to_Dapp_shirt_p.png",
+    "dateAdded": "2020-01-19T05:30:00.000Z",
+    "tags": ["clothing"]
+  },
+  {
     "name": "CircleCI",
     "difficulty": "medium",
     "description": "Participate in #Orbtoberfest with CircleCI and claim limited edition swag! 1 - 3 pull requests: Limited-Edition Sticker, 4+ pull requests: Limited-Edition T-shirt",
-    "reference": "https://hacktoberfest.circleci.com/#/" ,
-    "image": "https://hacktoberfest.circleci.com/img/orbtoberfest-header_graphic.4f2bfde4.svg",
+    "reference": "https://hacktoberfest.circleci.com/#/",
+    "image": "https://i.imgur.com/MkxWDck.jpg",
     "dateAdded": "2019-09-29T19:30:00.000Z",
-    "tags": ["clothing", "hacktoberfest", "stickers"]
+    "tags": ["clothing", "hacktoberfest", "stickers", "expired"]
   },
   {
     "name": "Codeship",
@@ -81,6 +99,15 @@
     "tags": ["stickers"]
   },
   {
+    "name": "CodingBlocks",
+    "difficulty": "medium",
+    "description": "Have one merged PR on any of <a href='https://cb.lk/gh'>Coding Blocks open source projects</a> and get t-shirt with stickers or even a bag (1 PR - t-shirt, 5+ PRs - bag)",
+    "reference": "https://blog.codingblocks.com/2019/cb-hacktoberfest-2019/",
+    "image": "https://i.imgur.com/0SrSsNM.png",
+    "dateAdded": "2019-10-09T19:00:00.000Z",
+    "tags": ["accessories", "stickers", "hacktoberfest", "clothing", "expired"]
+  },
+  {
     "name": "Contentful",
     "difficulty": "easy",
     "description": "Sign up to Contentful and get a free pair of socks to your door.",
@@ -90,13 +117,31 @@
     "tags": ["clothing", "expired"]
   },
   {
+    "name": "Datenanfragen.de e. V.",
+    "difficulty": "medium",
+    "description": "One merged PR gets at least 3 stickers (limited to 100 sets) and a chance at a limited edition t-shirt.",
+    "reference": "https://www.datarequests.org/blog/hacktoberfest-2019/",
+    "image": "https://www.datarequests.org/blog/hacktoberfest-2019/hacktoberfest-2019.png",
+    "dateAdded": "2019-10-23T00:39:55.000Z",
+    "tags": ["stickers", "clothing", "hacktoberfest", "expired"]
+  },
+  {
+    "name": "Deque",
+    "difficulty": "easy",
+    "description": "Answer Deque's feedback survey once you're logged in to get an awesome t-shirt.",
+    "reference": "https://twitter.com/dequesystems/status/1182651282869362694",
+    "image": "https://i.imgur.com/t82DlcW.jpg",
+    "dateAdded": "2020-02-25T14:33:22.000Z",
+    "tags": ["clothing"]
+  },
+  {
     "name": "Devfolio",
     "difficulty": "hard",
     "description": "Four merged pull requests during the month of October will earn stickers and a chance at a limited edition t-shirt. Exceptional PRs will also earn an exclusive limited edition t-shirt.",
     "reference": "https://devfolio.co/blog/hacktoberfest-2019-devfolio/",
     "image": "https://devfolio.sgp1.digitaloceanspaces.com/ghost/2019/10/ghost_download1.jpeg",
     "dateAdded": "2019-10-05T23:17:55.000Z",
-    "tags": ["stickers", "clothing", "hacktoberfest"]
+    "tags": ["stickers", "clothing", "hacktoberfest", "expired"]
   },
   {
     "name": "devRant",
@@ -117,6 +162,33 @@
     "tags": ["clothing", "hacktoberfest", "expired", "stickers"]
   },
   {
+    "name": "Docusaurus",
+    "difficulty": "hard",
+    "description": "Get swag for migrating websites to Docusaurus 2!",
+    "reference": "https://github.com/facebook/docusaurus/issues/1834",
+    "image": "https://i.imgur.com/IbZCAWP.jpg",
+    "dateAdded": "2019-10-27T12:37:23.000Z",
+    "tags": ["hacktoberfest", "stickers"]
+  },
+  {
+    "name": "erxes",
+    "difficulty": "medium",
+    "description": "Submit 3 issues and 1 PR to their <a href='https://github.com/erxes/erxes'>repo</a>, get a t-shirt and stickers.",
+    "reference": "https://erxes.io/hubspot-alternative-erxes-swag",
+    "image": "https://i.imgur.com/pE9Ml3v.png",
+    "dateAdded": "2020-03-16T05:06:00.000Z",
+    "tags": ["clothing", "stickers"]
+  },
+  {
+    "name": "Flutterwave",
+    "difficulty": "hard",
+    "description": "Contribute 2 or more merged PRs to any of our community libraries and win a shirt",
+    "reference": "https://twitter.com/Ace_KYD/status/1183738026511519745",
+    "image": "https://i.imgur.com/OnQL0zO.jpg",
+    "dateAdded": "2019-10-17T05:55:00.000Z",
+    "tags": ["clothing", "hacktoberfest", "expired"]
+  },
+  {
     "name": "Gatsby",
     "difficulty": "hard",
     "description": "Get a pull request merged into Gatsby and receive a free shirt, socks, or stickers.",
@@ -124,6 +196,15 @@
     "image": "https://i.imgur.com/e7GwaTN.png",
     "dateAdded": "2018-10-24T11:42:09.000Z",
     "tags": ["clothing", "stickers"]
+  },
+  {
+    "name": "Globo",
+    "difficulty": "medium",
+    "description": "Contribute 2 pull requests to Globo's Open Source Projects. At least 1 PR has to be accepted and you have to be in the first 200 registrants to get an exclusive t-shirt. Delivery only in Brazil.",
+    "reference": "https://opensource.globo.com/hacktoberfest/",
+    "image": "https://opensource.globo.com/static/hacktoberfest-lg-ccb42ae80e9ac29693f57e549263e889.png",
+    "dateAdded": "2019-10-10T13:00:00.000Z",
+    "tags": ["hacktoberfest", "clothing", "expired"]
   },
   {
     "name": "Google Assistant",
@@ -138,19 +219,28 @@
     "name": "Hacktoberfest 2019",
     "difficulty": "hard",
     "description": "To qualify for the official limited edition Hacktoberfest T-shirt, you must register and then make four pull requests (PRs) between October 1-31 (in any time zone).",
-    "reference": "https://hacktoberfest.digitalocean.com/" ,
-    "image": "https://hacktoberfest.digitalocean.com/assets/HF19_social-744d976f227e4aff6866443abcede8c651b309ec9c7c9f7410f5944f8e1299b9.png",
+    "reference": "https://hacktoberfest.digitalocean.com/",
+    "image": "https://i.imgur.com/eEXO4ep.jpg",
     "dateAdded": "2019-09-25T17:27:00.000Z",
-    "tags": ["clothing", "hacktoberfest"]
+    "tags": ["clothing", "hacktoberfest", "expired"]
   },
   {
     "name": "Hasura",
     "difficulty": "medium",
-    "description": "Submit a PR to Hasura's <a href='https://github.com/hasura/graphql-engine'>GraphQL Engine</a> or <a href='https://github.com/hasura/learn-graphql'>GraphQL Tuturial Series</a> during Hacktoberfest 2019 and get a Hasura sticker pack. If your PR gets merged, you also get a Hasura t-shirt!",
+    "description": "Submit a PR to Hasura's <a href='https://github.com/hasura/graphql-engine'>GraphQL Engine</a> or <a href='https://github.com/hasura/learn-graphql'>GraphQL Tutorial Series</a> during Hacktoberfest 2019 and get a Hasura sticker pack. If your PR gets merged, you also get a Hasura t-shirt!",
     "reference": "https://blog.hasura.io/hasura-joins-hacktoberfest-2019/",
     "image": "https://cdn-images-1.medium.com/max/1600/1*kQxL8yhs0c1x1WVXnjhrIw.png",
     "dateAdded": "2019-10-02T21:06:00.000Z",
-    "tags": ["clothing", "hacktoberfest", "stickers"]
+    "tags": ["clothing", "hacktoberfest", "stickers", "expired"]
+  },
+  {
+    "name": "ImgBot",
+    "difficulty": "easy",
+    "description": "Install the bot on your repo and get some awesome laptop stickers from ImgBot after filling out the form!",
+    "reference": "https://docs.google.com/forms/d/e/1FAIpQLScpL5wT5dsFTXZou49p7_W7Y2sbMeqKulvDrwHQabecc4YF7w/viewform",
+    "image": "https://pbs.twimg.com/media/EJzGQGKUwAALlSC?format=jpg&name=4096x4096",
+    "dateAdded": "2020-01-02T05:30:00.000Z",
+    "tags": ["stickers"]
   },
   {
     "name": "IPFS",
@@ -160,6 +250,15 @@
     "image": "https://i.imgur.com/sGUHD1P.jpg",
     "dateAdded": "2019-08-20T19:20:42.000Z",
     "tags": ["stickers", "clothing"]
+  },
+  {
+    "name": "JabRef",
+    "difficulty": "medium",
+    "description": "Get a pull request merged, receive a sticker. Get five pull requests merged, receive a T-shirt.",
+    "reference": "https://www.jabref.org/hacktoberfest/2019.html",
+    "image": "https://i.imgur.com/eEXO4ep.jpg",
+    "dateAdded": "2019-10-05T23:07:46.000Z",
+    "tags": ["stickers", "clothing", "hacktoberfest", "expired"]
   },
   {
     "name": "Jetbrains",
@@ -173,7 +272,7 @@
   {
     "name": "JS Bin",
     "difficulty": "easy",
-    "description": "Fill out a Google form with your name and address and get a sticker. There’s no cost to you, but they will be restricting the send outs to bi-monthly or quaterly depending on demand.",
+    "description": "Fill out a Google form with your name and address and get a sticker. There’s no cost to you, but they will be restricting the send outs to bi-monthly or quarterly depending on demand.",
     "reference": "https://jsbin.com/help/stickers/",
     "image": "https://pbs.twimg.com/media/CccQEDjUUAE9wRO.jpg",
     "dateAdded": "2018-11-28T16:42:00.000Z",
@@ -189,21 +288,39 @@
     "tags": ["clothing"]
   },
   {
+    "name": "LadyBug",
+    "difficulty": "medium",
+    "description": "In addition to the Hacktoberfest swag, LadybugTools is offering a sticker if you contribute 1 or more Pull Requests to solve one of our hacktoberfest labelled issues.",
+    "reference": "https://discourse.ladybug.tools/t/celebrate-hacktoberfest-2019-with-ladybug-tools/7314",
+    "image": "https://discourse.ladybug.tools/uploads/default/original/2X/d/d0d4cc754f688015675adf8698d42b42dde981bc.png",
+    "dateAdded": "2019-10-09T10:23:46.000Z",
+    "tags": ["hacktoberfest", "stickers", "expired"]
+  },
+  {
     "name": "LBRY",
     "difficulty": "medium",
     "description": "Anyone who makes any contribution at all, even a one line typo fix, will receive a LBRY sticker. Anyone who contributes anything of any substance will receive a sticker, LBRY t-shirt, and more.",
     "reference": "https://lbry.com/news/hacktoberfest-2019",
-    "image": "https://spee.ch/@lbryblog:e/hacktoberfest2019.png",
+    "image": "https://i.imgur.com/IEchVUJ.png",
     "dateAdded": "2019-10-05T10:23:46.000Z",
-    "tags": ["clothing", "hacktoberfest", "stickers"]
+    "tags": ["clothing", "hacktoberfest", "stickers", "expired"]
   },
   {
-    "name": "Magento",
+    "name": "Les tilleuls",
+    "difficulty": "medium",
+    "description": "To win a t-shirt, make 3 pull requests on API Platform's GitHub repositories by October 31st, and then <a href='https://cooptilleuls.typeform.com/to/CG0pLd'>fill in this form.</a>",
+    "reference": "https://les-tilleuls.coop/fr/blog/article/celebrate-hacktoberfest-with-api-platform",
+    "image": "https://i.imgur.com/uX5nRnW.png",
+    "dateAdded": "2019-10-18T05:55:00.000Z",
+    "tags": ["clothing", "hacktoberfest", "expired"]
+  },
+  {
+    "name": "Magento + Adobe",
     "difficulty": "hard",
-    "description": "Have 5 merged PRs or validate at least 10 issues in October 2018, get a Squashtoberfest T-Shirt!",
-    "reference": "https://github.com/magento/magento2/wiki/SQUASHTOBERFEST-2018",
-    "image": "https://raw.githubusercontent.com/wiki/magento-engcom/msi/images/squash2018.png",
-    "dateAdded": "2018-10-23T10:17:39.000Z",
+    "description": "Submit 5 or more pull requests during October 2019 to any open repositories under Adobe or Magento organizations on GitHub, get a Squashtoberfest T-Shirt!",
+    "reference": "https://opensource.adobe.com/squashtoberfest/",
+    "image": "https://i.imgur.com/yt3iUBB.png",
+    "dateAdded": "2019-10-03T14:17:39.000Z",
     "tags": ["clothing", "hacktoberfest", "expired"]
   },
   {
@@ -213,14 +330,14 @@
     "reference": "https://blog.mayadata.io/mayadata-celebrates-hacktoberfest-2019",
     "image": "https://blog.mayadata.io/hs-fs/hubfs/Hacktoberfest-11-1.png",
     "dateAdded": "2019-10-02T16:48:14.000Z",
-    "tags": ["clothing", "device", "hacktoberfest", "stickers"]
+    "tags": ["clothing", "device", "hacktoberfest", "stickers", "expired"]
   },
   {
     "name": "Microsoft",
     "difficulty": "medium",
     "description": "Make one pull request in October 2018 to any <a href='https://opensource.microsoft.com/'>open source Microsoft repository</a>, earn a limited edition T-shirt!",
     "reference": "https://cloudblogs.microsoft.com/opensource/2018/09/30/join-hacktoberfest-2018-celebration-microsoft/",
-    "image": "https://open.microsoft.com/wp-content/uploads/2018/09/Hacktoberfest-Blog.jpg",
+    "image": "https://i.imgur.com/d8Sa90c.jpg",
     "dateAdded": "2018-10-01T08:36:05.000Z",
     "tags": ["clothing", "hacktoberfest", "expired"]
   },
@@ -236,8 +353,8 @@
   {
     "name": "Netlify",
     "difficulty": "easy",
-    "description": "Complete this <a href='https://swag.netlify.com/docs/'>survey</a> about using Netlify for documentation and get stickers.",
-    "reference": "https://swag.netlify.com/docs/",
+    "description": "Just fill out the <a href='https://swag.netlify.com/'>form</a> and get stickers.",
+    "reference": "https://swag.netlify.com/",
     "image": "https://swag.netlify.com/images/laptop-sticker.jpg",
     "dateAdded": "2018-04-27T19:36:39.000Z",
     "tags": ["stickers"]
@@ -256,7 +373,7 @@
     "difficulty": "hard",
     "description": "Fix a <a href='https://npm.community/c/bugs'>bug</a>, get a fashionable pair of socks!",
     "reference": "http://blog.npmjs.org/post/129827785565/npm-weekly-30-package-scripts-for-tooling-a",
-    "image": "https://partners.npmjs.com/weekly/weekly30/socks-1100x.jpg",
+    "image": "https://i.imgur.com/saUR1HM.jpg",
     "dateAdded": "2018-02-18T06:03:12.000Z",
     "tags": ["clothing"]
   },
@@ -280,12 +397,12 @@
   },
   {
     "name": "Operation Code",
-    "difficulty": "easy",
-    "description": "Close 3 issues, get a t-shirt. Make a PR and get stickers.",
+    "difficulty": "medium",
+    "description": "Resolve 3 issues, get a t-shirt. Merge 2 PRs and get stickers.",
     "reference": "https://github.com/OperationCode/START_HERE",
-    "image": "https://upload.cc/i1/2018/10/21/yRDFvh.png",
-    "dateAdded": "2018-10-28T16:55:45.000Z",
-    "tags": ["clothing", "hacktoberfest", "expired", "stickers"]
+    "image": "https://camo.githubusercontent.com/77698f9bf2917e1f1db975f117d0997f638081ea/68747470733a2f2f6f7065726174696f6e2d636f64652d6173736574732e73332e75732d656173742d322e616d617a6f6e6177732e636f6d2f6f7065726174696f6e5f636f64655f6861636b746f626572666573745f323031392e6a7067",
+    "dateAdded": "2019-10-02T18:41:10.000Z",
+    "tags": ["clothing", "hacktoberfest", "stickers", "expired"]
   },
   {
     "name": "opsdroid",
@@ -297,6 +414,15 @@
     "tags": ["stickers"]
   },
   {
+    "name": "Pagerduty",
+    "difficulty": "easy",
+    "description": "Create and fill out your profile. Upload a custom avatar. Introduce yourself.",
+    "reference": "https://twitter.com/pagerduty",
+    "image": "https://aws1.discourse-cdn.com/pagerduty/original/2X/d/ddd643ad3608a5580455e0c983605c97249e705e.jpeg",
+    "dateAdded": "2019-10-09T22:04:00.000Z",
+    "tags": ["stickers", "expired"]
+  },
+  {
     "name": "Passenger",
     "difficulty": "easy",
     "description": "Register to join the November 1st livestream in which Phusion adds a major feature to Passenger, and win a custom key cap or beanie with the Passenger logo embroided (and stickers, guaranteed).",
@@ -304,6 +430,51 @@
     "image": "https://i.imgur.com/gVfuWsu.png",
     "dateAdded": "2018-10-20T11:38:34.000Z",
     "tags": ["clothing", "accessories", "expired", "stickers"]
+  },
+  {
+    "name": "Parity Technologies",
+    "difficulty": "medium",
+    "description": "Anyone who makes any significant contribution to the Substrate ecosystem during Hacktoberfest is eligible for a special limited edition Parity Hacktoberfest 2019 gym bag.",
+    "reference": "https://www.parity.io/hacktoberfest-2019-parity/",
+    "image": "https://www.parity.io/content/images/2019/09/hacktoberfest2019_bag.jpg",
+    "dateAdded": "2019-10-12T19:49:00.000Z",
+    "tags": ["hacktoberfest", "accessories", "expired"]
+  },
+  {
+    "name": "QMK",
+    "difficulty": "medium",
+    "description": "Four interactions with a QMK repo or $15 to cKeys non-profit will qualify you for a QMK T-shirt.",
+    "reference": "https://hacktoberfest.qmk.fm/",
+    "image": "https://hacktoberfest.qmk.fm/img/social.jpg",
+    "dateAdded": "2019-10-14T16:16:36.000Z",
+    "tags": ["clothing", "hacktoberfest", "expired"]
+  },
+  {
+    "name": "Redis Cloud",
+    "difficulty": "easy",
+    "description": "Sign up and create your first database, you will receive a free t-shirt. (Ships only to North America)",
+    "reference": "https://redislabs.com/try-redis-cloud-essentials-for-a-free-shirt/",
+    "image": "https://i.imgur.com/pU8KfaE.png",
+    "dateAdded": "2020-02-14T17:13:48.000Z",
+    "tags": ["clothing"]
+  },
+  {
+    "name": "Saleor",
+    "difficulty": "medium",
+    "description": "Solve any of the issues with the Hacktoberfest label and win a pair of Saleor Socks.",
+    "reference": "https://twitter.com/getsaleor/status/1179370205895634946",
+    "image": "https://i.imgur.com/fZhBx2G.jpg",
+    "dateAdded": "2018-10-23T17:39:00.000Z",
+    "tags": ["clothing", "hacktoberfest", "expired"]
+  },
+  {
+    "name": "SalesAgility",
+    "difficulty": "hard",
+    "description": "At least 1 merged PR in the SuiteCRM, SuiteDocs or SuitePortal repos wins you a mug.",
+    "reference": "https://suitecrm.com/community-diary-sept-2019-edition/",
+    "image": "https://suitecrm.com/wp-content/uploads/2017/12/icon_about1-200x39.png",
+    "dateAdded": "2018-10-23T17:44:00.000Z",
+    "tags": ["hacktoberfest", "accessories", "expired"]
   },
   {
     "name": "SendGrid",
@@ -321,7 +492,7 @@
     "reference": "https://community.sensenet.com/blog/2019/10/01/hacktoberfest-is-here",
     "image": "https://community.sensenet.com/img/posts/hacktoberfest2019.png",
     "dateAdded": "2019-10-05T22:56:53.000Z",
-    "tags": ["clothing", "hacktoberfest"]
+    "tags": ["clothing", "hacktoberfest", "expired"]
   },
   {
     "name": "SimbaChain",
@@ -336,10 +507,19 @@
     "name": "source{d}",
     "difficulty": "hard",
     "description": "Three merged pull requests in any source{d} repo to receive a limited edition T-shirt as well as one sticker for those who get at least one pull requests merged.",
-    "reference": "https://go.sourced.tech/hacktoberfest",
+    "reference": "https://medium.com/sourcedtech/celebrating-open-source-with-hacktoberfest-2018-7283cfc6666b",
     "image": "https://pbs.twimg.com/media/DrA_3NBVYAAmHnS.jpg",
     "dateAdded": "2018-10-23T10:00:46.000Z",
     "tags": ["clothing", "hacktoberfest", "expired", "stickers"]
+  },
+  {
+    "name": "Strawberry",
+    "difficulty": "easy",
+    "description": "Strawberry stickers for any accepted PR in October",
+    "reference": "https://twitter.com/patrick91/status/1178952690300272640",
+    "image": "https://i.imgur.com/QatMBLf.jpg",
+    "dateAdded": "2019-10-12T10:22:50.000Z",
+    "tags": ["hacktoberfest", "stickers", "expired"]
   },
   {
     "name": "Twilio",
@@ -357,7 +537,7 @@
     "reference": "https://www.twilio.com/blog/ahoy-hacktoberfest-2019",
     "image": "https://s3.amazonaws.com/com.twilio.prod.twilio-docs/images/sticker-teaser-questionmark.width-1000.jpg",
     "dateAdded": "2019-10-04T15:55:15.000Z",
-    "tags": ["stickers", "clothing", "hacktoberfest"]
+    "tags": ["stickers", "clothing", "hacktoberfest", "expired"]
   },
   {
     "name": "Umbraco",
@@ -375,16 +555,16 @@
     "reference": "https://platform.uno/uno-is-joining-hacktoberfest-2019/",
     "image": "https://s3.amazonaws.com/uno-website-assets/wp-content/uploads/2019/08/21141002/diagram-991x1024.png",
     "dateAdded": "2019-09-25T13:05:05.000Z",
-    "tags": ["clothing", "hacktoberfest"]
+    "tags": ["clothing", "hacktoberfest", "expired"]
   },
   {
     "name": "Umbraco",
     "difficulty": "medium",
     "description": "Have one approved PR on any Umbraco repo to get some exclusive and limited Umbraco swag. All contributors will also be listed by Github username in their November blog post!",
     "reference": "https://umbraco.com/blog/hacktoberfest-2019/",
-    "image": "https://umbraco.com/media/6215/hacktoberfest2.png",
+    "image": "https://i.imgur.com/tFqV0RC.jpg",
     "dateAdded": "2019-10-04T15:17:00.000Z",
-    "tags": ["hacktoberfest", "stickers"]
+    "tags": ["hacktoberfest", "stickers", "expired"]
   },
   {
     "name": "Valor Software",
@@ -393,7 +573,7 @@
     "reference": "https://valor-software.com/articles/hacktoberfest-2019-is-coming-and-ngx-bootstrap-strives-for-your-attention.html",
     "image": "https://valor-software.com/assets/images/5d91e2ddd7ccc682175962ea_f27J06AkBW3Dd3pB4fanZWw1sbrhcs-GJCI5H3DgSK_U2R2cbRSAY_-3hTCe75DQU9iMPJpWnJJlSLra_yAyKtPmzmyeUlGVIVlTj2do6t_Y1za0aYfDaTVc8bR6yFgEwNIQ1ZXM.jpeg",
     "dateAdded": "2019-10-04T16:13:00.000Z",
-    "tags": ["hacktoberfest", "stickers", "accessories"]
+    "tags": ["hacktoberfest", "stickers", "accessories", "expired"]
   },
   {
     "name": "WhatIsMyBrowser",
@@ -403,5 +583,14 @@
     "image": "https://developers.whatismybrowser.com/static/main/content/api/swag/whatismybrowser-stickers.jpg",
     "dateAdded": "2018-10-12T13:05:05.000Z",
     "tags": ["stickers"]
+  },
+  {
+    "name": "Xamarin",
+    "difficulty": "medium",
+    "description": "Make quality pull requests to issues that are 'approved item of work' to get stickers, t-shirt or even a trophy.",
+    "reference": "https://devblogs.microsoft.com/xamarin/hacktoberfest-2019-xamarin-edition/",
+    "image": "http://devblogs.microsoft.com/xamarin/wp-content/uploads/sites/44/2019/10/medium_25686-c9dd82896c9e66bb82600f256444abe6.png",
+    "dateAdded": "2019-10-08T21:00:00.000Z",
+    "tags": ["stickers", "hacktoberfest", "clothing", "expired"]
   }
 ]
