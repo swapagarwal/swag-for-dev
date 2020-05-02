@@ -15,10 +15,10 @@ jobs:
     - name: Read .nvmrc
       run: echo "##[set-output name=nvmrc;]$(cat .nvmrc)"
       id: nvm
-    - name: "Setup NodeJS ${{ steps.nvm.outputs.nvmrc }}"
+    - name: Setup Node
       uses: actions/setup-node@v1
       with:
-        node-version: "${{ steps.nvm.outputs.nvmrc }}"
+        node-version: ${{ steps.nvm.outputs.nvmrc }}
 
     - name: Unit Tests
       run: |
@@ -33,10 +33,10 @@ jobs:
     - name: Read .nvmrc
       run: echo "##[set-output name=nvmrc;]$(cat .nvmrc)"
       id: nvm
-    - name: "Setup NodeJS ${{ steps.nvm.outputs.nvmrc }}"
+    - name: Setup Node
       uses: actions/setup-node@v1
       with:
-        node-version: "${{ steps.nvm.outputs.nvmrc }}"
+        node-version: ${{ steps.nvm.outputs.nvmrc }}
 
     - name: Lint
       run: |
