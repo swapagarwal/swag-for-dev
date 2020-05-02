@@ -5,20 +5,36 @@ on:
     branches:
       - master
   pull_request: {}
+
 jobs:
   unit:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    - name: Unit Tests
-      run: |
-        npm ci
-        npm run test
+
+    - name: Read .nvmrc
+      run: echo "##[set-output name=nvmrc;]$(cat .nvmrc)"
+      id: nvm
+    - name: Setup Node
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ steps.nvm.outputs.nvmrc }}
+    - run: npm ci
+
+    - run: npm run test
+
   lint:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    - name: Lint
-      run: |
-        npm ci
-        npm run lint
+
+    - name: Read .nvmrc
+      run: echo "##[set-output name=nvmrc;]$(cat .nvmrc)"
+      id: nvm
+    - name: Setup Node
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ steps.nvm.outputs.nvmrc }}
+    - run: npm ci
+
+    - run: npm run lint
