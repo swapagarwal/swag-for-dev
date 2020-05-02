@@ -1,0 +1,24 @@
+name: All the CI
+
+on:
+  push:
+    branches:
+      - master
+  pull_request: {}
+jobs:
+  unit:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Unit Tests
+      run: |
+        npm ci
+        npm run test
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Lint
+      run: |
+        npm ci
+        npm run lint
