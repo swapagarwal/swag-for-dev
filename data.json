@@ -450,6 +450,15 @@
     "tags": ["clothing", "hacktoberfest", "expired"]
   },
   {
+    "name": "Redis Cloud",
+    "difficulty": "easy",
+    "description": "Sign up and create your first database, you will receive a free t-shirt. (Ships only to North America)",
+    "reference": "https://redislabs.com/try-redis-cloud-essentials-for-a-free-shirt/",
+    "image": "https://i.imgur.com/pU8KfaE.png",
+    "dateAdded": "2020-02-14T17:13:48.000Z",
+    "tags": ["clothing"]
+  },
+  {
     "name": "Saleor",
     "difficulty": "medium",
     "description": "Solve any of the issues with the Hacktoberfest label and win a pair of Saleor Socks.",
