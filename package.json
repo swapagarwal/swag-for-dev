@@ -45,6 +45,7 @@
     "xo": "0.30.0"
   },
   "scripts": {
+    "start": "gulp",
     "lint": "eclint check && xo",
     "lint:fix": "eclint fix && xo --fix",
     "test": "mocha test/functional/data.spec.js",
