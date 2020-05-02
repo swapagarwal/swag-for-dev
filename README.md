@@ -1,7 +1,7 @@
 # swag-for-dev
 
 [![Awesome](https://awesome.re/badge-flat.svg)](https://awesome.re)
-[![Build Status](https://github.com/swapagarwal/swag-for-dev/workflows/.github/workflows/main.yml/badge.svg)](https://github.com/swapagarwal/swag-for-dev/actions)
+[![Build Status](https://github.com/swapagarwal/swag-for-dev/workflows/All%20the%20CI/badge.svg)](https://github.com/swapagarwal/swag-for-dev/actions)
 [![Build Status](https://travis-ci.org/swapagarwal/swag-for-dev.svg?branch=master)](https://travis-ci.org/swapagarwal/swag-for-dev)
 [![Renovate](https://badges.renovateapi.com/github/swapagarwal/swag-for-dev)](https://renovatebot.com/)
 [![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/xojs/xo)
