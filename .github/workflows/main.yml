@@ -19,11 +19,9 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ steps.nvm.outputs.nvmrc }}
+    - run: npm ci
 
-    - name: Unit Tests
-      run: |
-        npm ci
-        npm run test
+    - run: npm run test
 
   lint:
     runs-on: ubuntu-latest
@@ -37,8 +35,6 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ steps.nvm.outputs.nvmrc }}
+    - run: npm ci
 
-    - name: Lint
-      run: |
-        npm ci
-        npm run lint
+    - run: npm run lint
