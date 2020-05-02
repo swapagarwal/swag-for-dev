@@ -5,21 +5,39 @@ on:
     branches:
       - master
   pull_request: {}
+
 jobs:
   unit:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    - uses: dcodeIO/setup-node-nvm@v4.0.0
+
+    - name: Read .nvmrc
+      run: echo "##[set-output name=nvmrc;]$(cat .nvmrc)"
+      id: nvm
+    - name: "Setup NodeJS ${{ steps.nvm.outputs.nvmrc }}"
+      uses: actions/setup-node@v1
+      with:
+        node-version: "${{ steps.nvm.outputs.nvmrc }}"
+
     - name: Unit Tests
       run: |
         npm ci
         npm run test
+
   lint:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    - uses: dcodeIO/setup-node-nvm@v4.0.0
+
+    - name: Read .nvmrc
+      run: echo "##[set-output name=nvmrc;]$(cat .nvmrc)"
+      id: nvm
+    - name: "Setup NodeJS ${{ steps.nvm.outputs.nvmrc }}"
+      uses: actions/setup-node@v1
+      with:
+        node-version: "${{ steps.nvm.outputs.nvmrc }}"
+
     - name: Lint
       run: |
         npm ci
