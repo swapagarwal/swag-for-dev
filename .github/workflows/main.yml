@@ -12,6 +12,12 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
+    - uses: actions/cache@v1
+      with:
+        path: $HOME/.npm
+        key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+        restore-keys: |
+          ${{ runner.os }}-node-
     - name: Read .nvmrc
       run: echo "##[set-output name=nvmrc;]$(cat .nvmrc)"
       id: nvm
@@ -28,6 +34,12 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
+    - uses: actions/cache@v1
+      with:
+        path: $HOME/.npm
+        key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+        restore-keys: |
+          ${{ runner.os }}-node-
     - name: Read .nvmrc
       run: echo "##[set-output name=nvmrc;]$(cat .nvmrc)"
       id: nvm
