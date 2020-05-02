@@ -29,7 +29,7 @@ describe('swag-for-dev', function () {
 			expect(datum.difficulty).to.be.oneOf(['easy', 'medium', 'hard']);
 			expect(datum.reference).to.be.a('string');
 			expect(datum.image).to.be.a('string');
-			expect(datum.dateAdded).to.match(/20\d\d-[0-1][\d]-[0-3][\d]T\d\d:\d\d:\d\d\.000Z/);
+			expect(datum.dateAdded).to.match(/20\d\d-[01]\d-[0-3]\dT\d\d:\d\d:\d\d\.000Z/);
 			expect(datum.tags).to.be.an('Array').with.length.greaterThan(0);
 		});
 	});
