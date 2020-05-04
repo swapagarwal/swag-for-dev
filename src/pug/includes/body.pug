@@ -60,7 +60,7 @@
 				- difficultyTitle = 'Difficulty: ' + swag.difficulty;
 				- expired = swag.tags.includes('expired');
 				- dateAdded = (new Date(swag.dateAdded)).getTime();
-				- inputId = `${swag.name}_${dateAdded}`.toLowerCase().replace(' ', '_');
+				- inputId = `${swag.name}_${dateAdded}`.toLowerCase().replace(' ', '_'); 
 				div(
 					class="item " + (expired ? '' : 'visible ') + swag.difficulty + swag.tags.map(t => ` tag-${t}`).join('')
 					data-name=swag.name.toLowerCase()
@@ -73,12 +73,24 @@
 								source(type="image/webp" srcset=swag.images.webp)
 								source(type="image/jpeg" srcset=swag.images.jpeg)
 								img(src=swag.images.jpeg alt=swag.name + " swag you can get")
-					p.description!=swag.description
-					a(href=swag.reference target="_blank") Check it out
-					label.task-complete(for=`task_complete_${index}`)
-						input.complete-notice(type="checkbox" id=`task_complete_${index}` data-task=inputId)
-						i
-						span Done?
+					div.information
+						div.title.flex
+							h1=swag.name
+							div
+								div(class=difficulty title=difficultyTitle)
+									span.sr-only=difficultyTitle
+						p.swag.flex
+							each swagTag in swag.tags
+								span(
+									class="tag " + swagTag
+								)!=swagTag
+						p.description!=swag.description
+						.flex
+							a.btn(href=swag.reference target="_blank") Check it out
+						label.task-complete(for=`task_complete_${index}`)
+							input.complete-notice(type="checkbox" id=`task_complete_${index}` data-task=inputId)
+							i
+							span Done?
 
 	section.newsletter
 		.flex.box.form

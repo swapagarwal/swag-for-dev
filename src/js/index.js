@@ -88,7 +88,7 @@ function handleSort() {
 function handleTags() {
 	const tags = selectr.getValue();
 
-	Array.from(contentEl.querySelectorAll('.item')).forEach(el => {
+	Array.from(contentElement.querySelectorAll('.item')).forEach(el => {
 		const show = ((showExpired.checked || !el.classList.contains('tag-expired')) &&
 			tags.reduce((sho, tag) => sho || el.classList.contains(`tag-${tag}`), tags.length === 0)) && !(hideCompleted.checked && el.querySelector('.complete-notice').checked);
 
