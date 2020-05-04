@@ -32,29 +32,29 @@ const getCompletedItems = () => JSON.parse(localStorage.getItem('devswag:complet
 let search;
 let selectr;
 
-function setCompleteAttr(el) {
+function setCompleteAttr(element) {
 	Array.from(document.querySelectorAll('.item'))
-		.find(item => item.contains(el))
-		.classList.toggle('checked-off', el.checked);
+		.find(item => item.contains(element))
+		.classList.toggle('checked-off', element.checked);
 
-	const label = el.parentElement.querySelector('span');
-	label.textContent = label.textContent.replace(/!|\?/, el.checked ? '!' : '?');
+	const label = element.parentElement.querySelector('span');
+	label.textContent = label.textContent.replace(/!|\?/, element.checked ? '!' : '?');
 }
 
-function handleCompleteStatus(e) {
+function handleCompleteStatus(event) {
 	const stored = getCompletedItems();
 
 	let completed;
 
-	if (e.target.checked) {
-		completed = [...stored, e.target.dataset.task];
+	if (event.target.checked) {
+		completed = [...stored, event.target.dataset.task];
 	} else {
-		completed = [...stored].filter(x => x !== e.target.dataset.task);
+		completed = [...stored].filter(x => x !== event.target.dataset.task);
 	}
 
 	localStorage.setItem('devswag:completed', JSON.stringify(completed));
 
-	setCompleteAttr(e.target);
+	setCompleteAttr(event.target);
 }
 
 function handleDifficulty(difficultyChanged) {
@@ -88,15 +88,15 @@ function handleSort() {
 function handleTags() {
 	const tags = selectr.getValue();
 
-	Array.from(contentElement.querySelectorAll('.item')).forEach(el => {
-		const show = ((showExpired.checked || !el.classList.contains('tag-expired')) &&
-			tags.reduce((sho, tag) => sho || el.classList.contains(`tag-${tag}`), tags.length === 0)) && !(hideCompleted.checked && el.querySelector('.complete-notice').checked);
+	Array.from(contentElement.querySelectorAll('.item')).forEach(element => {
+		const show = ((showExpired.checked || !element.classList.contains('tag-expired')) &&
+			tags.reduce((sho, tag) => sho || element.classList.contains(`tag-${tag}`), tags.length === 0)) && !(hideCompleted.checked && element.querySelector('.complete-notice').checked);
 
 		// Hide item if either
 		// - showExpired has been checked and current opportunity has expired
 		// - hideCompleted has been checked and current opportunity has been marked complete
 		if (!show) {
-			el.classList.remove('visible');
+			element.classList.remove('visible');
 		}
 	});
 
@@ -166,13 +166,13 @@ window.addEventListener('load', () => {
 
 	const completedItems = getCompletedItems();
 
-	document.querySelectorAll('.complete-notice').forEach(el => {
-		if (completedItems.find(c => c === el.dataset.task)) {
-			el.checked = true;
-			setCompleteAttr(el);
+	document.querySelectorAll('.complete-notice').forEach(element => {
+		if (completedItems.find(c => c === element.dataset.task)) {
+			element.checked = true;
+			setCompleteAttr(element);
 		}
 
-		el.addEventListener('change', handleCompleteStatus);
+		element.addEventListener('change', handleCompleteStatus);
 	});
 
 	cascade.call(window, true);

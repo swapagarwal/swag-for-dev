@@ -60,7 +60,7 @@
 				- difficultyTitle = 'Difficulty: ' + swag.difficulty;
 				- expired = swag.tags.includes('expired');
 				- dateAdded = (new Date(swag.dateAdded)).getTime();
-				- inputId = `${swag.name}_${dateAdded}`.toLowerCase().replace(' ', '_'); 
+				- inputId = `${swag.name}_${dateAdded}`.toLowerCase().replace(' ', '_');
 				div(
 					class="item " + (expired ? '' : 'visible ') + swag.difficulty + swag.tags.map(t => ` tag-${t}`).join('')
 					data-name=swag.name.toLowerCase()
