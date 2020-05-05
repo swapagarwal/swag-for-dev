@@ -14,6 +14,7 @@ const responsive = require('gulp-responsive');
 const merge = require('merge-stream');
 const postcss = require('gulp-postcss');
 const autoprefixer = require('autoprefixer');
+const inlinesource = require('gulp-inline-source');
 
 const {swagList, swagImages} = require('./get-data');
 
@@ -192,10 +193,18 @@ gulp.task('watch', () => {
 	gulp.watch('src/js/*.js', gulp.series('js'));
 });
 
+gulp.task('inlinesource', () => {
+	return gulp.src('dist/*.html')
+		.pipe(inlinesource())
+		.pipe(gulp.dest('dist/', {
+			overwrite: true
+		}));
+});
+
 gulp.task('build', gulp.series(
 	'clean',
 	gulp.parallel(
-		gulp.series('swag-img', 'cachebust', 'pug'), 'styl', 'js', 'binaries'
+		gulp.series('swag-img', 'cachebust', 'styl', 'pug', 'inlinesource'), 'js', 'binaries'
 	)
 ));
 

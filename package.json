@@ -28,6 +28,7 @@
     "gulp-concat": "2.6.1",
     "gulp-download-stream": "0.0.19",
     "gulp-htmlmin": "5.0.1",
+    "gulp-inline-source": "^4.0.0",
     "gulp-minify": "3.1.0",
     "gulp-postcss": "8.0.0",
     "gulp-pug": "4.0.1",
