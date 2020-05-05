@@ -195,7 +195,9 @@ gulp.task('watch', () => {
 
 gulp.task('inlinesource', () => {
 	return gulp.src('dist/*.html')
-		.pipe(inlinesource())
+		.pipe(inlinesource({
+			rootpath: './dist/'
+		}))
 		.pipe(gulp.dest('dist/', {
 			overwrite: true
 		}));
