@@ -14,7 +14,7 @@ const responsive = require('gulp-responsive');
 const merge = require('merge-stream');
 const postcss = require('gulp-postcss');
 const autoprefixer = require('autoprefixer');
-const inlinesource = require('gulp-inline-source');
+const inlinesource = require('@exuanbo/gulp-inline-source');
 
 const {swagList, swagImages} = require('./get-data');
 

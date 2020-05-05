@@ -17,6 +17,7 @@
   "devDependencies": {
     "@babel/core": "7.9.6",
     "@babel/preset-env": "7.9.6",
+    "@exuanbo/gulp-inline-source": "^1.1.0",
     "autoprefixer": "9.7.6",
     "chai": "4.2.0",
     "cross-env": "7.0.2",
@@ -28,7 +29,6 @@
     "gulp-concat": "2.6.1",
     "gulp-download-stream": "0.0.19",
     "gulp-htmlmin": "5.0.1",
-    "gulp-inline-source": "^4.0.0",
     "gulp-minify": "3.1.0",
     "gulp-postcss": "8.0.0",
     "gulp-pug": "4.0.1",
