@@ -47,12 +47,14 @@ describe('swag-for-dev', function () {
 				/* eslint-disable max-nested-callbacks */
 				describe(opportunity.name, function () {
 					it(opportunity.name + ' has a valid reference', function () {
+						this.retries(3);
 						this.timeout(10000);
 						this.slow(1500);
 						return checkURL(opportunity.reference);
 					});
 
 					it(opportunity.name + ' has a valid image', function () {
+						this.retries(3);
 						this.timeout(10000);
 						this.slow(1500);
 						return checkURL(opportunity.image);
