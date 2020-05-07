@@ -206,7 +206,7 @@ gulp.task('inlinesource', () => {
 gulp.task('build', gulp.series(
 	'clean',
 	gulp.parallel(
-		gulp.series('swag-img', 'cachebust', 'styl', 'pug', 'inlinesource'), 'js', 'binaries'
+		gulp.series('swag-img', 'styl', 'cachebust', 'pug', 'inlinesource'), 'js', 'binaries'
 	)
 ));
 
