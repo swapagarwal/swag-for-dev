@@ -357,7 +357,7 @@
     "reference": "https://swag.netlify.com/",
     "image": "https://swag.netlify.com/images/laptop-sticker.jpg",
     "dateAdded": "2018-04-27T19:36:39.000Z",
-    "tags": ["stickers"]
+    "tags": ["stickers", "expired"]
   },
   {
     "name": "Nexmo",
@@ -582,7 +582,7 @@
     "reference": "https://developers.whatismybrowser.com/api/swag/",
     "image": "https://developers.whatismybrowser.com/static/main/content/api/swag/whatismybrowser-stickers.jpg",
     "dateAdded": "2018-10-12T13:05:05.000Z",
-    "tags": ["stickers"]
+    "tags": ["stickers", "expired"]
   },
   {
     "name": "Xamarin",

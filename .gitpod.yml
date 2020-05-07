@@ -1,0 +1,15 @@
+image:
+  file: .gitpod.Dockerfile
+tasks:
+  - init: npm install
+    command: npm start
+ports:
+  # preview
+  - port: 8000
+    onOpen: open-preview
+  # live-reload: Broken because of bad automatic configuration of live-reload plugin
+  # See: https://github.com/schickling/gulp-webserver/pull/126
+  # Once it's released, we will be able to set livereload config with custom `src` target
+  # to the right URL (found with `gp url <port>`)
+  - port: 35729
+    onOpen: ignore

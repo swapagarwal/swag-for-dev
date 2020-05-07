@@ -7,6 +7,7 @@
 [![closed pull requests](https://img.shields.io/github/issues-pr-closed/swapagarwal/swag-for-dev.svg)](htps://github.com/swapagarwal/swag-for-dev/pulls?q=is%3Apr+is%3Aclosed)
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg)](https://github.com/swapagarwal/swag-for-dev/fork)
 [![Join the chat on Slack](https://img.shields.io/badge/chat-on%20slack-E01563.svg)](https://join.slack.com/t/swagfordev/shared_invite/zt-6ecwtoap-QR1sl1782xTCiGzBnSJt3g)
+[![Gitpod Ready-to-Code](https://img.shields.io/badge/Gitpod-Ready--to--Code-blue?logo=gitpod)](https://gitpod.io/from-referrer/)
 
 As a developer, nothing piques my interest more than developer swag! This is an attempt to list down the current swag opportunities for developers.
 
@@ -35,6 +36,14 @@ As this project is community-driven, it'd be really helpful if you comment on th
 Please consider donating to cover up our hosting costs. 🙏
 
 ## Development
+
+### Online one-click setup
+
+Contribute to swag-for-dev using a fully featured online development environment that will automatically: clone the repo, install the dependencies and start the webserver.
+
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/from-referrer/)
+
+### Local setup
 
 1. Clone this repository by running
     ```
