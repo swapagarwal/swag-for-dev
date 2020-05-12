@@ -14,7 +14,7 @@ const responsive = require('gulp-responsive');
 const merge = require('merge-stream');
 const postcss = require('gulp-postcss');
 const autoprefixer = require('autoprefixer');
-const inlinesource = require('@exuanbo/gulp-inline-source');
+const {readFile} = require('fs').promises;
 
 const {swagList, swagImages} = require('./get-data');
 
@@ -34,7 +34,24 @@ let manifest = {
 	'js/index.js': 'js/index.js'
 };
 
-gulp.task('pug', () => {
+const assetsToBeInlined = ['css/index.css', 'js/index.js'];
+
+async function getInlinedAssets(config) {
+	const fileMap = new Map();
+	const promises = [];
+	const assetBasePath = 'dist/assets/';
+
+	config.forEach(name => {
+		const assetPath = assetBasePath + name;
+		promises.push(readFile(assetPath, 'utf8')
+			.then(contents => fileMap.set(name, contents)));
+	});
+
+	await Promise.all(promises);
+	return fileMap;
+}
+
+gulp.task('pug', async done => {
 	const tags = Array.from(swagList.reduce(
 		(tagList, {tags}) => {
 			tags.filter(tag => tag !== 'expired').forEach(tag => tagList.add(tag));
@@ -53,16 +70,19 @@ gulp.task('pug', () => {
 		js: `/assets/${manifest['js/index.js']}`
 	};
 
-	return gulp.src('src/pug/*.pug')
+	const inlinedAssets = await getInlinedAssets(assetsToBeInlined);
+
+	gulp.src('src/pug/*.pug')
 		.pipe(pug({
 			pretty: true,
-			locals: {swagList, tags, bustedAssets}
+			locals: {swagList, tags, bustedAssets, inlinedAssets}
 		}))
 		.pipe(htmlmin({
 			collapseWhitespace: true,
 			removeComments: true
 		}))
-		.pipe(gulp.dest('dist/'));
+		.pipe(gulp.dest('dist/'))
+		.on('end', () => done());
 });
 
 gulp.task('styl', () => {
@@ -193,20 +213,10 @@ gulp.task('watch', () => {
 	gulp.watch('src/js/*.js', gulp.series('js'));
 });
 
-gulp.task('inlinesource', () => {
-	return gulp.src('dist/*.html')
-		.pipe(inlinesource({
-			rootpath: './dist/'
-		}))
-		.pipe(gulp.dest('dist/', {
-			overwrite: true
-		}));
-});
-
 gulp.task('build', gulp.series(
 	'clean',
 	gulp.parallel(
-		gulp.series('swag-img', 'styl', 'cachebust', 'pug', 'inlinesource'), 'js', 'binaries'
+		gulp.series('swag-img', 'styl', 'cachebust', 'pug'), 'js', 'binaries'
 	)
 ));
 
