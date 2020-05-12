@@ -34,15 +34,15 @@ let manifest = {
 	'js/index.js': 'js/index.js'
 };
 
-const assetsToBeInlined = ['css/index.css', 'js/index.js'];
+const assetsToBeInlined = ['css/index.css'];
 
-async function getInlinedAssets(config) {
+async function getInlinedAssets(config, manifest) {
 	const fileMap = new Map();
 	const promises = [];
 	const assetBasePath = 'dist/assets/';
 
 	config.forEach(name => {
-		const assetPath = assetBasePath + name;
+		const assetPath = assetBasePath + manifest[name];
 		promises.push(readFile(assetPath, 'utf8')
 			.then(contents => fileMap.set(name, contents)));
 	});
@@ -70,7 +70,7 @@ gulp.task('pug', async done => {
 		js: `/assets/${manifest['js/index.js']}`
 	};
 
-	const inlinedAssets = await getInlinedAssets(assetsToBeInlined);
+	const inlinedAssets = await getInlinedAssets(assetsToBeInlined, manifest);
 
 	gulp.src('src/pug/*.pug')
 		.pipe(pug({
