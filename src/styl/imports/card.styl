@@ -2,6 +2,11 @@
 	width 100%
 	max-width 350px
 	display none
+	position relative
+
+	> div
+		opacity 1
+		transition opacity .6s ease-in-out
 
 	div.information
 		padding 3rem
@@ -115,33 +120,37 @@
 			border-color transparent
 
 	&.checked-off
-		& > *:not(.task-complete), .task-complete span
+		& > *:not(.task-complete)
 			opacity 0.4
+
+		&.fade-out
+			> *:not(.task-complete)
+				opacity 0
+
 
 	.task-complete
 		display flex
 		flex-direction row-reverse
-		position relative
+		position absolute
 		cursor pointer
 		width max-content
-		margin: 1em auto 0;
-
-		span
-			color #444
-			text-decoration none
-			border-bottom 2px solid #444
-			transition all .2s ease
-			opacity 1
-			margin-right .8em
+		margin 1em
+		top 0
+		right 0
 
 		i
 			min-width 1.6em
-			border 2px solid #555
+			border 2px solid primary-color
+			background white-color
 			align-items center
 			height 1.6em
 			border-radius 2px
 			transition all .25s cubic-bezier(.4,.0,.23,1)
 			box-sizing border-box
+			opacity .8
+
+			&:hover
+				opacity 1
 
 		input
 			position absolute
@@ -152,8 +161,9 @@
 			cursor pointer
 
 			&:checked + i
-				border .8em solid #67eaff
+				border .8em solid secondary-color
 				animation bounce 200ms cubic-bezier(.4,.0,.23,1)
+				opacity 1
 
 				&::before
 					content ''

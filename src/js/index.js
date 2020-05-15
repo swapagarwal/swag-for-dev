@@ -1,4 +1,5 @@
 /* global Selectr */
+/* global tippy */
 
 /**
  * Initialising global variables
@@ -33,12 +34,29 @@ let search;
 let selectr;
 
 function setCompleteAttr(element) {
-	Array.from(document.querySelectorAll('.item'))
-		.find(item => item.contains(element))
-		.classList.toggle('checked-off', element.checked);
+	const card = element.closest('.item');
+	card.classList.toggle('checked-off', element.checked);
 
-	const label = element.parentElement.querySelector('span');
-	label.textContent = label.textContent.replace(/!|\?/, element.checked ? '!' : '?');
+	setCompleteTooltip(element.parentElement, element.checked);
+}
+
+function setCompleteTooltip(element, complete) {
+	if (!window.tippy) {
+		return;
+	}
+
+	const tooltip = tippy(element);
+	const done = `Done${complete ? '!' : '?'}`;
+
+	tooltip.setContent(done);
+}
+
+function onCardTransitionEnd(event) {
+	if (hideCompleted.checked) {
+		const card = event.target.closest('.item');
+		card.classList.remove('fade-out');
+		handleTags();
+	}
 }
 
 function handleCompleteStatus(event) {
@@ -55,6 +73,11 @@ function handleCompleteStatus(event) {
 	localStorage.setItem('devswag:completed', JSON.stringify(completed));
 
 	setCompleteAttr(event.target);
+
+	if (hideCompleted.checked) {
+		const card = event.target.closest('.item');
+		card.classList.add('fade-out');
+	}
 }
 
 function handleDifficulty(difficultyChanged) {
@@ -139,6 +162,21 @@ function cascade(force = false) {
 	updateUrl();
 }
 
+function completedCardsInit(elements) {
+	const completedItems = getCompletedItems();
+
+	elements.forEach(element => {
+		element.checked = completedItems.some(item => item === element.dataset.task);
+
+		setCompleteAttr(element);
+
+		element.addEventListener('change', handleCompleteStatus);
+
+		const card = element.closest('.item');
+		card.querySelector('.information').addEventListener('transitionend', onCardTransitionEnd, false);
+	});
+}
+
 window.addEventListener('load', () => {
 	selectr = new Selectr('#tags', {
 		multiple: true,
@@ -165,16 +203,7 @@ window.addEventListener('load', () => {
 	showExpired.addEventListener('change', cascade);
 	hideCompleted.addEventListener('change', cascade);
 
-	const completedItems = getCompletedItems();
-
-	document.querySelectorAll('.complete-notice').forEach(element => {
-		if (completedItems.find(c => c === element.dataset.task)) {
-			element.checked = true;
-			setCompleteAttr(element);
-		}
-
-		element.addEventListener('change', handleCompleteStatus);
-	});
+	completedCardsInit(document.querySelectorAll('.complete-notice'));
 
 	cascade.call(window, true);
 });
