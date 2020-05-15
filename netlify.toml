@@ -19,14 +19,14 @@
 [[headers]]
     for = "/assets/swag-img/*"
     [headers.values]
-    Cache-Control = 'public max-age=63072000' # 2 years cache for all assets since they're cachebusted
+    Cache-Control = "public max-age=63072000" # 2 years cache for all assets since they're cachebusted
 
 [[headers]]
     for = "/assets/js/*"
     [headers.values]
-    Cache-Control = 'public max-age=63072000' # 2 years cache for all assets since they're cachebusted
+    Cache-Control = "public max-age=63072000" # 2 years cache for all assets since they're cachebusted
 
 [[headers]]
     for = "/assets/css/*"
     [headers.values]
-    Cache-Control = 'public max-age=63072000' # 2 years cache for all assets since they're cachebusted
+    Cache-Control = "public max-age=63072000" # 2 years cache for all assets since they're cachebusted
