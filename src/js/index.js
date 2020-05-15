@@ -60,14 +60,18 @@ function handleSort() {
 
 function handleTags() {
 	const tags = selectr.getValue();
+	const cards = Array.from(contentElement.querySelectorAll('.item'));
 
-	Array.from(contentElement.querySelectorAll('.item')).forEach(element => {
+	cards.forEach(element => {
 		const show = (showExpired.checked || !element.classList.contains('tag-expired')) &&
 			tags.reduce((sho, tag) => sho || element.classList.contains(`tag-${tag}`), tags.length === 0);
 		if (!show) {
 			element.classList.remove('visible');
 		}
 	});
+
+	const hasResults = cards.every(element => !element.classList.contains('visible'));
+	document.querySelector('.no-results').style.display = hasResults ? '' : 'none';
 
 	search.set('tags', tags.join(' '));
 
