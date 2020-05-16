@@ -61,6 +61,7 @@ function handleSort() {
 function handleTags() {
 	const tags = selectr.getValue();
 	const cards = Array.from(contentElement.querySelectorAll('.item'));
+	let hasResults = false;
 
 	cards.forEach(element => {
 		const show = (showExpired.checked || !element.classList.contains('tag-expired')) &&
@@ -68,10 +69,11 @@ function handleTags() {
 		if (!show) {
 			element.classList.remove('visible');
 		}
+
+		hasResults = hasResults || show;
 	});
 
-	const hasResults = cards.every(element => !element.classList.contains('visible'));
-	document.querySelector('.no-results').style.display = hasResults ? '' : 'none';
+	document.querySelector('.no-results').style.display = hasResults ? 'none' : '';
 
 	search.set('tags', tags.join(' '));
 
