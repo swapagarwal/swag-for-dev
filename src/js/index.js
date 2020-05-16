@@ -70,7 +70,7 @@ function handleTags() {
 			element.classList.remove('visible');
 		}
 
-		hasResults = hasResults || show;
+		hasResults = hasResults || element.classList.contains('visible');
 	});
 
 	document.querySelector('.no-results').style.display = hasResults ? 'none' : '';
