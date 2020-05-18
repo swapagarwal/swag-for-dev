@@ -315,6 +315,15 @@
     "tags": ["clothing", "hacktoberfest", "expired"]
   },
   {
+    "name": "LibreOffice",
+    "difficulty": "easy",
+    "description": "Stickers are awarded for tweeting using hashtag #libreoffice, answering questions on Ask LibreOffice, helping with bugfixes, translations or code to LibreOffice. Details at <a href='https://blog.documentfoundation.org/blog/2020/05/01/starting-today-the-month-of-libreoffice-may-2020-get-cool-merchandise/'>LibreOffice blog.</a>",
+    "reference": "https://blog.documentfoundation.org/blog/2020/05/01/starting-today-the-month-of-libreoffice-may-2020-get-cool-merchandise/",
+    "image": "https://blog.documentfoundation.org/wp-content/uploads/2020/05/month_of_lo_may2020_stickers.jpg",
+    "dateAdded": "2020-05-18T05:20:00.000Z",
+    "tags": ["stickers"]
+  },
+  {
     "name": "Magento + Adobe",
     "difficulty": "hard",
     "description": "Submit 5 or more pull requests during October 2019 to any open repositories under Adobe or Magento organizations on GitHub, get a Squashtoberfest T-Shirt!",
