@@ -1,5 +1,66 @@
 @require "imports/base"
 
+// use CSS variables to control switch between light and dark mode 
+@css {
+	:root {
+		--body-color: #f5f7fb;
+		--controls-color: #fff;
+		--controls-text-color: #000;
+		--hero-url: url('/assets/img/tiny-grid.svg');
+		--card-bg-color: #FFF;
+		--card-text-color: #222;
+		--card-h1-color: #000;
+		--newsletter-bg-color: #fff;
+	}
+
+	[theme="dark"] { 		
+		--body-color: #222;
+		--controls-color: #353535;
+		--controls-text-color: #fff;
+		--hero-url: url('/assets/img/tiny-grid-dark.svg');
+		--card-bg-color: #353535;
+		--card-text-color: #fff;
+		--card-h1-color: #fff;
+		--newsletter-bg-color: #888;
+	}
+	
+	body {
+		background: var(--body-color);
+	}
+
+	section.main .controls {
+		background: var(--controls-color);
+		color: var(--controls-text-color);
+	}
+
+	section.main .hero {
+		background: var(--hero-url) repeat;
+	}
+
+	.item div.information {
+		background: var(--card-bg-color);
+	}
+
+	.item div.information p {
+		color: var(--card-text-color);
+	}
+
+	div.information .title h1 {
+		color: var(--card-h1-color);
+	}
+
+	section.newsletter {
+		background: var(--newsletter-bg-color);
+	}
+
+}
+
+#darkModeButton
+	color green
+	position absolute
+	top 50px
+	right 50px
+
 a
 	color link-color
 	transition .2s
@@ -54,7 +115,6 @@ section.main
 
 	.controls
 		flex-wrap wrap
-		background white-color
 		padding 0 2rem
 		border-radius 10px
 		border 1px solid grey-color
@@ -67,7 +127,6 @@ section.main
 		color white
 
 	.hero
-		background url('/assets/img/tiny-grid.svg') repeat
 		background-size 120px
 
 		.heading
@@ -162,7 +221,6 @@ section.main
 		@import "imports/card"
 
 section.newsletter
-	background white-color
 	border-top 1px solid grey-color
 
 footer

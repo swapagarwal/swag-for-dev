@@ -20,6 +20,7 @@ const filterInput = document.querySelector('#filter');
 const sortingInput = document.querySelector('#sorting');
 const tagsSelect = document.querySelector('#tags');
 const showExpired = document.querySelector('#expired');
+const darkModeButton = document.querySelector('#darkModeButton');
 
 const activateElements = els => Array.from(els).forEach(node => node.classList.add(ACTIVE_CLASS));
 const allowDifficultySelect = shouldAllow => sortingInput.querySelectorAll('.difficulty')
@@ -29,6 +30,7 @@ const allowDifficultySelect = shouldAllow => sortingInput.querySelectorAll('.dif
 
 let search;
 let selectr;
+let isDarkModeOn = false;
 
 function handleDifficulty(difficultyChanged) {
 	const {value} = filterInput;
@@ -112,6 +114,17 @@ function lazyLoadStyleSheet() {
 	});
 }
 
+function toggleDarkMode() {
+
+	if (!isDarkModeOn) {
+		document.documentElement.setAttribute('theme', 'dark');
+	} else {
+		document.documentElement.setAttribute('theme', 'light');
+	}  
+
+	isDarkModeOn = !isDarkModeOn;
+}
+
 window.addEventListener('DOMContentLoaded', () => {
 	lazyLoadStyleSheet();
 	selectr = new Selectr('#tags', {
@@ -136,6 +149,7 @@ window.addEventListener('DOMContentLoaded', () => {
 	filterInput.addEventListener('input', cascade);
 	sortingInput.addEventListener('input', cascade);
 	showExpired.addEventListener('change', cascade);
+	darkModeButton.addEventListener('click', toggleDarkMode); 
 
 	cascade.call(window, true);
 });
