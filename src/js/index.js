@@ -120,7 +120,7 @@ function toggleDarkMode() {
 		document.documentElement.setAttribute('theme', 'dark');
 	} else {
 		document.documentElement.setAttribute('theme', 'light');
-	}  
+	}
 
 	isDarkModeOn = !isDarkModeOn;
 }
@@ -149,7 +149,7 @@ window.addEventListener('DOMContentLoaded', () => {
 	filterInput.addEventListener('input', cascade);
 	sortingInput.addEventListener('input', cascade);
 	showExpired.addEventListener('change', cascade);
-	darkModeButton.addEventListener('click', toggleDarkMode); 
+	darkModeButton.addEventListener('click', toggleDarkMode);
 
 	cascade.call(window, true);
 });
