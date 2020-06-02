@@ -115,11 +115,10 @@ function lazyLoadStyleSheet() {
 }
 
 function toggleDarkMode() {
-
-	if (!isDarkModeOn) {
-		document.documentElement.setAttribute('theme', 'dark');
-	} else {
+	if (isDarkModeOn) {
 		document.documentElement.setAttribute('theme', 'light');
+	} else {
+		document.documentElement.setAttribute('theme', 'dark');
 	}
 
 	isDarkModeOn = !isDarkModeOn;
