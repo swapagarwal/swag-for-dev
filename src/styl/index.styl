@@ -8,24 +8,28 @@
 		--body-color: #f5f7fb;
 		--controls-color: #fff;
 		--controls-text-color: #000;
+		--controls-border-color: #ededed;
 		--hero-url: url('/assets/img/tiny-grid.svg');
 		--card-bg-color: #FFF;
 		--card-text-color: #222;
 		--card-h1-color: #000;
 		--newsletter-bg-color: #fff;
 		--footer-bg-color: #153e68;
+		--card-border-color: #ededed;
 	}
 
 	[theme="dark"] {
 		--body-color: #222;
 		--controls-color: #353535;
 		--controls-text-color: #fff;
+		--controls-border-color: #000;
 		--hero-url: url('/assets/img/tiny-grid-dark.svg');
 		--card-bg-color: #353535;
 		--card-text-color: #fff;
 		--card-h1-color: #fff;
 		--newsletter-bg-color: #888;
 		--footer-bg-color: #222;
+		--card-border-color: #000;
 	}
 
 	body {
@@ -35,6 +39,7 @@
 	section.main .controls {
 		background: var(--controls-color);
 		color: var(--controls-text-color);
+		border: 1px solid var(--controls-border-color);
 	}
 
 	section.main .hero {
@@ -43,10 +48,15 @@
 
 	.item div.information {
 		background: var(--card-bg-color);
+		border: 1px solid var(--card-border-color); 
 	}
 
 	.item div.information p {
 		color: var(--card-text-color);
+	}
+
+	.item .img-container {
+		border: 1px solid var(--card-border-color); 
 	}
 
 	div.information .title h1 {
@@ -60,7 +70,6 @@
 	footer {
 		background: var(--footer-bg-color);
 	}
-
 
 }
 
@@ -120,7 +129,6 @@ section.main
 		flex-wrap wrap
 		padding 0 2rem
 		border-radius 10px
-		border 1px solid grey-color
 		margin 4rem 2rem 0
 
 	.banner
