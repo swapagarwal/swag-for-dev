@@ -30,7 +30,6 @@ const allowDifficultySelect = shouldAllow => sortingInput.querySelectorAll('.dif
 
 let search;
 let selectr;
-let isDarkModeOn = false;
 
 function handleDifficulty(difficultyChanged) {
 	const {value} = filterInput;
@@ -115,13 +114,13 @@ function lazyLoadStyleSheet() {
 }
 
 function toggleDarkMode() {
-	if (isDarkModeOn) {
+	if (localStorage.getItem('theme') === 'dark') {
 		document.documentElement.setAttribute('theme', 'light');
+		localStorage.setItem('theme', 'light');
 	} else {
 		document.documentElement.setAttribute('theme', 'dark');
+		localStorage.setItem('theme', 'dark');
 	}
-
-	isDarkModeOn = !isDarkModeOn;
 }
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -149,6 +148,11 @@ window.addEventListener('DOMContentLoaded', () => {
 	sortingInput.addEventListener('input', cascade);
 	showExpired.addEventListener('change', cascade);
 	darkModeButton.addEventListener('click', toggleDarkMode);
+
+	if (localStorage.getItem('theme') === 'dark') {
+		darkModeButton.checked = true;
+		document.documentElement.setAttribute('theme', 'dark');
+	}
 
 	cascade.call(window, true);
 });
