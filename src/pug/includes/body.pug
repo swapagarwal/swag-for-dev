@@ -69,7 +69,8 @@
 									img(src=swag.images.jpeg loading="lazy" alt=swag.name + " swag you can get")
 					div.information
 						div.title.flex
-							h1=swag.name
+							h1
+								a(href=swag.reference target="_blank")=swag.name
 							div
 								div(class=difficulty title=difficultyTitle)
 									span.sr-only=difficultyTitle
