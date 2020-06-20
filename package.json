@@ -15,8 +15,8 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "@babel/core": "7.10.2",
-    "@babel/preset-env": "7.10.2",
+    "@babel/core": "7.10.3",
+    "@babel/preset-env": "7.10.3",
     "autoprefixer": "9.8.0",
     "chai": "4.2.0",
     "cross-env": "7.0.2",
