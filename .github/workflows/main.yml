@@ -13,8 +13,9 @@ jobs:
     - uses: actions/checkout@v2
 
     - uses: actions/cache@v1
+      id: cache-node
       with:
-        path: ~/.npm
+        path: ./node_modules
         key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
         restore-keys: |
           ${{ runner.os }}-node-
@@ -26,6 +27,7 @@ jobs:
       with:
         node-version: ${{ steps.nvm.outputs.nvmrc }}
     - run: npm ci
+      if: steps.cache-node.outputs.cache-hit != 'true'
 
     - run: npm run test
 
@@ -35,8 +37,9 @@ jobs:
     - uses: actions/checkout@v2
 
     - uses: actions/cache@v1
+      id: cache-node
       with:
-        path: ~/.npm
+        path: ./node_modules
         key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
         restore-keys: |
           ${{ runner.os }}-node-
@@ -48,5 +51,6 @@ jobs:
       with:
         node-version: ${{ steps.nvm.outputs.nvmrc }}
     - run: npm ci
+      if: steps.cache-node.outputs.cache-hit != 'true'
 
     - run: npm run lint
