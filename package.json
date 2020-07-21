@@ -38,7 +38,7 @@
     "gulp-uglify-es": "2.0.0",
     "gulp-webserver": "0.9.1",
     "husky": "4.2.5",
-    "lint-prepush": "2.0.1",
+    "lint-prepush": "2.1.0",
     "merge-stream": "2.0.0",
     "mocha": "8.0.1",
     "mocha.parallel": "0.15.6",
