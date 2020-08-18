@@ -105,7 +105,15 @@ function cascade(force = false) {
 	updateUrl();
 }
 
-window.addEventListener('load', () => {
+// Lazy load style sheets
+function lazyLoadStyleSheet() {
+	document.querySelectorAll('link[data-href]').forEach(link => {
+		link.href = link.dataset.href;
+	});
+}
+
+window.addEventListener('DOMContentLoaded', () => {
+	lazyLoadStyleSheet();
 	selectr = new Selectr('#tags', {
 		multiple: true,
 		searchable: false,

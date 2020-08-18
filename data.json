@@ -78,7 +78,16 @@
     "reference": "https://community.blockstack.org/z2d-shirt",
     "image": "https://static.tildacdn.com/tild6433-6535-4833-b932-323062343930/Zero_to_Dapp_shirt_p.png",
     "dateAdded": "2020-01-19T05:30:00.000Z",
-    "tags": ["clothing"]
+    "tags": ["clothing", "expired"]
+  },
+  {
+    "name": "Blockstack",
+    "difficulty": "easy",
+    "description": "Get up to 5 awesome stickers from Blockstack! Don't be evil!",
+    "reference": "https://blockstack.myshopify.com/collections/frontpage/products/dont-be-evil-stickers",
+    "image": "https://i.imgur.com/sHgpibu.jpg",
+    "dateAdded": "2020-07-21T14:42:00.000Z",
+    "tags": ["stickers"]
   },
   {
     "name": "CircleCI",
@@ -132,7 +141,7 @@
     "reference": "https://twitter.com/dequesystems/status/1182651282869362694",
     "image": "https://i.imgur.com/t82DlcW.jpg",
     "dateAdded": "2020-02-25T14:33:22.000Z",
-    "tags": ["clothing"]
+    "tags": ["clothing", "expired"]
   },
   {
     "name": "Devfolio",
@@ -346,7 +355,7 @@
     "difficulty": "easy",
     "description": "Make your first contribution to the NativeScript community and win an awesome set of stickers. Among the stickers you will find a limited edition 'Contributor' sticker. ",
     "reference": "https://www.nativescript.org/blog/nativescript-first-time-contribution-contest-continued-and-extended",
-    "image": "https://d2odgkulk9w7if.cloudfront.net/images/default-source/default-album/stickers-photo.jpg",
+    "image": "https://i.imgur.com/iiWLHhk.png",
     "dateAdded": "2019-01-25T06:45:29.000Z",
     "tags": ["stickers"]
   },
@@ -418,7 +427,7 @@
     "difficulty": "easy",
     "description": "Create and fill out your profile. Upload a custom avatar. Introduce yourself.",
     "reference": "https://twitter.com/pagerduty",
-    "image": "https://aws1.discourse-cdn.com/pagerduty/original/2X/d/ddd643ad3608a5580455e0c983605c97249e705e.jpeg",
+    "image": "https://i.imgur.com/WYeYymd.jpg",
     "dateAdded": "2019-10-09T22:04:00.000Z",
     "tags": ["stickers", "expired"]
   },
@@ -580,7 +589,7 @@
     "difficulty": "easy",
     "description": "Send an API request, get some sweet vinyl laptop stickers!",
     "reference": "https://developers.whatismybrowser.com/api/swag/",
-    "image": "https://developers.whatismybrowser.com/static/main/content/api/swag/whatismybrowser-stickers.jpg",
+    "image": "https://i.imgur.com/ZyhS12p.png",
     "dateAdded": "2018-10-12T13:05:05.000Z",
     "tags": ["stickers", "expired"]
   },
