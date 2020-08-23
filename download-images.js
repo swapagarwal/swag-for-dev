@@ -1,6 +1,7 @@
 const {promisify} = require('util');
 const {pipeline: pipeline_} = require('stream');
 const {createWriteStream} = require('fs');
+const {mkdir} = require('fs').promises;
 const path = require('path');
 const {performance} = require('perf_hooks');
 const Queue = require('p-queue').default;
@@ -44,6 +45,8 @@ async function downloadSingleImage({url, errors, outFile}) {
 module.exports = async function (list, dest) {
 	const queue = new Queue({concurrency: 15});
 	const errors = [];
+
+	await mkdir(dest, {recursive: true});
 
 	for (const {url, file} of list) {
 		queue.add(() => downloadSingleImage({url, errors, outFile: path.join(dest, file)}));
