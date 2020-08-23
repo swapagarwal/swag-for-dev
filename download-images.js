@@ -1,7 +1,7 @@
 const {promisify} = require('util');
 const {pipeline: pipeline_} = require('stream');
 const {createWriteStream} = require('fs');
-const {mkdir} = require('fs').promises;
+const {mkdir, unlink} = require('fs').promises;
 const path = require('path');
 const {performance} = require('perf_hooks');
 const Queue = require('p-queue').default;
@@ -39,6 +39,10 @@ async function downloadSingleImage({url, errors, outFile}) {
 		const time = getTime(start);
 		console.log(`${chalk.red('Failed downloading')} ${chalk.cyan(url)} [${time}]: ${error.message}`);
 		errors.push(error);
+
+		try {
+			await unlink(outFile);
+		} catch {}
 	}
 }
 
