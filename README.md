@@ -22,6 +22,8 @@ Sign up at [https://upscri.be/67d2fa](https://upscri.be/67d2fa) to get notified 
 
 All swag opportunities can be found at [https://devswag.io/](https://devswag.io/) 😎
 
+All the new event oppertunites and swags list can also be found at telegram channel https://t.me/devswag :smiley:
+
 ## Contributing
 
 Feel free to open an issue (or even better, send a Pull Request) for expanding this list. Instructions for doing so are available [here](https://github.com/swapagarwal/swag-for-dev/blob/master/CONTRIBUTING.md#how-do-i-add-a-swag-opportunity). Contributions are very welcome!! 😄
