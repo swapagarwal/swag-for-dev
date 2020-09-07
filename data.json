@@ -243,6 +243,15 @@
     "tags": ["clothing", "hacktoberfest", "stickers", "expired"]
   },
   {
+    "name": "Hotjar",
+    "difficulty": "easy",
+    "description": "Refer 5 friends to receive an official Hotjar t-shirt. Each month the top 5 referrers also receive a Hotjar hoodie. Create an account and share your URL with friends!",
+    "reference": "https://insights.hotjar.com/profile/referrals",
+    "image": "https://i.imgur.com/raAxEiN.png",
+    "dateAdded": "2020-09-07T12:55:00.000Z",
+    "tags": ["clothing"]
+  },
+  {
     "name": "ImgBot",
     "difficulty": "easy",
     "description": "Install the bot on your repo and get some awesome laptop stickers from ImgBot after filling out the form!",
