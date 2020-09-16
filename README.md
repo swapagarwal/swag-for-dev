@@ -9,7 +9,7 @@
 [![Join the chat on Slack](https://img.shields.io/badge/chat-on%20slack-E01563.svg)](https://join.slack.com/t/swagfordev/shared_invite/zt-6ecwtoap-QR1sl1782xTCiGzBnSJt3g)
 [![Gitpod Ready-to-Code](https://img.shields.io/badge/Gitpod-Ready--to--Code-blue?logo=gitpod)](https://gitpod.io/from-referrer/)
 
-As a developer, nothing piques my interest more than a developer swag! Below is a list of current swag opportunities for developers.
+As a developer, nothing piques my interest more than developer swag! devSwag is a curated list of verified swag opportunities for developers.
 
 Feel free to send a Pull Request! 😄
 
