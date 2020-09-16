@@ -13,7 +13,7 @@
     "difficulty": "medium",
     "description": "Contribute to their participating repositories, get swag in the form of t-shirts and stickers. You'll also be mentioned in a dedicated blog post in November.",
     "reference": "https://www.accordproject.org/events/hacktoberfest-2019/",
-    "image": "https://img.accordproject.org/wp-content/uploads/2019/09/01183436/1.-T-Shirt-Mockup.jpg",
+    "image": "https://i.imgur.com/dnwfG8P.jpg",
     "dateAdded": "2019-10-04T15:29:00.000Z",
     "tags": ["stickers", "clothing", "hacktoberfest", "expired"]
   },
@@ -84,7 +84,7 @@
     "name": "Blockstack",
     "difficulty": "easy",
     "description": "Get up to 5 awesome stickers from Blockstack! Don't be evil!",
-    "reference": "https://blockstack.myshopify.com/collections/frontpage/products/dont-be-evil-stickers",
+    "reference": "https://web.archive.org/web/20200616131621/https://blockstack.myshopify.com/collections/frontpage/products/dont-be-evil-stickers",
     "image": "https://i.imgur.com/sHgpibu.jpg",
     "dateAdded": "2020-07-21T14:42:00.000Z",
     "tags": ["stickers"]
@@ -211,7 +211,7 @@
     "difficulty": "medium",
     "description": "Contribute 2 pull requests to Globo's Open Source Projects. At least 1 PR has to be accepted and you have to be in the first 200 registrants to get an exclusive t-shirt. Delivery only in Brazil.",
     "reference": "https://opensource.globo.com/hacktoberfest/",
-    "image": "https://opensource.globo.com/static/hacktoberfest-lg-ccb42ae80e9ac29693f57e549263e889.png",
+    "image": "https://i.imgur.com/TTrRMaE.jpg",
     "dateAdded": "2019-10-10T13:00:00.000Z",
     "tags": ["hacktoberfest", "clothing", "expired"]
   },
@@ -258,7 +258,7 @@
     "reference": "https://github.com/ipfs/community/#swag",
     "image": "https://i.imgur.com/sGUHD1P.jpg",
     "dateAdded": "2019-08-20T19:20:42.000Z",
-    "tags": ["stickers", "clothing"]
+    "tags": ["stickers", "clothing", "expired"]
   },
   {
     "name": "JabRef",
@@ -364,7 +364,7 @@
     "difficulty": "easy",
     "description": "Just fill out the <a href='https://swag.netlify.com/'>form</a> and get stickers.",
     "reference": "https://swag.netlify.com/",
-    "image": "https://swag.netlify.com/images/laptop-sticker.jpg",
+    "image": "https://i.imgur.com/lRJYJ3o.jpg",
     "dateAdded": "2018-04-27T19:36:39.000Z",
     "tags": ["stickers", "expired"]
   },
@@ -466,6 +466,15 @@
     "image": "https://i.imgur.com/pU8KfaE.png",
     "dateAdded": "2020-02-14T17:13:48.000Z",
     "tags": ["clothing"]
+  },
+  {
+    "name": "RedwoodJS",
+    "difficulty": "easy",
+    "description": "Simply fill in your postal address and get free stickers! (Shipped worldwide)",
+    "reference": "https://redwoodjs.com/stickers",
+    "image": "https://i.imgur.com/zlnnR1F.png",
+    "dateAdded": "2020-09-03T15:43:00.000Z",
+    "tags": ["stickers"]
   },
   {
     "name": "Saleor",

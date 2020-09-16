@@ -203,7 +203,9 @@ gulp.task('webserver', () => {
 	return gulp.src('dist')
 		.pipe(webserver({
 			livereload: true,
-			open: true
+			open: true,
+			host: process.env.GULP_LISTEN_HOST || '127.0.0.1',
+			port: Number.parseInt(process.env.GULP_LISTEN_PORT || '8080', 10)
 		}));
 });
 
