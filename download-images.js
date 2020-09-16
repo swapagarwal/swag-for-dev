@@ -64,5 +64,5 @@ module.exports = async function (list, dest) {
 
 	console.log(`Downloaded swag-images with ${errorText} error${plural}`);
 
-	return !(!process.env.NETLIFY || (process.env.NETLIFY && process.env.CONTEXT === 'production'));
+	return totalErrors === 0 || !(!process.env.NETLIFY || (process.env.NETLIFY && process.env.CONTEXT === 'production'));
 };
