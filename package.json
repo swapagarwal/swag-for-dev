@@ -13,12 +13,15 @@
     "type": "git",
     "url": "git+https://github.com/swapagarwal/swag-for-dev.git"
   },
-  "dependencies": {},
+  "dependencies": {
+    "p-queue": "^6.6.1"
+  },
   "devDependencies": {
     "@babel/core": "7.10.5",
     "@babel/preset-env": "7.10.4",
     "autoprefixer": "10.0.0",
     "chai": "4.2.0",
+    "chalk": "4.1.0",
     "cross-env": "7.0.2",
     "del": "5.1.0",
     "eclint": "2.8.1",
@@ -26,7 +29,6 @@
     "gulp": "4.0.2",
     "gulp-babel": "8.0.0",
     "gulp-concat": "2.6.1",
-    "gulp-download-stream": "0.0.19",
     "gulp-htmlmin": "5.0.1",
     "gulp-minify": "3.1.0",
     "gulp-postcss": "8.0.0",
