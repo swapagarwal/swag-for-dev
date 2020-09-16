@@ -9,9 +9,9 @@
 [![Join the chat on Slack](https://img.shields.io/badge/chat-on%20slack-E01563.svg)](https://join.slack.com/t/swagfordev/shared_invite/zt-6ecwtoap-QR1sl1782xTCiGzBnSJt3g)
 [![Gitpod Ready-to-Code](https://img.shields.io/badge/Gitpod-Ready--to--Code-blue?logo=gitpod)](https://gitpod.io/from-referrer/)
 
-As a developer, nothing piques my interest more than developer swag! This is an attempt to list down the current swag opportunities for developers.
+As a developer, nothing piques my interest more than developer swag! devSwag is a curated list of verified swag opportunities for developers.
 
-Feel free to send a PR! 😄
+Feel free to send a Pull Request! 😄
 
 > Featured on [Changelog Nightly](http://nightly.changelog.com/2018/02/18/), [Changelog Weekly](http://email.changelog.com/t/t-675F8F9C3E9A6D8E2540EF23F30FEDED), [Hacker News](https://news.ycombinator.com/item?id=16407484), [reddit](https://www.reddit.com/r/coolgithubprojects/comments/7ygd5n/as_a_developer_nothing_piques_my_interest_as_much/), [Product Hunt](https://www.producthunt.com/posts/swag-for-dev) 🦄
 
@@ -26,7 +26,7 @@ All swag opportunities can be found at [https://devswag.io/](https://devswag.io/
 
 ## Contributing
 
-Feel free to open an issue (or even better, send a Pull Request) for expanding this list. Instructions for doing so are available [here](https://github.com/swapagarwal/swag-for-dev/blob/master/CONTRIBUTING.md#how-do-i-add-a-swag-opportunity). Contributions are very welcome!! 😄
+Feel free to open an issue (or even better, send a Pull Request) for expanding this list. Instructions for doing so are available [here](https://github.com/swapagarwal/swag-for-dev/blob/master/CONTRIBUTING.md#how-do-i-add-a-swag-opportunity). Contributions are always welcomed!! 😄
 
 Note that a PR needs to reach a certain level of engagement before it gets merged. This criteria is kept to maintain the quality of this list. The current list of open PRs can be found here: https://github.com/swapagarwal/swag-for-dev/pulls
 
