@@ -18,11 +18,11 @@ Feel free to send a PR! 😄
 Sign up at [https://upscri.be/67d2fa](https://upscri.be/67d2fa) to get notified of new swag opportunities!! 💯
 **[[View the Archive](https://us17.campaign-archive.com/home?u=87012cca117582a64dec3ca39&id=212af2e954)]**
 
+Welcome to the community, join us on Telegram at [https://t.me/devswag](https://t.me/devswag)!
+
 ## Contents
 
-All swag opportunities can be found at [https://devswag.io/](https://devswag.io/) 😎
-
-All the new event oppertunites and swags list can also be found at telegram channel https://t.me/devswag :smiley:
+All swag opportunities can be found at [https://devswag.io/](https://devswag.io/) 😎 
 
 ## Contributing
 
