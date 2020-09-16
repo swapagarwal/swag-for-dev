@@ -468,6 +468,15 @@
     "tags": ["clothing"]
   },
   {
+    "name": "RedwoodJS",
+    "difficulty": "easy",
+    "description": "Simply fill in your postal address and get free stickers! (Shipped worldwide)",
+    "reference": "https://redwoodjs.com/stickers",
+    "image": "https://i.imgur.com/zlnnR1F.png",
+    "dateAdded": "2020-09-03T15:43:00.000Z",
+    "tags": ["stickers"]
+  },
+  {
     "name": "Saleor",
     "difficulty": "medium",
     "description": "Solve any of the issues with the Hacktoberfest label and win a pair of Saleor Socks.",
