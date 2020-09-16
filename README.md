@@ -22,7 +22,7 @@ Welcome to the community, join us on Telegram at [https://t.me/devswag](https://
 
 ## Contents
 
-All swag opportunities can be found at [https://devswag.io/](https://devswag.io/) 😎 
+All swag opportunities can be found at [https://devswag.io/](https://devswag.io/) 😎
 
 ## Contributing
 
