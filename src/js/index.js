@@ -7,14 +7,19 @@ const ACTIVE_CLASS = 'visible';
 const sort = {
 	ALPHABETICAL_ASCENDING: (a, b) => a.dataset.name > b.dataset.name ? 1 : -1,
 	ALPHABETICAL_DESCENDING: (a, b) => a.dataset.name < b.dataset.name ? 1 : -1,
-	DIFFICULTY_ASCENDING: (a, b) => a.dataset.difficulty > b.dataset.difficulty ? 1 : -1,
-	DIFFICULTY_DESCENDING: (a, b) => a.dataset.difficulty < b.dataset.difficulty ? 1 : -1
+	/* eslint-disable unicorn/no-nested-ternary */
+	DIFFICULTY_ASCENDING: (a, b) => a.dataset.difficulty === b.dataset.difficulty ? (a.dataset.name > b.dataset.name ? 1 : -1) : a.dataset.difficulty > b.dataset.difficulty ? 1 : -1,
+	DIFFICULTY_DESCENDING: (a, b) => a.dataset.difficulty === b.dataset.difficulty ? (a.dataset.name > b.dataset.name ? 1 : -1) : a.dataset.difficulty < b.dataset.difficulty ? 1 : -1,
+	DATEADDED_ASCENDING: (a, b) => a.dataset.dateadded > b.dataset.dateadded ? 1 : -1,
+	DATEADDED_DESCENDING: (a, b) => a.dataset.dateadded < b.dataset.dateadded ? 1 : -1
+	/* eslint-enable unicorn/no-nested-ternary */
 };
 
-const contentEl = document.getElementById('content');
-const filterInput = document.getElementById('filter');
-const sortingInput = document.getElementById('sorting');
-const tagsSelect = document.getElementById('tags');
+const contentElement = document.querySelector('#content');
+const filterInput = document.querySelector('#filter');
+const sortingInput = document.querySelector('#sorting');
+const tagsSelect = document.querySelector('#tags');
+const showExpired = document.querySelector('#expired');
 
 const activateElements = els => Array.from(els).forEach(node => node.classList.add(ACTIVE_CLASS));
 const allowDifficultySelect = shouldAllow => sortingInput.querySelectorAll('.difficulty')
@@ -27,14 +32,14 @@ let selectr;
 
 function handleDifficulty(difficultyChanged) {
 	const {value} = filterInput;
-	Array.from(contentEl.getElementsByClassName(ACTIVE_CLASS))
+	Array.from(contentElement.querySelectorAll(`.${ACTIVE_CLASS}`))
 		.forEach(swag => swag.classList.remove(ACTIVE_CLASS));
 
 	if (value === 'alldifficulties') {
-		activateElements(contentEl.querySelectorAll('.item'));
+		activateElements(contentElement.querySelectorAll('.item'));
 		allowDifficultySelect(true);
 	} else {
-		activateElements(contentEl.getElementsByClassName(value));
+		activateElements(contentElement.querySelectorAll(`.${value}`));
 		allowDifficultySelect(false);
 	}
 
@@ -46,46 +51,69 @@ function handleDifficulty(difficultyChanged) {
 	return false;
 }
 
+function handleSort() {
+	Array.from(contentElement.children)
+		.map(child => contentElement.removeChild(child)) // eslint-disable-line unicorn/prefer-node-remove
+		.sort(sort[sortingInput.value])
+		.forEach(sortedChild => contentElement.append(sortedChild));
+}
+
 function handleTags() {
 	const tags = selectr.getValue();
 
-	if (tags.length === 0) {
-		history.pushState(null, '', window.location.pathname);
-		return;
-	}
-
-	Array.from(contentEl.querySelectorAll('.item')).forEach(el => {
-		const show = tags.reduce((sho, tag) => sho || el.classList.contains(`tag-${tag}`), false);
+	Array.from(contentElement.querySelectorAll('.item')).forEach(element => {
+		const show = (showExpired.checked || !element.classList.contains('tag-expired')) &&
+			tags.reduce((sho, tag) => sho || element.classList.contains(`tag-${tag}`), tags.length === 0);
 		if (!show) {
-			el.classList.remove('visible');
+			element.classList.remove('visible');
 		}
 	});
 
-	if (!search) {
-		return;
-	}
 	search.set('tags', tags.join(' '));
-	const newRelativePathQuery = `${window.location.pathname}?${search.toString()}`;
-	history.pushState(null, '', newRelativePathQuery);
+
+	search.set('expired', showExpired.checked || '');
 }
 
-function handleSort() {
-	Array.from(contentEl.children)
-		.map(child => contentEl.removeChild(child))
-		.sort(sort[sortingInput.value])
-		.forEach(sortedChild => contentEl.appendChild(sortedChild));
+function updateUrl() {
+	let nextPath = window.location.pathname;
+
+	const emptyParameters = [];
+	for (const [key, value] of search) {
+		if (!value.trim()) {
+			emptyParameters.push(key);
+		}
+	}
+
+	emptyParameters.forEach(parameter => search.delete(parameter));
+
+	const queryString = search.toString();
+	if (queryString) {
+		nextPath += `?${queryString}`;
+	}
+
+	history.pushState(null, '', nextPath);
 }
 
 // The cascade is the function which handles calling filtering and sorting swag
 function cascade(force = false) {
 	force |= handleDifficulty(this === filterInput);
-	force |= handleTags(Boolean(this.el));
 	if (force || this === sortingInput) {
-		handleSort(this === sortingInput);
+		handleSort();
 	}
+
+	handleTags();
+	updateUrl();
 }
 
-window.addEventListener('load', () => {
+// Lazy load style sheets
+function lazyLoadStyleSheet() {
+	document.querySelectorAll('link[data-href]').forEach(link => {
+		link.href = link.dataset.href;
+	});
+}
+
+window.addEventListener('DOMContentLoaded', () => {
+	lazyLoadStyleSheet();
 	selectr = new Selectr('#tags', {
 		multiple: true,
 		searchable: false,
@@ -96,14 +124,18 @@ window.addEventListener('load', () => {
 
 	if ('URLSearchParams' in window) {
 		search = new URLSearchParams(window.location.search);
+
 		if (search.has('tags')) {
 			selectr.setValue(search.get('tags').split(' '));
 		}
+
+		showExpired.checked = search.get('expired') === 'true';
 	}
 
 	selectr.on('selectr.change', cascade);
 	filterInput.addEventListener('input', cascade);
 	sortingInput.addEventListener('input', cascade);
+	showExpired.addEventListener('change', cascade);
 
 	cascade.call(window, true);
 });

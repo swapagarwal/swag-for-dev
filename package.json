@@ -8,41 +8,52 @@
   "bugs": {
     "url": "https://github.com/swapagarwal/swag-for-dev/issues"
   },
-  "homepage": "http://devswag.io",
+  "homepage": "https://devswag.io",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/swapagarwal/swag-for-dev.git"
   },
   "dependencies": {},
   "devDependencies": {
-    "@babel/core": "^7.1.2",
-    "@babel/preset-env": "^7.1.0",
-    "cross-env": "^5.2.0",
-    "del": "^3.0.0",
-    "eclint": "^2.8.1",
-    "gulp": "^4.0.0",
-    "gulp-babel": "^8.0.0",
-    "gulp-concat": "^2.6.1",
-    "gulp-download-stream": "^0.0.19",
-    "gulp-htmlmin": "^5.0.1",
-    "gulp-minify": "^3.1.0",
-    "gulp-pug": "^4.0.1",
-    "gulp-responsive": "^2.11.0",
-    "gulp-rev": "^8.1.1",
-    "gulp-rev-delete-original": "^0.2.3",
-    "gulp-stylus": "^2.7.0",
-    "gulp-uglify-es": "^1.0.4",
-    "gulp-webserver": "^0.9.1",
-    "husky": "^1.2.0",
-    "lint-staged": "^8.1.0",
-    "merge-stream": "^1.0.1",
-    "xo": "^0.23.0"
+    "@babel/core": "7.10.5",
+    "@babel/preset-env": "7.10.4",
+    "autoprefixer": "9.8.5",
+    "chai": "4.2.0",
+    "cross-env": "7.0.2",
+    "del": "5.1.0",
+    "eclint": "2.8.1",
+    "got": "11.5.1",
+    "gulp": "4.0.2",
+    "gulp-babel": "8.0.0",
+    "gulp-concat": "2.6.1",
+    "gulp-download-stream": "0.0.19",
+    "gulp-htmlmin": "5.0.1",
+    "gulp-minify": "3.1.0",
+    "gulp-postcss": "8.0.0",
+    "gulp-pug": "4.0.1",
+    "gulp-responsive": "3.0.1",
+    "gulp-rev": "9.0.0",
+    "gulp-rev-delete-original": "0.2.3",
+    "gulp-stylus": "2.7.0",
+    "gulp-uglify-es": "2.0.0",
+    "gulp-webserver": "0.9.1",
+    "husky": "4.2.5",
+    "lint-prepush": "2.1.0",
+    "merge-stream": "2.0.0",
+    "mocha": "8.0.1",
+    "mocha.parallel": "0.15.6",
+    "xo": "0.30.0"
   },
   "scripts": {
+    "start": "gulp",
     "lint": "eclint check && xo",
     "lint:fix": "eclint fix && xo --fix",
+    "test": "mocha --colors --retries 3 test/functional/data.spec.js",
     "build": "cross-env NODE_ENV=production gulp build"
   },
+  "browserslist": [
+    "last 2 versions"
+  ],
   "xo": {
     "rules": {
       "unicorn/prefer-spread": "off"
@@ -55,24 +66,36 @@
         "envs": [
           "browser"
         ]
+      },
+      {
+        "files": [
+          "test/**/*.js"
+        ],
+        "envs": [
+          "node",
+          "mocha"
+        ],
+        "rules": {
+          "func-names": "off",
+          "prefer-arrow-callback": "off",
+          "no-unused-expressions": "off",
+          "unicorn/catch-error-name": "off"
+        }
       }
     ]
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged"
+      "pre-push": "lint-prepush"
     }
   },
-  "lint-staged": {
-    "relative": true,
-    "linters": {
+  "lint-prepush": {
+    "tasks": {
       "**/*": [
-        "eclint fix",
-        "git add"
+        "eclint check"
       ],
       "**/*.{js,json}": [
-        "xo --fix",
-        "git add"
+        "xo"
       ]
     }
   }

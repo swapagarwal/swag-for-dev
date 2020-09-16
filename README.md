@@ -1,4 +1,13 @@
-# swag-for-dev [![Awesome](https://awesome.re/badge-flat.svg)](https://awesome.re) [![Greenkeeper badge](https://badges.greenkeeper.io/swapagarwal/swag-for-dev.svg)](https://greenkeeper.io/) [![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/xojs/xo) [![open issues](https://img.shields.io/github/issues/swapagarwal/swag-for-dev.svg)](https://github.com/swapagarwal/swag-for-dev/issues?q=is%3Aopen+is%3Aissue) [![closed pull requests](https://img.shields.io/github/issues-pr-closed/swapagarwal/swag-for-dev.svg)](https://github.com/swapagarwal/swag-for-dev/pulls?q=is%3Apr+is%3Aclosed) [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg)](https://github.com/swapagarwal/swag-for-dev/fork) [![Join the chat at https://gitter.im/swag-for-dev/Lobby](https://badges.gitter.im/swag-for-dev/Lobby.svg)](https://gitter.im/swag-for-dev/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+# swag-for-dev
+
+[![Build Status](https://github.com/swapagarwal/swag-for-dev/workflows/All%20the%20CI/badge.svg)](https://github.com/swapagarwal/swag-for-dev/actions)
+[![Renovate](https://badges.renovateapi.com/github/swapagarwal/swag-for-dev)](https://renovatebot.com/)
+[![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/xojs/xo)
+[![open issues](https://img.shields.io/github/issues/swapagarwal/swag-for-dev.svg)](https://github.com/swapagarwal/swag-for-dev/issues?q=is%3Aopen+is%3Aissue)
+[![closed pull requests](https://img.shields.io/github/issues-pr-closed/swapagarwal/swag-for-dev.svg)](htps://github.com/swapagarwal/swag-for-dev/pulls?q=is%3Apr+is%3Aclosed)
+[![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg)](https://github.com/swapagarwal/swag-for-dev/fork)
+[![Join the chat on Slack](https://img.shields.io/badge/chat-on%20slack-E01563.svg)](https://join.slack.com/t/swagfordev/shared_invite/zt-6ecwtoap-QR1sl1782xTCiGzBnSJt3g)
+[![Gitpod Ready-to-Code](https://img.shields.io/badge/Gitpod-Ready--to--Code-blue?logo=gitpod)](https://gitpod.io/from-referrer/)
 
 As a developer, nothing piques my interest more than developer swag! This is an attempt to list down the current swag opportunities for developers.
 
@@ -9,13 +18,15 @@ Feel free to send a PR! 😄
 Sign up at [https://upscri.be/67d2fa](https://upscri.be/67d2fa) to get notified of new swag opportunities!! 💯
 **[[View the Archive](https://us17.campaign-archive.com/home?u=87012cca117582a64dec3ca39&id=212af2e954)]**
 
+Welcome to the community, join us on Telegram at [https://t.me/devswag](https://t.me/devswag)!
+
 ## Contents
 
-All swag opportunities can be found at [http://devswag.io/](http://devswag.io/) 😎
+All swag opportunities can be found at [https://devswag.io/](https://devswag.io/) 😎
 
 ## Contributing
 
-Feel free to open an issue (or even better, send a Pull Request) for expanding this list. Contributions are very welcome!! 😄
+Feel free to open an issue (or even better, send a Pull Request) for expanding this list. Instructions for doing so are available [here](https://github.com/swapagarwal/swag-for-dev/blob/master/CONTRIBUTING.md#how-do-i-add-a-swag-opportunity). Contributions are very welcome!! 😄
 
 Note that a PR needs to reach a certain level of engagement before it gets merged. This criteria is kept to maintain the quality of this list. The current list of open PRs can be found here: https://github.com/swapagarwal/swag-for-dev/pulls
 
@@ -28,27 +39,22 @@ Please consider donating to cover up our hosting costs. 🙏
 
 ## Development
 
-1. Clone this repository by running
-    ```
-    git clone https://github.com/swapagarwal/swag-for-dev.git
-    ```
-1. Ensure you are running an up-to-date version of [Node.js](https://nodejs.org/en/download/package-manager/) on your machine, and that you have npm installed.
-1. Make sure you have [Gulp](https://gulpjs.org/getting-started.html) installed by running
-    ```
-    npm install gulp-cli -g
-    ```
-1. Open a terminal in the `swag-for-dev` directory. Type
-    ```
-    npm install
-    ```
-    into the terminal to install the dependencies. To start the webserver, type
-    ```
-    gulp
-    ```
-1. The website should open in a browser after it compiles, or you can view it by going to http://localhost:8000
+### Online one-click setup
+
+Contribute to swag-for-dev using a fully featured online development environment that will automatically: clone the repo, install the dependencies and start the webserver.
+
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/from-referrer/)
+
+### Local & Docker setup
+
+See complete walkthrough in the [Contributing guide](./CONTRIBUTING.md#lets-start-hacking).
 
 ## License
 
 [![CC0](http://mirrors.creativecommons.org/presskit/buttons/88x31/svg/cc-zero.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
 
 To the extent possible under law, [Swapnil Agarwal](http://swapnil.net) has waived all copyright and related or neighboring rights to this work.
+
+<a href="https://www.netlify.com">
+    <img src="https://www.netlify.com/img/global/badges/netlify-color-accent.svg" alt="Deploys by Netlify" />
+</a>

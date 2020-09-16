@@ -1,12 +1,7 @@
 [build]
-  base      = "/"
   publish   = "dist"
   command   = "npm run build"
   functions = ".netlify/functions"
-
-[build.environment]
-  NODE_VERSION = "10"
-  NPM_VERSION = "6.4.1"
 
 [[redirects]]
   from = "/hacktoberfest"
@@ -25,14 +20,14 @@
 [[headers]]
     for = "/assets/swag-img/*"
     [headers.values]
-    Cache-Control = 'public max-age=63072000' # 2 years cache for all assets since they're cachebusted
+    Cache-Control = "public max-age=63072000" # 2 years cache for all assets since they're cachebusted
 
 [[headers]]
     for = "/assets/js/*"
     [headers.values]
-    Cache-Control = 'public max-age=63072000' # 2 years cache for all assets since they're cachebusted
+    Cache-Control = "public max-age=63072000" # 2 years cache for all assets since they're cachebusted
 
 [[headers]]
     for = "/assets/css/*"
     [headers.values]
-    Cache-Control = 'public max-age=63072000' # 2 years cache for all assets since they're cachebusted
+    Cache-Control = "public max-age=63072000" # 2 years cache for all assets since they're cachebusted
