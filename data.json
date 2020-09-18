@@ -171,6 +171,15 @@
     "tags": ["clothing", "hacktoberfest", "expired", "stickers"]
   },
   {
+    "name": "DigitalOcean",
+    "difficulty": "medium",
+    "description": "Make four Pull Requests (PRs) between October 1–31 in any time zone, and earn a limited edition T-shirt!",
+    "reference": "https://hacktoberfest.digitalocean.com/",
+    "image": "https://embed-fastly.wistia.com/deliveries/49bd387c40e2c5aada92abdf973bc46d.webp?image_crop_resized=1920x1080",
+    "dateAdded": "2020-09-16T21:33:20.000Z",
+    "tags": ["clothing", "hacktoberfest"]
+  },
+  {
     "name": "Docusaurus",
     "difficulty": "hard",
     "description": "Get swag for migrating websites to Docusaurus 2!",
