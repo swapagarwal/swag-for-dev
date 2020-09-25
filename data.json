@@ -324,6 +324,15 @@
     "tags": ["clothing", "hacktoberfest", "expired"]
   },
   {
+    "name": "LoginRadius",
+    "difficulty": "easy",
+    "description": "Make one successful pull request in October 2020 to any open source LoginRadius repository and earn a T-shirt and Swags!",
+    "reference": "https://www.loginradius.com/engineering/blog/loginradius-supports-hacktoberfest-2020/",
+    "image": "https://apidocs.lrcontent.com/images/swag_57515f6b4cc7487f27.76085248.png",
+    "dateAdded": "2020-09-24T10:00:00.000Z",
+    "tags": ["clothing", "hacktoberfest"]
+  },
+  {
     "name": "Magento + Adobe",
     "difficulty": "hard",
     "description": "Submit 5 or more pull requests during October 2019 to any open repositories under Adobe or Magento organizations on GitHub, get a Squashtoberfest T-Shirt!",
