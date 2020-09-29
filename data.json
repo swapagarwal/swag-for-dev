@@ -162,24 +162,6 @@
     "tags": ["accessories", "stickers"]
   },
   {
-    "name": "Digital Ocean",
-    "difficulty": "hard",
-    "description": "Make five pull requests in October, earn a limited edition T-shirt!",
-    "reference": "https://hacktoberfest.digitalocean.com/",
-    "image": "https://user-images.githubusercontent.com/121322/45907730-f6a80b00-bdad-11e8-93ef-774392192716.png",
-    "dateAdded": "2018-02-18T07:48:58.000Z",
-    "tags": ["clothing", "hacktoberfest", "expired", "stickers"]
-  },
-  {
-    "name": "DigitalOcean",
-    "difficulty": "medium",
-    "description": "Make four Pull Requests (PRs) between October 1–31 in any time zone, and earn a limited edition T-shirt!",
-    "reference": "https://hacktoberfest.digitalocean.com/",
-    "image": "https://embed-fastly.wistia.com/deliveries/49bd387c40e2c5aada92abdf973bc46d.webp?image_crop_resized=1920x1080",
-    "dateAdded": "2020-09-16T21:33:20.000Z",
-    "tags": ["clothing", "hacktoberfest"]
-  },
-  {
     "name": "Docusaurus",
     "difficulty": "hard",
     "description": "Get swag for migrating websites to Docusaurus 2!",
@@ -234,13 +216,13 @@
     "tags": ["clothing", "device", "expired"]
   },
   {
-    "name": "Hacktoberfest 2019",
-    "difficulty": "hard",
-    "description": "To qualify for the official limited edition Hacktoberfest T-shirt, you must register and then make four pull requests (PRs) between October 1-31 (in any time zone).",
+    "name": "Hacktoberfest 2020",
+    "difficulty": "medium",
+    "description": "Make four Pull Requests (PRs) between October 1–31 in any time zone, and earn a limited edition T-shirt!",
     "reference": "https://hacktoberfest.digitalocean.com/",
-    "image": "https://i.imgur.com/eEXO4ep.jpg",
-    "dateAdded": "2019-09-25T17:27:00.000Z",
-    "tags": ["clothing", "hacktoberfest", "expired"]
+    "image": "https://embed-fastly.wistia.com/deliveries/49bd387c40e2c5aada92abdf973bc46d.webp?image_crop_resized=1920x1080",
+    "dateAdded": "2020-09-16T21:33:20.000Z",
+    "tags": ["clothing", "hacktoberfest", "stickers"]
   },
   {
     "name": "Hasura",
