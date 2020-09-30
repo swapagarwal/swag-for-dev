@@ -335,11 +335,11 @@
   {
     "name": "MayaData",
     "difficulty": "medium",
-    "description": "Get swag for contributing in general. At the end of the month-long event, the individual who makes the most significant contributions will receive a brand new laptop.",
-    "reference": "https://blog.mayadata.io/mayadata-celebrates-hacktoberfest-2019",
-    "image": "https://blog.mayadata.io/hs-fs/hubfs/Hacktoberfest-11-1.png",
+    "description": "Get a t-shirt for contributing a pull request to LitmusChaos/OpenEBS. There is also exclusive swag and prizes for the top weekly contributors.",
+    "reference": "https://blog.mayadata.io/celebrate-hacktoberfest-2020-open-source-with-mayadata",
+    "image": "https://blog.mayadata.io/hs-fs/hubfs/Hacktoberfest%20desktop%20version.png?width=3001&name=Hacktoberfest%20desktop%20version.png",
     "dateAdded": "2019-10-02T16:48:14.000Z",
-    "tags": ["clothing", "device", "hacktoberfest", "stickers", "expired"]
+    "tags": ["clothing", "device", "hacktoberfest", "stickers"]
   },
   {
     "name": "Microsoft",
