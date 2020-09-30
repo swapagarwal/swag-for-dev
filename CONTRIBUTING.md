@@ -31,7 +31,7 @@ Thanks again, we hope to see you soon! ❤
 
 Contribute to swag-for-dev using a fully featured online development environment that will automatically: clone the repo, install the dependencies and start the webserver.
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://https://gitpod.io/#https://github.com/swapagarwal/swag-for-dev)
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/swapagarwal/swag-for-dev)
 
 ### Start using NPM
 
