@@ -355,7 +355,7 @@
     "difficulty": "medium",
     "description": "Learn... and get rewarded <a href='https://csc.docs.microsoft.com/ignite/registration/'>The Microsoft Ignite Cloud Skills Challenge</a>, earn sweepstakes entries and complete first challenge - earn a Microsoft Certification exam!",
     "reference": "https://csc.docs.microsoft.com/ignite/registration",
-    "image": "",
+    "image": "https://csc.docs.microsoft.com/ignite/Images/image_pointing.svg",
     "dateAdded": "2020-10-01T10:08:08.000Z",
     "tags": ["certificate", "sweepstakes"]
   },
