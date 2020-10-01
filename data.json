@@ -288,6 +288,15 @@
     "tags": ["stickers", "clothing", "hacktoberfest", "expired"]
   },
   {
+    "name": "Jenkins",
+    "difficulty": "hard",
+    "description": "Jenkins may distribute some swag to top contributors during Hacktoberfest, depending on the budget and contributions.",
+    "reference": "https://www.jenkins.io/events/hacktoberfest/",
+    "image": "https://www.jenkins.io/images/hacktoberfest/2020_badge_small.png",
+    "dateAdded": "2020-10-01T04:15:20.000Z",
+    "tags": ["hacktoberfest"]
+  },
+  {
     "name": "Jetbrains",
     "difficulty": "easy",
     "description": "Fill in the form and you will get a coupon for a one-month access to 'All Products Pack' subscription of Jetbrains. It's free of charge and can be used by anyone.",
