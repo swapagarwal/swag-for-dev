@@ -540,6 +540,15 @@
     "tags": ["hacktoberfest", "stickers", "expired"]
   },
   {
+    "name": "Tripal",
+    "difficulty": "medium",
+    "description": "Make four valid pull requests (PRs) between October 1-31 (in any time zone) to one of two repositories: Tripal core or t4d8, the temporary home for Tripal 4 development.At the end of the month, to get your swag and let the community know about your awesome progress, fill out <a href='https://forms.gle/Pp737HjruK9roCph8'>this</a> form.",
+    "reference": "https://tripal.info/news/tripal-hacktoberfest-2020",
+    "image": "https://tripal.info/sites/default/files/images/tripal_logo.png",
+    "dateAdded": "2020-09-30T03:19:14.000Z",
+    "tags": ["hacktoberfest", "clothing"]
+  },
+  {
     "name": "Twilio",
     "difficulty": "medium",
     "description": "Complete the first set of objectives in <a href='https://twilio.com/quest'>Twilio Quest</a> and get a Twilio Quest t-shirt right to your door.",
