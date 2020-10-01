@@ -243,6 +243,15 @@
     "tags": ["stickers"]
   },
   {
+    "name": "InfraCloud",
+    "difficulty": "medium",
+    "description": "If you can get one PR merged, you will get a cool t-shirt along with some amazing stickers. Only the first 50 people will receive the swags. Jumbo Prize– A person with maximum merged PRs will also get a Kindle from our side.",
+    "reference": "https://www.infracloud.io/blogs/infracloud-joins-hacktoberfest-2020/",
+    "image": "https://www.infracloud.io/wp-content/uploads/2020/09/Hacktober-Fest-header-image.png",
+    "dateAdded": "2020-09-25T19:20:42.000Z",
+    "tags": ["stickers", "clothing", "kindle"]
+  },
+  {
     "name": "IPFS",
     "difficulty": "easy",
     "description": "Contact the IPFS team via e-mail, and ask them kindly for some swag!",
