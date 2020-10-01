@@ -621,6 +621,15 @@
     "tags": ["hacktoberfest", "stickers", "accessories", "expired"]
   },
   {
+    "name": "Vonage",
+    "difficulty": "medium",
+    "description": "Make a pull request to a <a href=\"https://github.com/Vonage\">Vonage repo</a> referencing an issue labeled \"Hacktoberfest\", fill out a form, and get $5 gift card or socks",
+    "reference": "https://developer.nexmo.com/hacktoberfest",
+    "image": "https://res.cloudinary.com/dsg3ucw55/image/upload/v1599671200/Logo_nstaby.svg",
+    "dateAdded": "2020-10-01T10:15:00.000Z",
+    "tags": ["hacktoberfest", "clothing", "donation"]
+  },
+  {
     "name": "WhatIsMyBrowser",
     "difficulty": "easy",
     "description": "Send an API request, get some sweet vinyl laptop stickers!",
