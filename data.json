@@ -351,6 +351,15 @@
     "tags": ["clothing", "hacktoberfest", "expired"]
   },
   {
+    "name": "Microsoft",
+    "difficulty": "medium",
+    "description": "Learn... and get rewarded <a href='https://csc.docs.microsoft.com/ignite/registration/'>The Microsoft Ignite Cloud Skills Challenge</a>, earn sweepstakes entries and complete first challenge - earn a Microsoft Certification exam!",
+    "reference": "https://csc.docs.microsoft.com/ignite/registration",
+    "image": "",
+    "dateAdded": "2020-10-01T10:08:08.000Z",
+    "tags": ["certificate", "sweepstakes"]
+  },
+  {
     "name": "NativeScript",
     "difficulty": "easy",
     "description": "Make your first contribution to the NativeScript community and win an awesome set of stickers. Among the stickers you will find a limited edition 'Contributor' sticker. ",
