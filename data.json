@@ -263,11 +263,11 @@
   {
     "name": "Jetbrains",
     "difficulty": "easy",
-    "description": "Fill in the form and get stickers of Jetbrains products for your whole usergroup, event or company. It's free of charge and sent anywere in the world.",
-    "reference": "https://surveys.jetbrains.com/s3/Get-your-complimentary-JetBrains-stickers",
-    "image": "https://i.imgur.com/3ziSn2P.png",
-    "dateAdded": "2019-06-12T13:05:31.000Z",
-    "tags": ["stickers", "expired"]
+    "description": "Fill in the form and you will get a coupon for a one-month access to 'All Products Pack' subscription of Jetbrains. It's free of charge and can be used by anyone.",
+    "reference": "https://www.jetbrains.com/lp/hacktoberfest-2020/#get-the-tools",
+    "image": "https://i.imgur.com/Lee21sb.png",
+    "dateAdded": "2020-09-18T21:33:20.000Z",
+    "tags": ["Software License", "hacktoberfest"]
   },
   {
     "name": "JS Bin",
