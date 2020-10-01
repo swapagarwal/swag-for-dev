@@ -342,6 +342,16 @@
     "tags": ["clothing", "hacktoberfest", "expired"]
   },
   {
+    "name": "Mattermost",
+    "difficulty": "Easy",
+    "description": "If you are a first time contributor, get a PR merged to any of their public repository and get a limited edition Mattermost mug!",
+    "reference": "https://mattermost.com/blog/hacktoberfest-2020/",
+    "image": "https://i.imgur.com/cGV35Cc.png",
+    "dateAdded": "2020-09-29T14:17:39.000Z",
+    "tags": ["mug", "hacktoberfest"]
+  },
+  
+  {
     "name": "MayaData",
     "difficulty": "medium",
     "description": "Get a t-shirt for contributing a pull request to LitmusChaos/OpenEBS. There is also exclusive swag and prizes for the top weekly contributors.",
