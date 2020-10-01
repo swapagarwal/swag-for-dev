@@ -434,7 +434,7 @@
   {
     "name": "Operation Code",
     "difficulty": "medium",
-    "description": "Resolve 3 issues, get a white or black Operation Code t-shirt. Merge 2 PRs and get a pack of Operation Code stickers.",
+    "description": "Resolve 3 issues to get a an Operation Code t-shirt. Get 2 PRs merged to get a pack of Operation Code stickers.",
     "reference": "https://github.com/OperationCode/START_HERE",
     "image": "https://operation-code-assets.s3.us-east-2.amazonaws.com/branding/logos/small-blue-logo.png",
     "dateAdded": "2020-10-01T16:31:00.000Z",
