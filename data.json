@@ -596,11 +596,11 @@
   {
     "name": "Vonage",
     "difficulty": "medium",
-    "description": "First, sign up on the Hacktoberfest site. To qualify for the official limited edition Hacktoberfest shirt, you must register and make four pull requests between October 1-31. Pull requests can be to any public repo on GitHub, not just the ones with issues labeled Hacktoberfest. If a maintainer reports your pull request as spam or spammy behavior, or not in line with the project’s code of conduct, you will be ineligible to participate.",
+    "description": "Make a pull request to issues tagged with \"Hacktoberfest\" label and in one of Vonage repos. Check project repos here: https://github.com/Vonage/. After you create PR submit form and get $5 gift card or socks",
     "reference": "https://developer.nexmo.com/hacktoberfest",
     "image": "https://res.cloudinary.com/dsg3ucw55/image/upload/v1599671200/Logo_nstaby.svg",
     "dateAdded": "2020-10-01T10:15:00.000Z",
-    "tags": ["hacktoberfest", "stickers", "clothing"]
+    "tags": ["hacktoberfest", "clothing", "credit/coupon/gift-card"]
   },
   {
     "name": "WhatIsMyBrowser",
