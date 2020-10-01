@@ -1,12 +1,7 @@
 const got = require('got');
-<<<<<<< HEAD
 const {expect} = require('chai');
 const parallel = require('mocha.parallel');
 const chai = require("chai");
-=======
-const chai = require('chai');
-const {expect} = chai;
->>>>>>> fixed linting + moved dependency to devdependency
 
 chai.use(require('chai-sorted'));
 
