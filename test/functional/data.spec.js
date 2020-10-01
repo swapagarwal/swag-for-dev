@@ -1,9 +1,6 @@
 const got = require('got');
 const {expect} = require('chai');
 const parallel = require('mocha.parallel');
-const chai = require("chai");
-
-chai.use(require('chai-sorted'));
 
 const data = require('../../data.json');
 const LIMIT_PARALLEL_TESTS = 10;
@@ -38,7 +35,9 @@ describe('swag-for-dev', function () {
 	});
 
 	it('valid alphabetical order', function () {
-		expect(data.map(item => item.name.toUpperCase())).to.be.sorted();
+		const left = data.map(({name}) => name.toLowerCase());
+		const right = [...left].sort();
+		expect(left).to.deep.equal(right);
 	});
 
 	const dataSlices = [];
