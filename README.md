@@ -1,11 +1,11 @@
-# swag-for-dev
+# swag-for-dev--AN AWESOME WEBSITE
 
 [![Build Status](https://github.com/swapagarwal/swag-for-dev/workflows/All%20the%20CI/badge.svg)](https://github.com/swapagarwal/swag-for-dev/actions)
 [![Renovate](https://badges.renovateapi.com/github/swapagarwal/swag-for-dev)](https://renovatebot.com/)
 [![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/xojs/xo)
-[![open issues](https://img.shields.io/github/issues/swapagarwal/swag-for-dev.svg)](https://github.com/swapagarwal/swag-for-dev/issues?q=is%3Aopen+is%3Aissue)
-[![closed pull requests](https://img.shields.io/github/issues-pr-closed/swapagarwal/swag-for-dev.svg)](htps://github.com/swapagarwal/swag-for-dev/pulls?q=is%3Apr+is%3Aclosed)
-[![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg)](https://github.com/swapagarwal/swag-for-dev/fork)
+[![Open Issues](https://img.shields.io/github/issues/swapagarwal/swag-for-dev.svg)](https://github.com/swapagarwal/swag-for-dev/issues?q=is%3Aopen+is%3Aissue)
+[![Closed pull requests](https://img.shields.io/github/issues-pr-closed/swapagarwal/swag-for-dev.svg)](htps://github.com/swapagarwal/swag-for-dev/pulls?q=is%3Apr+is%3Aclosed)
+[![Contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg)](https://github.com/swapagarwal/swag-for-dev/fork)
 [![Join the chat on Slack](https://img.shields.io/badge/chat-on%20slack-E01563.svg)](https://join.slack.com/t/swagfordev/shared_invite/zt-6ecwtoap-QR1sl1782xTCiGzBnSJt3g)
 [![Gitpod Ready-to-Code](https://img.shields.io/badge/Gitpod-Ready--to--Code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/swapagarwal/swag-for-dev)
 
@@ -58,3 +58,4 @@ To the extent possible under law, [Swapnil Agarwal](http://swapnil.net) has waiv
 <a href="https://www.netlify.com">
     <img src="https://www.netlify.com/img/global/badges/netlify-color-accent.svg" alt="Deploys by Netlify" />
 </a>
+#END
