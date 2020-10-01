@@ -251,7 +251,8 @@
     "image": "https://i.imgur.com/Wlfg3Xq.png",
     "dateAdded": "2020-09-25T19:20:42.000Z",
     "tags": ["stickers", "clothing", "device"]
-
+  },
+  {
     "name": "Indeed",
     "difficulty": "medium",
     "description": "Complete two or more pull requests in October 2020 to any open source Indeed repository and be eligible to earn an Open Source sweatshirt! (Shipping only to US)",
