@@ -155,11 +155,11 @@
   {
     "name": "Devfolio",
     "difficulty": "hard",
-    "description": "Four merged pull requests during the month of October will earn stickers and a chance at a limited edition t-shirt. Exceptional PRs will also earn an exclusive limited edition t-shirt.",
-    "reference": "https://devfolio.co/blog/hacktoberfest-2019-devfolio/",
-    "image": "https://devfolio.sgp1.digitaloceanspaces.com/ghost/2019/10/ghost_download1.jpeg",
-    "dateAdded": "2019-10-05T23:17:55.000Z",
-    "tags": ["stickers", "clothing", "hacktoberfest", "expired"]
+    "description": "Four merged pull requests in their asked repositories during the month of October will earn swags.",
+    "reference": "https://devfolio.co/blog/devfolio-hacktoberfest-2020/",
+    "image": "https://pbs.twimg.com/media/EJfpSDTUUAIXtdP?format=jpg&name=900x900",
+    "dateAdded": "2020-10-01T16:35:21.000Z",
+    "tags": ["stickers", "clothing", "hacktoberfest"]
   },
   {
     "name": "devRant",
