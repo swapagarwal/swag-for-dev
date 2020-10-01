@@ -596,7 +596,7 @@
   {
     "name": "Vonage",
     "difficulty": "medium",
-    "description": "Make a pull request to issues tagged with \"Hacktoberfest\" label and in one of Vonage repos. Check project repos here: https://github.com/Vonage/. After you create PR submit form and get $5 gift card or socks",
+    "description": "Make a pull request to a <a href=\"https://github.com/Vonage\">Vonage repo</a> referencing an issue labeled \"Hacktoberfest\", fill out a form, and get $5 gift card or socks",
     "reference": "https://developer.nexmo.com/hacktoberfest",
     "image": "https://res.cloudinary.com/dsg3ucw55/image/upload/v1599671200/Logo_nstaby.svg",
     "dateAdded": "2020-10-01T10:15:00.000Z",
