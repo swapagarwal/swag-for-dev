@@ -89,6 +89,15 @@
     "dateAdded": "2020-07-21T14:42:00.000Z",
     "tags": ["stickers"]
   },
+   {
+    "name": "Camunda",
+    "difficulty": "medium",
+    "description": "Submit 2 pull requests to any of their repositories to get a t-shirt",
+    "reference": "https://camunda.com/hacktoberfest2020/",
+    "image": "https://camunda.com/wp-content/uploads/2020/09/elementsnew-hf2.png",
+    "dateAdded": "2020-09-30T16:56:00.000Z",
+    "tags": ["clothing", "hacktoberfest", "stickers"]
+  },
   {
     "name": "CircleCI",
     "difficulty": "medium",
