@@ -129,10 +129,10 @@
     "name": "Datenanfragen.de e. V.",
     "difficulty": "medium",
     "description": "One merged PR gets at least 3 stickers (limited to 100 sets) and a chance at a limited edition t-shirt.",
-    "reference": "https://www.datarequests.org/blog/hacktoberfest-2019/",
-    "image": "https://www.datarequests.org/blog/hacktoberfest-2019/hacktoberfest-2019.png",
-    "dateAdded": "2019-10-23T00:39:55.000Z",
-    "tags": ["stickers", "clothing", "hacktoberfest", "expired"]
+    "reference": "https://www.datarequests.org/blog/hacktoberfest-2020/",
+    "image": "https://www.datarequests.org/blog/hacktoberfest-2020/hacktoberfest-2020_hu28b1cba020bf43bc24568088e4124bec_241852_881x0_resize_q75_box.jpg",
+    "dateAdded": "2020-10-01T19:00:00.000Z",
+    "tags": ["stickers", "clothing", "hacktoberfest"]
   },
   {
     "name": "Deque",
@@ -168,7 +168,7 @@
     "reference": "https://github.com/facebook/docusaurus/issues/1834",
     "image": "https://i.imgur.com/IbZCAWP.jpg",
     "dateAdded": "2019-10-27T12:37:23.000Z",
-    "tags": ["hacktoberfest", "stickers"]
+    "tags": ["stickers"]
   },
   {
     "name": "erxes",
@@ -243,6 +243,7 @@
     "tags": ["stickers"]
   },
   {
+
     "name": "InfraCloud",
     "difficulty": "medium",
     "description": "The first 50 people to get one PR merged into an InfraCloud repo will get a cool t-shirt, along with some amazing stickers. Jumbo Prize – The person with the most merged PRs will also get a Kindle.",
@@ -250,6 +251,15 @@
     "image": "https://i.imgur.com/Wlfg3Xq.png",
     "dateAdded": "2020-09-25T19:20:42.000Z",
     "tags": ["stickers", "clothing", "device"]
+
+    "name": "Indeed",
+    "difficulty": "medium",
+    "description": "Complete two or more pull requests in October 2020 to any open source Indeed repository and be eligible to earn an Open Source sweatshirt! (Shipping only to US)",
+    "reference": "https://engineering.indeedblog.com/indeed-hacktoberfest-2020/",
+    "image": "https://rac4ou2q3g246tjk3rxqbt1c-wpengine.netdna-ssl.com/wp-content/uploads/2020/09/indeed_open_source_sweatshirt-1.png",
+    "dateAdded": "2020-09-30T03:19:14.000Z",
+    "tags": ["clothing", "hacktoberfest"]
+
   },
   {
     "name": "IPFS",
@@ -272,11 +282,11 @@
   {
     "name": "Jetbrains",
     "difficulty": "easy",
-    "description": "Fill in the form and get stickers of Jetbrains products for your whole usergroup, event or company. It's free of charge and sent anywere in the world.",
-    "reference": "https://surveys.jetbrains.com/s3/Get-your-complimentary-JetBrains-stickers",
-    "image": "https://i.imgur.com/3ziSn2P.png",
-    "dateAdded": "2019-06-12T13:05:31.000Z",
-    "tags": ["stickers", "expired"]
+    "description": "Fill in the form and you will get a coupon for a one-month access to 'All Products Pack' subscription of Jetbrains. It's free of charge and can be used by anyone.",
+    "reference": "https://www.jetbrains.com/lp/hacktoberfest-2020/#get-the-tools",
+    "image": "https://i.imgur.com/Lee21sb.png",
+    "dateAdded": "2020-09-18T21:33:20.000Z",
+    "tags": ["software", "hacktoberfest"]
   },
   {
     "name": "JS Bin",
