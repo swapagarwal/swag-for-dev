@@ -245,7 +245,7 @@
   {
     "name": "InfraCloud",
     "difficulty": "medium",
-    "description": "If you can get one PR merged, you will get a cool t-shirt along with some amazing stickers. Only the first 50 people will receive the swags. Jumbo Prize– A person with maximum merged PRs will also get a Kindle from our side.",
+    "description": "Only the first 50 people will receive the swags. If you can get one PR merged to their repos, you will get a cool t-shirt along with some amazing stickers. Jumbo Prize– A person with maximum merged PRs will also get a Kindle.",
     "reference": "https://www.infracloud.io/blogs/infracloud-joins-hacktoberfest-2020/",
     "image": "https://i.imgur.com/Wlfg3Xq.png",
     "dateAdded": "2020-09-25T19:20:42.000Z",
