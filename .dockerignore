@@ -3,7 +3,7 @@
 !.nvmrc
 !data.json
 !nginx.conf
-!get-data.js
+!scripts/
 !gulpfile.js
 !package.json
 !package-lock.json

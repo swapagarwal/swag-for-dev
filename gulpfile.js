@@ -15,8 +15,8 @@ const postcss = require('gulp-postcss');
 const autoprefixer = require('autoprefixer');
 const {readFile} = require('fs').promises;
 
-const {swagList, swagImages} = require('./get-data');
-const downloadImages = require('./download-images');
+const {swagList, swagImages} = require('./scripts/get-data');
+const downloadImages = require('./scripts/download-images');
 
 const PRODUCTION = process.env.NODE_ENV === 'production';
 
