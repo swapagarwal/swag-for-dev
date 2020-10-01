@@ -263,11 +263,11 @@
   {
     "name": "Jetbrains",
     "difficulty": "easy",
-    "description": "Fill in the form and get stickers of Jetbrains products for your whole usergroup, event or company. It's free of charge and sent anywere in the world.",
-    "reference": "https://surveys.jetbrains.com/s3/Get-your-complimentary-JetBrains-stickers",
-    "image": "https://i.imgur.com/3ziSn2P.png",
-    "dateAdded": "2019-06-12T13:05:31.000Z",
-    "tags": ["stickers", "expired"]
+    "description": "Fill in the form and you will get a coupon for a one-month access to 'All Products Pack' subscription of Jetbrains. It's free of charge and can be used by anyone.",
+    "reference": "https://www.jetbrains.com/lp/hacktoberfest-2020/#get-the-tools",
+    "image": "https://i.imgur.com/Lee21sb.png",
+    "dateAdded": "2020-09-18T21:33:20.000Z",
+    "tags": ["Software License", "hacktoberfest"]
   },
   {
     "name": "JS Bin",
@@ -335,11 +335,11 @@
   {
     "name": "MayaData",
     "difficulty": "medium",
-    "description": "Get a t-shirt for contributing a pull request to LitmusChaos/OpenEBS. There is also exclusive swag and prizes for the top weekly contributors.",
-    "reference": "https://blog.mayadata.io/celebrate-hacktoberfest-2020-open-source-with-mayadata",
-    "image": "https://blog.mayadata.io/hs-fs/hubfs/Hacktoberfest%20desktop%20version.png?width=3001&name=Hacktoberfest%20desktop%20version.png",
-    "dateAdded": "2020-09-30T03:19:14.000Z",
-    "tags": ["clothing", "hacktoberfest", "stickers"]
+    "description": "Get swag for contributing in general. At the end of the month-long event, the individual who makes the most significant contributions will receive a brand new laptop.",
+    "reference": "https://blog.mayadata.io/mayadata-celebrates-hacktoberfest-2019",
+    "image": "https://blog.mayadata.io/hs-fs/hubfs/Hacktoberfest-11-1.png",
+    "dateAdded": "2019-10-02T16:48:14.000Z",
+    "tags": ["clothing", "device", "hacktoberfest", "stickers", "expired"]
   },
   {
     "name": "Microsoft",
