@@ -630,6 +630,15 @@
     "tags": ["hacktoberfest", "clothing", "donation"]
   },
   {
+    "name": "Webiny",
+    "difficulty": "medium",
+    "description": "Join the <a href=\"https://webiny.com/slack\">Slack community</a>, get 2 Webiny PRs merged, and request your Swag Pack and a t-shirt.",
+    "reference": "https://dev.to/webiny/webiny-hacktoberfest-2020-49h4",
+    "image": "https://res.cloudinary.com/practicaldev/image/fetch/s--FuHl5nFV--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/i/c9jfsatz14vkied629co.png",
+    "dateAdded": "2020-09-30T16:35:00.000Z",
+    "tags": ["hacktoberfest", "clothing", "stickers"]
+  },
+  {
     "name": "WhatIsMyBrowser",
     "difficulty": "easy",
     "description": "Send an API request, get some sweet vinyl laptop stickers!",
