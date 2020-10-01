@@ -180,6 +180,15 @@
     "tags": ["stickers"]
   },
   {
+    "name": "DXHeroes",
+    "difficulty": "hard",
+    "description": "Leaderboard of contributors will be posted on their Twitter and top 3 contributors will receive a permanent badge of honor, the contributor with most merged pull requests receives DX heroes merchandise",
+    "reference": "https://github.com/DXHeroes/dx-scanner#hacktoberfest-2020-",
+    "image": "https://i.imgur.com/tSTC5EL.png",
+    "dateAdded": "2020-10-01T16:38:56.000Z",
+    "tags": ["hacktoberfest", "merchandise", "badges"]
+  },
+  {
     "name": "erxes",
     "difficulty": "medium",
     "description": "Submit 3 issues and 1 PR to their <a href='https://github.com/erxes/erxes'>repo</a>, get a t-shirt and stickers.",
