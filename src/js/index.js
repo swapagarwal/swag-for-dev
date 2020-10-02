@@ -53,7 +53,7 @@ function handleDifficulty(difficultyChanged) {
 
 function handleSort() {
 	Array.from(contentElement.children)
-		.map(child => contentElement.removeChild(child)) // eslint-disable-line unicorn/prefer-node-remove
+		.map(child => contentElement.removeChild(child)) // eslint-disable-line unicorn/prefer-node-remove Remove the child
 		.sort(sort[sortingInput.value])
 		.forEach(sortedChild => contentElement.append(sortedChild));
 }
@@ -112,6 +112,7 @@ function lazyLoadStyleSheet() {
 	});
 }
 
+//Load Content on Event trigger
 window.addEventListener('DOMContentLoaded', () => {
 	lazyLoadStyleSheet();
 	selectr = new Selectr('#tags', {
