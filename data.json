@@ -56,9 +56,9 @@
   {
     "name": "AquaSec",
     "difficulty": "medium",
-    "description": "In honor of Hacktoberfest, we want to recognize our community and reward your contributions to our open source projects during October.",
+    "description": "Based on your contribution, we will be giving out some cool prizes: branded sticker packs, face masks, or limited edition Aqua Hacktoberfest T-shirts!",
     "reference": "https://blog.aquasec.com/hacktoberfest-2020-aqua-open-source",
-    "image": "https://blog.aquasec.com/hs-fs/hubfs/Hacktoberfest%202.0%20Blog%20Image%20v4.jpg?width=945&name=Hacktoberfest%202.0%20Blog%20Image%20v4.jpg",
+    "image": "https://blog.aquasec.com/hs-fs/hubfs/Hacktoberfest%202.0%20Blog%20Image%20v4.jpg",
     "dateAdded": "2020-10-01T19:47:00.000Z",
     "tags": ["hacktoberfest", "stickers", "clothing"]
   },
