@@ -576,6 +576,15 @@
     "tags": ["hacktoberfest", "stickers", "expired"]
   },
   {
+    "name": "Switchblade",
+    "difficulty": "medium",
+    "description": "Open three valid pull requests on a <a href='https://github.com/SwitchbladeBot/switchblade'>Switchblade repository</a> to receive three fancy Switchblade stickers and a \"thank you\" letter.",
+    "reference": "https://github.com/SwitchbladeBot/switchblade/issues/1203",
+    "image": "https://user-images.githubusercontent.com/25179120/94884272-65aba600-0443-11eb-8374-d2c570ef385d.png",
+    "dateAdded": "2020-10-02T12:46:00.000Z",
+    "tags": ["stickers", "hacktoberfest"]
+  },
+  {
     "name": "Twilio",
     "difficulty": "medium",
     "description": "Complete the first set of objectives in <a href='https://twilio.com/quest'>Twilio Quest</a> and get a Twilio Quest t-shirt right to your door.",
