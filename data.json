@@ -567,6 +567,15 @@
     "tags": ["clothing", "hacktoberfest", "expired", "stickers"]
   },
   {
+    "name": "SpecFlow",
+    "difficulty": "easy",
+    "description": "A collection of SpecFlow stickers for getting a PR merged into the SpecFlow repo",
+    "reference": "https://specflow.org/contributer-package",
+    "image": "https://specflow.org/wp-content/uploads/2019/03/Conference_package_specflow_stickers.png",
+    "dateAdded": "2020-10-2T14:15:45.000Z",
+    "tags": ["hacktoberfest", "stickers"]
+  },
+  {
     "name": "Strawberry",
     "difficulty": "easy",
     "description": "Strawberry stickers for any accepted PR in October",
