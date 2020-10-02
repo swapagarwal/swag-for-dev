@@ -236,11 +236,11 @@
   {
     "name": "Hasura",
     "difficulty": "medium",
-    "description": "Submit a PR to Hasura's <a href='https://github.com/hasura/graphql-engine'>GraphQL Engine</a> or <a href='https://github.com/hasura/learn-graphql'>GraphQL Tutorial Series</a> during Hacktoberfest 2019 and get a Hasura sticker pack. If your PR gets merged, you also get a Hasura t-shirt!",
-    "reference": "https://blog.hasura.io/hasura-joins-hacktoberfest-2019/",
-    "image": "https://cdn-images-1.medium.com/max/1600/1*kQxL8yhs0c1x1WVXnjhrIw.png",
+    "description": "Submit a PR to Hasura's <a href='https://github.com/hasura/graphql-engine'>GraphQL Engine</a> or <a href='https://github.com/hasura/learn-graphql'>GraphQL Tutorial Series</a> during Hacktoberfest 2020 and get a Hasura sticker pack. For all valid PRs closing an issue with the label hacktoberfest, a secret swag will be sent.",
+    "reference": "https://hasura.io/blog/hasura-joins-hacktoberfest-3rd-year-in-a-row/",
+    "image": "https://hasura.io/blog/content/images/2020/09/Hacktoberfest-2020--5--1.png",
     "dateAdded": "2019-10-02T21:06:00.000Z",
-    "tags": ["clothing", "hacktoberfest", "stickers", "expired"]
+    "tags": ["clothing", "hacktoberfest", "stickers"]
   },
   {
     "name": "ImgBot",
