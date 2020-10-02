@@ -72,15 +72,6 @@
     "tags": ["clothing", "hacktoberfest", "expired", "stickers"]
   },
   {
-    "name": "ArchivesSpace",
-    "difficulty": "medium",
-    "description": "Any qualifying pull request submitted to the ArchivesSpace GitHub between October 1 and October 31 will get a Hacktoberfest label. The community member who submits the most pull requests in the month of October will receive an ArchivesSpace swag bag!",
-    "reference": "https://archivesspace.org/archives/6563",
-    "image": "https://archivesspace.org/wp-content/uploads/2020/09/ASpace-Hacktoberfest-3-1536x768.jpg",
-    "dateAdded": "2020-10-01T19:49:00.000Z",
-    "tags": ["hacktoberfest"]
-  },
-  {
     "name": "Auth0",
     "difficulty": "hard",
     "description": "Have one accepted pull request in a qualifying Auth0 Github project in October 2018 and receive a kickass 2018 Hacktoberfest t-shirt courtesy of the awesome Auth0 team, along with a psychedelic Auth0 sticker pack!",
