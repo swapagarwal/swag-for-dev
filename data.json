@@ -81,6 +81,15 @@
     "tags": ["clothing", "expired"]
   },
   {
+    "name": "Blockstack",
+    "difficulty": "easy",
+    "description": "Get up to 5 awesome stickers from Blockstack! Don't be evil!",
+    "reference": "https://web.archive.org/web/20200616131621/https://blockstack.myshopify.com/collections/frontpage/products/dont-be-evil-stickers",
+    "image": "https://i.imgur.com/sHgpibu.jpg",
+    "dateAdded": "2020-07-21T14:42:00.000Z",
+    "tags": ["stickers, expired"]
+  },
+  {
     "name": "Camunda",
     "difficulty": "medium",
     "description": "Participants who complete the Camunda challenge will earn a Camunda x Hacktoberfest 2020 t-shirt and some nifty stickers.",
