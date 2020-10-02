@@ -65,7 +65,11 @@
   {
     "name": "AquaSec",
     "difficulty": "medium",
+<<<<<<< HEAD
     "description": "Contribute to AquaSec's open source portfolio and win branded sticker packs, face masks, or limited edition Aqua Hacktoberfest T-shirts!",
+=======
+    "description": "Based on your contribution, we will be giving out some cool prizes: branded sticker packs, face masks, or limited edition Aqua Hacktoberfest T-shirts!",
+>>>>>>> Fix error in image url and update description
     "reference": "https://blog.aquasec.com/hacktoberfest-2020-aqua-open-source",
     "image": "https://blog.aquasec.com/hs-fs/hubfs/Hacktoberfest%202.0%20Blog%20Image%20v4.jpg",
     "dateAdded": "2020-10-01T19:47:00.000Z",
