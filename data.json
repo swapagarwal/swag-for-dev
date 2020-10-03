@@ -251,6 +251,15 @@
     "dateAdded": "2020-10-02T12:27:00.000Z",
     "tags": ["clothing", "hacktoberfest", "stickers"]
   },
+  {  
+    "name": "IHP",
+    "difficulty": "easy",
+    "description": "Just fill out the Google form and get stickers via physical mail!",
+    "reference": "https://github.com/digitallyinduced/ihp#ihp-stickers",
+    "image": "https://lh4.googleusercontent.com/0LwDlgsPryo_Du5jkpCgrIPxnO5qNZ3HQtPSt62jYO1kiUBkKDafcgc2MBNF6T_7n_IDsvP0REmNOn3dmv1xvNN00hLnDXu2WNEvjUjvExqy9nbyYOD7uHfct7nW=w376",
+    "dateAdded": "2020-10-02T09:59:00.000Z",
+    "tags": ["stickers"]
+  },
   {
     "name": "ImgBot",
     "difficulty": "easy",
