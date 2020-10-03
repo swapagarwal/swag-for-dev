@@ -47,11 +47,11 @@
   {
     "name": "Appwrite",
     "difficulty": "medium",
-    "description": "Make pull requests to issues tagged <code>hacktoberfest</code> or <code>help wanted</code> in the <a href='https://github.com/appwrite/appwrite'>appwrite repo</a> during October to get some stickers and badges.",
-    "reference": "https://medium.com/appwrite-io/hacktoberfest-2019-is-almost-here-lets-celebrate-it-together-24b311236dd",
-    "image": "https://miro.medium.com/max/1600/1*mk5pBbuAZUg9j7nc6lbfrg.jpeg",
-    "dateAdded": "2019-10-06T20:30:00.000Z",
-    "tags": ["badges", "hacktoberfest", "stickers", "expired"]
+    "description": "Contributing to any Appwrite repo this October will land you some cool merchandise, including stickers, magnets, and pins. There is also an exclusive T-Shirt for this month's top 20 contributors, and a chance to win a Digitalocean, Intel, and 'the Practical DEV' limited edition t-shirt.",
+    "reference": "https://medium.com/appwrite-io/celebrate-hacktoberfest-20-with-appwrite-1356337e2159",
+    "image": "https://miro.medium.com/max/700/1*PUyLJqc4AXHOmXwkH9FNKA.png",
+    "dateAdded": "2020-09-21T18:32:00.000Z",
+    "tags": ["badges", "hacktoberfest", "stickers", "clothing"]
   },
   {
     "name": "Aqua",
