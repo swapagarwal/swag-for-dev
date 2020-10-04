@@ -77,7 +77,7 @@
     "description": "Create PRs to <a href='https://github.com/archivesspace/archivesspace'>ArchivesSpace GitHub repos</a> and the Top COntribuitor will get a ArchivesSpace bag",
     "reference": "https://community.aras.com/b/english/posts/join-aras-labs-hacktoberfest-2018",
     "image": "https://archivesspace.org/wp-content/uploads/2016/05/aspacelogo.png",
-    "dateAdded": "2020-04-10T15:21:57.000Z",
+    "dateAdded": "2020-10-4T15:21:57.000Z",
     "tags": ["bag", "hacktoberfest"]
   },
   {
@@ -572,7 +572,7 @@
     "description": "First 60 participants to make a pull request to any Sense/Net repo between October 1 and October 31 will receive a limited edition sensenet socks.",
     "reference": "https://hacktoberfest.sensenet.com/",
     "image": "https://hacktoberfest.sensenet.com/img/logo_text_white.png",
-    "dateAdded": "2020-04-10T15:21:57.000Z",
+    "dateAdded": "2020-10-4T15:21:57.000Z",
     "tags": ["clothing", "hacktoberfest"]
   },
   {
@@ -647,15 +647,7 @@
     "dateAdded": "2018-10-20T12:48:46.000Z",
     "tags": ["hacktoberfest", "expired"]
   },
-  {
-    "name": "Uno",
-    "difficulty": "easy",
-    "description": "Register for the Hacktoberfest event. Make a valid PR and fill up a <a href='https://www.surveymonkey.com/r/FNDG269'>form</a>",
-    "reference": "https://platform.uno/blog/hacktoberfest-2020-contribute-to-uno-to-win-online-courses-and-t-shirts/",
-    "image": "https://s3.amazonaws.com/uno-website-assets/wp-content/uploads/2019/08/21141002/diagram-991x1024.png",
-    "dateAdded": "2020-04-10T15:21:57.000Z",
-    "tags": ["clothing", "hacktoberfest"]
-  },
+ 
   {
     "name": "Umbraco",
     "difficulty": "medium",
