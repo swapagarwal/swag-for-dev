@@ -1,5 +1,86 @@
 @require "imports/base"
 
+@import "imports/dark-mode-button"
+
+// use CSS variables to control switch between light and dark mode
+@css {
+	:root {
+		--body-color: #f5f7fb;
+		--controls-color: #fff;
+		--controls-text-color: #000;
+		--controls-border-color: #ededed;
+		--hero-url: url('/assets/img/tiny-grid.svg');
+		--card-bg-color: #FFF;
+		--card-text-color: #222;
+		--card-h1-color: #000;
+		--newsletter-bg-color: #fff;
+		--footer-bg-color: #153e68;
+		--card-border-color: #ededed;
+		--btn-color: #2868cb;
+	}
+
+	[theme="dark"] {
+		--body-color: #222;
+		--controls-color: #353535;
+		--controls-text-color: #fff;
+		--controls-border-color: #000;
+		--hero-url: url('/assets/img/tiny-grid-dark.svg');
+		--card-bg-color: #353535;
+		--card-text-color: #fff;
+		--card-h1-color: #fff;
+		--newsletter-bg-color: #191919;
+		--footer-bg-color: #222;
+		--card-border-color: #000;
+		--btn-color: #a2c6ff;
+	}
+
+	body {
+		background: var(--body-color);
+	}
+
+	section.main .controls {
+		background: var(--controls-color);
+		color: var(--controls-text-color);
+		border: 1px solid var(--controls-border-color);
+	}
+
+	section.main .hero {
+		background: var(--hero-url) repeat;
+	}
+
+	.item div.information {
+		background: var(--card-bg-color);
+		border: 1px solid var(--card-border-color);
+	}
+
+	.item div.information p {
+		color: var(--card-text-color);
+	}
+
+	.item .img-container {
+		border: 1px solid var(--card-border-color);
+	}
+
+	div.information .title h1 {
+		color: var(--card-h1-color);
+	}
+
+	div.information a.btn {
+		color: var(--btn-color);
+		border: 2px solid var(--btn-color);
+	}
+
+	section.newsletter {
+		background: var(--newsletter-bg-color);
+		border-top: 1px solid var(--card-border-color);
+	}
+
+	footer {
+		background: var(--footer-bg-color);
+	}
+
+}
+
 a
 	color link-color
 	transition .2s
@@ -54,10 +135,8 @@ section.main
 
 	.controls
 		flex-wrap wrap
-		background white-color
 		padding 0 2rem
 		border-radius 10px
-		border 1px solid grey-color
 		margin 4rem 2rem 0
 
 	.banner
@@ -67,7 +146,6 @@ section.main
 		color white
 
 	.hero
-		background url('/assets/img/tiny-grid.svg') repeat
 		background-size 120px
 
 		.heading
@@ -161,10 +239,6 @@ section.main
 
 		@import "imports/card"
 
-section.newsletter
-	background white-color
-	border-top 1px solid grey-color
-
 footer
 	font-size 1.8rem
 	margin 0 auto
@@ -173,7 +247,6 @@ footer
 	flex-flow column wrap
 	text-align center
 	color white-color
-	background primary-color
 	.item
 		margin-bottom 5px
 	.item#logo-footer
