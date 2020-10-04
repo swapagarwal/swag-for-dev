@@ -71,6 +71,15 @@
     "dateAdded": "2018-10-24T11:45:00.000Z",
     "tags": ["clothing", "hacktoberfest", "expired", "stickers"]
   },
+    {
+    "name": "ArchivesSpace",
+    "difficulty": "medium",
+    "description": "Create PRs to <a href='https://github.com/archivesspace/archivesspace'>ArchivesSpace GitHub repos</a> and the Top COntribuitor will get a ArchivesSpace bag",
+    "reference": "https://community.aras.com/b/english/posts/join-aras-labs-hacktoberfest-2018",
+    "image": "https://archivesspace.org/wp-content/uploads/2016/05/aspacelogo.png",
+    "dateAdded": "2020-10-04T18:14:00.000Z",
+    "tags": ["bag", "hacktoberfest"]
+  },
   {
     "name": "Auth0",
     "difficulty": "hard",
@@ -560,11 +569,11 @@
   {
     "name": "Sense/Net",
     "difficulty": "easy",
-    "description": "First 100 participants to make a pull request to any Sense/Net repo between October 1 and October 31 will receive a limited edition sensenet #hacktoberfest t-shirt.",
-    "reference": "https://community.sensenet.com/blog/2019/10/01/hacktoberfest-is-here",
-    "image": "https://community.sensenet.com/img/posts/hacktoberfest2019.png",
+    "description": "First 60 participants to make a pull request to any Sense/Net repo between October 1 and October 31 will receive a limited edition sensenet socks.",
+    "reference": "https://hacktoberfest.sensenet.com/",
+    "image": "https://hacktoberfest.sensenet.com/img/logo_text_white.png",
     "dateAdded": "2019-10-05T22:56:53.000Z",
-    "tags": ["clothing", "hacktoberfest", "expired"]
+    "tags": ["clothing", "hacktoberfest", ]
   },
   {
     "name": "SimbaChain",
@@ -641,11 +650,11 @@
   {
     "name": "Uno",
     "difficulty": "easy",
-    "description": "Register for the Hacktoberfest event. Share your contact details. Make a pull-request to improve the projects code or documentation.",
-    "reference": "https://platform.uno/uno-is-joining-hacktoberfest-2019/",
+    "description": "Register for the Hacktoberfest event. Make a valid PR and fill up a <a href='https://www.surveymonkey.com/r/FNDG269'>form</a>",
+    "reference": "https://platform.uno/blog/hacktoberfest-2020-contribute-to-uno-to-win-online-courses-and-t-shirts/",
     "image": "https://s3.amazonaws.com/uno-website-assets/wp-content/uploads/2019/08/21141002/diagram-991x1024.png",
-    "dateAdded": "2019-09-25T13:05:05.000Z",
-    "tags": ["clothing", "hacktoberfest", "expired"]
+    "dateAdded": "2020-10-4T18:0:05.000Z",
+    "tags": ["clothing", "Udemy Course", "hacktoberfest", ]
   },
   {
     "name": "Umbraco",
