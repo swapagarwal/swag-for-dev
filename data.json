@@ -63,6 +63,15 @@
     "tags": ["stickers", "clothing", "hacktoberfest", "expired"]
   },
   {
+    "name": "AquaSec",
+    "difficulty": "medium",
+    "description": "Contribute to AquaSec's open source portofolio, and win branded sticker packs, face masks, or limited edition Aqua Hacktoberfest T-shirts!",
+    "reference": "https://blog.aquasec.com/hacktoberfest-2020-aqua-open-source",
+    "image": "https://blog.aquasec.com/hs-fs/hubfs/Hacktoberfest%202.0%20Blog%20Image%20v4.jpg?width=1890&name=Hacktoberfest%202.0%20Blog%20Image%20v4.jpg",
+    "dateAdded": "2020-04-10T15:21:30.000Z",
+    "tags": ["stickers", "clothing", "hacktoberfest"]
+  },
+  {
     "name": "Aras",
     "difficulty": "medium",
     "description": "Submit an improvement to any <a href='http://community.aras.com/en/projects/'>Aras Community Project</a> in October 2018 to earn stickers! Submit five, earn a limited edition T-shirt!",
