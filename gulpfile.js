@@ -9,13 +9,14 @@ const htmlmin = require('gulp-htmlmin');
 const stylus = require('gulp-stylus');
 const webserver = require('gulp-webserver');
 const concat = require('gulp-concat');
-const download = require('gulp-download-stream');
 const responsive = require('gulp-responsive');
 const merge = require('merge-stream');
 const postcss = require('gulp-postcss');
 const autoprefixer = require('autoprefixer');
+const {readFile} = require('fs').promises;
 
 const {swagList, swagImages} = require('./get-data');
+const downloadImages = require('./download-images');
 
 const PRODUCTION = process.env.NODE_ENV === 'production';
 
@@ -33,7 +34,24 @@ let manifest = {
 	'js/index.js': 'js/index.js'
 };
 
-gulp.task('pug', () => {
+const assetsToBeInlined = ['css/index.css'];
+
+async function getInlinedAssets(config, manifest) {
+	const fileMap = new Map();
+	const promises = [];
+	const assetBasePath = 'dist/assets/';
+
+	config.forEach(name => {
+		const assetPath = assetBasePath + manifest[name];
+		promises.push(readFile(assetPath, 'utf8')
+			.then(contents => fileMap.set(name, contents)));
+	});
+
+	await Promise.all(promises);
+	return fileMap;
+}
+
+gulp.task('pug', async done => {
 	const tags = Array.from(swagList.reduce(
 		(tagList, {tags}) => {
 			tags.filter(tag => tag !== 'expired').forEach(tag => tagList.add(tag));
@@ -52,24 +70,27 @@ gulp.task('pug', () => {
 		js: `/assets/${manifest['js/index.js']}`
 	};
 
-	return gulp.src('src/pug/*.pug')
+	const inlinedAssets = await getInlinedAssets(assetsToBeInlined, manifest);
+
+	gulp.src('src/pug/*.pug')
 		.pipe(pug({
 			pretty: true,
-			locals: {swagList, tags, bustedAssets}
+			locals: {swagList, tags, bustedAssets, inlinedAssets}
 		}))
 		.pipe(htmlmin({
 			collapseWhitespace: true,
 			removeComments: true
 		}))
-		.pipe(gulp.dest('dist/'));
+		.pipe(gulp.dest('dist/'))
+		.on('end', () => done());
 });
 
 gulp.task('styl', () => {
 	return gulp.src('src/styl/index.styl')
 		.pipe(stylus({compress: true}))
 		.pipe(postcss([
-			autoprefixer({browsers: ['last 2 versions']})
-    	]))
+			autoprefixer()
+		]))
 		.pipe(gulp.dest('dist/assets/css'));
 });
 
@@ -99,9 +120,11 @@ gulp.task('swag-img:clean', () => {
 	return del('dist/assets/swag-img/*');
 });
 
-gulp.task('swag-img:download', () => {
-	return download(swagImages)
-		.pipe(gulp.dest('dist/assets/swag-img'));
+gulp.task('swag-img:download', async () => {
+	const success = await downloadImages(swagImages, 'dist/assets/swag-img');
+	if (!success) {
+		throw new Error('Failed to download images');
+	}
 });
 
 gulp.task('swag-img:optimize', cb => {
@@ -182,7 +205,9 @@ gulp.task('webserver', () => {
 	return gulp.src('dist')
 		.pipe(webserver({
 			livereload: true,
-			open: true
+			open: true,
+			host: process.env.GULP_LISTEN_HOST || '127.0.0.1',
+			port: Number.parseInt(process.env.GULP_LISTEN_PORT || '8080', 10)
 		}));
 });
 
@@ -195,7 +220,7 @@ gulp.task('watch', () => {
 gulp.task('build', gulp.series(
 	'clean',
 	gulp.parallel(
-		gulp.series('swag-img', 'cachebust', 'pug'), 'styl', 'js', 'binaries'
+		gulp.series('swag-img', 'styl', 'cachebust', 'pug'), 'js', 'binaries'
 	)
 ));
 

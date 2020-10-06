@@ -4,7 +4,7 @@ const swagList = require('./data.json').map(swag => {
 	// Generate unique filename
 	const extension = 'jpeg';
 	const fileBase = swag.name
-		.replace(/[^a-z0-9]/gi, '_')
+		.replace(/[^a-z\d]/gi, '_')
 		.replace(/_{2,}/g, '_')
 		.toLowerCase();
 	let index = 0;
@@ -22,7 +22,10 @@ const swagList = require('./data.json').map(swag => {
 	swag.image = `/assets/swag-img/${fileName}`;
 	fileNames.push(fileName);
 
+	// Sort tags
+	swag.tags.sort();
+
 	return swag;
-});
+}).sort(({dateAdded: left}, {dateAdded: right}) => new Date(right) - new Date(left));
 
 module.exports = {swagList, swagImages};

@@ -1,0 +1,10 @@
+# Blacklist: use '!' prefix to include a glob
+**
+!.nvmrc
+!data.json
+!nginx.conf
+!get-data.js
+!gulpfile.js
+!package.json
+!package-lock.json
+!src/

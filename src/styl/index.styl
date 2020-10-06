@@ -1,5 +1,42 @@
 @require "imports/base"
 
+a
+	color link-color
+	transition .2s
+	text-decoration none
+	&:hover
+		color link-hover-color
+
+.btn.secondary
+	color white-color
+	font-size 1.8rem
+	padding .4rem 1rem
+	margin-left 1rem
+	border-radius .6rem
+	border 2px solid link-color
+	display inline-block
+	&:hover
+		background link-color
+		color white-color
+
+.github
+	display flex
+	background tertiary-color
+	color white-color
+	border none
+	font-size 1.8rem
+	padding .8rem 1rem
+	margin-left 1rem
+	border-radius .6rem
+	&:hover
+		background darken(tertiary-color, 20%)
+		color white-color
+	#logo
+		justify-self start
+		width 20px
+		height 20px
+		margin-right .8rem
+
 .container
 	min-height 100vh
 	width 100vw
@@ -8,38 +45,64 @@
 .hidden
 	display none
 
+.box
+	width 100%
+
 section.main
-	width 90%
 	flex-direction column
 	margin 0 auto
 
 	.controls
 		flex-wrap wrap
+		background white-color
+		padding 0 2rem
+		border-radius 10px
+		border 1px solid grey-color
+		margin 4rem 2rem 0
 
-		@media screen and (max-width: 450px)
-			justify-content left
-
-	.heading
-		flex-direction column
-		min-height 40vh
+	.banner
 		text-align center
-		margin 6vh 2vh
+		padding 1.2rem
+		background primary-color
+		color white
 
-		h1
-			font-size 3rem
-			color #111
-			width 90%
+	.hero
+		background url('/assets/img/tiny-grid.svg') repeat
+		background-size 120px
 
-		p
-			font-size 1.2rem
-			color #555
-			margin-top 20px
-			width 90%
+		.heading
+			flex-direction column
+			max-width 90rem
+			text-align center
+			padding 6rem
+
+			.logo
+				img
+					max-width 240px
+					width 100%
+					height 70px
+			.alt-logo
+				visibility hidden
+				display block
+				font-size 1.2rem
+			h2
+				font-size 2.4rem
+				font-family $default-font-family-mono
+				color white-color
+				padding .4rem .8rem
+				border 2px dashed white-color
+				border-radius 6px
+				margin-bottom 2rem
+			p
+				font-size 2.2rem
+				font-weight bold
+				line-height 1.4
+				max-width 72rem
+				color white-color
 
 	.buttons
 		justify-content flex-start
-		padding-bottom 15px
-		max-width 1150px
+		max-width 1140px
 		width 100%
 		flex-direction column
 		align-items flex-start
@@ -49,16 +112,15 @@ section.main
 			width 100%
 			justify-content flex-start
 
-		@media screen and (max-width: 450px)
-			.item, .select-wrapper, select
-				width 100%
-
 		.item
-			padding 5px
+			margin 10px 20px
+			&:last-child
+				margin-right 0
+			.title
+				margin-right 8px
 
 		.select-wrapper
 			position relative
-			margin 0 5px
 
 			&:before
 				position absolute
@@ -77,41 +139,56 @@ section.main
 			margin-right 6px
 
 		select
-			background #fff
 			border none
-			border-bottom 2px solid #bbb
-			border-radius 0px
+			border-radius 5px
+			border 2px solid grey-dark-color
 			padding 5px 20px 5px 5px
 			appearance none
 			font-family $default-font-family
-			font-size 0.9rem
+			font-size 1.6rem
 			cursor pointer
 
 		@import "imports/selectr-theme"
 
 	.content
-		max-width 1100px
+		max-width 1140px
 		flex-wrap wrap
 		align-items flex-start
 		justify-content space-around
 		margin 0 -10px
-		margin-top 8px
+		padding 20px
 		width 100%
 
 		@import "imports/card"
 
-footer
-	margin 0 auto 70px auto
-	flex-wrap wrap
-	padding-bottom 15px
-	max-width 1150px
-	width 100%
-	flex-direction row
+section.newsletter
+	background white-color
+	border-top 1px solid grey-color
 
+footer
+	font-size 1.8rem
+	margin 0 auto
+	padding 6rem
+	width 100%
+	flex-flow column wrap
+	text-align center
+	color white-color
+	background primary-color
 	.item
+		margin-bottom 5px
+	.item#logo-footer
+		max-width 200px
 		width 100%
+		margin-bottom 20px
+		display inline-block
+	#github-logo
+		width 50px
+		height 50px
+		margin-top 30px
+
 
 @import "imports/a11y"
+@import "imports/mediaquery"
 
 #content .item.visible
 	display initial
