@@ -7,16 +7,18 @@
 [![closed pull requests](https://img.shields.io/github/issues-pr-closed/swapagarwal/swag-for-dev.svg)](htps://github.com/swapagarwal/swag-for-dev/pulls?q=is%3Apr+is%3Aclosed)
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg)](https://github.com/swapagarwal/swag-for-dev/fork)
 [![Join the chat on Slack](https://img.shields.io/badge/chat-on%20slack-E01563.svg)](https://join.slack.com/t/swagfordev/shared_invite/zt-6ecwtoap-QR1sl1782xTCiGzBnSJt3g)
-[![Gitpod Ready-to-Code](https://img.shields.io/badge/Gitpod-Ready--to--Code-blue?logo=gitpod)](https://gitpod.io/from-referrer/)
+[![Gitpod Ready-to-Code](https://img.shields.io/badge/Gitpod-Ready--to--Code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/swapagarwal/swag-for-dev)
 
-As a developer, nothing piques my interest more than developer swag! This is an attempt to list down the current swag opportunities for developers.
+As a developer, nothing piques my interest more than developer swag! devSwag is a curated list of verified swag opportunities for developers.
 
-Feel free to send a PR! 😄
+Feel free to send a Pull Request! 😄
 
 > Featured on [Changelog Nightly](http://nightly.changelog.com/2018/02/18/), [Changelog Weekly](http://email.changelog.com/t/t-675F8F9C3E9A6D8E2540EF23F30FEDED), [Hacker News](https://news.ycombinator.com/item?id=16407484), [reddit](https://www.reddit.com/r/coolgithubprojects/comments/7ygd5n/as_a_developer_nothing_piques_my_interest_as_much/), [Product Hunt](https://www.producthunt.com/posts/swag-for-dev) 🦄
 
 Sign up at [https://upscri.be/67d2fa](https://upscri.be/67d2fa) to get notified of new swag opportunities!! 💯
 **[[View the Archive](https://us17.campaign-archive.com/home?u=87012cca117582a64dec3ca39&id=212af2e954)]**
+
+Welcome to the community, join us on Telegram at [https://t.me/devswag](https://t.me/devswag)!
 
 ## Contents
 
@@ -24,7 +26,7 @@ All swag opportunities can be found at [https://devswag.io/](https://devswag.io/
 
 ## Contributing
 
-Feel free to open an issue (or even better, send a Pull Request) for expanding this list. Instructions for doing so are available [here](https://github.com/swapagarwal/swag-for-dev/blob/master/CONTRIBUTING.md#how-do-i-add-a-swag-opportunity). Contributions are very welcome!! 😄
+Feel free to open an issue (or even better, send a Pull Request) for expanding this list. Instructions for doing so are available [here](https://github.com/swapagarwal/swag-for-dev/blob/master/CONTRIBUTING.md#how-do-i-add-a-swag-opportunity). Contributions are always welcomed!! 😄
 
 Note that a PR needs to reach a certain level of engagement before it gets merged. This criteria is kept to maintain the quality of this list. The current list of open PRs can be found here: https://github.com/swapagarwal/swag-for-dev/pulls
 
@@ -41,28 +43,11 @@ Please consider donating to cover up our hosting costs. 🙏
 
 Contribute to swag-for-dev using a fully featured online development environment that will automatically: clone the repo, install the dependencies and start the webserver.
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/from-referrer/)
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/swapagarwal/swag-for-dev)
 
-### Local setup
+### Local & Docker setup
 
-1. Clone this repository by running
-    ```
-    git clone https://github.com/swapagarwal/swag-for-dev.git
-    ```
-1. Ensure you are running an up-to-date version of [Node.js](https://nodejs.org/en/download/package-manager/) on your machine, and that you have npm installed.
-1. Make sure you have [Gulp](https://gulpjs.org/getting-started.html) installed by running
-    ```
-    npm install gulp-cli -g
-    ```
-1. Open a terminal in the `swag-for-dev` directory. Type
-    ```
-    npm install
-    ```
-    into the terminal to install the dependencies. To start the webserver, type
-    ```
-    gulp
-    ```
-1. The website should open in a browser after it compiles, or you can view it by going to http://localhost:8000
+See complete walkthrough in the [Contributing guide](./CONTRIBUTING.md#lets-start-hacking).
 
 ## License
 

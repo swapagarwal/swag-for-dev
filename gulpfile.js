@@ -9,7 +9,6 @@ const htmlmin = require('gulp-htmlmin');
 const stylus = require('gulp-stylus');
 const webserver = require('gulp-webserver');
 const concat = require('gulp-concat');
-const download = require('gulp-download-stream');
 const responsive = require('gulp-responsive');
 const merge = require('merge-stream');
 const postcss = require('gulp-postcss');
@@ -17,6 +16,7 @@ const autoprefixer = require('autoprefixer');
 const {readFile} = require('fs').promises;
 
 const {swagList, swagImages} = require('./get-data');
+const downloadImages = require('./download-images');
 
 const PRODUCTION = process.env.NODE_ENV === 'production';
 
@@ -120,9 +120,11 @@ gulp.task('swag-img:clean', () => {
 	return del('dist/assets/swag-img/*');
 });
 
-gulp.task('swag-img:download', () => {
-	return download(swagImages)
-		.pipe(gulp.dest('dist/assets/swag-img'));
+gulp.task('swag-img:download', async () => {
+	const success = await downloadImages(swagImages, 'dist/assets/swag-img');
+	if (!success) {
+		throw new Error('Failed to download images');
+	}
 });
 
 gulp.task('swag-img:optimize', cb => {
@@ -203,7 +205,9 @@ gulp.task('webserver', () => {
 	return gulp.src('dist')
 		.pipe(webserver({
 			livereload: true,
-			open: true
+			open: true,
+			host: process.env.GULP_LISTEN_HOST || '127.0.0.1',
+			port: Number.parseInt(process.env.GULP_LISTEN_PORT || '8080', 10)
 		}));
 });
 
