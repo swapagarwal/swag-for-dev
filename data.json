@@ -709,5 +709,14 @@
     "image": "http://devblogs.microsoft.com/xamarin/wp-content/uploads/sites/44/2019/10/medium_25686-c9dd82896c9e66bb82600f256444abe6.png",
     "dateAdded": "2019-10-08T21:00:00.000Z",
     "tags": ["stickers", "hacktoberfest", "clothing", "expired"]
-  }
+  },
+  {
+    "name": "CommerceJS",
+    "difficulty": "medium",
+    "description": "Submit one pull request to Commerce.js to win more cool swag!",
+    "reference": "https://commercejs.com/docs/hacktoberfest/",
+    "image": "https://images.ctfassets.net/u77gi3ejnmxq/32QPYCIi28peoxPpwxmiml/3a56eecf0eaa4ec682d78ff0f560bd82/Group_5.svg",
+    "dateAdded": "2020-10-06T07:54:00.000Z",
+    "tags": ["hacktoberfest", "unknown"]
+  },
 ]
