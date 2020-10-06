@@ -144,6 +144,15 @@
     "tags": ["accessories", "stickers", "hacktoberfest", "clothing", "expired"]
   },
   {
+    "name": "CommerceJS",
+    "difficulty": "medium",
+    "description": "Submit one pull request to Commerce.js to win more cool swag!",
+    "reference": "https://commercejs.com/docs/hacktoberfest/",
+    "image": "https://images.ctfassets.net/u77gi3ejnmxq/32QPYCIi28peoxPpwxmiml/3a56eecf0eaa4ec682d78ff0f560bd82/Group_5.svg",
+    "dateAdded": "2020-10-06T07:54:00.000Z",
+    "tags": ["hacktoberfest", "unknown"]
+  },
+  {
     "name": "Contentful",
     "difficulty": "easy",
     "description": "Sign up to Contentful and get a free pair of socks to your door.",
