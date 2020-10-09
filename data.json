@@ -718,5 +718,14 @@
     "image": "http://devblogs.microsoft.com/xamarin/wp-content/uploads/sites/44/2019/10/medium_25686-c9dd82896c9e66bb82600f256444abe6.png",
     "dateAdded": "2019-10-08T21:00:00.000Z",
     "tags": ["stickers", "hacktoberfest", "clothing", "expired"]
+  },
+  {
+    "name":"DevFolio",
+    "difficulty":"medium",
+    "description":"Contribute to any of the following GitHub repositories in october metioned in the article to get stickers and swag from DevFolio shipping only in India.",
+    "reference": "https://devfolio.co/blog/devfolio-hacktoberfest-2020/",
+    "image": "https://pbs.twimg.com/media/EJfpSDTUUAIXtdP?format=jpg&name=small",
+    "dateAdded": "2020-10-01T16:35:21.000Z",
+    "tags": ["stickers", "clothing", "hacktoberfest"]
   }
 ]
