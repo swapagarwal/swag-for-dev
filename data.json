@@ -188,6 +188,15 @@
     "dateAdded": "2019-10-05T23:17:55.000Z",
     "tags": ["stickers", "clothing", "hacktoberfest", "expired"]
   },
+    {
+    "name": "Devfolio",
+    "difficulty":"medium",
+    "description": "Contribute 4 valid PRs to one of Devfolio's approved repositories, and receive some stickers! Top 50 contributors will also get a t-shirt.",
+    "reference": "https://devfolio.co/blog/devfolio-hacktoberfest-2020/",
+    "image": "https://pbs.twimg.com/media/EJfpSDTUUAIXtdP?format=jpg&name=small",
+    "dateAdded": "2020-10-01T16:35:21.000Z",
+    "tags": ["stickers", "clothing", "hacktoberfest"]
+  }
   {
     "name": "devRant",
     "difficulty": "medium",
@@ -718,14 +727,5 @@
     "image": "http://devblogs.microsoft.com/xamarin/wp-content/uploads/sites/44/2019/10/medium_25686-c9dd82896c9e66bb82600f256444abe6.png",
     "dateAdded": "2019-10-08T21:00:00.000Z",
     "tags": ["stickers", "hacktoberfest", "clothing", "expired"]
-  },
-  {
-    "name":"DevFolio",
-    "difficulty":"medium",
-    "description": "Contribute 4 valid PRs to one of Devfolio's approved repositories, and receive some stickers! Top 50 contributors will also get a t-shirt.",
-    "reference": "https://devfolio.co/blog/devfolio-hacktoberfest-2020/",
-    "image": "https://pbs.twimg.com/media/EJfpSDTUUAIXtdP?format=jpg&name=small",
-    "dateAdded": "2020-10-01T16:35:21.000Z",
-    "tags": ["stickers", "clothing", "hacktoberfest"]
   }
 ]
