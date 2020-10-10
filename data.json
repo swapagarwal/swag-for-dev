@@ -188,7 +188,7 @@
     "dateAdded": "2019-10-05T23:17:55.000Z",
     "tags": ["stickers", "clothing", "hacktoberfest", "expired"]
   },
-    {
+  {
     "name": "Devfolio",
     "difficulty":"medium",
     "description": "Contribute 4 valid PRs to one of Devfolio's approved repositories, and receive some stickers! Top 50 contributors will also get a t-shirt.",
