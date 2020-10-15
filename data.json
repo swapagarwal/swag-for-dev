@@ -153,6 +153,15 @@
     "tags": ["hacktoberfest", "stickers", "badges"]
   },
   {
+    "name": "Container Solutions",
+    "difficulty": "easy",
+    "description": "Submit one successful pull request to any of Container Solutions' repos to win a free t-shirt!",
+    "reference": "https://blog.container-solutions.com/container-solutions-does-hacktoberfest",
+    "image": "https://blog.container-solutions.com/hubfs/hacktober2020.png",
+    "dateAdded": "2020-10-15T06:40:51:00.000Z",
+    "tags": ["hacktoberfest", "clothing"]
+  },
+  {
     "name": "Contentful",
     "difficulty": "easy",
     "description": "Sign up to Contentful and get a free pair of socks to your door.",
