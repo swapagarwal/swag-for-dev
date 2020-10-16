@@ -270,6 +270,15 @@
     "tags": ["clothing", "hacktoberfest", "stickers"]
   },
   {
+    "name": "IHP",
+    "difficulty": "easy",
+    "description": "Fill out the form, and get some stickers sent to you!",
+    "reference": "https://github.com/digitallyinduced/ihp#ihp-stickers",
+    "image": "https://i.imgur.com/lV40hIR.png",
+    "dateAdded": "2020-10-02T09:59:00.000Z",
+    "tags": ["stickers"]
+  },
+  {
     "name": "ImgBot",
     "difficulty": "easy",
     "description": "Install the bot on your repo and get some awesome laptop stickers from ImgBot after filling out the form!",
