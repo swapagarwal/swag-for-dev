@@ -34,6 +34,12 @@ describe('swag-for-dev', function () {
 		});
 	});
 
+	it('valid alphabetical order', function () {
+		const left = data.map(({name}) => name.toLowerCase());
+		const right = [...left].sort();
+		expect(left).to.deep.equal(right);
+	});
+
 	const dataSlices = [];
 	for (let i = 0, {length} = data; i < length; i += LIMIT_PARALLEL_TESTS) {
 		dataSlices.push(data.slice(i, i + LIMIT_PARALLEL_TESTS));

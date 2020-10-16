@@ -288,15 +288,6 @@
     "tags": ["stickers"]
   },
   {
-    "name": "InfraCloud",
-    "difficulty": "medium",
-    "description": "The first 50 people to get one PR merged into an InfraCloud repo will get a cool t-shirt, along with some amazing stickers. Jumbo Prize – The person with the most merged PRs will also get a Kindle.",
-    "reference": "https://twitter.com/infracloudio/status/1310980826541092865",
-    "image": "https://i.imgur.com/Wlfg3Xq.png",
-    "dateAdded": "2020-09-25T19:20:42.000Z",
-    "tags": ["stickers", "clothing", "device", "hacktoberfest"]
-  },
-  {
     "name": "Indeed",
     "difficulty": "medium",
     "description": "Complete two or more pull requests in October 2020 to any open source Indeed repository and be eligible to earn an Open Source sweatshirt! (Shipping only to US)",
@@ -304,6 +295,15 @@
     "image": "https://rac4ou2q3g246tjk3rxqbt1c-wpengine.netdna-ssl.com/wp-content/uploads/2020/09/indeed_open_source_sweatshirt-1.png",
     "dateAdded": "2020-09-30T03:19:14.000Z",
     "tags": ["clothing", "hacktoberfest"]
+  },
+  {
+    "name": "InfraCloud",
+    "difficulty": "medium",
+    "description": "The first 50 people to get one PR merged into an InfraCloud repo will get a cool t-shirt, along with some amazing stickers. Jumbo Prize – The person with the most merged PRs will also get a Kindle.",
+    "reference": "https://twitter.com/infracloudio/status/1310980826541092865",
+    "image": "https://i.imgur.com/Wlfg3Xq.png",
+    "dateAdded": "2020-09-25T19:20:42.000Z",
+    "tags": ["stickers", "clothing", "device", "hacktoberfest"]
   },
   {
     "name": "IPFS",
@@ -513,6 +513,19 @@
     "tags": ["stickers", "expired"]
   },
   {
+    "name": "Parity Technologies",
+    "difficulty": "medium",
+    "description": "Anyone who makes any significant contribution to the Substrate ecosystem during Hacktoberfest is eligible for a special limited edition Parity Hacktoberfest 2019 gym bag.",
+    "reference": "https://www.parity.io/hacktoberfest-2019-parity/",
+    "image": "https://www.parity.io/content/images/2019/09/hacktoberfest2019_bag.jpg",
+    "dateAdded": "2019-10-12T19:49:00.000Z",
+    "tags": [
+      "hacktoberfest",
+      "accessories",
+      "expired"
+    ]
+  },
+  {
     "name": "Passenger",
     "difficulty": "easy",
     "description": "Register to join the November 1st livestream in which Phusion adds a major feature to Passenger, and win a custom key cap or beanie with the Passenger logo embroided (and stickers, guaranteed).",
@@ -520,15 +533,6 @@
     "image": "https://i.imgur.com/gVfuWsu.png",
     "dateAdded": "2018-10-20T11:38:34.000Z",
     "tags": ["clothing", "accessories", "expired", "stickers"]
-  },
-  {
-    "name": "Parity Technologies",
-    "difficulty": "medium",
-    "description": "Anyone who makes any significant contribution to the Substrate ecosystem during Hacktoberfest is eligible for a special limited edition Parity Hacktoberfest 2019 gym bag.",
-    "reference": "https://www.parity.io/hacktoberfest-2019-parity/",
-    "image": "https://www.parity.io/content/images/2019/09/hacktoberfest2019_bag.jpg",
-    "dateAdded": "2019-10-12T19:49:00.000Z",
-    "tags": ["hacktoberfest", "accessories", "expired"]
   },
   {
     "name": "QMK",
@@ -659,11 +663,15 @@
   {
     "name": "Umbraco",
     "difficulty": "medium",
-    "description": "Have one accepted pull request in a Umbraco repository during October 2018 to get some super exclusive Umbraco swag. All the contributors will also be listed by Github username in a dedicated blog post in November.",
-    "reference": "https://umbraco.com/blog/happy-hacktoberfest/",
-    "image": "https://shop.umbraco.com/media/2989609/img_0722.jpg",
-    "dateAdded": "2018-10-20T12:48:46.000Z",
-    "tags": ["hacktoberfest", "expired"]
+    "description": "Have one approved PR on any Umbraco repo to get some exclusive and limited Umbraco swag. All contributors will also be listed by Github username in their November blog post!",
+    "reference": "https://umbraco.com/blog/hacktoberfest-2019/",
+    "image": "https://i.imgur.com/tFqV0RC.jpg",
+    "dateAdded": "2019-10-04T15:17:00.000Z",
+    "tags": [
+      "hacktoberfest",
+      "stickers",
+      "expired"
+    ]
   },
   {
     "name": "Uno",
@@ -673,15 +681,6 @@
     "image": "https://s3.amazonaws.com/uno-website-assets/wp-content/uploads/2019/08/21141002/diagram-991x1024.png",
     "dateAdded": "2019-09-25T13:05:05.000Z",
     "tags": ["clothing", "hacktoberfest", "expired"]
-  },
-  {
-    "name": "Umbraco",
-    "difficulty": "medium",
-    "description": "Have one approved PR on any Umbraco repo to get some exclusive and limited Umbraco swag. All contributors will also be listed by Github username in their November blog post!",
-    "reference": "https://umbraco.com/blog/hacktoberfest-2019/",
-    "image": "https://i.imgur.com/tFqV0RC.jpg",
-    "dateAdded": "2019-10-04T15:17:00.000Z",
-    "tags": ["hacktoberfest", "stickers", "expired"]
   },
   {
     "name": "Valor Software",
