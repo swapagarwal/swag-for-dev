@@ -46,7 +46,7 @@ describe('swag-for-dev', function () {
 			data.forEach(opportunity => {
 				/* eslint-disable max-nested-callbacks */
 				describe(opportunity.name, function () {
-					if (!opportunity.tags.includes("expired")) {
+					if (!opportunity.tags.includes('expired')) {
 						it(opportunity.name + ' has a valid reference', function () {
 							this.timeout(10000);
 							this.slow(1500);
