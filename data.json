@@ -207,21 +207,12 @@
     "tags": ["stickers"]
   },
   {
-    "name": "DX Heroes",
-    "difficulty": "hard",
-    "description": "First fill the form metionedand then come in the top 3 contributors of their repo to recieve permanent badge of honour and the top contributor will recive DX heroes merch.",
-    "reference": "https://github.com/DXHeroes/dx-scanner#hacktoberfest-2020-",
-    "image": "https://raw.githubusercontent.com/achaljhawar/Hello-World/master/assets/Capture.JPG",
-    "dateAdded": "2020-10-10T12:37:23.000Z",
-    "tags": ["stickers","clothing","hacktoberfest"]
-  },
-  {
     "name": "Earthly",
     "difficulty": "medium",
     "description": "Get one PR accepted at their <a href='https://github.com/earthly/earthly'>repository</a> and then <a href='mailto:adam@earthly.com'>email</a> them to claim your stickers.",
     "reference": "https://blog.earthly.dev/hacktoberfest-2020/",
     "image": "https://i.imgur.com/pE9Ml3v.png",
-    "dateAdded": "2020-10-10T05:06:00.000Z",
+    "dateAdded": "2020-10-16T05:06:00.000Z",
     "tags": ["hacktoberfest", "stickers"]
   },
   {
@@ -740,10 +731,10 @@
   {
     "name": "Xamarin by Microsoft",
     "difficulty": "hard",
-    "description": "Make quality pull requests to issues that are 'approved item of work' t-shirt and other swag.",
+    "description": "Make quality pull requests to issues that are 'approved item of work' t-shirt.",
     "reference": "https://devblogs.microsoft.com/xamarin/hacktoberfest-xamarin-community-toolkit/",
     "image": "https://devblogs.microsoft.com/xamarin/wp-content/uploads/sites/44/2020/10/image-1-1024x536.png",
-    "dateAdded": "2020-10-10T16:35:21.000Z",
+    "dateAdded": "2020-10-16T16:35:21.000Z",
     "tags": ["hacktoberfest", "clothing"]
   },
   {
@@ -751,8 +742,8 @@
     "difficulty": "medium",
     "description": "Get to PRs approved in the mentioned repos and the fill a form to get awesome t-shirt delivered at your home shipping is only their in Brazil.",
     "reference": "http://insights.zup.com.br/hacktoberfest",
-    "image": "https://d335luupugsy2.cloudfront.net/cms/files/83508/1597930522/$iw1arhcd46",
-    "dateAdded": "2020-10-10T16:35:21.000Z",
+    "image": " https://i.imgur.com/eSInrEm.png",
+    "dateAdded": "2020-10-16T16:35:21.000Z",
     "tags": ["hacktoberfest", "clothing"]
   }
 ]
