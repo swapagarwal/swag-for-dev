@@ -479,11 +479,11 @@
   {
     "name": "OpenEBS",
     "difficulty": "hard",
-    "description": "Have one accepted pull request in an OpenEBS repository during October 2018 to earn an OpenEBS t-shirt and stickers. The best PR will also receive a laptop.",
-    "reference": "https://blog.openebs.io/celebrate-hacktoberfest-2018-with-openebs-206daa1d653c/",
-    "image": "https://cdn-images-1.medium.com/max/1200/1*BXesj2ROGdmUH3vXHkRaRA.png",
-    "dateAdded": "2018-10-06T03:58:08.000Z",
-    "tags": ["clothing", "hacktoberfest", "expired", "stickers"]
+    "description": "One merged PR to OpenEBS Repository and a change get exclusive and limited OpenEBS swag, OpenEBS will contact you to fill out a form to send a special edition swag designed for Hacktoberfest. Not only this but by becoming a top weekly contributor, you’ll be able to grab even more swag.",
+    "reference": "https://openebs.io/blog/hacktoberfest-2020-contribute-to-openebs/",
+    "image": "https://admin.mayadata.io/content/images/2020/09/With-OpenEBS--1-.png",
+    "dateAdded": "2020-10-01T03:58:08.000Z",
+    "tags": ["hacktoberfest", "stickers"]
   },
   {
     "name": "Operation Code",
