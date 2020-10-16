@@ -207,6 +207,15 @@
     "tags": ["stickers"]
   },
   {
+    "name": "Earthly",
+    "difficulty": "medium",
+    "description": "First 40 participants to get atleast one PR merged to <a href='https://github.com/earthly/earthly'>earthly</a> will receive Sticker. You can also qualify for the sticker by adding a working Earthfile file to another opensource project.",
+    "reference": "https://blog.earthly.dev/hacktoberfest-2020/",
+    "image": "https://static.wixstatic.com/media/2cf192_051ee9f4b18b42a49c5d3bb11d87e3f3~mv2.png/v1/fill/w_162,h_50,al_c,q_85,usm_0.66_1.00_0.01/Dark%20bg.webp",
+    "dateAdded": "2020-10-01T16:38:00.000Z",
+    "tags": ["hacktoberfest","stickers"]
+  },
+  {
     "name": "erxes",
     "difficulty": "medium",
     "description": "Submit 3 issues and 1 PR to their <a href='https://github.com/erxes/erxes'>repo</a>, get a t-shirt and stickers.",
