@@ -1,6 +1,7 @@
 const got = require('got');
 const {expect} = require('chai');
 const parallel = require('mocha.parallel');
+const sharp = require('sharp');
 
 const data = require('../../data.json');
 const LIMIT_PARALLEL_TESTS = 10;
@@ -52,10 +53,29 @@ describe('swag-for-dev', function () {
 						return checkURL(opportunity.reference);
 					});
 
-					it(opportunity.name + ' has a valid image', function () {
+					it(opportunity.name + ' has a valid image URL', function () {
 						this.timeout(10000);
 						this.slow(1500);
 						return checkURL(opportunity.image);
+					});
+
+					it(opportunity.name + ' has a valid image format', function (done) {
+						this.timeout(10000);
+						this.slow(1500);
+						got(opportunity.image)
+							.then(function (response) {
+								sharp(response.rawBody, {limitInputPixels: false})
+									.toBuffer()
+									.then(function () {
+										done();
+									})
+									.catch(function (err) {
+										done(err);
+									});
+							})
+							.catch(function (err) {
+								done(err);
+							});
 					});
 				});
 				/* eslint-enable max-nested-callbacks */
