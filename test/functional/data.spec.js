@@ -35,6 +35,12 @@ describe('swag-for-dev', function () {
 		});
 	});
 
+	it('valid alphabetical order', function () {
+		const left = data.map(({name}) => name.toLowerCase());
+		const right = [...left].sort();
+		expect(left).to.deep.equal(right);
+	});
+
 	const dataSlices = [];
 	for (let i = 0, {length} = data; i < length; i += LIMIT_PARALLEL_TESTS) {
 		dataSlices.push(data.slice(i, i + LIMIT_PARALLEL_TESTS));
@@ -47,11 +53,13 @@ describe('swag-for-dev', function () {
 			data.forEach(opportunity => {
 				/* eslint-disable max-nested-callbacks */
 				describe(opportunity.name, function () {
-					it(opportunity.name + ' has a valid reference', function () {
-						this.timeout(10000);
-						this.slow(1500);
-						return checkURL(opportunity.reference);
-					});
+					if (!opportunity.tags.includes('expired')) {
+						it(opportunity.name + ' has a valid reference', function () {
+							this.timeout(10000);
+							this.slow(1500);
+							return checkURL(opportunity.reference);
+						});
+					}
 
 					it(opportunity.name + ' has a valid image URL', function () {
 						this.timeout(10000);
