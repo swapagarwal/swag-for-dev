@@ -61,13 +61,7 @@ describe('swag-for-dev', function () {
 						});
 					}
 
-					it(opportunity.name + ' has a valid image URL', function () {
-						this.timeout(10000);
-						this.slow(1500);
-						return checkURL(opportunity.image);
-					});
-
-					it(opportunity.name + ' has a valid image format', function (done) {
+					it(opportunity.name + ' has a valid image', function (done) {
 						this.timeout(10000);
 						this.slow(1500);
 						got(opportunity.image)
