@@ -61,23 +61,12 @@ describe('swag-for-dev', function () {
 						});
 					}
 
-					it(opportunity.name + ' has a valid image', function (done) {
+					it(opportunity.name + ' has a valid image', async function () {
 						this.timeout(10000);
 						this.slow(1500);
-						got(opportunity.image)
-							.then(function (response) {
-								sharp(response.rawBody, {limitInputPixels: false})
-									.toBuffer()
-									.then(function () {
-										done();
-									})
-									.catch(function (err) {
-										done(err);
-									});
-							})
-							.catch(function (err) {
-								done(err);
-							});
+						const {rawBody} = await got(opportunity.image);
+						const buffer = await sharp(rawBody, {limitInputPixels: false}).toBuffer();
+						expect(buffer).to.exist.and.to.be.an.instanceof(Buffer);
 					});
 				});
 				/* eslint-enable max-nested-callbacks */
