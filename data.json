@@ -42,7 +42,7 @@
     "reference": "https://github.com/appsmithorg/appsmith/discussions/863",
     "image": "https://uploads-ssl.webflow.com/5f3d61ffeb42162389fc57d1/5f3f9e47c4fb412417828856_Frame%20555V.png",
     "dateAdded": "2020-10-01T00:00:00.000Z",
-    "tags": ["hacktoberfest", "stickers", "clothing"]
+    "tags": ["hacktoberfest", "stickers", "clothing", "expired"]
   },
   {
     "name": "Appwrite",
@@ -51,7 +51,7 @@
     "reference": "https://medium.com/appwrite-io/celebrate-hacktoberfest-20-with-appwrite-1356337e2159",
     "image": "https://miro.medium.com/max/700/1*PUyLJqc4AXHOmXwkH9FNKA.png",
     "dateAdded": "2020-09-21T18:32:00.000Z",
-    "tags": ["badges", "hacktoberfest", "stickers", "clothing"]
+    "tags": ["badges", "hacktoberfest", "stickers", "clothing", "expired"]
   },
   {
     "name": "Aqua",
@@ -69,7 +69,7 @@
     "reference": "https://blog.aquasec.com/hacktoberfest-2020-aqua-open-source",
     "image": "https://blog.aquasec.com/hs-fs/hubfs/Hacktoberfest%202.0%20Blog%20Image%20v4.jpg",
     "dateAdded": "2020-10-01T19:47:00.000Z",
-    "tags": ["hacktoberfest", "stickers", "clothing"]
+    "tags": ["hacktoberfest", "stickers", "clothing", "expired"]
   },
   {
     "name": "Aras",
@@ -114,7 +114,7 @@
     "reference": "https://camunda.com/hacktoberfest2020/",
     "image": "https://camunda.com/wp-content/uploads/2020/09/elementsnew-hf2.png",
     "dateAdded": "2020-09-30T16:56:00.000Z",
-    "tags": ["clothing", "hacktoberfest", "stickers"]
+    "tags": ["clothing", "hacktoberfest", "stickers", "expired"]
   },
   {
     "name": "CircleCI",
@@ -123,7 +123,7 @@
     "reference": "https://hacktoberfest.circleci.com",
     "image": "https://i.imgur.com/MkxWDck.jpg",
     "dateAdded": "2020-10-02T19:30:00.000Z",
-    "tags": ["clothing", "hacktoberfest", "stickers"]
+    "tags": ["clothing", "hacktoberfest", "stickers", "expired"]
   },
   {
     "name": "Codeship",
@@ -150,7 +150,7 @@
     "reference": "https://commercejs.com/docs/hacktoberfest/",
     "image": "https://images.ctfassets.net/u77gi3ejnmxq/32QPYCIi28peoxPpwxmiml/3a56eecf0eaa4ec682d78ff0f560bd82/Group_5.svg",
     "dateAdded": "2020-10-06T07:54:00.000Z",
-    "tags": ["hacktoberfest", "stickers", "badges"]
+    "tags": ["hacktoberfest", "stickers", "badges", "expired"]
   },
   {
     "name": "Container Solutions",
@@ -159,7 +159,7 @@
     "reference": "https://blog.container-solutions.com/container-solutions-does-hacktoberfest",
     "image": "https://blog.container-solutions.com/hubfs/hacktober2020.png",
     "dateAdded": "2020-10-15T06:40:00.000Z",
-    "tags": ["hacktoberfest", "clothing"]
+    "tags": ["hacktoberfest", "clothing", "expired"]
   },
   {
     "name": "Contentful",
@@ -177,7 +177,7 @@
     "reference": "https://www.datarequests.org/blog/hacktoberfest-2020/",
     "image": "https://www.datarequests.org/blog/hacktoberfest-2020/hacktoberfest-2020_hu28b1cba020bf43bc24568088e4124bec_241852_881x0_resize_q75_box.jpg",
     "dateAdded": "2020-10-01T19:00:00.000Z",
-    "tags": ["stickers", "clothing", "hacktoberfest"]
+    "tags": ["stickers", "clothing", "hacktoberfest", "expired"]
   },
   {
     "name": "Deque",
@@ -195,7 +195,7 @@
     "reference": "https://devfolio.co/blog/devfolio-hacktoberfest-2020/",
     "image": "https://pbs.twimg.com/media/EJfpSDTUUAIXtdP.jpg",
     "dateAdded": "2020-10-01T16:35:21.000Z",
-    "tags": ["stickers", "clothing", "hacktoberfest"]
+    "tags": ["stickers", "clothing", "hacktoberfest", "expired"]
   },
   {
     "name": "devRant",
@@ -222,7 +222,7 @@
     "reference": "https://blog.earthly.dev/hacktoberfest-2020/",
     "image": "https://static.wixstatic.com/media/2cf192_051ee9f4b18b42a49c5d3bb11d87e3f3~mv2.png/v1/fill/w_162,h_50,al_c,q_85,usm_0.66_1.00_0.01/Dark%20bg.webp",
     "dateAdded": "2020-10-01T16:38:00.000Z",
-    "tags": ["hacktoberfest","stickers"]
+    "tags": ["hacktoberfest", "stickers", "expired"]
   },
   {
     "name": "erxes",
@@ -276,7 +276,7 @@
     "reference": "https://hacktoberfest.digitalocean.com/",
     "image": "https://i.imgur.com/fAuXACg.png",
     "dateAdded": "2020-09-16T21:33:20.000Z",
-    "tags": ["clothing", "hacktoberfest", "stickers"]
+    "tags": ["clothing", "hacktoberfest", "stickers", "expired"]
   },
   {
     "name": "Hasura",
@@ -285,7 +285,7 @@
     "reference": "https://hasura.io/blog/hasura-joins-hacktoberfest-3rd-year-in-a-row/",
     "image": "https://hasura.io/blog/content/images/2020/09/Hacktoberfest-2020--5--1.png",
     "dateAdded": "2020-10-02T12:27:00.000Z",
-    "tags": ["clothing", "hacktoberfest", "stickers"]
+    "tags": ["clothing", "hacktoberfest", "stickers", "expired"]
   },
   {
     "name": "IHP",
@@ -312,7 +312,7 @@
     "reference": "https://engineering.indeedblog.com/indeed-hacktoberfest-2020/",
     "image": "https://rac4ou2q3g246tjk3rxqbt1c-wpengine.netdna-ssl.com/wp-content/uploads/2020/09/indeed_open_source_sweatshirt-1.png",
     "dateAdded": "2020-09-30T03:19:14.000Z",
-    "tags": ["clothing", "hacktoberfest"]
+    "tags": ["clothing", "hacktoberfest", "expired"]
   },
   {
     "name": "InfraCloud",
@@ -321,7 +321,7 @@
     "reference": "https://twitter.com/infracloudio/status/1310980826541092865",
     "image": "https://i.imgur.com/Wlfg3Xq.png",
     "dateAdded": "2020-09-25T19:20:42.000Z",
-    "tags": ["stickers", "clothing", "device", "hacktoberfest"]
+    "tags": ["stickers", "clothing", "device", "hacktoberfest", "expired"]
   },
   {
     "name": "IPFS",
@@ -348,7 +348,7 @@
     "reference": "https://www.jetbrains.com/lp/hacktoberfest-2020/#get-the-tools",
     "image": "https://i.imgur.com/Lee21sb.png",
     "dateAdded": "2020-09-18T21:33:20.000Z",
-    "tags": ["software", "hacktoberfest"]
+    "tags": ["software", "hacktoberfest", "expired"]
   },
   {
     "name": "JS Bin",
@@ -402,7 +402,7 @@
     "reference": "https://www.loginradius.com/engineering/blog/loginradius-supports-hacktoberfest-2020/",
     "image": "https://apidocs.lrcontent.com/images/swag_57515f6b4cc7487f27.76085248.png",
     "dateAdded": "2020-09-24T10:00:00.000Z",
-    "tags": ["clothing", "hacktoberfest"]
+    "tags": ["clothing", "hacktoberfest", "expired"]
   },
   {
     "name": "Magento + Adobe",
@@ -420,7 +420,7 @@
     "reference": "https://mattermost.com/blog/hacktoberfest-2020/",
     "image": "https://i.imgur.com/cGV35Cc.png",
     "dateAdded": "2020-09-29T14:17:39.000Z",
-    "tags": ["mug", "hacktoberfest"]
+    "tags": ["mug", "hacktoberfest", "expired"]
   },
   {
     "name": "MayaData",
@@ -429,7 +429,7 @@
     "reference": "https://blog.mayadata.io/celebrate-hacktoberfest-2020-open-source-with-mayadata",
     "image": "https://blog.mayadata.io/hs-fs/hubfs/Hacktoberfest%20desktop%20version.png?width=3001&name=Hacktoberfest%20desktop%20version.png",
     "dateAdded": "2020-09-30T03:19:14.000Z",
-    "tags": ["clothing", "hacktoberfest", "stickers"]
+    "tags": ["clothing", "hacktoberfest", "stickers", "expired"]
   },
   {
     "name": "Meedan",
@@ -438,7 +438,7 @@
     "reference": "https://meedan.com/hacktoberfest",
     "image": "https://i.imgur.com/4sxLMVP.jpg",
     "dateAdded": "2020-10-03T17:26:00.000Z",
-    "tags": ["clothing", "hacktoberfest", "stickers"]
+    "tags": ["clothing", "hacktoberfest", "stickers", "expired"]
   },
   {
     "name": "Microsoft",
@@ -501,7 +501,7 @@
     "reference": "https://openebs.io/blog/hacktoberfest-2020-contribute-to-openebs/",
     "image": "https://admin.mayadata.io/content/images/2020/09/With-OpenEBS--1-.png",
     "dateAdded": "2020-10-01T03:58:08.000Z",
-    "tags": ["hacktoberfest", "stickers"]
+    "tags": ["hacktoberfest", "stickers", "expired"]
   },
   {
     "name": "Operation Code",
@@ -510,7 +510,7 @@
     "reference": "https://github.com/OperationCode/START_HERE",
     "image": "https://operation-code-assets.s3.us-east-2.amazonaws.com/branding/logos/small-blue-logo.png",
     "dateAdded": "2020-10-01T16:31:00.000Z",
-    "tags": ["clothing", "hacktoberfest", "stickers"]
+    "tags": ["clothing", "hacktoberfest", "stickers", "expired"]
   },
   {
     "name": "opsdroid",
@@ -537,11 +537,7 @@
     "reference": "https://www.parity.io/hacktoberfest-2019-parity/",
     "image": "https://www.parity.io/content/images/2019/09/hacktoberfest2019_bag.jpg",
     "dateAdded": "2019-10-12T19:49:00.000Z",
-    "tags": [
-      "hacktoberfest",
-      "accessories",
-      "expired"
-    ]
+    "tags": ["hacktoberfest", "accessories", "expired"]
   },
   {
     "name": "Passenger",
@@ -640,7 +636,7 @@
     "reference": "https://specflow.org/contributer-package",
     "image": "https://i.imgur.com/o7utTj2.png",
     "dateAdded": "2020-10-02T14:39:45.000Z",
-    "tags": ["hacktoberfest", "stickers"]
+    "tags": ["hacktoberfest", "stickers", "expired"]
   },
   {
     "name": "Strawberry",
@@ -658,7 +654,7 @@
     "reference": "https://github.com/SwitchbladeBot/switchblade/issues/1203",
     "image": "https://user-images.githubusercontent.com/25179120/94884272-65aba600-0443-11eb-8374-d2c570ef385d.png",
     "dateAdded": "2020-10-02T12:46:00.000Z",
-    "tags": ["stickers", "hacktoberfest"]
+    "tags": ["stickers", "hacktoberfest", "expired"]
   },
   {
     "name": "Twilio",
@@ -685,11 +681,7 @@
     "reference": "https://umbraco.com/blog/hacktoberfest-2019/",
     "image": "https://i.imgur.com/tFqV0RC.jpg",
     "dateAdded": "2019-10-04T15:17:00.000Z",
-    "tags": [
-      "hacktoberfest",
-      "stickers",
-      "expired"
-    ]
+    "tags": ["hacktoberfest", "stickers", "expired"]
   },
   {
     "name": "Uno",
@@ -716,7 +708,7 @@
     "reference": "https://developer.nexmo.com/hacktoberfest",
     "image": "https://res.cloudinary.com/dsg3ucw55/image/upload/v1599671200/Logo_nstaby.svg",
     "dateAdded": "2020-10-01T10:15:00.000Z",
-    "tags": ["hacktoberfest", "clothing", "donation"]
+    "tags": ["hacktoberfest", "clothing", "donation", "expired"]
   },
   {
     "name": "Webiny",
@@ -725,7 +717,7 @@
     "reference": "https://dev.to/webiny/webiny-hacktoberfest-2020-49h4",
     "image": "https://res.cloudinary.com/practicaldev/image/fetch/s--FuHl5nFV--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/i/c9jfsatz14vkied629co.png",
     "dateAdded": "2020-09-30T16:35:00.000Z",
-    "tags": ["hacktoberfest", "clothing", "stickers"]
+    "tags": ["hacktoberfest", "clothing", "stickers", "expired"]
   },
   {
     "name": "WhatIsMyBrowser",
