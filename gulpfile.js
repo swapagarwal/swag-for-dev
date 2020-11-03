@@ -85,11 +85,6 @@ gulp.task('pug', async done => {
 		.on('end', () => done());
 });
 
-gulp.task('data', () => {
-	return gulp.src('data.json')
-		.pipe(gulp.dest('dist/'));
-});
-
 gulp.task('styl', () => {
 	return gulp.src('src/styl/index.styl')
 		.pipe(stylus({compress: true}))
