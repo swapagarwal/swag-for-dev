@@ -189,6 +189,15 @@
     "tags": ["clothing", "expired"]
   },
   {
+    "name": "DEV Podcast",
+    "difficulty": "easy",
+    "description": "Leave a review about DevNews OR DevDiscuss podcasts on Apple Podcasts and get a free pack of DEV stickers.",
+    "reference": "https://airtable.com/shr8oKAIMZgdYnBxx",
+    "image": "https://dev-to-uploads.s3.amazonaws.com/i/g6kt7ukqd9adhssdmoe9.png",
+    "dateAdded": "2020-10-01T17:18:00.000Z",
+    "tags": ["stickers"]
+  },
+  {
     "name": "Devfolio",
     "difficulty": "hard",
     "description": "Contribute 4 valid PRs to one of Devfolio's approved repositories, and receive some stickers! Top 50 contributors will also get a t-shirt. (Ships only to India)",
