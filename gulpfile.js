@@ -217,7 +217,7 @@ gulp.task('build', gulp.series(
 	'clean',
 	gulp.parallel(
 		gulp.series('swag-img', 'styl', 'cachebust', 'pug'), 'js', 'binaries'
-	), 'data'
+	)
 ));
 
 gulp.task('default', gulp.series('build', 'webserver', 'watch'));
