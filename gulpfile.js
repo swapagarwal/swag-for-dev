@@ -87,8 +87,8 @@ gulp.task('pug', async done => {
 
 gulp.task('data', () => {
 	return gulp.src('data.json')
-	.pipe(gulp.dest('dist/'));
-  });
+		.pipe(gulp.dest('dist/'));
+});
 
 gulp.task('styl', () => {
 	return gulp.src('src/styl/index.styl')
@@ -221,8 +221,8 @@ gulp.task('watch', () => {
 gulp.task('build', gulp.series(
 	'clean',
 	gulp.parallel(
-		gulp.series('swag-img', 'styl', 'cachebust', 'pug'), 'js','binaries'
-	),'data'
+		gulp.series('swag-img', 'styl', 'cachebust', 'pug'), 'js', 'binaries'
+	), 'data'
 ));
 
 gulp.task('default', gulp.series('build', 'webserver', 'watch'));
