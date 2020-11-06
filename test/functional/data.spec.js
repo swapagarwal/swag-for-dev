@@ -2,8 +2,10 @@ const got = require('got');
 const {expect} = require('chai');
 const parallel = require('mocha.parallel');
 const sharp = require('sharp');
+const Ajv = require('ajv');
 
 const data = require('../../data.json');
+const schema = require('../../schema.json');
 const LIMIT_PARALLEL_TESTS = 10;
 
 const requestOptions = {
@@ -23,6 +25,12 @@ function checkURL(url, head = false) {
 }
 
 describe('swag-for-dev', function () {
+	it('data.json has valid schema', function () {
+		const ajv = new Ajv();
+		const valid = ajv.validate(schema, data);
+		expect(valid).to.be.true;
+	});
+
 	it('data.json is valid', function () {
 		expect(data).to.be.an('Array');
 		data.forEach(datum => {
