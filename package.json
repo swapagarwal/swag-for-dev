@@ -14,6 +14,7 @@
     "url": "git+https://github.com/swapagarwal/swag-for-dev.git"
   },
   "dependencies": {
+    "ajv": "^6.12.6",
     "p-queue": "^6.6.1"
   },
   "devDependencies": {
