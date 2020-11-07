@@ -42,7 +42,7 @@
                         "description": "An explanation about the purpose of this instance.",
                         "default": "",
                         "examples": [],
-                        "pattern": "[easy|medium|hard]"
+                        "pattern": "easy|medium|hard"
                     },
                     "description": {
                         "$id": "#/items/anyOf/0/properties/description",
@@ -86,6 +86,7 @@
                         "default": [],
                         "examples": [],
                         "additionalItems": true,
+                        "minItems": 1,
                         "items": {
                             "$id": "#/items/anyOf/0/properties/tags/items",
                             "anyOf": [
