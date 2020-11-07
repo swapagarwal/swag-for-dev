@@ -14,12 +14,12 @@
     "url": "git+https://github.com/swapagarwal/swag-for-dev.git"
   },
   "dependencies": {
-    "ajv": "^6.12.6",
     "p-queue": "^6.6.1"
   },
   "devDependencies": {
     "@babel/core": "7.15.0",
     "@babel/preset-env": "7.12.1",
+    "ajv": "^6.12.6",
     "autoprefixer": "10.0.1",
     "chai": "4.3.4",
     "chalk": "4.1.0",
