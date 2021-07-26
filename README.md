@@ -1,7 +1,7 @@
 # swag-for-dev
 
 [![Build Status](https://github.com/swapagarwal/swag-for-dev/workflows/All%20the%20CI/badge.svg)](https://github.com/swapagarwal/swag-for-dev/actions)
-[![Renovate](https://badges.renovateapi.com/github/swapagarwal/swag-for-dev)](https://renovatebot.com/)
+[![Renovate](https://img.shields.io/badge/Renovate-swag--for--dev-green)](https://renovatebot.com/)
 [![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/xojs/xo)
 [![open issues](https://img.shields.io/github/issues/swapagarwal/swag-for-dev.svg)](https://github.com/swapagarwal/swag-for-dev/issues?q=is%3Aopen+is%3Aissue)
 [![closed pull requests](https://img.shields.io/github/issues-pr-closed/swapagarwal/swag-for-dev.svg)](htps://github.com/swapagarwal/swag-for-dev/pulls?q=is%3Apr+is%3Aclosed)
