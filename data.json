@@ -615,8 +615,8 @@
     "name": "Sense/Net",
     "difficulty": "easy",
     "description": "First 100 participants to make a pull request to any Sense/Net repo between October 1 and October 31 will receive a limited edition sensenet #hacktoberfest t-shirt.",
-    "reference": "https://community.sensenet.com/blog/2019/10/01/hacktoberfest-is-here",
-    "image": "https://community.sensenet.com/img/posts/hacktoberfest2019.png",
+    "reference": "https://www.sensenet.com/blog/2019-10-01-hacktoberfest-is-here",
+    "image": "https://raw.githubusercontent.com/SenseNet/sncom-resources/master/img/posts/hacktoberfest2019.png",
     "dateAdded": "2019-10-05T22:56:53.000Z",
     "tags": ["clothing", "hacktoberfest", "expired"]
   },
