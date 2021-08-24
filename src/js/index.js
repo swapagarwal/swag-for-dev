@@ -116,12 +116,12 @@ function handleTags() {
 	cards.forEach(element => {
 		const show = ((showExpired.checked || !element.classList.contains('tag-expired')) &&
 			tags.reduce((sho, tag) => sho || element.classList.contains(`tag-${tag}`), tags.length === 0)) &&
-      !(hideCompleted.checked && element.querySelector('.complete-notice').checked);
+			!(hideCompleted.checked && element.querySelector('.complete-notice').checked);
 
 		// Hide item if either
 		// - showExpired has been checked and current opportunity has expired
 		// - hideCompleted has been checked and current opportunity has been marked complete
-    if (!show) {
+		if (!show) {
 			element.classList.remove('visible');
 		}
 
