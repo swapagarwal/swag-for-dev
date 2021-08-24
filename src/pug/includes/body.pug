@@ -40,17 +40,24 @@
 					input(type="checkbox" id="expired")
 					label(for="expired") Show expired opportunities
 
+
+				.item.flex
+					input(type="checkbox" id="completed")
+					label(for="completed") Hide completed opportunities
+
 		.content.flex#content
 			- let difficulty;
-			each swag in swagList
+			each swag, index in swagList
 				- difficulty = swag.difficulty + ' difficulty';
 				- difficultyTitle = 'Difficulty: ' + swag.difficulty;
 				- expired = swag.tags.includes('expired');
+				- dateAdded = (new Date(swag.dateAdded)).getTime();
+				- inputId = `${swag.name}_${dateAdded}`.toLowerCase().replace(' ', '_');
 				div(
 					class="item " + (expired ? '' : 'visible ') + swag.difficulty + swag.tags.map(t => ` tag-${t}`).join('')
 					data-name=swag.name.toLowerCase()
 					data-difficulty=['easy','medium', 'hard'].indexOf(swag.difficulty)
-					data-dateadded=(new Date(swag.dateAdded)).getTime()
+					data-dateadded=dateAdded
 				)
 					div.flex.img-container
 						a(href=swag.reference target="_blank")
@@ -74,6 +81,9 @@
 						p.description!=swag.description
 						.flex
 							a.btn(href=swag.reference target="_blank") Check it out
+					label.task-complete(for=`task_complete_${index}` aria-label="Mark task as complete")
+						input.complete-notice(type="checkbox" id=`task_complete_${index}` data-task=inputId)
+						i
 
 			.no-results(style="display: none")
 				h3 Oh no! There are no opportunities that match those filters. 😯

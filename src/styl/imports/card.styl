@@ -2,6 +2,11 @@
 	width 100%
 	max-width 350px
 	display none
+	position relative
+
+	> div
+		opacity 1
+		transition opacity .6s ease-in-out
 
 	div.information
 		padding 3rem
@@ -115,3 +120,90 @@
 	&:hover
 		img
 			transform rotate(3deg) scale(1.05)
+		a
+			border none
+
+		label span
+			border-color transparent
+
+	&.checked-off
+		& > *:not(.task-complete)
+			opacity 0.4
+
+		&.fade-out
+			> *:not(.task-complete)
+				opacity 0
+
+
+	.task-complete
+		display flex
+		flex-direction row-reverse
+		position absolute
+		cursor pointer
+		width max-content
+		margin 1em
+		top 0
+		right 0
+		z-index 999
+
+		i
+			min-width 1.6em
+			border 2px solid primary-color
+			background white-color
+			align-items center
+			height 1.6em
+			border-radius 2px
+			transition all .25s cubic-bezier(.4,.0,.23,1)
+			box-sizing border-box
+			opacity .8
+
+			&:hover
+				opacity 1
+
+		input
+			position absolute
+			height 1.6em
+			width 1.6em
+			opacity 0
+			right 0
+			cursor pointer
+
+			&:checked + i
+				border .8em solid secondary-color
+				animation bounce 200ms cubic-bezier(.4,.0,.23,1)
+				opacity 1
+
+				&::before
+					content ''
+					position absolute
+					top .6em
+					right .8em
+					border-right 3px solid transparent
+					border-bottom 3px solid transparent
+					transform rotate(45deg)
+					transform-origin 0% 100%
+					animation checkbox .125s .25s cubic-bezier(.4,.0,.23,1) forwards
+
+@keyframes bounce
+	0%
+		transform scale(1)
+	33%
+		transform scale(.65)
+	100%
+		transform scale(1)
+
+@keyframes checkbox
+	0%
+		width 0
+		height 0
+		border-color #212121
+		transform translate3d(0,0,0) rotate(45deg)
+	33%
+		width .4em
+		height 0
+		transform translate3d(0,0,0) rotate(45deg)
+	100%
+		width .4em
+		height .9em
+		border-color #212121
+		transform translate3d(0,-.8em,0) rotate(45deg)
