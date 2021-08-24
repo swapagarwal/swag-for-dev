@@ -20,7 +20,7 @@
     "@babel/core": "7.12.3",
     "@babel/preset-env": "7.12.1",
     "autoprefixer": "10.0.1",
-    "chai": "4.2.0",
+    "chai": "4.3.4",
     "chalk": "4.1.0",
     "cross-env": "7.0.2",
     "del": "6.0.0",
@@ -44,7 +44,7 @@
     "merge-stream": "2.0.0",
     "mocha": "8.2.1",
     "mocha.parallel": "0.15.6",
-    "postcss": "8.1.6",
+    "postcss": "8.3.6",
     "sharp": "0.26.2",
     "xo": "0.30.0"
   },
