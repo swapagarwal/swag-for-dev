@@ -32,7 +32,7 @@
     "gulp-htmlmin": "5.0.1",
     "gulp-minify": "3.1.0",
     "gulp-postcss": "9.0.0",
-    "gulp-pug": "4.0.1",
+    "gulp-pug": "5.0.0",
     "gulp-responsive": "3.0.1",
     "gulp-rev": "9.0.0",
     "gulp-rev-delete-original": "0.2.3",
