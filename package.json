@@ -17,8 +17,8 @@
     "p-queue": "^6.6.1"
   },
   "devDependencies": {
-    "@babel/core": "7.12.3",
-    "@babel/preset-env": "7.12.1",
+    "@babel/core": "7.15.0",
+    "@babel/preset-env": "7.15.0",
     "autoprefixer": "10.0.1",
     "chai": "4.2.0",
     "chalk": "4.1.0",
