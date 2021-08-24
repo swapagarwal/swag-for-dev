@@ -508,7 +508,7 @@
     "difficulty": "hard",
     "description": "One merged PR to OpenEBS Repository and a change get exclusive and limited OpenEBS swag, OpenEBS will contact you to fill out a form to send a special edition swag designed for Hacktoberfest. Not only this but by becoming a top weekly contributor, you’ll be able to grab even more swag.",
     "reference": "https://openebs.io/blog/hacktoberfest-2020-contribute-to-openebs/",
-    "image": "https://admin.mayadata.io/content/images/2020/09/With-OpenEBS--1-.png",
+    "image": "https://raw.githubusercontent.com/cncf/artwork/ef31e1ee9503c134a13c6340ef2284d1b76ea38d/projects/openebs/stacked/color/openebs-stacked-color.png",
     "dateAdded": "2020-10-01T03:58:08.000Z",
     "tags": ["hacktoberfest", "stickers", "expired"]
   },
