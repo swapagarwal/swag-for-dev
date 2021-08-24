@@ -110,19 +110,25 @@ function handleSort() {
 
 function handleTags() {
 	const tags = selectr.getValue();
+	const cards = Array.from(contentElement.querySelectorAll('.item'));
+	let hasResults = false;
 
-	Array.from(contentElement.querySelectorAll('.item')).forEach(element => {
+	cards.forEach(element => {
 		const show = ((showExpired.checked || !element.classList.contains('tag-expired')) &&
 			tags.reduce((sho, tag) => sho || element.classList.contains(`tag-${tag}`), tags.length === 0)) &&
-			!(hideCompleted.checked && element.querySelector('.complete-notice').checked);
+      !(hideCompleted.checked && element.querySelector('.complete-notice').checked);
 
 		// Hide item if either
 		// - showExpired has been checked and current opportunity has expired
 		// - hideCompleted has been checked and current opportunity has been marked complete
-		if (!show) {
+    if (!show) {
 			element.classList.remove('visible');
 		}
+
+		hasResults = hasResults || element.classList.contains('visible');
 	});
+
+	document.querySelector('.no-results').style.display = hasResults ? 'none' : '';
 
 	search.set('tags', tags.join(' '));
 

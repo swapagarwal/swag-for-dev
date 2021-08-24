@@ -24,6 +24,11 @@
 			h1
 				font-size 2.4rem
 
+				a
+					color title-color
+					&:hover
+						color title-hover-color
+
 			.difficulty
 				height 3rem
 				width 3rem
@@ -105,6 +110,8 @@
 	.img-container
 		height 300px
 		width 100%
+		position relative
+		z-index 99
 		overflow hidden
 		border-radius 10px 10px 0 0
 		border 1px solid grey-color
