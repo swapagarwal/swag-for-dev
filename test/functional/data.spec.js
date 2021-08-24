@@ -31,18 +31,6 @@ describe('swag-for-dev', function () {
 		expect(valid).to.be.true;
 	});
 
-	it('data.json is valid', function () {
-		expect(data).to.be.an('Array');
-		data.forEach(datum => {
-			expect(datum.name).to.be.a('string');
-			expect(datum.difficulty).to.be.oneOf(['easy', 'medium', 'hard']);
-			expect(datum.reference).to.be.a('string');
-			expect(datum.image).to.be.a('string');
-			expect(datum.dateAdded).to.match(/20\d\d-[01]\d-[0-3]\dT\d\d:\d\d:\d\d\.000Z/);
-			expect(datum.tags).to.be.an('Array').with.length.greaterThan(0);
-		});
-	});
-
 	it('valid alphabetical order', function () {
 		const left = data.map(({name}) => name.toLowerCase());
 		const right = [...left].sort();
