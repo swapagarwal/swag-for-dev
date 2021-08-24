@@ -26,7 +26,7 @@ function checkURL(url, head = false) {
 
 describe('swag-for-dev', function () {
 	it('data.json has valid schema', function () {
-		const ajv = new Ajv();
+		const ajv = new Ajv(); 
 		const valid = ajv.validate(schema, data);
 		expect(valid).to.be.true;
 	});
