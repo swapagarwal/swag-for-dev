@@ -58,7 +58,8 @@
                         "title": "The reference schema",
                         "description": "An explanation about the purpose of this instance.",
                         "default": "",
-                        "examples": []
+                        "examples": [],
+                        "format": "uri"
                     },
                     "image": {
                         "$id": "#/items/anyOf/0/properties/image",
