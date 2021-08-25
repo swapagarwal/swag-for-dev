@@ -18,6 +18,15 @@
     "tags": ["stickers", "clothing", "hacktoberfest", "expired"]
   },
   {
+    "name": "ActiveLoop",
+    "difficulty": "medium",
+    "description": "Create one or more merged pull requests on the Activeloop Hub Repo.",
+    "reference": "https://www.activeloop.ai/hacktoberfest/?utm_source=hacktoberfestswag&utm_medium=web&utm_campaign=swaglist",
+    "image": "https://images.app.goo.gl/bv2ZDL8DkTF1wT857",
+    "dateAdded": "2021-08-25T18:42:37Z",
+    "tags": ["stickers", "clothing", "hacktoberfest", "headphones", "expired"]
+  },
+  {
     "name": "Alexa",
     "difficulty": "hard",
     "description": "Publish a skill, get a t-shirt and an Echo Spot (if 50 customers per month use your Display skill for the first three months after publication)! Earn a 2-pack of Echo Buttons if you publish a Gadgets skill!",
