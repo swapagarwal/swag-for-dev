@@ -2,8 +2,10 @@ const got = require('got');
 const {expect} = require('chai');
 const parallel = require('mocha.parallel');
 const sharp = require('sharp');
+const Ajv = require('ajv');
 
 const data = require('../../data.json');
+const schema = require('../../schema.json');
 const LIMIT_PARALLEL_TESTS = 10;
 
 const requestOptions = {
@@ -23,16 +25,10 @@ function checkURL(url, head = false) {
 }
 
 describe('swag-for-dev', function () {
-	it('data.json is valid', function () {
-		expect(data).to.be.an('Array');
-		data.forEach(datum => {
-			expect(datum.name).to.be.a('string');
-			expect(datum.difficulty).to.be.oneOf(['easy', 'medium', 'hard']);
-			expect(datum.reference).to.be.a('string');
-			expect(datum.image).to.be.a('string');
-			expect(datum.dateAdded).to.match(/20\d\d-[01]\d-[0-3]\dT\d\d:\d\d:\d\d\.000Z/);
-			expect(datum.tags).to.be.an('Array').with.length.greaterThan(0);
-		});
+	it('data.json has valid schema', function () {
+		const ajv = new Ajv();
+		const valid = ajv.validate(schema, data);
+		expect(valid).to.be.true;
 	});
 
 	it('valid alphabetical order', function () {
