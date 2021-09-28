@@ -1,6 +1,7 @@
 const got = require('got');
 const {expect} = require('chai');
 const parallel = require('mocha.parallel');
+const sharp = require('sharp');
 
 const data = require('../../data.json');
 const LIMIT_PARALLEL_TESTS = 10;
@@ -34,6 +35,12 @@ describe('swag-for-dev', function () {
 		});
 	});
 
+	it('valid alphabetical order', function () {
+		const left = data.map(({name}) => name.toLowerCase());
+		const right = [...left].sort();
+		expect(left).to.deep.equal(right);
+	});
+
 	const dataSlices = [];
 	for (let i = 0, {length} = data; i < length; i += LIMIT_PARALLEL_TESTS) {
 		dataSlices.push(data.slice(i, i + LIMIT_PARALLEL_TESTS));
@@ -46,16 +53,20 @@ describe('swag-for-dev', function () {
 			data.forEach(opportunity => {
 				/* eslint-disable max-nested-callbacks */
 				describe(opportunity.name, function () {
-					it(opportunity.name + ' has a valid reference', function () {
-						this.timeout(10000);
-						this.slow(1500);
-						return checkURL(opportunity.reference);
-					});
+					if (!opportunity.tags.includes('expired')) {
+						it(opportunity.name + ' has a valid reference', function () {
+							this.timeout(10000);
+							this.slow(1500);
+							return checkURL(opportunity.reference);
+						});
+					}
 
-					it(opportunity.name + ' has a valid image', function () {
+					it(opportunity.name + ' has a valid image', async function () {
 						this.timeout(10000);
 						this.slow(1500);
-						return checkURL(opportunity.image);
+						const {rawBody} = await got(opportunity.image);
+						const buffer = await sharp(rawBody, {limitInputPixels: false}).toBuffer();
+						expect(buffer).to.exist.and.to.be.an.instanceof(Buffer);
 					});
 				});
 				/* eslint-enable max-nested-callbacks */

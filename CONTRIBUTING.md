@@ -19,7 +19,7 @@ Thanks again, we hope to see you soon! ❤
 
 ## How do I add a Swag Opportunity?
 
-1. Open an issue [here](https://github.com/swapagarwal/swag-for-dev/issues/new?template=----new-swag-opportunity.md) or implement one [that already exists](https://github.com/swapagarwal/swag-for-dev/labels/%3Atada%3A%20new%20swag) 
+1. Open an issue [here](https://github.com/swapagarwal/swag-for-dev/issues/new?template=----new-swag-opportunity.md) or implement one [that already exists](https://github.com/swapagarwal/swag-for-dev/labels/%3Atada%3A%20new%20swag)
 2. Fork the repository
 3. Edit [`data.json`](data.json) to add your swag opportunity. Please keep it in alphabetical order, and use the date the issue was first posted.
 4. Open a pull request and fill out the entire template.
@@ -27,7 +27,7 @@ Thanks again, we hope to see you soon! ❤
 
 ## Let's start hacking!
 
-### Start one-click with Gitpod 
+### Start one-click with Gitpod
 
 Contribute to swag-for-dev using a fully featured online development environment that will automatically: clone the repo, install the dependencies and start the webserver.
 
@@ -79,7 +79,7 @@ git clone https://github.com/swapagarwal/swag-for-dev.git
     -v $(pwd)/data.json:/devswag/data.json \
     -v $(pwd)/src:/devswag/src \
     -v $(pwd)/gulpfile.js:/devswag/gulpfile.js \
-    -v $(pwd)/get-data.js:/devswag/get-data.js \
+    -v $(pwd)/scripts:/devswag/scripts \
     -v $(pwd)/dist:/devswag/dist \
     -u $(id -u):$(id -g) \
     -p 8000:8000 -p 35729:35729 devswag:dev
@@ -92,7 +92,7 @@ git clone https://github.com/swapagarwal/swag-for-dev.git
 > -v $(pwd)/data.json:/devswag/data.json \
 > -v $(pwd)/src:/devswag/src \
 > -v $(pwd)/gulpfile.js:/devswag/gulpfile.js \
-> -v $(pwd)/get-data.js:/devswag/get-data.js \
+> -v $(pwd)/scripts:/devswag/scripts \
 > -v $(pwd)/dist:/devswag/dist \
 > -u $(id -u):$(id -g) \
 > -p 8000:8000 -p 35729:35729 devswag:dev npm run'

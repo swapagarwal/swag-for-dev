@@ -1,6 +1,6 @@
 const swagImages = [];
 const fileNames = [];
-const swagList = require('./data.json').map(swag => {
+const swagList = require('../data.json').map(swag => {
 	// Generate unique filename
 	const extension = 'jpeg';
 	const fileBase = swag.name

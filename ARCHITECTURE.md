@@ -25,7 +25,7 @@ Each event displayed at devSwag.io is a JSON object like this:
     "tags": ["clothing"] // Tags to filter the event
 }
 ```
-Accompanying this is a script stored in `get-data.js` which extracts the image url of the event and generates unique filenames for each image file that will be downloaded later.
+Accompanying this is a script stored in `scripts/get-data.js` which extracts the image url of the event and generates unique filenames for each image file that will be downloaded later.
 
 ## Build Process
 

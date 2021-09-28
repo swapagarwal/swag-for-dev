@@ -1,4 +1,5 @@
 /* global Selectr */
+/* global tippy */
 
 /**
  * Initialising global variables
@@ -20,15 +21,64 @@ const filterInput = document.querySelector('#filter');
 const sortingInput = document.querySelector('#sorting');
 const tagsSelect = document.querySelector('#tags');
 const showExpired = document.querySelector('#expired');
+const hideCompleted = document.querySelector('#completed');
 
 const activateElements = els => Array.from(els).forEach(node => node.classList.add(ACTIVE_CLASS));
 const allowDifficultySelect = shouldAllow => sortingInput.querySelectorAll('.difficulty')
 	.forEach(node => {
 		node.disabled = !shouldAllow;
 	});
+const getCompletedItems = () => JSON.parse(localStorage.getItem('devswag:completed')) || [];
 
 let search;
 let selectr;
+
+function setCompleteAttr(element) {
+	const card = element.closest('.item');
+	card.classList.toggle('checked-off', element.checked);
+
+	setCompleteTooltip(element.parentElement, element.checked);
+}
+
+function setCompleteTooltip(element, complete) {
+	if (!window.tippy) {
+		return;
+	}
+
+	const tooltip = tippy(element);
+	const done = `Done${complete ? '!' : '?'}`;
+
+	tooltip.setContent(done);
+}
+
+function onCardTransitionEnd(event) {
+	if (hideCompleted.checked) {
+		const card = event.target.closest('.item');
+		card.classList.remove('fade-out');
+		handleTags();
+	}
+}
+
+function handleCompleteStatus(event) {
+	const stored = getCompletedItems();
+
+	let completed;
+
+	if (event.target.checked) {
+		completed = [...stored, event.target.dataset.task];
+	} else {
+		completed = [...stored].filter(x => x !== event.target.dataset.task);
+	}
+
+	localStorage.setItem('devswag:completed', JSON.stringify(completed));
+
+	setCompleteAttr(event.target);
+
+	if (hideCompleted.checked) {
+		const card = event.target.closest('.item');
+		card.classList.add('fade-out');
+	}
+}
 
 function handleDifficulty(difficultyChanged) {
 	const {value} = filterInput;
@@ -60,18 +110,31 @@ function handleSort() {
 
 function handleTags() {
 	const tags = selectr.getValue();
+	const cards = Array.from(contentElement.querySelectorAll('.item'));
+	let hasResults = false;
 
-	Array.from(contentElement.querySelectorAll('.item')).forEach(element => {
-		const show = (showExpired.checked || !element.classList.contains('tag-expired')) &&
-			tags.reduce((sho, tag) => sho || element.classList.contains(`tag-${tag}`), tags.length === 0);
+	cards.forEach(element => {
+		const show = ((showExpired.checked || !element.classList.contains('tag-expired')) &&
+			tags.reduce((sho, tag) => sho || element.classList.contains(`tag-${tag}`), tags.length === 0)) &&
+			!(hideCompleted.checked && element.querySelector('.complete-notice').checked);
+
+		// Hide item if either
+		// - showExpired has been checked and current opportunity has expired
+		// - hideCompleted has been checked and current opportunity has been marked complete
 		if (!show) {
 			element.classList.remove('visible');
 		}
+
+		hasResults = hasResults || element.classList.contains('visible');
 	});
+
+	document.querySelector('.no-results').style.display = hasResults ? 'none' : '';
 
 	search.set('tags', tags.join(' '));
 
 	search.set('expired', showExpired.checked || '');
+
+	search.set('hide-completed', hideCompleted.checked || '');
 }
 
 function updateUrl() {
@@ -105,6 +168,21 @@ function cascade(force = false) {
 	updateUrl();
 }
 
+function completedCardsInit(elements) {
+	const completedItems = getCompletedItems();
+
+	elements.forEach(element => {
+		element.checked = completedItems.some(item => item === element.dataset.task);
+
+		setCompleteAttr(element);
+
+		element.addEventListener('change', handleCompleteStatus);
+
+		const card = element.closest('.item');
+		card.querySelector('.information').addEventListener('transitionend', onCardTransitionEnd, false);
+	});
+}
+
 // Lazy load style sheets
 function lazyLoadStyleSheet() {
 	document.querySelectorAll('link[data-href]').forEach(link => {
@@ -130,12 +208,16 @@ window.addEventListener('DOMContentLoaded', () => {
 		}
 
 		showExpired.checked = search.get('expired') === 'true';
+		hideCompleted.checked = search.get('hide-completed') === 'true';
 	}
 
 	selectr.on('selectr.change', cascade);
 	filterInput.addEventListener('input', cascade);
 	sortingInput.addEventListener('input', cascade);
 	showExpired.addEventListener('change', cascade);
+	hideCompleted.addEventListener('change', cascade);
+
+	completedCardsInit(document.querySelectorAll('.complete-notice'));
 
 	cascade.call(window, true);
 });
