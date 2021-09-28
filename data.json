@@ -459,6 +459,15 @@
     "tags": ["clothing", "hacktoberfest", "expired"]
   },
   {
+    "name": "Milvus",
+    "difficulty": "medium",
+    "description": "By contributing to the Milvus project between October 1 and October 31 you’ll also earn some additional swag and prizes",
+    "reference": "https://milvus.io/hacktoberfest-2021/",
+    "image": "https://discuss.milvus.io/uploads/default/original/1X/5c631ee3348eebaa3ac11b066482117385e317ff.jpeg",
+    "dateAdded": "2021-09-28T16:02:05.000Z",
+    "tags": ["clothing", "hacktoberfest", "stickers", "keyboard", "drone"]
+  },
+  {
     "name": "NativeScript",
     "difficulty": "easy",
     "description": "Make your first contribution to the NativeScript community and win an awesome set of stickers. Among the stickers you will find a limited edition 'Contributor' sticker. ",
