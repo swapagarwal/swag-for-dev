@@ -173,11 +173,11 @@
   {
     "name": "Datenanfragen.de e. V.",
     "difficulty": "medium",
-    "description": "One merged PR gets at least 3 stickers (limited to 100 sets) and a chance at a limited edition t-shirt.",
-    "reference": "https://www.datarequests.org/blog/hacktoberfest-2020/",
-    "image": "https://www.datarequests.org/blog/hacktoberfest-2020/hacktoberfest-2020_hu28b1cba020bf43bc24568088e4124bec_241852_881x0_resize_q75_box.jpg",
+    "description": "One merged PR gets at least 3 stickers and a webcam cover (limited to 100 sets), and a chance at a limited edition t-shirt.",
+    "reference": "https://www.datarequests.org/blog/hacktoberfest-2021/",
+    "image": "https://www.datarequests.org/blog/hacktoberfest-2021/hacktoberfest-2021_hu77be03855cfd54e1009fe99bbff3710a_921885_784x0_resize_q75_h2_box_3.webp",
     "dateAdded": "2020-10-01T19:00:00.000Z",
-    "tags": ["stickers", "clothing", "hacktoberfest", "expired"]
+    "tags": ["stickers", "clothing", "hacktoberfest"]
   },
   {
     "name": "Deque",
