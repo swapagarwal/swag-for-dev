@@ -754,5 +754,14 @@
     "image": "http://devblogs.microsoft.com/xamarin/wp-content/uploads/sites/44/2019/10/medium_25686-c9dd82896c9e66bb82600f256444abe6.png",
     "dateAdded": "2019-10-08T21:00:00.000Z",
     "tags": ["stickers", "hacktoberfest", "clothing", "expired"]
+  },
+  {
+    "name": "CODEDAMN",
+    "difficulty": "easy",
+    "description": "T-SHIRT AND SWAGS to each and everyone of you who'll submit a successful pull request by completing a Frontend project!",
+    "reference": "https://github.com/codedamn/codedamn-hacktoberfest-projects/",
+    "image": "https://pbs.twimg.com/media/FAlpRoMVkAsSYfC?format=jpg&name=large",
+    "dateAdded": "2021-10-08T21:00:00.000Z",
+    "tags": ["stickers", "hacktoberfest", "clothing", "Coupons"]
   }
 ]
