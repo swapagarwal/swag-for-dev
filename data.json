@@ -108,6 +108,15 @@
     "tags": ["stickers", "expired"]
   },
   {
+    "name": "Bridgecrew",
+    "difficulty": "medium",
+    "description": "Participate in Hacktoberfest and submit 1 PR for stickers. Submit 2+ for Swag Pack containing stickers and t-shirt.",
+    "reference": "https://bridgecrew.io/blog/happy-hacktoberfest-2021/",
+    "image": "https://i.imgur.com/IgvrT8p.png",
+    "dateAdded": "2021-10-02T09:22:00.000Z",
+    "tags": ["clothing", "stickers", "hacktoberfest"]
+  },
+  {
     "name": "Camunda",
     "difficulty": "medium",
     "description": "Complete the Camunda challenge to earn a limited edition Camunda x Hacktoberfest 2021 t-shirt as well as nifty stickers.",
