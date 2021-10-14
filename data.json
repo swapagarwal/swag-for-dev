@@ -414,6 +414,15 @@
     "tags": ["clothing", "hacktoberfest", "expired"]
   },
   {
+    "name": "Linkerd",
+    "difficulty": "medium",
+    "description": "Adopting Linkerd in production",
+    "reference": "https://linkerd.io/dashboard/have-you-adopted-linkerd-let-us-know-and-we-ll-send-you-some-sweet-swag/",
+    "image": "https://pbs.twimg.com/media/FBihY25WYAcy-vd.jpg",
+    "dateAdded": "2021-10-14T18:57:51.000Z",
+    "tags": ["clothing", "stickers", "accessories"]
+  },
+  {
     "name": "LoginRadius",
     "difficulty": "easy",
     "description": "Submit a successful pull request for one of the issues with the hacktoberfest label in the LoginRadius GitHub organization and earn a T-shirt and Swags!",
