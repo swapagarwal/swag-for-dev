@@ -414,6 +414,15 @@
     "tags": ["clothing", "hacktoberfest", "expired"]
   },
   {
+    "name": "Liquibase",
+    "difficulty": "medium",
+    "description": "Earn minimum 50 points for your contributions and become eligible to earn swags.",
+    "reference": "https://www.liquibase.org/community/liquibase-legends",
+    "image": "https://www.liquibase.com/wp-content/uploads/sites/4/2021/10/liquibase-swag-scaled-1-580x296.jpg",
+    "dateAdded": "2019-10-18T01:09:04.000Z",
+    "tags": ["clothing", "stickers"]
+  },
+  {
     "name": "LoginRadius",
     "difficulty": "easy",
     "description": "Submit a successful pull request for one of the issues with the hacktoberfest label in the LoginRadius GitHub organization and earn a T-shirt and Swags!",
