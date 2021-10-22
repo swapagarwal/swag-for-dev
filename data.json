@@ -126,6 +126,15 @@
     "tags": ["clothing", "hacktoberfest", "stickers", "expired"]
   },
   {
+    "name": "Codedamn",
+    "difficulty": "medium",
+    "description": "Codedamn brings you a collection of projects to build in #hacktoberfest this year. Complete a single project, submit it on our GitHub repository, and win a t-shirt for free!(Ships only to India)",
+    "reference": "https://codedamn.com/projects",
+    "image": "https://i.ibb.co/PtdNZfw/Hacktober-Github-Banner.png",
+    "dateAdded": "2022-10-22T11:10:00.000Z",
+    "tags": ["clothing", "hacktoberfest"]
+  },
+  {
     "name": "Codeship",
     "difficulty": "medium",
     "description": "Submit 15 builds in 30 days, get stickers sent your way! (Ships only to North America and Europe)",
