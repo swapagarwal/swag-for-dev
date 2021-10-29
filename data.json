@@ -279,6 +279,15 @@
     "tags": ["clothing", "device", "expired"]
   },
   {
+    "name": "Google Cloud Platform, #MajulahGCP",
+    "difficulty": "medium",
+    "description": "Complete at least six quests on Qwiklabs to score a cool swag pack from Google Cloud Platform.",
+    "reference": "https://events.withgoogle.com/majulahgcp-challenge/",
+    "image": "https://lh3.googleusercontent.com/UVMtGvNPDHau9n21DNr7bUtQ3Mbw0V9WXxwWgYLDQOdl6tzYB4s9cIzqNzKHkAjCQWBJ3DOObP0FU_fZlcMmlJ-QzxOHQMbGDA=s0",
+    "dateAdded": "2021-10-29T10:22:22.000Z",
+    "tags": ["clothing", "stickers", "accessories", "bag"]
+  },
+  {
     "name": "Hacktoberfest 2020",
     "difficulty": "medium",
     "description": "Make four Pull Requests (PRs) between October 1–31 in any time zone, and earn a limited edition T-shirt!",
