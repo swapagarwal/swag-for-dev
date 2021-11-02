@@ -42,7 +42,7 @@
     "reference": "https://www.appsmith.com/blog/hacktoberfest-2021-let-the-contributions-begin",
     "image": "https://uploads-ssl.webflow.com/5f3d61ff1ad2bb54772d57de/614dbb8051b73a9c5ce9382e_Appsmith_HF2021%20(1)-p-1600.png",
     "dateAdded": "2021-09-28T00:00:00.000Z",
-    "tags": ["hacktoberfest"]
+    "tags": ["hacktoberfest", "expired"]
   },
   {
     "name": "Appwrite",
@@ -114,7 +114,7 @@
     "reference": "https://camunda.com/hacktoberfest2021/",
     "image": "https://camunda.com/wp-content/uploads/2021/09/Join-the-Fun-%E2%80%93-Hacktoberfest-2021-2-09012021.png",
     "dateAdded": "2021-09-28T15:56:00.000Z",
-    "tags": ["clothing", "hacktoberfest", "stickers"]
+    "tags": ["clothing", "hacktoberfest", "stickers", "expired"]
   },
   {
     "name": "CircleCI",
@@ -420,7 +420,7 @@
     "reference": "https://www.loginradius.com/blog/async/hacktoberfest-2021/",
     "image": "https://apidocs.lrcontent.com/images/swag_57515f6b4cc7487f27.76085248.png",
     "dateAdded": "2021-09-27T10:00:00.000Z",
-    "tags": ["clothing", "hacktoberfest"]
+    "tags": ["clothing", "hacktoberfest", "expired"]
   },
   {
     "name": "Magento + Adobe",
