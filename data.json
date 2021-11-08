@@ -126,6 +126,15 @@
     "tags": ["clothing", "hacktoberfest", "stickers", "expired"]
   },
   {
+    "name": "Cockroach Labs",
+    "difficulty": "medium",
+    "description": "Pass the final exam for the <a href='https://www.cockroachlabs.com/cockroach-university/'>Practical First Steps with CockroachDB course</a> and earn the swags.",
+    "reference": "https://www.tosscall.com/soloblog/506/Cockroach-University-Free-Course",
+    "image": "https://pbs.twimg.com/media/EfHh8vJWsAIuZI7.jpg",
+    "dateAdded": "2018-02-18T02:56:55.000Z",
+    "tags": ["clothing"]
+  },
+  {
     "name": "Codeship",
     "difficulty": "medium",
     "description": "Submit 15 builds in 30 days, get stickers sent your way! (Ships only to North America and Europe)",
