@@ -2,7 +2,7 @@
 /* global tippy */
 
 /**
- * Initialising global variables
+ * Initialising global variables " Testing
  */
 const ACTIVE_CLASS = 'visible';
 const sort = {
