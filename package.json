@@ -46,7 +46,7 @@
     "mocha.parallel": "0.15.6",
     "postcss": "8.3.6",
     "sharp": "0.29.1",
-    "xo": "0.30.0"
+    "xo": "0.49.0"
   },
   "scripts": {
     "start": "gulp",
