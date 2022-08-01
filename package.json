@@ -14,7 +14,7 @@
     "url": "git+https://github.com/swapagarwal/swag-for-dev.git"
   },
   "dependencies": {
-    "p-queue": "^6.6.1"
+    "p-queue": "^7.3.0"
   },
   "devDependencies": {
     "@babel/core": "7.15.0",
