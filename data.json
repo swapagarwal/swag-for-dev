@@ -468,6 +468,15 @@
     "tags": ["clothing", "hacktoberfest", "expired"]
   },
   {
+    "name": "MLH Global Hack Week October 2022",
+    "difficulty": "easy",
+    "description": "Register for the event to get a sticker swag. On checking-in for 3 sessions a bonus sticker swag will be added. Lucky ones can get a swag drop too.",
+    "reference": "https://organize.mlh.io/participants/events/7952-global-hack-week-october-2022",
+    "image": "https://drive.google.com/file/d/1hYDtA5bnW9xiPt-GxtCHsop35W5-2eMq/view?usp=sharing",
+    "dateAdded": "2022-09-22T18:00:29.000Z",
+    "tags": ["stickers"]
+  },
+  {
     "name": "NativeScript",
     "difficulty": "easy",
     "description": "Make your first contribution to the NativeScript community and win an awesome set of stickers. Among the stickers you will find a limited edition 'Contributor' sticker. ",
