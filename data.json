@@ -468,6 +468,15 @@
     "tags": ["clothing", "hacktoberfest", "expired"]
   },
   {
+   "name": "MLH Local Hack Day",
+    "difficulty": "medium",
+    "description": "There are daily challenges that you need to solve for one week. However, there are points for check-in and whoever completes a single challenge would be eligible for the swags.",
+    "reference": "https://organize.mlh.io/participants/events/6072-local-hack-day-build#:~:text=Local%20Hack%20Day%3A%20Build%20is,all%20that%20you've%20built.",
+    "image": "https://i.imgur.com/yeGJQbt.jpeg",
+    "dateAdded": "2022-10-01T01:16:05.000Z",
+    "tags": ["stickers", "hacktoberfest", "expired"] 
+  },
+  {
     "name": "NativeScript",
     "difficulty": "easy",
     "description": "Make your first contribution to the NativeScript community and win an awesome set of stickers. Among the stickers you will find a limited edition 'Contributor' sticker. ",
