@@ -754,5 +754,16 @@
     "image": "http://devblogs.microsoft.com/xamarin/wp-content/uploads/sites/44/2019/10/medium_25686-c9dd82896c9e66bb82600f256444abe6.png",
     "dateAdded": "2019-10-08T21:00:00.000Z",
     "tags": ["stickers", "hacktoberfest", "clothing", "expired"]
+  },
+  {
+    "name": "RedwoodJS",
+    "difficulty": "easy",
+    "description": "Make quality pull requests to issues that are 'approved item of work' to get stickers, t-shirt or even a trophy.",
+    "reference": "https://redwoodjs.com/stickers",
+    "image": "https://redwoodjs.com/stickers",
+    "dateAdded": "2022-10-02",
+    "tags": ["stickers"]
   }
+    
+  
 ]
