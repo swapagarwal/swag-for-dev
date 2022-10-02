@@ -754,5 +754,14 @@
     "image": "http://devblogs.microsoft.com/xamarin/wp-content/uploads/sites/44/2019/10/medium_25686-c9dd82896c9e66bb82600f256444abe6.png",
     "dateAdded": "2019-10-08T21:00:00.000Z",
     "tags": ["stickers", "hacktoberfest", "clothing", "expired"]
+  },
+  {
+    "name"  : "exres",
+    "difficulty" :"medium",
+    "description": "Create a Pull Request by making the code changes on your fork, and completing the Pull Request template to fully describe the issue and how you solved it. You must clearly explain the issue you are solving or link to an existing issue in the Repo. Make the Pull Request to the Develop branch in the Repo.Not the Main branch.",
+    "reference": "https://erxes.io/hubspot-alternative-erxes-swag",
+    "image":  "https://erxes.io/blog/default.jpg",
+    "dateAdded" : "2021-06-10T00:00:00.000Z",
+    "tags": ["opensource", "clothing", "swags", "expired"]
   }
 ]
