@@ -44,7 +44,7 @@
     "merge-stream": "2.0.0",
     "mocha": "9.1.2",
     "mocha.parallel": "0.15.6",
-    "postcss": "8.3.6",
+    "postcss": "8.4.17",
     "sharp": "0.29.1",
     "xo": "0.30.0"
   },
