@@ -20,11 +20,11 @@ Sign up at [https://upscri.be/67d2fa](https://upscri.be/67d2fa) to get notified 
 
 Welcome to the community, join us on Telegram at [https://t.me/devswag](https://t.me/devswag)!
 
-## Contents
+### Contents
 
 All swag opportunities can be found at [https://devswag.io/](https://devswag.io/) 😎
 
-## Contributing
+### Contributing
 
 Feel free to open an issue (or even better, send a Pull Request) for expanding this list. Instructions for doing so are available [here](https://github.com/swapagarwal/swag-for-dev/blob/master/CONTRIBUTING.md#how-do-i-add-a-swag-opportunity). Contributions are always welcomed!! 😄
 
@@ -37,11 +37,11 @@ As this project is community-driven, it'd be really helpful if you comment on th
 
 Please consider donating to cover up our hosting costs. 🙏
 
-## Development
+### Development
 
 ### Online one-click setup
 
-Contribute to swag-for-dev using a fully featured online development environment that will automatically: clone the repo, install the dependencies and start the webserver.
+Contributing to swag-for-dev using a fully featured online development environment that will automatically: clone the repo, install the dependencies and start the webserver.
 
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/swapagarwal/swag-for-dev)
 
