@@ -36,6 +36,15 @@
     "tags": ["stickers"]
   },
   {
+    "name": "Hacktoberfest 2022",
+    "difficulty": "medium",
+    "description": "Have 4 pull/merge requests accepted between October 1 and October 31 to complete Hacktoberfest",
+    "reference": "https://hacktoberfest.com/participation/",
+    "image": "https://imgur.com/a/hdrQfrz",
+    "dateAdded": "2022-10-03T00:00:00.000Z",
+    "tags": ["hacktoberfest", "expired"]
+  },
+  {
     "name": "Appsmith",
     "difficulty": "medium",
     "description": "Submit more than 4 PRs and invite others to contribute to Appsmith repository will get a special prize",
