@@ -261,6 +261,15 @@
     "tags": ["clothing", "stickers"]
   },
   {
+    "name": "(GWH)Global Hack Week October",
+    "difficulty": "easy",
+    "description": "Attend a minimum of 4 events, complete a few challenges and fill up the swag form to receive stickers.",
+    "reference": "https://ghw.mlh.io/oct/",
+    "image": "https://uploads-ssl.webflow.com/62865e59eaf6960ed5d6a8f8/6337493709496d2a93a27b5d_Oct-generic_slideshow%20(1).png",
+    "dateAdded": "2022-10-07T12:20:09.000Z",
+    "tags": [ "stickers"]
+  },
+  {
     "name": "Globo",
     "difficulty": "medium",
     "description": "Contribute 2 pull requests to Globo's Open Source Projects. At least 1 PR has to be accepted and you have to be in the first 200 registrants to get an exclusive t-shirt. Delivery only in Brazil.",
