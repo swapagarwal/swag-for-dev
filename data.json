@@ -279,13 +279,13 @@
     "tags": ["clothing", "device", "expired"]
   },
   {
-    "name": "Hacktoberfest 2020",
+    "name": "Hacktoberfest 2022",
     "difficulty": "medium",
     "description": "Make four Pull Requests (PRs) between October 1–31 in any time zone, and earn a limited edition T-shirt!",
     "reference": "https://hacktoberfest.digitalocean.com/",
     "image": "https://i.imgur.com/fAuXACg.png",
     "dateAdded": "2020-09-16T21:33:20.000Z",
-    "tags": ["clothing", "hacktoberfest", "stickers", "expired"]
+    "tags": ["clothing", "hacktoberfest", "stickers", "active"]
   },
   {
     "name": "Hasura",
