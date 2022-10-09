@@ -290,7 +290,7 @@
    {
     "name": "Hacktoberfest 2022",
     "difficulty": "medium",
-    "description": "Have 4 pull/merge requests accepted between October 1 and October 31 to complete Hacktoberfest",
+    "description": "Make four Pull Requests (PRs) between October 1–31 in any time zone, and earn a limited edition T-shirt or plant a tree!!",
     "reference": "https://hacktoberfest.com",
     "image": "https://github.blog/wp-content/uploads/2022/10/hacktoberfestbanner.jpeg?resize=1200%2C630",
     "dateAdded": "2022-10-03T00:00:00.000Z",
