@@ -261,6 +261,15 @@
     "tags": ["clothing", "stickers"]
   },
   {
+    "name": "Geeksforgeeks",
+    "difficulty": "easy",
+    "description": "Crack the Coding Interview With GeeksforGeeks Weekly Contest Series and win exciting prizes like GFG swags, Access to GFG Premium, T-Shirt, GFG Course coupons",
+    "reference": "https://www.geeksforgeeks.org/crack-the-coding-interview-with-geeksforgeeks-weekly-contest-series/",
+    "image": "https://media.geeksforgeeks.org/wp-content/uploads/20220914125448/GetGFGSwagsinExchangeofGeekBits.gif",
+    "dateAdded": "2022-10-01T11:42:09.000Z",
+    "tags": ["clothing", "stickers", "active"]
+  },
+  {
     "name": "Globo",
     "difficulty": "medium",
     "description": "Contribute 2 pull requests to Globo's Open Source Projects. At least 1 PR has to be accepted and you have to be in the first 200 registrants to get an exclusive t-shirt. Delivery only in Brazil.",
