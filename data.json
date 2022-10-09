@@ -450,6 +450,15 @@
     "tags": ["clothing", "hacktoberfest", "stickers", "expired"]
   },
   {
+    "name": "Medusajs",
+    "difficulty": "medium",
+    "description": "Contribute a valid PR to Medusajs repo during the month of October for a Medusa t-shirt, Medusa hoodie, and sticker pack.",
+    "reference": "https://medusajs.com/blog/medusa-hackathon/",
+    "image": "https://medusajs.com/images/hackathon-banner-large-purple%20(1).jpg",
+    "dateAdded": "2022-10-09T08:51:00.000Z",
+    "tags": ["clothing", "hacktoberfest", "stickers", "donation"]
+  },
+  {
     "name": "Meedan",
     "difficulty": "easy",
     "description": "Contribute a valid PR to any Meedan repo during the month of October for a limited edition t-shirt, mask, and sticker pack.",
