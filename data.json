@@ -288,6 +288,15 @@
     "tags": ["clothing", "hacktoberfest", "stickers", "expired"]
   },
   {
+    "name": "Hashnode",
+    "difficulty": "easy",
+    "description": "Write blogs on tracks provided by <a href='https://www.commclassroom.org/hashnode'>Comclassroom</a> and get a chance to win a Hashnode t-shirt and a grand prizes like devices, cash every month. Write blogs on <a href='https://hashnode.com'>Hashnode</a> with the tag #BlogsWithCC to get into the raffle of the month.",
+    "reference": "https://www.commclassroom.org/hashnode",
+    "image": "https://d1aettbyeyfilo.cloudfront.net/kunalk/29590480_1658759012EyhEvent.webp",
+    "dateAdded": "2022-10-09T09:20:00.000Z",
+    "tags": ["clothing", "stickers", "device", "accessories", "donation"]
+  },
+  {
     "name": "Hasura",
     "difficulty": "medium",
     "description": "Submit a PR to Hasura's <a href='https://github.com/hasura/graphql-engine'>GraphQL Engine</a> or <a href='https://github.com/hasura/learn-graphql'>GraphQL Tutorial Series</a> during Hacktoberfest 2020 and get a Hasura sticker pack. For all valid PRs closing an issue with the label hacktoberfest, a secret swag will be sent.",
