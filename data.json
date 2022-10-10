@@ -270,6 +270,15 @@
     "tags": ["clothing", "stickers", "active"]
   },
   {
+    "name": "Geeksforgeeks-Problem of the Day Challenge",
+    "difficulty": "easy",
+    "description": "Solve one problem based on Data Structures and Algorithms every day and win exciting prizes like GFG swags, Access to GFG Premium, T-Shirt, GFG Course coupons",
+    "reference": "https://practice.geeksforgeeks.org/problem-of-the-day",
+    "image": "https://media.geeksforgeeks.org/wp-content/uploads/20210821152141/ProblemofTheDayDeveloptheHabitofCoding.png",
+    "dateAdded": "2022-10-01T11:42:09.000Z",
+    "tags": ["clothing", "stickers", "active"]
+  },
+  {
     "name": "Globo",
     "difficulty": "medium",
     "description": "Contribute 2 pull requests to Globo's Open Source Projects. At least 1 PR has to be accepted and you have to be in the first 200 registrants to get an exclusive t-shirt. Delivery only in Brazil.",
