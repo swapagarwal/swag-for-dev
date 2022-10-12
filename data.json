@@ -319,7 +319,16 @@
     "difficulty": "medium",
     "description": "Complete two or more pull requests in October 2020 to any open source Indeed repository and be eligible to earn an Open Source sweatshirt! (Shipping only to US)",
     "reference": "https://engineering.indeedblog.com/indeed-hacktoberfest-2020/",
-    "image": "https://rac4ou2q3g246tjk3rxqbt1c-wpengine.netdna-ssl.com/wp-content/uploads/2020/09/indeed_open_source_sweatshirt-1.png",
+    "image": "https://www.influxdata.com/wp-content/uploads/influxdata_full_navy.svg",
+    "dateAdded": "2022-10-12T11:21:00.000Z",
+    "tags": ["clothing"]
+  },
+    {
+    "name": "InfluxData",
+    "difficulty": "medium",
+    "description": "Pass the Getting Started with InfluxDB Challenge and get a free pair of InfluxDB socks.",
+    "reference": "https://www.influxdata.com/influxdb-challenge/",
+    "image": "",
     "dateAdded": "2020-09-30T03:19:14.000Z",
     "tags": ["clothing", "hacktoberfest", "expired"]
   },
