@@ -675,6 +675,15 @@
     "tags": ["stickers", "hacktoberfest", "expired"]
   },
   {
+    "name": "System76",
+    "difficulty": "easy",
+    "description": "Send a self-addressed stamped envelope (at least 3.5×5″ to prevent folding) to your local address below and get a set of free stickers.",
+    "reference": "https://system76.com/merch/stickers",
+    "image": "https://images.prismic.io/system76/fbb24542-5ef8-43b0-8276-7f9e7ff34a02_stickers.jpg?auto=compress,format",
+    "dateAdded": "2022-11-18T16:30:00.000Z",
+    "tags": ["stickers"]
+  },
+  {
     "name": "Twilio",
     "difficulty": "medium",
     "description": "Complete the first set of objectives in <a href='https://twilio.com/quest'>Twilio Quest</a> and get a Twilio Quest t-shirt right to your door.",
