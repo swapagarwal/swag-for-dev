@@ -754,5 +754,14 @@
     "image": "http://devblogs.microsoft.com/xamarin/wp-content/uploads/sites/44/2019/10/medium_25686-c9dd82896c9e66bb82600f256444abe6.png",
     "dateAdded": "2019-10-08T21:00:00.000Z",
     "tags": ["stickers", "hacktoberfest", "clothing", "expired"]
+  },
+  {
+    "name": "Developer nation",
+    "difficulty": "easy",
+    "description": "Subscribe the newsletter and get a free T-shirt of developer nation",
+    "reference": "https://content.developernation.net/developer-nation-newsletter-signup-form",
+    "image": "https://content.developernation.net/hs-fs/hubfs/405f1878-3cbe-4bf8-bfe7-dc5df491a61e.jpeg?width=450&height=450&name=405f1878-3cbe-4bf8-bfe7-dc5df491a61e.jpeg",
+    "dateAdded": "2022-10-10T14:16:00.000Z",
+    "tags": ["clothing"]
   }
 ]
