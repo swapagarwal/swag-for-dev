@@ -594,6 +594,15 @@
     "tags": ["stickers"]
   },
   {
+    "name": "RoboPlay",
+    "difficulty": "medium",
+    "description": "Create a Discord bot or plugin with Robo.js - score 3 months of hosting, a month of Nitro, and a special edition T-Shirt!",
+    "reference": "https://blog.waveplay.com/hacktoberfest-with-robo-js-build-bots-or-plugins-win-cool-prizes/",
+    "image": "https://static.waveplay.com/promo/hacktoberfest23-tshirt.png",
+    "dateAdded": "2023-10-05T06:47:30.000Z",
+    "tags": ["clothing", "digital", "hacktoberfest", "hosting"]
+  },
+  {
     "name": "Saleor",
     "difficulty": "medium",
     "description": "Solve any of the issues with the Hacktoberfest label and win a pair of Saleor Socks.",
