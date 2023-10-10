@@ -234,6 +234,15 @@
     "tags": ["accessories", "stickers"]
   },
   {
+    "name": "DocsGPT",
+    "difficulty": "medium",
+    "description": "Contribute to code and make a valid PR or improve the documentation by fixing the existing documentation or by creating a guide or improve the UI/UX or design a new feature.",
+    "reference": "https://github.com/arc53/DocsGPT/blob/main/HACKTOBERFEST.md",
+    "image": "https://res.cloudinary.com/daily-now/image/upload/f_auto,q_auto/v1/posts/3149030bec9354a75cbfefedfdb5b650",
+    "dateAdded": "2023-10-11T12:37:23.000Z",
+    "tags": ["clothing", "hacktoberfest"]
+  },
+  {
     "name": "Docusaurus",
     "difficulty": "hard",
     "description": "Get swag for migrating websites to Docusaurus 2!",
