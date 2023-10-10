@@ -756,6 +756,15 @@
     "tags": ["hacktoberfest", "clothing", "stickers", "expired"]
   },
   {
+    "name": "WeMakeDevs",
+    "difficulty": "medium",
+    "description": "Get a chance to win exciting prizes such as MacBooks, iPhones, iPads and more every month by writing blogs on hashnode with the tag #wemakedevs.",
+    "reference": "https://wemakedevs.org/events/hashnode",
+    "image": "https://wemakedevs.org/static/media/Special-Prize.b457ce5626272993cc47.png",
+    "dateAdded": "2023-10-10T16:35:00.000Z",
+    "tags": ["blogging", "clothing", "stickers", "accessories"]
+  },
+  {
     "name": "WhatIsMyBrowser",
     "difficulty": "easy",
     "description": "Send an API request, get some sweet vinyl laptop stickers!",
