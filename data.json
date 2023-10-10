@@ -45,6 +45,15 @@
     "tags": ["stickers"]
   },
   {
+    "name": "Amplication",
+    "difficulty": "medium",
+    "description": "Participate in the Amplication hacktoberfest challenge! Propose an app idea, get it approved, and build it using Amplication. Then, craft a clear and comprehensive tutorial or video walkthrough. Post it on your preferred platform and submit a PR link to the official repo. Get a chance to have your tutorial featured and receive a T-shirt for your effort!",
+    "reference": "https://github.com/amplication/amplication/issues/7028",
+    "image": "https://user-images.githubusercontent.com/53312820/270923023-9a626620-0395-4663-9179-567fec391176.png",
+    "dateAdded": "2023-10-05",
+    "tags": ["hacktoberfest", "clothing"]
+  },
+  {
     "name": "Appsmith",
     "difficulty": "medium",
     "description": "Submit more than 4 PRs and invite others to contribute to Appsmith repository will get a special prize",
