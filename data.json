@@ -144,6 +144,15 @@
     "tags": ["clothing", "hacktoberfest", "stickers", "expired"]
   },
   {
+    "name": "Cloudinary",
+    "difficulty": "medium",
+    "description": "Make 4 or more valid PRs in cloudinary Libaries and SDKs with 'hacktoberfest' label.",
+    "reference": "https://cloudinary.com/blog/hacktoberfest-celebrate-open-source-sdks",
+    "image": "https://res.cloudinary.com/cloudinary-marketing/images/c_fill,w_890/f_auto,q_auto/v1695766573/Blog-hackoberfest_recap/Blog-hackoberfest_recap-jpg",
+    "dateAdded": "2023-10-10T22:30:00.000Z",
+    "tags": ["clothing", "hacktoberfest", "stickers"]
+  },
+  {
     "name": "Codeship",
     "difficulty": "medium",
     "description": "Submit 15 builds in 30 days, get stickers sent your way! (Ships only to North America and Europe)",
