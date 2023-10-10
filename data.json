@@ -197,6 +197,15 @@
     "dateAdded": "2020-10-01T19:00:00.000Z",
     "tags": ["stickers", "clothing", "hacktoberfest", "expired"]
   },
+   {
+    "name": "Depths",
+    "difficulty": "Medium",
+    "description": "Read 2 curated learning resources daily, share insights in comments, and complete 30 days of challenges for rewards, including a Hacktoberfest merged PR.",
+    "reference": "https://www.depths.so/30daysopensource",
+    "image": "https://pbs.twimg.com/media/F05qhWUakAERL9w?format=jpg&name=900x900",
+    "dateAdded": "2023-10-10T14:30:00.000Z.",
+    "tags": ["clothing", "stickers", "hacktoberfest" ]
+  },
   {
     "name": "Deque",
     "difficulty": "easy",
