@@ -42,7 +42,7 @@
     "reference": "https://alligator.io/write-for-us/",
     "image": "https://pbs.twimg.com/profile_images/622200384455442432/hf71Z251_400x400.png",
     "dateAdded": "2018-12-09T07:08:00.000Z",
-    "tags": ["stickers"]
+    "tags": ["expired", "stickers"]
   },
   {
     "name": "Amplication",
@@ -240,7 +240,7 @@
     "reference": "https://github.com/facebook/docusaurus/issues/1834",
     "image": "https://i.imgur.com/IbZCAWP.jpg",
     "dateAdded": "2019-10-27T12:37:23.000Z",
-    "tags": ["stickers"]
+    "tags": ["expired", "stickers"]
   },
   {
     "name": "Earthly",
@@ -258,7 +258,7 @@
     "reference": "https://erxes.io/hubspot-alternative-erxes-swag",
     "image": "https://i.imgur.com/pE9Ml3v.png",
     "dateAdded": "2020-03-16T05:06:00.000Z",
-    "tags": ["clothing", "stickers"]
+    "tags": ["expired", "clothing", "stickers"]
   },
   {
     "name": "Flutterwave",
@@ -384,7 +384,7 @@
     "reference": "https://jina.ai/blog/swag/",
     "image": "https://jina.ai/assets/images/blog/swag/advocate_swag.jpg",
     "dateAdded": "2021-07-23T16:38:20.000Z",
-    "tags": ["accessories", "stickers"]
+    "tags": ["expired", "accessories", "stickers"]
   },
   {
     "name": "JS Bin",
@@ -393,7 +393,7 @@
     "reference": "https://jsbin.com/help/stickers/",
     "image": "https://pbs.twimg.com/media/CccQEDjUUAE9wRO.jpg",
     "dateAdded": "2018-11-28T16:42:00.000Z",
-    "tags": ["stickers"]
+    "tags": ["expired", "stickers"]
   },
   {
     "name": "Kong",
@@ -492,7 +492,7 @@
     "reference": "https://www.nativescript.org/blog/nativescript-first-time-contribution-contest-continued-and-extended",
     "image": "https://i.imgur.com/iiWLHhk.png",
     "dateAdded": "2019-01-25T06:45:29.000Z",
-    "tags": ["stickers"]
+    "tags": ["expired", "stickers"]
   },
   {
     "name": "Netlify",
@@ -519,7 +519,7 @@
     "reference": "http://blog.npmjs.org/post/129827785565/npm-weekly-30-package-scripts-for-tooling-a",
     "image": "https://i.imgur.com/saUR1HM.jpg",
     "dateAdded": "2018-02-18T06:03:12.000Z",
-    "tags": ["clothing"]
+    "tags": ["expired", "clothing"]
   },
   {
     "name": "OpenBazaar",
@@ -555,7 +555,7 @@
     "reference": "https://medium.com/opsdroid/contributor-sticker-packs-738058ceda59",
     "image": "https://cdn-images-1.medium.com/max/1000/1*xSLmpInA96k9beqMwFPjZQ.jpeg",
     "dateAdded": "2019-01-04T22:12:15.000Z",
-    "tags": ["stickers"]
+    "tags": ["expired", "stickers"]
   },
   {
     "name": "Pagerduty",
