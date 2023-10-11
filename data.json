@@ -469,11 +469,11 @@
   },
     {
     "name": "MindsDB",
-    "difficulty": "easy",
-    "description": "For every 5 points of contribution you make you will receive one entry into the draw for a T-shirt, Stickers or Deep Learning Laptop powered by the NVIDIA RTX 3080 Max-Q GPU. Pre-installed with TensorFlow, PyTorch, CUDA, cuDNN and more.",
+    "difficulty": "medium",
+    "description": "For every contribution you make you will receive credits that can be exchanged for SWAG. For every 100 credits earned, you will receive one entry into the draw for the 2 awesome Razer Blade 16 laptops!",
     "reference": "https://mindsdb.com/hacktoberfest/",
     "image": "https://mindsdb.com/wp-content/uploads/2021/10/hacktober-mindsdb-logo.svg",
-    "dateAdded": "2021-10-08T14:16:05.000Z",
+    "dateAdded": "2023-10-11T14:16:05.000Z",
     "tags": ["clothing", "hacktoberfest", "stickers", "device"]
   },
   {
