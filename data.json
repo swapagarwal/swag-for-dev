@@ -207,6 +207,15 @@
     "tags": ["stickers", "clothing", "hacktoberfest", "expired"]
   },
   {
+    "name": "Depths",
+    "difficulty": "medium",
+    "description": "Read 2 curated learning resources daily, share insights in comments, complete 30 days of challenges for rewards and a Hacktoberfest merged PR, get a free Depths swag!",
+    "reference": "https://www.depths.so/30daysopensource",
+    "image": "https://i.imgur.com/Y0jfdwN.png",
+    "dateAdded": "2023-10-10T16:45:00.000Z",
+    "tags": ["clothing", "stickers", "hacktoberfest"]
+  },
+  {
     "name": "Deque",
     "difficulty": "easy",
     "description": "Answer Deque's feedback survey once you're logged in to get an awesome t-shirt.",
