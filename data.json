@@ -23,8 +23,8 @@
     "description": "Earn an Appwrite hoodie and stickers for contributing only one accepted and merged PR!",
     "reference": "https://appwrite.io/blog/post/hacktoberfest-2023",
     "image": "https://appwrite.io/images/blog/hacktoberfest2023-swag.png",
-    "dateAdded": "2023-10-05",
-    "tags": ["clothing", "stickers"]
+    "dateAdded": "2023-10-05T15:29:00.000Z",
+    "tags": ["hacktoberfest", "clothing", "stickers"]
   },
   {
     "name": "Alexa",
