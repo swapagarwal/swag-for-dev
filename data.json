@@ -208,7 +208,7 @@
   },
   {
     "name": "Depths",
-    "difficulty": "Medium",
+    "difficulty": "medium",
     "description": "Read 2 curated learning resources daily, share insights in comments, and complete 30 days of challenges for rewards, including a Hacktoberfest merged PR.",
     "reference": "https://www.depths.so/30daysopensource",
     "image": "https://pbs.twimg.com/media/F05qhWUakAERL9w?format=jpg&name=900x900",
