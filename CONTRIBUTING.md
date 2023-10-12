@@ -39,12 +39,17 @@ Contribute to swag-for-dev using a fully featured online development environment
 ```sh
 git clone https://github.com/swapagarwal/swag-for-dev.git
 ```
-1. Ensure you are running an up-to-date version of [Node.js](https://nodejs.org/en/download/package-manager/) on your machine, and that you have `npm` installed.
+1. Ensure you are running an up-to-date version of [Node.js](https://nodejs.org/en/download/package-manager/) on your machine, that you have `npm` and [`nvm` installed](https://github.com/nvm-sh/nvm).
 1. Open a terminal in the `swag-for-dev` directory. Type
     ```sh
-    npm install
+    nvm install
+    nvm use
     ```
-    into the terminal to install the dependencies. To start the webserver, type
+    in to the terminal to select and install the right NodeJS version. Then proceed with
+    ```sh
+    npm ci
+    ```
+    into to install the dependencies. To start the webserver, type
     ```sh
     npm start
     ```
