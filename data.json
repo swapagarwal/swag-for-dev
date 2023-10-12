@@ -641,7 +641,7 @@
   {
     "name": "RoboPlay",
     "difficulty": "medium",
-    "description": "Create a Discord bot or plugin with Robo.js - stand a chance to win 3 months of hosting, a month of Nitro, and a special edition T-Shirt! (Awarded to selected entries only)",
+    "description": "Create a Discord bot or plugin with Robo.js - score 3 months of hosting, a month of Nitro, and a special edition T-Shirt!",
     "reference": "https://blog.waveplay.com/hacktoberfest-with-robo-js-build-bots-or-plugins-win-cool-prizes/",
     "image": "https://static.waveplay.com/promo/hacktoberfest23-tshirt.png",
     "dateAdded": "2023-10-05T06:47:30.000Z",
