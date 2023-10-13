@@ -513,6 +513,15 @@
     "tags": ["clothing", "hacktoberfest", "expired"]
   },
   {
+    "name": "MindsDB",
+    "difficulty": "medium",
+    "description": "For every contribution you make you will receive credits that can be exchanged for SWAG. For every 100 credits earned, you will receive one entry into the draw for the 2 awesome Razer Blade 16 laptops!",
+    "reference": "https://mindsdb.com/hacktoberfest/",
+    "image": "https://uploads-ssl.webflow.com/62a8755be8bcc86e6307def8/6511149d9743715ec236e5c1_unisex-premium-sweatshirt-white-front-63dbb021a2957.jpg",
+    "dateAdded": "2023-10-11T14:16:05.000Z",
+    "tags": ["clothing", "hacktoberfest", "stickers", "device"]
+  },
+  {
     "name": "NativeScript",
     "difficulty": "easy",
     "description": "Make your first contribution to the NativeScript community and win an awesome set of stickers. Among the stickers you will find a limited edition 'Contributor' sticker. ",
