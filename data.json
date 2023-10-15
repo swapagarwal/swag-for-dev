@@ -18,6 +18,15 @@
     "tags": ["stickers", "clothing", "hacktoberfest", "expired"]
   },
   {
+    "name": "Airbyte",
+    "difficulty": "medium",
+    "description": "Build or improve upon the Airbyte connectors to win cash prizes up to USD 4000. You could also write quickstart guides to win cash prize up to USD 3000. All contributions will be rewarded with credits which can be redemeed in the Airbyte Swag store for free swag.",
+    "reference": "https://airbyte.com/blog/announcing-airbytes-tentaculous-hacktoberfest-2023-edition",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkRoqkXtCv9s_kq_9XBSBq5W8WAiVOoJinl65e9A1EoveKqroANhAeW0va79uKzwSl0MM&usqp=CAU",
+    "dateAdded": "2023-10-15T15:29:00.000Z",
+    "tags": ["clothing", "hacktoberfest"]
+  },
+  {
     "name": "Alexa",
     "difficulty": "hard",
     "description": "Publish a skill, get a t-shirt and an Echo Spot (if 50 customers per month use your Display skill for the first three months after publication)! Earn a 2-pack of Echo Buttons if you publish a Gadgets skill!",
