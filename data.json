@@ -18,6 +18,15 @@
     "tags": ["stickers", "clothing", "hacktoberfest", "expired"]
   },
   {
+    "name": "Akto",
+    "difficulty": "medium",
+    "description": "Contribute to the Akto project in GitHub and earn cool merchandise! Simply make 1 merged PR to receive an Akto sticker, 2 merged PRs for an Akto t-shirt, 3 merged PRs for an Akto hoodie, and if you make 4 or more merged PRs, you'll get all of the above rewards.",
+    "reference": "https://www.akto.io/akto-hacktoberfest-2023",
+    "image": "https://i.imgur.com/nsLUWeG.png",
+    "dateAdded": "2023-10-15T11:09:00.000Z",
+    "tags": ["clothing", "stickers", "hacktoberfest"]
+  },
+  {
     "name": "Alexa",
     "difficulty": "hard",
     "description": "Publish a skill, get a t-shirt and an Echo Spot (if 50 customers per month use your Display skill for the first three months after publication)! Earn a 2-pack of Echo Buttons if you publish a Gadgets skill!",
