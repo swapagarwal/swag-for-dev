@@ -135,6 +135,15 @@
     "tags": ["clothing", "hacktoberfest", "stickers", "expired"]
   },
   {
+    "name": "Chimoney",
+    "difficulty": "medium",
+    "description": "$25 for each merged PR, exclusive Chimoney T-shirts and Stickers",
+    "reference": "https://chimoney.io/blogs/Join-Chimoney-for-hacktoberfest-2023",
+    "image": "https://scontent.fktm16-1.fna.fbcdn.net/v/t39.30808-6/369260657_686347523541655_327390536064697071_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=5f2048&_nc_ohc=Lw8cpFdo1RwAX9EIccz&_nc_ht=scontent.fktm16-1.fna&oh=00_AfAShqc1HQxaAFwdD7dvFvTyn5X9kj3ilaKhXm6mo8cgWQ&oe=65303D25",
+    "dateAdded": "2023-10-15T15:56:00.000Z",
+    "tags": ["clothing", "hacktoberfest", "stickers"]
+  },
+  {
     "name": "CircleCI",
     "difficulty": "medium",
     "description": "Participate in #Orbtoberfest with CircleCI and claim limited edition swag! 1 - 3 pull requests: Limited-Edition Sticker, 4+ pull requests: Limited-Edition T-shirt",
