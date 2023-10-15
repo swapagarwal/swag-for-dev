@@ -18,6 +18,15 @@
     "tags": ["stickers", "clothing", "hacktoberfest", "expired"]
   },
   {
+    "name": "Airbyte",
+    "difficulty": "medium",
+    "description": "Build or improve upon the Airbyte connectors to win cash prizes up to USD 4000. You could also write quickstart guides to win cash prize up to USD 3000. All contributions will be rewarded with credits which can be redemeed in the Airbyte Swag store for free swag.",
+    "reference": "https://airbyte.com/blog/announcing-airbytes-tentaculous-hacktoberfest-2023-edition",
+    "image": "https://i.imgur.com/lCirQFS.jpg",
+    "dateAdded": "2023-10-15T15:29:00.000Z",
+    "tags": ["clothing", "hacktoberfest"]
+  },
+  {
     "name": "Akto",
     "difficulty": "medium",
     "description": "Contribute to the Akto project in GitHub and earn cool merchandise! Simply make 1 merged PR to receive an Akto sticker, 2 merged PRs for an Akto t-shirt, 3 merged PRs for an Akto hoodie, and if you make 4 or more merged PRs, you'll get all of the above rewards.",
