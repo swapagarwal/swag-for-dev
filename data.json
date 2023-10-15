@@ -144,6 +144,15 @@
     "tags": ["clothing", "hacktoberfest", "stickers", "expired"]
   },
   {
+    "name": "Chimoney",
+    "difficulty": "medium",
+    "description": "Earn $25 per merged PR, get Chimoney Hacktoberfest swag with up to 4 merged PRs, and have a shot at winning up to $100 and more Hacktoberfest rewards with a total of 4 merged PRs.",
+    "reference": "https://chimoney.io/blogs/Join-Chimoney-for-hacktoberfest-2023",
+    "image": "https://i.imgur.com/2aSn0wn.jpg",
+    "dateAdded": "2023-10-15T15:56:00.000Z",
+    "tags": ["clothing", "hacktoberfest", "stickers"]
+  },
+  {
     "name": "CircleCI",
     "difficulty": "medium",
     "description": "Participate in #Orbtoberfest with CircleCI and claim limited edition swag! 1 - 3 pull requests: Limited-Edition Sticker, 4+ pull requests: Limited-Edition T-shirt",
