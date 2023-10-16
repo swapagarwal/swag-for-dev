@@ -13,9 +13,14 @@ const requestOptions = {
 
 function checkURL(url, head = false) {
 	const method = head ? 'head' : 'get';
-	return got[method](url, requestOptions).then(({statusCode}) => {
+	return got[method](url, requestOptions).then(({statusCode, headers}) => {
 		if (!head && statusCode === 403) {
 			return checkURL(url, true);
+		}
+
+		// Skip check for cloudflare protected websites
+		if (headers['cf-mitigated']) {
+			return;
 		}
 
 		expect(statusCode).to.equal(200);
