@@ -17,10 +17,12 @@ function checkURL(url, head = false) {
 		if (!head && statusCode === 403) {
 			return checkURL(url, true);
 		}
-		// skip check for cloudflare protected websites
+
+		// Skip check for cloudflare protected websites
 		if (headers['cf-mitigated']) {
 			return;
 		}
+
 		expect(statusCode).to.equal(200);
 	});
 }
