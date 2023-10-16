@@ -198,6 +198,15 @@
     "tags": ["accessories", "stickers", "hacktoberfest", "clothing", "expired"]
   },
   {
+    "name": "Collectiv",
+    "difficulty": "medium",
+    "description": "Give 4 PRs in any repo with >100 stars participating in hacktoberfest with the help of Collectiv and after they have been successfully merged, you are eligible for the merch!!",
+    "reference": "https://chat.collectivai.com/hacktober-fest",
+    "image": "https://framerusercontent.com/images/jc3Lc08XJF1WUJr4V3VY6A0XnE.png?scale-down-to=512",
+    "dataAdded": "2023-10-15T03:35:00.000Z",
+    "tags": ["hacktoberfest","clothing","stickers"]
+  },
+  {
     "name": "CommerceJS",
     "difficulty": "medium",
     "description": "Submit one pull request to Commerce.js to win more cool swag!",
