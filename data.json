@@ -216,6 +216,15 @@
     "tags": ["hacktoberfest", "stickers", "badges", "expired"]
   },
   {
+    "name": "Configu",
+    "difficulty": "medium",
+    "description": "Contribute to the Configu project in GitHub and earn cool merchandise! Simply make 1 merged PR to receive an Configu Socks, and if you make 2 or more merged PRs, you'll get Configu Limited-Edition Hacktoberfest T-shirt.",
+    "reference": "https://github.com/configu/configu/issues/266",
+    "image": "https://i.imgur.com/CAUyGmH.png",
+    "dateAdded": "2023-10-18T00:53:00.000Z",
+    "tags": ["clothing", "hacktoberfest"]
+  },
+  {
     "name": "Container Solutions",
     "difficulty": "easy",
     "description": "Submit one successful pull request to any of Container Solutions' repos to win a free t-shirt!",
