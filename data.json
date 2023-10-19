@@ -880,5 +880,14 @@
     "image": "http://devblogs.microsoft.com/xamarin/wp-content/uploads/sites/44/2019/10/medium_25686-c9dd82896c9e66bb82600f256444abe6.png",
     "dateAdded": "2019-10-08T21:00:00.000Z",
     "tags": ["stickers", "hacktoberfest", "clothing", "expired"]
+  },
+  {
+    "name": "Appblock",
+    "difficulty": "medium",
+    "description": "Make quality PR and Each accepted PR will win ₹5,000.",
+    "reference": "https://hacktoberfest.appblocks.com/",
+    "image": "https://hacktoberfest.appblocks.com/assets/images/icons/banner-right.png",
+    "dateAdded": "2023-09-01",
+    "tags": ["cash", "hacktoberfest"]
   }
 ]
