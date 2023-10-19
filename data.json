@@ -880,5 +880,14 @@
     "image": "http://devblogs.microsoft.com/xamarin/wp-content/uploads/sites/44/2019/10/medium_25686-c9dd82896c9e66bb82600f256444abe6.png",
     "dateAdded": "2019-10-08T21:00:00.000Z",
     "tags": ["stickers", "hacktoberfest", "clothing", "expired"]
+  },
+  {
+    "name": "Haystack",
+    "difficulty": "medium",
+    "description": "Pick issues tagged with 'hacktoberfest', and receive an exclusive swag package!",
+    "reference": "https://twitter.com/bilgeycl/status/1712135054489444650",
+    "image": "https://pbs.twimg.com/media/F8KrgPMWMAADhA5?format=jpg&name=4096x4096",
+    "dateAdded": "2023-10-11T21:41:00",
+    "tags": [ "hacktoberfest", "stickers"]
   }
 ]
