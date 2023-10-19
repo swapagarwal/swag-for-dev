@@ -880,5 +880,14 @@
     "image": "http://devblogs.microsoft.com/xamarin/wp-content/uploads/sites/44/2019/10/medium_25686-c9dd82896c9e66bb82600f256444abe6.png",
     "dateAdded": "2019-10-08T21:00:00.000Z",
     "tags": ["stickers", "hacktoberfest", "clothing", "expired"]
+  },
+  {
+    "name": "Loft labs",
+    "difficulty": "medium",
+    "description": "One merged PR gets you a Loft exclusive T-shirt, two merged PRs get you a brand new Keyboard, and four or more merged PRs get you a Loft Exclusive Swag Box.",
+    "reference": "https://loft.sh/blog/celebrating-the-spirit-of-hacktoberfest-at-loft/",
+    "image": "https://loft.sh/images/blog/posts/loft-hacktoberfest-2023.png?nf_resize=fit&w=1040",
+    "dateAdded": "2023-10-09",
+    "tags": ["stickers", "hacktoberfest", "clothing", "Gadgets"]
   }
 ]
