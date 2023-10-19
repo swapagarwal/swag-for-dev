@@ -881,4 +881,13 @@
     "dateAdded": "2019-10-08T21:00:00.000Z",
     "tags": ["stickers", "hacktoberfest", "clothing", "expired"]
   }
+  {
+    "name": "GeeksForGeeks",
+    "difficulty": "Easy",
+    "description": "Solve daily practice problems and earn 1 coin daily and 8 coins for every 8 day streaks.",
+    "reference": "https://practice.geeksforgeeks.org/problem-of-the-day",
+    "image": "https://practice.geeksforgeeks.org/_next/image?url=https%3A%2F%2Fmedia.geeksforgeeks.org%2Fimg-practice%2Fhoodie-1673437930.png&w=640&q=75",
+    "dateAdded": "2023-10-19T18:35:00.000Z",
+    "tags": ["coupons", "hoodies", "t-shirt", "Bag","Ongoing"]
+  }
 ]
