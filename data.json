@@ -880,5 +880,14 @@
     "image": "http://devblogs.microsoft.com/xamarin/wp-content/uploads/sites/44/2019/10/medium_25686-c9dd82896c9e66bb82600f256444abe6.png",
     "dateAdded": "2019-10-08T21:00:00.000Z",
     "tags": ["stickers", "hacktoberfest", "clothing", "expired"]
+  },
+  {
+    "name": "Javascript Today",
+    "difficulty": "easy",
+    "description": "The first 50 to get  pull-request merged will get a free Javascript Today sticker.",
+    "reference": "https://blog.javascripttoday.com/blog/hacktoberfest-2023/",
+    "image": "https://blog.javascripttoday.com/images/js-sticker_huf9b3fe00cbf25c8d083637b504fc9160_321265_300x0_resize_q100_h2_box_3.webp",
+    "dateAdded": "2023-09-14T21:00:00.000Z",
+    "tags": ["stickers", "hacktoberfest"]
   }
 ]
