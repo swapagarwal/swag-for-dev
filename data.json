@@ -880,5 +880,14 @@
     "image": "http://devblogs.microsoft.com/xamarin/wp-content/uploads/sites/44/2019/10/medium_25686-c9dd82896c9e66bb82600f256444abe6.png",
     "dateAdded": "2019-10-08T21:00:00.000Z",
     "tags": ["stickers", "hacktoberfest", "clothing", "expired"]
+  },
+  {
+    "name": "InterLedger",
+    "difficulty": "medium",
+    "description": "Solve a issue with Hacktoberfest lable and earn some great swags.",
+    "reference": "https://community.interledger.org/devcer/hacktoberfest-with-interledger-join-the-open-payments-movement-3bkd",
+    "image": "https://pbs.twimg.com/profile_images/1382071864642527232/NcsZ8ZoB_400x400.png",
+    "dateAdded": "2023-09-29T07:58:28",
+    "tags": [ "hacktoberfest", "clothing"]
   }
 ]
