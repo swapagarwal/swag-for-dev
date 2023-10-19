@@ -880,5 +880,14 @@
     "image": "http://devblogs.microsoft.com/xamarin/wp-content/uploads/sites/44/2019/10/medium_25686-c9dd82896c9e66bb82600f256444abe6.png",
     "dateAdded": "2019-10-08T21:00:00.000Z",
     "tags": ["stickers", "hacktoberfest", "clothing", "expired"]
+  },
+  {
+    "name": "Covalent",
+    "difficulty": "medium",
+    "description": "Merge PRs according to the difficulty level and get cash prizes accordingly, for each PR.",
+    "reference": "https://www.covalent.xyz/covalent-x-hacktoberfest-2023/",
+    "image": "https://www.covalent.xyz/wp-content/uploads/2023/10/Group-8-1-1024x492.png",
+    "dateAdded": "2023-10-03T15:37:42",
+    "tags": ["cash", "hacktoberfest"]
   }
 ]
