@@ -126,6 +126,15 @@
     "tags": ["clothing", "hacktoberfest", "expired", "stickers"]
   },
   {
+    "name": "Ballerina",
+    "difficulty": "medium",
+    "description": "Contribute to Ballerina and earn exciting swags! For code contributions, you earn an Amazon voucher and stickers. But no worries if you're more into low/no-code contributions - you can still earn Amazon vouchers, a sleek t-shirt, and cool stickers! Start contributing and boost your swag collections!",
+    "reference": "https://ballerina.io/hacktoberfest/",
+    "image": "https://i.imgur.com/eWNeZVU.png",
+    "dateAdded": "2023-10-18T17:36:00.000Z",
+    "tags": ["clothing", "hacktoberfest", "stickers"]
+  },
+  {
     "name": "Blockstack",
     "difficulty": "medium",
     "description": "Complete the Zero-to-DApp tutorial and submit your sample to App.co to get a T-shirt!",
