@@ -880,5 +880,14 @@
     "image": "http://devblogs.microsoft.com/xamarin/wp-content/uploads/sites/44/2019/10/medium_25686-c9dd82896c9e66bb82600f256444abe6.png",
     "dateAdded": "2019-10-08T21:00:00.000Z",
     "tags": ["stickers", "hacktoberfest", "clothing", "expired"]
+  },
+  {
+    "name": "dyrector.io",
+    "difficulty": "medium",
+    "description": "Contribute to dyrector.io and win swags (clothing and stickers)",
+    "reference": "https://github.com/dyrector-io/dyrectorio/issues/837",
+    "image": "https://user-images.githubusercontent.com/94902512/271589870-ba078011-6d14-418d-9008-029397234325.png",
+    "dateAdded": "2023-09-30T18:19:00+05:45",
+    "tags": ["stickers", "hacktoberfest", "clothing"]
   }
 ]
