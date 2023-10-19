@@ -828,6 +828,15 @@
     "tags": ["hacktoberfest", "stickers", "expired"]
   },
   {
+    "name": "Umbraco",
+    "difficulty": "medium",
+    "description": "Have at least 1 contribution approved on any Umbraco repository or Umbraco Package repository or on the Hacktoberfest Activity Log.",
+    "reference": "https://umbraco.com/blog/umbraco-hacktoberfest-2023/",
+    "image": "https://umbraco.com/media/yjchye0t/seb_hacktoberfest.jpeg?quality=80",
+    "dateAdded": "2023-10-19T20:27:00.000Z",
+    "tags": ["hacktoberfest", "clothing"]
+  },
+  {
     "name": "Uno",
     "difficulty": "easy",
     "description": "Register for the Hacktoberfest event. Share your contact details. Make a pull-request to improve the projects code or documentation.",
