@@ -369,6 +369,15 @@
     "tags": ["clothing", "stickers"]
   },
   {
+    "name": "GeksForGeeks",
+    "difficulty": "Medium",
+    "description": "Solve daily coding problems and earn coins,and redeem swags",
+    "reference": "https://practice.geeksforgeeks.org/problem-of-the-day",
+    "image": "https://practice.geeksforgeeks.org/_next/image?url=https%3A%2F%2Fmedia.geeksforgeeks.org%2Fimg-practice%2Fhoodie-1673437930.png&w=640&q=75",
+    "dateAdded": "2023-10-20T12:13:09.000Z",
+    "tags": ["clothing", "Bag","Coupons"]
+  },
+  {
     "name": "Globo",
     "difficulty": "medium",
     "description": "Contribute 2 pull requests to Globo's Open Source Projects. At least 1 PR has to be accepted and you have to be in the first 200 registrants to get an exclusive t-shirt. Delivery only in Brazil.",
