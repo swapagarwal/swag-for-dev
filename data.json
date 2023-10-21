@@ -828,6 +828,15 @@
     "tags": ["clothing", "hacktoberfest", "expired"]
   },
   {
+    "name": "ServiceNow",
+    "difficulty": "medium",
+    "description": "Contribute to ServiceNow and make 4 PRs in any of the projects marked with the topic hacktoberfest, and win a CreatorCon T-shirt and ServiceNow merchandise.",
+    "reference": "https://developer.servicenow.com/blog.do?p=/post/hacktoberfest-2023/",
+    "image": "https://i.imgur.com/JmCvlSP.png",
+    "dateAdded": "2023-10-21T22:18:00.000Z",
+    "tags": ["clothing", "hacktoberfest"]
+  },
+  {
     "name": "SimbaChain",
     "difficulty": "easy",
     "description": "Register and get a free Blockchain Shirt! Pick your side, <code>eth_listtransactions = _yep</code> vs <code>eth_listtransactions = _nope</code>. Ships only to USA.",
