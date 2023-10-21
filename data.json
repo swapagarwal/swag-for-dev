@@ -297,6 +297,15 @@
     "tags": ["stickers", "clothing", "hacktoberfest", "expired"]
   },
   {
+    "name": "devICT",
+    "difficulty": "medium",
+    "description": "Pick an Issue, Make a change, Submit a PR, Enjoy your swag.",
+    "reference": "https://hacktoberfest.devict.org/",
+    "image": "http://devblogs.microsoft.com/xamarin/wp-content/uploads/sites/44/2019/10/medium_25686-c9dd82896c9e66bb82600f256444abe6.png",
+    "dateAdded": "2023-10-21T21:00:00.000Z",
+    "tags": ["stickers", "hacktoberfest"]
+  },
+  {
     "name": "devRant",
     "difficulty": "medium",
     "description": "Get 30 ++'s on a single rant you've posted to devRant to receive 3 free high-quality devRant laptop stickers! Or post an awesome rant that gets over 750 ++'s to receive a free devRant squishy stress ball!",
