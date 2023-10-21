@@ -333,6 +333,15 @@
     "tags": ["hacktoberfest", "stickers", "expired"]
   },
   {
+    "name": "EMQ",
+    "difficulty": "medium",
+    "description": "Contribute 1 PR to plant a tree. Get 2 or more PRs accepted in eKuiper or NanoMQ projects and get a t-shirt.",
+    "reference": "https://www.emqx.com/en/blog/join-hacktoberfest-2023-with-emq-community",
+    "image": "https://assets.emqx.com/images/0e6daa6b0affa50b7bd46e0c2c469f25.jpg?imageMogr2/thumbnail/1520x684",
+    "dateAdded": "2020-10-20T02:50:00.000Z",
+    "tags": ["hacktoberfest", "clothing"]
+  },
+  {
     "name": "erxes",
     "difficulty": "medium",
     "description": "Submit 3 issues and 1 PR to their <a href='https://github.com/erxes/erxes'>repo</a>, get a t-shirt and stickers.",
@@ -835,6 +844,15 @@
     "image": "https://i.imgur.com/tFqV0RC.jpg",
     "dateAdded": "2019-10-04T15:17:00.000Z",
     "tags": ["hacktoberfest", "stickers", "expired"]
+  },
+  {
+    "name": "Umbraco",
+    "difficulty": "medium",
+    "description": "Have at least 1 contribution approved on any Umbraco repository or Umbraco Package repository or on the Hacktoberfest Activity Log to get an awesome t-shirt.",
+    "reference": "https://umbraco.com/blog/umbraco-hacktoberfest-2023/",
+    "image": "https://umbraco.com/media/yjchye0t/seb_hacktoberfest.jpeg?quality=80",
+    "dateAdded": "2023-10-19T20:27:00.000Z",
+    "tags": ["hacktoberfest", "clothing"]
   },
   {
     "name": "Uno",
