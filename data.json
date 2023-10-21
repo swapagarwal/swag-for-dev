@@ -962,4 +962,12 @@
     "dateAdded": "2019-10-08T21:00:00.000Z",
     "tags": ["stickers", "hacktoberfest", "clothing", "expired"]
   }
+   {
+    "name": "Modtoberfest",
+    "difficulty": "medium",
+    "description": " Pull requests that have been scripted or automated. Pull requests that hurt a project more than they help. Pull requests that focus on minor changes such as whitespace, indenting, typos, and optimizing assets and images",
+    "reference": "https://modtoberfest.com/",
+    "dateAdded": "2023-10-15T15:56:00.000Z",
+    "tags": ["stickers", "pins"]
+  },
 ]
