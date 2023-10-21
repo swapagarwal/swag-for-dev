@@ -882,6 +882,15 @@
     "tags": ["hacktoberfest", "stickers", "expired"]
   },
   {
+    "name": "Swirl",
+    "difficulty": "medium",
+    "description": "Contribute to Swirl this Hacktoberfest and you could get gift cards up to $100.",
+    "reference": "https://swirl.today/contribute-to-swirl-this-hacktoberfest-2023/",
+    "image": "https://i.imgur.com/GNfrX9h.png",
+    "dateAdded": "2023-10-21T22:31:00.000Z",
+    "tags": ["giftcards", "hacktoberfest"]
+  },
+  {
     "name": "Switchblade",
     "difficulty": "medium",
     "description": "Open three valid pull requests on a <a href='https://github.com/SwitchbladeBot/switchblade'>Switchblade repository</a> to receive three fancy Switchblade stickers and a \"thank you\" letter.",
