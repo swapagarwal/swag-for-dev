@@ -900,6 +900,15 @@
     "tags": ["stickers", "hacktoberfest", "expired"]
   },
   {
+    "name": "Trigger.dev",
+    "difficulty": "medium",
+    "description": "Submit PRs in trigger.dev or job-showcase repos and earn points to redeem for swag.",
+    "reference": "https://trigger.dev/hacktoberfest",
+    "image": "https://i.imgur.com/kelNqon.jpg",
+    "dateAdded": "2023-10-21T23:15:00.000Z",
+    "tags": ["clothing", "hacktoberfest", "stickers", "mug"]
+  },
+  {
     "name": "Twilio",
     "difficulty": "medium",
     "description": "Complete the first set of objectives in <a href='https://twilio.com/quest'>Twilio Quest</a> and get a Twilio Quest t-shirt right to your door.",
