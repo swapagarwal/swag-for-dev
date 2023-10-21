@@ -360,6 +360,15 @@
     "tags": ["expired", "clothing", "stickers"]
   },
   {
+    "name": "featureform",
+    "difficulty": "medium",
+    "description": "Contribute to featureform and Accepted PRs will get a Featureform Swag package and will be entered for a raffle for a $500 gift card",
+    "reference": "https://www.featureform.com/hacktoberfest-2023",
+    "image": "https://i.imgur.com/WRctdCz.png",
+    "dateAdded": "2023-10-21T17:41:00.000Z",
+    "tags": ["clothing", "hacktoberfest"]
+  },
+  {
     "name": "Flutterwave",
     "difficulty": "hard",
     "description": "Contribute 2 or more merged PRs to any of our community libraries and win a shirt",
