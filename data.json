@@ -927,6 +927,15 @@
     "tags": ["clothing", "hacktoberfest", "expired"]
   },
   {
+    "name": "Uno Platform 2023",
+    "difficulty": "medium",
+    "description": "Contribute to Uno Platform!! 9 Quality PRs and you will get Uno Platform Sweater, 4 Quality PRs and you will get Uno Platform T-shirt and stickers, 2 Quality PRs and you will Get Started with the Uno Platform and WinUI 3 ebook.",
+    "reference": "https://platform.uno/blog/hacktoberfest-2023-contributing-as-a-net-developer/",
+    "image": "https://i.imgur.com/4fEuylJ.png",
+    "dateAdded": "2019-10-21T23:24:00.000Z",
+    "tags": ["clothing", "hacktoberfest"]
+  },
+  {
     "name": "Valor Software",
     "difficulty": "medium",
     "description": "Make pull requests to issues tagged with \"Hacktoberfest\" label in ngx-bootstrap repo during October and get a pen, a sticker, a notepad, and a wooden phone stand.",
