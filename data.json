@@ -540,6 +540,15 @@
     "tags": ["clothing", "hacktoberfest", "expired"]
   },
   {
+    "name": "Loft labs",
+    "difficulty": "medium",
+    "description": "One merged PR gets you a Loft exclusive T-shirt, two merged PRs get you a brand new Keyboard, and four or more merged PRs get you a Loft Exclusive Swag Box.",
+    "reference": "https://loft.sh/blog/celebrating-the-spirit-of-hacktoberfest-at-loft/",
+    "image": "https://loft.sh/images/blog/posts/loft-hacktoberfest-2023.png",
+    "dateAdded": "2023-10-21T05:55:00.000Z",
+    "tags": ["stickers", "hacktoberfest", "clothing", "accessories"]
+  },
+  {
     "name": "LoginRadius",
     "difficulty": "easy",
     "description": "Submit a successful pull request for one of the issues with the hacktoberfest label in the LoginRadius GitHub organization and earn a T-shirt and Swags!",
