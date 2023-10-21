@@ -702,6 +702,15 @@
     "tags": ["clothing", "hacktoberfest", "expired"]
   },
   {
+    "name": "QuestDB",
+    "difficulty": "medium",
+    "description": "Successfully contribute to any QuestDB project during Hacktoberfest for additional rewards and earn a QuestDB t-shirt.",
+    "reference": "https://questdb.io/blog/hacktoberfest-2023-questdb/",
+    "image": "https://i.imgur.com/ZhwC1y1.png",
+    "dateAdded": "2023-10-21T18:42:00.000Z",
+    "tags": ["clothing", "hacktoberfest", "stickers"]
+  },
+  {
     "name": "Redis Cloud",
     "difficulty": "easy",
     "description": "Sign up and create your first database, you will receive a free t-shirt. (Ships only to North America)",
