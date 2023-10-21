@@ -36,6 +36,15 @@
     "tags": ["clothing", "stickers", "hacktoberfest"]
   },
   {
+    "name": "Alby",
+    "difficulty": "medium",
+    "description": "Contribute to Bitcoin open-source projects and win some Alby merchandise.",
+    "reference": "https://blog.getalby.com/contribute-to-the-bitcoin-open-source-this-hacktoberfest-2023/",
+    "image": "https://blog.getalby.com/content/images/size/w2000/2023/09/Developer.png",
+    "dateAdded": "2023-10-21T11:09:00.000Z",
+    "tags": ["stickers", "hacktoberfest", "clothing", "accessories"]
+  },
+  {
     "name": "Alexa",
     "difficulty": "hard",
     "description": "Publish a skill, get a t-shirt and an Echo Spot (if 50 customers per month use your Display skill for the first three months after publication)! Earn a 2-pack of Echo Buttons if you publish a Gadgets skill!",
@@ -297,6 +306,15 @@
     "tags": ["stickers", "clothing", "hacktoberfest", "expired"]
   },
   {
+    "name": "devICT",
+    "difficulty": "medium",
+    "description": "Contribute two pull requests to the listed repositories and get some local swag from devICT",
+    "reference": "https://hacktoberfest.devict.org/",
+    "image": "https://i.imgur.com/0mSHJNP.png",
+    "dateAdded": "2023-10-21T21:00:00.000Z",
+    "tags": ["stickers", "hacktoberfest"]
+  },
+  {
     "name": "devRant",
     "difficulty": "medium",
     "description": "Get 30 ++'s on a single rant you've posted to devRant to receive 3 free high-quality devRant laptop stickers! Or post an awesome rant that gets over 750 ++'s to receive a free devRant squishy stress ball!",
@@ -349,6 +367,15 @@
     "image": "https://i.imgur.com/pE9Ml3v.png",
     "dateAdded": "2020-03-16T05:06:00.000Z",
     "tags": ["expired", "clothing", "stickers"]
+  },
+  {
+    "name": "featureform",
+    "difficulty": "medium",
+    "description": "Contribute to featureform and Accepted PRs will get a Featureform Swag package and will be entered for a raffle for a $500 gift card",
+    "reference": "https://www.featureform.com/hacktoberfest-2023",
+    "image": "https://i.imgur.com/WRctdCz.png",
+    "dateAdded": "2023-10-21T17:41:00.000Z",
+    "tags": ["clothing", "hacktoberfest"]
   },
   {
     "name": "Flutterwave",
@@ -421,6 +448,15 @@
     "image": "https://hasura.io/blog/content/images/2020/09/Hacktoberfest-2020--5--1.png",
     "dateAdded": "2020-10-02T12:27:00.000Z",
     "tags": ["clothing", "hacktoberfest", "stickers", "expired"]
+  },
+  {
+    "name": "Hyperswitch",
+    "difficulty": "medium",
+    "description": "Contribute to open issues and win a swag for every successful PR.",
+    "reference": "https://hyperswitch.io/hacktoberfest",
+    "image": "https://hyperswitch.io/img/site/hacktoberfest/swag.png",
+    "dateAdded": "2023-10-21T21:00:00.000Z",
+    "tags": ["hacktoberfest", "clothing"]
   },
   {
     "name": "IHP",
@@ -540,6 +576,15 @@
     "tags": ["clothing", "hacktoberfest", "expired"]
   },
   {
+    "name": "Loft labs",
+    "difficulty": "medium",
+    "description": "One merged PR gets you a Loft exclusive T-shirt, two merged PRs get you a brand new Keyboard, and four or more merged PRs get you a Loft Exclusive Swag Box.",
+    "reference": "https://loft.sh/blog/celebrating-the-spirit-of-hacktoberfest-at-loft/",
+    "image": "https://loft.sh/images/blog/posts/loft-hacktoberfest-2023.png",
+    "dateAdded": "2023-10-21T05:55:00.000Z",
+    "tags": ["stickers", "hacktoberfest", "clothing", "accessories"]
+  },
+  {
     "name": "LoginRadius",
     "difficulty": "easy",
     "description": "Submit a successful pull request for one of the issues with the hacktoberfest label in the LoginRadius GitHub organization and earn a T-shirt and Swags!",
@@ -630,6 +675,15 @@
     "tags": ["clothing", "hacktoberfest", "expired"]
   },
   {
+    "name": "Novu",
+    "difficulty": "medium",
+    "description": "Contribute to Novu Repo in GitHub and Make 3 merged PRs to win the swag pack.",
+    "reference": "https://novu.co/hacktoberfest/",
+    "image": "https://i.imgur.com/Pgt5n94.png",
+    "dateAdded": "2023-10-21T17:52:00.000Z",
+    "tags": ["hacktoberfest", "clothing", "stickers"]
+  },
+  {
     "name": "npm",
     "difficulty": "hard",
     "description": "Fix a <a href='https://npm.community/c/bugs'>bug</a>, get a fashionable pair of socks!",
@@ -711,6 +765,15 @@
     "tags": ["clothing", "hacktoberfest", "expired"]
   },
   {
+    "name": "QuestDB",
+    "difficulty": "medium",
+    "description": "Successfully contribute to any QuestDB project during Hacktoberfest and earn a QuestDB t-shirt and stickers.",
+    "reference": "https://questdb.io/blog/hacktoberfest-2023-questdb/",
+    "image": "https://i.imgur.com/ZhwC1y1.png",
+    "dateAdded": "2023-10-21T18:42:00.000Z",
+    "tags": ["clothing", "hacktoberfest", "stickers"]
+  },
+  {
     "name": "Redis Cloud",
     "difficulty": "easy",
     "description": "Sign up and create your first database, you will receive a free t-shirt. (Ships only to North America)",
@@ -736,6 +799,15 @@
     "image": "https://static.waveplay.com/promo/hacktoberfest23-tshirt.png",
     "dateAdded": "2023-10-05T06:47:30.000Z",
     "tags": ["clothing", "digital", "hacktoberfest", "hosting"]
+  },
+  {
+    "name": "Ronin",
+    "difficulty": "medium",
+    "description": "Contribute to any Ronin project and get your PR accepted to receive stickers.",
+    "reference": "https://ronin-rb.dev/blog/2023/09/26/ronin-is-participating-in-hacktoberfest-2023.html",
+    "image": "https://i.imgur.com/qvYGRYo.png",
+    "dateAdded": "2023-10-21T21:11:00.000Z",
+    "tags": ["stickers", "hacktoberfest"]
   },
   {
     "name": "Saleor",
@@ -774,6 +846,15 @@
     "tags": ["clothing", "hacktoberfest", "expired"]
   },
   {
+    "name": "ServiceNow",
+    "difficulty": "medium",
+    "description": "Contribute to ServiceNow and make 4 PRs in any of the projects marked with the topic hacktoberfest, and win a CreatorCon T-shirt and ServiceNow merchandise.",
+    "reference": "https://developer.servicenow.com/blog.do?p=/post/hacktoberfest-2023/",
+    "image": "https://i.imgur.com/JmCvlSP.png",
+    "dateAdded": "2023-10-21T22:18:00.000Z",
+    "tags": ["clothing", "hacktoberfest"]
+  },
+  {
     "name": "SimbaChain",
     "difficulty": "easy",
     "description": "Register and get a free Blockchain Shirt! Pick your side, <code>eth_listtransactions = _yep</code> vs <code>eth_listtransactions = _nope</code>. Ships only to USA.",
@@ -810,6 +891,15 @@
     "tags": ["hacktoberfest", "stickers", "expired"]
   },
   {
+    "name": "Swirl",
+    "difficulty": "medium",
+    "description": "Contribute to Swirl this Hacktoberfest and you could get gift cards up to $100.",
+    "reference": "https://swirl.today/contribute-to-swirl-this-hacktoberfest-2023/",
+    "image": "https://i.imgur.com/GNfrX9h.png",
+    "dateAdded": "2023-10-21T22:31:00.000Z",
+    "tags": ["giftcards", "hacktoberfest"]
+  },
+  {
     "name": "Switchblade",
     "difficulty": "medium",
     "description": "Open three valid pull requests on a <a href='https://github.com/SwitchbladeBot/switchblade'>Switchblade repository</a> to receive three fancy Switchblade stickers and a \"thank you\" letter.",
@@ -817,6 +907,15 @@
     "image": "https://user-images.githubusercontent.com/25179120/94884272-65aba600-0443-11eb-8374-d2c570ef385d.png",
     "dateAdded": "2020-10-02T12:46:00.000Z",
     "tags": ["stickers", "hacktoberfest", "expired"]
+  },
+  {
+    "name": "Trigger.dev",
+    "difficulty": "medium",
+    "description": "Submit PRs in trigger.dev or job-showcase repos and earn points to redeem for swag.",
+    "reference": "https://trigger.dev/hacktoberfest",
+    "image": "https://i.imgur.com/kelNqon.jpg",
+    "dateAdded": "2023-10-21T23:15:00.000Z",
+    "tags": ["clothing", "hacktoberfest", "stickers", "mug"]
   },
   {
     "name": "Twilio",
@@ -864,6 +963,15 @@
     "tags": ["clothing", "hacktoberfest", "expired"]
   },
   {
+    "name": "Uno Platform",
+    "difficulty": "medium",
+    "description": "Contribute to Uno Platform! 9 Quality PRs and you will get Uno Platform Sweater, 4 Quality PRs and you will get Uno Platform T-shirt and stickers, 2 Quality PRs and you will get Get Started with the Uno Platform and WinUI 3 ebook.",
+    "reference": "https://platform.uno/blog/hacktoberfest-2023-contributing-as-a-net-developer/",
+    "image": "https://i.imgur.com/4fEuylJ.png",
+    "dateAdded": "2023-10-21T23:24:00.000Z",
+    "tags": ["clothing", "stickers", "hacktoberfest"]
+  },
+  {
     "name": "Valor Software",
     "difficulty": "medium",
     "description": "Make pull requests to issues tagged with \"Hacktoberfest\" label in ngx-bootstrap repo during October and get a pen, a sticker, a notepad, and a wooden phone stand.",
@@ -898,6 +1006,15 @@
     "image": "https://i.imgur.com/ZyhS12p.png",
     "dateAdded": "2018-10-12T13:05:05.000Z",
     "tags": ["stickers", "expired"]
+  },
+  {
+    "name": "Widgetbook",
+    "difficulty": "medium",
+    "description": "Contribute to any of the issues marked with hacktoberfest label in Widgetbook repo and get a limited edition t-shirt and stickers pack.",
+    "reference": "https://github.com/widgetbook/widgetbook/issues/918",
+    "image": "https://i.imgur.com/Z0Ds4Hy.png",
+    "dateAdded": "2023-10-21T23:43:00.000Z",
+    "tags": ["stickers", "clothing", "hacktoberfest"]
   },
   {
     "name": "Xamarin",
