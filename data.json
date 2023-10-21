@@ -927,7 +927,7 @@
     "tags": ["clothing", "hacktoberfest", "expired"]
   },
   {
-    "name": "Uno Platform 2023",
+    "name": "Uno Platform",
     "difficulty": "medium",
     "description": "Contribute to Uno Platform! 9 Quality PRs and you will get Uno Platform Sweater, 4 Quality PRs and you will get Uno Platform T-shirt and stickers, 2 Quality PRs and you will get Get Started with the Uno Platform and WinUI 3 ebook.",
     "reference": "https://platform.uno/blog/hacktoberfest-2023-contributing-as-a-net-developer/",
