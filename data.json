@@ -961,6 +961,14 @@
     "image": "https://i.imgur.com/ZyhS12p.png",
     "dateAdded": "2018-10-12T13:05:05.000Z",
     "tags": ["stickers", "expired"]
+  },{
+    "name": "Widgetbook",
+    "difficulty": "medium",
+    "description": "Contribute to any of the issues marked with hacktoberfest label in Widgetbook repo.",
+    "reference": "https://github.com/widgetbook/widgetbook/issues/918",
+    "image": "https://i.imgur.com/Z0Ds4Hy.png",
+    "dateAdded": "2023-10-21T23:43:00.000Z",
+    "tags": ["stickers", "clothing", "hacktoberfest"]
   },
   {
     "name": "Xamarin",
