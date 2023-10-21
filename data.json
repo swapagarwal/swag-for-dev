@@ -873,6 +873,15 @@
     "tags": ["stickers", "hacktoberfest", "expired"]
   },
   {
+    "name": "TBD",
+    "difficulty": "medium",
+    "description": "Contribute to TBD Porjects and chance to win exclusive swag for the Top 20 contributors and custom Hacktoberfest swag for the Top 3 contributors",
+    "reference": "https://dev.to/tbdevs/preptember-diaries-gearing-up-for-hacktoberfest-2023-8o2",
+    "image": "https://i.imgur.com/AvXwhdZ.png",
+    "dateAdded": "2023-10-21T22:45:00.000Z",
+    "tags": ["clothing", "hacktoberfest"]
+  },
+  {
     "name": "Twilio",
     "difficulty": "medium",
     "description": "Complete the first set of objectives in <a href='https://twilio.com/quest'>Twilio Quest</a> and get a Twilio Quest t-shirt right to your door.",
