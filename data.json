@@ -306,6 +306,15 @@
     "tags": ["stickers", "clothing", "hacktoberfest", "expired"]
   },
   {
+    "name": "devICT",
+    "difficulty": "medium",
+    "description": "Contribute two pull requests to the listed repositories and get some local swag from devICT",
+    "reference": "https://hacktoberfest.devict.org/",
+    "image": "https://i.imgur.com/0mSHJNP.png",
+    "dateAdded": "2023-10-21T21:00:00.000Z",
+    "tags": ["stickers", "hacktoberfest"]
+  },
+  {
     "name": "devRant",
     "difficulty": "medium",
     "description": "Get 30 ++'s on a single rant you've posted to devRant to receive 3 free high-quality devRant laptop stickers! Or post an awesome rant that gets over 750 ++'s to receive a free devRant squishy stress ball!",
