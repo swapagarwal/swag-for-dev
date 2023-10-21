@@ -423,6 +423,15 @@
     "tags": ["clothing", "hacktoberfest", "stickers", "expired"]
   },
   {
+    "name": "Hyperswitch",
+    "difficulty": "medium",
+    "description": "Contribute to open issues and win a swag for every successful PR.",
+    "reference": "https://hyperswitch.io/hacktoberfest",
+    "image": "https://hyperswitch.io/img/site/hacktoberfest/swag.png",
+    "dateAdded": "2023-10-21T21:00:00.000Z",
+    "tags": ["hacktoberfest", "clothing"]
+  },
+  {
     "name": "IHP",
     "difficulty": "easy",
     "description": "Fill out the form, and get some stickers sent to you!",
