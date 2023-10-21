@@ -999,6 +999,15 @@
     "tags": ["stickers", "expired"]
   },
   {
+    "name": "Widgetbook",
+    "difficulty": "medium",
+    "description": "Contribute to any of the issues marked with hacktoberfest label in Widgetbook repo and get a limited edition t-shirt and stickers pack.",
+    "reference": "https://github.com/widgetbook/widgetbook/issues/918",
+    "image": "https://i.imgur.com/Z0Ds4Hy.png",
+    "dateAdded": "2023-10-21T23:43:00.000Z",
+    "tags": ["stickers", "clothing", "hacktoberfest"]
+  },
+  {
     "name": "Xamarin",
     "difficulty": "medium",
     "description": "Make quality pull requests to issues that are 'approved item of work' to get stickers, t-shirt or even a trophy.",
