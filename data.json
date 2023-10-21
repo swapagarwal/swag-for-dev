@@ -666,6 +666,15 @@
     "tags": ["expired", "stickers"]
   },
   {
+    "name": "OVHcloud",
+    "difficulty": "medium",
+    "description": "Contribute to OVHcloud and Have at least 4 PRs merged into the principal branch of the OVH Repos to be eligible to a lottery to win a prize.",
+    "reference": "https://blog.ovhcloud.com/ovhcloud-and-hacktober-fest-2023/",
+    "image": "https://i.imgur.com/OUmJTM8.png",
+    "dateAdded": "2023-10-21T18:17:00.000Z",
+    "tags": ["hacktoberfest", "lottery"]
+  },
+  {
     "name": "Pagerduty",
     "difficulty": "easy",
     "description": "Create and fill out your profile. Upload a custom avatar. Introduce yourself.",
