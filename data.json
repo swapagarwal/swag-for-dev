@@ -961,7 +961,8 @@
     "image": "https://i.imgur.com/ZyhS12p.png",
     "dateAdded": "2018-10-12T13:05:05.000Z",
     "tags": ["stickers", "expired"]
-  },{
+  },
+  {
     "name": "Widgetbook",
     "difficulty": "medium",
     "description": "Contribute to any of the issues marked with hacktoberfest label in Widgetbook repo.",
