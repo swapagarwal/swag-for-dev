@@ -999,6 +999,15 @@
     "tags": ["hacktoberfest", "clothing", "stickers", "expired"]
   },
   {
+    "name": "WeVis",
+    "difficulty": "medium",
+    "description": "When the PR is approved in<a href='https://github.com/wevisdemo/parliament-watch'>WeVisRepo</a>, receive a limited-edition sticker from WeVis!",
+    "reference": "https://www.facebook.com/wevisdemo/posts/pfbid0nhDdBgYsDqmfTN3mf3TQLQ1zPDcksUi7HM6zSysGCynu3m69GnxPBs7LRmuybw8Xl",
+    "image": "https://i.imgur.com/HOoCHc7.jpg",
+    "dateAdded": "2023-10-22T16:46:00.000Z",
+    "tags": ["hacktoberfest", "stickers"]
+  },
+  {
     "name": "WhatIsMyBrowser",
     "difficulty": "easy",
     "description": "Send an API request, get some sweet vinyl laptop stickers!",
