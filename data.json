@@ -1060,5 +1060,14 @@
     "image": "http://devblogs.microsoft.com/xamarin/wp-content/uploads/sites/44/2019/10/medium_25686-c9dd82896c9e66bb82600f256444abe6.png",
     "dateAdded": "2019-10-08T21:00:00.000Z",
     "tags": ["stickers", "hacktoberfest", "clothing", "expired"]
+  },
+  {
+    "name": "Zilliz",
+    "difficulty": "medium",
+    "description": "Join Zilliz's Hacktoberfest event! Make three merged PRs, build a demo app using Milvus, write a blog about a project using Milvus, or create a newbie-friendly tutorial and get Very special Zilliz T-shirts + Stickers pack. All contributions, code or non-code, are welcome!",
+    "reference": "https://zilliz.com/hacktoberfest",
+    "image": "https://i.imgur.com/CpZBbcB.png",
+    "dateAdded": "2023-10-22T12:27:00.000Z",
+    "tags": ["stickers", "hacktoberfest", "clothing"]
   }
 ]
