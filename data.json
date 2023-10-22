@@ -783,6 +783,15 @@
     "tags": ["stickers"]
   },
   {
+    "name": "Renumics",
+    "difficulty": "medium",
+    "description": "Join Renumics for Hacktoberfest! For each accepted PR, we're giving out a Renumics T-Shirt.",
+    "reference": "https://renumics.com/blog/hacktoberfest_2023/",
+    "image": "https://i.imgur.com/MA8EoCo.png",
+    "dateAdded": "2023-10-22T16:20:00.000Z",
+    "tags": ["clothing", "hacktoberfest"]
+  },
+  {
     "name": "RoboPlay",
     "difficulty": "medium",
     "description": "Create a Discord bot or plugin with Robo.js - score 3 months of hosting, a month of Nitro, and a special edition T-Shirt!",
