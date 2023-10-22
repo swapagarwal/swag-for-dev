@@ -216,6 +216,15 @@
     "tags": ["accessories", "stickers", "hacktoberfest", "clothing", "expired"]
   },
   {
+    "name": "Coding Ninjas",
+    "difficulty": "medium",
+    "description": "Code and participate in <a href='https://www.codingninjas.com/'>Coding Ninjas contest</a> and get t-shirt with stickers, sippers, bag and many more",
+    "reference": "https://www.codingninjas.com/studio/",
+    "image": "https://files.codingninjas.in/cn-logo-onboarding-28449.svg",
+    "dateAdded": "2023-10-22T13:15:00.000Z",
+    "tags": ["accessories", "stickers", "clothing"]
+  },
+  {
     "name": "Collectiv",
     "difficulty": "medium",
     "description": "Contribute by submitting 4 PRs to any repository with over 100 stars, with the assistance of Collectiv AI. Once your PRs have been successfully merged, you qualify for some exciting merchandise!",
