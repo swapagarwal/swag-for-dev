@@ -641,7 +641,7 @@
   {
     "name": "Modtoberfest",
     "difficulty": "medium",
-    "description": "Only pull requests made in the participating projects count towards your progress. You must submit at least 4 PRs to any of the participating repositories. You will get a T-Shirt, pins, and a tree will be planted!",
+    "description": "Contribute to Modtoberfest! Submit 4 PRs to participating projects, earn a T-Shirt, pins, and contribute to planting a tree. Enhance open-source and the environment together!",
     "reference": "https://modtoberfest.com/modtoberforest",
     "image": "https://i.imgur.com/gNQ9D3b.png",
     "dateAdded": "2023-10-22T00:08:00.000Z",
