@@ -945,6 +945,15 @@
     "tags": ["clothing", "hacktoberfest", "stickers", "mug"]
   },
   {
+    "name": "Turbot",
+    "difficulty": "medium",
+    "description": "Do no-code, low-code and high-code contributions to win swags from turbot.",
+    "reference": "https://turbot.com/blog/2023/10/hacktoberfest-2023",
+    "image": "https://turbot.com/images/blog/2024-swag-preview.jpg",
+    "dateAdded": "2023-10-22T23:15:00.000Z",
+    "tags": ["clothing", "hacktoberfest", "stickers"]
+  },
+  {
     "name": "Twilio",
     "difficulty": "medium",
     "description": "Complete the first set of objectives in <a href='https://twilio.com/quest'>Twilio Quest</a> and get a Twilio Quest t-shirt right to your door.",
