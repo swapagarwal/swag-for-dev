@@ -1016,7 +1016,7 @@
     "dateAdded": "2019-10-08T21:00:00.000Z",
     "tags": ["stickers", "hacktoberfest", "clothing", "expired"]
   },
-   {
+  {
     "name": "Zilliz",
     "difficulty": "medium",
     "description": "Join Zilliz's Hacktoberfest event! Make three merged PRs, build a demo app using Milvus, write a blog about a project using Milvus, or create a newbie-friendly tutorial and get Very special Zilliz T-shirts + Stickers pack. All contributions, code or non-code, are welcome!",
