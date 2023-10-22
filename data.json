@@ -594,6 +594,15 @@
     "tags": ["clothing", "hacktoberfest", "expired"]
   },
   {
+    "name": "Logto",
+    "difficulty": "medium",
+    "description": "Submit a successful PR for one of the issues in Logto repository and earn a sweater!",
+    "reference": "https://github.com/logto-io/logto/issues/4511",
+    "image": "https://i.imgur.com/nqMeukx.png",
+    "dateAdded": "2023-10-22T00:46:00.000Z",
+    "tags": ["clothing", "hacktoberfest"]
+  },
+  {
     "name": "Magento + Adobe",
     "difficulty": "hard",
     "description": "Submit 5 or more pull requests during October 2019 to any open repositories under Adobe or Magento organizations on GitHub, get a Squashtoberfest T-Shirt!",
