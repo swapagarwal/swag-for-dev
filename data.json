@@ -72,6 +72,15 @@
     "tags": ["hacktoberfest", "clothing"]
   },
   {
+    "name": "Appblock",
+    "difficulty": "medium",
+    "description": "Each accepted PR to AppBlock during the Hacktoberfest will win ₹5,000. You have a chance to win up to ₹30,000!!",
+    "reference": "https://hacktoberfest.appblocks.com/pages/rewards/",
+    "image": "https://i.imgur.com/57NFwH5.png",
+    "dateAdded": "2023-10-23T21:04:00.000Z",
+    "tags": ["hacktoberfest", "cash"]
+  },
+  {
     "name": "Appsmith",
     "difficulty": "medium",
     "description": "Submit more than 4 PRs and invite others to contribute to Appsmith repository will get a special prize",
