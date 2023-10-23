@@ -450,6 +450,15 @@
     "tags": ["clothing", "hacktoberfest", "stickers", "expired"]
   },
   {
+    "name": "Haystack",
+    "difficulty": "medium",
+    "description": " Contribute to open issues with the 'hacktoberfest' tag at Haystack's repository and grab an exclusive stickers!!",
+    "reference": "https://twitter.com/bilgeycl/status/1712135054489444650",
+    "image": "https://i.imgur.com/J4drdtV.jpg",
+    "dateAdded": "2023-10-23T21:53:00.000Z",
+    "tags": ["hacktoberfest", "stickers"]
+  },
+  {
     "name": "Hyperswitch",
     "difficulty": "medium",
     "description": "Contribute to open issues and win a swag for every successful PR.",
