@@ -495,6 +495,15 @@
     "tags": ["stickers", "clothing", "device", "hacktoberfest", "expired"]
   },
   {
+    "name": "Interledger",
+    "difficulty": "medium",
+    "description": "Earn exclusive Interledger swag this Hacktoberfest! Get a T-shirt with 1+ accepted PRs. Get limited edition swag with 4+ accepted PRs.",
+    "reference": "https://community.interledger.org/devcer/hacktoberfest-with-interledger-join-the-open-payments-movement-3bkd",
+    "image": "https://i.imgur.com/z90100J.png",
+    "dateAdded": "2023-10-23T22:18:00.000Z",
+    "tags": ["stickers", "clothing", "hacktoberfest"]
+  },
+  {
     "name": "IPFS",
     "difficulty": "easy",
     "description": "Contact the IPFS team via e-mail, and ask them kindly for some swag!",
