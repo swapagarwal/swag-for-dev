@@ -1080,6 +1080,15 @@
     "tags": ["hacktoberfest", "stickers", "accessories", "expired"]
   },
   {
+    "name": "VeSoft",
+    "difficulty": "medium",
+    "description": "Join the VeSoft Hacktoberfest event! Get different digital badges and a NebulaGraph SWAG package with your contributions. A digital badge for 1 accepted PR, the 'Active Contributor 2023' badge for 3 accepted PRs, and the 'NebulaGraph Hacktoberfest MVP 2023' badge along with a SWAG package for 5 accepted PRs.",
+    "reference": "https://github.com/vesoft-inc/nebula-community/wiki/HACKTOBERFEST2023",
+    "image": "https://i.imgur.com/JXYEkT4.png",
+    "dateAdded": "2023-10-24T11:12:00.000Z",
+    "tags": ["digitalbadge", "stickers", "clothing", "hacktoberfest", "mug", "mascotdoll"]
+  },
+  {
     "name": "Vonage",
     "difficulty": "medium",
     "description": "Make a pull request to a <a href=\"https://github.com/Vonage\">Vonage repo</a> referencing an issue labeled \"Hacktoberfest\", fill out a form, and get $5 gift card or socks",
