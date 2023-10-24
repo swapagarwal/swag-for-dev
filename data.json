@@ -488,8 +488,8 @@
   {
     "name": "Huddle01",
     "difficulty": "medium",
-    "description": "https://huddle01.hashnode.dev/huddle01-hacktoberfest-2023",
-    "reference": "Join Huddle01's Hacktoberfest 2023 challenge! Win from a $300/$100 pool prize for advanced/intermediate level respectively. Beginners can earn unique POAP tokens and merchandise.",
+    "description": "Join Huddle01's Hacktoberfest 2023 challenge! Win from a $300/$100 pool prize for advanced/intermediate level respectively. Beginners can earn unique POAP tokens and merchandise.",
+    "reference": "https://huddle01.hashnode.dev/huddle01-hacktoberfest-2023",
     "image": "https://i.imgur.com/VPErL4Z.png",
     "dateAdded": "2023-10-24T14:21:00.000Z",
     "tags": ["hacktoberfest", "cash", "clothing"]
