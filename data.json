@@ -774,6 +774,15 @@
     "tags": ["clothing", "hacktoberfest", "expired"]
   },
   {
+    "name": "OpenBB",
+    "difficulty": "medium",
+    "description": "Earn a T-shirt or hat from OpenBB in Hacktoberfest. Contribute by making no-code contributions, code enhancements, adding a non-extension feature, or creating a custom extension.",
+    "reference": "https://openbb.co/blog/hacktoberfest-join-us-in-celebrating-open-source",
+    "image": "https://i.imgur.com/Z5MRnAW.png",
+    "dateAdded": "2023-10-24T14:00:00.000Z",
+    "tags": ["clothing", "hacktoberfest"]
+  },
+  {
     "name": "OpenEBS",
     "difficulty": "hard",
     "description": "One merged PR to OpenEBS Repository and a change get exclusive and limited OpenEBS swag, OpenEBS will contact you to fill out a form to send a special edition swag designed for Hacktoberfest. Not only this but by becoming a top weekly contributor, you’ll be able to grab even more swag.",
