@@ -1082,7 +1082,7 @@
   {
     "name": "VeSoft",
     "difficulty": "medium",
-    "description": "Join the VeSoft Hacktoberfest event! Get different digital badges and a NebulaGraph SWAG package with your contributions. A digital badge for 1 accepted PR, the 'Active Contributor 2023' badge for 3 accepted PRs, and the 'NebulaGraph Hacktoberfest MVP 2023' badge along with a SWAG package for 5 accepted PRs.",
+    "description": "Earn digital badges and special SWAG from VeSoft in Hacktoberfest! With 1, 3, or 5 accepted PRs on vesoft-inc or nebula-contrib, receive different badges and amazing SWAG",
     "reference": "https://github.com/vesoft-inc/nebula-community/wiki/HACKTOBERFEST2023",
     "image": "https://i.imgur.com/JXYEkT4.png",
     "dateAdded": "2023-10-24T11:12:00.000Z",
