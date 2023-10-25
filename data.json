@@ -900,6 +900,15 @@
     "tags": ["clothing", "hacktoberfest"]
   },
   {
+    "name": "Revert",
+    "difficulty": "medium",
+    "description": "Earn spooky pumpkins for every PR merged in the Hacktoberfest at Revert! Collect as many pumpkins as you can before Halloween 2023 strikes and win some amazing swags!!",
+    "reference": "https://blog.revert.dev/hacktoberfest2023/",
+    "image": "https://i.imgur.com/iJ8eMid.jpg",
+    "dateAdded": "2023-10-24T13:44:00.000Z",
+    "tags": ["clothing", "hacktoberfest", "mug", "stickers"]
+  },
+  {
     "name": "RoboPlay",
     "difficulty": "medium",
     "description": "Create a Discord bot or plugin with Robo.js - score 3 months of hosting, a month of Nitro, and a special edition T-Shirt!",
