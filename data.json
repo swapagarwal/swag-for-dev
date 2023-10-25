@@ -94,7 +94,7 @@
     "difficulty": "medium",
     "description": "Contributing to any Appwrite repo this October will land you some cool merchandise, including stickers, magnets, and pins. There is also an exclusive T-Shirt for this month's top 20 contributors, and a chance to win a Digitalocean, Intel, and 'the Practical DEV' limited edition t-shirt.",
     "reference": "https://medium.com/appwrite-io/celebrate-hacktoberfest-20-with-appwrite-1356337e2159",
-    "image": "https://miro.medium.com/max/700/1*PUyLJqc4AXHOmXwkH9FNKA.png",
+    "image": "https://i.imgur.com/ZAaScv2.png",
     "dateAdded": "2020-09-21T18:32:00.000Z",
     "tags": ["badges", "hacktoberfest", "stickers", "clothing", "expired"]
   },
@@ -103,7 +103,7 @@
     "difficulty": "medium",
     "description": "Earn an Appwrite hoodie and stickers for contributing only one accepted and merged PR!",
     "reference": "https://appwrite.io/blog/post/hacktoberfest-2023",
-    "image": "https://appwrite.io/images/blog/hacktoberfest2023-swag.png",
+    "image": "https://i.imgur.com/p58IeOa.png",
     "dateAdded": "2023-10-05T15:29:00.000Z",
     "tags": ["hacktoberfest", "clothing", "stickers"]
   },
@@ -211,7 +211,7 @@
     "difficulty": "medium",
     "description": "Submit 15 builds in 30 days, get stickers sent your way! (Ships only to North America and Europe)",
     "reference": "https://codeship.com/swag",
-    "image": "https://i.postimg.cc/1RL8YZPx/Bcob-ZCE-Imgur-1.jpg",
+    "image": "https://i.imgur.com/kKlIWb3.jpg",
     "dateAdded": "2018-02-18T18:44:53.000Z",
     "tags": ["expired", "stickers"]
   },
@@ -472,7 +472,7 @@
     "difficulty": "medium",
     "description": "Submit a PR to Hasura's <a href='https://github.com/hasura/graphql-engine'>GraphQL Engine</a> or <a href='https://github.com/hasura/learn-graphql'>GraphQL Tutorial Series</a> during Hacktoberfest 2020 and get a Hasura sticker pack. For all valid PRs closing an issue with the label hacktoberfest, a secret swag will be sent.",
     "reference": "https://hasura.io/blog/hasura-joins-hacktoberfest-3rd-year-in-a-row/",
-    "image": "https://hasura.io/blog/content/images/2020/09/Hacktoberfest-2020--5--1.png",
+    "image": "https://i.imgur.com/SFiixrc.png",
     "dateAdded": "2020-10-02T12:27:00.000Z",
     "tags": ["clothing", "hacktoberfest", "stickers", "expired"]
   },
@@ -814,7 +814,7 @@
     "difficulty": "medium",
     "description": "Contribute to opsdroid and receive some stickers!",
     "reference": "https://medium.com/opsdroid/contributor-sticker-packs-738058ceda59",
-    "image": "https://cdn-images-1.medium.com/max/1000/1*xSLmpInA96k9beqMwFPjZQ.jpeg",
+    "image": "https://i.imgur.com/FTfBIeB.jpeg",
     "dateAdded": "2019-01-04T22:12:15.000Z",
     "tags": ["expired", "stickers"]
   },
@@ -913,7 +913,7 @@
     "difficulty": "medium",
     "description": "Create a Discord bot or plugin with Robo.js - score 3 months of hosting, a month of Nitro, and a special edition T-Shirt!",
     "reference": "https://blog.waveplay.com/hacktoberfest-with-robo-js-build-bots-or-plugins-win-cool-prizes/",
-    "image": "https://static.waveplay.com/promo/hacktoberfest23-tshirt.png",
+    "image": "https://i.imgur.com/KUP8OxD.png",
     "dateAdded": "2023-10-05T06:47:30.000Z",
     "tags": ["clothing", "digital", "hacktoberfest", "hosting"]
   },
