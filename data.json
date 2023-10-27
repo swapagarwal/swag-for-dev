@@ -67,7 +67,7 @@
     "difficulty": "medium",
     "description": "Propose an app idea, get it approved, and build it using Amplication. Then, craft a clear and comprehensive tutorial or video walkthrough and submit a PR link to the official repo. Receive a free T-shirt for your effort!",
     "reference": "https://github.com/amplication/amplication/issues/7028",
-    "image": "https://user-images.githubusercontent.com/53312820/270923023-9a626620-0395-4663-9179-567fec391176.png",
+    "image": "https://i.imgur.com/ENUPvt9.png",
     "dateAdded": "2023-10-05T07:08:00.000Z",
     "tags": ["hacktoberfest", "clothing"]
   },
