@@ -24,7 +24,7 @@
     "reference": "https://airbyte.com/blog/announcing-airbytes-tentaculous-hacktoberfest-2023-edition",
     "image": "https://i.imgur.com/lCirQFS.jpg",
     "dateAdded": "2023-10-15T15:29:00.000Z",
-    "tags": ["clothing", "hacktoberfest"]
+    "tags": ["clothing", "hacktoberfest", "expired"]
   },
   {
     "name": "Akto",
@@ -33,7 +33,7 @@
     "reference": "https://www.akto.io/akto-hacktoberfest-2023",
     "image": "https://i.imgur.com/nsLUWeG.png",
     "dateAdded": "2023-10-15T11:09:00.000Z",
-    "tags": ["clothing", "stickers", "hacktoberfest"]
+    "tags": ["clothing", "stickers", "hacktoberfest", "expired"]
   },
   {
     "name": "Alby",
@@ -42,7 +42,7 @@
     "reference": "https://blog.getalby.com/contribute-to-the-bitcoin-open-source-this-hacktoberfest-2023/",
     "image": "https://i.imgur.com/jtBupEc.png",
     "dateAdded": "2023-10-21T11:09:00.000Z",
-    "tags": ["stickers", "hacktoberfest", "clothing", "accessories"]
+    "tags": ["stickers", "hacktoberfest", "clothing", "accessories", "expired"]
   },
   {
     "name": "Alexa",
@@ -69,7 +69,7 @@
     "reference": "https://github.com/amplication/amplication/issues/7028",
     "image": "https://i.imgur.com/ENUPvt9.png",
     "dateAdded": "2023-10-05T07:08:00.000Z",
-    "tags": ["hacktoberfest", "clothing"]
+    "tags": ["hacktoberfest", "clothing", "expired"]
   },
   {
     "name": "Appblock",
@@ -78,7 +78,7 @@
     "reference": "https://hacktoberfest.appblocks.com/pages/rewards/",
     "image": "https://i.imgur.com/57NFwH5.png",
     "dateAdded": "2023-10-23T21:04:00.000Z",
-    "tags": ["hacktoberfest", "cash"]
+    "tags": ["hacktoberfest", "cash", "expired"]
   },
   {
     "name": "Appsmith",
@@ -105,7 +105,7 @@
     "reference": "https://appwrite.io/blog/post/hacktoberfest-2023",
     "image": "https://i.imgur.com/CQw3i2V.png",
     "dateAdded": "2023-10-05T15:29:00.000Z",
-    "tags": ["hacktoberfest", "clothing", "stickers"]
+    "tags": ["hacktoberfest", "clothing", "stickers", "expired"]
   },
   {
     "name": "Aqua",
@@ -150,7 +150,7 @@
     "reference": "https://ballerina.io/hacktoberfest/",
     "image": "https://i.imgur.com/qX9c9KE.png",
     "dateAdded": "2023-10-18T17:36:00.000Z",
-    "tags": ["clothing", "hacktoberfest", "stickers"]
+    "tags": ["clothing", "hacktoberfest", "stickers", "expired"]
   },
   {
     "name": "Blockstack",
@@ -186,7 +186,7 @@
     "reference": "https://chimoney.io/blogs/Join-Chimoney-for-hacktoberfest-2023",
     "image": "https://i.imgur.com/2aSn0wn.jpg",
     "dateAdded": "2023-10-15T15:56:00.000Z",
-    "tags": ["clothing", "hacktoberfest", "stickers"]
+    "tags": ["clothing", "hacktoberfest", "stickers", "expired"]
   },
   {
     "name": "CircleCI",
@@ -204,7 +204,7 @@
     "reference": "https://cloudinary.com/blog/hacktoberfest-celebrate-open-source-sdks",
     "image": "https://i.imgur.com/MzVyA3W.png",
     "dateAdded": "2023-10-10T22:30:00.000Z",
-    "tags": ["clothing", "hacktoberfest", "stickers"]
+    "tags": ["clothing", "hacktoberfest", "stickers", "expired"]
   },
   {
     "name": "Codeship",
@@ -231,7 +231,7 @@
     "reference": "https://chat.collectivai.com/hacktober-fest",
     "image": "https://framerusercontent.com/images/jc3Lc08XJF1WUJr4V3VY6A0XnE.png?scale-down-to=512",
     "dateAdded": "2023-10-15T03:35:00.000Z",
-    "tags": ["hacktoberfest", "clothing", "stickers"]
+    "tags": ["hacktoberfest", "clothing", "stickers", "expired"]
   },
   {
     "name": "CommerceJS",
@@ -249,7 +249,7 @@
     "reference": "https://github.com/configu/configu/issues/266",
     "image": "https://i.imgur.com/UbzLvtD.png",
     "dateAdded": "2023-10-18T00:53:00.000Z",
-    "tags": ["clothing", "hacktoberfest"]
+    "tags": ["clothing", "hacktoberfest", "expired"]
   },
   {
     "name": "Container Solutions",
@@ -276,7 +276,7 @@
     "reference": "https://www.covalent.xyz/covalent-x-hacktoberfest-2023/",
     "image": "https://i.imgur.com/cYC9xXL.png",
     "dateAdded": "2023-10-23T21:21:00.000Z",
-    "tags": ["cash", "hacktoberfest"]
+    "tags": ["cash", "hacktoberfest", "expired"]
   },
   {
     "name": "Datenanfragen.de e. V.",
@@ -294,7 +294,7 @@
     "reference": "https://www.depths.so/30daysopensource",
     "image": "https://i.imgur.com/Y0jfdwN.png",
     "dateAdded": "2023-10-10T16:45:00.000Z",
-    "tags": ["clothing", "stickers", "hacktoberfest"]
+    "tags": ["clothing", "stickers", "hacktoberfest", "expired"]
   },
   {
     "name": "Deque",
@@ -330,7 +330,7 @@
     "reference": "https://hacktoberfest.devict.org/",
     "image": "https://i.imgur.com/0mSHJNP.png",
     "dateAdded": "2023-10-21T21:00:00.000Z",
-    "tags": ["stickers", "hacktoberfest"]
+    "tags": ["stickers", "hacktoberfest", "expired"]
   },
   {
     "name": "devRant",
@@ -348,7 +348,7 @@
     "reference": "https://github.com/arc53/DocsGPT/blob/main/HACKTOBERFEST.md",
     "image": "https://i.imgur.com/tuRDlFb.png",
     "dateAdded": "2023-10-11T12:37:23.000Z",
-    "tags": ["clothing", "hacktoberfest"]
+    "tags": ["clothing", "hacktoberfest", "expired"]
   },
   {
     "name": "Docusaurus",
@@ -366,7 +366,7 @@
     "reference": "https://github.com/dyrector-io/dyrectorio/issues/837",
     "image": "https://i.imgur.com/2JiHzft.png",
     "dateAdded": "2023-10-23T21:36:00.000Z",
-    "tags": ["hacktoberfest", "clothing", "stickers"]
+    "tags": ["hacktoberfest", "clothing", "stickers", "expired"]
   },
   {
     "name": "Earthly",
@@ -384,7 +384,7 @@
     "reference": "https://www.emqx.com/en/blog/join-hacktoberfest-2023-with-emq-community",
     "image": "https://i.imgur.com/0agjcqb.jpg",
     "dateAdded": "2023-10-20T02:50:00.000Z",
-    "tags": ["hacktoberfest", "clothing"]
+    "tags": ["hacktoberfest", "clothing", "expired"]
   },
   {
     "name": "erxes",
@@ -402,7 +402,7 @@
     "reference": "https://www.featureform.com/hacktoberfest-2023",
     "image": "https://i.imgur.com/OxlzuHM.png",
     "dateAdded": "2023-10-21T17:41:00.000Z",
-    "tags": ["clothing", "hacktoberfest"]
+    "tags": ["clothing", "hacktoberfest", "expired"]
   },
   {
     "name": "Flutterwave",
@@ -420,7 +420,7 @@
     "reference": "https://flyte.org/blog/flyte-at-hacktoberfest-2023",
     "image": "https://i.imgur.com/0qyYFJB.jpg",
     "dateAdded": "2023-10-19T05:55:00.000Z",
-    "tags": ["clothing", "hacktoberfest", "stickers", "accessories"]
+    "tags": ["clothing", "hacktoberfest", "stickers", "accessories", "expired"]
   },
   {
     "name": "Gatsby",
@@ -483,7 +483,7 @@
     "reference": "https://twitter.com/bilgeycl/status/1712135054489444650",
     "image": "https://i.imgur.com/J4drdtV.jpg",
     "dateAdded": "2023-10-23T21:53:00.000Z",
-    "tags": ["hacktoberfest", "stickers"]
+    "tags": ["hacktoberfest", "stickers", "expired"]
   },
   {
     "name": "Huddle01",
@@ -492,7 +492,7 @@
     "reference": "https://huddle01.hashnode.dev/huddle01-hacktoberfest-2023",
     "image": "https://i.imgur.com/VPErL4Z.png",
     "dateAdded": "2023-10-24T14:21:00.000Z",
-    "tags": ["hacktoberfest", "cash", "clothing"]
+    "tags": ["hacktoberfest", "cash", "clothing", "expired"]
   },
   {
     "name": "Hyperswitch",
@@ -501,7 +501,7 @@
     "reference": "https://hyperswitch.io/hacktoberfest",
     "image": "https://i.imgur.com/Q5DdlQh.png",
     "dateAdded": "2023-10-21T21:00:00.000Z",
-    "tags": ["hacktoberfest", "clothing"]
+    "tags": ["hacktoberfest", "clothing", "expired"]
   },
   {
     "name": "IHP",
@@ -546,7 +546,7 @@
     "reference": "https://community.interledger.org/devcer/hacktoberfest-with-interledger-join-the-open-payments-movement-3bkd",
     "image": "https://i.imgur.com/z90100J.png",
     "dateAdded": "2023-10-23T22:18:00.000Z",
-    "tags": ["stickers", "clothing", "hacktoberfest"]
+    "tags": ["stickers", "clothing", "hacktoberfest", "expired"]
   },
   {
     "name": "IPFS",
@@ -636,7 +636,7 @@
     "reference": "https://loft.sh/blog/celebrating-the-spirit-of-hacktoberfest-at-loft/",
     "image": "https://i.imgur.com/ECvO3gj.png",
     "dateAdded": "2023-10-21T05:55:00.000Z",
-    "tags": ["stickers", "hacktoberfest", "clothing", "accessories"]
+    "tags": ["stickers", "hacktoberfest", "clothing", "accessories", "expired"]
   },
   {
     "name": "LoginRadius",
@@ -654,7 +654,7 @@
     "reference": "https://github.com/logto-io/logto/issues/4511",
     "image": "https://i.imgur.com/nqMeukx.png",
     "dateAdded": "2023-10-22T00:46:00.000Z",
-    "tags": ["clothing", "hacktoberfest"]
+    "tags": ["clothing", "hacktoberfest", "expired"]
   },
   {
     "name": "Magento + Adobe",
@@ -708,7 +708,7 @@
     "reference": "https://mindsdb.com/hacktoberfest/",
     "image": "https://uploads-ssl.webflow.com/62a8755be8bcc86e6307def8/6511149d9743715ec236e5c1_unisex-premium-sweatshirt-white-front-63dbb021a2957.jpg",
     "dateAdded": "2023-10-11T14:16:05.000Z",
-    "tags": ["clothing", "hacktoberfest", "stickers", "device"]
+    "tags": ["clothing", "hacktoberfest", "stickers", "device", "expired"]
   },
   {
     "name": "Modtoberfest",
@@ -717,7 +717,7 @@
     "reference": "https://modtoberfest.com/modtoberforest",
     "image": "https://i.imgur.com/q8ApRkT.png",
     "dateAdded": "2023-10-22T00:08:00.000Z",
-    "tags": ["hacktoberfest", "stickers", "clothing",  "accessories", "charities"]
+    "tags": ["hacktoberfest", "stickers", "clothing", "accessories", "charities", "expired"]
   },
   {
     "name": "NativeScript",
@@ -735,7 +735,7 @@
     "reference": "https://twitter.com/NativeScript/status/1709066192605061392",
     "image": "https://i.imgur.com/FRhfAK4.png",
     "dateAdded": "2023-10-22T11:57:00.000Z",
-    "tags": ["hacktoberfest", "stickers"]
+    "tags": ["hacktoberfest", "stickers", "expired"]
   },
   {
     "name": "Netlify",
@@ -762,7 +762,7 @@
     "reference": "https://novu.co/hacktoberfest/",
     "image": "https://i.imgur.com/tswQ6m8.png",
     "dateAdded": "2023-10-21T17:52:00.000Z",
-    "tags": ["hacktoberfest", "clothing", "stickers"]
+    "tags": ["hacktoberfest", "clothing", "stickers", "expired"]
   },
   {
     "name": "npm",
@@ -789,7 +789,7 @@
     "reference": "https://openbb.co/blog/hacktoberfest-join-us-in-celebrating-open-source",
     "image": "https://i.imgur.com/Z5MRnAW.png",
     "dateAdded": "2023-10-24T14:00:00.000Z",
-    "tags": ["clothing", "hacktoberfest"]
+    "tags": ["clothing", "hacktoberfest", "expired"]
   },
   {
     "name": "OpenEBS",
@@ -852,7 +852,7 @@
     "reference": "https://twitter.com/prefix_dev/status/1711380876385292595",
     "image": "https://i.imgur.com/PSmcqxs.jpg",
     "dateAdded": "2023-10-23T11:35:00.000Z",
-    "tags": ["clothing", "hacktoberfest", "stickers"]
+    "tags": ["clothing", "hacktoberfest", "stickers", "expired"]
   },
   {
     "name": "QMK",
@@ -870,7 +870,7 @@
     "reference": "https://questdb.io/blog/hacktoberfest-2023-questdb/",
     "image": "https://i.imgur.com/ZhwC1y1.png",
     "dateAdded": "2023-10-21T18:42:00.000Z",
-    "tags": ["clothing", "hacktoberfest", "stickers"]
+    "tags": ["clothing", "hacktoberfest", "stickers", "expired"]
   },
   {
     "name": "Redis Cloud",
@@ -897,7 +897,7 @@
     "reference": "https://renumics.com/blog/hacktoberfest_2023/",
     "image": "https://i.imgur.com/MA8EoCo.png",
     "dateAdded": "2023-10-22T16:20:00.000Z",
-    "tags": ["clothing", "hacktoberfest"]
+    "tags": ["clothing", "hacktoberfest", "expired"]
   },
   {
     "name": "Revert",
@@ -906,7 +906,7 @@
     "reference": "https://blog.revert.dev/hacktoberfest2023/",
     "image": "https://i.imgur.com/iJ8eMid.jpg",
     "dateAdded": "2023-10-24T13:44:00.000Z",
-    "tags": ["clothing", "hacktoberfest", "mug", "stickers"]
+    "tags": ["clothing", "hacktoberfest", "mug", "stickers", "expired"]
   },
   {
     "name": "RoboPlay",
@@ -915,7 +915,7 @@
     "reference": "https://blog.waveplay.com/hacktoberfest-with-robo-js-build-bots-or-plugins-win-cool-prizes/",
     "image": "https://i.imgur.com/KUP8OxD.png",
     "dateAdded": "2023-10-05T06:47:30.000Z",
-    "tags": ["clothing", "digital", "hacktoberfest", "hosting"]
+    "tags": ["clothing", "digital", "hacktoberfest", "hosting", "expired"]
   },
   {
     "name": "Ronin",
@@ -924,7 +924,7 @@
     "reference": "https://ronin-rb.dev/blog/2023/09/26/ronin-is-participating-in-hacktoberfest-2023.html",
     "image": "https://i.imgur.com/mi3vbOM.png",
     "dateAdded": "2023-10-21T21:11:00.000Z",
-    "tags": ["stickers", "hacktoberfest"]
+    "tags": ["stickers", "hacktoberfest", "expired"]
   },
   {
     "name": "Saleor",
@@ -969,7 +969,7 @@
     "reference": "https://developer.servicenow.com/blog.do?p=/post/hacktoberfest-2023/",
     "image": "https://i.imgur.com/CMk9Lza.png",
     "dateAdded": "2023-10-21T22:18:00.000Z",
-    "tags": ["clothing", "hacktoberfest"]
+    "tags": ["clothing", "hacktoberfest", "expired"]
   },
   {
     "name": "SimbaChain",
@@ -1014,7 +1014,7 @@
     "reference": "https://swirl.today/contribute-to-swirl-this-hacktoberfest-2023/",
     "image": "https://i.imgur.com/e9pZ3uw.png",
     "dateAdded": "2023-10-21T22:31:00.000Z",
-    "tags": ["giftcards", "hacktoberfest"]
+    "tags": ["giftcards", "hacktoberfest", "expired"]
   },
   {
     "name": "Switchblade",
@@ -1032,7 +1032,7 @@
     "reference": "https://trigger.dev/hacktoberfest",
     "image": "https://i.imgur.com/kelNqon.jpg",
     "dateAdded": "2023-10-21T23:15:00.000Z",
-    "tags": ["clothing", "hacktoberfest", "stickers", "mug"]
+    "tags": ["clothing", "hacktoberfest", "stickers", "mug", "expired"]
   },
   {
     "name": "Turbot",
@@ -1041,7 +1041,7 @@
     "reference": "https://turbot.com/blog/2023/10/hacktoberfest-2023",
     "image": "https://turbot.com/images/blog/2024-swag-preview.jpg",
     "dateAdded": "2023-10-22T23:15:00.000Z",
-    "tags": ["clothing", "hacktoberfest", "stickers"]
+    "tags": ["clothing", "hacktoberfest", "stickers", "expired"]
   },
   {
     "name": "Twilio",
@@ -1077,7 +1077,7 @@
     "reference": "https://umbraco.com/blog/umbraco-hacktoberfest-2023/",
     "image": "https://umbraco.com/media/yjchye0t/seb_hacktoberfest.jpeg?quality=80",
     "dateAdded": "2023-10-19T20:27:00.000Z",
-    "tags": ["hacktoberfest", "clothing"]
+    "tags": ["hacktoberfest", "clothing", "expired"]
   },
   {
     "name": "Uno",
@@ -1095,7 +1095,7 @@
     "reference": "https://platform.uno/blog/hacktoberfest-2023-contributing-as-a-net-developer/",
     "image": "https://i.imgur.com/4fEuylJ.png",
     "dateAdded": "2023-10-21T23:24:00.000Z",
-    "tags": ["clothing", "stickers", "hacktoberfest"]
+    "tags": ["clothing", "stickers", "hacktoberfest", "expired"]
   },
   {
     "name": "Valor Software",
@@ -1113,7 +1113,7 @@
     "reference": "https://github.com/vesoft-inc/nebula-community/wiki/HACKTOBERFEST2023",
     "image": "https://i.imgur.com/JXYEkT4.png",
     "dateAdded": "2023-10-24T11:12:00.000Z",
-    "tags": ["digitalbadge", "stickers", "clothing", "hacktoberfest", "mug", "mascotdoll"]
+    "tags": ["digitalbadge", "stickers", "clothing", "hacktoberfest", "mug", "mascotdoll", "expired"]
   },
   {
     "name": "Vonage",
@@ -1140,7 +1140,7 @@
     "reference": "https://www.facebook.com/wevisdemo/posts/pfbid0nhDdBgYsDqmfTN3mf3TQLQ1zPDcksUi7HM6zSysGCynu3m69GnxPBs7LRmuybw8Xl",
     "image": "https://i.imgur.com/HOoCHc7.jpg",
     "dateAdded": "2023-10-22T16:46:00.000Z",
-    "tags": ["hacktoberfest", "stickers"]
+    "tags": ["hacktoberfest", "stickers", "expired"]
   },
   {
     "name": "WhatIsMyBrowser",
@@ -1158,7 +1158,7 @@
     "reference": "https://github.com/widgetbook/widgetbook/issues/918",
     "image": "https://i.imgur.com/tCJJKMe.png",
     "dateAdded": "2023-10-21T23:43:00.000Z",
-    "tags": ["stickers", "clothing", "hacktoberfest"]
+    "tags": ["stickers", "clothing", "hacktoberfest", "expired"]
   },
   {
     "name": "WireMock",
@@ -1167,7 +1167,7 @@
     "reference": "https://wiremock.org/events/hacktoberfest/",
     "image": "https://i.imgur.com/2ciFNd8.png",
     "dateAdded": "2023-10-21T00:00:00.000Z",
-    "tags": ["stickers", "clothing", "hacktoberfest"]
+    "tags": ["stickers", "clothing", "hacktoberfest", "expired"]
   },
   {
     "name": "Xamarin",
@@ -1185,6 +1185,6 @@
     "reference": "https://zilliz.com/hacktoberfest",
     "image": "https://i.imgur.com/CpZBbcB.png",
     "dateAdded": "2023-10-22T12:27:00.000Z",
-    "tags": ["stickers", "hacktoberfest", "clothing"]
+    "tags": ["stickers", "hacktoberfest", "clothing", "expired"]
   }
 ]
