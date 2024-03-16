@@ -717,7 +717,14 @@
     "reference": "https://modtoberfest.com/modtoberforest",
     "image": "https://i.imgur.com/q8ApRkT.png",
     "dateAdded": "2023-10-22T00:08:00.000Z",
-    "tags": ["hacktoberfest", "stickers", "clothing", "accessories", "charities", "expired"]
+    "tags": [
+      "hacktoberfest",
+      "stickers",
+      "clothing",
+      "accessories",
+      "charities",
+      "expired"
+    ]
   },
   {
     "name": "NativeScript",
@@ -1026,6 +1033,15 @@
     "tags": ["stickers", "hacktoberfest", "expired"]
   },
   {
+    "name": "TensorFlow",
+    "difficulty": "medium",
+    "description": "Contribute to TensorFlow's GitHub repositories and get a limited edition TensorFlow hoodie! Earn a Google Nest Mini if your contribution is among the top 10% of the month.",
+    "reference": "https://store.awscloudengineer.com/",
+    "image": "https://www.teez.in/cdn/shop/products/TensorFlow-Hoodies-2_84a058bc-3320-4ee6-97f1-ab960a179656_large.jpg?v=1574227874",
+    "dateAdded": "2024-03-16T00:00:00.000Z",
+    "tags": ["clothing", "device", "ongoing"]
+  },
+  {
     "name": "Trigger.dev",
     "difficulty": "medium",
     "description": "Submit PRs in trigger.dev or job-showcase repos and earn points to redeem for swag.",
@@ -1113,7 +1129,15 @@
     "reference": "https://github.com/vesoft-inc/nebula-community/wiki/HACKTOBERFEST2023",
     "image": "https://i.imgur.com/JXYEkT4.png",
     "dateAdded": "2023-10-24T11:12:00.000Z",
-    "tags": ["digitalbadge", "stickers", "clothing", "hacktoberfest", "mug", "mascotdoll", "expired"]
+    "tags": [
+      "digitalbadge",
+      "stickers",
+      "clothing",
+      "hacktoberfest",
+      "mug",
+      "mascotdoll",
+      "expired"
+    ]
   },
   {
     "name": "Vonage",
