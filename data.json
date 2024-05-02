@@ -450,6 +450,15 @@
     "tags": ["hacktoberfest", "clothing", "expired"]
   },
   {
+    "name": "GoFr",
+    "difficulty": "medium",
+    "description": "Contribute to their open-source github repo and raise a pull request.If your PR gets merged you will receive a T-shirt and some stickers.",
+    "reference": "https://github.com/gofr-dev/gofr",
+    "image": "https://github.com/gofr-dev/gofr/assets/55635734/33ea216a-3d46-4f05-b10f-d7fca740bc1f",
+    "dateAdded": "2024-02-16T12:13:09.000Z",
+    "tags": ["clothing","gofr","golang"]
+  },
+  {
     "name": "Google Assistant",
     "difficulty": "hard",
     "description": "Make an app for the Google Assistant available to users, get an exclusive Google Assistant t-shirt and a Google Home (if a certain number of users engage with it)!",
