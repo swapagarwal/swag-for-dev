@@ -589,7 +589,7 @@
     "difficulty": "easy",
     "description": "Fill out a Google form with your name and address and get a sticker. There’s no cost to you, but they will be restricting the send outs to bi-monthly or quarterly depending on demand.",
     "reference": "https://jsbin.com/help/stickers/",
-    "image": "https://pbs.twimg.com/media/CccQEDjUUAE9wRO.jpg",
+    "image": "https://i.imgur.com/bC60GuZ.png",
     "dateAdded": "2018-11-28T16:42:00.000Z",
     "tags": ["stickers"]
   },
@@ -751,7 +751,7 @@
     "difficulty": "medium",
     "description": "Have one accepted pull request in October 2018 to any <a href='https://github.com/nexmo/'>Nexmo Repository</a>, earn a limited edition #nextoberfest T-shirt!",
     "reference": "https://www.nexmo.com/blog/2018/10/09/join-nextoberfest-tis-the-season-to-be-hacking-dr/",
-    "image": "https://www.nexmo.com/wp-content/uploads/2018/10/Nextoberfest.png",
+    "image": "https://i.imgur.com/ihe89Wx.png",
     "dateAdded": "2018-10-12T13:32:07.000Z",
     "tags": ["clothing", "hacktoberfest", "expired"]
   },
@@ -832,7 +832,7 @@
     "difficulty": "medium",
     "description": "Anyone who makes any significant contribution to the Substrate ecosystem during Hacktoberfest is eligible for a special limited edition Parity Hacktoberfest 2019 gym bag.",
     "reference": "https://www.parity.io/blog/hacktoberfest-2019-parity/",
-    "image": "https://www.parity.io/images/hacktoberfest2019_bag.jpeg",
+    "image": "https://i.imgur.com/wCzAkOA.png",
     "dateAdded": "2019-10-12T19:49:00.000Z",
     "tags": ["hacktoberfest", "accessories", "expired"]
   },
@@ -885,7 +885,7 @@
     "name": "RedwoodJS",
     "difficulty": "easy",
     "description": "Simply fill in your postal address and get free stickers! (Shipped worldwide)",
-    "reference": "https://redwoodjs.com/stickers",
+    "reference": "https://web.archive.org/web/20240315101615/https://redwoodjs.com/stickers",
     "image": "https://i.imgur.com/zlnnR1F.png",
     "dateAdded": "2020-09-03T15:43:00.000Z",
     "tags": ["stickers"]
