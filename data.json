@@ -846,6 +846,15 @@
     "tags": ["clothing", "accessories", "expired", "stickers"]
   },
   {
+    "name": "Postman",
+    "difficulty": "medium",
+    "description": "Make a notable contribution for any of the postman open source projects, and receive a Postman t-shirt as a small token of appreciation.",
+    "reference": "https://www.postman.com/contributors/",
+    "image": "https://www.postman.com/_mk-www-v8.180.0/assets/contributors/postman-contributor-logo-dark.svg",
+    "dateAdded": "2024-10-03T14:18:34.000Z",
+    "tags": ["clothing"]
+  },
+  {
     "name": "Prefix.dev",
     "difficulty": "medium",
     "description": "Contribute to pixi and rattler-build repositories on prefix.dev and win exciting rewards! First time contributors can earn premium prefix.dev t-shirts and cool stickers.",
