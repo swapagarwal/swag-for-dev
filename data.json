@@ -20,7 +20,7 @@
   {
     "name": "Airbyte",
     "difficulty": "medium",
-    "description": "Build or improve upon the Airbyte connectors to win cash prizes up to USD 4000. You could also write quickstart guides to win cash prize up to USD 3000. All contributions will be rewarded with credits which can be redemeed in the Airbyte Swag store for free swag.",
+    "description": "Join the Airbyte 1.0 Hacktoberfest: Connector Builder Challenge! Use the UI Connector Builder and AI Assistant to create as many new connectors as possible and compete for a share of the massive prize pool. For each connector merged, you'll earn a $50 reward, redeemable as swag or cash.",
     "reference": "https://airbyte.com/community/connector-hackathon",
     "image": "https://i.imgur.com/lCirQFS.jpg",
     "dateAdded": "2024-10-14T17:01:00.000Z",
