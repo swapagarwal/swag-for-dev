@@ -21,7 +21,7 @@
     "name": "Airbyte",
     "difficulty": "medium",
     "description": "Build or improve upon the Airbyte connectors to win cash prizes up to USD 4000. You could also write quickstart guides to win cash prize up to USD 3000. All contributions will be rewarded with credits which can be redemeed in the Airbyte Swag store for free swag.",
-    "reference": "https://airbyte.com/blog/announcing-airbytes-tentaculous-hacktoberfest-2023-edition",
+    "reference": "https://airbyte.com/community/connector-hackathon",
     "image": "https://i.imgur.com/lCirQFS.jpg",
     "dateAdded": "2024-10-14T17:01:00.000Z",
     "tags": ["clothing", "hacktoberfest", "cash"]
