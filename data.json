@@ -576,6 +576,15 @@
     "tags": ["stickers", "clothing", "hacktoberfest", "expired"]
   },
   {
+    "name": "JavaScript Today",
+    "difficulty": "easy",
+    "description": "Submit pull requests on GitHub, send an email with mailing address, and get stickers delivered to you.",
+    "reference": "https://javascripttoday.com/blog/hacktoberfest-2024-free-sticker/",
+    "image": "https://javascripttoday.com/images/js-sticker_huf9b3fe00cbf25c8d083637b504fc9160_321265_300x0_resize_q100_h2_box_3.webp",
+    "dateAdded": "2024-10-12T16:27:00.000Z",
+    "tags": ["hacktoberfest", "javascript", "stickers"]
+  },
+  {
     "name": "Jetbrains",
     "difficulty": "easy",
     "description": "Fill in the form and you will get a coupon for a one-month access to 'All Products Pack' subscription of Jetbrains. It's free of charge and can be used by anyone.",
