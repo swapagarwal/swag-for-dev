@@ -252,6 +252,15 @@
     "tags": ["clothing", "hacktoberfest", "expired"]
   },
   {
+    "name": "Configu",
+    "difficulty": "easy",
+    "description": "Whether you can code or not, contribute up to three pull requests to Configu on GitHub to earn a beer glass, t-shirt or both!",
+    "reference": "https://github.com/configu/configu/issues/465",
+    "image": "https://avatars.githubusercontent.com/u/66681536?s=48&v=4",
+    "dateAdded": "2024-10-15T22:14:00.000Z",
+    "tags": ["clothing", "hacktoberfest"]
+  },
+  {
     "name": "Container Solutions",
     "difficulty": "easy",
     "description": "Submit one successful pull request to any of Container Solutions' repos to win a free t-shirt!",
