@@ -918,15 +918,6 @@
     "tags": ["stickers", "expired"]
   },
   {
-    "name": "Robo.js",
-    "difficulty": "medium",
-    "description": "Create Discord Bots or Discord Activities with Robo.js and win rewards! Contribute plugins, templates, or videos to win free Nitro, T-shirts, and more.",
-    "reference": "https://roboplay.dev/hacktoberfest",
-    "image": "https://waveplay.com/hacktoberfest-2024-promo.png",
-    "dateAdded": "2024-10-01T00:00:00.000Z",
-    "tags": ["clothing", "digital", "hacktoberfest", "hosting", "stickers"]
-  },
-  {
     "name": "Renumics",
     "difficulty": "medium",
     "description": "Join Renumics for Hacktoberfest! For each accepted PR, we're giving out a Renumics T-Shirt.",
@@ -943,6 +934,15 @@
     "image": "https://i.imgur.com/iJ8eMid.jpg",
     "dateAdded": "2023-10-24T13:44:00.000Z",
     "tags": ["clothing", "hacktoberfest", "mug", "stickers", "expired"]
+  },
+  {
+    "name": "Robo.js",
+    "difficulty": "medium",
+    "description": "Create Discord Bots or Discord Activities with Robo.js and win rewards! Contribute plugins, templates, or videos to win free Nitro, T-shirts, and more.",
+    "reference": "https://roboplay.dev/hacktoberfest",
+    "image": "https://waveplay.com/hacktoberfest-2024-promo.png",
+    "dateAdded": "2024-10-01T00:00:00.000Z",
+    "tags": ["clothing", "digital", "hacktoberfest", "hosting", "stickers"]
   },
   {
     "name": "RoboPlay",
