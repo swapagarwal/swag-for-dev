@@ -24,7 +24,7 @@
     "reference": "https://airbyte.com/community/connector-hackathon",
     "image": "https://i.imgur.com/lCirQFS.jpg",
     "dateAdded": "2024-10-14T17:01:00.000Z",
-    "tags": ["clothing", "hacktoberfest", "cash"]
+    "tags": ["clothing", "hacktoberfest", "cash", "expired"]
   },
   {
     "name": "Akto",
@@ -582,7 +582,7 @@
     "reference": "https://javascripttoday.com/blog/hacktoberfest-2024-free-sticker/",
     "image": "https://javascripttoday.com/images/js-sticker_huf9b3fe00cbf25c8d083637b504fc9160_321265_300x0_resize_q100_h2_box_3.webp",
     "dateAdded": "2024-10-12T16:27:00.000Z",
-    "tags": ["hacktoberfest", "javascript", "stickers"]
+    "tags": ["hacktoberfest", "javascript", "stickers", "expired"]
   },
   {
     "name": "Jetbrains",
@@ -942,7 +942,7 @@
     "reference": "https://roboplay.dev/hacktoberfest",
     "image": "https://waveplay.com/hacktoberfest-2024-promo.png",
     "dateAdded": "2024-10-01T00:00:00.000Z",
-    "tags": ["clothing", "digital", "hacktoberfest", "hosting", "stickers"]
+    "tags": ["clothing", "digital", "hacktoberfest", "hosting", "stickers", "expired"]
   },
   {
     "name": "RoboPlay",
