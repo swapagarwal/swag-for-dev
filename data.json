@@ -938,11 +938,11 @@
   {
     "name": "Robo.js",
     "difficulty": "medium",
-    "description": "Create Discord Bots or Discord Activities with Robo.js and win rewards! Contribute plugins, templates, or videos to win free Nitro, T-shirts, and more.",
-    "reference": "https://roboplay.dev/hacktoberfest",
+    "description": "Create Discord Bots or Discord Activities with Robo.js and win rewards! Contribute plugins, templates, or videos to win free Nitro, cash, T-shirts, and more.",
+    "reference": "https://robojs.dev/hacktoberfest",
     "image": "https://waveplay.com/hacktoberfest-2024-promo.png",
-    "dateAdded": "2024-10-01T00:00:00.000Z",
-    "tags": ["clothing", "digital", "hacktoberfest", "hosting", "stickers", "expired"]
+    "dateAdded": "2024-11-10T00:00:00.000Z",
+    "tags": ["cash", "clothing", "digital", "hosting", "stickers"]
   },
   {
     "name": "RoboPlay",
