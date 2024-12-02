@@ -20,11 +20,11 @@
   {
     "name": "Airbyte",
     "difficulty": "medium",
-    "description": "Build or improve upon the Airbyte connectors to win cash prizes up to USD 4000. You could also write quickstart guides to win cash prize up to USD 3000. All contributions will be rewarded with credits which can be redemeed in the Airbyte Swag store for free swag.",
-    "reference": "https://airbyte.com/blog/announcing-airbytes-tentaculous-hacktoberfest-2023-edition",
+    "description": "Join the Airbyte 1.0 Hacktoberfest: Connector Builder Challenge! Use the UI Connector Builder and AI Assistant to create as many new connectors as possible and compete for a share of the massive prize pool. For each connector merged, you'll earn a $50 reward, redeemable as swag or cash.",
+    "reference": "https://airbyte.com/community/connector-hackathon",
     "image": "https://i.imgur.com/lCirQFS.jpg",
-    "dateAdded": "2023-10-15T15:29:00.000Z",
-    "tags": ["clothing", "hacktoberfest", "expired"]
+    "dateAdded": "2024-10-14T17:01:00.000Z",
+    "tags": ["clothing", "hacktoberfest", "cash", "expired"]
   },
   {
     "name": "Akto",
@@ -576,6 +576,15 @@
     "tags": ["stickers", "clothing", "hacktoberfest", "expired"]
   },
   {
+    "name": "JavaScript Today",
+    "difficulty": "easy",
+    "description": "Submit pull requests on GitHub, send an email with mailing address, and get stickers delivered to you.",
+    "reference": "https://javascripttoday.com/blog/hacktoberfest-2024-free-sticker/",
+    "image": "https://javascripttoday.com/images/js-sticker_huf9b3fe00cbf25c8d083637b504fc9160_321265_300x0_resize_q100_h2_box_3.webp",
+    "dateAdded": "2024-10-12T16:27:00.000Z",
+    "tags": ["hacktoberfest", "javascript", "stickers", "expired"]
+  },
+  {
     "name": "Jetbrains",
     "difficulty": "easy",
     "description": "Fill in the form and you will get a coupon for a one-month access to 'All Products Pack' subscription of Jetbrains. It's free of charge and can be used by anyone.",
@@ -927,6 +936,15 @@
     "tags": ["clothing", "hacktoberfest", "mug", "stickers", "expired"]
   },
   {
+    "name": "Robo.js",
+    "difficulty": "medium",
+    "description": "Create Discord Bots or Discord Activities with Robo.js and win rewards! Contribute plugins, templates, or videos to win free Nitro, cash, T-shirts, and more.",
+    "reference": "https://robojs.dev/hacktoberfest",
+    "image": "https://waveplay.com/hacktoberfest-2024-promo.png",
+    "dateAdded": "2024-11-10T00:00:00.000Z",
+    "tags": ["cash", "clothing", "digital", "hosting", "stickers"]
+  },
+  {
     "name": "RoboPlay",
     "difficulty": "medium",
     "description": "Create a Discord bot or plugin with Robo.js - score 3 months of hosting, a month of Nitro, and a special edition T-Shirt!",
@@ -1147,7 +1165,7 @@
     "difficulty": "medium",
     "description": "Join the <a href=\"https://webiny.com/slack\">Slack community</a>, get 2 Webiny PRs merged, and request your Swag Pack and a t-shirt.",
     "reference": "https://dev.to/webiny/webiny-hacktoberfest-2020-49h4",
-    "image": "https://res.cloudinary.com/practicaldev/image/fetch/s--FuHl5nFV--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/i/c9jfsatz14vkied629co.png",
+    "image": "https://i.imgur.com/SQxR3rb.png",
     "dateAdded": "2020-09-30T16:35:00.000Z",
     "tags": ["hacktoberfest", "clothing", "stickers", "expired"]
   },
