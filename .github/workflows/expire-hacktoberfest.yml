@@ -19,7 +19,7 @@ jobs:
       run: echo "##[set-output name=nvmrc;]$(cat .nvmrc)"
       id: nvm
     - name: Setup Node
-      uses: actions/setup-node@v2.4.0
+      uses: actions/setup-node@v3.6.0
       with:
         node-version: ${{ steps.nvm.outputs.nvmrc }}
     - name: Run expire script
