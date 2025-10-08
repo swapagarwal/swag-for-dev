@@ -102,6 +102,41 @@
 				color white-color
 				border 2px solid tertiary-color
 
+		.actions
+			align-items center
+			gap 1.5rem
+			margin-top 1.2rem
+			flex-wrap wrap
+
+			applause-button.applause-button
+				display inline-flex
+				align-items center
+				justify-content center
+				width 8rem
+				height 8rem
+				min-width 8rem
+				border-radius 50%
+				box-shadow none
+				transition transform .2s ease-in-out
+				font-size 2.4rem
+				svg, .clap-icon
+					width 5.2rem
+					height 5.2rem
+
+				&:hover
+					transform scale(1.05)
+
+				.clap-count
+					font-size 3rem
+					font-weight 700
+					color tertiary-color
+
+				&.clap
+					transform scale(1.1)
+
+			a.btn
+				margin-top 0
+
 	img
 		height 100%
 		width auto
