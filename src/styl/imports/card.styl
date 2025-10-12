@@ -103,8 +103,9 @@
 				border 2px solid tertiary-color
 
 		.actions
+			display flex
 			align-items center
-			gap 1.5rem
+			gap 1.2rem
 			margin-top 1.2rem
 			flex-wrap wrap
 
@@ -112,30 +113,63 @@
 				display inline-flex
 				align-items center
 				justify-content center
-				width 8rem
-				height 8rem
-				min-width 8rem
+				width 4rem
+				height 4rem
+				min-width 4rem
+				flex-shrink 0
 				border-radius 50%
+				background-color transparent
+				border 2px solid transparent
 				box-shadow none
-				transition transform .2s ease-in-out
-				font-size 2.4rem
+				transition all .2s ease-in-out
+				cursor pointer
+				margin 0
+				padding 0
+				position relative
+
 				svg, .clap-icon
-					width 5.2rem
-					height 5.2rem
+					width 2.4rem
+					height 2.4rem
+					fill secondary-color
+					transition all .2s ease-in-out
 
 				&:hover
-					transform scale(1.05)
+					transform scale(1.1)
+					background-color rgba(63, 170, 251, 0.08)
+					border-color rgba(63, 170, 251, 0.2)
+
+					svg, .clap-icon
+						fill tertiary-color
+
+				&:active, &.clap
+					transform scale(0.95)
+					background-color rgba(63, 170, 251, 0.15)
 
 				.clap-count
-					font-size 3rem
+					position absolute
+					top -0.8rem
+					right -0.8rem
+					font-size 1.2rem
 					font-weight 700
-					color tertiary-color
+					color white-color
+					background-color secondary-color
+					border-radius 10px
+					padding 0.2rem 0.5rem
+					min-width 2rem
+					height 2rem
+					display flex
+					align-items center
+					justify-content center
+					box-shadow 0 2px 4px rgba(0, 0, 0, 0.1)
+					pointer-events none
+					line-height 1
 
-				&.clap
-					transform scale(1.1)
+				&.clapped
+					border-color secondary-color
 
 			a.btn
 				margin-top 0
+				flex 1
 
 	img
 		height 100%
