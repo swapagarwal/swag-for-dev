@@ -5,6 +5,16 @@
  * Initialising global variables
  */
 const ACTIVE_CLASS = 'visible';
+const APPLAUSE_ASCENDING = 'APPLAUSE_ASCENDING';
+const APPLAUSE_DESCENDING = 'APPLAUSE_DESCENDING';
+const APPLAUSE_SORT_KEYS = new Set([APPLAUSE_ASCENDING, APPLAUSE_DESCENDING]);
+const parseApplauseCount = value => {
+	const parsed = Number(value);
+	return Number.isFinite(parsed) ? parsed : 0;
+};
+
+const getApplauseCount = element => parseApplauseCount(element && element.dataset ? element.dataset.applause : undefined);
+
 const sort = {
 	ALPHABETICAL_ASCENDING: (a, b) => a.dataset.name > b.dataset.name ? 1 : -1,
 	ALPHABETICAL_DESCENDING: (a, b) => a.dataset.name < b.dataset.name ? 1 : -1,
@@ -12,7 +22,27 @@ const sort = {
 	DIFFICULTY_ASCENDING: (a, b) => a.dataset.difficulty === b.dataset.difficulty ? (a.dataset.name > b.dataset.name ? 1 : -1) : a.dataset.difficulty > b.dataset.difficulty ? 1 : -1,
 	DIFFICULTY_DESCENDING: (a, b) => a.dataset.difficulty === b.dataset.difficulty ? (a.dataset.name > b.dataset.name ? 1 : -1) : a.dataset.difficulty < b.dataset.difficulty ? 1 : -1,
 	DATEADDED_ASCENDING: (a, b) => a.dataset.dateadded > b.dataset.dateadded ? 1 : -1,
-	DATEADDED_DESCENDING: (a, b) => a.dataset.dateadded < b.dataset.dateadded ? 1 : -1
+	DATEADDED_DESCENDING: (a, b) => a.dataset.dateadded < b.dataset.dateadded ? 1 : -1,
+	[APPLAUSE_ASCENDING]: (a, b) => {
+		const applauseA = getApplauseCount(a);
+		const applauseB = getApplauseCount(b);
+
+		if (applauseA === applauseB) {
+			return a.dataset.name > b.dataset.name ? 1 : -1;
+		}
+
+		return applauseA > applauseB ? 1 : -1;
+	},
+	[APPLAUSE_DESCENDING]: (a, b) => {
+		const applauseA = getApplauseCount(a);
+		const applauseB = getApplauseCount(b);
+
+		if (applauseA === applauseB) {
+			return a.dataset.name > b.dataset.name ? 1 : -1;
+		}
+
+		return applauseA < applauseB ? 1 : -1;
+	}
 	/* eslint-enable unicorn/no-nested-ternary */
 };
 
@@ -102,10 +132,23 @@ function handleDifficulty(difficultyChanged) {
 }
 
 function handleSort() {
-	Array.from(contentElement.children)
-		.map(child => contentElement.removeChild(child)) // eslint-disable-line unicorn/prefer-node-remove
-		.sort(sort[sortingInput.value])
+	const sorter = sort[sortingInput.value];
+	if (!sorter) {
+		return;
+	}
+
+	const placeholder = contentElement.querySelector('.no-results');
+	if (placeholder) {
+		contentElement.removeChild(placeholder);
+	}
+
+	Array.from(contentElement.querySelectorAll('.item'))
+		.sort(sorter)
 		.forEach(sortedChild => contentElement.append(sortedChild));
+
+	if (placeholder) {
+		contentElement.append(placeholder);
+	}
 }
 
 function handleTags() {
@@ -137,6 +180,12 @@ function handleTags() {
 	search.set('hide-completed', hideCompleted.checked || '');
 }
 
+const maybeSortByApplause = () => {
+	if (APPLAUSE_SORT_KEYS.has(sortingInput.value)) {
+		handleSort();
+	}
+};
+
 function updateUrl() {
 	let nextPath = window.location.pathname;
 
@@ -155,6 +204,44 @@ function updateUrl() {
 	}
 
 	history.pushState(null, '', nextPath);
+}
+
+function initApplauseButtons() {
+	const buttons = Array.from(document.querySelectorAll('applause-button'));
+
+	const promises = buttons.map(button => {
+		const card = button.closest('.item');
+		const initialPromise = button.initialClapCount;
+		if (!card || !initialPromise || typeof initialPromise.then !== 'function') {
+			return Promise.resolve();
+		}
+
+		const applyCount = count => {
+			const normalisedCount = parseApplauseCount(count);
+			card.dataset.applause = normalisedCount.toString();
+			card.setAttribute('data-applause', card.dataset.applause);
+		};
+
+		button.addEventListener('clapped', event => {
+			const clapDetail = event && event.detail ? event.detail.clapCount : undefined;
+			const clapCount = parseApplauseCount(clapDetail);
+			applyCount(clapCount);
+			maybeSortByApplause();
+		});
+
+		return initialPromise
+			.then(count => {
+				applyCount(count);
+				maybeSortByApplause();
+			})
+			.catch(() => {
+				applyCount(0);
+			});
+	});
+
+	return Promise.allSettled(promises).then(() => {
+		maybeSortByApplause();
+	});
 }
 
 // The cascade is the function which handles calling filtering and sorting swag
@@ -218,6 +305,8 @@ window.addEventListener('DOMContentLoaded', () => {
 	hideCompleted.addEventListener('change', cascade);
 
 	completedCardsInit(document.querySelectorAll('.complete-notice'));
+
+	initApplauseButtons();
 
 	cascade.call(window, true);
 });
