@@ -3,6 +3,8 @@
 	max-width 350px
 	display none
 	position relative
+	perspective 1000px
+	transform-style preserve-3d
 
 	> div
 		opacity 1
@@ -116,6 +118,8 @@
 		border-radius 10px 10px 0 0
 		border 1px solid grey-color
 		background white-color
+
+	// 3D hover effect base styles - transition handled by JS for dynamic control
 
 	&:hover
 		img
