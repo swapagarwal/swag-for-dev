@@ -166,7 +166,7 @@ function cascade(force = false) {
 
 	handleTags();
 	updateUrl();
-	
+
 	// Re-initialize 3D hover effect after filtering/sorting
 	init3DHoverEffect();
 }
@@ -196,15 +196,15 @@ function lazyLoadStyleSheet() {
 // Initialize 3D hover effect on cards
 function init3DHoverEffect() {
 	const cards = document.querySelectorAll('.item');
-	
+
 	cards.forEach(card => {
 		// Skip if already initialized
 		if (card.dataset.hover3d === 'true') {
 			return;
 		}
-		
+
 		card.dataset.hover3d = 'true';
-		
+
 		card.addEventListener('mouseenter', () => {
 			card.style.transition = 'transform 0.1s ease-out';
 		});
@@ -218,13 +218,13 @@ function init3DHoverEffect() {
 			const rect = card.getBoundingClientRect();
 			const x = event.clientX - rect.left;
 			const y = event.clientY - rect.top;
-			
+
 			const centerX = rect.width / 2;
 			const centerY = rect.height / 2;
-			
+
 			const rotateX = (y - centerY) / 10;
 			const rotateY = (centerX - x) / 10;
-			
+
 			card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale3d(1.02, 1.02, 1.02)`;
 		});
 	});
@@ -260,7 +260,7 @@ window.addEventListener('DOMContentLoaded', () => {
 	completedCardsInit(document.querySelectorAll('.complete-notice'));
 
 	cascade.call(window, true);
-	
+
 	// Initialize 3D hover effect
 	init3DHoverEffect();
 });
