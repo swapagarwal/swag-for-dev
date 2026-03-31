@@ -675,6 +675,15 @@
     "tags": ["clothing", "hacktoberfest", "expired"]
   },
   {
+  "name": "Looties",
+  "difficulty": "easy",
+  "description": "Looties is a marketplace where developers, founders, and tech enthusiasts buy and sell conference swag, limited-edition merch, and developer gear from the events they love.",
+  "reference": "https://looties.io",
+  "image": "https://apcdouatoejrvwoqevfc.supabase.co/storage/v1/object/public/logos/logos/looties-fr_20260331145807.png",
+  "dateAdded": "2026-03-31T00:00:00.000Z",
+  "tags": ["clothing", "stickers", "accessories", "marketplace"]
+}
+  {
     "name": "Magento + Adobe",
     "difficulty": "hard",
     "description": "Submit 5 or more pull requests during October 2019 to any open repositories under Adobe or Magento organizations on GitHub, get a Squashtoberfest T-Shirt!",
