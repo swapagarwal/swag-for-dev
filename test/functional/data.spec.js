@@ -35,6 +35,12 @@ describe('swag-for-dev', function () {
 			expect(datum.difficulty).to.be.oneOf(['easy', 'medium', 'hard']);
 			expect(datum.reference).to.be.a('string');
 			expect(datum.image).to.be.a('string');
+			expect(datum.name.trim()).to.not.equal('');
+			expect(datum.reference.trim()).to.not.equal('');
+			expect(datum.image.trim()).to.not.equal('');
+			expect(datum.tags).to.satisfy(tags =>
+				tags.every(tag => typeof tag === 'string' && tag.trim() !== '')
+			);
 			expect(datum.dateAdded).to.match(/20\d\d-[01]\d-[0-3]\dT\d\d:\d\d:\d\d\.000Z/);
 			expect(datum.tags).to.be.an('Array').with.length.greaterThan(0);
 		});
